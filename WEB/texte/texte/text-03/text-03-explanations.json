@@ -1,0 +1,1769 @@
+{
+  "durch-gepraegt-ist": {
+    "word": "durch ... geprägt sein",
+    "translation": "estar marcado/condicionado por, caracterizarse por",
+    "sentence": "In einer Welt, die durch digitale Assistenten und modernste Technologie geprägt ist, erscheint es paradox.",
+    "sentenceTranslation": "En un mundo que está marcado por asistentes digitales y la tecnología más moderna, parece paradójico.",
+    "explanation": "Construcción pasiva con 'durch' (por) + participio 'geprägt' (marcado, condicionado). 'Geprägt sein' = estar caracterizado/marcado por algo.",
+    "examples": [
+      "Die politische Landschaft Europas ist durch jahrhundertelange Konflikte und Bündnisse geprägt. = El panorama político de Europa está marcado por siglos de conflictos y alianzas.",
+      "Ihre Persönlichkeit war durch die strengen Erziehungsmethoden ihrer Eltern geprägt. = Su personalidad estaba condicionada por los estrictos métodos educativos de sus padres."
+    ],
+    "parts": ["durch", "geprägt", "ist"],
+    "type": "phrase",
+    "components": [
+      {"word": "durch", "type": "präposition"},
+      {"word": "geprägt", "type": "verb"},
+      {"word": "ist", "type": "verb"}
+    ]
+  },
+  "paradox": {
+    "word": "paradox",
+    "translation": "paradójico",
+    "sentence": "In einer Welt, die durch digitale Assistenten und modernste Technologie geprägt ist, erscheint es paradox.",
+    "sentenceTranslation": "En un mundo marcado por asistentes digitales y tecnología moderna, parece paradójico.",
+    "explanation": "Adjetivo (también adverbio). Indica una contradicción aparente entre dos hechos o ideas.",
+    "examples": [
+      "Es erscheint paradox, dass gerade die reichsten Länder die höchste Verschuldung aufweisen. = Parece paradójico que precisamente los países más ricos presenten el mayor endeudamiento.",
+      "Die Forschungsergebnisse waren paradox: Je mehr Informationen verfügbar waren, desto schlechter fielen die Entscheidungen aus. = Los resultados de la investigación eran paradójicos: cuanta más información había disponible, peores eran las decisiones."
+    ],
+    "baseForm": "paradox",
+    "synonyms": ["widersprüchlich (contradictorio)", "absurd (absurdo)"],
+    "type": "adjektiv"
+  },
+  "gesellschaftlich": {
+    "word": "gesellschaftlich",
+    "translation": "social, societal, a nivel social",
+    "sentence": "Dass wir gesellschaftlich noch immer von einer Technologie des 19. Jahrhunderts besessen sind.",
+    "sentenceTranslation": "Que socialmente seguimos obsesionados con una tecnología del siglo XIX.",
+    "explanation": "Adverbio/adjetivo derivado de 'Gesellschaft' (sociedad). Se refiere a lo que concierne a la sociedad en su conjunto.",
+    "examples": [
+      "Die Digitalisierung hat gesellschaftlich zu einer tiefgreifenden Spaltung zwischen den Generationen geführt. = La digitalización ha conducido socialmente a una profunda división entre las generaciones.",
+      "Gesellschaftlich relevante Themen wie Klimawandel und Migration dominieren den öffentlichen Diskurs. = Temas socialmente relevantes como el cambio climático y la migración dominan el discurso público."
+    ],
+    "baseForm": "gesellschaftlich",
+    "synonyms": ["sozial (social)", "kollektiv (colectivo)"],
+    "type": "adjektiv"
+  },
+  "besessen": {
+    "word": "besessen",
+    "translation": "obsesionado, poseído",
+    "sentence": "Dass wir gesellschaftlich noch immer von einer Technologie des 19. Jahrhunderts besessen sind.",
+    "sentenceTranslation": "Que socialmente seguimos obsesionados con una tecnología del siglo XIX.",
+    "explanation": "Participio de 'besessen sein von' (estar obsesionado con). Se construye con 'von' + dativo.",
+    "examples": [
+      "Der Wissenschaftler war von dem Gedanken besessen, eine Lösung für die Energiekrise zu finden. = El científico estaba obsesionado con la idea de encontrar una solución para la crisis energética.",
+      "Sie wirkte wie besessen, als sie Tag und Nacht an ihrem Forschungsprojekt arbeitete. = Parecía poseída cuando trabajaba día y noche en su proyecto de investigación."
+    ],
+    "baseForm": "besessen",
+    "type": "adjektiv"
+  },
+  "betrachtet": {
+    "word": "betrachten",
+    "translation": "considerar, contemplar, examinar",
+    "sentence": "Wenn man die aktuelle Energiedebatte betrachtet, drängt sich die Schlussfolgerung auf.",
+    "sentenceTranslation": "Si se considera el debate energético actual, la conclusión se impone.",
+    "explanation": "Verbo regular. 'Betrachten' = mirar con atención, considerar, examinar. En contexto formal: analizar o evaluar.",
+    "conjugation": {
+      "present": {"ich": "betrachte", "du": "betrachtest", "er/sie/es": "betrachtet", "wir": "betrachten", "ihr": "betrachtet", "sie/Sie": "betrachten"},
+      "preterite": {"ich": "betrachtete", "du": "betrachtetest", "er/sie/es": "betrachtete", "wir": "betrachteten", "ihr": "betrachtetet", "sie/Sie": "betrachteten"},
+      "perfect": "hat betrachtet",
+      "infinitive": "betrachten"
+    },
+    "examples": [
+      "Wenn wir die demografische Entwicklung kritisch betrachten, müssen wir unser Rentensystem grundlegend reformieren. = Si consideramos críticamente la evolución demográfica, debemos reformar fundamentalmente nuestro sistema de pensiones.",
+      "Die Philosophen der Aufklärung betrachteten den Menschen als vernunftbegabtes Wesen. = Los filósofos de la Ilustración consideraban al ser humano como un ser dotado de razón."
+    ],
+    "synonyms": ["ansehen (mirar)", "prüfen (examinar)"],
+    "type": "verb"
+  },
+  "draengt-sich-auf": {
+    "word": "sich aufdrängen",
+    "translation": "imponerse, hacerse evidente, surgir inevitablemente",
+    "sentence": "Wenn man die aktuelle Energiedebatte betrachtet, drängt sich die Schlussfolgerung auf.",
+    "sentenceTranslation": "Si se considera el debate energético actual, la conclusión se impone.",
+    "explanation": "Verbo separable reflexivo. 'Sich aufdrängen' = imponerse una idea o conclusión de forma inevitable.",
+    "parts": ["drängt", "sich", "auf"],
+    "conjugation": {
+      "present": {"ich": "dränge mich auf", "du": "drängst dich auf", "er/sie/es": "drängt sich auf", "wir": "drängen uns auf", "ihr": "drängt euch auf", "sie/Sie": "drängen sich auf"},
+      "preterite": {"ich": "drängte mich auf", "du": "drängtest dich auf", "er/sie/es": "drängte sich auf", "wir": "drängten uns auf", "ihr": "drängtet euch auf", "sie/Sie": "drängten sich auf"},
+      "perfect": "hat sich aufgedrängt",
+      "infinitive": "sich aufdrängen"
+    },
+    "examples": [
+      "Angesichts der wiederholten Verstöße drängt sich der Verdacht auf, dass hier systematisch betrogen wurde. = Ante las repetidas infracciones, se impone la sospecha de que aquí se ha engañado sistemáticamente.",
+      "Bei der Analyse der Finanzkrise drängte sich die Erkenntnis auf, dass die Regulierungsbehörden versagt hatten. = En el análisis de la crisis financiera se impuso el conocimiento de que las autoridades reguladoras habían fallado."
+    ],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "schlussfolgerung": {
+    "word": "Schlussfolgerung",
+    "translation": "conclusión, deducción",
+    "sentence": "Wenn man die aktuelle Energiedebatte betrachtet, drängt sich die Schlussfolgerung auf.",
+    "sentenceTranslation": "Si se considera el debate energético actual, la conclusión se impone.",
+    "explanation": "Sustantivo femenino compuesto: Schluss (fin, cierre) + Folgerung (deducción). Conclusión lógica derivada de premisas.",
+    "examples": [
+      "Aus den empirischen Daten lässt sich die Schlussfolgerung ziehen, dass präventive Maßnahmen wirksamer sind als reaktive. = De los datos empíricos se puede sacar la conclusión de que las medidas preventivas son más eficaces que las reactivas.",
+      "Die Schlussfolgerung des Gutachtens war eindeutig: Das Projekt ist wirtschaftlich nicht tragfähig. = La conclusión del dictamen era inequívoca: el proyecto no es económicamente viable."
+    ],
+    "synonyms": ["Fazit (conclusión)", "Konsequenz (consecuencia)"],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "irre": {
+    "word": "in die Irre",
+    "translation": "por el mal camino, al error, extraviado",
+    "sentence": "Dass wir kollektiv in die Irre geführt werden.",
+    "sentenceTranslation": "Que colectivamente se nos lleva por el mal camino.",
+    "explanation": "Expresión fija: 'in die Irre führen' = llevar a alguien al error, engañar. 'Irre' (f.) = error, desvío.",
+    "examples": [
+      "Die widersprüchlichen Aussagen der Zeugen führten die Ermittler zunächst in die Irre. = Las declaraciones contradictorias de los testigos llevaron inicialmente a los investigadores por el mal camino.",
+      "Populistische Rhetorik führt die Wählerschaft oft in die Irre, indem sie komplexe Probleme vereinfacht. = La retórica populista a menudo lleva al electorado al error al simplificar problemas complejos."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "in", "type": "präposition"},
+      {"word": "die", "type": "artikel"},
+      {"word": "Irre", "type": "nomen"}
+    ]
+  },
+  "gefuehrt-werden": {
+    "word": "geführt werden",
+    "translation": "ser conducido, ser llevado (al error)",
+    "sentence": "Dass wir kollektiv in die Irre geführt werden.",
+    "sentenceTranslation": "Que colectivamente se nos lleva por el mal camino.",
+    "explanation": "Pasiva de 'führen' (conducir, llevar). 'In die Irre geführt werden' = ser engañado, ser llevado al error.",
+    "parts": ["geführt", "werden"],
+    "conjugation": {
+      "present": {"ich": "werde geführt", "du": "wirst geführt", "er/sie/es": "wird geführt", "wir": "werden geführt", "ihr": "werdet geführt", "sie/Sie": "werden geführt"},
+      "preterite": {"ich": "wurde geführt", "du": "wurdest geführt", "er/sie/es": "wurde geführt", "wir": "wurden geführt", "ihr": "wurdet geführt", "sie/Sie": "wurden geführt"},
+      "perfect": "ist geführt worden",
+      "infinitive": "geführt werden"
+    },
+    "examples": [
+      "Die Delegation wurde durch die historischen Stätten der Hauptstadt geführt. = La delegación fue guiada por los lugares históricos de la capital.",
+      "Durch gezielte Desinformationskampagnen wurde die Öffentlichkeit systematisch in die Irre geführt. = Mediante campañas de desinformación dirigidas, el público fue sistemáticamente engañado."
+    ],
+    "type": "verb",
+    "verbType": "auxiliary"
+  },
+  "ehrliche": {
+    "word": "ehrlich",
+    "translation": "honesto, sincero",
+    "sentence": "Eine ehrliche Auseinandersetzung mit den Fakten zeigt.",
+    "sentenceTranslation": "Un enfrentamiento honesto con los hechos muestra.",
+    "explanation": "Adjetivo. Forma declinada en nominativo femenino singular: 'eine ehrliche Auseinandersetzung'.",
+    "baseForm": "ehrlich",
+    "examples": [
+      "Eine ehrliche Bestandsaufnahme der wirtschaftlichen Lage erfordert Mut von den politischen Entscheidungsträgern. = Un balance honesto de la situación económica requiere valor por parte de los responsables políticos.",
+      "Ehrlich gesagt, halte ich die vorgeschlagenen Maßnahmen für völlig unzureichend. = Sinceramente, considero las medidas propuestas completamente insuficientes."
+    ],
+    "synonyms": ["aufrichtig (sincero)", "wahrheitsgemäß (veraz)"],
+    "type": "adjektiv"
+  },
+  "auseinandersetzung": {
+    "word": "Auseinandersetzung",
+    "translation": "enfrentamiento, debate, reflexión profunda",
+    "sentence": "Eine ehrliche Auseinandersetzung mit den Fakten zeigt.",
+    "sentenceTranslation": "Un enfrentamiento honesto con los hechos muestra.",
+    "explanation": "Sustantivo femenino. Proceso de confrontar o debatir algo de forma seria. 'Sich mit etwas auseinandersetzen' = enfrentarse a algo.",
+    "examples": [
+      "Die intellektuelle Auseinandersetzung mit den Theorien Kants prägte die gesamte nachfolgende Philosophie. = El debate intelectual con las teorías de Kant marcó toda la filosofía posterior.",
+      "Nach der heftigen Auseinandersetzung im Vorstand trat der Finanzchef zurück. = Tras el violento enfrentamiento en la junta directiva, el director financiero dimitió."
+    ],
+    "synonyms": ["Debatte (debate)", "Konflikt (conflicto)"],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "einzig": {
+    "word": "einzig",
+    "translation": "único, la única",
+    "sentence": "Die einzig rationale Entscheidung ist.",
+    "sentenceTranslation": "La única decisión racional es.",
+    "explanation": "Adjetivo que enfatiza unicidad. 'Einzig' = único, sin otro igual. Se usa como adjetivo o adverbio.",
+    "baseForm": "einzig",
+    "examples": [
+      "Die einzig verbleibende Option besteht darin, die Verhandlungen wieder aufzunehmen. = La única opción que queda consiste en reanudar las negociaciones.",
+      "Er war der einzig Anwesende, der gegen den Beschluss stimmte. = Era el único presente que votó en contra de la resolución."
+    ],
+    "synonyms": ["alleinig (único)", "ausschließlich (exclusivamente)"],
+    "type": "adjektiv"
+  },
+  "derzeitigen": {
+    "word": "derzeitig",
+    "translation": "actual, presente, del momento",
+    "sentence": "Das fundamentale Problem unserer derzeitigen Energieversorgung liegt.",
+    "sentenceTranslation": "El problema fundamental de nuestro suministro energético actual radica.",
+    "explanation": "Adjetivo derivado de 'derzeit' (actualmente). Forma declinada en genitivo: 'unserer derzeitigen'.",
+    "baseForm": "derzeitig",
+    "examples": [
+      "Die derzeitigen Spannungen zwischen den beiden Staaten gefährden den regionalen Frieden. = Las tensiones actuales entre los dos estados ponen en peligro la paz regional.",
+      "Unter den derzeitigen Rahmenbedingungen ist eine Expansion des Unternehmens nicht realisierbar. = En las condiciones marco actuales, una expansión de la empresa no es realizable."
+    ],
+    "synonyms": ["aktuell (actual)", "gegenwärtig (presente)"],
+    "type": "adjektiv"
+  },
+  "energieversorgung": {
+    "word": "Energieversorgung",
+    "translation": "suministro energético, abastecimiento de energía",
+    "sentence": "Das fundamentale Problem unserer derzeitigen Energieversorgung liegt.",
+    "sentenceTranslation": "El problema fundamental de nuestro suministro energético actual radica.",
+    "explanation": "Sustantivo femenino compuesto: Energie + Versorgung. Cómo se provee energía a una sociedad o región.",
+    "examples": [
+      "Die dezentrale Energieversorgung durch Windkraft und Photovoltaik erhöht die Versorgungssicherheit. = El suministro energético descentralizado mediante energía eólica y fotovoltaica aumenta la seguridad del abastecimiento.",
+      "Nach dem Reaktorunfall musste die Energieversorgung der gesamten Region neu organisiert werden. = Tras el accidente del reactor, el suministro energético de toda la región tuvo que reorganizarse."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "wegwerfenergie": {
+    "word": "Wegwerfenergie",
+    "translation": "energía desechable, energía de usar y tirar",
+    "sentence": "Sie sind „Wegwerfenergie\" (disposable energy).",
+    "sentenceTranslation": "Son \"energía desechable\" (disposable energy).",
+    "explanation": "Neologismo: Wegwerf- (desechable) + Energie. Energía que se consume una vez y no puede reutilizarse (combustibles fósiles).",
+    "examples": [
+      "Fossile Brennstoffe stellen Wegwerfenergie dar, während Solaranlagen jahrzehntelang Strom produzieren. = Los combustibles fósiles representan energía desechable, mientras que las instalaciones solares producen electricidad durante décadas.",
+      "Das Konzept der Wegwerfenergie steht im Widerspruch zu den Prinzipien der Kreislaufwirtschaft. = El concepto de energía desechable contradice los principios de la economía circular."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "benzin": {
+    "word": "Benzin",
+    "translation": "gasolina",
+    "sentence": "Jedes Mal, wenn wir ein Auto mit Benzin betanken.",
+    "sentenceTranslation": "Cada vez que repostamos un coche con gasolina.",
+    "explanation": "Sustantivo neutro. Combustible derivado del petróleo para motores de combustión.",
+    "examples": [
+      "Die Preise für Benzin und Diesel sind aufgrund der geopolitischen Spannungen stark gestiegen. = Los precios de la gasolina y el diésel han subido considerablemente debido a las tensiones geopolíticas.",
+      "Verbleites Benzin wurde in den meisten Ländern bereits in den 1990er Jahren verboten. = La gasolina con plomo fue prohibida en la mayoría de países ya en los años 90."
+    ],
+    "type": "nomen",
+    "gender": "das (neutro)"
+  },
+  "betanken": {
+    "word": "betanken",
+    "translation": "repostar, abastecer de combustible",
+    "sentence": "Wenn wir ein Auto mit Benzin betanken.",
+    "sentenceTranslation": "Cuando repostamos un coche con gasolina.",
+    "explanation": "Verbo separable (o no, según contexto). 'Betanken' = llenar el depósito de combustible.",
+    "conjugation": {
+      "present": {"ich": "betanke", "du": "betankst", "er/sie/es": "betankt", "wir": "betanken", "ihr": "betankt", "sie/Sie": "betanken"},
+      "preterite": {"ich": "betankte", "du": "betanktest", "er/sie/es": "betankte", "wir": "betankten", "ihr": "betanktet", "sie/Sie": "betankten"},
+      "perfect": "hat betankt",
+      "infinitive": "betanken"
+    },
+    "examples": [
+      "Die Langstreckenflugzeuge werden vor dem Transatlantikflug mit mehreren tausend Litern Kerosin betankt. = Los aviones de largo recorrido se repostan con varios miles de litros de queroseno antes del vuelo transatlántico.",
+      "Wasserstofffahrzeuge lassen sich ähnlich schnell betanken wie herkömmliche Benziner. = Los vehículos de hidrógeno se pueden repostar tan rápido como los de gasolina convencionales."
+    ],
+    "type": "verb"
+  },
+  "ressourcen": {
+    "word": "Ressourcen",
+    "translation": "recursos",
+    "sentence": "Wir verbrennen Ressourcen, die danach unwiederbringlich verloren sind.",
+    "sentenceTranslation": "Quemamos recursos que después se pierden irremediablemente.",
+    "explanation": "Sustantivo femenino (plural). Del francés 'ressource'. Materias primas, energía o capacidades disponibles.",
+    "examples": [
+      "Die Ausbeutung natürlicher Ressourcen in Entwicklungsländern erfolgt oft ohne Rücksicht auf ökologische Folgen. = La explotación de recursos naturales en países en desarrollo se realiza a menudo sin consideración de las consecuencias ecológicas.",
+      "Unternehmen müssen lernen, ihre personellen und finanziellen Ressourcen effizienter einzusetzen. = Las empresas deben aprender a emplear sus recursos humanos y financieros de manera más eficiente."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "unwiederbringlich": {
+    "word": "unwiederbringlich",
+    "translation": "irremediablemente, para siempre perdido",
+    "sentence": "Ressourcen, die danach unwiederbringlich verloren sind.",
+    "sentenceTranslation": "Recursos que después se pierden irremediablemente.",
+    "explanation": "Adverbio/adjetivo. 'Un-' (no) + 'wiederbringlich' (recuperable). Lo que no puede recuperarse nunca.",
+    "baseForm": "unwiederbringlich",
+    "examples": [
+      "Durch die Abholzung des Regenwaldes gehen unwiederbringlich zahlreiche Tier- und Pflanzenarten verloren. = Mediante la deforestación de la selva tropical se pierden irremediablemente numerosas especies animales y vegetales.",
+      "Die Zerstörung der historischen Bausubstanz bedeutet einen unwiederbringlichen Verlust für das kulturelle Erbe. = La destrucción de la estructura arquitectónica histórica significa una pérdida irreparable para el patrimonio cultural."
+    ],
+    "synonyms": ["irreversibel (irreversible)", "endgültig (definitivo)"],
+    "type": "adjektiv"
+  },
+  "verloren-sind": {
+    "word": "verloren sein",
+    "translation": "estar perdido, haberse perdido",
+    "sentence": "Ressourcen, die danach unwiederbringlich verloren sind.",
+    "sentenceTranslation": "Recursos que después se pierden irremediablemente.",
+    "explanation": "Perfekt de 'verlieren' con 'sein'. 'Verloren sein' = estar perdido, haberse perdido para siempre.",
+    "parts": ["verloren", "sind"],
+    "conjugation": {
+      "present": {"ich": "bin verloren", "du": "bist verloren", "er/sie/es": "ist verloren", "wir": "sind verloren", "ihr": "seid verloren", "sie/Sie": "sind verloren"},
+      "preterite": {"ich": "war verloren", "du": "warst verloren", "er/sie/es": "war verloren", "wir": "waren verloren", "ihr": "wart verloren", "sie/Sie": "waren verloren"},
+      "perfect": "ist verloren gewesen",
+      "infinitive": "verloren sein"
+    },
+    "examples": [
+      "Ohne die Unterstützung internationaler Partner wäre das Projekt verloren gewesen. = Sin el apoyo de socios internacionales, el proyecto habría estado perdido.",
+      "Die Wettbewerbsfähigkeit der traditionellen Industrien ist in vielen Regionen bereits verloren. = La competitividad de las industrias tradicionales ya está perdida en muchas regiones."
+    ],
+    "type": "verb",
+    "verbType": "compound-auxiliary"
+  },
+  "zwingt": {
+    "word": "zwingen",
+    "translation": "obligar, forzar",
+    "sentence": "Dies zwingt uns in einen endlosen Kreislauf der Extraktion.",
+    "sentenceTranslation": "Esto nos obliga a un ciclo infinito de extracción.",
+    "explanation": "Verbo irregular. 'Zwingen' = obligar a alguien a hacer algo. 'Zu etwas zwingen' o 'in etwas zwingen'.",
+    "conjugation": {
+      "present": {"ich": "zwinge", "du": "zwingst", "er/sie/es": "zwingt", "wir": "zwingen", "ihr": "zwingt", "sie/Sie": "zwingen"},
+      "preterite": {"ich": "zwang", "du": "zwangst", "er/sie/es": "zwang", "wir": "zwangen", "ihr": "zwangt", "sie/Sie": "zwangen"},
+      "perfect": "hat gezwungen",
+      "infinitive": "zwingen"
+    },
+    "examples": [
+      "Die wirtschaftliche Rezession zwingt viele Unternehmen zu drastischen Sparmaßnahmen. = La recesión económica obliga a muchas empresas a medidas de ahorro drásticas.",
+      "Niemand kann einen Angeklagten dazu zwingen, gegen sich selbst auszusagen. = Nadie puede obligar a un acusado a declarar contra sí mismo."
+    ],
+    "synonyms": ["nötigen (obligar)", "zwingen (forzar)"],
+    "type": "verb"
+  },
+  "endlosen": {
+    "word": "endlos",
+    "translation": "interminable, infinito, sin fin",
+    "sentence": "Dies zwingt uns in einen endlosen Kreislauf der Extraktion.",
+    "sentenceTranslation": "Esto nos obliga a un ciclo infinito de extracción.",
+    "explanation": "Adjetivo. 'Endlos' = sin fin, que no termina. Aquí en acusativo masculino: 'einen endlosen Kreislauf'.",
+    "baseForm": "endlos",
+    "examples": [
+      "Die bürokratischen Verfahren erschienen den Antragstellern endlos und zermürbend. = Los procedimientos burocráticos les parecían a los solicitantes interminables y agotadores.",
+      "In den endlosen Weiten der sibirischen Tundra gibt es kaum menschliche Siedlungen. = En las infinitas extensiones de la tundra siberiana apenas hay asentamientos humanos."
+    ],
+    "synonyms": ["unendlich (infinito)", "grenzenlos (ilimitado)"],
+    "type": "adjektiv"
+  },
+  "lieferketten": {
+    "word": "Lieferkette",
+    "translation": "cadena de suministro",
+    "sentence": "Von oft instabilen Lieferketten abhängig macht.",
+    "sentenceTranslation": "Nos hace dependientes de cadenas de suministro a menudo inestables.",
+    "explanation": "Sustantivo femenino compuesto. Liefer- (entrega) + Kette (cadena). Cadena de suministro desde productor hasta consumidor.",
+    "examples": [
+      "Die Pandemie hat die Anfälligkeit globaler Lieferketten für Störungen drastisch offengelegt. = La pandemia ha revelado drásticamente la vulnerabilidad de las cadenas de suministro globales ante perturbaciones.",
+      "Viele Automobilhersteller mussten die Produktion einstellen, weil die Lieferketten für Halbleiter unterbrochen waren. = Muchos fabricantes de automóviles tuvieron que detener la producción porque las cadenas de suministro de semiconductores estaban interrumpidas."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "im-gegensatz-dazu": {
+    "word": "im Gegensatz dazu",
+    "translation": "en contraste con ello, por el contrario",
+    "sentence": "Im Gegensatz dazu basieren Technologien wie Photovoltaik auf dem Prinzip der Langlebigkeit.",
+    "sentenceTranslation": "En contraste con ello, tecnologías como la fotovoltaica se basan en el principio de la durabilidad.",
+    "explanation": "Expresión fija para introducir un contraste. 'Im Gegensatz zu X' = en contraste con X; 'dazu' = con ello.",
+    "examples": [
+      "Die Wirtschaft schrumpfte im letzten Quartal. Im Gegensatz dazu verzeichnete der Technologiesektor ein Wachstum von 15%. = La economía se contrajo en el último trimestre. En contraste, el sector tecnológico registró un crecimiento del 15%.",
+      "Im Gegensatz zu den optimistischen Prognosen der Regierung warnen Ökonomen vor einer anhaltenden Rezession. = A diferencia de los pronósticos optimistas del gobierno, los economistas advierten de una recesión prolongada."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "im", "type": "präposition"},
+      {"word": "Gegensatz", "type": "nomen"},
+      {"word": "dazu", "type": "adverb"}
+    ]
+  },
+  "langlebigkeit": {
+    "word": "Langlebigkeit",
+    "translation": "durabilidad, longevidad",
+    "sentence": "Basieren auf dem Prinzip der Langlebigkeit.",
+    "sentenceTranslation": "Se basan en el principio de la durabilidad.",
+    "explanation": "Sustantivo femenino. Lang- (largo) + Lebigkeit (de leben, vivir). Capacidad de durar mucho tiempo.",
+    "examples": [
+      "Die außergewöhnliche Langlebigkeit japanischer Konsumgüter hat dem Land einen Ruf für Qualität verschafft. = La extraordinaria durabilidad de los bienes de consumo japoneses le ha dado al país una reputación de calidad.",
+      "Studien belegen einen Zusammenhang zwischen mediterraner Ernährung und erhöhter Langlebigkeit. = Los estudios demuestran una relación entre la dieta mediterránea y una mayor longevidad."
+    ],
+    "synonyms": ["Haltbarkeit (durabilidad)", "Langlebigkeit (longevidad)"],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "anfaenglichen": {
+    "word": "anfänglich",
+    "translation": "inicial, al principio",
+    "sentence": "Zwar sind die anfänglichen Investitionskosten (CapEx) höher.",
+    "sentenceTranslation": "Aunque los costes de inversión iniciales son mayores.",
+    "explanation": "Adjetivo. 'Anfänglich' = que ocurre al principio, inicial. Aquí en nominativo plural: 'die anfänglichen'.",
+    "baseForm": "anfänglich",
+    "examples": [
+      "Die anfängliche Skepsis der Investoren wich allmählich einer vorsichtigen Zuversicht. = El escepticismo inicial de los inversores dio paso gradualmente a una confianza cautelosa.",
+      "Anfänglich wurde die Bedeutung der Digitalisierung für den Mittelstand unterschätzt. = Al principio se subestimó la importancia de la digitalización para las medianas empresas."
+    ],
+    "synonyms": ["initial (inicial)", "zunächst (en un principio)"],
+    "type": "adjektiv"
+  },
+  "investitionskosten": {
+    "word": "Investitionskosten",
+    "translation": "costes de inversión, CapEx",
+    "sentence": "Die anfänglichen Investitionskosten (CapEx) höher.",
+    "sentenceTranslation": "Los costes de inversión iniciales son mayores.",
+    "explanation": "Sustantivo plural (o singular). Kosten de una inversión inicial: compra de equipos, instalación, etc.",
+    "examples": [
+      "Die hohen Investitionskosten für den Ausbau der Infrastruktur belasten den Staatshaushalt erheblich. = Los altos costes de inversión para la ampliación de la infraestructura gravan considerablemente el presupuesto estatal.",
+      "Durch staatliche Förderung konnten die Investitionskosten für die Modernisierung der Produktionsanlagen um 30% gesenkt werden. = Mediante subvenciones estatales, los costes de inversión para la modernización de las instalaciones de producción pudieron reducirse en un 30%."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "energiequelle": {
+    "word": "Energiequelle",
+    "translation": "fuente de energía",
+    "sentence": "Doch die Energiequelle selbst – Sonne oder Wind – ist kostenlos.",
+    "sentenceTranslation": "Pero la fuente de energía en sí – sol o viento – es gratuita.",
+    "explanation": "Sustantivo femenino compuesto. Origen del que se obtiene energía (solar, eólica, fósil, etc.).",
+    "examples": [
+      "Geothermie gilt als unterschätzte Energiequelle mit großem Potenzial für die Wärmeversorgung. = La geotermia se considera una fuente de energía subestimada con gran potencial para el suministro de calor.",
+      "Die Diversifizierung der Energiequellen erhöht die Versorgungssicherheit eines Landes. = La diversificación de las fuentes de energía aumenta la seguridad del suministro de un país."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "spiegelt-wider": {
+    "word": "widerspiegeln",
+    "translation": "reflejar, plasmar",
+    "sentence": "Dies spiegelt eine ökonomische Weisheit wider.",
+    "sentenceTranslation": "Esto refleja una sabiduría económica.",
+    "explanation": "Verbo separable. 'Widerspiegeln' = reflejar, representar algo de forma fiel.",
+    "parts": ["spiegelt", "wider"],
+    "conjugation": {
+      "present": {"ich": "spiegle wider", "du": "spiegelst wider", "er/sie/es": "spiegelt wider", "wir": "spiegeln wider", "ihr": "spiegelt wider", "sie/Sie": "spiegeln wider"},
+      "preterite": {"ich": "spiegelte wider", "du": "spiegeltest wider", "er/sie/es": "spiegelte wider", "wir": "spiegelten wider", "ihr": "spiegeltet wider", "sie/Sie": "spiegelten wider"},
+      "perfect": "hat widergespiegelt",
+      "infinitive": "widerspiegeln"
+    },
+    "examples": [
+      "Die Aktienkurse spiegeln nicht immer die reale wirtschaftliche Lage eines Unternehmens wider. = Las cotizaciones bursátiles no siempre reflejan la situación económica real de una empresa.",
+      "In seiner Literatur spiegelt sich die gesellschaftliche Zerrissenheit der Nachkriegszeit wider. = En su literatura se refleja la división social de la posguerra."
+    ],
+    "synonyms": ["reflektieren (reflejar)", "zeigen (mostrar)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "weisheit": {
+    "word": "Weisheit",
+    "translation": "sabiduría",
+    "sentence": "Dies spiegelt eine ökonomische Weisheit wider.",
+    "sentenceTranslation": "Esto refleja una sabiduría económica.",
+    "explanation": "Sustantivo femenino. Conocimiento profundo y juicio acertado. También: dicho o proverbio.",
+    "examples": [
+      "Die Weisheit der indigenen Völker im Umgang mit der Natur wird zunehmend von der Wissenschaft anerkannt. = La sabiduría de los pueblos indígenas en el trato con la naturaleza es cada vez más reconocida por la ciencia.",
+      "Eine alte chinesische Weisheit besagt, dass der beste Zeitpunkt, einen Baum zu pflanzen, vor zwanzig Jahren war. = Un antiguo dicho chino dice que el mejor momento para plantar un árbol fue hace veinte años."
+    ],
+    "synonyms": ["Klugheit (sagacidad)", "Einsicht (perspicacia)"],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "besagt": {
+    "word": "besagen",
+    "translation": "decir, afirmar, establecer",
+    "sentence": "Dies spiegelt eine ökonomische Weisheit wider, die besagt, dass es sinnvoller ist, einmal in Qualität und Haltbarkeit zu investieren.",
+    "sentenceTranslation": "Esto refleja una sabiduría económica que dice que es más sensato invertir una vez en calidad y durabilidad.",
+    "explanation": "Verbo regular. 'Besagen' = decir, afirmar (en contexto formal o de reglas, leyes, datos).",
+    "conjugation": {
+      "present": {"ich": "besage", "du": "besagst", "er/sie/es": "besagt", "wir": "besagen", "ihr": "besagt", "sie/Sie": "besagen"},
+      "preterite": {"ich": "besagte", "du": "besagtest", "er/sie/es": "besagte", "wir": "besagten", "ihr": "besagtet", "sie/Sie": "besagten"},
+      "perfect": "hat besagt",
+      "infinitive": "besagen"
+    },
+    "examples": [
+      "Der Vertrag besagt ausdrücklich, dass beide Parteien zur Geheimhaltung verpflichtet sind. = El contrato establece expresamente que ambas partes están obligadas a la confidencialidad.",
+      "Die neuesten Forschungsergebnisse besagen, dass der Klimawandel schneller voranschreitet als bisher angenommen. = Los últimos resultados de investigación afirman que el cambio climático avanza más rápido de lo que se suponía hasta ahora."
+    ],
+    "synonyms": ["aussagen (afirmar)", "bedeuten (significar)"],
+    "type": "verb"
+  },
+  "haltbarkeit": {
+    "word": "Haltbarkeit",
+    "translation": "durabilidad, resistencia",
+    "sentence": "Einmal in Qualität und Haltbarkeit zu investieren.",
+    "sentenceTranslation": "Invertir una vez en calidad y durabilidad.",
+    "explanation": "Sustantivo femenino. Capacidad de algo de mantenerse en buen estado durante mucho tiempo.",
+    "examples": [
+      "Die Haltbarkeit von Lebensmitteln lässt sich durch moderne Konservierungsmethoden erheblich verlängern. = La durabilidad de los alimentos se puede prolongar considerablemente mediante métodos modernos de conservación.",
+      "Bei der Entwicklung neuer Materialien steht die Haltbarkeit unter extremen Bedingungen im Vordergrund. = En el desarrollo de nuevos materiales, la resistencia en condiciones extremas está en primer plano."
+    ],
+    "synonyms": ["Langlebigkeit (longevidad)", "Beständigkeit (estabilidad)"],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "langfristig": {
+    "word": "langfristig",
+    "translation": "a largo plazo",
+    "sentence": "Um langfristig Kosten zu sparen.",
+    "sentenceTranslation": "Para ahorrar costes a largo plazo.",
+    "explanation": "Adverbio/adjetivo. 'Langfristig' = con perspectiva de largo plazo, sostenido en el tiempo.",
+    "baseForm": "langfristig",
+    "examples": [
+      "Langfristig orientierte Investitionsstrategien erweisen sich in volatilen Märkten als stabiler. = Las estrategias de inversión orientadas a largo plazo resultan más estables en mercados volátiles.",
+      "Die Regierung plant eine langfristige Umstrukturierung des Bildungssystems über die nächsten zwei Jahrzehnte. = El gobierno planea una reestructuración a largo plazo del sistema educativo durante las próximas dos décadas."
+    ],
+    "synonyms": ["dauerhaft (duradero)", "nachhaltig (sostenible)"],
+    "type": "adverb"
+  },
+  "fuehren-an": {
+    "word": "anführen",
+    "translation": "alegar, citar como argumento",
+    "sentence": "Kritiker führen oft an, dass erneuerbare Energien zu viel Fläche verbrauchen würden.",
+    "sentenceTranslation": "Los críticos suelen alegar que las energías renovables consumirían demasiado espacio.",
+    "explanation": "Verbo separable. 'Anführen' = alegar, citar como argumento o prueba.",
+    "parts": ["führen", "an"],
+    "conjugation": {
+      "present": {"ich": "führe an", "du": "führst an", "er/sie/es": "führt an", "wir": "führen an", "ihr": "führt an", "sie/Sie": "führen an"},
+      "preterite": {"ich": "führte an", "du": "führtest an", "er/sie/es": "führte an", "wir": "führten an", "ihr": "führtet an", "sie/Sie": "führten an"},
+      "perfect": "hat angeführt",
+      "infinitive": "anführen"
+    },
+    "examples": [
+      "Die Verteidigung führte zahlreiche Präzedenzfälle an, um die Unschuld ihres Mandanten zu belegen. = La defensa alegó numerosos precedentes para demostrar la inocencia de su cliente.",
+      "Als Hauptargument gegen die Reform wurde die mangelnde Finanzierbarkeit angeführt. = Como argumento principal contra la reforma se citó la falta de financiación."
+    ],
+    "synonyms": ["vorbringen (alegar)", "geltend machen (hacer valer)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "verbrauchen": {
+    "word": "verbrauchen",
+    "translation": "consumir, gastar",
+    "sentence": "Dass erneuerbare Energien zu viel Fläche verbrauchen würden.",
+    "sentenceTranslation": "Que las energías renovables consumirían demasiado espacio.",
+    "explanation": "Verbo regular. 'Verbrauchen' = consumir, usar hasta agotar (recursos, espacio, tiempo).",
+    "conjugation": {
+      "present": {"ich": "verbrauche", "du": "verbrauchst", "er/sie/es": "verbraucht", "wir": "verbrauchen", "ihr": "verbraucht", "sie/Sie": "verbrauchen"},
+      "preterite": {"ich": "verbrauchte", "du": "verbrauchtest", "er/sie/es": "verbrauchte", "wir": "verbrauchten", "ihr": "verbrauchtet", "sie/Sie": "verbrauchten"},
+      "perfect": "hat verbraucht",
+      "infinitive": "verbrauchen"
+    },
+    "examples": [
+      "Rechenzentren verbrauchen mittlerweile mehr Strom als ganze Industriezweige. = Los centros de datos consumen ahora más electricidad que sectores industriales enteros.",
+      "Die Produktion eines einzigen Smartphones verbraucht erstaunlich viele seltene Erden und Wasser. = La producción de un solo smartphone consume una cantidad sorprendente de tierras raras y agua."
+    ],
+    "synonyms": ["konsumieren (consumir)", "nutzen (usar)"],
+    "type": "verb"
+  },
+  "haelt-stand": {
+    "word": "standhalten",
+    "translation": "resistir, aguantar, sostenerse",
+    "sentence": "Dieses Argument hält jedoch einer genaueren Prüfung nicht stand.",
+    "sentenceTranslation": "Sin embargo, este argumento no resiste un examen más detallado.",
+    "explanation": "Verbo separable. 'Standhalten' = resistir, aguantar. 'Einer Prüfung standhalten' = resistir un examen, sostenerse ante la crítica.",
+    "parts": ["hält", "stand"],
+    "conjugation": {
+      "present": {"ich": "halte stand", "du": "hältst stand", "er/sie/es": "hält stand", "wir": "halten stand", "ihr": "haltet stand", "sie/Sie": "halten stand"},
+      "preterite": {"ich": "hielt stand", "du": "hieltest stand", "er/sie/es": "hielt stand", "wir": "hielten stand", "ihr": "hieltet stand", "sie/Sie": "hielten stand"},
+      "perfect": "hat standgehalten",
+      "infinitive": "standhalten"
+    },
+    "examples": [
+      "Die Hypothese hielt der empirischen Überprüfung durch unabhängige Forscher nicht stand. = La hipótesis no resistió la verificación empírica por parte de investigadores independientes.",
+      "Das historische Bauwerk hat allen Naturkatastrophen der letzten Jahrhunderte standgehalten. = La construcción histórica ha resistido todas las catástrofes naturales de los últimos siglos."
+    ],
+    "synonyms": ["widerstehen (resistir)", "bestehen (superar)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "genaueren": {
+    "word": "genau",
+    "translation": "exacto, detallado, más preciso",
+    "sentence": "Hält einer genaueren Prüfung nicht stand.",
+    "sentenceTranslation": "No resiste un examen más detallado.",
+    "explanation": "Adjetivo en comparativo, dativo femenino: 'einer genaueren Prüfung' = a un examen más detallado/preciso.",
+    "baseForm": "genau",
+    "examples": [
+      "Eine genauere Betrachtung der Finanzdaten offenbarte erhebliche Unregelmäßigkeiten. = Un examen más detallado de los datos financieros reveló irregularidades considerables.",
+      "Für eine genauere Diagnose sind weitere bildgebende Verfahren erforderlich. = Para un diagnóstico más preciso se requieren procedimientos de imagen adicionales."
+    ],
+    "synonyms": ["detailliert (detallado)", "präzise (preciso)"],
+    "type": "adjektiv"
+  },
+  "insbesondere": {
+    "word": "insbesondere",
+    "translation": "en particular, especialmente",
+    "sentence": "Insbesondere wenn man es mit der ineffizienten Nutzung vergleicht.",
+    "sentenceTranslation": "Especialmente cuando se compara con el uso ineficiente.",
+    "explanation": "Adverbio compuesto. Destaca un caso o aspecto específico dentro de un conjunto más amplio.",
+    "examples": [
+      "Die Maßnahmen betreffen alle Bürger, insbesondere jedoch die einkommensschwachen Haushalte. = Las medidas afectan a todos los ciudadanos, pero en particular a los hogares de bajos ingresos.",
+      "Insbesondere in den Bereichen Künstliche Intelligenz und Biotechnologie sind erhebliche Fortschritte zu verzeichnen. = Especialmente en los ámbitos de la inteligencia artificial y la biotecnología se registran avances considerables."
+    ],
+    "synonyms": ["besonders (especialmente)", "vor allem (sobre todo)"],
+    "type": "adverb"
+  },
+  "ineffizienten": {
+    "word": "ineffizient",
+    "translation": "ineficiente",
+    "sentence": "Mit der ineffizienten Nutzung von Agrarflächen für Biokraftstoffe.",
+    "sentenceTranslation": "Con el uso ineficiente de superficies agrícolas para biocombustibles.",
+    "explanation": "Adjetivo. 'Ineffizient' = que no aprovecha bien los recursos, que desperdicia.",
+    "baseForm": "ineffizient",
+    "examples": [
+      "Die ineffiziente Verwaltungsstruktur führt zu erheblichen Verzögerungen bei der Bearbeitung von Anträgen. = La estructura administrativa ineficiente conduce a retrasos considerables en el procesamiento de solicitudes.",
+      "Viele Altbauten weisen eine ineffiziente Wärmedämmung auf, was zu hohen Heizkosten führt. = Muchos edificios antiguos presentan un aislamiento térmico ineficiente, lo que conduce a altos costes de calefacción."
+    ],
+    "synonyms": ["unwirtschaftlich (antieconómico)", "verschwenderisch (despilfarrador)"],
+    "type": "adjektiv"
+  },
+  "agrarflaechen": {
+    "word": "Agrarfläche",
+    "translation": "superficie agrícola, terreno agrícola",
+    "sentence": "Mit der ineffizienten Nutzung von Agrarflächen für Biokraftstoffe.",
+    "sentenceTranslation": "Con el uso ineficiente de superficies agrícolas para biocombustibles.",
+    "explanation": "Sustantivo femenino. Terreno dedicado a la agricultura.",
+    "examples": [
+      "Der Verlust von Agrarflächen durch Versiegelung und Urbanisierung gefährdet die Ernährungssicherheit. = La pérdida de superficies agrícolas por sellado y urbanización pone en peligro la seguridad alimentaria.",
+      "In vielen Entwicklungsländern werden Agrarflächen zunehmend von internationalen Konzernen aufgekauft. = En muchos países en desarrollo, las superficies agrícolas son compradas cada vez más por corporaciones internacionales."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "biokraftstoffe": {
+    "word": "Biokraftstoff",
+    "translation": "biocombustible",
+    "sentence": "Agrarflächen für Biokraftstoffe vergleicht.",
+    "sentenceTranslation": "Superficies agrícolas para biocombustibles.",
+    "explanation": "Sustantivo masculino. Combustible obtenido de materia orgánica (maíz, caña, etc.).",
+    "examples": [
+      "Die Förderung von Biokraftstoffen der ersten Generation wird zunehmend kritisch gesehen, da sie mit der Nahrungsmittelproduktion konkurrieren. = El fomento de biocombustibles de primera generación se ve cada vez más críticamente, ya que compiten con la producción de alimentos.",
+      "Biokraftstoffe aus Algen gelten als vielversprechende Alternative, da sie keine Ackerflächen beanspruchen. = Los biocombustibles de algas se consideran una alternativa prometedora, ya que no requieren tierras de cultivo."
+    ],
+    "type": "nomen",
+    "gender": "der (masculino)"
+  },
+  "vergleicht": {
+    "word": "vergleichen",
+    "translation": "comparar",
+    "sentence": "Wenn man es mit der ineffizienten Nutzung von Agrarflächen für Biokraftstoffe vergleicht.",
+    "sentenceTranslation": "Cuando se compara con el uso ineficiente de superficies agrícolas para biocombustibles.",
+    "explanation": "Verbo irregular. 'Vergleichen' = comparar. 'Etwas mit etwas vergleichen'.",
+    "conjugation": {
+      "present": {"ich": "vergleiche", "du": "vergleichst", "er/sie/es": "vergleicht", "wir": "vergleichen", "ihr": "vergleicht", "sie/Sie": "vergleichen"},
+      "preterite": {"ich": "verglich", "du": "verglichst", "er/sie/es": "verglich", "wir": "verglichen", "ihr": "verglicht", "sie/Sie": "verglichen"},
+      "perfect": "hat verglichen",
+      "infinitive": "vergleichen"
+    },
+    "examples": [
+      "Wenn man die Lebenserwartung verschiedener Länder vergleicht, zeigen sich erhebliche Unterschiede. = Cuando se compara la esperanza de vida de diferentes países, se muestran diferencias considerables.",
+      "Die Studie vergleicht die Effizienz verschiedener Bildungssysteme anhand standardisierter Tests. = El estudio compara la eficiencia de diferentes sistemas educativos mediante pruebas estandarizadas."
+    ],
+    "synonyms": ["gegenüberstellen (contrastar)", "abwägen (sopesar)"],
+    "type": "verb"
+  },
+  "riesige": {
+    "word": "riesig",
+    "translation": "enorme, gigantesco",
+    "sentence": "In den USA werden riesige Flächen für den Anbau von Mais genutzt.",
+    "sentenceTranslation": "En EE.UU. se utilizan enormes superficies para el cultivo de maíz.",
+    "explanation": "Adjetivo. 'Riesig' = muy grande, enorme. Aquí en nominativo plural: 'riesige Flächen'.",
+    "baseForm": "riesig",
+    "examples": [
+      "Die Abholzung des Amazonas-Regenwaldes hat riesige ökologische Auswirkungen auf das globale Klima. = La deforestación de la selva amazónica tiene enormes repercusiones ecológicas en el clima global.",
+      "Zwischen den Prognosen und der tatsächlichen Entwicklung klafften riesige Diskrepanzen. = Entre los pronósticos y el desarrollo real había enormes discrepancias."
+    ],
+    "synonyms": ["enorm (enorme)", "gigantisch (gigantesco)"],
+    "type": "adjektiv"
+  },
+  "anbau": {
+    "word": "Anbau",
+    "translation": "cultivo, cultivo de",
+    "sentence": "Riesige Flächen für den Anbau von Mais genutzt.",
+    "sentenceTranslation": "Enormes superficies para el cultivo de maíz.",
+    "explanation": "Sustantivo masculino. Cultivo de plantas; también extensión de un edificio.",
+    "examples": [
+      "Der Anbau von Monokulturen führt zu einer Verarmung der Böden und erhöhter Anfälligkeit für Schädlinge. = El cultivo de monocultivos conduce a un empobrecimiento de los suelos y mayor susceptibilidad a las plagas.",
+      "In Gewächshäusern ist der ganzjährige Anbau von Gemüse unabhängig von klimatischen Bedingungen möglich. = En invernaderos es posible el cultivo de verduras durante todo el año independientemente de las condiciones climáticas."
+    ],
+    "type": "nomen",
+    "gender": "der (masculino)"
+  },
+  "kraftstoffe": {
+    "word": "Kraftstoff",
+    "translation": "combustible, carburante",
+    "sentence": "Um daraus Ethanol für Kraftstoffe zu gewinnen.",
+    "sentenceTranslation": "Para obtener de ello etanol para combustibles.",
+    "explanation": "Sustantivo masculino. Sustancia que se quema para producir energía (gasolina, diesel, etanol, etc.).",
+    "examples": [
+      "Synthetische Kraftstoffe könnten eine Brückentechnologie für die Dekarbonisierung des Flugverkehrs darstellen. = Los combustibles sintéticos podrían representar una tecnología puente para la descarbonización del tráfico aéreo.",
+      "Die Besteuerung fossiler Kraftstoffe soll Anreize für den Umstieg auf alternative Antriebe schaffen. = La imposición de combustibles fósiles debe crear incentivos para el cambio a propulsiones alternativas."
+    ],
+    "type": "nomen",
+    "gender": "der (masculino)"
+  },
+  "gewinnen": {
+    "word": "gewinnen",
+    "translation": "obtener, extraer, ganar",
+    "sentence": "Um daraus Ethanol für Kraftstoffe zu gewinnen.",
+    "sentenceTranslation": "Para obtener de ello etanol para combustibles.",
+    "explanation": "Verbo irregular. Aquí: obtener, extraer (una sustancia de algo). También: ganar (un premio, una competición).",
+    "conjugation": {
+      "present": {"ich": "gewinne", "du": "gewinnst", "er/sie/es": "gewinnt", "wir": "gewinnen", "ihr": "gewinnt", "sie/Sie": "gewinnen"},
+      "preterite": {"ich": "gewann", "du": "gewannst", "er/sie/es": "gewann", "wir": "gewannen", "ihr": "gewannet", "sie/Sie": "gewannen"},
+      "perfect": "hat gewonnen",
+      "infinitive": "gewinnen"
+    },
+    "examples": [
+      "Aus Meerwasser lässt sich durch Entsalzungsanlagen Trinkwasser gewinnen. = Del agua de mar se puede obtener agua potable mediante plantas desalinizadoras.",
+      "Die Partei konnte bei den Wahlen erheblich an Stimmen gewinnen und wurde zweitstärkste Kraft. = El partido pudo ganar considerablemente votos en las elecciones y se convirtió en la segunda fuerza."
+    ],
+    "synonyms": ["extrahieren (extraer)", "erzeugen (producir)"],
+    "type": "verb"
+  },
+  "gedankenexperiment": {
+    "word": "Gedankenexperiment",
+    "translation": "experimento mental, experimento de pensamiento",
+    "sentence": "Ein Gedankenexperiment zeigt die Absurdität: Würde man diese Flächen stattdessen für Solaranlagen nutzen.",
+    "sentenceTranslation": "Un experimento mental muestra el absurdo: si se utilizaran estas superficies para instalaciones solares.",
+    "explanation": "Sustantivo neutro. Experimento hipotético realizado solo con el pensamiento, sin ejecutarlo en la realidad. Usado en filosofía y ciencia.",
+    "examples": [
+      "Schrödingers berühmtes Gedankenexperiment mit der Katze veranschaulicht die Paradoxien der Quantenmechanik. = El famoso experimento mental de Schrödinger con el gato ilustra las paradojas de la mecánica cuántica.",
+      "Durch ein Gedankenexperiment lässt sich nachvollziehen, welche ethischen Dilemmata beim autonomen Fahren entstehen könnten. = Mediante un experimento mental se puede comprender qué dilemas éticos podrían surgir en la conducción autónoma."
+    ],
+    "type": "nomen",
+    "gender": "das (neutro)"
+  },
+  "absurditaet": {
+    "word": "Absurdität",
+    "translation": "absurdo, lo absurdo",
+    "sentence": "Ein Gedankenexperiment zeigt die Absurdität: Würde man diese Flächen stattdessen für Solaranlagen nutzen.",
+    "sentenceTranslation": "Un experimento mental muestra el absurdo: si se utilizaran estas superficies para instalaciones solares.",
+    "explanation": "Sustantivo femenino. Cualidad de ser absurdo; algo que carece de sentido o lógica.",
+    "examples": [
+      "Die Absurdität der bürokratischen Vorschriften wurde erst deutlich, als man versuchte, sie in der Praxis anzuwenden. = El absurdo de las normas burocráticas solo se hizo evidente cuando se intentó aplicarlas en la práctica.",
+      "Kafka thematisiert in seinen Werken die Absurdität menschlicher Existenz in einer undurchschaubaren Welt. = Kafka tematiza en sus obras el absurdo de la existencia humana en un mundo incomprensible."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "stattdessen": {
+    "word": "stattdessen",
+    "translation": "en su lugar, en vez de eso",
+    "sentence": "Würde man diese Flächen stattdessen für Solaranlagen nutzen.",
+    "sentenceTranslation": "Si se utilizaran estas superficies en su lugar para instalaciones solares.",
+    "explanation": "Adverbio. Indica sustitución: en lugar de lo mencionado antes, se haría otra cosa.",
+    "examples": [
+      "Die Regierung verzichtete auf weitere Steuererhöhungen und beschloss stattdessen, die Ausgaben zu kürzen. = El gobierno renunció a más aumentos de impuestos y decidió en su lugar recortar los gastos.",
+      "Anstatt in fossile Energieträger zu investieren, sollten wir stattdessen erneuerbare Technologien fördern. = En lugar de invertir en combustibles fósiles, deberíamos fomentar en su lugar tecnologías renovables."
+    ],
+    "synonyms": ["anstatt dessen (en lugar de eso)", "dafür (para eso)"],
+    "type": "adverb"
+  },
+  "solaranlagen": {
+    "word": "Solaranlage",
+    "translation": "instalación solar, planta solar",
+    "sentence": "Würde man diese Flächen stattdessen für Solaranlagen nutzen.",
+    "sentenceTranslation": "Si se utilizaran estas superficies para instalaciones solares.",
+    "explanation": "Sustantivo femenino. Instalación que convierte la energía solar en electricidad (paneles fotovoltaicos).",
+    "examples": [
+      "Die Gemeinde plant den Bau einer großflächigen Solaranlage auf stillgelegten Industriebrachen. = El municipio planea la construcción de una instalación solar de gran superficie en terrenos industriales abandonados.",
+      "Durch staatliche Förderungen wird die Installation von Solaranlagen auf Privathäusern zunehmend attraktiver. = Mediante subvenciones estatales, la instalación de plantas solares en viviendas privadas se vuelve cada vez más atractiva."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "vielfaches": {
+    "word": "Vielfaches",
+    "translation": "múltiplo, varias veces",
+    "sentence": "Könnte man ein Vielfaches der Energie erzeugen.",
+    "sentenceTranslation": "Se podría generar un múltiplo de la energía.",
+    "explanation": "Sustantivo neutro. 'Ein Vielfaches von X' = un múltiplo de X, varias veces X.",
+    "examples": [
+      "Die Produktivität moderner Landwirtschaft übertrifft die traditioneller Methoden um ein Vielfaches. = La productividad de la agricultura moderna supera la de los métodos tradicionales en un múltiplo.",
+      "Trotz erheblicher Investitionen erzielten die Unternehmen lediglich einen Bruchteil dessen, was ein Vielfaches an Gewinn hätte sein können. = A pesar de inversiones considerables, las empresas lograron solo una fracción de lo que podría haber sido un múltiplo de beneficio."
+    ],
+    "type": "nomen",
+    "gender": "das (neutro)"
+  },
+  "erzeugen": {
+    "word": "erzeugen",
+    "translation": "generar, producir",
+    "sentence": "Könnte man ein Vielfaches der Energie erzeugen.",
+    "sentenceTranslation": "Se podría generar un múltiplo de la energía.",
+    "explanation": "Verbo regular. Producir, generar (energía, bienes, efectos).",
+    "conjugation": {
+      "present": {"ich": "erzeuge", "du": "erzeugst", "er/sie/es": "erzeugt", "wir": "erzeugen", "ihr": "erzeugt", "sie/Sie": "erzeugen"},
+      "preterite": {"ich": "erzeugte", "du": "erzeugtest", "er/sie/es": "erzeugte", "wir": "erzeugten", "ihr": "erzeuget", "sie/Sie": "erzeugten"},
+      "perfect": "hat erzeugt",
+      "infinitive": "erzeugen"
+    },
+    "examples": [
+      "Die kontroverse Entscheidung erzeugte heftige Debatten in der Öffentlichkeit und führte zu Protesten. = La decisión controvertida generó debates intensos en la opinión pública y condujo a protestas.",
+      "Photovoltaikanlagen erzeugen selbst bei diffusem Licht noch nennenswerte Mengen an elektrischer Energie. = Las instalaciones fotovoltaicas generan cantidades considerables de energía eléctrica incluso con luz difusa."
+    ],
+    "synonyms": ["produzieren (producir)", "generieren (generar)"],
+    "type": "verb"
+  },
+  "genug": {
+    "word": "genug",
+    "translation": "suficiente, bastante",
+    "sentence": "Erzeugen – genug, um theoretisch den gesamten Strombedarf der USA zu decken.",
+    "sentenceTranslation": "Generar – suficiente para cubrir teóricamente toda la demanda eléctrica de EE.UU.",
+    "explanation": "Adverbio/adjetivo invariable. Indica cantidad suficiente. 'Genug, um zu...' = suficiente para...",
+    "examples": [
+      "Die vorhandenen Ressourcen reichen nicht genug aus, um die ambitionierten Klimaziele fristgerecht zu erreichen. = Los recursos disponibles no son suficientes para alcanzar los ambiciosos objetivos climáticos a tiempo.",
+      "Es ist nicht genug, lediglich Absichtserklärungen abzugeben; es bedarf konkreter Maßnahmen. = No es suficiente emitir meras declaraciones de intenciones; se requieren medidas concretas."
+    ],
+    "synonyms": ["ausreichend (suficiente)", "genügend (suficiente)"],
+    "type": "adverb"
+  },
+  "strombedarf": {
+    "word": "Strombedarf",
+    "translation": "demanda eléctrica, necesidad de electricidad",
+    "sentence": "Um theoretisch den gesamten Strombedarf der USA zu decken.",
+    "sentenceTranslation": "Para cubrir teóricamente toda la demanda eléctrica de EE.UU.",
+    "explanation": "Sustantivo masculino compuesto. Cantidad de electricidad que se necesita en un período o zona.",
+    "examples": [
+      "Die Elektrifizierung des Verkehrssektors wird den Strombedarf in den kommenden Jahrzehnten erheblich steigern. = La electrificación del sector del transporte aumentará considerablemente la demanda eléctrica en las próximas décadas.",
+      "Intelligente Netze ermöglichen es, den Strombedarf flexibel an die schwankende Erzeugung aus erneuerbaren Quellen anzupassen. = Las redes inteligentes permiten adaptar flexiblemente la demanda eléctrica a la producción fluctuante de fuentes renovables."
+    ],
+    "type": "nomen",
+    "gender": "der (masculino)"
+  },
+  "decken": {
+    "word": "decken",
+    "translation": "cubrir, satisfacer",
+    "sentence": "Um theoretisch den gesamten Strombedarf der USA zu decken.",
+    "sentenceTranslation": "Para cubrir teóricamente toda la demanda eléctrica de EE.UU.",
+    "explanation": "Verbo regular. 'Den Bedarf decken' = cubrir la demanda, satisfacer las necesidades.",
+    "conjugation": {
+      "present": {"ich": "decke", "du": "deckst", "er/sie/es": "deckt", "wir": "decken", "ihr": "deckt", "sie/Sie": "decken"},
+      "preterite": {"ich": "deckte", "du": "decktest", "er/sie/es": "deckte", "wir": "deckten", "ihr": "decktet", "sie/Sie": "deckten"},
+      "perfect": "hat gedeckt",
+      "infinitive": "decken"
+    },
+    "examples": [
+      "Die heimische Produktion kann lediglich einen Bruchteil des Bedarfs an seltenen Erden decken. = La producción nacional solo puede cubrir una fracción de la demanda de tierras raras.",
+      "Um die Finanzierungslücke zu decken, müssen zusätzliche Investoren gewonnen werden. = Para cubrir la brecha de financiación, deben conseguirse inversores adicionales."
+    ],
+    "synonyms": ["befriedigen (satisfacer)", "abdecken (cubrir)"],
+    "type": "verb"
+  },
+  "in-wahrheit": {
+    "word": "in Wahrheit",
+    "translation": "en realidad, en verdad",
+    "sentence": "Das Flächenproblem ist also in Wahrheit ein Problem der ineffizienten Ressourcennutzung.",
+    "sentenceTranslation": "El problema de superficie es, pues, en realidad un problema del uso ineficiente de recursos.",
+    "explanation": "Expresión fija. Introduce la verdad o la realidad frente a apariencias o malentendidos.",
+    "examples": [
+      "Die Maßnahme wurde als Sparpaket dargestellt, in Wahrheit handelte es sich jedoch um eine Umverteilung zugunsten bestimmter Interessengruppen. = La medida se presentó como paquete de ahorro, en realidad sin embargo se trataba de una redistribución a favor de determinados grupos de interés.",
+      "Viele glauben, die Digitalisierung schaffe Arbeitsplätze, in Wahrheit führt sie zunächst zu erheblichen Verwerfungen auf dem Arbeitsmarkt. = Muchos creen que la digitalización crea puestos de trabajo, en realidad conduce inicialmente a considerables distorsiones en el mercado laboral."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "in", "type": "präposition"},
+      {"word": "Wahrheit", "type": "nomen"}
+    ]
+  },
+  "ineffizienten-ressourcennutzung": {
+    "word": "ineffiziente Ressourcennutzung",
+    "translation": "uso ineficiente de recursos",
+    "sentence": "Ein Problem der ineffizienten Ressourcennutzung.",
+    "sentenceTranslation": "Un problema del uso ineficiente de recursos.",
+    "explanation": "Sustantivo compuesto con adjetivo. Uso de recursos que no aprovecha bien su potencial.",
+    "examples": [
+      "Die ineffiziente Ressourcennutzung in der Bauindustrie verursacht jährlich Millionen Tonnen vermeidbaren Abfalls. = El uso ineficiente de recursos en la industria de la construcción causa anualmente millones de toneladas de residuos evitables.",
+      "Durch Optimierung der Produktionsprozesse lässt sich die ineffiziente Ressourcennutzung erheblich reduzieren. = Mediante la optimización de los procesos de producción se puede reducir considerablemente el uso ineficiente de recursos."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "ein-weiterer-kritikpunkt-betrifft": {
+    "word": "Ein weiterer häufiger Kritikpunkt betrifft",
+    "translation": "Otro punto de crítica frecuente concierne",
+    "sentence": "Ein weiterer häufiger Kritikpunkt betrifft die Materialfrage, insbesondere bei Batterien und Solarmodulen.",
+    "sentenceTranslation": "Otro punto de crítica frecuente concierne la cuestión de los materiales, en particular en baterías y módulos solares.",
+    "explanation": "Fórmula para introducir un nuevo argumento crítico en textos argumentativos.",
+    "examples": [
+      "Ein weiterer häufiger Kritikpunkt betrifft die unzureichende Bürgerbeteiligung bei infrastrukturellen Großprojekten. = Otro punto de crítica frecuente concierne la insuficiente participación ciudadana en grandes proyectos de infraestructura.",
+      "Ein weiterer häufiger Kritikpunkt betrifft die fehlende Langzeitperspektive in der politischen Entscheidungsfindung. = Otro punto de crítica frecuente concierne la falta de perspectiva a largo plazo en la toma de decisiones políticas."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "Ein weiterer", "type": "artikel"},
+      {"word": "häufiger Kritikpunkt", "type": "nomen"},
+      {"word": "betrifft", "type": "verb"}
+    ]
+  },
+  "materialfrage": {
+    "word": "Materialfrage",
+    "translation": "cuestión de los materiales, problema de materiales",
+    "sentence": "Ein weiterer häufiger Kritikpunkt betrifft die Materialfrage, insbesondere bei Batterien und Solarmodulen.",
+    "sentenceTranslation": "Otro punto de crítica frecuente concierne la cuestión de los materiales, en particular en baterías y módulos solares.",
+    "explanation": "Sustantivo femenino. Pregunta o problema relacionado con los materiales utilizados.",
+    "examples": [
+      "Die Materialfrage stellt sich besonders bei der Entwicklung nachhaltiger Verpackungslösungen für die Lebensmittelindustrie. = La cuestión de los materiales se plantea especialmente en el desarrollo de soluciones de embalaje sostenibles para la industria alimentaria.",
+      "In der Architektur gewinnt die Materialfrage zunehmend an Bedeutung, da Bauherren verstärkt auf ökologische Aspekte achten. = En la arquitectura, la cuestión de los materiales gana cada vez más importancia, ya que los promotores prestan mayor atención a aspectos ecológicos."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "bei": {
+    "word": "bei",
+    "translation": "en (el caso de), con, en",
+    "sentence": "Insbesondere bei Batterien und Solarmodulen.",
+    "sentenceTranslation": "En particular en baterías y módulos solares.",
+    "explanation": "Preposición con dativo. 'Bei X' = en el caso de X, en lo que respecta a X.",
+    "examples": [
+      "Bei komplexen Verhandlungen empfiehlt es sich, externe Berater hinzuzuziehen. = En negociaciones complejas se recomienda consultar a asesores externos.",
+      "Bei der Interpretation statistischer Daten ist äußerste Vorsicht geboten, um Fehlschlüsse zu vermeiden. = En la interpretación de datos estadísticos se requiere máxima precaución para evitar conclusiones erróneas."
+    ],
+    "synonyms": ["im Falle von (en el caso de)", "hinsichtlich (respecto a)"],
+    "type": "präposition"
+  },
+  "solarmodulen": {
+    "word": "Solarmodul",
+    "translation": "módulo solar, panel solar",
+    "sentence": "Insbesondere bei Batterien und Solarmodulen.",
+    "sentenceTranslation": "En particular en baterías y módulos solares.",
+    "explanation": "Sustantivo neutro. Panel que convierte la luz solar en electricidad.",
+    "examples": [
+      "Die Effizienz moderner Solarmodule hat sich in den letzten zwei Jahrzehnten nahezu verdoppelt. = La eficiencia de los módulos solares modernos se ha duplicado casi en las últimas dos décadas.",
+      "Bifaziale Solarmodule können Sonnenlicht von beiden Seiten aufnehmen und dadurch den Ertrag um bis zu 30 Prozent steigern. = Los módulos solares bifaciales pueden captar luz solar por ambos lados y así aumentar el rendimiento hasta un 30 por ciento."
+    ],
+    "type": "nomen",
+    "gender": "das (neutro)"
+  },
+  "hier-wird-oft-gefragt": {
+    "word": "Hier wird oft gefragt",
+    "translation": "Aquí se pregunta a menudo",
+    "sentence": "Hier wird oft gefragt: Aber was ist mit den Batterien?",
+    "sentenceTranslation": "Aquí se pregunta a menudo: ¿Pero qué pasa con las baterías?",
+    "explanation": "Construcción pasiva impersonal para introducir una pregunta recurrente en el debate.",
+    "examples": [
+      "Hier wird oft gefragt, inwiefern die vorgeschlagenen Maßnahmen mit den verfassungsrechtlichen Grundsätzen vereinbar sind. = Aquí se pregunta a menudo en qué medida las medidas propuestas son compatibles con los principios constitucionales.",
+      "Hier wird oft gefragt, ob die Vorteile der Technologie die damit verbundenen Risiken rechtfertigen. = Aquí se pregunta a menudo si las ventajas de la tecnología justifican los riesgos asociados."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "Hier", "type": "adverb"},
+      {"word": "wird", "type": "verb"},
+      {"word": "oft", "type": "adverb"},
+      {"word": "gefragt", "type": "verb"}
+    ]
+  },
+  "aber-was-ist-mit": {
+    "word": "Aber was ist mit",
+    "translation": "Pero ¿qué pasa con?, ¿y qué hay de?",
+    "sentence": "Aber was ist mit den Batterien?",
+    "sentenceTranslation": "¿Pero qué pasa con las baterías?",
+    "explanation": "Fórmula para plantear una objeción o pregunta que parece haberse pasado por alto.",
+    "examples": [
+      "Die Strategie klingt überzeugend, aber was ist mit den kleinen und mittleren Unternehmen, die sich diese Investitionen nicht leisten können? = La estrategia suena convincente, pero ¿qué pasa con las pequeñas y medianas empresas que no pueden permitirse estas inversiones?",
+      "Alle reden von Digitalisierung, aber was ist mit denjenigen, die keinen Zugang zu moderner Technologie haben? = Todos hablan de digitalización, pero ¿y qué hay de aquellos que no tienen acceso a tecnología moderna?"
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "Aber", "type": "konjunktion"},
+      {"word": "was", "type": "pronomen"},
+      {"word": "ist", "type": "verb"},
+      {"word": "mit", "type": "präposition"}
+    ]
+  },
+  "dabei": {
+    "word": "dabei",
+    "translation": "con ello, al hacerlo, sin embargo",
+    "sentence": "Dabei wird ein entscheidender Unterschied übersehen.",
+    "sentenceTranslation": "Con ello se pasa por alto una diferencia decisiva.",
+    "explanation": "Adverbio. Puede significar: al hacer eso, con ello, en ese contexto. También: sin embargo, a pesar de eso.",
+    "examples": [
+      "Die Regierung versprach Transparenz, dabei wurden wesentliche Informationen der Öffentlichkeit vorenthalten. = El gobierno prometió transparencia, sin embargo se ocultó información esencial a la opinión pública.",
+      "Man konzentrierte sich ausschließlich auf kurzfristige Gewinne und vernachlässigte dabei die langfristigen Folgen für die Umwelt. = Se concentraron exclusivamente en ganancias a corto plazo y con ello descuidaron las consecuencias a largo plazo para el medio ambiente."
+    ],
+    "synonyms": ["gleichzeitig (al mismo tiempo)", "trotzdem (aun así)"],
+    "type": "adverb"
+  },
+  "uebersehen": {
+    "word": "übersehen",
+    "translation": "pasar por alto, no ver",
+    "sentence": "Dabei wird ein entscheidender Unterschied übersehen.",
+    "sentenceTranslation": "Con ello se pasa por alto una diferencia decisiva.",
+    "explanation": "Verbo separable. No percibir algo importante; pasar por alto.",
+    "conjugation": {
+      "present": {"ich": "übersehe", "du": "übersiehst", "er/sie/es": "übersieht", "wir": "übersehen", "ihr": "überseht", "sie/Sie": "übersehen"},
+      "preterite": {"ich": "übersah", "du": "übersahst", "er/sie/es": "übersah", "wir": "übersahen", "ihr": "übersaht", "sie/Sie": "übersahen"},
+      "perfect": "hat übersehen",
+      "infinitive": "übersehen"
+    },
+    "examples": [
+      "Bei der Planung des Projekts wurde übersehen, dass die rechtlichen Rahmenbedingungen sich zwischenzeitlich geändert hatten. = En la planificación del proyecto se pasó por alto que las condiciones marco legales habían cambiado entretanto.",
+      "Man darf nicht übersehen, dass hinter den Statistiken individuelle Schicksale stehen. = No se debe pasar por alto que detrás de las estadísticas hay destinos individuales."
+    ],
+    "synonyms": ["übergangen (omitido)", "ignorieren (ignorar)"],
+    "type": "verb",
+    "verbType": "untrennbar"
+  },
+  "verschwinden": {
+    "word": "verschwinden",
+    "translation": "desaparecer",
+    "sentence": "Fossile Brennstoffe verbrannt werden und verschwinden.",
+    "sentenceTranslation": "Los combustibles fósiles se queman y desaparecen.",
+    "explanation": "Verbo irregular. Dejar de estar presente, desaparecer.",
+    "conjugation": {
+      "present": {"ich": "verschwinde", "du": "verschwindest", "er/sie/es": "verschwindet", "wir": "verschwinden", "ihr": "verschwindet", "sie/Sie": "verschwinden"},
+      "preterite": {"ich": "verschwand", "du": "verschwandest", "er/sie/es": "verschwand", "wir": "verschwanden", "ihr": "verschwandet", "sie/Sie": "verschwanden"},
+      "perfect": "ist verschwunden",
+      "infinitive": "verschwinden"
+    },
+    "examples": [
+      "Traditionelle Handwerksberufe verschwinden zunehmend aus dem Wirtschaftsleben, während neue digitale Berufsfelder entstehen. = Los oficios artesanales tradicionales desaparecen cada vez más de la vida económica, mientras surgen nuevos campos profesionales digitales.",
+      "Mit der Urbanisierung verschwinden natürliche Lebensräume für zahlreiche Tierarten unwiederbringlich. = Con la urbanización desaparecen irremediablemente hábitats naturales para numerosas especies animales."
+    ],
+    "synonyms": ["verschwinden (desaparecer)", "weggehen (irse)"],
+    "type": "verb",
+    "verbType": "untrennbar"
+  },
+  "erhalten": {
+    "word": "erhalten",
+    "translation": "conservar, mantener, conservarse",
+    "sentence": "Bleiben die Materialien in einer Batterie oder einem Solarpanel erhalten.",
+    "sentenceTranslation": "Los materiales en una batería o panel solar se conservan.",
+    "explanation": "Verbo irregular. Mantener algo en su estado; conservarse (en pasiva o como adjetivo).",
+    "conjugation": {
+      "present": {"ich": "erhalte", "du": "erhältst", "er/sie/es": "erhält", "wir": "erhalten", "ihr": "erhaltet", "sie/Sie": "erhalten"},
+      "preterite": {"ich": "erhielt", "du": "erhieltest", "er/sie/es": "erhielt", "wir": "erhielten", "ihr": "erhieltet", "sie/Sie": "erhielten"},
+      "perfect": "hat erhalten",
+      "infinitive": "erhalten"
+    },
+    "examples": [
+      "Denkmalgeschützte Gebäude müssen in ihrem ursprünglichen Zustand erhalten werden, um das kulturelle Erbe zu bewahren. = Los edificios protegidos como monumentos deben conservarse en su estado original para preservar el patrimonio cultural.",
+      "Trotz intensiver Nutzung blieb die Funktionsfähigkeit der Anlage über Jahrzehnte hinweg erhalten. = A pesar del uso intensivo, la funcionalidad de la instalación se mantuvo durante décadas."
+    ],
+    "synonyms": ["bewahren (conservar)", "behalten (mantener)"],
+    "type": "verb"
+  },
+  "verwandelt-sich-nicht": {
+    "word": "sich nicht verwandeln",
+    "translation": "no transformarse, no convertirse",
+    "sentence": "Ein Lithium-Ion verwandelt sich nicht; es bleibt ein Lithium-Ion.",
+    "sentenceTranslation": "Un ion de litio no se transforma; sigue siendo un ion de litio.",
+    "explanation": "Verbo reflexivo separable. 'Sich verwandeln' = transformarse. La negación enfatiza que la sustancia permanece igual.",
+    "parts": ["verwandelt", "sich", "nicht"],
+    "conjugation": {
+      "present": {"ich": "verwandle mich nicht", "du": "verwandelst dich nicht", "er/sie/es": "verwandelt sich nicht", "wir": "verwandeln uns nicht", "ihr": "verwandelt euch nicht", "sie/Sie": "verwandeln sich nicht"},
+      "preterite": {"ich": "verwandelte mich nicht", "du": "verwandeltest dich nicht", "er/sie/es": "verwandelte sich nicht", "wir": "verwandelten uns nicht", "ihr": "verwandeltet euch nicht", "sie/Sie": "verwandelten sich nicht"},
+      "perfect": "hat sich nicht verwandelt",
+      "infinitive": "sich nicht verwandeln"
+    },
+    "examples": [
+      "Anders als organische Substanzen verwandeln sich Edelmetalle nicht durch chemische Prozesse und behalten ihre Eigenschaften bei. = A diferencia de las sustancias orgánicas, los metales nobles no se transforman mediante procesos químicos y conservan sus propiedades.",
+      "Die gesellschaftlichen Strukturen verwandelten sich trotz der Revolution nicht grundlegend, sondern blieben weitgehend bestehen. = Las estructuras sociales no se transformaron fundamentalmente a pesar de la revolución, sino que permanecieron en gran medida."
+    ],
+    "type": "verb",
+    "verbType": "reflexive"
+  },
+  "kreislaufwirtschaft": {
+    "word": "Kreislaufwirtschaft",
+    "translation": "economía circular",
+    "sentence": "Dass wir uns auf eine Kreislaufwirtschaft zubewegen.",
+    "sentenceTranslation": "Que nos encaminamos hacia una economía circular.",
+    "explanation": "Sustantivo femenino. Modelo económico donde los materiales se reutilizan y reciclan en lugar de desecharse.",
+    "examples": [
+      "Die Kreislaufwirtschaft erfordert ein Umdenken in der Produktgestaltung, sodass Produkte von vornherein auf Wiederverwertbarkeit ausgelegt werden. = La economía circular requiere un cambio de mentalidad en el diseño de productos, de modo que los productos se diseñen desde el principio para la reutilización.",
+      "Durch konsequente Umsetzung der Kreislaufwirtschaft ließen sich Rohstoffabhängigkeiten reduzieren und Wertschöpfungsketten regionalisieren. = Mediante la implementación consecuente de la economía circular se podrían reducir las dependencias de materias primas y regionalizar las cadenas de valor."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "zubewegen": {
+    "word": "sich zubewegen",
+    "translation": "acercarse a, encaminarse hacia",
+    "sentence": "Dass wir uns auf eine Kreislaufwirtschaft zubewegen.",
+    "sentenceTranslation": "Que nos encaminamos hacia una economía circular.",
+    "explanation": "Verbo reflexivo separable. 'Sich auf etwas zubewegen' = acercarse o encaminarse hacia algo.",
+    "parts": ["zubewegen"],
+    "conjugation": {
+      "present": {"ich": "bewege mich zu", "du": "bewegst dich zu", "er/sie/es": "bewegt sich zu", "wir": "bewegen uns zu", "ihr": "bewegt euch zu", "sie/Sie": "bewegen sich zu"},
+      "preterite": {"ich": "bewegte mich zu", "du": "bewegtest dich zu", "er/sie/es": "bewegte sich zu", "wir": "bewegten uns zu", "ihr": "bewegtet euch zu", "sie/Sie": "bewegten sich zu"},
+      "perfect": "hat sich zugebewegt",
+      "infinitive": "sich zubewegen"
+    },
+    "examples": [
+      "Die Verhandlungsparteien bewegen sich allmählich aufeinander zu, auch wenn substanzielle Differenzen fortbestehen. = Las partes negociadoras se acercan gradualmente entre sí, aunque persisten diferencias sustanciales.",
+      "Die wissenschaftliche Gemeinschaft bewegt sich zunehmend auf einen Konsens hinsichtlich der Ursachen des Klimawandels zu. = La comunidad científica se encamina cada vez más hacia un consenso respecto a las causas del cambio climático."
+    ],
+    "type": "verb",
+    "verbType": "reflexive-separable"
+  },
+  "erz": {
+    "word": "Erz",
+    "translation": "mineral, mena (en sentido figurado: materia prima)",
+    "sentence": "Alte Batterien das Erz für neue Batterien darstellen.",
+    "sentenceTranslation": "Las baterías viejas representan el mineral para nuevas baterías.",
+    "explanation": "Sustantivo neutro. Literalmente: mineral, mena. En contexto de reciclaje: las baterías usadas son la 'mena' de la que se extraen materiales para nuevas.",
+    "examples": [
+      "In den Minen Südamerikas wird Erz abgebaut, das für die Herstellung von Stahl und anderen Legierungen unerlässlich ist. = En las minas de Sudamérica se extrae mineral que es indispensable para la fabricación de acero y otras aleaciones.",
+      "Elektronikschrott gilt zunehmend als urbanes Erz, da er wertvolle Metalle in höherer Konzentration enthält als natürliche Lagerstätten. = La chatarra electrónica se considera cada vez más como mineral urbano, ya que contiene metales valiosos en mayor concentración que los yacimientos naturales."
+    ],
+    "type": "nomen",
+    "gender": "das (neutro)"
+  },
+  "gueter": {
+    "word": "Gut",
+    "translation": "bien, producto",
+    "sentence": "Wir bauen langlebige Güter, keine Wegwerfprodukte.",
+    "sentenceTranslation": "Construimos bienes duraderos, no productos desechables.",
+    "explanation": "Sustantivo neutro, plural: Güter. Bienes, productos. 'Langlebige Güter' = bienes duraderos.",
+    "examples": [
+      "Investitionsgüter wie Produktionsanlagen und Infrastruktur bilden die Grundlage wirtschaftlicher Entwicklung. = Los bienes de inversión como instalaciones de producción e infraestructura forman la base del desarrollo económico.",
+      "Der Handel mit Gütern unterliegt zunehmend strengeren Umweltauflagen und Nachhaltigkeitskriterien. = El comercio de bienes está sujeto a normativas ambientales y criterios de sostenibilidad cada vez más estrictos."
+    ],
+    "type": "nomen",
+    "gender": "das (neutro)"
+  },
+  "wegwerfprodukte": {
+    "word": "Wegwerfprodukt",
+    "translation": "producto desechable, producto de usar y tirar",
+    "sentence": "Wir bauen langlebige Güter, keine Wegwerfprodukte.",
+    "sentenceTranslation": "Construimos bienes duraderos, no productos desechables.",
+    "explanation": "Sustantivo neutro. Producto diseñado para usarse una vez y desecharse.",
+    "examples": [
+      "Die Konsumgesellschaft hat eine Kultur der Wegwerfprodukte geschaffen, die erhebliche ökologische Folgen nach sich zieht. = La sociedad de consumo ha creado una cultura de productos desechables que conlleva considerables consecuencias ecológicas.",
+      "Gesetzliche Regelungen zielen darauf ab, Wegwerfprodukte aus Plastik schrittweise durch nachhaltige Alternativen zu ersetzen. = Las regulaciones legales tienen como objetivo reemplazar gradualmente los productos desechables de plástico por alternativas sostenibles."
+    ],
+    "type": "nomen",
+    "gender": "das (neutro)"
+  },
+  "groesstenteils": {
+    "word": "größtenteils",
+    "translation": "en su mayor parte, mayormente",
+    "sentence": "Solarmodule bestehen größtenteils aus Glas und Aluminium.",
+    "sentenceTranslation": "Los módulos solares consisten en su mayor parte en vidrio y aluminio.",
+    "explanation": "Adverbio. En su mayor parte, en gran medida.",
+    "examples": [
+      "Die Bevölkerung des Landes lebt größtenteils in urbanen Ballungszentren, während ländliche Regionen zunehmend entvölkert werden. = La población del país vive mayormente en centros urbanos, mientras que las regiones rurales se despueblan cada vez más.",
+      "Die Kritik an der Reform war größtenteils berechtigt, auch wenn einzelne Aspekte durchaus positiv zu bewerten waren. = La crítica a la reforma era en su mayor parte justificada, aunque algunos aspectos eran ciertamente valorables positivamente."
+    ],
+    "synonyms": ["meistens (mayormente)", "überwiegend (predominantemente)"],
+    "type": "adverb"
+  },
+  "recyceln": {
+    "word": "recyceln",
+    "translation": "reciclar",
+    "sentence": "Materialien, die wir bereits heute effizient recyceln können.",
+    "sentenceTranslation": "Materiales que ya hoy podemos reciclar eficientemente.",
+    "explanation": "Verbo regular (anglicismo de 'recycle'). Procesar materiales usados para reutilizarlos.",
+    "conjugation": {
+      "present": {"ich": "recycele", "du": "recycelst", "er/sie/es": "recycelt", "wir": "recyceln", "ihr": "recycelt", "sie/Sie": "recyceln"},
+      "preterite": {"ich": "recycelte", "du": "recyceltest", "er/sie/es": "recycelte", "wir": "recycelten", "ihr": "recyceltet", "sie/Sie": "recycelten"},
+      "perfect": "hat recycelt",
+      "infinitive": "recyceln"
+    },
+    "examples": [
+      "Moderne Anlagen können Kunststoffe sortenrein recyceln und so die Qualität des Sekundärmaterials erheblich verbessern. = Las instalaciones modernas pueden reciclar plásticos por tipos y así mejorar considerablemente la calidad del material secundario.",
+      "Um Ressourcen zu schonen, müssen wir nicht nur mehr recyceln, sondern auch den Verbrauch insgesamt reduzieren. = Para preservar recursos, no solo debemos reciclar más, sino también reducir el consumo en general."
+    ],
+    "synonyms": ["wiederverwerten (reutilizar)", "recyclen (reciclar)"],
+    "type": "verb"
+  },
+  "muellbergen": {
+    "word": "Müllberg",
+    "translation": "montaña de basura, acumulación de residuos",
+    "sentence": "Die Angst vor Müllbergen ist unbegründet.",
+    "sentenceTranslation": "El miedo a las montañas de basura es infundado.",
+    "explanation": "Sustantivo masculino compuesto. Gran acumulación de residuos. Plural: Müllberge.",
+    "examples": [
+      "In Entwicklungsländern entstehen vielerorts riesige Müllberge, da funktionierende Entsorgungssysteme fehlen. = En países en desarrollo surgen en muchos lugares enormes montañas de basura, ya que faltan sistemas de eliminación funcionales.",
+      "Die Müllberge in den Ozeanen stellen eine existenzielle Bedrohung für marine Ökosysteme dar. = Las montañas de basura en los océanos representan una amenaza existencial para los ecosistemas marinos."
+    ],
+    "type": "nomen",
+    "gender": "der (masculino)"
+  },
+  "unbegruendet": {
+    "word": "unbegründet",
+    "translation": "infundado, sin fundamento",
+    "sentence": "Die Angst vor Müllbergen ist unbegründet.",
+    "sentenceTranslation": "El miedo a las montañas de basura es infundado.",
+    "explanation": "Adjetivo. Sin base o fundamento válido.",
+    "baseForm": "unbegründet",
+    "examples": [
+      "Die Vorwürfe gegen den Wissenschaftler erwiesen sich nach eingehender Prüfung als völlig unbegründet. = Las acusaciones contra el científico resultaron completamente infundadas tras un examen exhaustivo.",
+      "Unbegründete Ängste vor neuen Technologien können Innovationen hemmen und gesellschaftlichen Fortschritt verzögern. = Los miedos infundados ante nuevas tecnologías pueden frenar innovaciones y retrasar el progreso social."
+    ],
+    "synonyms": ["grundlos (sin motivo)", "ungerechtfertigt (injustificado)"],
+    "type": "adjektiv"
+  },
+  "abfallaufkommen": {
+    "word": "Abfallaufkommen",
+    "translation": "volumen de residuos, cantidad de basura",
+    "sentence": "Im Vergleich zu unserem derzeitigen Abfallaufkommen verschwindend gering ist.",
+    "sentenceTranslation": "En comparación con nuestro volumen actual de residuos es insignificante.",
+    "explanation": "Sustantivo neutro. Cantidad total de residuos generados en un período o zona.",
+    "examples": [
+      "Das Abfallaufkommen in Industrienationen übersteigt das der Entwicklungsländer um ein Vielfaches, was globale Ungerechtigkeiten verdeutlicht. = El volumen de residuos en naciones industrializadas supera el de los países en desarrollo en un múltiplo, lo que evidencia injusticias globales.",
+      "Durch Präventionsmaßnahmen und Kreislaufwirtschaft lässt sich das Abfallaufkommen signifikant reduzieren. = Mediante medidas de prevención y economía circular se puede reducir significativamente el volumen de residuos."
+    ],
+    "type": "nomen",
+    "gender": "das (neutro)"
+  },
+  "verschwindend-gering-ist": {
+    "word": "verschwindend gering sein",
+    "translation": "ser insignificante, ser ínfimo",
+    "sentence": "Die Menge an Material ist im Vergleich zu unserem Abfallaufkommen verschwindend gering.",
+    "sentenceTranslation": "La cantidad de material es insignificante en comparación con nuestro volumen de residuos.",
+    "explanation": "Expresión: 'verschwindend gering' = insignificante, ínfimo. 'Verschwindend' enfatiza lo mínimo.",
+    "parts": ["verschwindend gering", "ist"],
+    "examples": [
+      "Die Wahrscheinlichkeit eines solchen Ereignisses ist verschwindend gering und rechtfertigt keine überzogenen Sicherheitsmaßnahmen. = La probabilidad de tal evento es insignificante y no justifica medidas de seguridad exageradas.",
+      "Der Anteil erneuerbarer Energien am Gesamtenergieverbrauch war vor zwei Jahrzehnten noch verschwindend gering. = La proporción de energías renovables en el consumo total de energía era aún insignificante hace dos décadas."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "verschwindend", "type": "adjektiv"},
+      {"word": "gering", "type": "adjektiv"},
+      {"word": "ist", "type": "verb"}
+    ]
+  },
+  "zudem": {
+    "word": "zudem",
+    "translation": "además, por añadidura",
+    "sentence": "Zudem haben sich die ökonomischen Rahmenbedingungen drastisch gewandelt.",
+    "sentenceTranslation": "Además, las condiciones económicas marco han cambiado drásticamente.",
+    "explanation": "Adverbio/conector. Añade un argumento o aspecto adicional al discurso.",
+    "examples": [
+      "Die Maßnahme ist nicht nur ineffizient, zudem verstößt sie gegen geltendes Recht. = La medida no solo es ineficiente, además viola el derecho vigente.",
+      "Der Kandidat verfügt über umfassende Fachkenntnisse, zudem bringt er langjährige Führungserfahrung mit. = El candidato dispone de amplios conocimientos especializados, además aporta una larga experiencia de liderazgo."
+    ],
+    "synonyms": ["außerdem (además)", "darüber hinaus (más allá de eso)"],
+    "type": "adverb"
+  },
+  "sich-drastisch-gewandelt": {
+    "word": "sich drastisch gewandelt",
+    "translation": "haber cambiado drásticamente",
+    "sentence": "Die ökonomischen Rahmenbedingungen haben sich drastisch gewandelt.",
+    "sentenceTranslation": "Las condiciones económicas marco han cambiado drásticamente.",
+    "explanation": "Perfekt de 'sich wandeln' (transformarse, cambiar). 'Drastisch' = de forma drástica, radical.",
+    "parts": ["drastisch", "gewandelt"],
+    "conjugation": {
+      "present": {"ich": "wandle mich", "du": "wandelst dich", "er/sie/es": "wandelt sich", "wir": "wandeln uns", "ihr": "wandelt euch", "sie/Sie": "wandeln sich"},
+      "preterite": {"ich": "wandelte mich", "du": "wandeltest dich", "er/sie/es": "wandelte sich", "wir": "wandelten uns", "ihr": "wandeltet euch", "sie/Sie": "wandelten sich"},
+      "perfect": "hat sich gewandelt",
+      "infinitive": "sich wandeln"
+    },
+    "examples": [
+      "Seit der Digitalisierung hat sich die Arbeitswelt drastisch gewandelt, viele traditionelle Berufe sind verschwunden. = Desde la digitalización el mundo laboral ha cambiado drásticamente, muchas profesiones tradicionales han desaparecido.",
+      "Die gesellschaftliche Einstellung zur Gleichberechtigung hat sich in den letzten Jahrzehnten drastisch gewandelt. = La actitud social hacia la igualdad ha cambiado drásticamente en las últimas décadas."
+    ],
+    "type": "verb",
+    "verbType": "reflexive"
+  },
+  "kombination": {
+    "word": "Kombination",
+    "translation": "combinación",
+    "sentence": "Solarenergie in Kombination mit Speichern ist heute oft die günstigste Art der Stromerzeugung.",
+    "sentenceTranslation": "La energía solar en combinación con almacenamiento es hoy a menudo la forma más barata de generación eléctrica.",
+    "explanation": "Sustantivo femenino. Unión de varios elementos. 'In Kombination mit' = en combinación con.",
+    "examples": [
+      "Die Therapie zeigt erst in Kombination mit einer Ernährungsumstellung nachhaltige Erfolge. = La terapia solo muestra éxitos sostenibles en combinación con un cambio de alimentación.",
+      "Eine Kombination aus theoretischem Wissen und praktischer Erfahrung ist für diese Position unerlässlich. = Una combinación de conocimientos teóricos y experiencia práctica es imprescindible para este puesto."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "speichern": {
+    "word": "Speicher",
+    "translation": "almacenamiento, sistema de almacenamiento",
+    "sentence": "Solarenergie in Kombination mit Speichern ist heute oft die günstigste Art.",
+    "sentenceTranslation": "La energía solar en combinación con almacenamiento es hoy a menudo la forma más barata.",
+    "explanation": "Sustantivo masculino (plural: Speicher). Sistema o dispositivo para almacenar energía (baterías, etc.).",
+    "examples": [
+      "Thermische Speicher können überschüssige Wärme für mehrere Tage bevorraten und bei Bedarf wieder abgeben. = Los almacenamientos térmicos pueden acumular calor excedente durante varios días y liberarlo cuando sea necesario.",
+      "Die Entwicklung leistungsfähiger Speicher gilt als Schlüsseltechnologie für die Elektromobilität. = El desarrollo de sistemas de almacenamiento eficientes se considera tecnología clave para la electromovilidad."
+    ],
+    "type": "nomen",
+    "gender": "der (masculino)"
+  },
+  "stromerzeugung": {
+    "word": "Stromerzeugung",
+    "translation": "generación de electricidad",
+    "sentence": "Die günstigste Art der Stromerzeugung.",
+    "sentenceTranslation": "La forma más barata de generación de electricidad.",
+    "explanation": "Sustantivo femenino compuesto. Producción de electricidad.",
+    "examples": [
+      "Die dezentrale Stromerzeugung durch Photovoltaikanlagen auf Privathäusern entlastet die Übertragungsnetze. = La generación descentralizada de electricidad mediante instalaciones fotovoltaicas en viviendas privadas descarga las redes de transmisión.",
+      "Wasserkraft spielt in alpinen Regionen eine zentrale Rolle bei der Stromerzeugung. = La energía hidráulica desempeña un papel central en la generación de electricidad en regiones alpinas."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "wahrnehmung": {
+    "word": "Wahrnehmung",
+    "translation": "percepción",
+    "sentence": "Dass dies in der öffentlichen Wahrnehmung noch nicht angekommen ist.",
+    "sentenceTranslation": "Que esto aún no ha llegado a la percepción pública.",
+    "explanation": "Sustantivo femenino. Cómo algo es percibido o visto por la sociedad.",
+    "examples": [
+      "Die mediale Berichterstattung prägt maßgeblich die öffentliche Wahrnehmung politischer Ereignisse. = La cobertura mediática configura decisivamente la percepción pública de acontecimientos políticos.",
+      "In der Wahrnehmung vieler Fachleute stellt die künstliche Intelligenz sowohl Chance als auch Risiko dar. = En la percepción de muchos expertos, la inteligencia artificial representa tanto una oportunidad como un riesgo."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "angekommen-ist": {
+    "word": "angekommen sein",
+    "translation": "haber llegado, haberse asentado",
+    "sentence": "Dass dies in der öffentlichen Wahrnehmung noch nicht angekommen ist.",
+    "sentenceTranslation": "Que esto aún no ha llegado a la percepción pública.",
+    "explanation": "Perfekt de 'ankommen' en sentido figurado: haber llegado a la conciencia o percepción de alguien.",
+    "parts": ["angekommen", "ist"],
+    "examples": [
+      "Die Dringlichkeit der Klimakrise ist im Bewusstsein der Bevölkerung endlich angekommen. = La urgencia de la crisis climática finalmente ha calado en la conciencia de la población.",
+      "Trotz zahlreicher Kampagnen ist die Bedeutung der Datensicherheit bei vielen Nutzern noch nicht angekommen. = A pesar de numerosas campañas, la importancia de la seguridad de datos aún no ha llegado a muchos usuarios."
+    ],
+    "type": "verb",
+    "verbType": "compound-auxiliary"
+  },
+  "liegt-an": {
+    "word": "an etwas liegen",
+    "translation": "deberse a, radicar en",
+    "sentence": "Dass dies noch nicht angekommen ist, liegt maßgeblich an gezielter Desinformation.",
+    "sentenceTranslation": "Que esto aún no ha calado se debe en gran medida a la desinformación intencionada.",
+    "explanation": "Verbo con preposición 'an' + dativo. 'An etwas liegen' = deberse a algo, radicar en algo.",
+    "parts": ["liegt", "an"],
+    "conjugation": {
+      "present": {"ich": "liege an", "du": "liegst an", "er/sie/es": "liegt an", "wir": "liegen an", "ihr": "liegt an", "sie/Sie": "liegen an"},
+      "preterite": {"ich": "lag an", "du": "lagst an", "er/sie/es": "lag an", "wir": "lagen an", "ihr": "lagt an", "sie/Sie": "lagen an"},
+      "perfect": "hat an ... gelegen",
+      "infinitive": "an etwas liegen"
+    },
+    "examples": [
+      "Der Misserfolg des Projekts lag nicht an mangelnder Finanzierung, sondern an unzureichender Planung. = El fracaso del proyecto no se debió a falta de financiación, sino a planificación insuficiente.",
+      "Woran liegt es, dass innovative Ansätze in etablierten Unternehmen oft auf Widerstand stoßen? = ¿A qué se debe que enfoques innovadores encuentren a menudo resistencia en empresas establecidas?"
+    ],
+    "type": "verb",
+    "verbType": "untrennbar"
+  },
+  "massgeblich": {
+    "word": "maßgeblich",
+    "translation": "en gran medida, decisivamente",
+    "sentence": "Liegt maßgeblich an gezielter Desinformation.",
+    "sentenceTranslation": "Se debe en gran medida a la desinformación intencionada.",
+    "explanation": "Adverbio/adjetivo. Que determina o influye de forma decisiva.",
+    "baseForm": "maßgeblich",
+    "examples": [
+      "Die Forscherin hat maßgeblich zur Entwicklung des Impfstoffs beigetragen. = La investigadora ha contribuido decisivamente al desarrollo de la vacuna.",
+      "Für die Qualität der Ausbildung sind maßgeblich die Lehrkräfte verantwortlich. = De la calidad de la formación son responsables en gran medida los docentes."
+    ],
+    "type": "adverb"
+  },
+  "gezielter": {
+    "word": "gezielt",
+    "translation": "intencionado, dirigido",
+    "sentence": "Liegt an gezielter Desinformation.",
+    "sentenceTranslation": "Se debe a desinformación intencionada.",
+    "explanation": "Adjetivo. Dirigido a un objetivo concreto; intencional.",
+    "baseForm": "gezielt",
+    "examples": [
+      "Durch gezielte Investitionen in Bildung lässt sich die soziale Mobilität erhöhen. = Mediante inversiones dirigidas en educación se puede aumentar la movilidad social.",
+      "Die Behörden führten gezielte Kontrollen in den betroffenen Stadtvierteln durch. = Las autoridades realizaron controles dirigidos en los barrios afectados."
+    ],
+    "type": "adjektiv"
+  },
+  "politischen-interessen": {
+    "word": "politische Interessen",
+    "translation": "intereses políticos",
+    "sentence": "Politische Interessen, die am Status quo festhalten wollen.",
+    "sentenceTranslation": "Intereses políticos que quieren mantener el statu quo.",
+    "explanation": "Sustantivo con adjetivo. Intereses de actores políticos (partidos, lobbies) en mantener o cambiar algo.",
+    "examples": [
+      "Hinter der Gesetzesänderung stehen wirtschaftliche und politische Interessen mächtiger Lobbygruppen. = Detrás del cambio legislativo están los intereses económicos y políticos de poderosos grupos de presión.",
+      "Die Verhandlungen scheiterten, weil divergierende politische Interessen nicht in Einklang zu bringen waren. = Las negociaciones fracasaron porque no se pudieron conciliar intereses políticos divergentes."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "am-status-quo-festhalten": {
+    "word": "am Status quo festhalten",
+    "translation": "mantenerse en el statu quo, aferrarse al estado actual",
+    "sentence": "Politische Interessen, die am Status quo festhalten wollen.",
+    "sentenceTranslation": "Intereses políticos que quieren mantener el statu quo.",
+    "explanation": "Expresión: 'am Status quo festhalten' = no querer cambiar la situación actual.",
+    "parts": ["am Status quo", "festhalten"],
+    "examples": [
+      "Konservative Kräfte halten am Status quo fest, obwohl dringender Reformbedarf besteht. = Las fuerzas conservadoras se aferran al statu quo, aunque existe una necesidad urgente de reformas.",
+      "Wer am Status quo festhält, riskiert, von der Entwicklung überholt zu werden. = Quien se mantiene en el statu quo arriesga ser superado por el desarrollo."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "am", "type": "präposition"},
+      {"word": "Status quo", "type": "nomen"},
+      {"word": "festhalten", "type": "verb"}
+    ]
+  },
+  "davon-profitieren": {
+    "word": "von etwas profitieren",
+    "translation": "beneficiarse de algo",
+    "sentence": "Akteure, die davon profitieren, uns im Glauben zu lassen.",
+    "sentenceTranslation": "Actores que se benefician de hacernos creer.",
+    "explanation": "Verbo con 'von' + dativo. Beneficiarse de una situación.",
+    "parts": ["davon", "profitieren"],
+    "examples": [
+      "Kleinere Unternehmen profitieren von Steuererleichterungen und vereinfachten Verwaltungsverfahren. = Las empresas más pequeñas se benefician de desgravaciones fiscales y procedimientos administrativos simplificados.",
+      "Langfristig profitieren alle Beteiligten von transparenten und fairen Geschäftspraktiken. = A largo plazo todos los participantes se benefician de prácticas comerciales transparentes y justas."
+    ],
+    "type": "verb"
+  },
+  "im-glauben-zu-lassen": {
+    "word": "jemanden im Glauben lassen",
+    "translation": "hacer creer a alguien, dejar a alguien en la creencia",
+    "sentence": "Uns im Glauben zu lassen, dass eine Welt ohne Öl unmöglich sei.",
+    "sentenceTranslation": "Hacernos creer que un mundo sin petróleo es imposible.",
+    "explanation": "Expresión: 'jemanden im Glauben lassen, dass...' = hacer que alguien crea algo (a menudo falso).",
+    "parts": ["im Glauben", "zu lassen"],
+    "examples": [
+      "Die Regierung ließ die Bevölkerung im Glauben, die Krise sei unter Kontrolle. = El gobierno dejó a la población en la creencia de que la crisis estaba bajo control.",
+      "Man sollte Patienten nicht im Glauben lassen, dass eine Heilung garantiert sei. = No se debería hacer creer a los pacientes que una curación está garantizada."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "im", "type": "präposition"},
+      {"word": "Glauben", "type": "nomen"},
+      {"word": "lassen", "type": "verb"}
+    ]
+  },
+  "sei": {
+    "word": "sei",
+    "translation": "sea, fuera (Konjunktiv)",
+    "sentence": "Dass eine Welt ohne Öl unmöglich oder zu teuer sei.",
+    "sentenceTranslation": "Que un mundo sin petróleo sea imposible o demasiado caro.",
+    "explanation": "Konjunktiv I de 'sein' (3ª persona singular). Se usa en estilo indirecto o para expresar duda/negación de lo que se afirma.",
+    "examples": [
+      "Der Minister behauptete, die Maßnahme sei alternativlos, was von Experten bezweifelt wird. = El ministro afirmó que la medida no tenía alternativa, lo que es puesto en duda por expertos.",
+      "Es heißt, die Verhandlungen seien gescheitert, doch offiziell wurde nichts bestätigt. = Se dice que las negociaciones han fracasado, pero oficialmente no se ha confirmado nada."
+    ],
+    "type": "verb"
+  },
+  "nutzen-aus": {
+    "word": "ausnutzen",
+    "translation": "aprovechar (en sentido negativo), explotar",
+    "sentence": "Diese Akteure nutzen kurzfristiges Denken aus.",
+    "sentenceTranslation": "Estos actores aprovechan el pensamiento a corto plazo.",
+    "explanation": "Verbo separable. Aprovechar algo (a menudo de forma cuestionable) para el propio beneficio.",
+    "parts": ["nutzen", "aus"],
+    "conjugation": {
+      "present": {"ich": "nutze aus", "du": "nutzt aus", "er/sie/es": "nutzt aus", "wir": "nutzen aus", "ihr": "nutzt aus", "sie/Sie": "nutzen aus"},
+      "preterite": {"ich": "nutzte aus", "du": "nutztest aus", "er/sie/es": "nutzte aus", "wir": "nutzten aus", "ihr": "nutztet aus", "sie/Sie": "nutzten aus"},
+      "perfect": "hat ausgenutzt",
+      "infinitive": "ausnutzen"
+    },
+    "examples": [
+      "Unseriöse Anbieter nutzen die Unwissenheit älterer Menschen schamlos aus. = Proveedores poco serios explotan descaradamente la ignorancia de las personas mayores.",
+      "Populisten nutzen gesellschaftliche Verunsicherung aus, um einfache Lösungen zu propagieren. = Los populistas aprovechan la inseguridad social para propagar soluciones simples."
+    ],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "notwendige": {
+    "word": "notwendig",
+    "translation": "necesario",
+    "sentence": "Um notwendige Investitionen in eine widerstandsfähige Infrastruktur zu blockieren.",
+    "sentenceTranslation": "Para bloquear inversiones necesarias en una infraestructura resistente.",
+    "explanation": "Adjetivo. Indispensable, que hace falta.",
+    "baseForm": "notwendig",
+    "examples": [
+      "Strukturelle Reformen sind notwendig, um die Wettbewerbsfähigkeit langfristig zu sichern. = Las reformas estructurales son necesarias para asegurar la competitividad a largo plazo.",
+      "Die Behörden ergriffen alle notwendigen Maßnahmen zur Eindämmung der Epidemie. = Las autoridades adoptaron todas las medidas necesarias para contener la epidemia."
+    ],
+    "type": "adjektiv"
+  },
+  "widerstandsfaehige": {
+    "word": "widerstandsfähig",
+    "translation": "resistente, resiliente",
+    "sentence": "Investitionen in eine widerstandsfähige Infrastruktur.",
+    "sentenceTranslation": "Inversiones en una infraestructura resistente.",
+    "explanation": "Adjetivo. Que resiste a crisis, shocks o presiones.",
+    "baseForm": "widerstandsfähig",
+    "examples": [
+      "Widerstandsfähige Ökosysteme können sich nach Störungen schneller regenerieren. = Los ecosistemas resilientes pueden regenerarse más rápidamente tras perturbaciones.",
+      "Die Pandemie hat gezeigt, wie wichtig widerstandsfähige Lieferketten für die Versorgungssicherheit sind. = La pandemia ha mostrado lo importantes que son las cadenas de suministro resistentes para la seguridad de abastecimiento."
+    ],
+    "type": "adjektiv"
+  },
+  "scheideweg": {
+    "word": "Scheideweg",
+    "translation": "encrucijada, punto de decisión",
+    "sentence": "Dass wir an einem Scheideweg stehen.",
+    "sentenceTranslation": "Que estamos en una encrucijada.",
+    "explanation": "Sustantivo masculino. Punto donde hay que elegir entre caminos o direcciones diferentes.",
+    "examples": [
+      "Die Gesellschaft steht am Scheideweg zwischen Digitalisierung und Datenschutz. = La sociedad está en la encrucijada entre digitalización y protección de datos.",
+      "Nach dem Studium befand sie sich am Scheideweg: akademische Laufbahn oder Wirtschaft? = Tras los estudios se encontraba en la encrucijada: ¿carrera académica o economía?"
+    ],
+    "type": "nomen",
+    "gender": "der (masculino)"
+  },
+  "zerstoerung": {
+    "word": "Zerstörung",
+    "translation": "destrucción",
+    "sentence": "Ein System, das auf ständiger Zerstörung von Ressourcen basiert.",
+    "sentenceTranslation": "Un sistema que se basa en la destrucción constante de recursos.",
+    "explanation": "Sustantivo femenino. Acto de destruir, aniquilar.",
+    "examples": [
+      "Die Zerstörung historischer Bausubstanz durch Kriege ist ein unwiederbringlicher Kulturverlust. = La destrucción de edificios históricos por guerras es una pérdida cultural irrecuperable.",
+      "Intensive Landwirtschaft führt zur Zerstörung der Bodenfruchtbarkeit und Artenvielfalt. = La agricultura intensiva conduce a la destrucción de la fertilidad del suelo y la biodiversidad."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "basiert": {
+    "word": "basieren",
+    "translation": "basarse en",
+    "sentence": "Ein System, das auf Zerstörung von Ressourcen basiert.",
+    "sentenceTranslation": "Un sistema que se basa en la destrucción de recursos.",
+    "explanation": "Verbo con 'auf' + dativo. 'Auf etwas basieren' = basarse en algo.",
+    "conjugation": {
+      "present": {"ich": "basiere", "du": "basierst", "er/sie/es": "basiert", "wir": "basieren", "ihr": "basiert", "sie/Sie": "basieren"},
+      "preterite": {"ich": "basierte", "du": "basiertest", "er/sie/es": "basierte", "wir": "basierten", "ihr": "basiertet", "sie/Sie": "basierten"},
+      "perfect": "hat basiert",
+      "infinitive": "basieren"
+    },
+    "examples": [
+      "Die Diagnose basiert auf umfassenden labormedizinischen Untersuchungen. = El diagnóstico se basa en exhaustivos análisis de laboratorio.",
+      "Demokratische Systeme basieren auf der Gewaltenteilung und rechtsstaatlichen Prinzipien. = Los sistemas democráticos se basan en la separación de poderes y principios del Estado de derecho."
+    ],
+    "type": "verb"
+  },
+  "dauerhaftigkeit": {
+    "word": "Dauerhaftigkeit",
+    "translation": "durabilidad, permanencia",
+    "sentence": "Ein System, das auf Dauerhaftigkeit und Wiederverwertung setzt.",
+    "sentenceTranslation": "Un sistema que apuesta por la durabilidad y la reutilización.",
+    "explanation": "Sustantivo femenino. Cualidad de durar mucho tiempo.",
+    "examples": [
+      "Die Dauerhaftigkeit von Beziehungen hängt von gegenseitigem Vertrauen und Kommunikation ab. = La durabilidad de las relaciones depende de la confianza mutua y la comunicación.",
+      "Hochwertige Materialien garantieren die Dauerhaftigkeit der Konstruktion über Jahrzehnte. = Materiales de alta calidad garantizan la durabilidad de la construcción durante décadas."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "wiederverwertung": {
+    "word": "Wiederverwertung",
+    "translation": "reutilización, reciclaje",
+    "sentence": "Ein System, das auf Dauerhaftigkeit und Wiederverwertung setzt.",
+    "sentenceTranslation": "Un sistema que apuesta por la durabilidad y la reutilización.",
+    "explanation": "Sustantivo femenino. Reutilización de materiales o productos.",
+    "examples": [
+      "Die Wiederverwertung von Industrieabfällen schont natürliche Ressourcen und senkt Produktionskosten. = La reutilización de residuos industriales protege recursos naturales y reduce costes de producción.",
+      "Moderne Recyclingtechnologien ermöglichen die Wiederverwertung selbst komplexer Verbundmaterialien. = Las tecnologías modernas de reciclaje permiten la reutilización incluso de materiales compuestos complejos."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "auf-setzt": {
+    "word": "auf etwas setzen",
+    "translation": "apostar por, basarse en",
+    "sentence": "Ein System, das auf Dauerhaftigkeit und Wiederverwertung setzt.",
+    "sentenceTranslation": "Un sistema que apuesta por la durabilidad y la reutilización.",
+    "explanation": "Verbo con preposición 'auf' + acusativo. 'Auf etwas setzen' = apostar por, confiar en algo.",
+    "parts": ["auf", "setzt"],
+    "conjugation": {
+      "present": {"ich": "setze auf", "du": "setzt auf", "er/sie/es": "setzt auf", "wir": "setzen auf", "ihr": "setzt auf", "sie/Sie": "setzen auf"},
+      "preterite": {"ich": "setzte auf", "du": "setztest auf", "er/sie/es": "setzte auf", "wir": "setzten auf", "ihr": "setztet auf", "sie/Sie": "setzten auf"},
+      "perfect": "hat auf ... gesetzt",
+      "infinitive": "auf etwas setzen"
+    },
+    "examples": [
+      "Das Unternehmen setzt auf Innovation und Nachhaltigkeit als zentrale Wettbewerbsvorteile. = La empresa apuesta por la innovación y la sostenibilidad como ventajas competitivas centrales.",
+      "In der Außenpolitik setzt die Regierung verstärkt auf multilaterale Zusammenarbeit. = En política exterior el gobierno apuesta cada vez más por la cooperación multilateral."
+    ],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "speicher": {
+    "word": "Speicher",
+    "translation": "almacenamiento, sistema de almacenamiento",
+    "sentence": "Die Lösungen für Speicher und Recycling existieren bereits.",
+    "sentenceTranslation": "Las soluciones para almacenamiento y reciclaje ya existen.",
+    "explanation": "Sustantivo masculino. Sistema para almacenar energía (baterías, etc.).",
+    "examples": [
+      "Pumpspeicherkraftwerke dienen als flexible Speicher zur Stabilisierung des Stromnetzes. = Las centrales hidroeléctricas de bombeo sirven como almacenamientos flexibles para estabilizar la red eléctrica.",
+      "Cloud-Speicher ermöglichen den ortsunabhängigen Zugriff auf große Datenmengen. = Los almacenamientos en la nube permiten el acceso independiente del lugar a grandes cantidades de datos."
+    ],
+    "type": "nomen",
+    "gender": "der (masculino)"
+  },
+  "es-liegt-an-uns": {
+    "word": "Es liegt an uns",
+    "translation": "Depende de nosotros, Está en nuestras manos",
+    "sentence": "Es liegt an uns, die politischen Lügen zu durchschauen.",
+    "sentenceTranslation": "Depende de nosotros desenmascarar las mentiras políticas.",
+    "explanation": "Construcción impersonal. La responsabilidad o la decisión recae en nosotros.",
+    "parts": ["Es", "liegt", "an", "uns"],
+    "examples": [
+      "Es liegt an uns, ob künftige Generationen in einer lebenswerten Umwelt aufwachsen können. = Depende de nosotros si las generaciones futuras pueden crecer en un entorno habitable.",
+      "Es liegt nicht an den Umständen, sondern an uns selbst, wie wir mit Herausforderungen umgehen. = No depende de las circunstancias, sino de nosotros mismos cómo afrontamos los desafíos."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "Es", "type": "pronomen"},
+      {"word": "liegt", "type": "verb"},
+      {"word": "an", "type": "präposition"},
+      {"word": "uns", "type": "pronomen"}
+    ]
+  },
+  "luegen": {
+    "word": "Lüge",
+    "translation": "mentira",
+    "sentence": "Die politischen Lügen zu durchschauen.",
+    "sentenceTranslation": "Desenmascarar las mentiras políticas.",
+    "explanation": "Sustantivo femenino (plural: Lügen). Afirmación falsa hecha con intención de engañar.",
+    "examples": [
+      "Die Verbreitung von Lügen in sozialen Medien untergräbt das Vertrauen in demokratische Institutionen. = La difusión de mentiras en redes sociales socava la confianza en las instituciones democráticas.",
+      "Historische Forschung deckt oft Lügen auf, die Jahrzehnte lang als Wahrheit galten. = La investigación histórica descubre a menudo mentiras que durante décadas se consideraron verdad."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "durchschauen": {
+    "word": "durchschauen",
+    "translation": "ver con claridad, desenmascarar",
+    "sentence": "Die politischen Lügen zu durchschauen.",
+    "sentenceTranslation": "Desenmascarar las mentiras políticas.",
+    "explanation": "Verbo inseparable. Ver a través de algo, reconocer la verdad detrás de apariencias.",
+    "conjugation": {
+      "present": {"ich": "durchschaue", "du": "durchschaust", "er/sie/es": "durchschaut", "wir": "durchschauen", "ihr": "durchschaut", "sie/Sie": "durchschauen"},
+      "preterite": {"ich": "durchschaute", "du": "durchschautest", "er/sie/es": "durchschaute", "wir": "durchschauten", "ihr": "durchschautet", "sie/Sie": "durchschauten"},
+      "perfect": "hat durchschaut",
+      "infinitive": "durchschauen"
+    },
+    "examples": [
+      "Erfahrene Verhandlungspartner durchschauen manipulative Strategien sofort. = Los negociadores experimentados ven con claridad las estrategias manipuladoras inmediatamente.",
+      "Kritische Mediennutzer durchschauen propagandistische Berichterstattung leichter. = Los usuarios críticos de medios desenmascararan más fácilmente la cobertura propagandística."
+    ],
+    "type": "verb",
+    "verbType": "untrennbar"
+  },
+  "buergerliche-pflicht-wahrzunehmen": {
+    "word": "bürgerliche Pflicht wahrnehmen",
+    "translation": "cumplir con el deber ciudadano",
+    "sentence": "Unsere bürgerliche Pflicht wahrzunehmen.",
+    "sentenceTranslation": "Cumplir con nuestro deber ciudadano.",
+    "explanation": "Expresión. 'Pflicht wahrnehmen' = cumplir con un deber. 'Bürgerliche Pflicht' = deber como ciudadano (participar, informarse, etc.).",
+    "parts": ["bürgerliche Pflicht", "wahrzunehmen"],
+    "examples": [
+      "Die Teilnahme an Wahlen ist eine grundlegende bürgerliche Pflicht in demokratischen Gesellschaften. = La participación en elecciones es un deber ciudadano fundamental en sociedades democráticas.",
+      "Kritische Auseinandersetzung mit politischen Entscheidungen gehört zur bürgerlichen Pflicht mündiger Bürger. = El análisis crítico de decisiones políticas pertenece al deber ciudadano de ciudadanos responsables."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "bürgerliche", "type": "adjektiv"},
+      {"word": "Pflicht", "type": "nomen"},
+      {"word": "wahrnehmen", "type": "verb"}
+    ]
+  },
+  "eine-zukunft-zu-fordern": {
+    "word": "eine Zukunft zu fordern",
+    "translation": "exigir un futuro",
+    "sentence": "Eine Zukunft zu fordern, die nicht auf Verbrennung basiert.",
+    "sentenceTranslation": "Exigir un futuro que no se base en la combustión.",
+    "explanation": "Construcción de infinitivo. Exigir/reclamar un futuro (mejor, sostenible).",
+    "parts": ["eine Zukunft", "zu fordern"],
+    "examples": [
+      "Zivilgesellschaftliche Bewegungen fordern eine Zukunft ohne Ausbeutung und soziale Ungerechtigkeit. = Los movimientos de la sociedad civil exigen un futuro sin explotación e injusticia social.",
+      "Wissenschaftler fordern eine Zukunft, in der evidenzbasierte Politik Vorrang vor Ideologie hat. = Los científicos exigen un futuro en el que la política basada en evidencias tenga prioridad sobre la ideología."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "eine", "type": "artikel"},
+      {"word": "Zukunft", "type": "nomen"},
+      {"word": "fordern", "type": "verb"}
+    ]
+  },
+  "verbrennung": {
+    "word": "Verbrennung",
+    "translation": "combustión, quema",
+    "sentence": "Eine Zukunft, die nicht auf der Verbrennung unserer Lebensgrundlagen basiert.",
+    "sentenceTranslation": "Un futuro que no se basa en la combustión de nuestras bases vitales.",
+    "explanation": "Sustantivo femenino. Proceso de quemar; combustión.",
+    "examples": [
+      "Die Verbrennung von Biomasse setzt gespeicherten Kohlenstoff frei und trägt zum Treibhauseffekt bei. = La combustión de biomasa libera carbono almacenado y contribuye al efecto invernadero.",
+      "Moderne Verbrennungsmotoren erreichen deutlich höhere Wirkungsgrade als frühere Generationen. = Los motores de combustión modernos alcanzan rendimientos significativamente más altos que generaciones anteriores."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "lebensgrundlagen": {
+    "word": "Lebensgrundlage",
+    "translation": "base vital, fundamento de la vida",
+    "sentence": "Die Verbrennung unserer Lebensgrundlagen.",
+    "sentenceTranslation": "La combustión de nuestras bases vitales.",
+    "explanation": "Sustantivo femenino (plural). Recursos y condiciones que hacen posible la vida (clima, agua, suelo, etc.).",
+    "examples": [
+      "Der Klimawandel bedroht die Lebensgrundlagen von Millionen Menschen in küstennahen Regionen. = El cambio climático amenaza las bases vitales de millones de personas en regiones costeras.",
+      "Kleinbauern verlieren durch Bodendegradation ihre wirtschaftlichen Lebensgrundlagen. = Los pequeños agricultores pierden sus bases vitales económicas por la degradación del suelo."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "intelligenter": {
+    "word": "intelligent",
+    "translation": "inteligente",
+    "sentence": "Auf intelligenter, langfristiger Nutzung.",
+    "sentenceTranslation": "En un uso inteligente y a largo plazo.",
+    "explanation": "Adjetivo en dativo femenina. Que usa bien los recursos, bien pensado.",
+    "baseForm": "intelligent",
+    "examples": [
+      "Intelligente Verkehrssteuerung reduziert Staus und Emissionen in Ballungsräumen erheblich. = El control inteligente del tráfico reduce considerablemente los atascos y las emisiones en áreas metropolitanas.",
+      "Durch intelligente Algorithmen lassen sich komplexe Optimierungsprobleme effizienter lösen. = Mediante algoritmos inteligentes se pueden resolver problemas complejos de optimización de forma más eficiente."
+    ],
+    "type": "adjektiv"
+  },
+  "langfristiger-nutzung": {
+    "word": "langfristige Nutzung",
+    "translation": "uso a largo plazo",
+    "sentence": "Auf intelligenter, langfristiger Nutzung.",
+    "sentenceTranslation": "En un uso inteligente y a largo plazo.",
+    "explanation": "Sustantivo con adjetivo. Uso de recursos con perspectiva de largo plazo, sostenible.",
+    "examples": [
+      "Die langfristige Nutzung von Gebäuden erfordert durchdachte Planung und hochwertige Materialien. = El uso a largo plazo de edificios requiere planificación bien pensada y materiales de alta calidad.",
+      "Nachhaltige Forstwirtschaft zielt auf die langfristige Nutzung ohne Übernutzung der Waldbestände ab. = La silvicultura sostenible apunta al uso a largo plazo sin sobreexplotación de las masas forestales."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "energiewende": {
+    "word": "Energiewende",
+    "translation": "transición energética",
+    "sentence": "Die Energiewende ist kein technologisches Problem mehr.",
+    "sentenceTranslation": "La transición energética ya no es un problema tecnológico.",
+    "explanation": "Sustantivo femenino. Cambio del sistema energético hacia fuentes renovables y sostenibles.",
+    "examples": [
+      "Die Energiewende erfordert massive Investitionen in Netzinfrastruktur und Speichertechnologien. = La transición energética requiere inversiones masivas en infraestructura de red y tecnologías de almacenamiento.",
+      "Ohne gesellschaftliche Akzeptanz wird die Energiewende an bürokratischen Hürden scheitern. = Sin aceptación social, la transición energética fracasará por obstáculos burocráticos."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  },
+  "eine-frage-des-politischen-willens": {
+    "word": "eine Frage des politischen Willens",
+    "translation": "una cuestión de voluntad política",
+    "sentence": "Die Energiewende ist eine Frage des politischen Willens.",
+    "sentenceTranslation": "La transición energética es una cuestión de voluntad política.",
+    "explanation": "Fórmula política. La solución técnica existe; falta la decisión política.",
+    "examples": [
+      "Ob Steuergerechtigkeit hergestellt wird, ist letztlich eine Frage des politischen Willens. = Si se establece justicia fiscal es en última instancia una cuestión de voluntad política.",
+      "Die Bekämpfung der Korruption ist keine technische, sondern eine Frage des politischen Willens. = La lucha contra la corrupción no es técnica, sino una cuestión de voluntad política."
+    ],
+    "type": "phrase",
+    "components": [
+      {"word": "eine Frage", "type": "nomen"},
+      {"word": "des politischen Willens", "type": "nomen"}
+    ]
+  },
+  "gesellschaftlichen-verantwortung": {
+    "word": "gesellschaftliche Verantwortung",
+    "translation": "responsabilidad social",
+    "sentence": "Eine Frage des politischen Willens und der gesellschaftlichen Verantwortung.",
+    "sentenceTranslation": "Una cuestión de voluntad política y responsabilidad social.",
+    "explanation": "Sustantivo con adjetivo. Responsabilidad que la sociedad y sus actores deben asumir.",
+    "examples": [
+      "Unternehmen tragen gesellschaftliche Verantwortung über die Gewinnmaximierung hinaus. = Las empresas tienen responsabilidad social más allá de la maximización de beneficios.",
+      "Die gesellschaftliche Verantwortung für kommende Generationen verlangt nachhaltiges Handeln. = La responsabilidad social hacia las generaciones venideras exige actuación sostenible."
+    ],
+    "type": "nomen",
+    "gender": "die (femenino)"
+  }
+}

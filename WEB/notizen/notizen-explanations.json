@@ -1,0 +1,281 @@
+{
+  "inwiefern-verallgemeinern-fraglich-tatsache": {
+    "translation": "En qué medida estos resultados pueden generalizarse es, desde luego, cuestionable. Pero lo cierto es que",
+    "word": "Inwiefern sich diese Ergebnisse verallgemeinern lassen, ist zwar fraglich. Tatsache ist aber, dass",
+    "explanation": "Secuencia argumentativa típica: (1) 'Inwiefern sich ... verallgemeinern lassen' plantea hasta qué punto algo es generalizable. (2) 'ist zwar fraglich' concede que es cuestionable. (3) 'Tatsache ist aber, dass' introduce el hecho o la conclusión. Muy usada en textos académicos y de opinión.",
+    "erklärung": "Typische Argumentationskette: Einräumung, dass die Verallgemeinerbarkeit fraglich ist; dann Einleitung der eigentlichen Schlussfolgerung mit „Tatsache ist aber, dass“.",
+    "parts": ["ist zwar fraglich", "verallgemeinern lassen", "Tatsache ist aber, dass", "Inwiefern"],
+    "examples": [
+      { "example": "Inwiefern sich die Erkenntnisse aus der Pilotstudie auf die Gesamtbevölkerung übertragen lassen, ist zwar fraglich. Tatsache ist aber, dass die Tendenz in allen demografischen Gruppen erkennbar war.", "translation": "En qué medida los hallazgos del estudio piloto pueden transferirse a la población general es cuestionable. Pero lo cierto es que la tendencia era reconocible en todos los grupos demográficos." },
+      { "example": "Inwiefern sich das skandinavische Bildungsmodell auf mitteleuropäische Verhältnisse anwenden lässt, ist zwar fraglich. Tatsache ist aber, dass einzelne Elemente bereits erfolgreich adaptiert wurden.", "translation": "En qué medida el modelo educativo escandinavo puede aplicarse a las condiciones centroeuropeas es dudoso. El hecho es que elementos individuales ya han sido adaptados exitosamente." },
+      { "example": "Ob sich die Methodik aus dem naturwissenschaftlichen Bereich auf sozialwissenschaftliche Fragestellungen übertragen lässt, ist zwar fraglich. Tatsache ist aber, dass interdisziplinäre Ansätze zunehmend gefordert werden.", "translation": "Si la metodología del ámbito de las ciencias naturales puede transferirse a cuestiones de ciencias sociales es dudoso. Lo cierto es que los enfoques interdisciplinarios se exigen cada vez más." },
+      { "example": "Inwiefern sich die wirtschaftspolitischen Maßnahmen einzelner Länder verallgemeinern lassen, ist zwar fraglich. Tatsache ist aber, dass bestimmte Muster in der globalen Entwicklung unübersehbar sind.", "translation": "En qué medida las medidas de política económica de países individuales pueden generalizarse es cuestionable. El hecho es que ciertos patrones en el desarrollo global son innegables." }
+    ],
+    "type": "phrase"
+  },
+  "obwohl-gesetze-umsetzung": {
+    "translation": "Aunque se han creado nuevas leyes, aún falta su aplicación consecuente.",
+    "word": "Obwohl neue Gesetze geschaffen wurden, mangelt es noch an deren konsequenter Umsetzung.",
+    "explanation": "Estructura típica de concesión + crítica: (1) 'Obwohl ... geschaffen wurden' introduce la concesión (se ha hecho algo). (2) 'mangelt es an deren konsequenter Umsetzung' señala la carencia: falta la aplicación coherente. 'Mangeln an' = faltar algo; 'deren' retoma 'Gesetze'. Muy usada en textos políticos y jurídicos.",
+    "erklärung": "Typische Konzession plus Kritik: Zuerst wird eingeräumt, dass etwas geschaffen wurde; dann wird der Mangel an folgerichtiger Anwendung benannt.",
+    "parts": ["Obwohl", "mangelt es an", "mangelt es noch an"],
+    "examples": [
+      { "example": "Obwohl umfangreiche Förderprogramme aufgelegt wurden, mangelt es an der zielgerichteten Verteilung der Mittel.", "translation": "Aunque se establecieron amplios programas de ayuda, falta la distribución específica de los fondos." },
+      { "example": "Obwohl internationale Abkommen ratifiziert wurden, mangelt es an verbindlichen Kontrollmechanismen.", "translation": "Aunque se ratificaron acuerdos internacionales, faltan mecanismos de control vinculantes." },
+      { "example": "Obwohl die Reform bereits vor Jahren beschlossen wurde, mangelt es weiterhin an der praktischen Durchführung.", "translation": "Aunque la reforma se aprobó hace años, sigue faltando la ejecución práctica." },
+      { "example": "Obwohl Qualitätsstandards festgelegt wurden, mangelt es an deren flächendeckender Überprüfung.", "translation": "Aunque se establecieron estándares de calidad, falta su verificación en todo el territorio." }
+    ],
+    "type": "phrase"
+  },
+  "wo-lagen-die-interessen": {
+    "translation": "¿Dónde estaban los intereses?",
+    "word": "Wo lagen die Interessen?",
+    "explanation": "Pregunta para identificar los intereses o motivaciones subyacentes de actores o decisiones.",
+    "erklärung": "Frage danach, wo die eigentlichen Motive oder Interessen einer Partei lagen.",
+    "parts": ["wo lagen", "Interessen"],
+    "examples": [
+      { "example": "Wo lagen die Interessen der Pharmaindustrie bei der Zulassung des Medikaments?", "translation": "¿Dónde estaban los intereses de la industria farmacéutica en la aprobación del medicamento?" },
+      { "example": "Wo lagen eigentlich die Interessen der Opposition, als sie dem Kompromiss zustimmte?", "translation": "¿Dónde estaban realmente los intereses de la oposición cuando aceptó el compromiso?" },
+      { "example": "Man muss sich fragen, wo die Interessen der Investoren lagen und wie sie die Entscheidung beeinflussten.", "translation": "Hay que preguntarse dónde estaban los intereses de los inversores y cómo influyeron en la decisión." },
+      { "example": "Wo lagen die Interessen der Nachbarstaaten, dass sie sich so vehement gegen das Projekt aussprachen?", "translation": "¿Dónde estaban los intereses de los estados vecinos para que se manifestaran tan vehementemente contra el proyecto?" }
+    ],
+    "type": "phrase"
+  },
+  "es-nuetzt-wenig-wenn": {
+    "translation": "sirve de poco si",
+    "word": "Es nützt wenig, wenn",
+    "explanation": "Estructura para señalar que algo tiene poca utilidad o efecto bajo una condición.",
+    "erklärung": "Formel, die ausdrückt: unter einer genannten Bedingung bringt etwas wenig Nutzen.",
+    "parts": ["Es nützt wenig", "wenn"],
+    "examples": [
+      { "example": "Es nützt wenig, wenn wir theoretische Modelle entwickeln, diese jedoch in der Realität nicht überprüfen.", "translation": "Sirve de poco si desarrollamos modelos teóricos pero no los verificamos en la realidad." },
+      { "example": "Es nützt wenig, wenn Richtlinien verabschiedet werden, aber die notwendigen Ressourcen zur Umsetzung fehlen.", "translation": "Sirve de poco si se aprueban directrices, pero faltan los recursos necesarios para implementarlas." },
+      { "example": "Es nützt wenig, wenn die Diagnose präzise gestellt wird, die Therapie aber nicht konsequent durchgeführt wird.", "translation": "Sirve de poco si el diagnóstico se establece con precisión, pero la terapia no se lleva a cabo consecuentemente." },
+      { "example": "Es nützt wenig, wenn die Forschung Fortschritte macht, die Ergebnisse jedoch nicht in der Lehre ankommen.", "translation": "Sirve de poco si la investigación avanza, pero los resultados no llegan a la enseñanza." }
+    ],
+    "type": "phrase"
+  },
+  "ausgezeichnete-stabilitaet-gewaehrleisten": {
+    "translation": "garantizar una estabilidad excelente",
+    "word": "ausgezeichnete Stabilität gewährleisten",
+    "explanation": "Colocación formal (muy típica en contextos técnicos, de infraestructura o de gestión de calidad) para expresar que un sistema/proceso mantiene un funcionamiento firme y sin fallos: 'gewährleisten' = asegurar/garantizar.",
+    "erklärung": "Formelhafte Verbindung (v. a. Technik/Qualitätssicherung): sicherstellen, dass ein System/Prozess sehr stabil läuft; „gewährleisten“ = garantieren/sicherstellen.",
+    "parts": ["ausgezeichnete Stabilität", "gewährleisten"],
+    "examples": [
+      { "example": "Moderne Klimaanlagen können auch unter extremen Bedingungen eine hohe Betriebsstabilität gewährleisten.", "translation": "Los sistemas de climatización modernos pueden garantizar una alta estabilidad operativa incluso en condiciones extremas." },
+      { "example": "Die redundanten Sicherheitssysteme sollen die Stabilität der Energieversorgung rund um die Uhr gewährleisten.", "translation": "Los sistemas de seguridad redundantes deben garantizar la estabilidad del suministro energético las 24 horas." },
+      { "example": "Durch regelmäßige Inspektionen lässt sich die langfristige Stabilität der Konstruktion gewährleisten.", "translation": "Mediante inspecciones regulares se puede garantizar la estabilidad a largo plazo de la construcción." },
+      { "example": "Das neue Protokoll wurde entwickelt, um selbst bei Netzwerkausfällen eine gewisse Stabilität der Kommunikation zu gewährleisten.", "translation": "El nuevo protocolo se desarrolló para garantizar cierta estabilidad de la comunicación incluso en caso de fallos de red." }
+    ],
+    "type": "phrase"
+  },
+  "ueberlassen-bleiben": {
+    "translation": "quedar en manos de, quedar a cargo de",
+    "word": "überlassen bleiben",
+    "explanation": "Construcción pasiva: algo queda a cargo de alguien (normalmente con dativo).",
+    "erklärung": "Jemandem die Entscheidung oder Ausführung überlassen; in dessen Verantwortung bleiben.",
+    "examples": [
+      { "example": "Die konkrete Ausgestaltung der Maßnahmen soll den regionalen Behörden überlassen bleiben.", "translation": "El diseño concreto de las medidas debe quedar a cargo de las autoridades regionales." },
+      { "example": "Die Prioritätensetzung kann nicht dem Markt allein überlassen bleiben.", "translation": "El establecimiento de prioridades no puede quedar únicamente en manos del mercado." },
+      { "example": "Die ethische Bewertung darf nicht ausschließlich den Fachleuten überlassen bleiben.", "translation": "La evaluación ética no debe quedar exclusivamente a cargo de los especialistas." },
+      { "example": "Die Interpretation der Ergebnisse sollte den Lesern überlassen bleiben.", "translation": "La interpretación de los resultados debería quedar en manos de los lectores." }
+    ],
+    "type": "verb"
+  },
+  "statistischen-auswertungen-schliessen": {
+    "translation": "Los análisis estadísticos, en todo caso, permiten concluir que",
+    "word": "Die statistischen Auswertungen jedenfalls lassen darauf schließen, dass",
+    "explanation": "Fórmula para introducir una inferencia basada en datos estadísticos. 'darauf schließen' = inferir a partir de ello.",
+    "erklärung": "Formel zur Einleitung eines Schlusses aus statistischen Daten; ‚jedenfalls' betont die Folgerung.",
+    "parts": ["statistischen Auswertungen", "lassen darauf schließen", "jedenfalls"],
+    "examples": [
+      { "example": "Die empirischen Befunde lassen darauf schließen, dass ein kausaler Zusammenhang besteht.", "translation": "Los hallazgos empíricos permiten concluir que existe una relación causal." },
+      { "example": "Die Langzeitbeobachtungen jedenfalls lassen darauf schließen, dass der Interventionseffekt nachhaltig ist.", "translation": "Las observaciones a largo plazo, en todo caso, permiten concluir que el efecto de la intervención es sostenible." },
+      { "example": "Die Datenanalyse lässt darauf schließen, dass regionale Unterschiede eine bedeutende Rolle spielen.", "translation": "El análisis de datos permite concluir que las diferencias regionales desempeñan un papel significativo." },
+      { "example": "Die Auswertungen der Kontrollgruppe lassen darauf schließen, dass externe Faktoren berücksichtigt werden müssen.", "translation": "Los análisis del grupo de control permiten concluir que deben considerarse factores externos." }
+    ],
+    "type": "phrase"
+  },
+  "erscheint-es-paradox": {
+    "translation": "parece paradójico",
+    "word": "erscheint es paradox",
+    "explanation": "Construcción impersonal: 'es erscheint (jemandem) paradox, dass...' = parece paradójico (a alguien) que... Usada para señalar una contradicción aparente.",
+    "erklärung": "Unpersönliche Wendung: etwas erscheint paradox = etwas wirkt widersprüchlich.",
+    "parts": ["erscheint", "es", "paradox"],
+    "examples": [
+      { "example": "Im Zeitalter der Globalisierung erscheint es paradox, dass nationalistische Tendenzen zunehmen.", "translation": "En la era de la globalización parece paradójico que aumenten las tendencias nacionalistas." },
+      { "example": "Vielen Ökonomen erscheint es paradox, dass Wachstum und Nachhaltigkeit vereinbar sein sollen.", "translation": "A muchos economistas les parece paradójico que crecimiento y sostenibilidad deban ser compatibles." },
+      { "example": "Es erscheint paradox, dass gerade in wohlhabenden Gesellschaften die psychischen Erkrankungen steigen.", "translation": "Parece paradójico que precisamente en sociedades prósperas aumenten las enfermedades psíquicas." },
+      { "example": "Den Forschern erscheint es paradox, dass höhere Bildung nicht automatisch zu rationaleren Entscheidungen führt.", "translation": "A los investigadores les parece paradójico que una mayor educación no conduzca automáticamente a decisiones más racionales." }
+    ],
+    "type": "phrase"
+  },
+  "vielen-menschen-sind-etwas-unheimlich": {
+    "translation": "A mucha gente le resultan (un poco) inquietantes.",
+    "word": "Vielen Menschen sind \"etwas\" unheimlich.",
+    "explanation": "Estructura: Dativ (experiencer) + sein + predicativo. \"etwas\" = un poco, algo (grado). En español: \"A mucha gente le resultan un poco inquietantes.\" Mismo patrón que Mir ist kalt, Uns ist das peinlich: quien \"siente\" va en Dativ.",
+    "erklärung": "Struktur: Dativ (Experiencer) + sein + Prädikativ. ‚etwas' = ein bisschen, Gradpartikel. Wie bei Mir ist kalt: der, dem etwas so erscheint, steht im Dativ.",
+    "parts": ["vielen Menschen", "sind", "etwas", "unheimlich"],
+    "examples": [
+      { "example": "Manchen Bürgern sind autonome Fahrzeuge noch immer unheimlich.", "translation": "A algunos ciudadanos los vehículos autónomos aún les resultan inquietantes." },
+      { "example": "Den meisten Befragten war die Vorstellung, permanent überwacht zu werden, äußerst unheimlich.", "translation": "A la mayoría de los encuestados la idea de ser vigilados permanentemente les resultaba sumamente inquietante." },
+      { "example": "Mir ist die zunehmende Macht einzelner Konzerne durchaus unheimlich.", "translation": "A mí el creciente poder de empresas individuales me resulta bastante inquietante." },
+      { "example": "Den Kritikern sind besonders die undurchsichtigen Algorithmen der Plattformen unheimlich.", "translation": "A los críticos los algoritmos opacos de las plataformas les resultan especialmente inquietantes." }
+    ],
+    "type": "phrase"
+  },
+  "ein-weiterer-haeufiger-kritikpunkt-betrifft": {
+    "translation": "Otro punto de crítica frecuente concierne",
+    "word": "Ein weiterer häufiger Kritikpunkt betrifft",
+    "explanation": "Fórmula típica para introducir un nuevo argumento crítico en textos argumentativos. 'Ein weiterer' = otro más; 'häufiger Kritikpunkt' = punto que se critica a menudo; 'betrifft' = concierne, afecta a. Se completa con el objeto: 'betrifft die Materialfrage' = concierne la cuestión de los materiales.",
+    "erklärung": "Typische Formel zur Einleitung eines weiteren kritischen Arguments. ‚Ein weiterer häufiger Kritikpunkt' leitet den nächsten Aspekt ein; ‚betrifft' verlangt ein Objekt (z.B. die Materialfrage).",
+    "parts": ["Ein weiterer", "häufiger Kritikpunkt", "betrifft"],
+    "examples": [
+      { "example": "Ein weiterer häufiger Kritikpunkt betrifft die unzureichende Berücksichtigung sozioökonomischer Faktoren in der Bildungspolitik.", "translation": "Otro punto de crítica frecuente concierne la consideración insuficiente de factores socioeconómicos en la política educativa." },
+      { "example": "Ein weiterer häufiger Kritikpunkt betrifft die fehlende Kohärenz zwischen den verschiedenen Ebenen der Verwaltung.", "translation": "Otro punto de crítica frecuente concierne la falta de coherencia entre los diferentes niveles de la administración." },
+      { "example": "Ein weiterer häufiger Kritikpunkt betrifft die asymmetrische Machtverteilung innerhalb internationaler Organisationen.", "translation": "Otro punto de crítica frecuente concierne la distribución asimétrica del poder dentro de organizaciones internacionales." },
+      { "example": "Ein weiterer häufiger Kritikpunkt betrifft die methodologischen Schwächen empirischer Studien zu diesem Thema.", "translation": "Otro punto de crítica frecuente concierne las debilidades metodológicas de estudios empíricos sobre este tema." }
+    ],
+    "type": "phrase"
+  },
+  "hier-wird-oft-gefragt": {
+    "translation": "Aquí se pregunta a menudo, Aquí se suele preguntar",
+    "word": "Hier wird oft gefragt",
+    "explanation": "Construcción pasiva impersonal para introducir una pregunta recurrente o frecuente en el debate. 'Hier' = en este contexto/punto; 'wird gefragt' = se pregunta (pasiva de fragen); 'oft' = a menudo. Suele ir seguida de dos puntos y la pregunta directa.",
+    "erklärung": "Unpersönliche Passivformel zur Einleitung einer häufig gestellten Frage. ‚Hier' = an dieser Stelle/im Kontext; ‚wird gefragt' = Passiv von fragen; leitet typischerweise eine direkte Frage ein.",
+    "parts": ["Hier", "wird", "oft", "gefragt"],
+    "examples": [
+      { "example": "In der Debatte über künstliche Intelligenz wird oft gefragt, ob Maschinen jemals ein echtes Bewusstsein entwickeln können.", "translation": "En el debate sobre inteligencia artificial se pregunta a menudo si las máquinas podrán desarrollar alguna vez una conciencia auténtica." },
+      { "example": "Bei der Diskussion um Grundeinkommen wird oft gefragt, wie sich dies auf die Arbeitsmotivation der Bevölkerung auswirken würde.", "translation": "En la discusión sobre la renta básica se suele preguntar cómo afectaría esto a la motivación laboral de la población." },
+      { "example": "Im Kontext der Energiewende wird oft gefragt, ob die Versorgungssicherheit ohne fossile Brennstoffe gewährleistet werden kann.", "translation": "En el contexto de la transición energética se pregunta a menudo si la seguridad del suministro puede garantizarse sin combustibles fósiles." },
+      { "example": "Angesichts der demografischen Entwicklung wird oft gefragt, wie die Sozialsysteme langfristig finanziert werden sollen.", "translation": "Ante la evolución demográfica se suele preguntar cómo deben financiarse los sistemas sociales a largo plazo." }
+    ],
+    "type": "phrase"
+  },
+  "es-liegt-an-uns": {
+    "translation": "Depende de nosotros, Está en nuestras manos, Es nuestra responsabilidad",
+    "word": "Es liegt an uns",
+    "explanation": "Construcción impersonal con 'an jemandem liegen' (depender de alguien). 'Es liegt an uns' introduce que la responsabilidad o la decisión recae en nosotros. Suele ir seguida de infinitivo con zu: 'Es liegt an uns, ... zu tun'.",
+    "erklärung": "Unpersönliche Wendung: ‚Es liegt an uns' = die Verantwortung oder Entscheidung liegt bei uns. Oft gefolgt von Infinitiv mit zu.",
+    "parts": ["Es", "liegt", "an", "uns"],
+    "examples": [
+      { "example": "Ob die Verhandlungen erfolgreich verlaufen, liegt nicht allein an uns, sondern auch an der Kompromissbereitschaft der Gegenseite.", "translation": "Si las negociaciones tienen éxito no depende solo de nosotros, sino también de la disposición al compromiso de la otra parte." },
+      { "example": "Es liegt an uns als Gesellschaft, strukturelle Ungleichheiten abzubauen und Chancengerechtigkeit herzustellen.", "translation": "Depende de nosotros como sociedad desmantelar las desigualdades estructurales y establecer la igualdad de oportunidades." },
+      { "example": "Die Wissenschaftler betonen, dass es nun an uns liegt, die Forschungsergebnisse in konkrete Maßnahmen umzusetzen.", "translation": "Los científicos enfatizan que ahora está en nuestras manos convertir los resultados de la investigación en medidas concretas." },
+      { "example": "Es liegt nicht an uns, die Vergangenheit zu ändern, wohl aber, aus ihr zu lernen und Wiederholungen zu verhindern.", "translation": "No está en nuestras manos cambiar el pasado, pero sí aprender de él y evitar que se repita." }
+    ],
+    "type": "phrase"
+  },
+  "eine-zukunft-zu-fordern": {
+    "translation": "exigir un futuro, reclamar un futuro",
+    "word": "eine Zukunft zu fordern",
+    "explanation": "Construcción de infinitivo con zu. 'Fordern' = exigir, reclamar. 'Eine Zukunft fordern' = exigir/reclamar un futuro (mejor, sostenible, etc.). Suele aparecer en contextos políticos o de activismo: exigir cambios para las generaciones venideras.",
+    "erklärung": "Infinitivkonstruktion mit zu. ‚Fordern' = verlangen, einfordern. Typisch in politischen oder aktivistischen Kontexten: eine bessere Zukunft einfordern.",
+    "parts": ["eine Zukunft", "zu fordern"],
+    "examples": [
+      { "example": "Die Gewerkschaften haben beschlossen, eine Zukunft mit gerechteren Arbeitsbedingungen und existenzsichernden Löhnen zu fordern.", "translation": "Los sindicatos han decidido exigir un futuro con condiciones laborales más justas y salarios que aseguren la subsistencia." },
+      { "example": "Anstatt resigniert zuzusehen, gilt es, eine Zukunft zu fordern, in der Menschenrechte universell respektiert werden.", "translation": "En lugar de observar resignados, se trata de reclamar un futuro en el que los derechos humanos sean respetados universalmente." },
+      { "example": "Die Zivilgesellschaft mobilisiert sich, um eine Zukunft zu fordern, die nicht von kurzfristigen Profitinteressen dominiert wird.", "translation": "La sociedad civil se moviliza para exigir un futuro que no esté dominado por intereses de lucro a corto plazo." },
+      { "example": "Philosophen argumentieren, dass es nicht genügt, eine bessere Zukunft zu erhoffen – wir müssen sie aktiv fordern und gestalten.", "translation": "Los filósofos argumentan que no basta con esperar un futuro mejor – debemos exigirlo y configurarlo activamente." }
+    ],
+    "type": "phrase"
+  },
+  "eine-frage-des-politischen-willens": {
+    "translation": "una cuestión de voluntad política",
+    "word": "eine Frage des politischen Willens",
+    "explanation": "Fórmula típica en discurso político. 'X ist eine Frage des politischen Willens' = X depende de si hay voluntad política para actuar. Implica que la solución técnica existe, pero falta la decisión política.",
+    "erklärung": "Typische Formel im politischen Diskurs. X ist eine Frage des politischen Willens = es geht um den Willen der Politik zu handeln, nicht um technische Machbarkeit.",
+    "parts": ["eine Frage", "des politischen Willens"],
+    "examples": [
+      { "example": "Die Bekämpfung der Obdachlosigkeit in Großstädten ist längst keine Ressourcenfrage mehr, sondern eine Frage des politischen Willens, bestehende Konzepte konsequent umzusetzen.", "translation": "La lucha contra la falta de vivienda en las grandes ciudades ya no es una cuestión de recursos, sino de voluntad política para implementar consecuentemente los conceptos existentes." },
+      { "example": "Ob die digitale Infrastruktur in ländlichen Regionen ausgebaut wird, bleibt eine Frage des politischen Willens, da die technischen Lösungen bereits verfügbar sind.", "translation": "Si la infraestructura digital se expande en regiones rurales sigue siendo una cuestión de voluntad política, ya que las soluciones técnicas ya están disponibles." },
+      { "example": "Die Schließung der Lohnlücke zwischen den Geschlechtern ist keine ökonomische Notwendigkeit, sondern eine Frage des politischen Willens zur Durchsetzung bestehender Gleichstellungsgesetze.", "translation": "El cierre de la brecha salarial entre géneros no es una necesidad económica, sino una cuestión de voluntad política para hacer cumplir las leyes de igualdad existentes." },
+      { "example": "Experten betonen, dass die Dekarbonisierung der Industrie technisch machbar ist – es bleibt eine Frage des politischen Willens, entsprechende Anreize zu schaffen.", "translation": "Los expertos enfatizan que la descarbonización de la industria es técnicamente factible – sigue siendo una cuestión de voluntad política crear los incentivos correspondientes." }
+    ],
+    "type": "phrase"
+  },
+  "gesellschaftlichen-verantwortung": {
+    "translation": "responsabilidad social, responsabilidad de la sociedad",
+    "word": "gesellschaftlichen Verantwortung",
+    "explanation": "Sustantivo con adjetivo declinado. 'Gesellschaftlich' = social, societal; 'Verantwortung' = responsabilidad. Suele aparecer junto a 'politischer Wille': la sociedad y sus actores (ciudadanos, empresas) deben asumir su parte de responsabilidad.",
+    "erklärung": "Adjektiv + Nomen. Die Verantwortung, die die Gesellschaft bzw. ihre Akteure tragen. Oft gepaart mit politischem Willen.",
+    "parts": ["gesellschaftlichen", "Verantwortung"],
+    "examples": [
+      { "example": "Konzerne, die in Entwicklungsländern produzieren, müssen ihrer gesellschaftlichen Verantwortung gerecht werden und faire Arbeitsbedingungen garantieren.", "translation": "Los consorcios que producen en países en desarrollo deben cumplir con su responsabilidad social y garantizar condiciones laborales justas." },
+      { "example": "Die Medien tragen eine besondere gesellschaftliche Verantwortung für die Qualität der öffentlichen Debatte und die Verbreitung faktenbasierter Informationen.", "translation": "Los medios tienen una responsabilidad social especial por la calidad del debate público y la difusión de información basada en hechos." },
+      { "example": "Vermögende Privatpersonen sollten sich ihrer gesellschaftlichen Verantwortung bewusst sein und durch philanthropische Projekte zum Gemeinwohl beitragen.", "translation": "Las personas privadas adineradas deberían ser conscientes de su responsabilidad social y contribuir al bien común mediante proyectos filantrópicos." },
+      { "example": "Die Universität betont ihre gesellschaftliche Verantwortung, indem sie Forschungsergebnisse transparent kommuniziert und den Dialog mit der Öffentlichkeit sucht.", "translation": "La universidad enfatiza su responsabilidad social comunicando los resultados de investigación de manera transparente y buscando el diálogo con el público." }
+    ],
+    "type": "phrase"
+  },
+  "ich-habe-erhebliche-zweifel-an": {
+    "translation": "Tengo dudas considerables sobre",
+    "word": "Ich habe erhebliche Zweifel an",
+    "explanation": "Fórmula para expresar escepticismo o desconfianza hacia algo. 'Erheblich' = considerable, significativo; 'Zweifel an' + dativo = dudas sobre. Típica en textos argumentativos y académicos para introducir una objeción o reserva.",
+    "erklärung": "Formel zur Einräumung von Skepsis oder Misstrauen gegenüber etwas. ‚Erheblich' = beträchtlich; ‚Zweifel an' + Dativ. Typisch in argumentativen Texten.",
+    "parts": ["Ich habe", "erhebliche Zweifel", "an"],
+    "examples": [
+      { "example": "Die Opposition äußerte erhebliche Zweifel an der Verfassungsmäßigkeit des Gesetzentwurfs und kündigte eine Klage vor dem Bundesverfassungsgericht an.", "translation": "La oposición expresó dudas considerables sobre la constitucionalidad del proyecto de ley y anunció una demanda ante el Tribunal Constitucional Federal." },
+      { "example": "Angesichts der widersprüchlichen Datenlage hegen Wissenschaftler erhebliche Zweifel an der Reproduzierbarkeit der veröffentlichten Forschungsergebnisse.", "translation": "Ante la situación contradictoria de los datos, los científicos albergan dudas considerables sobre la reproducibilidad de los resultados de investigación publicados." },
+      { "example": "Verbraucherschützer haben erhebliche Zweifel an den Versprechungen der Hersteller bezüglich der Klimaneutralität ihrer Produkte geäußert.", "translation": "Los defensores de los consumidores han expresado dudas considerables sobre las promesas de los fabricantes respecto a la neutralidad climática de sus productos." },
+      { "example": "Der Gutachter meldete erhebliche Zweifel an der Tragfähigkeit der vorgelegten Finanzierungskonzepte für das Infrastrukturprojekt an.", "translation": "El perito manifestó dudas considerables sobre la viabilidad de los conceptos de financiación presentados para el proyecto de infraestructura." }
+    ],
+    "type": "phrase"
+  },
+  "es-ist-doch-bekannt-dass": {
+    "translation": "Es sabido que, Es conocido que",
+    "word": "Es ist doch bekannt, dass",
+    "explanation": "Fórmula para introducir un hecho que se asume como conocimiento común. 'Doch' refuerza la afirmación (pero sí, claro que); 'bekannt' = conocido; 'dass' introduce la subordinada. Típica como premisa argumentativa.",
+    "erklärung": "Formel zur Einleitung einer als allgemein bekannt vorausgesetzten Tatsache. ‚Doch' verstärkt die Aussage; leitet oft eine argumentative Prämisse ein.",
+    "parts": ["Es ist", "doch", "bekannt", "dass"],
+    "examples": [
+      { "example": "Es ist doch bekannt, dass die Digitalisierung tiefgreifende Veränderungen in der Arbeitswelt mit sich bringt – dennoch fehlen vielerorts konkrete Anpassungsstrategien.", "translation": "Es sabido que la digitalización trae consigo cambios profundos en el mundo laboral – sin embargo, en muchos lugares faltan estrategias concretas de adaptación." },
+      { "example": "In der Debatte um Bildungsreformen wird oft übersehen: Es ist doch bekannt, dass frühkindliche Förderung den größten Einfluss auf spätere Bildungschancen hat.", "translation": "En el debate sobre reformas educativas a menudo se pasa por alto: es conocido que el fomento en la primera infancia tiene la mayor influencia en las oportunidades educativas posteriores." },
+      { "example": "Die Kritiker argumentieren: Es ist doch bekannt, dass rein technologische Lösungen ohne gesellschaftlichen Wandel die Klimakrise nicht bewältigen können.", "translation": "Los críticos argumentan: es sabido que las soluciones puramente tecnológicas sin cambio social no pueden superar la crisis climática." },
+      { "example": "Es ist doch bekannt, dass mehrsprachige Kompetenz in globalisierten Arbeitsmärkten einen entscheidenden Wettbewerbsvorteil darstellt – trotzdem wird der Fremdsprachenunterricht vielerorts vernachlässigt.", "translation": "Es conocido que la competencia multilingüe representa una ventaja competitiva decisiva en mercados laborales globalizados – a pesar de ello, la enseñanza de idiomas extranjeros se descuida en muchos lugares." }
+    ],
+    "type": "phrase"
+  },
+  "die-situation-spitzt-sich-zu": {
+    "translation": "La situación se agrava, La situación se recrudece",
+    "word": "Die Situation spitzt sich zu",
+    "explanation": "Fórmula para indicar que un conflicto, crisis o tensión se intensifica o llega a un punto crítico. 'Sich zuspitzen' = agravarse, recrudecerse, llegar al límite. Verbo reflexivo separable.",
+    "erklärung": "Formel für eine sich verschärfende Konflikt- oder Krisenlage. ‚Sich zuspitzen' = sich verschärfen, einen kritischen Punkt erreichen.",
+    "parts": ["Die Situation", "spitzt sich", "zu"],
+    "examples": [
+      { "example": "Der Konflikt zwischen den Tarifparteien spitzt sich dramatisch zu, nachdem die Gewerkschaft mit einem unbefristeten Streik gedroht hat und die Arbeitgeber jegliche Kompromissbereitschaft verweigern.", "translation": "El conflicto entre los interlocutores sociales se agrava dramáticamente después de que el sindicato amenazara con una huelga indefinida y los empleadores rechazaran cualquier disposición al compromiso." },
+      { "example": "Im Nahen Osten spitzt sich die humanitäre Lage weiter zu, da internationale Hilfsorganisationen aufgrund der anhaltenden Kämpfe keinen Zugang zu den betroffenen Gebieten erhalten.", "translation": "En Oriente Medio la situación humanitaria se recrudece aún más, ya que las organizaciones internacionales de ayuda no obtienen acceso a las zonas afectadas debido a los combates continuos." },
+      { "example": "Die Debatte um die Energiewende spitzt sich zunehmend zu, wobei Befürworter erneuerbarer Energien und Vertreter traditioneller Industrien unversöhnlich aufeinandertreffen.", "translation": "El debate sobre la transición energética se intensifica cada vez más, con defensores de las energías renovables y representantes de la industria tradicional enfrentándose irreconciliablemente." },
+      { "example": "Angesichts steigender Mieten und zunehmender Wohnungsknappheit spitzt sich die soziale Lage in Ballungsräumen dramatisch zu, was zu verstärkten Protesten und politischen Forderungen nach Mietpreisbremsen führt.", "translation": "Ante el aumento de los alquileres y la creciente escasez de viviendas, la situación social en las áreas metropolitanas se agrava dramáticamente, lo que conduce a protestas intensificadas y demandas políticas de controles de alquiler." }
+    ],
+    "type": "phrase"
+  },
+  "stellt-sich-somit-die-frage": {
+    "translation": "Se plantea así pues la pregunta",
+    "word": "Stellt sich somit die Frage",
+    "explanation": "Fórmula típica para introducir una pregunta retórica o de reflexión tras un argumento. 'Somit' = así pues, por tanto; conecta la conclusión con la pregunta que sigue.",
+    "erklärung": "Typische Formel zur Einleitung einer rhetorischen oder nachdenklichen Frage nach einem Argument. „Somit“ leitet die Schlussfolgerung ein.",
+    "parts": ["Stellt sich", "somit", "die Frage"],
+    "examples": [
+      { "example": "Die Digitalisierung verändert Arbeitsprozesse grundlegend, gleichzeitig fehlen qualifizierte Fachkräfte. Stellt sich somit die Frage, wie Bildungseinrichtungen auf diese Herausforderung reagieren sollten.", "translation": "La digitalización cambia fundamentalmente los procesos laborales, al mismo tiempo faltan profesionales cualificados. Se plantea así pues la pregunta de cómo deberían reaccionar las instituciones educativas ante este desafío." },
+      { "example": "Erneuerbare Energien sind klimafreundlich, aber ihre Speicherung bleibt problematisch. Stellt sich somit die Frage, ob die Energiewende ohne technologische Durchbrüche gelingen kann.", "translation": "Las energías renovables son respetuosas con el clima, pero su almacenamiento sigue siendo problemático. Se plantea así pues la pregunta de si la transición energética puede tener éxito sin avances tecnológicos." },
+      { "example": "Internationale Studierende bereichern den akademischen Diskurs, doch viele verlassen Deutschland nach dem Abschluss. Stellt sich somit die Frage, welche Anreize geschaffen werden müssen, um Fachkräfte langfristig zu binden.", "translation": "Los estudiantes internacionales enriquecen el discurso académico, pero muchos abandonan Alemania después de graduarse. Se plantea así pues la pregunta de qué incentivos deben crearse para retener profesionales a largo plazo." },
+      { "example": "Die Meinungsfreiheit ist ein Grundrecht, dennoch nehmen Hasskommentare in sozialen Medien zu. Stellt sich somit die Frage, wo die Grenzen der freien Meinungsäußerung verlaufen und wie diese durchgesetzt werden können.", "translation": "La libertad de expresión es un derecho fundamental, sin embargo los comentarios de odio aumentan en las redes sociales. Se plantea así pues la pregunta de dónde están los límites de la libre expresión de opinión y cómo pueden hacerse cumplir." }
+    ],
+    "type": "phrase"
+  },
+  "ich-ziehe-die-wahrheit-in-zweifel": {
+    "translation": "Pongo la verdad en duda, Dudo de la verdad",
+    "word": "ich ziehe die Wahrheit in Zweifel",
+    "explanation": "Expresión fija: 'etwas in Zweifel ziehen' = poner algo en duda, cuestionar algo. Se usa con Akkusativ. Alternativa: 'Zweifel an etwas haben' (con Dativ).",
+    "erklärung": "Feste Wendung: etwas in Zweifel ziehen = etw. bezweifeln, in Frage stellen. Akkusativ beim Objekt. Alternative: Zweifel an etwas (Dat.) haben.",
+    "parts": ["in Zweifel", "ziehen", "etwas in Zweifel ziehen"],
+    "examples": [
+      { "example": "Angesichts der widersprüchlichen Datenlage ziehen mehrere Experten die Validität der Studienergebnisse in Zweifel und fordern eine unabhängige Überprüfung der Methodik.", "translation": "Ante la situación contradictoria de los datos, varios expertos ponen en duda la validez de los resultados del estudio y exigen una verificación independiente de la metodología." },
+      { "example": "Die Opposition zieht die Rechtmäßigkeit des Gesetzgebungsverfahrens in Zweifel, da wesentliche Anhörungen im Parlament übersprungen wurden.", "translation": "La oposición cuestiona la legalidad del procedimiento legislativo, ya que se omitieron audiencias esenciales en el parlamento." },
+      { "example": "Historiker ziehen zunehmend die Authentizität der überlieferten Dokumente in Zweifel, nachdem neue archäologische Funde erhebliche Diskrepanzen aufgedeckt haben.", "translation": "Los historiadores cuestionan cada vez más la autenticidad de los documentos transmitidos después de que nuevos hallazgos arqueológicos revelaran discrepancias considerables." },
+      { "example": "Verbraucherschützer ziehen die Nachhaltigkeit der beworbenen Produktionsmethoden in Zweifel und kritisieren das Fehlen transparenter Zertifizierungen.", "translation": "Los defensores de los consumidores ponen en duda la sostenibilidad de los métodos de producción publicitados y critican la falta de certificaciones transparentes." }
+    ],
+    "type": "phrase"
+  }
+}

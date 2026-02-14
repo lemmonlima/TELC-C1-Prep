@@ -1,0 +1,2956 @@
+{
+  "title": "Präfixnomen",
+  "description": "Nominalisierte Formen und Präfixnomen nach Basisverb – Karte und Liste.",
+  "baseVerbs": ["machen", "treffen", "nehmen", "fehlen", "kommen", "tragen", "treiben", "stehen", "denken", "geben", "gehen", "stellen", "arbeiten", "greifen", "dauern"],
+  "words": [
+    {
+      "id": "machen",
+      "word": "Machen",
+      "artikel": "das",
+      "baseVerb": "machen",
+      "translation": "el hacer; la realización",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Tun", "translation": "el hacer" },
+        { "word": "Handeln", "translation": "la acción" },
+        { "word": "Ausführung", "translation": "la ejecución" }
+      ],
+      "antonyms": [
+        { "word": "Unterlassen", "translation": "la omisión" },
+        { "word": "Nichtstun", "translation": "la inacción" }
+      ],
+      "examples": [
+        { "example": "Das bloße Machen ohne strategische Planung führt selten zu nachhaltigen Ergebnissen.", "translation": "El mero hacer sin planificación estratégica rara vez conduce a resultados sostenibles." },
+        { "example": "Im Machen liegt oft mehr Weisheit als im endlosen Planen.", "translation": "En el hacer a menudo hay más sabiduría que en la planificación interminable." }
+      ]
+    },
+    {
+      "id": "anmache",
+      "word": "Anmache",
+      "artikel": "die",
+      "baseVerb": "machen",
+      "translation": "coqueteo directo; insinuación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Flirt", "translation": "el flirteo" },
+        { "word": "Anbaggern", "translation": "el ligoteo" },
+        { "word": "Anflirterei", "translation": "el coqueteo" }
+      ],
+      "antonyms": [
+        { "word": "Zurückhaltung", "translation": "la reserva" },
+        { "word": "Distanziertheit", "translation": "el distanciamiento" }
+      ],
+      "examples": [
+        { "example": "Die direkte Anmache potenzieller Kooperationspartner auf der Fachkonferenz erwies sich als erfolgreich.", "translation": "El abordaje directo de potenciales socios de cooperación en la conferencia especializada resultó exitoso." },
+        { "example": "Die rhetorische Anmache des Publikums durch den Keynote-Speaker war äußerst wirkungsvoll.", "translation": "El abordaje retórico del público por el ponente principal fue extremadamente efectivo." }
+      ]
+    },
+    {
+      "id": "aufmachung",
+      "word": "Aufmachung",
+      "artikel": "die",
+      "baseVerb": "machen",
+      "translation": "diseño; presentación externa",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Gestaltung", "translation": "el diseño" },
+        { "word": "Erscheinungsbild", "translation": "la apariencia" },
+        { "word": "Layout", "translation": "el diseño gráfico" },
+        { "word": "Präsentation", "translation": "la presentación" }
+      ],
+      "antonyms": [
+        { "word": "Schlichtheit", "translation": "la sencillez" },
+        { "word": "Einfachheit", "translation": "la simplicidad" }
+      ],
+      "examples": [
+        { "example": "Die professionelle Aufmachung der wissenschaftlichen Publikation trägt wesentlich zur Glaubwürdigkeit bei.", "translation": "El diseño profesional de la publicación científica contribuye significativamente a la credibilidad." },
+        { "example": "Die auffällige Aufmachung des Produkts zog sofort die Blicke der Kunden auf sich.", "translation": "La llamativa presentación del producto atrajo inmediatamente las miradas de los clientes." }
+      ]
+    },
+    {
+      "id": "mitmachen",
+      "word": "Mitmachen",
+      "artikel": "das",
+      "baseVerb": "machen",
+      "translation": "participación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Teilnahme", "translation": "la participación" },
+        { "word": "Beteiligung", "translation": "la implicación" },
+        { "word": "Mitwirkung", "translation": "la colaboración" }
+      ],
+      "antonyms": [
+        { "word": "Fernbleiben", "translation": "la ausencia" },
+        { "word": "Abstinenz", "translation": "la abstinencia" },
+        { "word": "Passivität", "translation": "la pasividad" }
+      ],
+      "examples": [
+        { "example": "Das aktive Mitmachen in Seminaren fördert den Lernprozess erheblich.", "translation": "La participación activa en seminarios fomenta considerablemente el proceso de aprendizaje." },
+        { "example": "Ohne das Mitmachen aller Beteiligten kann das Projekt nicht gelingen.", "translation": "Sin la participación de todos los involucrados, el proyecto no puede tener éxito." }
+      ]
+    },
+    {
+      "id": "nachmachen",
+      "word": "Nachmachen",
+      "artikel": "das",
+      "baseVerb": "machen",
+      "translation": "imitación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Imitation", "translation": "la imitación" },
+        { "word": "Kopieren", "translation": "el copiado" },
+        { "word": "Nachahmen", "translation": "la emulación" }
+      ],
+      "antonyms": [
+        { "word": "Originalität", "translation": "la originalidad" },
+        { "word": "Innovation", "translation": "la innovación" },
+        { "word": "Eigenständigkeit", "translation": "la autonomía" }
+      ],
+      "examples": [
+        { "example": "Das unreflektierte Nachmachen fremder Methoden kann zu erheblichen Fehlern führen.", "translation": "La imitación irreflexiva de métodos ajenos puede conducir a errores considerables." },
+        { "example": "Das Nachmachen von Unterschriften ist strafbar.", "translation": "La imitación de firmas es punible." }
+      ]
+    },
+    {
+      "id": "treffen",
+      "word": "Treffen",
+      "artikel": "das",
+      "baseVerb": "treffen",
+      "translation": "encuentro; reunión",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Begegnung", "translation": "el encuentro" },
+        { "word": "Zusammenkunft", "translation": "la reunión" },
+        { "word": "Meeting", "translation": "la reunión" },
+        { "word": "Versammlung", "translation": "la asamblea" }
+      ],
+      "antonyms": [
+        { "word": "Trennung", "translation": "la separación" },
+        { "word": "Abschied", "translation": "la despedida" }
+      ],
+      "examples": [
+        { "example": "Das internationale Treffen der Forschungsgruppe findet dieses Jahr in Berlin statt.", "translation": "El encuentro internacional del grupo de investigación tiene lugar este año en Berlín." },
+        { "example": "Bei dem informellen Treffen wurden wichtige Kontakte geknüpft.", "translation": "En el encuentro informal se establecieron contactos importantes." },
+        { "example": "Das jährliche Treffen der Alumni ist ein fester Bestandteil des Universitätskalenders.", "translation": "El encuentro anual de exalumnos es una parte fija del calendario universitario." }
+      ]
+    },
+    {
+      "id": "eintreffen",
+      "word": "Eintreffen",
+      "artikel": "das",
+      "baseVerb": "treffen",
+      "translation": "llegada",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Ankunft", "translation": "la llegada" },
+        { "word": "Ankommen", "translation": "el arribo" },
+        { "word": "Erscheinen", "translation": "la aparición" }
+      ],
+      "antonyms": [
+        { "word": "Abreise", "translation": "la partida" },
+        { "word": "Abfahrt", "translation": "la salida" },
+        { "word": "Weggang", "translation": "la marcha" }
+      ],
+      "examples": [
+        { "example": "Nach dem verspäteten Eintreffen der Delegation musste die Tagesordnung angepasst werden.", "translation": "Tras la llegada tardía de la delegación, hubo que adaptar el orden del día." },
+        { "example": "Das pünktliche Eintreffen aller Teilnehmer ermöglichte einen reibungslosen Ablauf.", "translation": "La llegada puntual de todos los participantes permitió un desarrollo fluido." }
+      ]
+    },
+    {
+      "id": "zusammentreffen",
+      "word": "Zusammentreffen",
+      "artikel": "das",
+      "baseVerb": "treffen",
+      "translation": "coincidencia; encuentro",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Begegnung", "translation": "el encuentro" },
+        { "word": "Koinzidenz", "translation": "la coincidencia" },
+        { "word": "Aufeinandertreffen", "translation": "el enfrentamiento" }
+      ],
+      "antonyms": [
+        { "word": "Trennung", "translation": "la separación" },
+        { "word": "Auseinandergehen", "translation": "la dispersión" }
+      ],
+      "examples": [
+        { "example": "Das unglückliche Zusammentreffen mehrerer Faktoren führte zur Verzögerung des Projekts.", "translation": "La desafortunada coincidencia de varios factores provocó el retraso del proyecto." },
+        { "example": "Das zufällige Zusammentreffen der beiden Wissenschaftler führte zu einer bahnbrechenden Kooperation.", "translation": "El encuentro casual de los dos científicos condujo a una cooperación revolucionaria." },
+        { "example": "Das Zusammentreffen verschiedener Kulturen bereichert die Gesellschaft.", "translation": "El encuentro de diferentes culturas enriquece la sociedad." }
+      ]
+    },
+    {
+      "id": "nehmen",
+      "word": "Nehmen",
+      "artikel": "das",
+      "baseVerb": "nehmen",
+      "translation": "el tomar; la toma",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Entgegennahme", "translation": "la recepción" },
+        { "word": "Annahme", "translation": "la aceptación" }
+      ],
+      "antonyms": [
+        { "word": "Geben", "translation": "el dar" },
+        { "word": "Schenken", "translation": "el regalar" },
+        { "word": "Abgeben", "translation": "la entrega" }
+      ],
+      "examples": [
+        { "example": "In zwischenmenschlichen Beziehungen sollte das Nehmen und Geben ausgewogen sein.", "translation": "En las relaciones interpersonales, el tomar y dar debería estar equilibrado." },
+        { "example": "Das ständige Nehmen ohne Gegenleistung belastet jede Freundschaft.", "translation": "El tomar constante sin contrapartida carga cualquier amistad." }
+      ]
+    },
+    {
+      "id": "abnahme",
+      "word": "Abnahme",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "reducción; aceptación oficial; disminución",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Rückgang", "translation": "el descenso" },
+        { "word": "Verringerung", "translation": "la reducción" },
+        { "word": "Akzeptanz", "translation": "la aceptación" },
+        { "word": "Prüfung", "translation": "la inspección" },
+        { "word": "Inspektion", "translation": "la revisión" }
+      ],
+      "antonyms": [
+        { "word": "Zunahme", "translation": "el aumento" },
+        { "word": "Anstieg", "translation": "el incremento" },
+        { "word": "Wachstum", "translation": "el crecimiento" }
+      ],
+      "examples": [
+        { "example": "Die offizielle Abnahme des Bauprojekts erfolgte nach eingehender Prüfung durch die Behörden.", "translation": "La aceptación oficial del proyecto de construcción se realizó tras un examen exhaustivo por las autoridades." },
+        { "example": "Die Abnahme der Bevölkerungszahl in ländlichen Gebieten ist besorgniserregend.", "translation": "La disminución de la población en áreas rurales es preocupante." },
+        { "example": "Die Abnahme der Prüfung erfolgt durch einen externen Gutachter.", "translation": "La aceptación del examen se realiza por un evaluador externo." },
+        { "example": "Die technische Abnahme des Fahrzeugs ist vor der Zulassung erforderlich.", "translation": "La inspección técnica del vehículo es necesaria antes de la matriculación." }
+      ]
+    },
+    {
+      "id": "annahme",
+      "word": "Annahme",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "suposición; aceptación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Vermutung", "translation": "la suposición" },
+        { "word": "Hypothese", "translation": "la hipótesis" },
+        { "word": "Akzeptanz", "translation": "la aceptación" },
+        { "word": "Entgegennahme", "translation": "la recepción" }
+      ],
+      "antonyms": [
+        { "word": "Ablehnung", "translation": "el rechazo" },
+        { "word": "Zurückweisung", "translation": "la denegación" }
+      ],
+      "examples": [
+        { "example": "Die der Studie zugrunde liegende Annahme wurde durch empirische Daten bestätigt.", "translation": "La suposición subyacente al estudio fue confirmada mediante datos empíricos." },
+        { "example": "Die Annahme des Geschenks war ihm unangenehm.", "translation": "La aceptación del regalo le resultó incómoda." },
+        { "example": "Unter der Annahme, dass alle Variablen konstant bleiben, ergibt sich folgendes Ergebnis.", "translation": "Bajo la suposición de que todas las variables permanecen constantes, se obtiene el siguiente resultado." }
+      ]
+    },
+    {
+      "id": "aufnahme",
+      "word": "Aufnahme",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "grabación; admisión; fotografía",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Zulassung", "translation": "la admisión" },
+        { "word": "Recording", "translation": "la grabación" },
+        { "word": "Foto", "translation": "la foto" },
+        { "word": "Einschreibung", "translation": "la inscripción" }
+      ],
+      "antonyms": [
+        { "word": "Ablehnung", "translation": "el rechazo" },
+        { "word": "Ausschluss", "translation": "la exclusión" }
+      ],
+      "examples": [
+        { "example": "Die Aufnahme in das Masterprogramm setzt hervorragende akademische Leistungen voraus.", "translation": "La admisión al programa de máster presupone un rendimiento académico excelente." },
+        { "example": "Die Aufnahme des Konzerts wurde live übertragen.", "translation": "La grabación del concierto fue transmitida en vivo." },
+        { "example": "Diese Aufnahme zeigt die Stadt im Jahr 1920.", "translation": "Esta fotografía muestra la ciudad en el año 1920." }
+      ]
+    },
+    {
+      "id": "ausnahme",
+      "word": "Ausnahme",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "excepción",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Sonderfall", "translation": "el caso especial" },
+        { "word": "Abweichung", "translation": "la desviación" }
+      ],
+      "antonyms": [
+        { "word": "Regel", "translation": "la regla" },
+        { "word": "Normalfall", "translation": "el caso normal" }
+      ],
+      "examples": [
+        { "example": "Die Prüfungsordnung lässt keine Ausnahme von der Anwesenheitspflicht zu.", "translation": "El reglamento de exámenes no permite ninguna excepción a la obligación de asistencia." },
+        { "example": "Mit Ausnahme von zwei Studenten haben alle die Prüfung bestanden.", "translation": "Con excepción de dos estudiantes, todos aprobaron el examen." }
+      ]
+    },
+    {
+      "id": "einnahme",
+      "word": "Einnahme",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "ingreso; toma (de medicamento); conquista",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Einkommen", "translation": "los ingresos" },
+        { "word": "Ertrag", "translation": "el rendimiento" },
+        { "word": "Eroberung", "translation": "la conquista" }
+      ],
+      "antonyms": [
+        { "word": "Ausgabe", "translation": "el gasto" },
+        { "word": "Verlust", "translation": "la pérdida" }
+      ],
+      "examples": [
+        { "example": "Die regelmäßige Einnahme des Medikaments ist für den Therapieerfolg unerlässlich.", "translation": "La toma regular del medicamento es imprescindible para el éxito de la terapia." },
+        { "example": "Die Einnahmen des Unternehmens stiegen im letzten Quartal um 15%.", "translation": "Los ingresos de la empresa aumentaron un 15% en el último trimestre." },
+        { "example": "Die Einnahme der Stadt durch die Truppen erfolgte ohne Widerstand.", "translation": "La conquista de la ciudad por las tropas se realizó sin resistencia." }
+      ]
+    },
+    {
+      "id": "entnahme",
+      "word": "Entnahme",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "extracción",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Extraktion", "translation": "la extracción" },
+        { "word": "Herausnahme", "translation": "la retirada" }
+      ],
+      "antonyms": [
+        { "word": "Einführung", "translation": "la introducción" },
+        { "word": "Hinzufügung", "translation": "la adición" }
+      ],
+      "examples": [
+        { "example": "Die Entnahme von Gewebeproben erfolgte unter sterilen Bedingungen im Labor.", "translation": "La extracción de muestras de tejido se realizó en condiciones estériles en el laboratorio." },
+        { "example": "Die Entnahme von Bargeld am Automaten ist auf 500 Euro täglich begrenzt.", "translation": "La extracción de efectivo en el cajero está limitada a 500 euros diarios." }
+      ]
+    },
+    {
+      "id": "mitnahme",
+      "word": "Mitnahme",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "llevarse algo; transporte",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Transport", "translation": "el transporte" },
+        { "word": "Beförderung", "translation": "el traslado" }
+      ],
+      "antonyms": [
+        { "word": "Zurücklassen", "translation": "el dejar atrás" }
+      ],
+      "examples": [
+        { "example": "Die Mitnahme von elektronischen Geräten in den Prüfungsraum ist strengstens untersagt.", "translation": "Llevar dispositivos electrónicos a la sala de examen está estrictamente prohibido." },
+        { "example": "Die Mitnahme von Haustieren im Zug ist nur unter bestimmten Bedingungen erlaubt.", "translation": "Llevar mascotas en el tren solo está permitido bajo ciertas condiciones." }
+      ]
+    },
+    {
+      "id": "teilnahme",
+      "word": "Teilnahme",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "participación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Beteiligung", "translation": "la participación" },
+        { "word": "Mitwirkung", "translation": "la colaboración" },
+        { "word": "Engagement", "translation": "el compromiso" }
+      ],
+      "antonyms": [
+        { "word": "Fernbleiben", "translation": "la ausencia" },
+        { "word": "Nichtteilnahme", "translation": "la no participación" }
+      ],
+      "examples": [
+        { "example": "Die Teilnahme an der Konferenz erfordert eine vorherige Anmeldung über das Online-Portal.", "translation": "La participación en la conferencia requiere una inscripción previa a través del portal en línea." },
+        { "example": "Seine Teilnahme am Wettbewerb wurde mit dem ersten Preis belohnt.", "translation": "Su participación en el concurso fue recompensada con el primer premio." }
+      ]
+    },
+    {
+      "id": "uebernahme",
+      "word": "Übernahme",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "asunción; adquisición; absorción",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Akquisition", "translation": "la adquisición" },
+        { "word": "Aneignung", "translation": "la apropiación" },
+        { "word": "Aufkauf", "translation": "la compra" }
+      ],
+      "antonyms": [
+        { "word": "Abgabe", "translation": "la cesión" },
+        { "word": "Übergabe", "translation": "la entrega" }
+      ],
+      "examples": [
+        { "example": "Die Übernahme der Projektleitung ging mit erhöhter Verantwortung einher.", "translation": "La asunción de la dirección del proyecto conllevó una mayor responsabilidad." },
+        { "example": "Die Übernahme des Konkurrenten wurde von den Aktionären genehmigt.", "translation": "La adquisición del competidor fue aprobada por los accionistas." },
+        { "example": "Die Übernahme der Kosten erfolgt durch die Versicherung.", "translation": "La asunción de los costes corre a cargo del seguro." }
+      ]
+    },
+    {
+      "id": "unternehmung",
+      "word": "Unternehmung",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "empresa; iniciativa; emprendimiento",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Vorhaben", "translation": "el proyecto" },
+        { "word": "Projekt", "translation": "el proyecto" },
+        { "word": "Aktion", "translation": "la acción" }
+      ],
+      "antonyms": [
+        { "word": "Untätigkeit", "translation": "la inactividad" },
+        { "word": "Passivität", "translation": "la pasividad" }
+      ],
+      "examples": [
+        { "example": "Die wissenschaftliche Unternehmung erforderte eine interdisziplinäre Zusammenarbeit.", "translation": "La iniciativa científica requirió una colaboración interdisciplinaria." },
+        { "example": "Die riskante Unternehmung endete erfolgreich.", "translation": "La arriesgada empresa terminó con éxito." }
+      ]
+    },
+    {
+      "id": "vernehmung",
+      "word": "Vernehmung",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "interrogatorio",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Befragung", "translation": "el interrogatorio" },
+        { "word": "Verhör", "translation": "el interrogatorio" },
+        { "word": "Anhörung", "translation": "la audiencia" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Die Vernehmung des Zeugen wurde protokolliert und von einem Anwalt begleitet.", "translation": "El interrogatorio del testigo fue protocolizado y acompañado por un abogado." },
+        { "example": "Die Vernehmung dauerte mehrere Stunden.", "translation": "El interrogatorio duró varias horas." }
+      ]
+    },
+    {
+      "id": "zunahme",
+      "word": "Zunahme",
+      "artikel": "die",
+      "baseVerb": "nehmen",
+      "translation": "aumento",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Anstieg", "translation": "el incremento" },
+        { "word": "Wachstum", "translation": "el crecimiento" },
+        { "word": "Steigerung", "translation": "el aumento" }
+      ],
+      "antonyms": [
+        { "word": "Abnahme", "translation": "la disminución" },
+        { "word": "Rückgang", "translation": "el descenso" }
+      ],
+      "examples": [
+        { "example": "Die stetige Zunahme der Studierendenzahlen stellt die Universität vor neue Herausforderungen.", "translation": "El aumento constante del número de estudiantes plantea nuevos desafíos a la universidad." },
+        { "example": "Die Zunahme der Temperaturen ist ein klares Zeichen des Klimawandels.", "translation": "El aumento de las temperaturas es una clara señal del cambio climático." }
+      ]
+    },
+    {
+      "id": "fehlen",
+      "word": "Fehlen",
+      "artikel": "das",
+      "baseVerb": "fehlen",
+      "translation": "ausencia; falta",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Abwesenheit", "translation": "la ausencia" },
+        { "word": "Mangel", "translation": "la carencia" }
+      ],
+      "antonyms": [
+        { "word": "Anwesenheit", "translation": "la presencia" },
+        { "word": "Vorhandensein", "translation": "la existencia" }
+      ],
+      "examples": [
+        { "example": "Das Fehlen einheitlicher Standards erschwert die Vergleichbarkeit der Forschungsergebnisse.", "translation": "La ausencia de estándares uniformes dificulta la comparabilidad de los resultados de investigación." },
+        { "example": "Sein Fehlen bei der Besprechung wurde nicht entschuldigt.", "translation": "Su ausencia en la reunión no fue justificada." }
+      ]
+    },
+    {
+      "id": "kommen",
+      "word": "Kommen",
+      "artikel": "das",
+      "baseVerb": "kommen",
+      "translation": "llegada; venir",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Ankunft", "translation": "la llegada" },
+        { "word": "Eintreffen", "translation": "el arribo" }
+      ],
+      "antonyms": [
+        { "word": "Gehen", "translation": "la partida" },
+        { "word": "Abreise", "translation": "la salida" }
+      ],
+      "examples": [
+        { "example": "Mit dem Kommen neuer Technologien verändert sich die Arbeitswelt grundlegend.", "translation": "Con la llegada de nuevas tecnologías, el mundo laboral cambia fundamentalmente." },
+        { "example": "Das Kommen und Gehen der Gäste dauerte den ganzen Abend.", "translation": "El ir y venir de los invitados duró toda la noche." }
+      ]
+    },
+    {
+      "id": "ankunft",
+      "word": "Ankunft",
+      "artikel": "die",
+      "baseVerb": "kommen",
+      "translation": "llegada",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Eintreffen", "translation": "el arribo" },
+        { "word": "Ankommen", "translation": "la llegada" }
+      ],
+      "antonyms": [
+        { "word": "Abfahrt", "translation": "la partida" },
+        { "word": "Abreise", "translation": "la salida" }
+      ],
+      "examples": [
+        { "example": "Die verspätete Ankunft der Referentin führte zu einer Umstrukturierung des Programms.", "translation": "La llegada tardía de la ponente llevó a una reestructuración del programa." },
+        { "example": "Bei Ankunft am Flughafen wurden wir herzlich empfangen.", "translation": "A nuestra llegada al aeropuerto fuimos recibidos cordialmente." }
+      ]
+    },
+    {
+      "id": "einkommen",
+      "word": "Einkommen",
+      "artikel": "das",
+      "baseVerb": "kommen",
+      "translation": "ingresos",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Gehalt", "translation": "el salario" },
+        { "word": "Verdienst", "translation": "las ganancias" },
+        { "word": "Einnahmen", "translation": "los ingresos" }
+      ],
+      "antonyms": [
+        { "word": "Ausgaben", "translation": "los gastos" },
+        { "word": "Schulden", "translation": "las deudas" }
+      ],
+      "examples": [
+        { "example": "Das durchschnittliche Einkommen von Akademikern liegt deutlich über dem Landesdurchschnitt.", "translation": "Los ingresos promedio de los académicos están claramente por encima de la media nacional." },
+        { "example": "Sein monatliches Einkommen reicht kaum für die Miete.", "translation": "Sus ingresos mensuales apenas alcanzan para el alquiler." }
+      ]
+    },
+    {
+      "id": "herkunft",
+      "word": "Herkunft",
+      "artikel": "die",
+      "baseVerb": "kommen",
+      "translation": "origen",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Abstammung", "translation": "la ascendencia" },
+        { "word": "Ursprung", "translation": "el origen" },
+        { "word": "Provenienz", "translation": "la procedencia" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Die soziale Herkunft beeinflusst nach wie vor die Bildungschancen in erheblichem Maße.", "translation": "El origen social sigue influyendo considerablemente en las oportunidades educativas." },
+        { "example": "Die Herkunft des Wortes lässt sich bis ins Lateinische zurückverfolgen.", "translation": "El origen de la palabra se puede rastrear hasta el latín." }
+      ]
+    },
+    {
+      "id": "vorkommen",
+      "word": "Vorkommen",
+      "artikel": "das",
+      "baseVerb": "kommen",
+      "translation": "ocurrencia; yacimiento",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Auftreten", "translation": "la aparición" },
+        { "word": "Existenz", "translation": "la existencia" },
+        { "word": "Lagerstätte", "translation": "el yacimiento" }
+      ],
+      "antonyms": [
+        { "word": "Fehlen", "translation": "la ausencia" },
+        { "word": "Abwesenheit", "translation": "la inexistencia" }
+      ],
+      "examples": [
+        { "example": "Das natürliche Vorkommen seltener Erden ist geografisch sehr ungleich verteilt.", "translation": "La ocurrencia natural de tierras raras está distribuida geográficamente de forma muy desigual." },
+        { "example": "Das Vorkommen dieser Tierart ist auf wenige Regionen beschränkt.", "translation": "La presencia de esta especie animal está limitada a pocas regiones." },
+        { "example": "Die Vorkommen von Erdöl in der Region sind nahezu erschöpft.", "translation": "Los yacimientos de petróleo en la región están casi agotados." }
+      ]
+    },
+    {
+      "id": "rueckkehr",
+      "word": "Rückkehr",
+      "artikel": "die",
+      "baseVerb": "kommen",
+      "translation": "regreso",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Heimkehr", "translation": "el regreso a casa" },
+        { "word": "Wiederkehr", "translation": "el retorno" }
+      ],
+      "antonyms": [
+        { "word": "Abreise", "translation": "la partida" },
+        { "word": "Weggang", "translation": "la marcha" }
+      ],
+      "examples": [
+        { "example": "Nach der Rückkehr aus dem Auslandssemester fiel die Wiedereingliederung zunächst schwer.", "translation": "Tras el regreso del semestre en el extranjero, la reintegración resultó difícil al principio." },
+        { "example": "Seine Rückkehr in die Heimat war von großer Freude begleitet.", "translation": "Su regreso a la patria estuvo acompañado de gran alegría." }
+      ]
+    },
+    {
+      "id": "tragen",
+      "word": "Tragen",
+      "artikel": "das",
+      "baseVerb": "tragen",
+      "translation": "el llevar; uso",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Transportieren", "translation": "el transportar" },
+        { "word": "Befördern", "translation": "el trasladar" }
+      ],
+      "antonyms": [
+        { "word": "Ablegen", "translation": "el dejar" }
+      ],
+      "examples": [
+        { "example": "Das Tragen von Schutzausrüstung ist in allen Laborbereichen vorgeschrieben.", "translation": "El uso de equipo de protección está prescrito en todas las áreas del laboratorio." },
+        { "example": "Das Tragen schwerer Lasten kann zu Rückenproblemen führen.", "translation": "Llevar cargas pesadas puede provocar problemas de espalda." }
+      ]
+    },
+    {
+      "id": "antrag",
+      "word": "Antrag",
+      "artikel": "der",
+      "baseVerb": "tragen",
+      "translation": "solicitud; propuesta",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Gesuch", "translation": "la petición" },
+        { "word": "Bewerbung", "translation": "la solicitud" },
+        { "word": "Vorschlag", "translation": "la propuesta" }
+      ],
+      "antonyms": [
+        { "word": "Ablehnung", "translation": "el rechazo" }
+      ],
+      "examples": [
+        { "example": "Der Antrag auf Forschungsförderung muss bis zum Ende des Monats eingereicht werden.", "translation": "La solicitud de financiación para investigación debe presentarse antes de fin de mes." },
+        { "example": "Sein Antrag auf Urlaub wurde genehmigt.", "translation": "Su solicitud de vacaciones fue aprobada." },
+        { "example": "Der Antrag auf Mitgliedschaft wurde einstimmig angenommen.", "translation": "La solicitud de membresía fue aceptada por unanimidad." }
+      ]
+    },
+    {
+      "id": "eintrag",
+      "word": "Eintrag",
+      "artikel": "der",
+      "baseVerb": "tragen",
+      "translation": "entrada; registro",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Vermerk", "translation": "la anotación" },
+        { "word": "Notiz", "translation": "la nota" },
+        { "word": "Registrierung", "translation": "el registro" }
+      ],
+      "antonyms": [
+        { "word": "Löschung", "translation": "la eliminación" },
+        { "word": "Streichung", "translation": "la supresión" }
+      ],
+      "examples": [
+        { "example": "Der fehlerhafte Eintrag in der Datenbank wurde umgehend korrigiert.", "translation": "La entrada errónea en la base de datos fue corregida de inmediato." },
+        { "example": "Der Eintrag im Wörterbuch enthält mehrere Bedeutungen.", "translation": "La entrada en el diccionario contiene varios significados." }
+      ]
+    },
+    {
+      "id": "nachtrag",
+      "word": "Nachtrag",
+      "artikel": "der",
+      "baseVerb": "tragen",
+      "translation": "anexo; añadido posterior; suplemento",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Ergänzung", "translation": "el complemento" },
+        { "word": "Zusatz", "translation": "el añadido" },
+        { "word": "Anhang", "translation": "el apéndice" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Im Nachtrag zum Vertrag wurden zusätzliche Klauseln bezüglich der Haftung aufgenommen.", "translation": "En el anexo al contrato se incluyeron cláusulas adicionales relativas a la responsabilidad." },
+        { "example": "Der Nachtrag zum Haushalt wurde vom Parlament verabschiedet.", "translation": "El suplemento al presupuesto fue aprobado por el parlamento." }
+      ]
+    },
+    {
+      "id": "vortrag",
+      "word": "Vortrag",
+      "artikel": "der",
+      "baseVerb": "tragen",
+      "translation": "ponencia; conferencia; presentación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Referat", "translation": "la exposición" },
+        { "word": "Präsentation", "translation": "la presentación" },
+        { "word": "Rede", "translation": "el discurso" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Der Vortrag über nachhaltige Stadtentwicklung stieß auf großes Interesse beim Fachpublikum.", "translation": "La ponencia sobre desarrollo urbano sostenible despertó gran interés entre el público especializado." },
+        { "example": "Ihr Vortrag dauerte eine Stunde und wurde mit Applaus belohnt.", "translation": "Su conferencia duró una hora y fue recompensada con aplausos." }
+      ]
+    },
+    {
+      "id": "treiben",
+      "word": "Treiben",
+      "artikel": "das",
+      "baseVerb": "treiben",
+      "translation": "actividad intensa; ajetreo",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Aktivität", "translation": "la actividad" },
+        { "word": "Geschäftigkeit", "translation": "el ajetreo" },
+        { "word": "Betriebsamkeit", "translation": "el bullicio" }
+      ],
+      "antonyms": [
+        { "word": "Ruhe", "translation": "la calma" },
+        { "word": "Stille", "translation": "el silencio" }
+      ],
+      "examples": [
+        { "example": "Das geschäftige Treiben auf dem Campus erreicht während der Prüfungsphase seinen Höhepunkt.", "translation": "El ajetreo en el campus alcanza su punto máximo durante el período de exámenes." },
+        { "example": "Das bunte Treiben auf dem Markt zog viele Besucher an.", "translation": "El animado ajetreo en el mercado atrajo a muchos visitantes." }
+      ]
+    },
+    {
+      "id": "antrieb",
+      "word": "Antrieb",
+      "artikel": "der",
+      "baseVerb": "treiben",
+      "translation": "impulso; tracción; motor",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Motivation", "translation": "la motivación" },
+        { "word": "Triebkraft", "translation": "la fuerza motriz" },
+        { "word": "Motor", "translation": "el motor" }
+      ],
+      "antonyms": [
+        { "word": "Hemmung", "translation": "la inhibición" },
+        { "word": "Bremse", "translation": "el freno" }
+      ],
+      "examples": [
+        { "example": "Der intrinsische Antrieb zur Wissenserweiterung ist für den akademischen Erfolg entscheidend.", "translation": "El impulso intrínseco de ampliar conocimientos es decisivo para el éxito académico." },
+        { "example": "Das Fahrzeug verfügt über einen elektrischen Antrieb.", "translation": "El vehículo dispone de una tracción eléctrica." },
+        { "example": "Ihm fehlt der Antrieb, morgens aufzustehen.", "translation": "Le falta el impulso para levantarse por las mañanas." }
+      ]
+    },
+    {
+      "id": "auftrieb",
+      "word": "Auftrieb",
+      "artikel": "der",
+      "baseVerb": "treiben",
+      "translation": "empuje ascensional; impulso; auge",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Schwung", "translation": "el impulso" },
+        { "word": "Aufwind", "translation": "el viento favorable" },
+        { "word": "Schub", "translation": "el empuje" }
+      ],
+      "antonyms": [
+        { "word": "Abtrieb", "translation": "el descenso" },
+        { "word": "Niedergang", "translation": "la decadencia" }
+      ],
+      "examples": [
+        { "example": "Die positiven Forschungsergebnisse gaben dem gesamten Team neuen Auftrieb.", "translation": "Los resultados positivos de la investigación dieron un nuevo impulso a todo el equipo." },
+        { "example": "Der Auftrieb im Wasser hält das Schiff über der Oberfläche.", "translation": "El empuje en el agua mantiene el barco sobre la superficie." }
+      ]
+    },
+    {
+      "id": "betrieb",
+      "word": "Betrieb",
+      "artikel": "der",
+      "baseVerb": "treiben",
+      "translation": "operación; empresa; funcionamiento",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Unternehmen", "translation": "la empresa" },
+        { "word": "Firma", "translation": "la firma" },
+        { "word": "Geschäft", "translation": "el negocio" }
+      ],
+      "antonyms": [
+        { "word": "Stillstand", "translation": "la paralización" },
+        { "word": "Ruhe", "translation": "el reposo" }
+      ],
+      "examples": [
+        { "example": "Der reibungslose Betrieb der Forschungseinrichtung erfordert eine sorgfältige Koordination.", "translation": "El funcionamiento fluido del centro de investigación requiere una coordinación cuidadosa." },
+        { "example": "Der Betrieb beschäftigt über 500 Mitarbeiter.", "translation": "La empresa emplea a más de 500 trabajadores." },
+        { "example": "Die Maschine ist seit gestern außer Betrieb.", "translation": "La máquina está fuera de servicio desde ayer." }
+      ]
+    },
+    {
+      "id": "vertrieb",
+      "word": "Vertrieb",
+      "artikel": "der",
+      "baseVerb": "treiben",
+      "translation": "distribución; ventas; comercialización",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Verkauf", "translation": "la venta" },
+        { "word": "Distribution", "translation": "la distribución" },
+        { "word": "Absatz", "translation": "la comercialización" }
+      ],
+      "antonyms": [
+        { "word": "Einkauf", "translation": "la compra" },
+        { "word": "Beschaffung", "translation": "la adquisición" }
+      ],
+      "examples": [
+        { "example": "Der internationale Vertrieb wissenschaftlicher Publikationen erfolgt zunehmend digital.", "translation": "La distribución internacional de publicaciones científicas se realiza cada vez más de forma digital." },
+        { "example": "Er arbeitet im Vertrieb eines großen Pharmaunternehmens.", "translation": "Trabaja en el departamento de ventas de una gran empresa farmacéutica." }
+      ]
+    },
+    {
+      "id": "uebertreibung",
+      "word": "Übertreibung",
+      "artikel": "die",
+      "baseVerb": "treiben",
+      "translation": "exageración",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Überzeichnung", "translation": "la exageración" },
+        { "word": "Aufbauschung", "translation": "la magnificación" }
+      ],
+      "antonyms": [
+        { "word": "Untertreibung", "translation": "la subestimación" },
+        { "word": "Zurückhaltung", "translation": "la moderación" }
+      ],
+      "examples": [
+        { "example": "Es wäre keine Übertreibung zu behaupten, dass diese Entdeckung das Fachgebiet revolutioniert hat.", "translation": "No sería una exageración afirmar que este descubrimiento ha revolucionado el campo." },
+        { "example": "Seine Darstellung war voller Übertreibungen.", "translation": "Su relato estaba lleno de exageraciones." }
+      ]
+    },
+    {
+      "id": "stehen",
+      "word": "Stehen",
+      "artikel": "das",
+      "baseVerb": "stehen",
+      "translation": "el estar de pie",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Aufrechtstehen", "translation": "el estar erguido" }
+      ],
+      "antonyms": [
+        { "word": "Sitzen", "translation": "el estar sentado" },
+        { "word": "Liegen", "translation": "el estar acostado" }
+      ],
+      "examples": [
+        { "example": "Das stundenlange Stehen bei Laborarbeiten kann zu gesundheitlichen Beschwerden führen.", "translation": "Estar de pie durante horas en trabajos de laboratorio puede provocar molestias de salud." },
+        { "example": "Das lange Stehen in der Schlange war ermüdend.", "translation": "Estar de pie mucho tiempo en la cola fue agotador." }
+      ]
+    },
+    {
+      "id": "stand",
+      "word": "Stand",
+      "artikel": "der",
+      "baseVerb": "stehen",
+      "translation": "estado; puesto; nivel",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Zustand", "translation": "el estado" },
+        { "word": "Niveau", "translation": "el nivel" },
+        { "word": "Position", "translation": "la posición" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Der aktuelle Stand der Forschung wird im Literaturteil der Arbeit ausführlich dargestellt.", "translation": "El estado actual de la investigación se presenta detalladamente en la sección de literatura del trabajo." },
+        { "example": "Am Stand des Unternehmens wurden neue Produkte vorgestellt.", "translation": "En el puesto de la empresa se presentaron nuevos productos." },
+        { "example": "Der Stand der Verhandlungen ist unverändert.", "translation": "El estado de las negociaciones permanece sin cambios." }
+      ]
+    },
+    {
+      "id": "abstand",
+      "word": "Abstand",
+      "artikel": "der",
+      "baseVerb": "stehen",
+      "translation": "distancia; intervalo",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Entfernung", "translation": "la distancia" },
+        { "word": "Distanz", "translation": "la distancia" },
+        { "word": "Zwischenraum", "translation": "el espacio intermedio" }
+      ],
+      "antonyms": [
+        { "word": "Nähe", "translation": "la cercanía" },
+        { "word": "Kontakt", "translation": "el contacto" }
+      ],
+      "examples": [
+        { "example": "Mit zeitlichem Abstand lässt sich die Bedeutung dieser Entwicklung besser einschätzen.", "translation": "Con distancia temporal se puede evaluar mejor la importancia de este desarrollo." },
+        { "example": "Bitte halten Sie einen Abstand von zwei Metern.", "translation": "Por favor, mantenga una distancia de dos metros." }
+      ]
+    },
+    {
+      "id": "bestand",
+      "word": "Bestand",
+      "artikel": "der",
+      "baseVerb": "stehen",
+      "translation": "existencias; stock; fondo",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Vorrat", "translation": "las reservas" },
+        { "word": "Inventar", "translation": "el inventario" },
+        { "word": "Sammlung", "translation": "la colección" }
+      ],
+      "antonyms": [
+        { "word": "Mangel", "translation": "la escasez" },
+        { "word": "Fehlen", "translation": "la ausencia" }
+      ],
+      "examples": [
+        { "example": "Der umfangreiche Bestand der Universitätsbibliothek umfasst über zwei Millionen Medien.", "translation": "El extenso fondo de la biblioteca universitaria comprende más de dos millones de medios." },
+        { "example": "Der Bestand an Rohstoffen muss regelmäßig überprüft werden.", "translation": "Las existencias de materias primas deben revisarse regularmente." }
+      ]
+    },
+    {
+      "id": "aufstand",
+      "word": "Aufstand",
+      "artikel": "der",
+      "baseVerb": "stehen",
+      "translation": "levantamiento; rebelión",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Rebellion", "translation": "la rebelión" },
+        { "word": "Revolte", "translation": "la revuelta" },
+        { "word": "Erhebung", "translation": "el alzamiento" }
+      ],
+      "antonyms": [
+        { "word": "Unterwerfung", "translation": "la sumisión" },
+        { "word": "Gehorsam", "translation": "la obediencia" }
+      ],
+      "examples": [
+        { "example": "Der studentische Aufstand gegen die Studiengebühren führte zu politischen Reformen.", "translation": "El levantamiento estudiantil contra las tasas universitarias condujo a reformas políticas." },
+        { "example": "Der Aufstand wurde nach wenigen Tagen niedergeschlagen.", "translation": "El levantamiento fue sofocado después de pocos días." }
+      ]
+    },
+    {
+      "id": "zustand",
+      "word": "Zustand",
+      "artikel": "der",
+      "baseVerb": "stehen",
+      "translation": "estado; condición",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Verfassung", "translation": "el estado" },
+        { "word": "Kondition", "translation": "la condición" },
+        { "word": "Beschaffenheit", "translation": "la naturaleza" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Der desolate Zustand der Infrastruktur erfordert dringende Investitionen.", "translation": "El estado deplorable de la infraestructura requiere inversiones urgentes." },
+        { "example": "Der Zustand des Patienten hat sich verbessert.", "translation": "El estado del paciente ha mejorado." },
+        { "example": "Das Gebäude befindet sich in einem ausgezeichneten Zustand.", "translation": "El edificio se encuentra en un estado excelente." }
+      ]
+    },
+    {
+      "id": "widerstand",
+      "word": "Widerstand",
+      "artikel": "der",
+      "baseVerb": "stehen",
+      "translation": "resistencia; oposición",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Opposition", "translation": "la oposición" },
+        { "word": "Gegenwehr", "translation": "la resistencia" },
+        { "word": "Ablehnung", "translation": "el rechazo" }
+      ],
+      "antonyms": [
+        { "word": "Zustimmung", "translation": "la aprobación" },
+        { "word": "Akzeptanz", "translation": "la aceptación" }
+      ],
+      "examples": [
+        { "example": "Der Widerstand gegen die neuen Regelungen wächst.", "translation": "La resistencia contra las nuevas regulaciones crece." },
+        { "example": "Trotz des Widerstands wurde das Gesetz verabschiedet.", "translation": "A pesar de la oposición, la ley fue aprobada." }
+      ]
+    },
+    {
+      "id": "hoeren",
+      "word": "Hören",
+      "artikel": "das",
+      "baseVerb": "hören",
+      "translation": "el oír; la audición",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Zuhören", "translation": "el escuchar" },
+        { "word": "Lauschen", "translation": "el escuchar atentamente" }
+      ],
+      "antonyms": [
+        { "word": "Taubheit", "translation": "la sordera" }
+      ],
+      "examples": [
+        { "example": "Das aktive Hören ist eine Schlüsselkompetenz in der akademischen Kommunikation.", "translation": "El escuchar activo es una competencia clave en la comunicación académica." },
+        { "example": "Beim Hören von Fachvorträgen sollte man sich Notizen machen.", "translation": "Al escuchar conferencias especializadas se deben tomar notas." }
+      ]
+    },
+    {
+      "id": "gehoer",
+      "word": "Gehör",
+      "artikel": "das",
+      "baseVerb": "hören",
+      "translation": "el oído; la audiencia",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Hörvermögen", "translation": "la capacidad auditiva" },
+        { "word": "Hörsinn", "translation": "el sentido del oído" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Die Studierenden fanden bei der Universitätsleitung Gehör für ihre Anliegen.", "translation": "Los estudiantes encontraron audiencia ante la dirección universitaria para sus inquietudes." },
+        { "example": "Ein geschultes Gehör ist für Sprachwissenschaftler unerlässlich.", "translation": "Un oído entrenado es indispensable para los lingüistas." }
+      ]
+    },
+    {
+      "id": "anhoerung",
+      "word": "Anhörung",
+      "artikel": "die",
+      "baseVerb": "hören",
+      "translation": "la audiencia; la vista",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Hearing", "translation": "la audiencia" },
+        { "word": "Vernehmung", "translation": "el interrogatorio" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Die parlamentarische Anhörung der Experten dauerte mehrere Stunden.", "translation": "La audiencia parlamentaria de los expertos duró varias horas." },
+        { "example": "Vor der Anhörung bereitete sich der Zeuge gründlich vor.", "translation": "Antes de la audiencia, el testigo se preparó minuciosamente." }
+      ]
+    },
+    {
+      "id": "aufhoeren",
+      "word": "Aufhören",
+      "artikel": "das",
+      "baseVerb": "hören",
+      "translation": "el cesar; el dejar de",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Beendigung", "translation": "la finalización" },
+        { "word": "Ende", "translation": "el fin" }
+      ],
+      "antonyms": [
+        { "word": "Fortführung", "translation": "la continuación" },
+        { "word": "Weitermachen", "translation": "el continuar" }
+      ],
+      "examples": [
+        { "example": "Das plötzliche Aufhören der Finanzierung gefährdete das Forschungsprojekt.", "translation": "El cese repentino de la financiación puso en peligro el proyecto de investigación." },
+        { "example": "Ein Aufhören mit dem Rauchen verbessert die Gesundheit nachweislich.", "translation": "Dejar de fumar mejora la salud de manera comprobada." }
+      ]
+    },
+    {
+      "id": "zuhoeren",
+      "word": "Zuhören",
+      "artikel": "das",
+      "baseVerb": "hören",
+      "translation": "el escuchar; la escucha",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Aufmerksamkeit", "translation": "la atención" },
+        { "word": "Lauschen", "translation": "el escuchar atentamente" }
+      ],
+      "antonyms": [
+        { "word": "Ignorieren", "translation": "el ignorar" }
+      ],
+      "examples": [
+        { "example": "Aktives Zuhören ist eine grundlegende Kompetenz in der Gesprächsführung.", "translation": "La escucha activa es una competencia fundamental en la conducción de conversaciones." },
+        { "example": "Durch aufmerksames Zuhören lassen sich Missverständnisse vermeiden.", "translation": "Mediante una escucha atenta se pueden evitar malentendidos." }
+      ]
+    },
+    {
+      "id": "abhoerung",
+      "word": "Abhörung",
+      "artikel": "die",
+      "baseVerb": "hören",
+      "translation": "la interceptación; la escucha (de examen)",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Überwachung", "translation": "la vigilancia" },
+        { "word": "Abfrage", "translation": "la pregunta (de lección)" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Die Abhörung von Telefongesprächen erfordert eine richterliche Genehmigung.", "translation": "La interceptación de conversaciones telefónicas requiere una autorización judicial." },
+        { "example": "Die Abhörung der Vokabeln findet morgen statt.", "translation": "La pregunta del vocabulario tendrá lugar mañana." }
+      ]
+    },
+    {
+      "id": "gehoerigkeit",
+      "word": "Gehörigkeit",
+      "artikel": "die",
+      "baseVerb": "hören",
+      "translation": "la pertenencia",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Zugehörigkeit", "translation": "la pertenencia" },
+        { "word": "Mitgliedschaft", "translation": "la membresía" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Die Gehörigkeit zu einer bestimmten Gruppe prägt die Identität.", "translation": "La pertenencia a un determinado grupo marca la identidad." },
+        { "example": "Die Frage der Gehörigkeit wurde im Vertrag geregelt.", "translation": "La cuestión de la pertenencia fue regulada en el contrato." }
+      ]
+    },
+    {
+      "id": "zugehoerigkeit",
+      "word": "Zugehörigkeit",
+      "artikel": "die",
+      "baseVerb": "hören",
+      "translation": "la pertenencia; la afiliación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Mitgliedschaft", "translation": "la membresía" },
+        { "word": "Verbundenheit", "translation": "la vinculación" }
+      ],
+      "antonyms": [
+        { "word": "Ausschluss", "translation": "la exclusión" },
+        { "word": "Fremdheit", "translation": "la extrañeza" }
+      ],
+      "examples": [
+        { "example": "Die Zugehörigkeit zu einer Forschungsgruppe fördert den wissenschaftlichen Austausch.", "translation": "La pertenencia a un grupo de investigación fomenta el intercambio científico." },
+        { "example": "Das Gefühl der Zugehörigkeit ist für das Wohlbefinden wichtig.", "translation": "El sentimiento de pertenencia es importante para el bienestar." }
+      ]
+    },
+    {
+      "id": "verhoer",
+      "word": "Verhör",
+      "artikel": "das",
+      "baseVerb": "hören",
+      "translation": "el interrogatorio",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Befragung", "translation": "el interrogatorio" },
+        { "word": "Vernehmung", "translation": "la toma de declaración" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Das Verhör des Verdächtigen dauerte mehrere Stunden.", "translation": "El interrogatorio del sospechoso duró varias horas." },
+        { "example": "Während des Verhörs schwieg der Angeklagte.", "translation": "Durante el interrogatorio, el acusado guardó silencio." }
+      ]
+    },
+    {
+      "id": "hoerer",
+      "word": "Hörer",
+      "artikel": "der",
+      "baseVerb": "hören",
+      "translation": "el oyente; el auricular",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Zuhörer", "translation": "el oyente" },
+        { "word": "Telefonhörer", "translation": "el auricular" }
+      ],
+      "antonyms": [
+        { "word": "Sprecher", "translation": "el hablante" }
+      ],
+      "examples": [
+        { "example": "Die Hörer des Radioprogramms können anrufen und Fragen stellen.", "translation": "Los oyentes del programa de radio pueden llamar y hacer preguntas." },
+        { "example": "Er legte den Hörer auf.", "translation": "Él colgó el auricular." }
+      ]
+    },
+    {
+      "id": "zuhoerer",
+      "word": "Zuhörer",
+      "artikel": "der",
+      "baseVerb": "hören",
+      "translation": "el oyente; el público",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Publikum", "translation": "el público" },
+        { "word": "Hörer", "translation": "el oyente" }
+      ],
+      "antonyms": [
+        { "word": "Redner", "translation": "el orador" }
+      ],
+      "examples": [
+        { "example": "Die Zuhörer applaudierten nach dem Vortrag.", "translation": "Los oyentes aplaudieron después de la conferencia." },
+        { "example": "Ein guter Redner muss seine Zuhörer kennen.", "translation": "Un buen orador debe conocer a su público." }
+      ]
+    },
+    {
+      "id": "treten",
+      "word": "Treten",
+      "artikel": "das",
+      "baseVerb": "treten",
+      "translation": "el pisar; la patada",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Tritt", "translation": "el paso; la patada" },
+        { "word": "Schritt", "translation": "el paso" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Das Treten der Pedale erfordert bei langen Radtouren Ausdauer.", "translation": "El pedaleo requiere resistencia en recorridos largos en bicicleta." },
+        { "example": "Das absichtliche Treten des Gegners führte zur roten Karte.", "translation": "La patada intencional al adversario llevó a la tarjeta roja." }
+      ]
+    },
+    {
+      "id": "tritt",
+      "word": "Tritt",
+      "artikel": "der",
+      "baseVerb": "treten",
+      "translation": "el paso; la patada; el peldaño",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Schritt", "translation": "el paso" },
+        { "word": "Fußtritt", "translation": "la patada" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Mit einem kräftigen Tritt öffnete er die Tür.", "translation": "Con una patada fuerte abrió la puerta." },
+        { "example": "Der erste Tritt auf den Mond war ein historisches Ereignis.", "translation": "El primer paso en la luna fue un acontecimiento histórico." }
+      ]
+    },
+    {
+      "id": "antritt",
+      "word": "Antritt",
+      "artikel": "der",
+      "baseVerb": "treten",
+      "translation": "el inicio; la toma de posesión; el arranque",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Beginn", "translation": "el comienzo" },
+        { "word": "Amtsantritt", "translation": "la toma de posesión" }
+      ],
+      "antonyms": [
+        { "word": "Rücktritt", "translation": "la dimisión" }
+      ],
+      "examples": [
+        { "example": "Der Antritt des neuen Rektors wurde feierlich begangen.", "translation": "La toma de posesión del nuevo rector se celebró solemnemente." },
+        { "example": "Beim Antritt der Reise war das Wetter noch gut.", "translation": "Al inicio del viaje el tiempo aún era bueno." }
+      ]
+    },
+    {
+      "id": "auftritt",
+      "word": "Auftritt",
+      "artikel": "der",
+      "baseVerb": "treten",
+      "translation": "la aparición; la actuación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Erscheinen", "translation": "la aparición" },
+        { "word": "Darbietung", "translation": "la actuación" }
+      ],
+      "antonyms": [
+        { "word": "Abtritt", "translation": "la salida de escena" }
+      ],
+      "examples": [
+        { "example": "Ihr Auftritt bei der Konferenz hinterließ einen bleibenden Eindruck.", "translation": "Su aparición en la conferencia dejó una impresión duradera." },
+        { "example": "Der erste öffentliche Auftritt des Künstlers war ein voller Erfolg.", "translation": "La primera actuación pública del artista fue un éxito rotundo." }
+      ]
+    },
+    {
+      "id": "austritt",
+      "word": "Austritt",
+      "artikel": "der",
+      "baseVerb": "treten",
+      "translation": "la salida; la renuncia; la fuga",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Ausscheiden", "translation": "la salida" },
+        { "word": "Rückzug", "translation": "la retirada" }
+      ],
+      "antonyms": [
+        { "word": "Eintritt", "translation": "el ingreso" },
+        { "word": "Beitritt", "translation": "la adhesión" }
+      ],
+      "examples": [
+        { "example": "Der Austritt aus der Partei wurde öffentlich bekannt gegeben.", "translation": "La salida del partido fue anunciada públicamente." },
+        { "example": "Der Austritt von Gas führte zur Evakuierung des Gebäudes.", "translation": "La fuga de gas llevó a la evacuación del edificio." }
+      ]
+    },
+    {
+      "id": "beitritt",
+      "word": "Beitritt",
+      "artikel": "der",
+      "baseVerb": "treten",
+      "translation": "la adhesión; el ingreso",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Eintritt", "translation": "el ingreso" },
+        { "word": "Aufnahme", "translation": "la admisión" }
+      ],
+      "antonyms": [
+        { "word": "Austritt", "translation": "la salida" }
+      ],
+      "examples": [
+        { "example": "Der Beitritt zur Europäischen Union war ein historischer Moment.", "translation": "La adhesión a la Unión Europea fue un momento histórico." },
+        { "example": "Sein Beitritt zum Verein wurde einstimmig beschlossen.", "translation": "Su ingreso a la asociación fue aprobado por unanimidad." }
+      ]
+    },
+    {
+      "id": "eintritt",
+      "word": "Eintritt",
+      "artikel": "der",
+      "baseVerb": "treten",
+      "translation": "la entrada; el ingreso; el comienzo",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Einlass", "translation": "la entrada" },
+        { "word": "Zugang", "translation": "el acceso" }
+      ],
+      "antonyms": [
+        { "word": "Austritt", "translation": "la salida" }
+      ],
+      "examples": [
+        { "example": "Der Eintritt ins Museum ist für Studierende kostenlos.", "translation": "La entrada al museo es gratuita para estudiantes." },
+        { "example": "Mit Eintritt der Dunkelheit wurde es gefährlich.", "translation": "Con la llegada de la oscuridad se volvió peligroso." }
+      ]
+    },
+    {
+      "id": "ruecktritt",
+      "word": "Rücktritt",
+      "artikel": "der",
+      "baseVerb": "treten",
+      "translation": "la dimisión; la renuncia",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Abdankung", "translation": "la abdicación" },
+        { "word": "Amtsniederlegung", "translation": "la renuncia al cargo" }
+      ],
+      "antonyms": [
+        { "word": "Antritt", "translation": "la toma de posesión" }
+      ],
+      "examples": [
+        { "example": "Der Rücktritt des Ministers löste eine politische Krise aus.", "translation": "La dimisión del ministro desencadenó una crisis política." },
+        { "example": "Nach dem Skandal forderte die Opposition seinen Rücktritt.", "translation": "Tras el escándalo, la oposición exigió su renuncia." }
+      ]
+    },
+    {
+      "id": "uebertritt",
+      "word": "Übertritt",
+      "artikel": "der",
+      "baseVerb": "treten",
+      "translation": "el paso; la conversión; el cambio",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Wechsel", "translation": "el cambio" },
+        { "word": "Konversion", "translation": "la conversión" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Der Übertritt zum Gymnasium erfordert gute Noten.", "translation": "El paso al instituto requiere buenas notas." },
+        { "example": "Sein Übertritt zu einer anderen Religion überraschte viele.", "translation": "Su conversión a otra religión sorprendió a muchos." }
+      ]
+    },
+    {
+      "id": "vertretung",
+      "word": "Vertretung",
+      "artikel": "die",
+      "baseVerb": "treten",
+      "translation": "la representación; la sustitución",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Stellvertretung", "translation": "la suplencia" },
+        { "word": "Repräsentation", "translation": "la representación" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Die Vertretung der Interessen der Studierenden ist Aufgabe des AStA.", "translation": "La representación de los intereses de los estudiantes es tarea del consejo estudiantil." },
+        { "example": "In seiner Abwesenheit übernahm sie die Vertretung.", "translation": "En su ausencia, ella asumió la sustitución." }
+      ]
+    },
+    {
+      "id": "vortritt",
+      "word": "Vortritt",
+      "artikel": "der",
+      "baseVerb": "treten",
+      "translation": "la prioridad; la precedencia",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Vorrang", "translation": "la prioridad" },
+        { "word": "Priorität", "translation": "la prioridad" }
+      ],
+      "antonyms": [],
+      "examples": [
+        { "example": "Er gewährte ihr den Vortritt an der Tür.", "translation": "Él le cedió el paso en la puerta." },
+        { "example": "In dieser Angelegenheit hat die Sicherheit Vortritt.", "translation": "En este asunto, la seguridad tiene prioridad." }
+      ]
+    },
+    {
+      "id": "zutritt",
+      "word": "Zutritt",
+      "artikel": "der",
+      "baseVerb": "treten",
+      "translation": "el acceso; la entrada",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Zugang", "translation": "el acceso" },
+        { "word": "Einlass", "translation": "la entrada" }
+      ],
+      "antonyms": [
+        { "word": "Verbot", "translation": "la prohibición" }
+      ],
+      "examples": [
+        { "example": "Der Zutritt zum Labor ist nur autorisiertem Personal gestattet.", "translation": "El acceso al laboratorio solo está permitido al personal autorizado." },
+        { "example": "Unbefugten ist der Zutritt strengstens untersagt.", "translation": "El acceso está estrictamente prohibido a personas no autorizadas." }
+      ]
+    },
+    {
+      "id": "denken",
+      "word": "Denken",
+      "artikel": "das",
+      "baseVerb": "denken",
+      "translation": "el pensamiento; el pensar",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Gedanke", "translation": "el pensamiento" },
+        { "word": "Überlegung", "translation": "la reflexión" },
+        { "word": "Denkweise", "translation": "la forma de pensar" }
+      ],
+      "antonyms": [
+        { "word": "Gedankenlosigkeit", "translation": "la irreflexión" }
+      ],
+      "examples": [
+        { "example": "Kritisches Denken ist eine Grundvoraussetzung für wissenschaftliches Arbeiten.", "translation": "El pensamiento crítico es un requisito fundamental para el trabajo científico." },
+        { "example": "Das philosophische Denken der Aufklärung prägte die moderne Wissenschaft.", "translation": "El pensamiento filosófico de la Ilustración marcó la ciencia moderna." }
+      ]
+    },
+    {
+      "id": "andenken",
+      "word": "Andenken",
+      "artikel": "das",
+      "baseVerb": "denken",
+      "translation": "recuerdo; memoria",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Erinnerung", "translation": "el recuerdo" },
+        { "word": "Gedenken", "translation": "la conmemoración" },
+        { "word": "Souvenir", "translation": "el recuerdo (objeto)" }
+      ],
+      "examples": [
+        { "example": "Zum Andenken an den verstorbenen Professor wurde eine Gedenkveranstaltung organisiert.", "translation": "En memoria del profesor fallecido se organizó un acto conmemorativo." },
+        { "example": "Diese Medaille bewahre ich zum Andenken an meine Studienzeit.", "translation": "Conservo esta medalla como recuerdo de mi época de estudios." }
+      ]
+    },
+    {
+      "id": "bedenken",
+      "word": "Bedenken",
+      "artikel": "das",
+      "baseVerb": "denken",
+      "translation": "reserva; duda; escrúpulo",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Zweifel", "translation": "la duda" },
+        { "word": "Skrupel", "translation": "el escrúpulo" },
+        { "word": "Vorbehalt", "translation": "la reserva" }
+      ],
+      "antonyms": [
+        { "word": "Gewissheit", "translation": "la certeza" },
+        { "word": "Zuversicht", "translation": "la confianza" }
+      ],
+      "examples": [
+        { "example": "Die Ethikkommission äußerte erhebliche Bedenken gegen das geplante Experiment.", "translation": "El comité de ética expresó reservas considerables contra el experimento planeado." },
+        { "example": "Ich habe keine Bedenken, diese Methode anzuwenden.", "translation": "No tengo dudas en aplicar este método." }
+      ]
+    },
+    {
+      "id": "gedaechtnis",
+      "word": "Gedächtnis",
+      "artikel": "das",
+      "baseVerb": "denken",
+      "translation": "memoria",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Erinnerungsvermögen", "translation": "la capacidad de memoria" },
+        { "word": "Merkfähigkeit", "translation": "la capacidad de retención" }
+      ],
+      "antonyms": [
+        { "word": "Vergesslichkeit", "translation": "el olvido" }
+      ],
+      "examples": [
+        { "example": "Das Gedächtnis spielt eine zentrale Rolle beim Lernen und bei der Informationsverarbeitung.", "translation": "La memoria juega un papel central en el aprendizaje y el procesamiento de información." },
+        { "example": "Ihr fotografisches Gedächtnis ermöglicht es ihr, komplexe Formeln sofort zu reproduzieren.", "translation": "Su memoria fotográfica le permite reproducir fórmulas complejas inmediatamente." }
+      ]
+    },
+    {
+      "id": "gedanke",
+      "word": "Gedanke",
+      "artikel": "der",
+      "baseVerb": "denken",
+      "translation": "pensamiento; idea",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Idee", "translation": "la idea" },
+        { "word": "Überlegung", "translation": "la reflexión" },
+        { "word": "Einfall", "translation": "la ocurrencia" }
+      ],
+      "examples": [
+        { "example": "Der Gedanke, dass Raum und Zeit relativ sind, revolutionierte die Physik.", "translation": "El pensamiento de que espacio y tiempo son relativos revolucionó la física." },
+        { "example": "Dieser Gedanke verdient eine gründliche Auseinandersetzung.", "translation": "Esta idea merece una discusión exhaustiva." }
+      ]
+    },
+    {
+      "id": "gedenken",
+      "word": "Gedenken",
+      "artikel": "das",
+      "baseVerb": "denken",
+      "translation": "conmemoración; recuerdo",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Erinnerung", "translation": "el recuerdo" },
+        { "word": "Andenken", "translation": "la memoria" },
+        { "word": "Gedenkfeier", "translation": "la ceremonia conmemorativa" }
+      ],
+      "examples": [
+        { "example": "Das Gedenken an die Gründer der Universität wird jährlich mit einer feierlichen Zeremonie begangen.", "translation": "La conmemoración de los fundadores de la universidad se celebra anualmente con una ceremonia solemne." },
+        { "example": "Zum Gedenken an die Opfer wurde ein Mahnmal errichtet.", "translation": "En memoria de las víctimas se erigió un monumento conmemorativo." }
+      ]
+    },
+    {
+      "id": "nachdenken",
+      "word": "Nachdenken",
+      "artikel": "das",
+      "baseVerb": "denken",
+      "translation": "reflexión; meditación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Überlegung", "translation": "la reflexión" },
+        { "word": "Reflexion", "translation": "la reflexión" },
+        { "word": "Grübeln", "translation": "la cavilación" }
+      ],
+      "examples": [
+        { "example": "Gründliches Nachdenken über die Forschungsfrage ist unerlässlich.", "translation": "La reflexión exhaustiva sobre la pregunta de investigación es imprescindible." },
+        { "example": "Nach langem Nachdenken kam sie zu dem Schluss, dass die Hypothese revidiert werden muss.", "translation": "Tras larga reflexión llegó a la conclusión de que la hipótesis debe revisarse." }
+      ]
+    },
+    {
+      "id": "ueberlegung",
+      "word": "Überlegung",
+      "artikel": "die",
+      "baseVerb": "denken",
+      "translation": "reflexión; consideración",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Erwägung", "translation": "la consideración" },
+        { "word": "Gedanke", "translation": "el pensamiento" },
+        { "word": "Nachdenken", "translation": "la reflexión" }
+      ],
+      "examples": [
+        { "example": "Diese Überlegungen führten zu einer grundlegenden Neuausrichtung der Forschungsstrategie.", "translation": "Estas reflexiones condujeron a una reorientación fundamental de la estrategia de investigación." },
+        { "example": "Nach reiflicher Überlegung haben wir uns für diesen methodischen Ansatz entschieden.", "translation": "Tras madura consideración nos hemos decidido por este enfoque metodológico." }
+      ]
+    },
+    {
+      "id": "geben",
+      "word": "Geben",
+      "artikel": "das",
+      "baseVerb": "geben",
+      "translation": "el dar; la entrega",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Schenken", "translation": "el regalar" },
+        { "word": "Übergabe", "translation": "la entrega" }
+      ],
+      "antonyms": [
+        { "word": "Nehmen", "translation": "el tomar" },
+        { "word": "Empfangen", "translation": "el recibir" }
+      ],
+      "examples": [
+        { "example": "Das Geben und Nehmen in wissenschaftlichen Kooperationen sollte ausgewogen sein.", "translation": "El dar y tomar en cooperaciones científicas debería estar equilibrado." },
+        { "example": "Das Geben von konstruktivem Feedback ist eine wichtige Kompetenz in der akademischen Betreuung.", "translation": "El dar retroalimentación constructiva es una competencia importante en la supervisión académica." }
+      ]
+    },
+    {
+      "id": "abgabe",
+      "word": "Abgabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la entrega; la emisión",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Einreichung", "translation": "la presentación" },
+        { "word": "Übergabe", "translation": "la entrega" },
+        { "word": "Submission", "translation": "la sumisión" }
+      ],
+      "antonyms": [
+        { "word": "Zurückhaltung", "translation": "la retención" },
+        { "word": "Behalten", "translation": "el quedarse con" }
+      ],
+      "examples": [
+        { "example": "Die Abgabe der Dissertation erfolgt bis zum 30. Juni.", "translation": "La entrega de la tesis doctoral se realiza hasta el 30 de junio." },
+        { "example": "Nach der Abgabe einer schriftlichen Stellungnahme wird die Kommission entscheiden.", "translation": "Tras la emisión de un posicionamiento escrito, la comisión decidirá." },
+        { "example": "Die fristgerechte Abgabe aller Prüfungsleistungen ist obligatorisch.", "translation": "La entrega puntual de todos los exámenes es obligatoria." }
+      ]
+    },
+    {
+      "id": "angabe",
+      "word": "Angabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la indicación; la declaración",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Information", "translation": "la información" },
+        { "word": "Auskunft", "translation": "la información" },
+        { "word": "Deklaration", "translation": "la declaración" }
+      ],
+      "examples": [
+        { "example": "Die Angabe der Quellen ist in wissenschaftlichen Arbeiten unerlässlich.", "translation": "La indicación de las fuentes es indispensable en trabajos científicos." },
+        { "example": "Bitte machen Sie genaue Angaben zu Ihrer Methodik.", "translation": "Por favor haga indicaciones precisas sobre su metodología." },
+        { "example": "Die Angaben in der Studie sind nicht vollständig nachvollziehbar.", "translation": "Las declaraciones en el estudio no son completamente comprensibles." }
+      ]
+    },
+    {
+      "id": "aufgabe",
+      "word": "Aufgabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la tarea; el abandono",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Pflicht", "translation": "el deber" },
+        { "word": "Funktion", "translation": "la función" },
+        { "word": "Kapitulation", "translation": "la capitulación" }
+      ],
+      "antonyms": [
+        { "word": "Durchhalten", "translation": "la perseverancia" },
+        { "word": "Weitermachen", "translation": "la continuación" }
+      ],
+      "examples": [
+        { "example": "Die Aufgabe der Forschungsethikkommission besteht in der Prüfung aller Anträge.", "translation": "La tarea del comité de ética de investigación consiste en la revisión de todas las solicitudes." },
+        { "example": "Die Aufgabe des Projekts wäre verfrüht und kontraproduktiv.", "translation": "El abandono del proyecto sería prematuro y contraproducente." },
+        { "example": "Zu den Aufgaben eines Doktorvaters gehört die kontinuierliche Betreuung.", "translation": "Entre las tareas de un director de tesis pertenece la supervisión continua." }
+      ]
+    },
+    {
+      "id": "ausgabe",
+      "word": "Ausgabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la edición; el gasto; la emisión",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Edition", "translation": "la edición" },
+        { "word": "Aufwand", "translation": "el gasto" },
+        { "word": "Verteilung", "translation": "la distribución" }
+      ],
+      "antonyms": [
+        { "word": "Einnahme", "translation": "el ingreso" },
+        { "word": "Ersparnis", "translation": "el ahorro" }
+      ],
+      "examples": [
+        { "example": "Die neueste Ausgabe der Fachzeitschrift enthält bahnbrechende Forschungsergebnisse.", "translation": "La edición más reciente de la revista especializada contiene resultados de investigación revolucionarios." },
+        { "example": "Die Ausgaben für Forschungsinfrastruktur steigen kontinuierlich.", "translation": "Los gastos para infraestructura de investigación aumentan continuamente." },
+        { "example": "Die Ausgabe der Zertifikate erfolgt nach der Abschlussprüfung.", "translation": "La emisión de los certificados se realiza tras el examen final." }
+      ]
+    },
+    {
+      "id": "begebung",
+      "word": "Begebung",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la emisión (financiera)",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Emission", "translation": "la emisión" },
+        { "word": "Herausgabe", "translation": "la publicación" }
+      ],
+      "examples": [
+        { "example": "Die Begebung von Forschungsanleihen ermöglicht die Finanzierung großer Projekte.", "translation": "La emisión de bonos de investigación posibilita la financiación de grandes proyectos." },
+        { "example": "Nach der Begebung der Mittel kann das Institut mit der Arbeit beginnen.", "translation": "Tras la emisión de los fondos, el instituto puede comenzar con el trabajo." }
+      ]
+    },
+    {
+      "id": "eingabe",
+      "word": "Eingabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la introducción; la petición",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Input", "translation": "la entrada" },
+        { "word": "Antrag", "translation": "la solicitud" },
+        { "word": "Gesuch", "translation": "la petición" }
+      ],
+      "antonyms": [
+        { "word": "Ausgabe", "translation": "la salida" },
+        { "word": "Löschung", "translation": "la eliminación" }
+      ],
+      "examples": [
+        { "example": "Die Eingabe der Forschungsdaten muss sorgfältig erfolgen, um Fehler zu vermeiden.", "translation": "La introducción de los datos de investigación debe realizarse cuidadosamente para evitar errores." },
+        { "example": "Die Eingabe an den Senat wurde von der Studierendenvertretung verfasst.", "translation": "La petición al senado fue redactada por la representación estudiantil." },
+        { "example": "Nach der Eingabe aller Parameter kann die Simulation gestartet werden.", "translation": "Tras la introducción de todos los parámetros se puede iniciar la simulación." }
+      ]
+    },
+    {
+      "id": "ergebnis",
+      "word": "Ergebnis",
+      "artikel": "das",
+      "baseVerb": "geben",
+      "translation": "el resultado",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Resultat", "translation": "el resultado" },
+        { "word": "Befund", "translation": "el hallazgo" },
+        { "word": "Ausgang", "translation": "el desenlace" }
+      ],
+      "examples": [
+        { "example": "Die Ergebnisse der Studie sind statistisch signifikant.", "translation": "Los resultados del estudio son estadísticamente significativos." },
+        { "example": "Das Ergebnis der Analyse überrascht die Forschungsgemeinschaft.", "translation": "El resultado del análisis sorprende a la comunidad de investigación." },
+        { "example": "Vorläufige Ergebnisse deuten auf einen Zusammenhang hin.", "translation": "Resultados preliminares apuntan a una relación." }
+      ]
+    },
+    {
+      "id": "freigabe",
+      "word": "Freigabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la autorización; la liberación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Genehmigung", "translation": "la aprobación" },
+        { "word": "Autorisierung", "translation": "la autorización" },
+        { "word": "Zulassung", "translation": "la admisión" }
+      ],
+      "antonyms": [
+        { "word": "Sperrung", "translation": "el bloqueo" },
+        { "word": "Verbot", "translation": "la prohibición" }
+      ],
+      "examples": [
+        { "example": "Die Freigabe des Forschungsprojekts durch die Ethikkommission steht noch aus.", "translation": "La autorización del proyecto de investigación por el comité de ética aún está pendiente." },
+        { "example": "Nach der Freigabe der Mittel kann mit der Umsetzung begonnen werden.", "translation": "Tras la liberación de los fondos se puede comenzar con la implementación." },
+        { "example": "Die Freigabe der Dissertation zur Verteidigung erfolgt durch den Betreuer.", "translation": "La autorización de la tesis doctoral para la defensa se realiza por el director." }
+      ]
+    },
+    {
+      "id": "hergabe",
+      "word": "Hergabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la cesión; el préstamo",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Überlassung", "translation": "la cesión" },
+        { "word": "Bereitstellung", "translation": "la provisión" }
+      ],
+      "antonyms": [
+        { "word": "Zurückhaltung", "translation": "la retención" },
+        { "word": "Verweigerung", "translation": "la negativa" }
+      ],
+      "examples": [
+        { "example": "Die Hergabe von Forschungsmaterialien an andere Institute fördert die Zusammenarbeit.", "translation": "La cesión de materiales de investigación a otros institutos fomenta la colaboración." },
+        { "example": "Die Hergabe vertraulicher Daten ist streng reguliert.", "translation": "La cesión de datos confidenciales está estrictamente regulada." }
+      ]
+    },
+    {
+      "id": "mitgabe",
+      "word": "Mitgabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "el obsequio; la provisión",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Beigabe", "translation": "el añadido" },
+        { "word": "Geschenk", "translation": "el regalo" }
+      ],
+      "examples": [
+        { "example": "Die Mitgabe methodischer Kompetenzen ist essentiell für die Ausbildung von Nachwuchswissenschaftlern.", "translation": "La provisión de competencias metodológicas es esencial para la formación de jóvenes científicos." },
+        { "example": "Als Mitgabe erhielten die Teilnehmer umfangreiche Konferenzmaterialien.", "translation": "Como obsequio, los participantes recibieron amplios materiales de conferencia." }
+      ]
+    },
+    {
+      "id": "nachgeben",
+      "word": "Nachgeben",
+      "artikel": "das",
+      "baseVerb": "geben",
+      "translation": "la cesión; el ceder",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Kapitulation", "translation": "la capitulación" },
+        { "word": "Einlenken", "translation": "el ceder" }
+      ],
+      "antonyms": [
+        { "word": "Beharren", "translation": "la insistencia" },
+        { "word": "Standhaftigkeit", "translation": "la firmeza" }
+      ],
+      "examples": [
+        { "example": "Das Nachgeben der Fakultät gegenüber studentischen Forderungen war umstritten.", "translation": "La cesión de la facultad ante las demandas estudiantiles fue controvertida." },
+        { "example": "Das Nachgeben in dieser Frage würde einen Präzedenzfall schaffen.", "translation": "El ceder en esta cuestión crearía un precedente." }
+      ]
+    },
+    {
+      "id": "preisgabe",
+      "word": "Preisgabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la revelación; la exposición",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Offenbarung", "translation": "la revelación" },
+        { "word": "Enthüllung", "translation": "el desvelamiento" },
+        { "word": "Aufdeckung", "translation": "el descubrimiento" }
+      ],
+      "antonyms": [
+        { "word": "Geheimhaltung", "translation": "el secreto" },
+        { "word": "Verschweigen", "translation": "el silencio" }
+      ],
+      "examples": [
+        { "example": "Die Preisgabe vertraulicher Forschungsdaten ist ein schwerwiegender Verstoß.", "translation": "La revelación de datos de investigación confidenciales es una violación grave." },
+        { "example": "Die Preisgabe persönlicher Informationen der Probanden ist ethisch unzulässig.", "translation": "La exposición de información personal de los sujetos de prueba es éticamente inadmisible." }
+      ]
+    },
+    {
+      "id": "uebergabe",
+      "word": "Übergabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la entrega; el traspaso",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Aushändigung", "translation": "la entrega" },
+        { "word": "Übertragung", "translation": "la transferencia" },
+        { "word": "Transfer", "translation": "el traspaso" }
+      ],
+      "antonyms": [
+        { "word": "Zurückhaltung", "translation": "la retención" },
+        { "word": "Behalten", "translation": "el quedarse con" }
+      ],
+      "examples": [
+        { "example": "Die Übergabe der Forschungsleitung erfolgt zum Jahreswechsel.", "translation": "El traspaso de la dirección de investigación se realiza al cambio de año." },
+        { "example": "Bei der Übergabe der Abschlusszeugnisse hielt der Rektor eine Ansprache.", "translation": "En la entrega de los certificados finales, el rector pronunció un discurso." },
+        { "example": "Die reibungslose Übergabe der Projektverantwortung ist entscheidend.", "translation": "El traspaso fluido de la responsabilidad del proyecto es decisivo." }
+      ]
+    },
+    {
+      "id": "umgebung",
+      "word": "Umgebung",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "el entorno; los alrededores",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Environment", "translation": "el ambiente" },
+        { "word": "Milieu", "translation": "el medio" },
+        { "word": "Nachbarschaft", "translation": "la vecindad" }
+      ],
+      "examples": [
+        { "example": "Die Umgebung des Campus bietet ideale Bedingungen für konzentriertes Arbeiten.", "translation": "El entorno del campus ofrece condiciones ideales para trabajo concentrado." },
+        { "example": "In der akademischen Umgebung gelten besondere Verhaltensregeln.", "translation": "En el entorno académico rigen reglas de comportamiento especiales." },
+        { "example": "Die soziale Umgebung beeinflusst den Studienerfolg erheblich.", "translation": "El entorno social influye considerablemente en el éxito de los estudios." }
+      ]
+    },
+    {
+      "id": "vergebung",
+      "word": "Vergebung",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "el perdón; la adjudicación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Verzeihung", "translation": "el perdón" },
+        { "word": "Zuteilung", "translation": "la asignación" },
+        { "word": "Vergabe", "translation": "la adjudicación" }
+      ],
+      "antonyms": [
+        { "word": "Nachtragen", "translation": "el guardar rencor" },
+        { "word": "Zurückhaltung", "translation": "la retención" }
+      ],
+      "examples": [
+        { "example": "Die Vergebung von Forschungsgeldern erfolgt nach transparenten Kriterien.", "translation": "La adjudicación de fondos de investigación se realiza según criterios transparentes." },
+        { "example": "Das Verfahren zur Vergebung der Promotionsstellen ist klar geregelt.", "translation": "El procedimiento para la adjudicación de las plazas de doctorado está claramente regulado." }
+      ]
+    },
+    {
+      "id": "vorgabe",
+      "word": "Vorgabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la prescripción; la directriz",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Vorschrift", "translation": "la norma" },
+        { "word": "Richtlinie", "translation": "la directriz" },
+        { "word": "Anweisung", "translation": "la instrucción" }
+      ],
+      "examples": [
+        { "example": "Die Vorgaben der Prüfungsordnung sind verbindlich.", "translation": "Las prescripciones del reglamento de exámenes son vinculantes." },
+        { "example": "Methodische Vorgaben gewährleisten die Vergleichbarkeit der Studien.", "translation": "Las directrices metodológicas garantizan la comparabilidad de los estudios." },
+        { "example": "Die Vorgaben für die Zitierweise sind im Leitfaden festgelegt.", "translation": "Las prescripciones para el estilo de citación están establecidas en la guía." }
+      ]
+    },
+    {
+      "id": "weitergabe",
+      "word": "Weitergabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la transmisión; la difusión",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Übermittlung", "translation": "la transmisión" },
+        { "word": "Weiterleitung", "translation": "el reenvío" },
+        { "word": "Verbreitung", "translation": "la difusión" }
+      ],
+      "antonyms": [
+        { "word": "Zurückhaltung", "translation": "la retención" },
+        { "word": "Geheimhaltung", "translation": "el secreto" }
+      ],
+      "examples": [
+        { "example": "Die Weitergabe von Wissen an die nächste Generation ist eine zentrale Aufgabe der Universität.", "translation": "La transmisión de conocimiento a la siguiente generación es una tarea central de la universidad." },
+        { "example": "Die Weitergabe vertraulicher Informationen ist untersagt.", "translation": "La transmisión de información confidencial está prohibida." },
+        { "example": "Die Weitergabe von Best Practices fördert die Qualität der Lehre.", "translation": "La difusión de mejores prácticas fomenta la calidad de la enseñanza." }
+      ]
+    },
+    {
+      "id": "wiedergabe",
+      "word": "Wiedergabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la reproducción; la representación",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Reproduktion", "translation": "la reproducción" },
+        { "word": "Darstellung", "translation": "la representación" },
+        { "word": "Abbildung", "translation": "la ilustración" }
+      ],
+      "examples": [
+        { "example": "Die Wiedergabe der Forschungsergebnisse muss präzise und objektiv erfolgen.", "translation": "La reproducción de los resultados de investigación debe realizarse de manera precisa y objetiva." },
+        { "example": "Die grafische Wiedergabe der Daten erleichtert das Verständnis.", "translation": "La representación gráfica de los datos facilita la comprensión." },
+        { "example": "Eine korrekte Wiedergabe der Argumentation ist für das Verständnis essentiell.", "translation": "Una reproducción correcta de la argumentación es esencial para la comprensión." }
+      ]
+    },
+    {
+      "id": "zugestaendnis",
+      "word": "Zugeständnis",
+      "artikel": "das",
+      "baseVerb": "geben",
+      "translation": "la concesión",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Konzession", "translation": "la concesión" },
+        { "word": "Eingeständnis", "translation": "la admisión" },
+        { "word": "Kompromiss", "translation": "el compromiso" }
+      ],
+      "antonyms": [
+        { "word": "Ablehnung", "translation": "el rechazo" },
+        { "word": "Verweigerung", "translation": "la negativa" }
+      ],
+      "examples": [
+        { "example": "Das Zugeständnis der Fakultät an die Studierenden war ein wichtiger Schritt.", "translation": "La concesión de la facultad a los estudiantes fue un paso importante." },
+        { "example": "Ohne Zugeständnisse beider Seiten ist keine Einigung möglich.", "translation": "Sin concesiones de ambas partes no es posible un acuerdo." }
+      ]
+    },
+    {
+      "id": "rueckgabe",
+      "word": "Rückgabe",
+      "artikel": "die",
+      "baseVerb": "geben",
+      "translation": "la devolución",
+      "type": "nomen",
+      "synonyms": [
+        { "word": "Retoure", "translation": "el retorno" },
+        { "word": "Rückerstattung", "translation": "la restitución" },
+        { "word": "Wiedergabe", "translation": "la devolución" }
+      ],
+      "antonyms": [
+        { "word": "Behalten", "translation": "el quedarse con" },
+        { "word": "Einbehaltung", "translation": "la retención" }
+      ],
+      "examples": [
+        { "example": "Die Rückgabe der Bibliotheksbücher muss fristgerecht erfolgen.", "translation": "La devolución de los libros de biblioteca debe realizarse puntualmente." },
+        { "example": "Bei der Rückgabe der korrigierten Arbeiten gab der Dozent detailliertes Feedback.", "translation": "En la devolución de los trabajos corregidos, el docente dio retroalimentación detallada." },
+        { "example": "Die Rückgabe überschüssiger Forschungsgelder ist vorgeschrieben.", "translation": "La devolución de fondos de investigación excedentes está prescrita." }
+      ]
+    },
+    {
+      "id": "gehen-nom",
+      "word": "Gehen",
+      "artikel": "das",
+      "baseVerb": "gehen",
+      "translation": "el ir, el andar",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Gang", "translation": "la marcha" },
+        { "word": "Laufen", "translation": "el caminar" }
+      ],
+      "antonyms": [
+        { "word": "Bleiben", "translation": "el quedarse" },
+        { "word": "Stehen", "translation": "el estar de pie" }
+      ],
+      "examples": [
+        { "example": "Das Gehen zur Vorlesung dauert 15 Minuten.", "translation": "El ir a la clase magistral dura 15 minutos." },
+        { "example": "Das Kommen und Gehen der Studierenden ist normal.", "translation": "El ir y venir de los estudiantes es normal." }
+      ]
+    },
+    {
+      "id": "abgang",
+      "word": "Abgang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "la salida; la partida",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Abreise", "translation": "la partida" },
+        { "word": "Weggang", "translation": "la salida" }
+      ],
+      "examples": [
+        { "example": "Der Abgang des Zuges erfolgt pünktlich.", "translation": "La salida del tren se realiza puntualmente." },
+        { "example": "Nach seinem Abgang von der Universität arbeitete er in der Industrie.", "translation": "Después de su salida de la universidad trabajó en la industria." }
+      ]
+    },
+    {
+      "id": "angang",
+      "word": "Angang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "el arranque; el inicio",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Beginn", "translation": "el comienzo" },
+        { "word": "Start", "translation": "el inicio" }
+      ],
+      "examples": [
+        { "example": "Der Angang des Motors erfolgt automatisch.", "translation": "El arranque del motor se realiza automáticamente." }
+      ]
+    },
+    {
+      "id": "aufgang",
+      "word": "Aufgang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "la salida (sol); la escalera",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Sonnenaufgang", "translation": "el amanecer" },
+        { "word": "Treppe", "translation": "la escalera" }
+      ],
+      "examples": [
+        { "example": "Der Aufgang der Sonne wird um 6 Uhr erwartet.", "translation": "La salida del sol se espera a las 6 horas." },
+        { "example": "Der Aufgang zum Labor befindet sich im Westflügel.", "translation": "La escalera al laboratorio se encuentra en el ala oeste." }
+      ]
+    },
+    {
+      "id": "ausgang",
+      "word": "Ausgang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "la salida; el resultado",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Exit", "translation": "la salida" },
+        { "word": "Ergebnis", "translation": "el resultado" }
+      ],
+      "examples": [
+        { "example": "Der Ausgang des Experiments ist noch ungewiss.", "translation": "El resultado del experimento es todavía incierto." },
+        { "example": "Bitte benutzen Sie den Notausgang.", "translation": "Por favor use la salida de emergencia." }
+      ]
+    },
+    {
+      "id": "begehung",
+      "word": "Begehung",
+      "artikel": "die",
+      "baseVerb": "gehen",
+      "translation": "la comisión; la celebración; la inspección",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Inspektion", "translation": "la inspección" },
+        { "word": "Feier", "translation": "la celebración" }
+      ],
+      "examples": [
+        { "example": "Die Begehung eines methodischen Fehlers kann schwerwiegende Folgen haben.", "translation": "La comisión de un error metodológico puede tener consecuencias graves." },
+        { "example": "Die Begehung des Jubiläums findet im Hauptgebäude statt.", "translation": "La celebración del aniversario tiene lugar en el edificio principal." }
+      ]
+    },
+    {
+      "id": "durchgang",
+      "word": "Durchgang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "el paso; la ronda",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Passage", "translation": "el pasaje" },
+        { "word": "Runde", "translation": "la ronda" }
+      ],
+      "examples": [
+        { "example": "Der Durchgang durch das Labor ist nur mit Schutzkleidung gestattet.", "translation": "El paso por el laboratorio solo está permitido con ropa protectora." },
+        { "example": "Im zweiten Durchgang der Prüfung wurden die Ergebnisse verifiziert.", "translation": "En la segunda ronda del examen fueron verificados los resultados." }
+      ]
+    },
+    {
+      "id": "eingang",
+      "word": "Eingang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "la entrada; la recepción",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Zugang", "translation": "el acceso" },
+        { "word": "Portal", "translation": "el portal" }
+      ],
+      "examples": [
+        { "example": "Der Eingang zur Bibliothek befindet sich im Erdgeschoss.", "translation": "La entrada a la biblioteca se encuentra en la planta baja." },
+        { "example": "Nach Eingang der Unterlagen wird die Bewerbung geprüft.", "translation": "Tras la recepción de los documentos será examinada la solicitud." }
+      ]
+    },
+    {
+      "id": "ergehung",
+      "word": "Ergehung",
+      "artikel": "die",
+      "baseVerb": "gehen",
+      "translation": "la emisión (de un fallo)",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Erlass", "translation": "el decreto" },
+        { "word": "Verkündung", "translation": "la proclamación" }
+      ],
+      "examples": [
+        { "example": "Die Ergehung des Urteils erfolgt nach gründlicher Prüfung.", "translation": "La emisión del veredicto se realiza tras un examen minucioso." }
+      ]
+    },
+    {
+      "id": "hergang",
+      "word": "Hergang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "el desarrollo; el transcurso",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Ablauf", "translation": "el desarrollo" },
+        { "word": "Verlauf", "translation": "el transcurso" }
+      ],
+      "examples": [
+        { "example": "Der Hergang des Experiments wurde detailliert dokumentiert.", "translation": "El desarrollo del experimento fue documentado detalladamente." },
+        { "example": "Bitte schildern Sie den Hergang der Ereignisse.", "translation": "Por favor describa el transcurso de los acontecimientos." }
+      ]
+    },
+    {
+      "id": "losgang",
+      "word": "Losgang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "el inicio; el arranque",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Start", "translation": "el inicio" },
+        { "word": "Beginn", "translation": "el comienzo" }
+      ],
+      "examples": [
+        { "example": "Der Losgang der Veranstaltung ist für 10 Uhr geplant.", "translation": "El inicio del evento está planeado para las 10 horas." }
+      ]
+    },
+    {
+      "id": "nachgang",
+      "word": "Nachgang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "el seguimiento; el retraso (reloj)",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Verfolgung", "translation": "el seguimiento" },
+        { "word": "Verspätung", "translation": "el retraso" }
+      ],
+      "examples": [
+        { "example": "Der Nachgang der Plagiatsvorwürfe ist notwendig.", "translation": "El seguimiento de las acusaciones de plagio es necesario." },
+        { "example": "Die Uhr zeigt einen Nachgang von zwei Minuten.", "translation": "El reloj muestra un retraso de dos minutos." }
+      ]
+    },
+    {
+      "id": "uebergang",
+      "word": "Übergang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "la transición; el paso",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Transition", "translation": "la transición" },
+        { "word": "Wechsel", "translation": "el cambio" }
+      ],
+      "examples": [
+        { "example": "Der Übergang zum nächsten Kapitel erfolgt fließend.", "translation": "La transición al siguiente capítulo se realiza fluidamente." },
+        { "example": "Der Übergang von der Theorie zur Praxis ist entscheidend.", "translation": "El paso de la teoría a la práctica es decisivo." }
+      ]
+    },
+    {
+      "id": "umgang",
+      "word": "Umgang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "el trato; la relación",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Behandlung", "translation": "el trato" },
+        { "word": "Kontakt", "translation": "el contacto" }
+      ],
+      "examples": [
+        { "example": "Der professionelle Umgang mit Kritik ist wichtig.", "translation": "El trato profesional con la crítica es importante." },
+        { "example": "Der Umgang mit sensiblen Daten erfordert besondere Sorgfalt.", "translation": "El trato con datos sensibles requiere especial cuidado." }
+      ]
+    },
+    {
+      "id": "untergang",
+      "word": "Untergang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "el ocaso; la caída; el hundimiento",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Sonnenuntergang", "translation": "la puesta del sol" },
+        { "word": "Verfall", "translation": "la decadencia" }
+      ],
+      "examples": [
+        { "example": "Der Untergang der Sonne markiert das Ende des Arbeitstages.", "translation": "El ocaso del sol marca el fin de la jornada laboral." },
+        { "example": "Der Untergang dieser Theorie wurde durch neue Erkenntnisse besiegelt.", "translation": "La caída de esta teoría fue sellada por nuevos conocimientos." }
+      ]
+    },
+    {
+      "id": "vergang",
+      "word": "Vergang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "el transcurso; el paso (tiempo)",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Ablauf", "translation": "el transcurso" },
+        { "word": "Verlauf", "translation": "el desarrollo" }
+      ],
+      "examples": [
+        { "example": "Im Vergang der Zeit ändern sich wissenschaftliche Paradigmen.", "translation": "En el transcurso del tiempo cambian los paradigmas científicos." }
+      ]
+    },
+    {
+      "id": "vorgang",
+      "word": "Vorgang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "el proceso; el procedimiento",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Prozess", "translation": "el proceso" },
+        { "word": "Ablauf", "translation": "el desarrollo" }
+      ],
+      "examples": [
+        { "example": "Der Vorgang der Datenanalyse ist komplex.", "translation": "El proceso del análisis de datos es complejo." },
+        { "example": "Bitte dokumentieren Sie alle Vorgänge im Labor.", "translation": "Por favor documente todos los procedimientos en el laboratorio." }
+      ]
+    },
+    {
+      "id": "weggang",
+      "word": "Weggang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "la partida; la salida",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Abgang", "translation": "la salida" },
+        { "word": "Fortgang", "translation": "la partida" }
+      ],
+      "examples": [
+        { "example": "Der Weggang des renommierten Professors ist ein Verlust für die Fakultät.", "translation": "La partida del profesor renombrado es una pérdida para la facultad." }
+      ]
+    },
+    {
+      "id": "zurueckgang",
+      "word": "Rückgang",
+      "artikel": "der",
+      "baseVerb": "gehen",
+      "translation": "la disminución; el retroceso",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Abnahme", "translation": "la disminución" },
+        { "word": "Rückschritt", "translation": "el retroceso" }
+      ],
+      "examples": [
+        { "example": "Der Rückgang der Teilnehmerzahlen ist besorgniserregend.", "translation": "La disminución del número de participantes es preocupante." },
+        { "example": "Ein Rückgang der Forschungsgelder würde das Projekt gefährden.", "translation": "Una disminución de los fondos de investigación pondría en peligro el proyecto." }
+      ]
+    },
+    {
+      "id": "stellen-nom",
+      "word": "Stellen",
+      "artikel": "das",
+      "baseVerb": "stellen",
+      "translation": "el colocar, el poner",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Platzieren", "translation": "el colocar" },
+        { "word": "Positionieren", "translation": "el posicionar" }
+      ],
+      "antonyms": [
+        { "word": "Nehmen", "translation": "el tomar" },
+        { "word": "Entfernen", "translation": "el quitar" }
+      ],
+      "examples": [
+        { "example": "Das Stellen der Frage erfordert präzise Formulierung.", "translation": "El plantear la pregunta requiere formulación precisa." },
+        { "example": "Das Stellen von Hypothesen ist der erste Schritt der Forschung.", "translation": "El plantear hipótesis es el primer paso de la investigación." }
+      ]
+    },
+    {
+      "id": "abstellung",
+      "word": "Abstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "la eliminación; el aparcamiento",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Beseitigung", "translation": "la eliminación" },
+        { "word": "Parkierung", "translation": "el estacionamiento" }
+      ],
+      "examples": [
+        { "example": "Die Abstellung der Mängel ist dringend erforderlich.", "translation": "La eliminación de las deficiencias es urgentemente necesaria." },
+        { "example": "Die Abstellung der Fahrräder ist nur im markierten Bereich gestattet.", "translation": "El aparcamiento de las bicicletas solo está permitido en el área marcada." }
+      ]
+    },
+    {
+      "id": "anstellung",
+      "word": "Anstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "el empleo; la contratación",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Beschäftigung", "translation": "el empleo" },
+        { "word": "Einstellung", "translation": "la contratación" }
+      ],
+      "examples": [
+        { "example": "Die Anstellung als Dozent erfolgt nach erfolgreicher Promotion.", "translation": "El empleo como docente se realiza tras una promoción exitosa." },
+        { "example": "Ihre Anstellung an der Universität ist befristet.", "translation": "Su empleo en la universidad es temporal." }
+      ]
+    },
+    {
+      "id": "aufstellung",
+      "word": "Aufstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "la formulación; la lista; el establecimiento",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Liste", "translation": "la lista" },
+        { "word": "Formulierung", "translation": "la formulación" }
+      ],
+      "examples": [
+        { "example": "Die Aufstellung einer neuen Hypothese erfordert empirische Grundlagen.", "translation": "La formulación de una nueva hipótesis requiere fundamentos empíricos." },
+        { "example": "Die Aufstellung der Teilnehmerliste ist abgeschlossen.", "translation": "La elaboración de la lista de participantes está completada." }
+      ]
+    },
+    {
+      "id": "ausstellung",
+      "word": "Ausstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "la exposición; la expedición",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Exposition", "translation": "la exposición" },
+        { "word": "Schau", "translation": "la muestra" }
+      ],
+      "examples": [
+        { "example": "Die Ausstellung historischer Manuskripte zieht viele Besucher an.", "translation": "La exposición de manuscritos históricos atrae a muchos visitantes." },
+        { "example": "Die Ausstellung von Zeugnissen erfolgt nach bestandener Prüfung.", "translation": "La expedición de certificados se realiza tras aprobar el examen." }
+      ]
+    },
+    {
+      "id": "bereitstellung",
+      "word": "Bereitstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "la provisión; el suministro",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Versorgung", "translation": "el suministro" },
+        { "word": "Zurverfügungstellung", "translation": "la puesta a disposición" }
+      ],
+      "examples": [
+        { "example": "Die Bereitstellung digitaler Ressourcen ist essentiell für die Forschung.", "translation": "La provisión de recursos digitales es esencial para la investigación." },
+        { "example": "Die Bereitstellung von Forschungsgeldern wurde bewilligt.", "translation": "La provisión de fondos de investigación fue aprobada." }
+      ]
+    },
+    {
+      "id": "darstellung",
+      "word": "Darstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "la representación; la exposición",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Repräsentation", "translation": "la representación" },
+        { "word": "Präsentation", "translation": "la presentación" }
+      ],
+      "examples": [
+        { "example": "Die grafische Darstellung der Ergebnisse ist übersichtlich.", "translation": "La representación gráfica de los resultados es clara." },
+        { "example": "Die Darstellung der Theorie erfolgt systematisch.", "translation": "La exposición de la teoría se realiza sistemáticamente." }
+      ]
+    },
+    {
+      "id": "einstellung",
+      "word": "Einstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "el ajuste; la contratación; la actitud; la suspensión",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Anstellung", "translation": "el empleo" },
+        { "word": "Haltung", "translation": "la actitud" }
+      ],
+      "examples": [
+        { "example": "Die Einstellung des Mikroskops erfordert Präzision.", "translation": "El ajuste del microscopio requiere precisión." },
+        { "example": "Die Einstellung neuer Mitarbeiter erfolgt nach strengen Kriterien.", "translation": "La contratación de nuevos colaboradores se realiza según criterios estrictos." },
+        { "example": "Die Einstellung der Forschung wurde vorübergehend beschlossen.", "translation": "La suspensión de la investigación fue decidida temporalmente." }
+      ]
+    },
+    {
+      "id": "erstellung",
+      "word": "Erstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "la elaboración; la creación",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Anfertigung", "translation": "la elaboración" },
+        { "word": "Verfassung", "translation": "la redacción" }
+      ],
+      "examples": [
+        { "example": "Die Erstellung einer Literaturübersicht ist zeitaufwendig.", "translation": "La elaboración de una revisión bibliográfica requiere tiempo." },
+        { "example": "Die Erstellung des Forschungsplans erfolgt in mehreren Schritten.", "translation": "La creación del plan de investigación se realiza en varios pasos." }
+      ]
+    },
+    {
+      "id": "feststellung",
+      "word": "Feststellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "la constatación; la comprobación",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Konstatierung", "translation": "la constatación" },
+        { "word": "Erkenntnis", "translation": "el conocimiento" }
+      ],
+      "examples": [
+        { "example": "Die Feststellung methodischer Mängel führte zur Überarbeitung.", "translation": "La constatación de deficiencias metodológicas condujo a la revisión." },
+        { "example": "Die Feststellung der Ergebnisse erfolgt nach gründlicher Analyse.", "translation": "La comprobación de los resultados se realiza tras un análisis minucioso." }
+      ]
+    },
+    {
+      "id": "herstellung",
+      "word": "Herstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "la producción; la fabricación; el establecimiento",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Produktion", "translation": "la producción" },
+        { "word": "Erzeugung", "translation": "la generación" }
+      ],
+      "examples": [
+        { "example": "Die Herstellung synthetischer Verbindungen erfolgt im Labor.", "translation": "La producción de compuestos sintéticos se realiza en el laboratorio." },
+        { "example": "Die Herstellung eines Kontakts zur Partneruniversität ist wichtig.", "translation": "El establecimiento de contacto con la universidad asociada es importante." }
+      ]
+    },
+    {
+      "id": "sicherstellung",
+      "word": "Sicherstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "el aseguramiento; la garantía",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Gewährleistung", "translation": "la garantía" },
+        { "word": "Garantie", "translation": "la garantía" }
+      ],
+      "examples": [
+        { "example": "Die Sicherstellung der Datenqualität ist essentiell.", "translation": "El aseguramiento de la calidad de datos es esencial." },
+        { "example": "Die Sicherstellung der Einhaltung ethischer Richtlinien ist Aufgabe der Kommission.", "translation": "El aseguramiento del cumplimiento de directrices éticas es tarea de la comisión." }
+      ]
+    },
+    {
+      "id": "vorstellung",
+      "word": "Vorstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "la presentación; la idea; la imaginación",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Präsentation", "translation": "la presentación" },
+        { "word": "Idee", "translation": "la idea" }
+      ],
+      "examples": [
+        { "example": "Die Vorstellung der Forschungsergebnisse erfolgt im Kolloquium.", "translation": "La presentación de los resultados de investigación se realiza en el coloquio." },
+        { "example": "Ich habe eine klare Vorstellung vom Ergebnis.", "translation": "Tengo una idea clara del resultado." }
+      ]
+    },
+    {
+      "id": "zusammenstellung",
+      "word": "Zusammenstellung",
+      "artikel": "die",
+      "baseVerb": "stellen",
+      "translation": "la compilación; la recopilación",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Kompilation", "translation": "la compilación" },
+        { "word": "Sammlung", "translation": "la colección" }
+      ],
+      "examples": [
+        { "example": "Die Zusammenstellung einer Literaturliste erfordert systematisches Vorgehen.", "translation": "La compilación de una lista bibliográfica requiere proceder sistemáticamente." },
+        { "example": "Die Zusammenstellung relevanter Daten ist abgeschlossen.", "translation": "La recopilación de datos relevantes está completada." }
+      ]
+    },
+    {
+      "id": "arbeiten-nom",
+      "word": "Arbeiten",
+      "artikel": "das",
+      "baseVerb": "arbeiten",
+      "translation": "el trabajar",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Tätigkeit", "translation": "la actividad" },
+        { "word": "Schaffen", "translation": "el crear" }
+      ],
+      "antonyms": [
+        { "word": "Ruhen", "translation": "el descansar" },
+        { "word": "Faulenzen", "translation": "el holgazanear" }
+      ],
+      "examples": [
+        { "example": "Das Arbeiten an der Dissertation erfordert Ausdauer.", "translation": "El trabajar en la tesis doctoral requiere perseverancia." },
+        { "example": "Das konzentrierte Arbeiten im Labor ist wichtig.", "translation": "El trabajar concentrado en el laboratorio es importante." }
+      ]
+    },
+    {
+      "id": "arbeit",
+      "word": "Arbeit",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "el trabajo; la obra",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Tätigkeit", "translation": "la actividad" },
+        { "word": "Werk", "translation": "la obra" }
+      ],
+      "examples": [
+        { "example": "Die wissenschaftliche Arbeit erfordert methodische Genauigkeit.", "translation": "El trabajo científico requiere precisión metodológica." },
+        { "example": "Die Arbeit an der Dissertation nimmt viel Zeit in Anspruch.", "translation": "El trabajo en la tesis doctoral requiere mucho tiempo." }
+      ]
+    },
+    {
+      "id": "abarbeitung",
+      "word": "Abarbeitung",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "el procesamiento; la realización",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Erledigung", "translation": "la realización" },
+        { "word": "Bearbeitung", "translation": "el procesamiento" }
+      ],
+      "examples": [
+        { "example": "Die systematische Abarbeitung der Aufgabenliste ist effizient.", "translation": "El procesamiento sistemático de la lista de tareas es eficiente." },
+        { "example": "Die Abarbeitung mehrerer Kapitel nimmt Zeit in Anspruch.", "translation": "La realización de varios capítulos requiere tiempo." }
+      ]
+    },
+    {
+      "id": "aufarbeitung",
+      "word": "Aufarbeitung",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "el procesamiento; el análisis; la puesta al día",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Analyse", "translation": "el análisis" },
+        { "word": "Nacharbeitung", "translation": "el repaso" }
+      ],
+      "examples": [
+        { "example": "Die wissenschaftliche Aufarbeitung der Vergangenheit ist wichtig.", "translation": "El procesamiento científico del pasado es importante." },
+        { "example": "Die Aufarbeitung des versäumten Stoffs erfordert Disziplin.", "translation": "La puesta al día de la materia perdida requiere disciplina." }
+      ]
+    },
+    {
+      "id": "ausarbeitung",
+      "word": "Ausarbeitung",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "la elaboración; el desarrollo",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Entwicklung", "translation": "el desarrollo" },
+        { "word": "Entwurf", "translation": "el diseño" }
+      ],
+      "examples": [
+        { "example": "Die Ausarbeitung eines detaillierten Konzepts ist notwendig.", "translation": "La elaboración de un concepto detallado es necesaria." },
+        { "example": "Die Ausarbeitung der Methodik erfolgt in mehreren Schritten.", "translation": "El desarrollo de la metodología se realiza en varios pasos." }
+      ]
+    },
+    {
+      "id": "bearbeitung",
+      "word": "Bearbeitung",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "el procesamiento; la edición; el tratamiento",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Behandlung", "translation": "el tratamiento" },
+        { "word": "Edition", "translation": "la edición" }
+      ],
+      "examples": [
+        { "example": "Die gründliche Bearbeitung des Manuskripts ist essentiell.", "translation": "El procesamiento minucioso del manuscrito es esencial." },
+        { "example": "Die Bearbeitung des Themas erfolgt interdisziplinär.", "translation": "El tratamiento del tema se realiza interdisciplinariamente." }
+      ]
+    },
+    {
+      "id": "durcharbeitung",
+      "word": "Durcharbeitung",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "el estudio a fondo; el trabajo continuo",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Durchstudierung", "translation": "el estudio" },
+        { "word": "Durchsicht", "translation": "la revisión" }
+      ],
+      "examples": [
+        { "example": "Die Durcharbeitung der Fachliteratur ist zeitintensiv.", "translation": "El estudio a fondo de la literatura especializada requiere tiempo." },
+        { "example": "Die Durcharbeitung der ganzen Nacht war notwendig.", "translation": "El trabajo continuo durante toda la noche fue necesario." }
+      ]
+    },
+    {
+      "id": "einarbeitung",
+      "word": "Einarbeitung",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "la familiarización; la integración",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Einführung", "translation": "la introducción" },
+        { "word": "Integration", "translation": "la integración" }
+      ],
+      "examples": [
+        { "example": "Die Einarbeitung in das Forschungsgebiet dauert mehrere Monate.", "translation": "La familiarización con el área de investigación dura varios meses." },
+        { "example": "Die Einarbeitung der Korrekturen ist abgeschlossen.", "translation": "La integración de las correcciones está completada." }
+      ]
+    },
+    {
+      "id": "erarbeitung",
+      "word": "Erarbeitung",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "la elaboración; el desarrollo",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Entwicklung", "translation": "el desarrollo" },
+        { "word": "Erstellung", "translation": "la creación" }
+      ],
+      "examples": [
+        { "example": "Die Erarbeitung neuer Richtlinien ist Aufgabe der Kommission.", "translation": "La elaboración de nuevas directrices es tarea de la comisión." },
+        { "example": "Die mühsame Erarbeitung des Wissens zahlt sich aus.", "translation": "La elaboración laboriosa del conocimiento vale la pena." }
+      ]
+    },
+    {
+      "id": "mitarbeit",
+      "word": "Mitarbeit",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "la colaboración; la participación",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Kooperation", "translation": "la cooperación" },
+        { "word": "Teilnahme", "translation": "la participación" }
+      ],
+      "examples": [
+        { "example": "Die aktive Mitarbeit am Forschungsprojekt ist erwünscht.", "translation": "La colaboración activa en el proyecto de investigación es deseada." },
+        { "example": "Die Mitarbeit aller Studierenden im Seminar ist wichtig.", "translation": "La participación de todos los estudiantes en el seminario es importante." }
+      ]
+    },
+    {
+      "id": "ueberarbeitung",
+      "word": "Überarbeitung",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "la revisión; la reelaboración",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Revision", "translation": "la revisión" },
+        { "word": "Korrektur", "translation": "la corrección" }
+      ],
+      "examples": [
+        { "example": "Die gründliche Überarbeitung des Manuskripts ist notwendig.", "translation": "La revisión minuciosa del manuscrito es necesaria." },
+        { "example": "Das Konzept bedarf einer Überarbeitung.", "translation": "El concepto requiere una reelaboración." }
+      ]
+    },
+    {
+      "id": "verarbeitung",
+      "word": "Verarbeitung",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "el procesamiento; la asimilación",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Prozessierung", "translation": "el procesamiento" },
+        { "word": "Bewältigung", "translation": "la superación" }
+      ],
+      "examples": [
+        { "example": "Die Verarbeitung großer Datenmengen erfordert leistungsstarke Systeme.", "translation": "El procesamiento de grandes cantidades de datos requiere sistemas potentes." },
+        { "example": "Die kognitive Verarbeitung der Informationen ist komplex.", "translation": "El procesamiento cognitivo de la información es complejo." }
+      ]
+    },
+    {
+      "id": "zusammenarbeit",
+      "word": "Zusammenarbeit",
+      "artikel": "die",
+      "baseVerb": "arbeiten",
+      "translation": "la colaboración; la cooperación",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Kooperation", "translation": "la cooperación" },
+        { "word": "Kollaboration", "translation": "la colaboración" }
+      ],
+      "examples": [
+        { "example": "Die enge Zusammenarbeit der Institute ist fruchtbar.", "translation": "La estrecha colaboración de los institutos es fructífera." },
+        { "example": "Die interdisziplinäre Zusammenarbeit ist essentiell.", "translation": "La cooperación interdisciplinaria es esencial." }
+      ]
+    },
+    {
+      "id": "greifen-nom",
+      "word": "Greifen",
+      "artikel": "das",
+      "baseVerb": "greifen",
+      "translation": "el agarrar, el coger",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Fassen", "translation": "el agarrar" },
+        { "word": "Nehmen", "translation": "el tomar" }
+      ],
+      "antonyms": [
+        { "word": "Loslassen", "translation": "el soltar" },
+        { "word": "Freigeben", "translation": "el liberar" }
+      ],
+      "examples": [
+        { "example": "Das Greifen nach dem Reagenzglas erfordert Vorsicht.", "translation": "El agarrar el tubo de ensayo requiere precaución." },
+        { "example": "Das Greifen zu drastischen Mitteln ist manchmal notwendig.", "translation": "El recurrir a medios drásticos es a veces necesario." }
+      ]
+    },
+    {
+      "id": "griff",
+      "word": "Griff",
+      "artikel": "der",
+      "baseVerb": "greifen",
+      "translation": "el agarre; el mango; la acción",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Handgriff", "translation": "el mango" },
+        { "word": "Zugriff", "translation": "el acceso" }
+      ],
+      "examples": [
+        { "example": "Der Griff des Instruments ist ergonomisch gestaltet.", "translation": "El mango del instrumento está diseñado ergonómicamente." },
+        { "example": "Mit einem geschickten Griff löste sie das Problem.", "translation": "Con una acción hábil resolvió el problema." }
+      ]
+    },
+    {
+      "id": "abgriff",
+      "word": "Abgriff",
+      "artikel": "der",
+      "baseVerb": "greifen",
+      "translation": "la medición; la toma",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Messung", "translation": "la medición" },
+        { "word": "Entnahme", "translation": "la toma" }
+      ],
+      "examples": [
+        { "example": "Der präzise Abgriff der Koordinaten ist wichtig.", "translation": "La medición precisa de las coordenadas es importante." }
+      ]
+    },
+    {
+      "id": "angriff",
+      "word": "Angriff",
+      "artikel": "der",
+      "baseVerb": "greifen",
+      "translation": "el ataque; la agresión",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Attacke", "translation": "el ataque" },
+        { "word": "Offensive", "translation": "la ofensiva" }
+      ],
+      "examples": [
+        { "example": "Der Angriff der Säure auf das Material ist messbar.", "translation": "El ataque del ácido sobre el material es medible." },
+        { "example": "Die scharfen Angriffe auf die Methodik sind unbegründet.", "translation": "Los ataques duros sobre la metodología son infundados." }
+      ]
+    },
+    {
+      "id": "aufgriff",
+      "word": "Aufgriff",
+      "artikel": "der",
+      "baseVerb": "greifen",
+      "translation": "la retoma; la captación",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Aufnahme", "translation": "la retoma" },
+        { "word": "Thematisierung", "translation": "la tematización" }
+      ],
+      "examples": [
+        { "example": "Der Aufgriff einer früheren Theorie ist produktiv.", "translation": "La retoma de una teoría anterior es productiva." }
+      ]
+    },
+    {
+      "id": "begriff",
+      "word": "Begriff",
+      "artikel": "der",
+      "baseVerb": "greifen",
+      "translation": "el concepto; la noción",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Konzept", "translation": "el concepto" },
+        { "word": "Terminus", "translation": "el término" }
+      ],
+      "examples": [
+        { "example": "Der Begriff der Nachhaltigkeit ist zentral in der Diskussion.", "translation": "El concepto de sostenibilidad es central en la discusión." },
+        { "example": "Die Studierenden begreifen den komplexen Begriff allmählich.", "translation": "Los estudiantes comprenden gradualmente el concepto complejo." }
+      ]
+    },
+    {
+      "id": "eingriff",
+      "word": "Eingriff",
+      "artikel": "der",
+      "baseVerb": "greifen",
+      "translation": "la intervención; la injerencia",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Intervention", "translation": "la intervención" },
+        { "word": "Einschreiten", "translation": "la actuación" }
+      ],
+      "examples": [
+        { "example": "Der Eingriff der Ethikkommission war notwendig.", "translation": "La intervención del comité de ética fue necesaria." },
+        { "example": "Der staatliche Eingriff in den Markt ist regulierend.", "translation": "La intervención estatal en el mercado es reguladora." }
+      ]
+    },
+    {
+      "id": "ergriff",
+      "word": "Ergriff",
+      "artikel": "der",
+      "baseVerb": "greifen",
+      "translation": "la toma; el aprovechamiento",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Ergreifung", "translation": "la toma" },
+        { "word": "Nutzung", "translation": "el aprovechamiento" }
+      ],
+      "examples": [
+        { "example": "Der Ergriff präventiver Maßnahmen ist wichtig.", "translation": "La toma de medidas preventivas es importante." }
+      ]
+    },
+    {
+      "id": "ergreifung",
+      "word": "Ergreifung",
+      "artikel": "die",
+      "baseVerb": "greifen",
+      "translation": "la toma; el aprovechamiento; la captura",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Ergriff", "translation": "la toma" },
+        { "word": "Festnahme", "translation": "la captura" }
+      ],
+      "examples": [
+        { "example": "Die Ergreifung der Initiative zur Reform ist lobenswert.", "translation": "La toma de la iniciativa para la reforma es loable." },
+        { "example": "Die Ergreifung präventiver Maßnahmen erfolgt rechtzeitig.", "translation": "La toma de medidas preventivas se realiza a tiempo." }
+      ]
+    },
+    {
+      "id": "zugriff",
+      "word": "Zugriff",
+      "artikel": "der",
+      "baseVerb": "greifen",
+      "translation": "el acceso; el aprovechamiento",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Zugang", "translation": "el acceso" },
+        { "word": "Nutzung", "translation": "el uso" }
+      ],
+      "examples": [
+        { "example": "Der Zugriff auf die Datenbank ist nur autorisierten Nutzern gestattet.", "translation": "El acceso a la base de datos solo está permitido a usuarios autorizados." },
+        { "example": "Bei diesem Angebot sollte man sofort zugreifen.", "translation": "Con esta oferta se debería aprovechar inmediatamente." }
+      ]
+    },
+    {
+      "id": "rueckgriff",
+      "word": "Rückgriff",
+      "artikel": "der",
+      "baseVerb": "greifen",
+      "translation": "el recurso; la referencia",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Bezugnahme", "translation": "la referencia" },
+        { "word": "Verwendung", "translation": "el uso" }
+      ],
+      "examples": [
+        { "example": "Der Rückgriff auf bewährte Methoden ist sinnvoll.", "translation": "El recurso a métodos probados es sensato." },
+        { "example": "Der Rückgriff auf frühere Studien ist notwendig.", "translation": "El recurso a estudios anteriores es necesario." }
+      ]
+    },
+    {
+      "id": "dauern-nom",
+      "word": "Dauern",
+      "artikel": "das",
+      "baseVerb": "dauern",
+      "translation": "el durar",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Andauern", "translation": "el perdurar" },
+        { "word": "Währen", "translation": "el durar" }
+      ],
+      "antonyms": [
+        { "word": "Enden", "translation": "el terminar" },
+        { "word": "Aufhören", "translation": "el cesar" }
+      ],
+      "examples": [
+        { "example": "Das Dauern der Vorlesung ist auf 90 Minuten festgelegt.", "translation": "El durar de la clase magistral está fijado en 90 minutos." },
+        { "example": "Das lange Dauern des Projekts ist problematisch.", "translation": "El largo durar del proyecto es problemático." }
+      ]
+    },
+    {
+      "id": "dauer",
+      "word": "Dauer",
+      "artikel": "die",
+      "baseVerb": "dauern",
+      "translation": "la duración",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Zeitspanne", "translation": "el lapso" },
+        { "word": "Länge", "translation": "la longitud" }
+      ],
+      "examples": [
+        { "example": "Die Dauer der Vorlesung beträgt 90 Minuten.", "translation": "La duración de la clase magistral es de 90 minutos." },
+        { "example": "Die Dauer des Forschungsprojekts ist auf drei Jahre festgelegt.", "translation": "La duración del proyecto de investigación está fijada en tres años." }
+      ]
+    },
+    {
+      "id": "andauer",
+      "word": "Andauer",
+      "artikel": "die",
+      "baseVerb": "dauern",
+      "translation": "la continuación; la persistencia",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Fortdauer", "translation": "la continuación" },
+        { "word": "Anhaltung", "translation": "la persistencia" }
+      ],
+      "examples": [
+        { "example": "Die Andauer der Debatte ist bemerkenswert.", "translation": "La continuación del debate es notable." },
+        { "example": "Die Andauer der Forschungsphase ist notwendig.", "translation": "La persistencia de la fase de investigación es necesaria." }
+      ]
+    },
+    {
+      "id": "fortdauer",
+      "word": "Fortdauer",
+      "artikel": "die",
+      "baseVerb": "dauern",
+      "translation": "la continuación; la persistencia",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Andauer", "translation": "la continuación" },
+        { "word": "Weiterbestehen", "translation": "la persistencia" }
+      ],
+      "examples": [
+        { "example": "Die Fortdauer der Kontroverse in der Fachwelt ist bemerkenswert.", "translation": "La continuación de la controversia en el mundo especializado es notable." },
+        { "example": "Die Fortdauer der Diskussion über die Methodik ist wichtig.", "translation": "La persistencia de la discusión sobre la metodología es importante." }
+      ]
+    },
+    {
+      "id": "ueberdauerung",
+      "word": "Überdauerung",
+      "artikel": "die",
+      "baseVerb": "dauern",
+      "translation": "la perduración; la supervivencia",
+      "type": "noun",
+      "synonyms": [
+        { "word": "Überlebung", "translation": "la supervivencia" },
+        { "word": "Bestand", "translation": "la permanencia" }
+      ],
+      "examples": [
+        { "example": "Die Überdauerung dieser Theorie über mehrere Paradigmenwechsel ist beeindruckend.", "translation": "La perduración de esta teoría a través de varios cambios de paradigma es impresionante." },
+        { "example": "Die Überdauerung der Manuskripte über Jahrhunderte ist selten.", "translation": "La supervivencia de los manuscritos a través de siglos es rara." }
+      ]
+    }
+  ]
+}

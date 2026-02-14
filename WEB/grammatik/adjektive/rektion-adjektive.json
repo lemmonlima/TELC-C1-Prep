@@ -1,0 +1,403 @@
+{
+  "adjectives": [
+    {
+      "word": "ähnlich",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "similar, parecido",
+      "example": "Die Forschungsmethodik ist der quantitativen Analyse sehr ähnlich.",
+      "exampleES": "La metodología de investigación es muy similar al análisis cuantitativo."
+    },
+    {
+      "word": "behilflich",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "servicial, útil",
+      "example": "Die Bibliothekarin war den Studierenden bei der Literaturrecherche behilflich.",
+      "exampleES": "La bibliotecaria fue útil a los estudiantes en la búsqueda bibliográfica."
+    },
+    {
+      "word": "bekannt",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "conocido",
+      "example": "Diese Theorie ist den meisten Wissenschaftlern bekannt.",
+      "exampleES": "Esta teoría es conocida por la mayoría de los científicos."
+    },
+    {
+      "word": "egal",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "indiferente, igual",
+      "example": "Der Forschungsgruppe ist die öffentliche Meinung nicht egal.",
+      "exampleES": "La opinión pública no es indiferente al grupo de investigación."
+    },
+    {
+      "word": "gleich",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "igual",
+      "example": "Die Ergebnisse der beiden Studien sind einander gleich.",
+      "exampleES": "Los resultados de ambos estudios son iguales entre sí."
+    },
+    {
+      "word": "möglich",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "posible",
+      "example": "Es ist den Doktoranden nicht möglich, die Frist einzuhalten.",
+      "exampleES": "No es posible para los doctorandos cumplir el plazo."
+    },
+    {
+      "word": "sympathisch",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "simpático, agradable",
+      "example": "Der neue Dozent ist den Studierenden sehr sympathisch.",
+      "exampleES": "El nuevo docente es muy agradable para los estudiantes."
+    },
+    {
+      "word": "überlegen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "superior",
+      "example": "Diese Methode ist den traditionellen Ansätzen deutlich überlegen.",
+      "exampleES": "Este método es claramente superior a los enfoques tradicionales."
+    },
+    {
+      "word": "unterlegen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "inferior",
+      "example": "Die empirischen Belege sind den theoretischen Argumenten unterlegen.",
+      "exampleES": "Las pruebas empíricas son inferiores a los argumentos teóricos."
+    },
+    {
+      "word": "recht",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "conveniente, bien",
+      "example": "Der Termin für das Kolloquium ist den meisten Teilnehmern recht.",
+      "exampleES": "La fecha para el coloquio les conviene a la mayoría de los participantes."
+    },
+    {
+      "word": "schuldig",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "deber a",
+      "example": "Die Wissenschaft ist der Gesellschaft Rechenschaft schuldig.",
+      "exampleES": "La ciencia debe rendición de cuentas a la sociedad."
+    },
+    {
+      "word": "alt",
+      "preposition": "Akkusativ (Maßangabe)",
+      "translation": "viejo (edad)",
+      "example": "Die Universität wird nächstes Jahr fünfhundert Jahre alt.",
+      "exampleES": "La universidad cumplirá quinientos años el próximo año."
+    },
+    {
+      "word": "breit",
+      "preposition": "Akkusativ (Maßangabe)",
+      "translation": "ancho",
+      "example": "Der Forschungskorridor ist drei Meter breit.",
+      "exampleES": "El corredor de investigación tiene tres metros de ancho."
+    },
+    {
+      "word": "groß",
+      "preposition": "Akkusativ (Maßangabe)",
+      "translation": "grande",
+      "example": "Das Laboratorium ist zweihundert Quadratmeter groß.",
+      "exampleES": "El laboratorio tiene doscientos metros cuadrados."
+    },
+    {
+      "word": "hoch",
+      "preposition": "Akkusativ (Maßangabe)",
+      "translation": "alto",
+      "example": "Das Universitätsgebäude ist fünfzig Meter hoch.",
+      "exampleES": "El edificio universitario tiene cincuenta metros de altura."
+    },
+    {
+      "word": "lang",
+      "preposition": "Akkusativ (Maßangabe)",
+      "translation": "largo",
+      "example": "Die Promotionsphase ist durchschnittlich vier Jahre lang.",
+      "exampleES": "La fase de doctorado dura en promedio cuatro años."
+    },
+    {
+      "word": "schwer",
+      "preposition": "Akkusativ (Maßangabe)",
+      "translation": "pesado",
+      "example": "Die wissenschaftliche Enzyklopädie ist fünf Kilogramm schwer.",
+      "exampleES": "La enciclopedia científica pesa cinco kilogramos."
+    },
+    {
+      "word": "abhängig",
+      "preposition": "von + Dativ",
+      "translation": "dependiente de",
+      "example": "Der Erfolg der Dissertation ist abhängig von der Qualität der empirischen Daten.",
+      "exampleES": "El éxito de la tesis doctoral depende de la calidad de los datos empíricos."
+    },
+    {
+      "word": "enttäuscht",
+      "preposition": "von + Dativ",
+      "translation": "decepcionado de",
+      "example": "Die Gutachter waren enttäuscht von der methodischen Umsetzung der Studie.",
+      "exampleES": "Los evaluadores estaban decepcionados de la implementación metodológica del estudio."
+    },
+    {
+      "word": "frei",
+      "preposition": "von + Dativ",
+      "translation": "libre de",
+      "example": "Die wissenschaftliche Arbeit sollte frei von ideologischen Vorurteilen sein.",
+      "exampleES": "El trabajo científico debería estar libre de prejuicios ideológicos."
+    },
+    {
+      "word": "müde",
+      "preposition": "von + Dativ",
+      "translation": "cansado de",
+      "example": "Die Forscherin ist müde von den endlosen Diskussionen über Finanzierungsfragen.",
+      "exampleES": "La investigadora está cansada de las interminables discusiones sobre cuestiones de financiación."
+    },
+    {
+      "word": "überzeugt",
+      "preposition": "von + Dativ",
+      "translation": "convencido de",
+      "example": "Das Forschungsteam ist überzeugt von der Relevanz der Ergebnisse.",
+      "exampleES": "El equipo de investigación está convencido de la relevancia de los resultados."
+    },
+    {
+      "word": "arm",
+      "preposition": "an + Dativ",
+      "translation": "pobre en",
+      "example": "Die Studie ist arm an empirischen Belegen.",
+      "exampleES": "El estudio es pobre en pruebas empíricas."
+    },
+    {
+      "word": "interessiert",
+      "preposition": "an + Dativ",
+      "translation": "interesado en",
+      "example": "Die Universität ist interessiert an einer Kooperation mit internationalen Partnern.",
+      "exampleES": "La universidad está interesada en una cooperación con socios internacionales."
+    },
+    {
+      "word": "reich",
+      "preposition": "an + Dativ",
+      "translation": "rico en",
+      "example": "Die Dissertation ist reich an innovativen Ansätzen und neuen Perspektiven.",
+      "exampleES": "La tesis doctoral es rica en enfoques innovadores y nuevas perspectivas."
+    },
+    {
+      "word": "schuld",
+      "preposition": "an + Dativ",
+      "translation": "culpable de",
+      "example": "Methodische Fehler sind schuld an den widersprüchlichen Ergebnissen.",
+      "exampleES": "Los errores metodológicos son culpables de los resultados contradictorios."
+    },
+    {
+      "word": "gewöhnt",
+      "preposition": "an + Akkusativ",
+      "translation": "acostumbrado a",
+      "example": "Die Studierenden sind an das hohe akademische Niveau gewöhnt.",
+      "exampleES": "Los estudiantes están acostumbrados al alto nivel académico."
+    },
+    {
+      "word": "beliebt",
+      "preposition": "bei + Dativ",
+      "translation": "popular entre",
+      "example": "Interdisziplinäre Seminare sind besonders beliebt bei den Masterstudierenden.",
+      "exampleES": "Los seminarios interdisciplinarios son especialmente populares entre los estudiantes de máster."
+    },
+    {
+      "word": "angewiesen",
+      "preposition": "auf + Akkusativ",
+      "translation": "dependiente de",
+      "example": "Die Forschungsgruppe ist angewiesen auf externe Fördergelder.",
+      "exampleES": "El grupo de investigación depende de fondos de financiación externos."
+    },
+    {
+      "word": "gespannt",
+      "preposition": "auf + Akkusativ",
+      "translation": "expectante por, curioso por",
+      "example": "Die Wissenschaftler sind gespannt auf die Ergebnisse der klinischen Studie.",
+      "exampleES": "Los científicos están expectantes por los resultados del estudio clínico."
+    },
+    {
+      "word": "neidisch",
+      "preposition": "auf + Akkusativ",
+      "translation": "envidioso de",
+      "example": "Einige Kollegen sind neidisch auf ihren akademischen Erfolg.",
+      "exampleES": "Algunos colegas están envidiosos de su éxito académico."
+    },
+    {
+      "word": "stolz",
+      "preposition": "auf + Akkusativ",
+      "translation": "orgulloso de",
+      "example": "Die Universität ist stolz auf ihre exzellente Forschungsinfrastruktur.",
+      "exampleES": "La universidad está orgullosa de su excelente infraestructura de investigación."
+    },
+    {
+      "word": "erfreut",
+      "preposition": "über + Akkusativ",
+      "translation": "contento por",
+      "example": "Die Dekanin ist erfreut über die steigenden Einschreibungszahlen.",
+      "exampleES": "La decana está contenta por el aumento de las cifras de inscripción."
+    },
+    {
+      "word": "erstaunt",
+      "preposition": "über + Akkusativ",
+      "translation": "asombrado por",
+      "example": "Die Fachöffentlichkeit war erstaunt über die bahnbrechenden Forschungsergebnisse.",
+      "exampleES": "La comunidad especializada estaba asombrada por los resultados de investigación revolucionarios."
+    },
+    {
+      "word": "entsetzt",
+      "preposition": "über + Akkusativ",
+      "translation": "horrorizado por",
+      "example": "Die Ethikkommission ist entsetzt über die methodischen Verstöße.",
+      "exampleES": "El comité de ética está horrorizado por las infracciones metodológicas."
+    },
+    {
+      "word": "froh",
+      "preposition": "über + Akkusativ",
+      "translation": "alegre por",
+      "example": "Die Doktoranden sind froh über die Verlängerung der Abgabefrist.",
+      "exampleES": "Los doctorandos están alegres por la prórroga del plazo de entrega."
+    },
+    {
+      "word": "glücklich",
+      "preposition": "über + Akkusativ",
+      "translation": "feliz por",
+      "example": "Die Forscherin ist glücklich über die Bewilligung des Forschungsstipendiums.",
+      "exampleES": "La investigadora está feliz por la aprobación de la beca de investigación."
+    },
+    {
+      "word": "traurig",
+      "preposition": "über + Akkusativ",
+      "translation": "triste por",
+      "example": "Die Fakultät ist traurig über den Weggang des renommierten Professors.",
+      "exampleES": "La facultad está triste por la partida del renombrado profesor."
+    },
+    {
+      "word": "bekannt",
+      "preposition": "mit + Dativ",
+      "translation": "familiarizado con",
+      "example": "Die Studierenden sind bereits bekannt mit den Grundlagen der Statistik.",
+      "exampleES": "Los estudiantes ya están familiarizados con los fundamentos de la estadística."
+    },
+    {
+      "word": "einverstanden",
+      "preposition": "mit + Dativ",
+      "translation": "de acuerdo con",
+      "example": "Die Kommission ist einverstanden mit den vorgeschlagenen Änderungen.",
+      "exampleES": "La comisión está de acuerdo con los cambios propuestos."
+    },
+    {
+      "word": "fertig",
+      "preposition": "mit + Dativ",
+      "translation": "terminado con",
+      "example": "Die Arbeitsgruppe ist endlich fertig mit der Datenauswertung.",
+      "exampleES": "El grupo de trabajo finalmente ha terminado con la evaluación de datos."
+    },
+    {
+      "word": "zufrieden",
+      "preposition": "mit + Dativ",
+      "translation": "satisfecho con",
+      "example": "Die Gutachter sind zufrieden mit der methodischen Vorgehensweise.",
+      "exampleES": "Los evaluadores están satisfechos con el procedimiento metodológico."
+    },
+    {
+      "word": "vergleichbar",
+      "preposition": "mit + Dativ",
+      "translation": "comparable con",
+      "example": "Die Ergebnisse sind vergleichbar mit internationalen Studien.",
+      "exampleES": "Los resultados son comparables con estudios internacionales."
+    },
+    {
+      "word": "verwandt",
+      "preposition": "mit + Dativ",
+      "translation": "relacionado con, emparentado con",
+      "example": "Dieser theoretische Ansatz ist verwandt mit der phänomenologischen Tradition.",
+      "exampleES": "Este enfoque teórico está relacionado con la tradición fenomenológica."
+    },
+    {
+      "word": "bezeichnend",
+      "preposition": "für + Akkusativ",
+      "translation": "característico de",
+      "example": "Diese Argumentation ist bezeichnend für den postmodernen Diskurs.",
+      "exampleES": "Esta argumentación es característica del discurso posmoderno."
+    },
+    {
+      "word": "charakteristisch",
+      "preposition": "für + Akkusativ",
+      "translation": "característico de",
+      "example": "Interdisziplinarität ist charakteristisch für die moderne Wissenschaft.",
+      "exampleES": "La interdisciplinariedad es característica de la ciencia moderna."
+    },
+    {
+      "word": "dankbar",
+      "preposition": "für + Akkusativ",
+      "translation": "agradecido por",
+      "example": "Die Doktorandin ist dankbar für die konstruktive Kritik ihrer Betreuerin.",
+      "exampleES": "La doctoranda está agradecida por la crítica constructiva de su supervisora."
+    },
+    {
+      "word": "geeignet",
+      "preposition": "für + Akkusativ",
+      "translation": "adecuado para",
+      "example": "Diese Methode ist besonders geeignet für qualitative Forschungsansätze.",
+      "exampleES": "Este método es especialmente adecuado para enfoques de investigación cualitativos."
+    },
+    {
+      "word": "interessant",
+      "preposition": "für + Akkusativ",
+      "translation": "interesante para",
+      "example": "Die Forschungsergebnisse sind interessant für die internationale Fachöffentlichkeit.",
+      "exampleES": "Los resultados de investigación son interesantes para la comunidad especializada internacional."
+    },
+    {
+      "word": "nützlich",
+      "preposition": "für + Akkusativ",
+      "translation": "útil para",
+      "example": "Statistische Kenntnisse sind nützlich für die empirische Forschung.",
+      "exampleES": "Los conocimientos estadísticos son útiles para la investigación empírica."
+    },
+    {
+      "word": "schädlich",
+      "preposition": "für + Akkusativ",
+      "translation": "perjudicial para",
+      "example": "Plagiatsvorwürfe sind schädlich für die akademische Reputation.",
+      "exampleES": "Las acusaciones de plagio son perjudiciales para la reputación académica."
+    },
+    {
+      "word": "typisch",
+      "preposition": "für + Akkusativ",
+      "translation": "típico de",
+      "example": "Lange Bearbeitungszeiten sind typisch für komplexe Forschungsprojekte.",
+      "exampleES": "Los largos tiempos de procesamiento son típicos de proyectos de investigación complejos."
+    },
+    {
+      "word": "bereit",
+      "preposition": "zu + Dativ",
+      "translation": "dispuesto a",
+      "example": "Die Universität ist bereit zu einer engeren Kooperation mit der Industrie.",
+      "exampleES": "La universidad está dispuesta a una cooperación más estrecha con la industria."
+    },
+    {
+      "word": "berechtigt",
+      "preposition": "zu + Dativ",
+      "translation": "autorizado a",
+      "example": "Nur Doktoranden sind berechtigt zu der Nutzung der Spezialbibliothek.",
+      "exampleES": "Solo los doctorandos están autorizados al uso de la biblioteca especializada."
+    },
+    {
+      "word": "fähig",
+      "preposition": "zu + Dativ",
+      "translation": "capaz de",
+      "example": "Die Forscherin ist fähig zu innovativen wissenschaftlichen Durchbrüchen.",
+      "exampleES": "La investigadora es capaz de avances científicos innovadores."
+    },
+    {
+      "word": "entschlossen",
+      "preposition": "zu + Dativ",
+      "translation": "decidido a",
+      "example": "Das Institut ist entschlossen zu einer grundlegenden Strukturreform.",
+      "exampleES": "El instituto está decidido a una reforma estructural fundamental."
+    },
+    {
+      "word": "freundlich",
+      "preposition": "zu + Dativ",
+      "translation": "amable con",
+      "example": "Die Professorin ist stets freundlich zu den internationalen Gastforschern.",
+      "exampleES": "La profesora siempre es amable con los investigadores invitados internacionales."
+    }
+  ]
+}

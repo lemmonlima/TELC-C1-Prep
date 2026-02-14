@@ -1,0 +1,977 @@
+{
+  "verb": "machen",
+  "phonetic": "/ˈmaxn̩/",
+  "pronouns": [
+    {
+      "key": "ich",
+      "label": "ich"
+    },
+    {
+      "key": "du",
+      "label": "du"
+    },
+    {
+      "key": "er",
+      "label": "er"
+    },
+    {
+      "key": "sie_she",
+      "label": "sie"
+    },
+    {
+      "key": "es",
+      "label": "es"
+    },
+    {
+      "key": "wir",
+      "label": "wir"
+    },
+    {
+      "key": "ihr",
+      "label": "ihr"
+    },
+    {
+      "key": "sie",
+      "label": "sie"
+    },
+    {
+      "key": "Sie",
+      "label": "Sie"
+    }
+  ],
+  "defaultPronoun": "ich",
+  "sections": [
+    {
+      "id": "indikativ",
+      "title": "1) Indikativ",
+      "headers": [
+        "Zeit",
+        "Aktiv (DE)",
+        "Español",
+        "Vorgangspassiv (DE)",
+        "Español",
+        "Zustandspassiv (DE)",
+        "Español"
+      ],
+      "rowsByPronoun": [
+        {
+          "zeit": "Präsens",
+          "aktiv": {
+            "ich": {
+              "de": "ich mache",
+              "es": "yo hago"
+            },
+            "du": {
+              "de": "du machst",
+              "es": "tú haces"
+            },
+            "er": {
+              "de": "er macht",
+              "es": "él hace"
+            },
+            "sie_she": {
+              "de": "sie macht",
+              "es": "ella hace"
+            },
+            "es": {
+              "de": "es macht",
+              "es": "eso hace"
+            },
+            "wir": {
+              "de": "wir machen",
+              "es": "nosotros hacemos"
+            },
+            "ihr": {
+              "de": "ihr macht",
+              "es": "vosotros hacéis"
+            },
+            "sie": {
+              "de": "sie machen",
+              "es": "ellos hacen"
+            },
+            "Sie": {
+              "de": "Sie machen",
+              "es": "usted hace"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es wird gemacht",
+            "es": "es hecho"
+          },
+          "zustandspassiv": {
+            "de": "es ist gemacht",
+            "es": "está hecho"
+          }
+        },
+        {
+          "zeit": "Präteritum",
+          "aktiv": {
+            "ich": {
+              "de": "ich machte",
+              "es": "yo hice"
+            },
+            "du": {
+              "de": "du machtest",
+              "es": "tú hiciste"
+            },
+            "er": {
+              "de": "er machte",
+              "es": "él hizo"
+            },
+            "sie_she": {
+              "de": "sie machte",
+              "es": "ella hizo"
+            },
+            "es": {
+              "de": "es machte",
+              "es": "eso hizo"
+            },
+            "wir": {
+              "de": "wir machten",
+              "es": "nosotros hicimos"
+            },
+            "ihr": {
+              "de": "ihr machtet",
+              "es": "vosotros hicisteis"
+            },
+            "sie": {
+              "de": "sie machten",
+              "es": "ellos hicieron"
+            },
+            "Sie": {
+              "de": "Sie machten",
+              "es": "usted hizo"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es wurde gemacht",
+            "es": "fue hecho"
+          },
+          "zustandspassiv": {
+            "de": "es war gemacht",
+            "es": "estaba hecho"
+          }
+        },
+        {
+          "zeit": "Perfekt",
+          "aktiv": {
+            "ich": {
+              "de": "ich habe gemacht",
+              "es": "yo he hecho"
+            },
+            "du": {
+              "de": "du hast gemacht",
+              "es": "tú has hecho"
+            },
+            "er": {
+              "de": "er hat gemacht",
+              "es": "él ha hecho"
+            },
+            "sie_she": {
+              "de": "sie hat gemacht",
+              "es": "ella ha hecho"
+            },
+            "es": {
+              "de": "es hat gemacht",
+              "es": "eso ha hecho"
+            },
+            "wir": {
+              "de": "wir haben gemacht",
+              "es": "nosotros hemos hecho"
+            },
+            "ihr": {
+              "de": "ihr habt gemacht",
+              "es": "vosotros habéis hecho"
+            },
+            "sie": {
+              "de": "sie haben gemacht",
+              "es": "ellos han hecho"
+            },
+            "Sie": {
+              "de": "Sie haben gemacht",
+              "es": "usted ha hecho"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es ist gemacht worden",
+            "es": "ha sido hecho"
+          },
+          "zustandspassiv": {
+            "de": "es ist gemacht gewesen",
+            "es": "ha estado hecho"
+          }
+        },
+        {
+          "zeit": "Plusquamperfekt",
+          "aktiv": {
+            "ich": {
+              "de": "ich hatte gemacht",
+              "es": "yo había hecho"
+            },
+            "du": {
+              "de": "du hattest gemacht",
+              "es": "tú habías hecho"
+            },
+            "er": {
+              "de": "er hatte gemacht",
+              "es": "él había hecho"
+            },
+            "sie_she": {
+              "de": "sie hatte gemacht",
+              "es": "ella había hecho"
+            },
+            "es": {
+              "de": "es hatte gemacht",
+              "es": "eso había hecho"
+            },
+            "wir": {
+              "de": "wir hatten gemacht",
+              "es": "nosotros habíamos hecho"
+            },
+            "ihr": {
+              "de": "ihr hattet gemacht",
+              "es": "vosotros habíais hecho"
+            },
+            "sie": {
+              "de": "sie hatten gemacht",
+              "es": "ellos habían hecho"
+            },
+            "Sie": {
+              "de": "Sie hatten gemacht",
+              "es": "usted había hecho"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es war gemacht worden",
+            "es": "había sido hecho"
+          },
+          "zustandspassiv": {
+            "de": "es war gemacht gewesen",
+            "es": "había estado hecho"
+          }
+        },
+        {
+          "zeit": "Futur I",
+          "aktiv": {
+            "ich": {
+              "de": "ich werde machen",
+              "es": "yo haré"
+            },
+            "du": {
+              "de": "du wirst machen",
+              "es": "tú harás"
+            },
+            "er": {
+              "de": "er wird machen",
+              "es": "él hará"
+            },
+            "sie_she": {
+              "de": "sie wird machen",
+              "es": "ella hará"
+            },
+            "es": {
+              "de": "es wird machen",
+              "es": "eso hará"
+            },
+            "wir": {
+              "de": "wir werden machen",
+              "es": "nosotros haremos"
+            },
+            "ihr": {
+              "de": "ihr werdet machen",
+              "es": "vosotros haréis"
+            },
+            "sie": {
+              "de": "sie werden machen",
+              "es": "ellos harán"
+            },
+            "Sie": {
+              "de": "Sie werden machen",
+              "es": "usted hará"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es wird gemacht werden",
+            "es": "será hecho"
+          },
+          "zustandspassiv": {
+            "de": "es wird gemacht sein",
+            "es": "estará hecho"
+          }
+        },
+        {
+          "zeit": "Futur II",
+          "usage": "rara",
+          "aktiv": {
+            "ich": {
+              "de": "ich werde gemacht haben",
+              "es": "yo habré hecho"
+            },
+            "du": {
+              "de": "du wirst gemacht haben",
+              "es": "tú habrás hecho"
+            },
+            "er": {
+              "de": "er wird gemacht haben",
+              "es": "él habrá hecho"
+            },
+            "sie_she": {
+              "de": "sie wird gemacht haben",
+              "es": "ella habrá hecho"
+            },
+            "es": {
+              "de": "es wird gemacht haben",
+              "es": "eso habrá hecho"
+            },
+            "wir": {
+              "de": "wir werden gemacht haben",
+              "es": "nosotros habremos hecho"
+            },
+            "ihr": {
+              "de": "ihr werdet gemacht haben",
+              "es": "vosotros habréis hecho"
+            },
+            "sie": {
+              "de": "sie werden gemacht haben",
+              "es": "ellos habrán hecho"
+            },
+            "Sie": {
+              "de": "Sie werden gemacht haben",
+              "es": "usted habrá hecho"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es wird gemacht worden sein",
+            "es": "habrá sido hecho"
+          },
+          "zustandspassiv": {
+            "de": "es wird gemacht gewesen sein",
+            "es": "habrá estado hecho"
+          }
+        }
+      ]
+    },
+    {
+      "id": "konjunktiv-ii",
+      "title": "2) Konjunktiv II",
+      "note": "En la práctica, el Konjunktiv II suele expresarse con <code>würde + Infinitiv</code> para presente/futuro.",
+      "headers": [
+        "Zeit",
+        "Aktiv (DE)",
+        "Español",
+        "Vorgangspassiv (DE)",
+        "Español",
+        "Zustandspassiv (DE)",
+        "Español"
+      ],
+      "rowsByPronoun": [
+        {
+          "zeit": "Präteritum (forma simple)",
+          "usage": "solemne",
+          "aktiv": {
+            "ich": {
+              "de": "ich machte",
+              "es": "yo hiciera"
+            },
+            "du": {
+              "de": "du machtest",
+              "es": "tú hicieras"
+            },
+            "er": {
+              "de": "er machte",
+              "es": "él hiciera"
+            },
+            "sie_she": {
+              "de": "sie machte",
+              "es": "ella hiciera"
+            },
+            "es": {
+              "de": "es machte",
+              "es": "eso hiciera"
+            },
+            "wir": {
+              "de": "wir machten",
+              "es": "nosotros hiciéramos"
+            },
+            "ihr": {
+              "de": "ihr machtet",
+              "es": "vosotros hicierais"
+            },
+            "sie": {
+              "de": "sie machten",
+              "es": "ellos hicieran"
+            },
+            "Sie": {
+              "de": "Sie machten",
+              "es": "usted hiciera"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es würde gemacht",
+            "es": "fuera hecho"
+          },
+          "zustandspassiv": {
+            "de": "es wäre gemacht",
+            "es": "estuviera hecho"
+          }
+        },
+        {
+          "zeit": "würde-Umschreibung (uso común)",
+          "aktiv": {
+            "ich": {
+              "de": "ich würde machen",
+              "es": "yo haría"
+            },
+            "du": {
+              "de": "du würdest machen",
+              "es": "tú harías"
+            },
+            "er": {
+              "de": "er würde machen",
+              "es": "él haría"
+            },
+            "sie_she": {
+              "de": "sie würde machen",
+              "es": "ella haría"
+            },
+            "es": {
+              "de": "es würde machen",
+              "es": "eso haría"
+            },
+            "wir": {
+              "de": "wir würden machen",
+              "es": "nosotros haríamos"
+            },
+            "ihr": {
+              "de": "ihr würdet machen",
+              "es": "vosotros haríais"
+            },
+            "sie": {
+              "de": "sie würden machen",
+              "es": "ellos harían"
+            },
+            "Sie": {
+              "de": "Sie würden machen",
+              "es": "usted haría"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es würde gemacht werden",
+            "es": "sería hecho"
+          },
+          "zustandspassiv": {
+            "de": "es würde gemacht sein",
+            "es": "estaría hecho"
+          }
+        },
+        {
+          "zeit": "Plusquamperfekt",
+          "aktiv": {
+            "ich": {
+              "de": "ich hätte gemacht",
+              "es": "yo hubiera hecho"
+            },
+            "du": {
+              "de": "du hättest gemacht",
+              "es": "tú hubieras hecho"
+            },
+            "er": {
+              "de": "er hätte gemacht",
+              "es": "él hubiera hecho"
+            },
+            "sie_she": {
+              "de": "sie hätte gemacht",
+              "es": "ella hubiera hecho"
+            },
+            "es": {
+              "de": "es hätte gemacht",
+              "es": "eso hubiera hecho"
+            },
+            "wir": {
+              "de": "wir hätten gemacht",
+              "es": "nosotros hubiéramos hecho"
+            },
+            "ihr": {
+              "de": "ihr hättet gemacht",
+              "es": "vosotros hubierais hecho"
+            },
+            "sie": {
+              "de": "sie hätten gemacht",
+              "es": "ellos hubieran hecho"
+            },
+            "Sie": {
+              "de": "Sie hätten gemacht",
+              "es": "usted hubiera hecho"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es wäre gemacht worden",
+            "es": "hubiera sido hecho"
+          },
+          "zustandspassiv": {
+            "de": "es wäre gemacht gewesen",
+            "es": "hubiera estado hecho"
+          }
+        },
+        {
+          "zeit": "Futur I",
+          "usage": "rara",
+          "aktiv": {
+            "ich": {
+              "de": "ich würde machen werden",
+              "es": "yo haría (raro)"
+            },
+            "du": {
+              "de": "du würdest machen werden",
+              "es": "tú harías (raro)"
+            },
+            "er": {
+              "de": "er würde machen werden",
+              "es": "él haría (raro)"
+            },
+            "sie_she": {
+              "de": "sie würde machen werden",
+              "es": "ella haría (raro)"
+            },
+            "es": {
+              "de": "es würde machen werden",
+              "es": "eso haría (raro)"
+            },
+            "wir": {
+              "de": "wir würden machen werden",
+              "es": "nosotros haríamos (raro)"
+            },
+            "ihr": {
+              "de": "ihr würdet machen werden",
+              "es": "vosotros haríais (raro)"
+            },
+            "sie": {
+              "de": "sie würden machen werden",
+              "es": "ellos harían (raro)"
+            },
+            "Sie": {
+              "de": "Sie würden machen werden",
+              "es": "usted haría (raro)"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es würde gemacht werden",
+            "es": "sería hecho"
+          },
+          "zustandspassiv": {
+            "de": "es würde gemacht sein",
+            "es": "estaría hecho"
+          }
+        },
+        {
+          "zeit": "Futur II",
+          "usage": "rara",
+          "aktiv": {
+            "ich": {
+              "de": "ich würde gemacht haben",
+              "es": "yo habría hecho"
+            },
+            "du": {
+              "de": "du würdest gemacht haben",
+              "es": "tú habrías hecho"
+            },
+            "er": {
+              "de": "er würde gemacht haben",
+              "es": "él habría hecho"
+            },
+            "sie_she": {
+              "de": "sie würde gemacht haben",
+              "es": "ella habría hecho"
+            },
+            "es": {
+              "de": "es würde gemacht haben",
+              "es": "eso habría hecho"
+            },
+            "wir": {
+              "de": "wir würden gemacht haben",
+              "es": "nosotros habríamos hecho"
+            },
+            "ihr": {
+              "de": "ihr würdet gemacht haben",
+              "es": "vosotros habríais hecho"
+            },
+            "sie": {
+              "de": "sie würden gemacht haben",
+              "es": "ellos habrían hecho"
+            },
+            "Sie": {
+              "de": "Sie würden gemacht haben",
+              "es": "usted habría hecho"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es würde gemacht worden sein",
+            "es": "habría sido hecho"
+          },
+          "zustandspassiv": {
+            "de": "es würde gemacht gewesen sein",
+            "es": "habría estado hecho"
+          }
+        }
+      ]
+    },
+    {
+      "id": "konjunktiv-i",
+      "title": "3) Konjunktiv I",
+      "headers": [
+        "Zeit",
+        "Aktiv (DE)",
+        "Español",
+        "Vorgangspassiv (DE)",
+        "Español",
+        "Zustandspassiv (DE)",
+        "Español"
+      ],
+      "rowsByPronoun": [
+        {
+          "zeit": "Präsens",
+          "usage": "solemne",
+          "aktiv": {
+            "ich": {
+              "de": "ich mache",
+              "es": "que yo haga"
+            },
+            "du": {
+              "de": "du machest",
+              "es": "que tú hagas"
+            },
+            "er": {
+              "de": "er mache",
+              "es": "que él haga"
+            },
+            "sie_she": {
+              "de": "sie mache",
+              "es": "que ella haga"
+            },
+            "es": {
+              "de": "es mache",
+              "es": "que eso haga"
+            },
+            "wir": {
+              "de": "wir machen",
+              "es": "que nosotros hagamos"
+            },
+            "ihr": {
+              "de": "ihr machet",
+              "es": "que vosotros hagáis"
+            },
+            "sie": {
+              "de": "sie machen",
+              "es": "que ellos hagan"
+            },
+            "Sie": {
+              "de": "Sie machen",
+              "es": "que usted haga"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es werde gemacht",
+            "es": "que sea hecho"
+          },
+          "zustandspassiv": {
+            "de": "es sei gemacht",
+            "es": "que esté hecho"
+          }
+        },
+        {
+          "zeit": "Perfekt",
+          "usage": "solemne",
+          "aktiv": {
+            "ich": {
+              "de": "ich habe gemacht",
+              "es": "que yo haya hecho"
+            },
+            "du": {
+              "de": "du habest gemacht",
+              "es": "que tú hayas hecho"
+            },
+            "er": {
+              "de": "er habe gemacht",
+              "es": "que él haya hecho"
+            },
+            "sie_she": {
+              "de": "sie habe gemacht",
+              "es": "que ella haya hecho"
+            },
+            "es": {
+              "de": "es habe gemacht",
+              "es": "que eso haya hecho"
+            },
+            "wir": {
+              "de": "wir haben gemacht",
+              "es": "que nosotros hayamos hecho"
+            },
+            "ihr": {
+              "de": "ihr habet gemacht",
+              "es": "que vosotros hayáis hecho"
+            },
+            "sie": {
+              "de": "sie haben gemacht",
+              "es": "que ellos hayan hecho"
+            },
+            "Sie": {
+              "de": "Sie haben gemacht",
+              "es": "que usted haya hecho"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es sei gemacht worden",
+            "es": "que haya sido hecho"
+          },
+          "zustandspassiv": {
+            "de": "es sei gemacht gewesen",
+            "es": "que haya estado hecho"
+          }
+        },
+        {
+          "zeit": "Futur I",
+          "usage": "rara",
+          "aktiv": {
+            "ich": {
+              "de": "ich werde machen",
+              "es": "que yo hará"
+            },
+            "du": {
+              "de": "du werdest machen",
+              "es": "que tú harás"
+            },
+            "er": {
+              "de": "er werde machen",
+              "es": "que él hará"
+            },
+            "sie_she": {
+              "de": "sie werde machen",
+              "es": "que ella hará"
+            },
+            "es": {
+              "de": "es werde machen",
+              "es": "que eso hará"
+            },
+            "wir": {
+              "de": "wir werden machen",
+              "es": "que nosotros haremos"
+            },
+            "ihr": {
+              "de": "ihr werdet machen",
+              "es": "que vosotros haréis"
+            },
+            "sie": {
+              "de": "sie werden machen",
+              "es": "que ellos harán"
+            },
+            "Sie": {
+              "de": "Sie werden machen",
+              "es": "que usted hará"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es werde gemacht werden",
+            "es": "que será hecho"
+          },
+          "zustandspassiv": {
+            "de": "es werde gemacht sein",
+            "es": "que estará hecho"
+          }
+        },
+        {
+          "zeit": "Futur II",
+          "usage": "rara",
+          "aktiv": {
+            "ich": {
+              "de": "ich werde gemacht haben",
+              "es": "que yo habrá hecho"
+            },
+            "du": {
+              "de": "du werdest gemacht haben",
+              "es": "que tú habrás hecho"
+            },
+            "er": {
+              "de": "er werde gemacht haben",
+              "es": "que él habrá hecho"
+            },
+            "sie_she": {
+              "de": "sie werde gemacht haben",
+              "es": "que ella habrá hecho"
+            },
+            "es": {
+              "de": "es werde gemacht haben",
+              "es": "que eso habrá hecho"
+            },
+            "wir": {
+              "de": "wir werden gemacht haben",
+              "es": "que nosotros habremos hecho"
+            },
+            "ihr": {
+              "de": "ihr werdet gemacht haben",
+              "es": "que vosotros habréis hecho"
+            },
+            "sie": {
+              "de": "sie werden gemacht haben",
+              "es": "que ellos habrán hecho"
+            },
+            "Sie": {
+              "de": "Sie werden gemacht haben",
+              "es": "que usted habrá hecho"
+            }
+          },
+          "vorgangspassiv": {
+            "de": "es werde gemacht worden sein",
+            "es": "que habrá sido hecho"
+          },
+          "zustandspassiv": {
+            "de": "es werde gemacht gewesen sein",
+            "es": "que habrá estado hecho"
+          }
+        }
+      ]
+    },
+    {
+      "id": "imperativ",
+      "title": "4) Imperativ",
+      "note": "El imperativo no tiene forma perfecta estándar y no se forma en 3. persona neutra.",
+      "headers": [
+        "Persona",
+        "Aktiv (DE)",
+        "Español"
+      ],
+      "rows": [
+        [
+          "du",
+          "mach!",
+          "¡haz!"
+        ],
+        [
+          "Sie",
+          "machen Sie!",
+          "¡haga!"
+        ],
+        [
+          "ihr",
+          "macht!",
+          "¡haced!"
+        ],
+        [
+          "wir",
+          "machen wir!",
+          "¡hagamos!"
+        ]
+      ]
+    },
+    {
+      "id": "formas-no-personales",
+      "title": "5) Formas no personales",
+      "subsections": [
+        {
+          "subtitle": "Aktiv",
+          "headers": [
+            "Tipo / forma",
+            "Aktiv (DE)",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Infinitiv I",
+              "machen",
+              "hacer"
+            ],
+            [
+              "Infinitiv II (Perfektinfinitiv)",
+              "gemacht haben",
+              "haber hecho"
+            ],
+            [
+              "zu-Infinitiv",
+              "zu machen",
+              "hacer"
+            ],
+            [
+              "Perfekt zu-Infinitiv",
+              "gemacht zu haben",
+              "haber hecho"
+            ],
+            [
+              "Partizip I (Präsenspartizip)",
+              "machend",
+              "haciendo"
+            ],
+            [
+              "Partizip II",
+              "gemacht",
+              "hecho"
+            ],
+            [
+              "Gerundiv (zu + Partizip I)",
+              "zu machend",
+              "a realizar"
+            ]
+          ]
+        },
+        {
+          "subtitle": "Vorgangspassiv",
+          "headers": [
+            "Tipo / forma",
+            "Vorgangspassiv (DE)",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Infinitiv Passiv (Präsens)",
+              "gemacht werden",
+              "ser hecho"
+            ],
+            [
+              "Infinitiv Passiv (Perfekt)",
+              "gemacht worden sein",
+              "haber sido hecho"
+            ],
+            [
+              "zu-Infinitiv Passiv",
+              "gemacht zu werden",
+              "ser hecho"
+            ],
+            [
+              "Perfekt zu-Infinitiv Passiv",
+              "gemacht worden zu sein",
+              "haber sido hecho"
+            ]
+          ]
+        },
+        {
+          "subtitle": "Zustandspassiv",
+          "headers": [
+            "Tipo / forma",
+            "Zustandspassiv (DE)",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Infinitiv Zustandspassiv",
+              "gemacht sein",
+              "estar hecho"
+            ],
+            [
+              "Perfektinfinitiv Zustandspassiv",
+              "gemacht gewesen sein",
+              "haber estado hecho"
+            ],
+            [
+              "zu-Infinitiv Zustandspassiv",
+              "gemacht zu sein",
+              "estar hecho"
+            ],
+            [
+              "Perfekt zu-Infinitiv Zustandspassiv",
+              "gemacht gewesen zu sein",
+              "haber estado hecho"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

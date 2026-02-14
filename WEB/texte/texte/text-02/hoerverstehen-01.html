@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <style>html,body{background:#12110f}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Text 2 – Hörverstehen mit Orhan</title>
+  <link rel="stylesheet" href="../../../styles.css" />
+  <script>(function(){var p=location.pathname,h=location.hash||"",f=p+h;function gt(x){if(/\/grammatik\//.test(x))return"grammatik";if(/\/texte\//.test(x))return"texte";if(/\/notizen\//.test(x))return"notizen";if(/\/woerter\//.test(x))return"woerter";if(/\/tips\//.test(x))return"tips";return"start"}function it(x,t){if(t==="grammatik")return/\/grammatik\/index\.html$/.test(x)||/\/grammatik\/?$/.test(x);if(t==="texte")return/\/texte\/index\.html$/.test(x)||/\/texte\/?$/.test(x);if(t==="notizen")return/\/notizen\/index\.html$/.test(x)||/\/notizen\/?$/.test(x);if(t==="woerter")return/\/woerter\/index\.html$/.test(x)||/\/woerter\/?$/.test(x);if(t==="tips")return/\/tips\/index\.html$/.test(x)||/\/tips\/?$/.test(x);if(t==="start")return/\/index\.html$/.test(x)&&!/\/grammatik\//.test(x)&&!/\/texte\//.test(x)&&!/\/notizen\//.test(x)&&!/\/woerter\//.test(x)&&!/\/tips\//.test(x);return!1}var k="telc_scroll_"+p;function save(){try{sessionStorage.setItem(k,JSON.stringify({x:scrollX,y:scrollY}));sessionStorage.setItem("telc_last_"+gt(p),f)}catch(e){}}function r(){try{var s=sessionStorage.getItem(k);if(s){var j=JSON.parse(s);scrollTo(j.x,j.y)}}catch(e){}}function go(){requestAnimationFrame(function(){setTimeout(r,50);setTimeout(r,300)})}window.addEventListener("pagehide",save);window.addEventListener("beforeunload",save);document.addEventListener("click",function(e){var a=e.target.closest("a");if(!a||!a.href)return;try{var u=new URL(a.href,location.href);if(u.origin!==location.origin)return;save();var tp=u.pathname,tt=gt(tp),ct=gt(p);if(!it(tp,tt))return;if(ct===tt){e.preventDefault();if(it(p,ct)){scrollTo(0,0)}else{sessionStorage.setItem("telc_scroll_"+tp,JSON.stringify({x:0,y:0}));location.href=location.origin+tp+(u.hash||"")}return}var last=sessionStorage.getItem("telc_last_"+tt);if(!last||last===(tp+(u.hash||"")))return;e.preventDefault();location.href=location.origin+last}catch(x){}},!0);document.readyState==="complete"?go():window.addEventListener("load",go)})();</script>
+<script>document.addEventListener("DOMContentLoaded",function(){var t=document.querySelector(".topbar");if(!t)return;var b=document.body;if(sessionStorage.getItem("telc_topbar_hidden")==="1")b.classList.add("topbar-hidden");var c=t.querySelector(".cta"),a=document.createElement("div");a.className="topbar-actions";var h=document.createElement("button"),r=document.createElement("button");h.type="button";h.className="topbar-btn topbar-hide";h.title="Barra minimizar";h.setAttribute("aria-label","Barra minimizar");h.textContent="−";r.type="button";r.className="topbar-btn topbar-reset";r.title="Reiniciar (olvidar posiciones)";r.setAttribute("aria-label","Reiniciar");r.textContent="↺";a.appendChild(h);a.appendChild(r);if(c)a.appendChild(c);t.appendChild(a);var g=document.createElement("div");g.className="topbar-show-trigger";g.title="Mostrar barra";g.textContent="▼";t.parentNode.insertBefore(g,t);h.onclick=function(){b.classList.add("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.setItem("telc_topbar_hidden","1")};g.onclick=function(){b.classList.remove("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.removeItem("telc_topbar_hidden")};r.onclick=function(){var ks=[];for(var i=0;i<sessionStorage.length;i++){var k=sessionStorage.key(i);if(k&&k.indexOf("telc_")===0)ks.push(k)}ks.forEach(function(k){sessionStorage.removeItem(k)});location.reload()}})();</script>
+</head>
+<body class="no-js doc-page">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Texte</span>
+    </div>
+    <nav class="nav">
+      <a href="../../../index.html#start">Start</a>
+      <a href="../../../grammatik/index.html">Grammatik</a>
+      <a href="../../../index.html">Texte</a>
+      <a href="../../../notizen/index.html">Notizen</a>
+      <a href="../../../woerter/index.html">Wörter</a>
+      <a href="../../../tips/index.html">Tips</a>
+    </nav>
+    <a class="cta" href="../index.html#start">Einstufung</a>
+  </header>
+
+  <main class="doc-main">
+    <section class="doc-hero">
+      <div class="doc-hero-text reveal">
+        <div class="eyebrow">Hörverstehen – schriftlich aufbereitet</div>
+        <h1>Deutschlehrer Orhan – Studienwahl, Drohnen, Spiel</h1>
+        <p class="lead">
+          Drei längere Hörtexte (Teil 1–3) als zusammenhängender Lesetext, vorbereitet, aber noch ohne Markierungen.
+        </p>
+      </div>
+    </section>
+
+    <section class="doc-section">
+      <div class="text-flashcards-bar">
+        <button id="text-flashcards" class="text-flashcards-btn" type="button">Flashcards</button>
+      </div>
+      <div class="word-types-legend">
+        <h3>Wortarten – Farben</h3>
+        <div class="word-types-grid">
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-verb">Verb</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-nomen">Nomen</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-adj">Adjektiv</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-artikel">Artikel</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-pronomen">Pronomen</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-adverb">Adverb</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-praeposition">Präposition</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-konjunktion">Konjunktion</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-subjunktion">Subjunktion</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-partikel">Partikel</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-default">Phrase</span>
+          </div>
+        </div>
+      </div>
+      <div class="doc doc-relaxed" id="text-content">
+        <p id="word-count" style="font-size:0.9rem; color:#c7c0b6; margin-bottom:12px;"></p>
+
+        <h2>Hörverstehen – Teil 1</h2>
+        <p><strong>Deutschlehrer Orhan</strong></p>
+
+        <p><strong>Sprecher 1</strong><br />
+        Für die Wahl des Studiums spielen viele Faktoren eine Rolle, z. B. Interessen, {expl:finanzielle-motive:finanzielle Motive}, {expl:familiaere-gruende:familiäre Gründe} und {expl:lebensaussichten:Lebensaussichten}. {expl:die-frage-nach:Die Frage nach} den besonderen Talenten ist {expl:naheliegend:naheliegend}. {expl:der-blick-zurueck-auf:Der Blick zurück auf} die Schulzeit oder auf {expl:fruehere-lebensabschnitte:frühere Lebensabschnitte} soll Ihnen helfen. Was waren die Lieblingsfächer? {expl:wo-lagen-die-interessen:Wo lagen die Interessen}? Was hat {expl:besonders:besonders} viel Spaß gemacht und {expl:vor-allem:vor allem}, welche besonderen Fähigkeiten hatte man? In diesem Zusammenhang ist auch der Blick von außen wichtig. {expl:worin:Worin} sehen Freunde und Verwandte {expl:staerken:Stärken}? Wo {expl:erkennen:erkennen} Sie vielleicht {expl:gewisse:gewisse} {expl:schwaechen:Schwächen}? So würden {expl:moeglicherweise-seiten-der-eigenen-persoenlichkeit-bekannt-die-einem-selbst-gar-nicht-bewusst-waren:möglicherweise Seiten der eigenen Persönlichkeit bekannt, die einem selbst gar nicht bewusst waren}. Interesse allein {expl:reicht-oft-nicht-aus:reicht oft nicht aus}, um den {expl:erfolg:Erfolg} im Studium und im Beruf zu sichern. {expl:es-gilt:Es gilt}, {expl:die-eigenen-begabungen-zu-beruecksichtigen:die eigenen Begabungen zu berücksichtigen}.</p>
+
+        <p><strong>Sprecher 2</strong><br />
+        An meiner Hochschule ist das {expl:angebot:Angebot} an Studienfächern nicht so groß, aber eine {expl:breite:breite} {expl:auswahl:Auswahl} habe ich auch nie gebraucht. Für mich {expl:feststehen:stand} bereits vor dem Abitur {expl:feststehen:fest}, dass ich Jura studieren würde. Meine Eltern haben eine {expl:gutgehende:gutgehende} {expl:anwaltskanzlei:Anwaltskanzlei}. Die {expl:rechtswissenschaften:Rechtswissenschaften} {expl:wurden-mir-in-die-wiege-gelegt:wurden mir} {expl:sozusagen:sozusagen} {expl:wurden-mir-in-die-wiege-gelegt:in die Wiege gelegt}. Meine Eltern hätten das nie von mir erwartet oder {expl:verlangt:verlangt}, aber für mich war {expl:seit-langem:seit Langem} klar, dass ich {expl:spaeter-einmal:später einmal} in die Kanzlei {expl:einsteigen:einsteigen} würde, {expl:nicht-mal:nicht mal}, weil es naheliegend {expl:schien:schien}. Nein, ich bin wirklich sehr glücklich mit meiner Entscheidung. In der {expl:zwischenzeit:Zwischenzeit} kann ich in meinem Studium schon bestimmte Arbeiten {expl:uebernehmen:übernehmen}, z. B. die Literaturrecherche, und ich bin auch regelmäßig bei {expl:gerichtsverhandlungen:Gerichtsverhandlungen} {expl:dabei:dabei}. Das hilft mir im Studium und bereitet mich {expl:bestens:bestens} auf meine berufliche Zukunft vor.</p>
+
+        <p><strong>Sprecher 3</strong><br />
+        {expl:es-nuetzt-wenig:Es nützt wenig}, wenn man ein Studium nur nach seinen eigenen Interessen und Fähigkeiten wählt und dann {expl:hinterher:hinterher} keine Karriere machen kann. Man muss einfach realistisch sein. Bestimmte Fächer machen vielleicht {expl:freude:Freude} und sind intellektuell oder emotional {expl:befriedigend:befriedigend}, aber irgendwann will man {expl:ja:ja} auch beruflich {expl:weiterkommen:weiterkommen}. Daher sollte man auch die beruflichen Perspektiven in seine {expl:ueberlegungen:Überlegungen} zur Studienwahl {expl:mit-einbeziehen:mit einbeziehen}. Natürlich sollte niemand etwas studieren, {expl:bloss:bloß} weil damit gute {expl:aufstiegsmoeglichkeiten:Aufstiegsmöglichkeiten} {expl:verbunden-sind:verbunden sind}. {expl:denn:Denn} ganz ohne persönliche {expl:neigungen:Neigungen} ist beruflicher Erfolg {expl:kaum-zu-erzielen:kaum zu erzielen}. {expl:doch:Doch} wer sich nur auf die eigenen {expl:vorlieben:Vorlieben} und Interessen konzentriert, kann sich damit den Chefsessel nicht automatisch sichern.</p>
+
+        <p><strong>Sprecher 4</strong><br />
+        Geld sollte keine entscheidende Rolle bei der Wahl des Studienfachs spielen. {expl:allerdings:Allerdings} können die {expl:verdienstmoeglichkeiten:Verdienstmöglichkeiten} helfen, wenn man sich zwischen mehreren Fächern entscheiden muss. Interessiert man sich z. B. für Architektur, Bauwesen und Maschinenbau, {expl:ist-es-ganz-nuetzlich:ist es ganz nützlich}, {expl:sich-anzusehen:sich} auch die wirtschaftliche Seite {expl:sich-anzusehen:anzusehen}. In der Regel verdienen Architekten nicht so viel Geld wie Bauingenieure. {expl:glaubt-man-der-statistik:Glaubt man der Statistik}, so werden Architekten auch {expl:haeufiger:häufiger} arbeitslos als Ingenieure. Wirtschaftlich besser {expl:gestellt:gestellt} als diese beiden sind aber die Maschinenbauer. Wenn sich also jemand gleich stark für diese drei Studiengänge {expl:begeistern:begeistern} kann, dann kann die {expl:aussicht:Aussicht} auf ein gutes {expl:einkommen:Einkommen} den {expl:ausschlag:Ausschlag} geben. Traurig wäre es {expl:jedoch:jedoch}, wenn allein der Faktor Geld die Wahl des Studiums {expl:bestimmen:bestimmen} würde.</p>
+
+        <p><strong>Sprecher 5</strong><br />
+        {expl:arbeitsmarktprognosen:Arbeitsmarktprognosen} sind bei der Studienwahl ohne Frage ein {expl:aspekt:Aspekt}, doch sollten sie {expl:entscheidend-sein:entscheidend sein}? Dieser {expl:auffassung:Auffassung} bin ich nicht. Es sollte wirklich jedem {expl:ueberlassen-bleiben:überlassen bleiben}, {expl:studium-nach-den-eigenen-interessen-und-talenten-zu-waehlen:das Studium nach den eigenen Interessen und Talenten zu wählen}. Natürlich muss man dann auch mit den möglichen Konsequenzen leben. Wenn es in dem {expl:gelernten-bereich:gelernten Bereich} nicht {expl:genuegend:genügend} Arbeitsplätze gibt, sollte man sich auf eine längere Arbeitssuche {expl:auf-arbeitssuche-einstellen:einstellen}. {expl:eventuell:Eventuell} muss man auch bereit sein, auf einem ganz anderen {expl:gebiet:Gebiet} zu arbeiten. Diese {expl:verantwortung:Verantwortung} trägt jeder für sich selbst. Wer das Abitur hat, sollte auch {expl:dazu:dazu} {expl:in-der-lage-sein:in der Lage sein}, seine Interessen zu {expl:verfolgen:verfolgen} und bereit sein, die Folgen {expl:davon:davon} zu akzeptieren. Für mich {expl:jedenfalls:jedenfalls} gibt es kein Argument {expl:dafuer:dafür}, den beruflichen Perspektiven Priorität bei der Studienwahl {expl:einzuraeumen:einzuräumen}.</p>
+
+        <p><strong>Sprecher 6</strong><br />
+        Schon als Kind war mein Traumberuf Ärztin. Meine Abiturnote war gut, doch nicht gut genug für einen direkten {expl:zugang:Zugang} zum Medizinstudium. Die Alternative, eine Privatuniversität, kam für mich leider nicht {expl:infrage:infrage}. {expl:ich-haette-die-moeglichkeit-gehabt:Ich hätte die Möglichkeit gehabt}, über die {expl:wartesemester:Wartesemester} einen Studienplatz zu bekommen. {expl:von-her:Von} meinem {expl:notendurchschnitt:Notendurchschnitt} {expl:von-her:her} waren meine Chancen gar nicht so schlecht, und die Wartezeit sinnvoll zu {expl:ueberbruecken:überbrücken}, {expl:das-haette-bedeutet:das hätte bedeutet}, praktische {expl:erfahrung:Erfahrung} und eine {expl:durchdachte:durchdachte} {expl:ausbildung:Ausbildung} im medizinischen Bereich zu {expl:sammeln:sammeln}. Aber noch einmal ganz {expl:von-vorne:von vorne} anfangen? Das wollte ich dann doch nicht. So habe ich mich ein bisschen {expl:halbherzig:halbherzig} für Biowissenschaften entschieden. Jetzt denke ich, dass mir nichts Besseres {expl:haette-passieren-koennen:hätte passieren können}. {expl:ich-kann-nur-jedem-raten:Ich kann nur jedem raten}, sich {expl:nicht-zu-sehr:nicht zu sehr} auf ein bestimmtes Studium zu fokussieren. Häufig gibt es eine {expl:passende:passende} zweite Wahl.</p>
+
+        <p><strong>Sprecher 7</strong><br />
+        {expl:moeglicherweise-entscheidung-studienfach:Möglicherweise} lässt man sich bei der Entscheidung für ein Studienfach auch {expl:davon-entscheidung-studienfach:davon} beeinflussen, was man in der Nähe des {expl:heimatortes:Heimatortes} studieren kann. Diverse statistische {expl:erhebungen:Erhebungen} haben {expl:naemlich:nämlich} {expl:ergeben:ergeben}, dass bestimmte Fächer {expl:eher:eher} gewählt werden, wenn sie an Hochschulen in der näheren Umgebung angeboten werden. {expl:inwiefern:Inwiefern} {expl:sich-verallgemeinern-lassen:sich} diese Ergebnisse {expl:sich-verallgemeinern-lassen:verallgemeinern} {expl:sich-verallgemeinern-lassen:lassen}, {expl:ist-zwar-fraglich:ist zwar fraglich}. {expl:tatsache-ist-aber:Tatsache ist aber}, dass es {expl:je-nach:je nach} Region bedeutende {expl:unterschiede:Unterschiede} bei der Studienwahl gibt. Die statistischen {expl:auswertungen:Auswertungen} jedenfalls {expl:lassen-darauf-schliessen:lassen darauf schließen}, dass das lokale Hochschulangebot {expl:durchaus:durchaus} Einfluss auf die Wahl des Studienfachs nimmt.</p>
+
+        <p><strong>Sprecher 8</strong><br />
+        Schon vor meinem Abi habe ich {expl:von-klagen-gehoert:von Klagen} über die {expl:zustaende:Zustände} an der Uni {expl:von-klagen-gehoert:gehört}. Vor allem in {expl:beliebten:beliebten} Fächern gibt es {expl:ueberfuellte:überfüllte} Hörsäle, {expl:in-denen:in denen} manchmal kein Sitzplatz zu {expl:ergattern:ergattern} ist. Eine Warteschlange vor der Bibliothek, {expl:personalmangel:Personalmangel} und schlechte {expl:betreuung:Betreuung}. Das möchte ich in meinem Studium auf gar keinen Fall. BWL oder Medizin? Nein, danke. {expl:ich-suche-ganz-bewusst-nach:Ich suche ganz bewusst nach} Fächern, {expl:bei-denen:bei denen} der {expl:andrang:Andrang} nicht so groß ist. Natürlich {expl:im-rahmen:im Rahmen} meiner Interessen, das ist klar. {expl:wahrscheinlich:Wahrscheinlich} werde ich mich für den Studiengang {expl:nachwachsende:nachwachsende} Rohstoffe entscheiden. {expl:der-ist-dem-bereich-bergbau-und-rohstoffe-zugeordnet-und-interdisziplinaer-angelegt:Der ist dem Bereich Bergbau und Rohstoffe zugeordnet und interdisziplinär angelegt}. Hier in der Nähe kann ich das nicht studieren. Ich muss dazu noch {expl:bilanz:Bilanz} ziehen, aber das ist in Ordnung für mich. {expl:hauptsache:Hauptsache}, ich mache nicht das, was alle anderen auch studieren möchten.</p>
+
+        <p><em>Ende Teil 1 mit den Beiträgen des Deutschlehrers Orhan.</em></p>
+
+        <h2>Hörverstehen – Teil 2</h2>
+        <p><strong>Deutschlehrer Orhan</strong></p>
+
+        <p>Und wie sehen die Menschen {expl:drohnen:Drohnen}? Drohnen oder {expl:unbemannte:unbemannte} Flugobjekte, wie sie {expl:nunmehr:nunmehr} {expl:bezeichnet-werden:bezeichnet werden}, finden sich immer mehr im {expl:einsatz:Einsatz} für die gute Sache, ob im Umweltschutz, in der Landwirtschaft oder bei der {expl:katastrophenhilfe:Katastrophenhilfe}. Drohnen haben {expl:vielfaeltige:vielfältige} Potenziale, die {expl:zunehmend:zunehmend} genutzt werden. Drohnen sind heute das Thema unserer {expl:sendereihe:Sendereihe} „Technik aktuell“, {expl:zu-der:zu der} ich Sie herzlich begrüße. Mein Gast im Studio ist der Technikjournalist Laszlo Aradi. Herr Aradi, herzlich willkommen.</p>
+
+        <p><strong>Herr Aradi</strong><br />
+        Guten Tag und danke für die Einladung.</p>
+
+        <p><strong>Deutschlehrer Orhan</strong><br />
+        Herr Aradi, {expl:vielen-menschen-sind-drohnen-wohl-etwas-unheimlich:vielen Menschen sind Drohnen wohl etwas unheimlich}. Sie {expl:beobachten:beobachten} oder {expl:ueberwachen:überwachen} uns, könnten uns auf den Kopf fallen oder sogar {expl:angreifen:angreifen}. {expl:geht-ihnen-das-auch-so:Geht Ihnen das auch so?}</p>
+
+        <p><strong>Herr Aradi</strong><br />
+        Das kann ich nicht {expl:behaupten:behaupten}. Für mich sind Drohnen {expl:faszinierende:faszinierende} Geräte mit {expl:geradezu:geradezu} {expl:unendlich:unendlich} vielfältigen {expl:einsatzmoeglichkeiten:Einsatzmöglichkeiten}. Je länger ich mich als Journalist mit diesen „fliegenden Augen“, wie ich sie gerne nenne, {expl:beschäftige:beschäftige}, desto größer wird meine {expl:begeisterung:Begeisterung}.</p>
+
+        <p><strong>Deutschlehrer Orhan</strong><br />
+        „Fliegende Augen“, das klingt schön, aber was sind Drohnen {expl:genauer:genauer}?</p>
+
+        <p><strong>Herr Aradi</strong><br />
+        {expl:nun:Nun}, {expl:urspruenglich:ursprünglich} {expl:bezeichnete:bezeichnete} der Begriff Drohne ein unbemanntes {expl:uebungsziel:Übungsziel} in der {expl:luftfahrt:Luftfahrt}. Heute versteht man {expl:darunter:darunter} {expl:einerseits:einerseits} militärisch oder kommerziell genutzte {expl:luftfahrzeuge:Luftfahrzeuge} ohne {expl:besatzung:Besatzung} und {expl:andererseits:andererseits} Flugmodelle, die dank einer Kamera wie aus der {expl:sicht:Sicht} eines Piloten gesteuert werden können. {expl:zu-letzteren:Zu Letzteren} gehören z. B. die Quadrocopter, eine Art Minihelikopter, die {expl:sich-lenken-lassen:sich} ähnlich wie ein ferngesteuertes Modellflugzeug {expl:sich-lenken-lassen:lenken lassen}. Diese ferngesteuerten Plattformen mit vier Rotoren sind einerseits als Fotodrohnen, andererseits als {expl:sogenannte:sogenannte} Fun-, also Spaßdrohnen oder auch als professionelle Drohnen für einen {expl:gewerblichen:gewerblichen} Einsatz frei am Markt {expl:erhaeltlich:erhältlich}.</p>
+
+        <p>Drohnen wurden zuerst für den {expl:militaereinsatz:Militäreinsatz} entwickelt, {expl:was-angesprochene-unbehagen-erklaert:was auch sicher das von Ihnen angesprochene Unbehagen erklärt}, das manche Menschen {expl:angesichts:angesichts} solcher Geräte {expl:verspueren:verspüren}. In den Medien spricht man in der Regel von zivilen Drohnen, wenn sie nicht für militärische {expl:zwecke:Zwecke} gedacht sind. Für Drohnen, die im Umweltbereich eingesetzt werden, haben die Vereinten Nationen {expl:zudem:zudem} den Begriff „Ökodrohnen“ {expl:eingefuehrt:eingeführt}. Das bringt nun einen neuen Aspekt in den {expl:diskurs:Diskurs} um die Nutzung von Drohnen.</p>
+
+        <p>{expl:begonnen-hat:Begonnen hat} die Entwicklung {expl:uebrigens:übrigens} im Jahr 1898, als ein Mann namens Nicola Tesla ein ferngesteuertes Fluggerät, den {expl:vorlaeufer:Vorläufer} der heutigen Drohnen, {expl:patentieren-liess:patentieren ließ}. Nicola Tesla {expl:gilt-als:gilt als} Pionier auf dem Gebiet der Elektrotechnik. {expl:ihm-zu-ehren:Ihm zu Ehren} {expl:erfolgte:erfolgte} die {expl:namensgebung:Namensgebung} der Tesla Motors, {expl:dem-dativ:dem} 2003 gegründeten US-amerikanischen Unternehmen, das Elektroautos produziert. Nicola Tesla hatte {expl:angeblich:angeblich} in den 30er-Jahren einen elektrischen Automotor entwickelt, der Energie aus der {expl:umgebung:Umgebung} in {expl:antriebsenergie:Antriebsenergie} umwandeln konnte. Leider sind {expl:keinerlei:keinerlei} Pläne dieses Motors {expl:erhalten:erhalten}, aber das ist eine andere Geschichte.</p>
+
+        <p><strong>Deutschlehrer Orhan</strong><br />
+        {expl:bevor:Bevor} wir auf die {expl:einsatzgebiete:Einsatzgebiete} zu sprechen kommen, möchte ich Sie bitten, uns ganz kurz zu erklären, wie Drohnen funktionieren.</p>
+
+        <p><strong>Herr Aradi</strong><br />
+        Nehmen wir {expl:einmal:einmal} einen einfachen Quadrokopter. In einem Quadrokopter ist ein Motor {expl:eingebaut:eingebaut}, der die vier Propeller {expl:antreibt:antreibt}. Mithilfe der Propeller {expl:erhebt-sich:erhebt sich} das Fluggerät und {expl:schwebt:schwebt} über dem Boden. Die Anzahl der regelmäßig {expl:verteilten:verteilten} Propeller {expl:gewaehrleistet:gewährleistet} {expl:ausgezeichnete:ausgezeichnete} Stabilität in der Luft und sehr gute {expl:steuereigenschaften:Steuereigenschaften}. {expl:selbst:Selbst} bei Wind rotieren die Propeller schneller. Fliegt er weiter oben, rotieren sie langsamer. {expl:senkt-sich-ab:Senkt} er {expl:senkt-sich-ab:sich ab}, {expl:soll-er:soll er} sich nach rechts {expl:beziehungsweise:beziehungsweise} nach links bewegen, müssen mindestens zwei Propeller {expl:unterschiedlich:unterschiedlich} schnell rotieren. Der Pilot {expl:bedient:bedient} das Gerät über eine {expl:fernbedienung:Fernbedienung}. Komplexere Drohnen können mit unterschiedlichen Elementen {expl:ausgestattet:ausgestattet} werden, z. B. mit Navigationschips, speziellen Sensoren, Messinstrumenten oder Kameras. Damit sind sie in der Lage, eine {expl:vielzahl:Vielzahl} von Funktionen {expl:wahrzunehmen:wahrzunehmen}.</p>
+
+        <p><strong>Deutschlehrer Orhan</strong><br />
+        Wie können diese Fähigkeiten denn nun für Umwelt und Natur eingesetzt werden?</p>
+
+        <p><strong>Herr Aradi</strong><br />
+        Drohnen haben {expl:faehigkeiten:Fähigkeiten}, die sich {expl:im-sinne:im Sinne} einer nachhaltigen Entwicklung nutzen lassen. So können sie {expl:etwa:etwa} in kürzester Zeit in {expl:entlegene:entlegene} Regionen {expl:vordringen:vordringen} und dort Daten sammeln. Sie sind {expl:sogar:sogar} in der Lage, kleinere Pakete per {expl:luftpost:Luftpost} in {expl:landesteile:Landesteile} zu transportieren, in denen es keine {expl:ausreichende:ausreichende} Infrastruktur am Boden gibt. Gerade die fehlende Infrastruktur ist bei der {expl:durchfuehrung:Durchführung} von {expl:hilfsprojekten:Hilfsprojekten} oft ein großes Problem für die {expl:einsatzkraefte:Einsatzkräfte}. {expl:durch:Durch} den Einsatz von Drohnen lassen sich nicht nur Ressourcen {expl:sparen:sparen}, sondern auch {expl:risiken:Risiken} für die Helferinnen und Helfer {expl:minimieren:minimieren}. Sie werden {expl:deshalb:deshalb} {expl:verstaerkt:verstärkt} nach Katastrophen {expl:eingesetzt:eingesetzt}.</p>
+
+        <p><strong>Deutschlehrer Orhan</strong><br />
+        Können Sie uns die Arbeit der Drohnen {expl:in-diesem-zusammenhang:in diesem Zusammenhang} {expl:etwas-naeher-beschreiben:etwas näher beschreiben}?</p>
+
+        <p><strong>Herr Aradi</strong><br />
+        Z. B. suchen Drohnen bei {expl:naturkatastrophen:Naturkatastrophen} nach {expl:ueberlebenden:Überlebenden}. Wenn Personen {expl:geortet-werden:geortet werden}, {expl:weitergeben:gibt} die Drohne die {expl:dazugehoerigen:dazugehörigen} Informationen direkt an die Rettungsstation {expl:weitergeben:weiter}. Die Sensoren, {expl:mit-denen:mit denen} die Drohnen ausgestattet sind, funktionieren {expl:zum-teil-sogar-noch-dann:zum Teil sogar noch dann}, wenn sie mit einer {expl:zentimeterdicken:zentimeterdicken} Schicht von Asche {expl:bedeckt:bedeckt} sind. {expl:dadurch:Dadurch} {expl:eignen-sie-sich:eignen sie sich} auch gut für {expl:bergungsaktionen:Bergungsaktionen} nach Vulkanausbrüchen. Die Drohnen {expl:liefern:liefern} {expl:detaillierte:detaillierte} Karten und Bilder von {expl:unzugaenglichen:unzugänglichen} Regionen, wenn die Einsatzkräfte nicht ohne {expl:selbstgefaehrdung:Selbstgefährdung} vordringen könnten. {expl:ausgehend-von:Ausgehend von} diesen Daten lassen sich dann genaue {expl:schadensberichte:Schadensberichte} {expl:erstellen:erstellen}. {expl:dadurch:Dadurch} können die Hilfsorganisationen ihre Hilfs- und {expl:wiederaufbaustrategien:Wiederaufbaustrategien} {expl:wesentlich:wesentlich} effizienter {expl:gestalten:gestalten}.</p>
+
+        <p><strong>Deutschlehrer Orhan</strong><br />
+        Könnten diese {expl:aufgaben:Aufgaben} nicht auch von Satelliten wahrgenommen werden?</p>
+
+        <p><strong>Herr Aradi</strong><br />
+        Nun, {expl:es-stimmt:es stimmt}, dass Satelliten große Gebiete durchaus {expl:detailgenau:detailgenau} {expl:abfotografieren:abfotografieren} können, aber Wolken und Schatten, z. B. der Schatten großer Berge, können die Bilder {expl:ungenau:ungenau} machen. Im Vergleich zu Satelliten fliegen Drohnen wesentlich tiefer und sie bewegen sich auch {expl:unversehrt:unversehrt} und unbemerkt {expl:innerhalb:innerhalb} von Wolken. Zudem haben sie {expl:hochaufloesende:hochauflösende} und variable Kamerasysteme, mit denen sie aus verschiedenen {expl:blickwinkeln:Blickwinkeln} fotografieren können.</p>
+
+        <p><strong>Deutschlehrer Orhan</strong><br />
+        Welche Aufgaben nehmen Drohnen denn {expl:neben:neben} der {expl:ortung:Ortung} von Menschen und der {expl:soeben:soeben} beschriebenen {expl:kartierung:Kartierung} noch wahr?</p>
+
+        <p><strong>Herr Aradi</strong><br />
+        Eine weitere Aufgabe ist die Überwachung, aber Überwachung zum Schutz der Natur. Drohnen {expl:kommen-zum-einsatz:kommen} z. B. im Kampf gegen illegale {expl:abholzung:Abholzung} {expl:kommen-zum-einsatz:zum Einsatz}. Sie werden zudem eingesetzt, um mit Hilfe besonderer Kameras die {expl:bestaende:Bestände} seltener Pflanzen und Tierarten zu {expl:dokumentieren:dokumentieren} und {expl:wilderer:Wilderer} {expl:aufzuspueren:aufzuspüren}.</p>
+
+        <p><strong>Deutschlehrer Orhan</strong><br />
+        Eine Zuhörerin, Frau Susanna Holzer, hat uns eine Mail geschrieben. Sie hat gelesen, dass Drohnen auch im Zusammenhang mit der medizinischen {expl:versorgung:Versorgung} eingesetzt werden. Können Sie uns mehr darüber sagen?</p>
+
+        <p><strong>Herr Aradi</strong><br />
+        Ja, es gibt ein Privatunternehmen im Silicon Valley namens Matternet, das Drohnen für den {expl:alleinigen:alleinigen} Zweck der Entwicklungshilfe produziert. Dieses Unternehmen hat bereits einige Pilotprojekte mit der Weltgesundheitsorganisation und Ärzte ohne Grenzen durchgeführt. {expl:konkret:Konkret} suchte Ärzte ohne Grenzen z. B. nach einer Möglichkeit, Diagnosetests {expl:innerhalb:innerhalb} von Papua-Neuguinea zu transportieren. Weil sich das {expl:strassennetz:Straßennetz} in Papua-Neuguinea {expl:sich-in-schlechtem-zustand-befinden:sich} in einem sehr schlechten Zustand {expl:sich-in-schlechtem-zustand-befinden:befindet}, brauchte die Organisation eine Alternative. Matternet entwickelte schließlich eine Drohne, die {expl:ausschliesslich:ausschließlich} für die {expl:zustellung:Zustellung} von Paketen entworfen wurde. Das Unternehmen ist aber nicht der {expl:alleinigen:alleinige} Anbieter von Frachtdrohnen. In den USA gibt es bereits einen legalen Anbieter, der Medikamente innerhalb der Vereinigten Staaten auf diese {expl:weise:Weise} transportiert. Ganz allgemein sind solche Lieferdrohnen ein kosteneffizienter {expl:loesungsansatz:Lösungsansatz} für Regionen mit schlechter Infrastruktur. Sie könnten {expl:notwendige:notwendige} Produkte {expl:rasch:rasch} und {expl:vergleichsweise:vergleichsweise} {expl:preiswert:preiswert} liefern. Das heißt, im Vergleich zu {expl:herkoemmlichen:herkömmlichen} {expl:infrastrukturentwicklungen:Infrastrukturentwicklungen}.</p>
+
+        <p><strong>Deutschlehrer Orhan</strong><br />
+        Sie erwähnten soeben den Begriff legal. Gelten für Drohnen eigene Gesetze?</p>
+
+        <p><strong>Herr Aradi</strong><br />
+        {expl:grundsaetzlich:Grundsätzlich} kann jede Privatperson eine Drohne kaufen und nutzen. Ihre Nutzung wird von einer {expl:reihe:Reihe} bereits bestehender Gesetze {expl:geregelt:geregelt}. Als unbemannte Flugobjekte {expl:unterliegen:unterliegen} Drohnen {expl:zunaechst:zunächst} dem Luftverkehrsgesetz. Auf jeden Fall braucht man für eine Drohne, zumindest bei gewerblicher Nutzung, eine {expl:aufstiegserlaubnis:Aufstiegserlaubnis}. {expl:darueber-hinaus:Darüber hinaus} sind {expl:datenschutzvorschriften:Datenschutzvorschriften} und allgemeine {expl:zivilrechtgesetze:Zivilrechtgesetze} zu {expl:beachten:beachten}. {expl:in-bezug-auf:In Bezug auf} den {expl:kameraeinsatz:Kameraeinsatz} könnten möglicherweise das {expl:kunsturhebergesetz:Kunsturhebergesetz} und das {expl:strafrecht:Strafrecht} {expl:angewandt-werden:angewandt werden}. Zudem können {expl:sonderregelungen:Sonderregelungen} in bestimmten Regionen gelten, z. B. in {expl:gefahrenzonen:Gefahrenzonen} oder zur {expl:wahrung:Wahrung} der Persönlichkeitsrechte. Über eine globale Regulierung für {expl:herstellung:Herstellung}, {expl:ausfuhr:Ausfuhr} und Lizenzierung von Drohnen wird diskutiert. Drohneneinsätze im zivilen und {expl:humanitaeren:humanitären} Bereich sollen dabei {expl:erleichtert:erleichtert} werden.</p>
+
+        <p><strong>Deutschlehrer Orhan</strong><br />
+        Das Thema Drohnen {expl:scheint-zu-machen:scheint} also noch einige Debatten notwendig {expl:scheint-zu-machen:zu machen}. Leider ist unsere {expl:sendezeit:Sendezeit} schon wieder zu Ende. Herr Aradi, vielen Dank für Ihren Besuch. Wenn Sie, liebe Zuhörerinnen und Zuhörer, mehr über diese spannenden Geräte {expl:erfahren:erfahren} möchten, finden Sie {expl:weiterfuehrende:weiterführende} Links auf unserer Homepage nächste Woche.</p>
+
+        <p><em>Ende Teil 2 mit den Beiträgen des Deutschlehrers Orhan.</em></p>
+
+        <h2>Hörverstehen – Teil 3</h2>
+        <p><strong>Deutschlehrer Orhan</strong></p>
+
+        <p>{expl:zur-einschulung-zum-ruhestand:Zur Einschulung} oder {expl:zur-einschulung-zum-ruhestand:zum Ruhestand}, unter dem Weihnachtsbaum oder auf {expl:gabentischen:Gabentischen} für Jung und Alt: Spiele aller Art {expl:erfreuen-sich:erfreuen sich} als Geschenke {expl:ungebrochener-beliebtheit:ungebrochener Beliebtheit}. Die Internationalen Spieletage hier in Essen, die soeben zu Ende gegangen sind, haben wieder einmal {expl:besucherrekorde:Besucherrekorde} {expl:vermeldet:vermeldet}. Das haben wir zum {expl:anlass:Anlass} genommen, uns einmal {expl:grundlegende:grundlegende} Gedanken zum Phänomen Spiel zu machen. Dazu begrüße ich unseren Gast, den Psychologen Tilo Lindgren. Sein Thema heute: Die Bedeutung von Spiel. Herr Lindgren, herzlich willkommen.</p>
+
+        <p><strong>Tilo Lindgren</strong><br />
+        Vielen Dank. Wie solche {expl:rekorde:Rekorde} {expl:belegen:belegen}, {expl:fasziniert:fasziniert} das Spiel. Aber was genau meinen wir, wenn wir von Spiel sprechen? Wir sprechen hier von einem {expl:aeusserst:äußerst} komplexen und {expl:vielschichtigen:vielschichtigen} Phänomen, das unterschiedliche Aspekte unseres individuellen und {expl:gesellschaftlichen:gesellschaftlichen} {expl:daseins:Daseins} {expl:beruehrt:berührt}. {expl:nun-spiel:Nun}, {expl:zuerst:zuerst} einmal ist Spielen ein natürliches {expl:verhalten:Verhalten}. In der Verhaltensbiologie spricht man vom {expl:spieltrieb:Spieltrieb}, den man übrigens nicht nur bei {expl:menschenkindern:Menschenkindern}, sondern auch bei anderen {expl:saeugetieren:Säugetieren} beobachten kann.</p>
+
+        <p>Wir beginnen zu spielen, wenn wir Kinder sind, {expl:und-zwar-zuerst-einmal:und zwar zuerst einmal} allein. {expl:bald:Bald} kommen {expl:gegenstaende:Gegenstände} {expl:hinzu:hinzu}, Spielzeug und Spielpartner. In diesem ganz {expl:urspruenglichen:ursprünglichen} Sinne ist das Spiel {expl:zweckfrei:zweckfrei}. Das Kind verfolgt keine genau definierte {expl:absicht:Absicht} mit seinem Spiel. Es spielt {expl:aus-freude-an-bewegung:aus Freude an Bewegung}, an {expl:nachahmung:Nachahmung}, an Kreativität oder auch an Sprache. Hat dieses Spielverhalten {expl:demnach:demnach} keinen {expl:unmittelbaren:unmittelbaren} Zweck, so ist es doch ganz eindeutig {expl:sinnvoll:sinnvoll}. Wenn Babys und Kleinkinder mit ihren Fingern oder mit Gegenständen spielen, lernen sie ihre Hände {expl:zielgerichtet:zielgerichtet} zu bewegen. Sie lernen {expl:greifen:greifen}, schmecken, hören. Sie sollen mit all ihren Sinnen erfahren. Sie {expl:probieren-aus:probieren} {expl:probieren-aus:aus} und sie üben.</p>
+
+        <p>Mit {expl:fortschreitendem:fortschreitendem} Alter verändert sich das Spielverhalten. Kinder {expl:begnuegen-sich:begnügen sich} nicht mehr damit, Gegenstände {expl:im-wahrsten-sinne:im wahrsten Sinne} zu {expl:begreifen:begreifen}, sondern {expl:erschaffen:erschaffen} z. B. mit {expl:baukloetzen:Bauklötzen} neue Objekte. Im nächsten Schritt {expl:befaehigt:befähigt} die zunehmende {expl:vorstellungskraft:Vorstellungskraft} Kinder dazu, in einem Gegenstand etwas anderes zu sehen, als er tatsächlich ist. Das Kind bewegt den Bauklotz über den {expl:fussboden:Fußboden}, macht die passenden {expl:geraeusche:Geräusche} dazu und lässt den Gegenstand in seiner Fantasie zum Auto werden.</p>
+
+        <p>Kinder passen ihr Spiel ihrem {expl:jeweiligen:jeweiligen} {expl:entwicklungsstand:Entwicklungsstand} an. {expl:sie-wissen-am-besten:Sie wissen am besten}, welche Art des Spielens sie gerade brauchen. Deshalb brauchen sie auch keine {expl:anleitung:Anleitung} zum Spielen. Am besten {expl:gelingt:gelingt} zweckfreies Spiel {expl:ungelenkt:ungelenkt}. Kinder sollten die Möglichkeit bekommen, {expl:spielraeume-spielformen-waehlen:sich ihre Spielräume und Spielformen selbst wählen zu können}. Sie sollten auch die Möglichkeit bekommen, {expl:unbeachtet:unbeachtet} und {expl:unbeobachtet:unbeobachtet} zu spielen. {expl:dies-spiel:Dies} alles im Rahmen der {expl:gebotenen:gebotenen} Sicherheit, das versteht sich von selbst.</p>
+
+        <p>Mit {expl:zunehmendem:zunehmendem} Alter werden dann {expl:spielgefaehrten:Spielgefährten} immer wichtiger. {expl:aus-erfahrung-miteinander:Aus der Erfahrung des Miteinanders} entwickeln Kinder nun eine besondere Spielart: Rollenspiele. Im {expl:spielerischen:spielerischen} {expl:erproben:Erproben} erfahren Kinder, wie {expl:gemeinschaft:Gemeinschaft} funktioniert. Sie lernen sich {expl:durchzusetzen:durchzusetzen}, zu verhandeln, {expl:nachzugeben:nachzugeben}. In Rollenspielen {expl:erarbeiten-sich:erarbeiten sich} Kinder {expl:darueber-hinaus-spiel:darüber hinaus} noch etwas sehr Wichtiges, und das sind unterschiedliche {expl:bewaeltigungsstrategien:Bewältigungsstrategien}. In solchen Spielen eröffnet sich für sie die {expl:gelegenheit:Gelegenheit}, ihre kindliche {expl:ohnmacht:Ohnmacht}, die sie etwa {expl:gegenueber:gegenüber} den Eltern oder älteren Geschwistern erfahren, {expl:aufzuheben:aufzuheben}. {expl:indem:Indem} sie bestimmte Situationen aus ihrer unmittelbaren {expl:erfahrungswelt:Erfahrungswelt} {expl:nachspielen:nachspielen}, können sie zu Akteuren werden. Mit anderen Worten, sie üben {expl:im-spiel:im Spiel}, ihre eigene Welt {expl:mitzugestalten:mitzugestalten}. Und das ist für ihr weiteres Leben {expl:unverzichtbar:unverzichtbar}. Erst durch Spielen lernen sie, mit ihren Emotionen {expl:umzugehen:umzugehen}, entwickeln sie {expl:unerlaessliche-anpassungsfaehigkeit:die für ihr Überleben unerlässliche Anpassungsfähigkeit}. Ich bin überzeugt, ohne Spielerfahrung sind wir {expl:weder-noch:weder} fähig zu einer {expl:erfuellenden:erfüllenden} Bindung an eine Gesellschaft {expl:weder-noch:noch} zu einer {expl:fruchtbaren:fruchtbaren} {expl:auseinandersetzung:Auseinandersetzung} mit ihr.</p>
+
+        <p>{expl:im-spiel:Im Spiel} mit anderen lernen Kinder auch {expl:allmaehlich:allmählich}, mit einem weiteren wichtigen Aspekt von Spielen umzugehen, nämlich dem {expl:wettbewerb:Wettbewerb}. Wettbewerb bedeutet ein Besser oder ein Schlechter, Erfolg oder {expl:misserfolg:Misserfolg} {expl:gegenueber-anderen:gegenüber anderen}. Kleinkinder sind aber noch nicht in der Lage, Misserfolg zu {expl:verkraften:verkraften}. Sie müssen erst lernen, Regeln zu akzeptieren, zu verlieren und auf Misserfolg nicht mit Aggressionen oder {expl:verweigerung:Verweigerung} zu reagieren. {expl:all-das:All das} kann man üben, {expl:wiederum:wiederum} im Spiel.</p>
+
+        <p>Dazu eignen sich Spiele, bei denen feste Regeln den {expl:ablauf:Ablauf} bestimmen, ein Verhalten {expl:vorgeben:vorgeben} und ein Ergebnis bringen, die sogenannten {expl:gesellschaftsspiele:Gesellschaftsspiele}. Sie werden mit mindestens einem {expl:gegenueber-spiel:Gegenüber}, meistens aber mit mehreren Personen gespielt. {expl:als-erstes:Als Erstes} sind hier die Würfel- oder Glücksspiele zu nennen. Wer kennt sie nicht, die klassischen Brettspiele „Mensch ärgere dich nicht“ oder „Monopoly“. Angeblich {expl:besitzen:besitzen} drei von vier deutschen Haushalten eine {expl:ausgabe:Ausgabe} von „Mensch ärgere dich nicht“. Ein Würfelspiel, {expl:dessen:dessen} {expl:spielverlauf:Spielverlauf} bestimmten Regeln folgt, dessen Ergebnis jedoch {expl:weitgehend:weitgehend} vom Glück bestimmt wird. Gerade solche Spiele {expl:setzen-voraus:setzen} Frustrationstoleranz {expl:setzen-voraus:voraus}. {expl:allzu:Allzu} oft endet das Spiel in der Familie in {expl:wut:Wut} und {expl:traenen:Tränen}, wenn Kinder noch nicht mit {expl:pech:Pech} und Misserfolg {expl:umgehen:umgehen} können. Dabei {expl:neigen:neigen} viele Eltern dazu, ihre Kleinsten gewinnen zu lassen. {expl:das-mag-verstaendlich:Das mag verständlich}, aber nicht unbedingt zielführend sein, denn draußen im Kindergarten, in der Schule, später bei der Arbeit nutzen auch keine Zornbekundungen, kein Hinwerfen der Spielfiguren, wenn nicht alles so läuft, wie Kind sich das {expl:vorstellen:vorstellen} kann. Auch hier wiederum ein Lernprozess: beobachten, wie andere mit {expl:rueckschlaegen:Rückschlägen} fertig werden und seine eigenen Gefühle {expl:beherrschen:beherrschen} lernen.</p>
+
+        <p>Bei Würfel- und Glücksspielen kann man nur wenig aus eigener Kraft zum Erfolg {expl:beitragen:beitragen}. Anders ist dies bei Denkspielen. Hier bestimmt nicht mehr der {expl:fall:Fall} der Würfel über Gewinn und {expl:niederlage:Niederlage}. Denkspiele {expl:verlangen-von:verlangen von} den Spielern taktisches {expl:geschick:Geschick} und strategisches Denken. Zu den traditionellen Denkspielen gehören Dame, {expl:muehle:Mühle} oder Schach. Jacobus de Cessolis, ein italienischer {expl:dominikanermoench:Dominikanermönch} aus dem 14. Jahrhundert, sah im Schachspiel {expl:gar:gar} ein {expl:abbild:Abbild} der Gesellschaft, von dem er Verhalten und Pflichten aller Gesellschaftsschichten {expl:ableitete:ableitete}. Diesem Bild diese Bedeutung {expl:misst-zu:misst} man dem Spiel heute {expl:misst-zu:zu} {expl:wohl:wohl} nicht mehr zu. Es gehört aber {expl:zweifellos:zweifellos} zu den {expl:angesehensten:angesehensten} Spielen, vor allem in der Welt der Erwachsenen. Denn Spielen ist {expl:keineswegs:keineswegs} nur Kindern {expl:vorbehalten:vorbehalten}. Erwachsene spielen in der Regel aber deutlich seltener {expl:und-wenn-dann:und wenn, dann} nicht mehr auf die {expl:herrlich:herrlich} {expl:selbstvergessene:selbstvergessene} Art, wie dies Kinder tun.</p>
+
+        <p>Auf den Aspekt des Wettbewerbs von Spielen habe ich bereits {expl:hingewiesen:hingewiesen}. {expl:offen-zutage-tritt:Offen zutage tritt} dieser Aspekt im sportlichen {expl:wettkampf:Wettkampf}. Spiel und Sport sind {expl:eng:eng} verbunden. Diese Art von Spielen bietet eine {expl:buehne:Bühne}, auf der man Kämpfe {expl:austragen:austragen}, sich mit anderen {expl:messen:messen}, seine {expl:koerperbeherrschung:Körperbeherrschung} oder mentale Stärke zeigen und über sich {expl:hinauswachsen:hinauswachsen} kann. Im {expl:mannschaftssport:Mannschaftssport} wird {expl:im-besten-falle:im besten Falle} {expl:vorgelebt:vorgelebt}, was man erreichen kann, wenn {expl:individuen:Individuen} ihre Kraft auf ein gemeinsames Ziel {expl:richten:richten}.</p>
+
+        <p>„Das Leben sei kein Spiel“, so hört man häufig. Und vom „{expl:ernst-des-lebens:Ernst des Lebens}“ wird gesprochen. Doch Spielen und für das Leben lernen ist bei uns Menschen {expl:untrennbar:untrennbar} verbunden. Diese {expl:tatsache:Tatsache} versucht man sich in unterschiedlichen Bereichen {expl:zunutze:zunutze} zu machen. Die Wissenschaft {expl:bezeichnet:bezeichnet} als primär motiviertes Spielen vor allem das Spielen, das unmittelbar aus dem {expl:angeborenen:angeborenen} Spieltrieb {expl:erwaechst:erwächst}. Sekundär motiviertes Spielen {expl:hingegen:hingegen} nutzt die natürliche Freude am Spiel für ganz bestimmte Zwecke. Dazu zählen {expl:beispielsweise:beispielsweise} didaktische Spiele, die zu {expl:lernzwecken:Lernzwecken} eingesetzt werden, oder therapeutische Spiele, mit denen eine {expl:heilung:Heilung} {expl:unterstuetzt:unterstützt} werden soll.</p>
+
+        <p>Manchmal müssen Menschen aber auch vom Spielen selbst {expl:geheilt:geheilt} werden, dann wenn die {expl:herausforderung:Herausforderung} des {expl:gluecks:Glücks} zu einem {expl:uebersteigerten:übersteigerten} {expl:verlangen:Verlangen} und wenn Spiel {expl:zur-sucht:zur Sucht} wird. Doch das ist die {expl:ausnahme:Ausnahme}. Spielen {expl:befreit:befreit}, verbindet, {expl:unterhaelt:unterhält}, {expl:foerdert:fördert}, {expl:fordert:fordert}, und unser so {expl:ernstes:ernstes} Leben wäre {expl:vermutlich:vermutlich} {expl:um-einiges:um einiges} entspannter, wenn wir kreativem Spielen etwas mehr Zeit {expl:zugestehen:zugestehen} würden. Ich danke Ihnen für Ihre Aufmerksamkeit.</p>
+
+        <p><em>Sie haben jetzt 5 Minuten Zeit, um Ihre Lösungen auf den Antwortbogen zu übertragen. Ende des dritten Teils. Vorbereitet vom Deutschlehrer Orhan Yed.</em></p>
+      </div>
+
+      <div id="explanation-panel" class="explanation-panel" style="display: none;">
+        <div class="explanation-panel-header">
+          <h3 id="explanation-word"></h3>
+          <div class="explanation-panel-actions">
+            <button id="explanation-back-to-parent" class="explanation-back explanation-back-to-parent" type="button" style="display: none;" aria-label="Volver a la cajita de la frase original">← Volver a la Frase</button>
+            <button id="explanation-back" class="explanation-back" type="button">↑ Volver al texto</button>
+            <button id="explanation-close" class="explanation-close" aria-label="Cerrar">&times;</button>
+          </div>
+        </div>
+        <div class="explanation-panel-content">
+          <div class="explanation-sentence">
+            <p class="explanation-label">Oración completa:</p>
+            <p id="explanation-sentence-de" class="explanation-text-de"></p>
+            <p id="explanation-sentence-es" class="explanation-text-es"></p>
+          </div>
+          <div class="explanation-translation">
+            <p class="explanation-label">Traducción:</p>
+            <p id="explanation-translation"></p>
+          </div>
+          <div id="explanation-details"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Text 2 – Hörverstehen mit Orhan</span>
+    <span>Drei zusammenhängende Hörtexte, vorbereitet für die Arbeit im Kurs</span>
+  </footer>
+
+  <script defer src="hoerverstehen-01.js"></script>
+  <script>
+    (function () {
+      const container = document.getElementById("text-content");
+      const counterEl = document.getElementById("word-count");
+      if (!container || !counterEl) return;
+
+      const clone = container.cloneNode(true);
+      const firstP = clone.querySelector("#word-count");
+      if (firstP) {
+        firstP.remove();
+      }
+      const text = clone.textContent || "";
+      const words = text
+        .trim()
+        .split(/\s+/)
+        .filter(Boolean);
+      counterEl.textContent = `${words.length} Wörter`;
+    })();
+  </script>
+
+  <script>
+    (() => {
+      document.documentElement.classList.add("no-flash");
+      const storageKey = `telc-scroll:${location.pathname}${location.search}`;
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      const save = () => {
+        sessionStorage.setItem(storageKey, String(window.scrollY || window.pageYOffset || 0));
+      };
+
+      const restore = () => {
+        const saved = sessionStorage.getItem(storageKey);
+        if (saved == null) return;
+        const y = Number(saved);
+        if (!Number.isNaN(y)) {
+          window.scrollTo(0, y);
+        }
+      };
+
+      const scheduleRestore = () => {
+        restore();
+        requestAnimationFrame(restore);
+        setTimeout(restore, 60);
+        setTimeout(restore, 220);
+      };
+
+      window.addEventListener("pagehide", save);
+      window.addEventListener("beforeunload", save);
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "hidden") save();
+      });
+      document.addEventListener("click", (event) => {
+        const link = event.target.closest("a");
+        if (!link || !link.href) return;
+        try {
+          const url = new URL(link.href, location.href);
+          if (url.origin === location.origin) save();
+        } catch {
+          return;
+        }
+      });
+
+      window.addEventListener("pageshow", scheduleRestore);
+      window.addEventListener("load", scheduleRestore);
+    })();
+  </script>
+
+</body>
+</html>

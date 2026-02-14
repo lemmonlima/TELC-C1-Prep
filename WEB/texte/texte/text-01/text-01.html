@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <style>html,body{background:#12110f}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Text 1 – Digitale Vorlesungen an Hochschulen</title>
+  <link rel="stylesheet" href="../../../styles.css" />
+  <script>(function(){var p=location.pathname,h=location.hash||"",f=p+h;function gt(x){if(/\/grammatik\//.test(x))return"grammatik";if(/\/texte\//.test(x))return"texte";if(/\/notizen\//.test(x))return"notizen";if(/\/woerter\//.test(x))return"woerter";if(/\/tips\//.test(x))return"tips";return"start"}function it(x,t){if(t==="grammatik")return/\/grammatik\/index\.html$/.test(x)||/\/grammatik\/?$/.test(x);if(t==="texte")return/\/texte\/index\.html$/.test(x)||/\/texte\/?$/.test(x);if(t==="notizen")return/\/notizen\/index\.html$/.test(x)||/\/notizen\/?$/.test(x);if(t==="woerter")return/\/woerter\/index\.html$/.test(x)||/\/woerter\/?$/.test(x);if(t==="tips")return/\/tips\/index\.html$/.test(x)||/\/tips\/?$/.test(x);if(t==="start")return/\/index\.html$/.test(x)&&!/\/grammatik\//.test(x)&&!/\/texte\//.test(x)&&!/\/notizen\//.test(x)&&!/\/woerter\//.test(x)&&!/\/tips\//.test(x);return!1}var k="telc_scroll_"+p;function save(){try{sessionStorage.setItem(k,JSON.stringify({x:scrollX,y:scrollY}));sessionStorage.setItem("telc_last_"+gt(p),f)}catch(e){}}function r(){try{var s=sessionStorage.getItem(k);if(s){var j=JSON.parse(s);scrollTo(j.x,j.y)}}catch(e){}}function go(){requestAnimationFrame(function(){setTimeout(r,50);setTimeout(r,300)})}window.addEventListener("pagehide",save);window.addEventListener("beforeunload",save);document.addEventListener("click",function(e){var a=e.target.closest("a");if(!a||!a.href)return;try{var u=new URL(a.href,location.href);if(u.origin!==location.origin)return;save();var tp=u.pathname,tt=gt(tp);if(!it(tp,tt))return;var ct=gt(p);if(ct===tt){e.preventDefault();if(it(p,ct)){scrollTo(0,0)}else{sessionStorage.setItem("telc_scroll_"+tp,JSON.stringify({x:0,y:0}));location.href=location.origin+tp+(u.hash||"")}return}var last=sessionStorage.getItem("telc_last_"+tt);if(!last||last===(tp+(u.hash||"")))return;e.preventDefault();location.href=location.origin+last}catch(x){}},!0);document.readyState==="complete"?go():window.addEventListener("load",go)})();</script>
+<script>document.addEventListener("DOMContentLoaded",function(){var t=document.querySelector(".topbar");if(!t)return;var b=document.body;if(sessionStorage.getItem("telc_topbar_hidden")==="1")b.classList.add("topbar-hidden");var c=t.querySelector(".cta"),a=document.createElement("div");a.className="topbar-actions";var h=document.createElement("button"),r=document.createElement("button");h.type="button";h.className="topbar-btn topbar-hide";h.title="Barra minimizar";h.setAttribute("aria-label","Barra minimizar");h.textContent="−";r.type="button";r.className="topbar-btn topbar-reset";r.title="Reiniciar (olvidar posiciones)";r.setAttribute("aria-label","Reiniciar");r.textContent="↺";a.appendChild(h);a.appendChild(r);if(c)a.appendChild(c);t.appendChild(a);var g=document.createElement("div");g.className="topbar-show-trigger";g.title="Mostrar barra";g.textContent="▼";t.parentNode.insertBefore(g,t);h.onclick=function(){b.classList.add("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.setItem("telc_topbar_hidden","1")};g.onclick=function(){b.classList.remove("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.removeItem("telc_topbar_hidden")};r.onclick=function(){var ks=[];for(var i=0;i<sessionStorage.length;i++){var k=sessionStorage.key(i);if(k&&k.indexOf("telc_")===0)ks.push(k)}ks.forEach(function(k){sessionStorage.removeItem(k)});location.reload()}})();</script>
+</head>
+<body class="no-js doc-page">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Texte</span>
+    </div>
+    <nav class="nav">
+      <a href="../../../index.html#start">Start</a>
+      <a href="../../../grammatik/index.html">Grammatik</a>
+      <a href="../../../index.html">Texte</a>
+      <a href="../../../notizen/index.html">Notizen</a>
+      <a href="../../../woerter/index.html">Wörter</a>
+      <a href="../../../tips/index.html">Tips</a>
+    </nav>
+    <a class="cta" href="../index.html#start">Einstufung</a>
+  </header>
+
+  <main class="doc-main">
+    <section class="doc-hero">
+      <div class="doc-hero-text reveal">
+        <div class="eyebrow">Beispieltext – schriftlicher Ausdruck C1</div>
+        <h1>Digitale Vorlesungen an Hochschulen</h1>
+        <p class="lead">
+          Argumentativer Text zur Rolle digitaler Lehrformate im Hochschulalltag.
+        </p>
+      </div>
+    </section>
+
+    <section class="doc-section">
+      <div class="text-flashcards-bar">
+        <button id="text-flashcards" class="text-flashcards-btn" type="button">Flashcards</button>
+      </div>
+      <div class="word-types-legend">
+        <h3>Wortarten – Farben</h3>
+        <div class="word-types-grid">
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-verb">Verb</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-nomen">Nomen</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-adj">Adjektiv</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-artikel">Artikel</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-pronomen">Pronomen</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-adverb">Adverb</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-praeposition">Präposition</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-konjunktion">Konjunktion</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-subjunktion">Subjunktion</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-partikel">Partikel</span>
+          </div>
+          <div class="word-type-item">
+            <span class="word-type-example explanation-word explanation-word-default">Phrase</span>
+          </div>
+        </div>
+      </div>
+      <div class="doc doc-relaxed" id="text-content">
+        <p id="word-count" style="font-size:0.9rem; color:#c7c0b6; margin-bottom:12px;"></p>
+        <p>In den letzten Jahren haben digitale Vorlesungen an Hochschulen stark {expl:zugenommen:zugenommen}. {expl:spaetestens:Spätestens} seit der Pandemie {expl:zur-normalitaet-geworden:sind} Online-Formate für viele Studierende {expl:zur-normalitaet-geworden:zur Normalität geworden}. {expl:waehrend:Während} einige diese Entwicklung als großen {expl:fortschritt:Fortschritt} sehen, {expl:berichten-von:berichten andere von} Konzentrationsproblemen und sozialer Isolation. {expl:meiner-meinung-nach:Meiner Meinung nach} sind digitale Lehrformate eine sinnvolle Ergänzung, aber kein vollständiger {expl:ersatz:Ersatz} für Präsenzlehre. {expl:entscheidend-sind:Entscheidend sind} die {expl:rahmenbedingungen:Rahmenbedingungen}, die {expl:didaktische-gestaltung:didaktische Gestaltung} sowie die Fähigkeit zur {expl:selbstorganisation:Selbstorganisation}.</p>
+
+        <p>Ein zentraler Vorteil digitaler Vorlesungen ist die Flexibilität. Studierende können ortsunabhängig teilnehmen, was besonders für Pendlerinnen und Pendler, Studierende mit Nebenjob oder Menschen mit {expl:betreuungspflichten:Betreuungspflichten} wichtig ist. Außerdem {expl:lassen-sich-ansehen:lassen} {expl:lassen-sich-ansehen:sich} aufgezeichnete Vorlesungen {expl:zeitversetzt:zeitversetzt} {expl:lassen-sich-ansehen:ansehen}. {expl:dadurch:Dadurch} kann man schwierige Inhalte wiederholen, {expl:anhalten:anhalten} und Notizen in Ruhe {expl:ergaenzen:ergänzen}. Gerade in {expl:anspruchsvollen:anspruchsvollen} Fächern {expl:fuehrt-zu:führt} das oft {expl:fuehrt-zu:zu} einem effizienteren Lernprozess. {expl:hinzu-kommt:Hinzu kommt}, dass digitale Formate {expl:ressourcen-sparen:Ressourcen sparen} können, zum Beispiel Zeit für die {expl:anfahrt:Anfahrt} oder Kosten für eine {expl:unterkunft:Unterkunft}, wenn man nicht in der Hochschulstadt wohnt.</p>
+
+        <p>Trotzdem gibt es {expl:deutliche:deutliche} Nachteile. Der wichtigste Punkt ist der fehlende direkte Kontakt. In Präsenzveranstaltungen entstehen spontane Fragen, kurze {expl:gespraeche:Gespräche} nach dem Seminar oder Lerngruppen, die den {expl:studienalltag:Studienalltag} stabilisieren. In Online-Formaten {expl:faellt-weg:fällt} das oft {expl:faellt-weg:weg} oder {expl:wirkt-kuenstlich:wirkt künstlich}. Zusätzlich sinkt bei vielen die Motivation, wenn der {expl:tagesablauf:Tagesablauf} nur vor dem Bildschirm {expl:stattfindet:stattfindet}. Die {expl:hemmschwelle:Hemmschwelle}, einfach die Kamera auszuschalten und nebenbei etwas anderes zu machen, ist niedrig. Technische Probleme, schlechte Internetverbindung oder {expl:unuebersichtliche:unübersichtliche} Plattformen können außerdem Stress {expl:verursachen:verursachen} y den Lernfluss stören. {expl:nicht-zuletzt:Nicht zuletzt} {expl:nur-begrenzt-geeignet:ist} digitale Lehre für manche Fächer {expl:nur-begrenzt-geeignet:nur begrenzt geeignet}, {expl:etwa-wenn:etwa wenn} Laborversuche, praktische Übungen oder bestimmte Diskussionen {expl:im-vordergrund-stehen:im Vordergrund stehen}.</p>
+
+        <p>Damit Online-Veranstaltungen {expl:sinnvoll-sind:sinnvoll sind}, braucht es klare {expl:bedingungen:Bedingungen}. Erstens {expl:angepasst-werden:muss} die Didaktik {expl:angepasst-werden:angepasst werden}: Eine {expl:zweistuendige:zweistündige} Vorlesung, die nur als Monolog {expl:vorgetragen-wird:vorgetragen wird}, funktioniert online selten gut. Besser sind kürzere Einheiten, strukturierte Folien, klare Lernziele und regelmäßige {expl:aktivierungsphasen:Aktivierungsphasen}, zum Beispiel kleine Aufgaben, {expl:umfragen:Umfragen} oder {expl:diskussionsraeume:Diskussionsräume}. Zweitens {expl:verbindlich-organisiert-sein:sollte} die Kommunikation {expl:verbindlich-organisiert-sein:verbindlich organisiert sein}. Das bedeutet feste {expl:sprechstunden:Sprechstunden}, transparente Regeln für Fragen und ein funktionierendes Forum, damit niemand allein bleibt. Drittens braucht es eine gute technische Infrastruktur, {expl:sowohl-als-auch:sowohl} an der Hochschule {expl:sowohl-als-auch:als auch} auf Seiten der Studierenden. Wer kein ruhiges Zimmer oder keinen {expl:zuverlaessigen:zuverlässigen} Laptop hat, ist sonst {expl:benachteiligt:benachteiligt}.</p>
+
+        <p>{expl:in-diesem-zusammenhang:In diesem Zusammenhang} {expl:grosse-rolle-spielen:spielen} Selbstorganisation und soziale Kontakte {expl:grosse-rolle-spielen:eine besonders große Rolle}. Im Online-Studium müssen Studierende stärker planen: feste {expl:lernzeiten:Lernzeiten}, Pausen, klare Prioritäten und realistische {expl:wochenziele:Wochenziele}. Ohne Struktur kann man schnell {expl:in-prokrastination-geraten:in Prokrastination} {expl:in-prokrastination-geraten:geraten}. Gleichzeitig {expl:nicht-unterschaetzt-werden:dürfen} soziale Kontakte {expl:nicht-unterschaetzt-werden:nicht unterschätzt} {expl:nicht-unterschaetzt-werden:werden}. Lernen ist nicht nur {expl:informationsaufnahme:Informationsaufnahme}, sondern auch {expl:austausch:Austausch}, Feedback und emotionale {expl:unterstuetzung:Unterstützung}. Deshalb {expl:zusammenarbeit-schaffen:sollten} Hochschulen digitale Räume {expl:zusammenarbeit-schaffen:für die Zusammenarbeit} {expl:zusammenarbeit-schaffen:schaffen}, {expl:etwa-verpflichtende-gruppenprojekte:etwa} {expl:etwa-verpflichtende-gruppenprojekte:verpflichtende Gruppenprojekte}, moderierte Lerngruppen oder {expl:hybride-angebote:hybride Angebote}, {expl:bei-denen:bei denen} man {expl:vor-ort-trifft:sich} regelmäßig auch {expl:vor-ort-trifft:vor Ort} {expl:vor-ort-trifft:trifft}.</p>
+
+        <p>Zusammenfassend lässt sich sagen: Digitale Vorlesungen {expl:bieten:bieten} große Chancen, {expl:vor-allem:vor allem} durch Flexibilität und {expl:wiederholbarkeit:Wiederholbarkeit}. Gleichzeitig {expl:entstehen-risiken:entstehen} {expl:entstehen-risiken:Risiken}, {expl:insbesondere:insbesondere} bei Motivation und {expl:sozialer-einbindung:sozialer Einbindung}. Am besten funktioniert ein hybrides Modell, das die {expl:staerken:Stärken} beider Welten kombiniert: Online für Inhalte, die {expl:sich-vermitteln-lassen:sich} gut {expl:sich-vermitteln-lassen:vermitteln} {expl:sich-vermitteln-lassen:lassen}, und Präsenz für Diskussion, Praxis und {expl:gemeinschaft:Gemeinschaft}. So {expl:kann-beitragen:kann} digitale Lehre {expl:tatsaechlich:tatsächlich} zu besserem Lernen {expl:kann-beitragen:beitragen}, {expl:statt-notloesung-zu-sein:statt} {expl:statt-notloesung-zu-sein:nur eine Notlösung} {expl:statt-notloesung-zu-sein:zu sein}.</p>
+      </div>
+
+      <div id="explanation-panel" class="explanation-panel" style="display: none;">
+        <div class="explanation-panel-header">
+          <h3 id="explanation-word"></h3>
+          <div class="explanation-panel-actions">
+            <button id="explanation-back-to-parent" class="explanation-back explanation-back-to-parent" type="button" style="display: none;" aria-label="Volver a la cajita de la frase original">← Volver a la Frase</button>
+            <button id="explanation-back" class="explanation-back" type="button">↑ Volver al texto</button>
+            <button id="explanation-close" class="explanation-close" aria-label="Cerrar">&times;</button>
+          </div>
+        </div>
+        <div class="explanation-panel-content">
+          <div class="explanation-sentence">
+            <p class="explanation-label">Oración completa:</p>
+            <p id="explanation-sentence-de" class="explanation-text-de"></p>
+            <p id="explanation-sentence-es" class="explanation-text-es"></p>
+          </div>
+          <div class="explanation-translation">
+            <p class="explanation-label">Traducción:</p>
+            <p id="explanation-translation"></p>
+          </div>
+          <div id="explanation-details"></div>
+        </div>
+      </div>
+  </main>
+
+  <footer class="footer">
+    <span>Text 1 – Digitale Vorlesungen an Hochschulen</span>
+    <span>Beispieltext für C1 Texte</span>
+  </footer>
+  <script defer src="text-01.js"></script>
+  <script>
+    (function () {
+      const container = document.querySelector(".doc.doc-relaxed");
+      const counterEl = document.getElementById("word-count");
+      if (!container || !counterEl) return;
+
+      // Excluir el propio contador del texto contado
+      const clone = container.cloneNode(true);
+      const firstP = clone.querySelector("#word-count");
+      if (firstP) {
+        firstP.remove();
+      }
+      const text = clone.textContent || "";
+      const words = text
+        .trim()
+        .split(/\s+/)
+        .filter(Boolean);
+      counterEl.textContent = `${words.length} Wörter`;
+    })();
+  </script>
+
+  <script>
+    (() => {
+      document.documentElement.classList.add("no-flash");
+      const storageKey = `telc-scroll:${location.pathname}${location.search}`;
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      const save = () => {
+        sessionStorage.setItem(storageKey, String(window.scrollY || window.pageYOffset || 0));
+      };
+
+      const restore = () => {
+        const saved = sessionStorage.getItem(storageKey);
+        if (saved == null) return;
+        const y = Number(saved);
+        if (!Number.isNaN(y)) {
+          window.scrollTo(0, y);
+        }
+      };
+
+      const scheduleRestore = () => {
+        restore();
+        requestAnimationFrame(restore);
+        setTimeout(restore, 60);
+        setTimeout(restore, 220);
+      };
+
+      window.addEventListener("pagehide", save);
+      window.addEventListener("beforeunload", save);
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "hidden") save();
+      });
+      document.addEventListener("click", (event) => {
+        const link = event.target.closest("a");
+        if (!link || !link.href) return;
+        try {
+          const url = new URL(link.href, location.href);
+          if (url.origin === location.origin) save();
+        } catch {
+          return;
+        }
+      });
+
+      window.addEventListener("pageshow", scheduleRestore);
+      window.addEventListener("load", scheduleRestore);
+    })();
+  </script>
+
+</body>
+</html>
+

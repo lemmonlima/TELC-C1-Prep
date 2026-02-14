@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <style>html,body{background:#12110f}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>TELC Tips – Schriftlicher Ausdruck</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <script>(function(){var p=location.pathname,h=location.hash||"",f=p+h;function gt(x){if(/\/grammatik\//.test(x))return"grammatik";if(/\/texte\//.test(x))return"texte";if(/\/notizen\//.test(x))return"notizen";if(/\/woerter\//.test(x))return"woerter";if(/\/tips\//.test(x))return"tips";return"start"}function it(x,t){if(t==="grammatik")return/\/grammatik\/index\.html$/.test(x)||/\/grammatik\/?$/.test(x);if(t==="texte")return/\/texte\/index\.html$/.test(x)||/\/texte\/?$/.test(x);if(t==="notizen")return/\/notizen\/index\.html$/.test(x)||/\/notizen\/?$/.test(x);if(t==="woerter")return/\/woerter\/index\.html$/.test(x)||/\/woerter\/?$/.test(x);if(t==="tips")return/\/tips\/index\.html$/.test(x)||/\/tips\/?$/.test(x);return!1}var k="telc_scroll_"+p;function save(){try{sessionStorage.setItem(k,JSON.stringify({x:scrollX,y:scrollY}));sessionStorage.setItem("telc_last_"+gt(p),f)}catch(e){}}function r(){try{var s=sessionStorage.getItem(k);if(s){var j=JSON.parse(s);scrollTo(j.x,j.y)}}catch(e){}}function go(){requestAnimationFrame(function(){setTimeout(r,50);setTimeout(r,300)})}window.addEventListener("pagehide",save);window.addEventListener("beforeunload",save);document.addEventListener("click",function(e){var a=e.target.closest("a");if(!a||!a.href)return;try{var u=new URL(a.href,location.href);if(u.origin!==location.origin)return;save();var tp=u.pathname,tt=gt(tp);if(!it(tp,tt))return;var ct=gt(p);if(ct===tt){e.preventDefault();if(it(p,ct)){scrollTo(0,0)}else{sessionStorage.setItem("telc_scroll_"+tp,JSON.stringify({x:0,y:0}));location.href=location.origin+tp+(u.hash||"")}return}var last=sessionStorage.getItem("telc_last_"+tt);if(!last||last===(tp+(u.hash||"")))return;e.preventDefault();location.href=location.origin+last}catch(x){}},!0);document.readyState==="complete"?go():window.addEventListener("load",go)})();</script>
+  <script>document.addEventListener("DOMContentLoaded",function(){var t=document.querySelector(".topbar");if(!t)return;var b=document.body;if(sessionStorage.getItem("telc_topbar_hidden")==="1")b.classList.add("topbar-hidden");var c=t.querySelector(".cta"),a=document.createElement("div");a.className="topbar-actions";var h=document.createElement("button"),r=document.createElement("button");h.type="button";h.className="topbar-btn topbar-hide";h.title="Barra minimizar";h.setAttribute("aria-label","Barra minimizar");h.textContent="−";r.type="button";r.className="topbar-btn topbar-reset";r.title="Reiniciar";r.setAttribute("aria-label","Reiniciar");r.textContent="↺";a.appendChild(h);a.appendChild(r);if(c)a.appendChild(c);t.appendChild(a);var g=document.createElement("div");g.className="topbar-show-trigger";g.title="Mostrar barra";g.textContent="▼";t.parentNode.insertBefore(g,t);h.onclick=function(){b.classList.add("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.setItem("telc_topbar_hidden","1")};g.onclick=function(){b.classList.remove("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.removeItem("telc_topbar_hidden")};r.onclick=function(){var ks=[];for(var i=0;i<sessionStorage.length;i++){var k=sessionStorage.key(i);if(k&&k.indexOf("telc_")===0)ks.push(k)}ks.forEach(function(k){sessionStorage.removeItem(k)});location.reload()}})();</script>
+</head>
+<body class="no-js doc-page tips-page">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Tips</span>
+    </div>
+    <nav class="nav">
+      <a href="../../index.html#start">Start</a>
+      <a href="../../grammatik/index.html">Grammatik</a>
+      <a href="../../texte/index.html">Texte</a>
+      <a href="../../notizen/index.html">Notizen</a>
+      <a href="../../woerter/index.html">Wörter</a>
+    </nav>
+    <a class="cta" href="../einfuehrung/index.html">Einstufung</a>
+  </header>
+
+  <main class="doc-main">
+    <section class="doc-hero">
+      <div class="doc-hero-text reveal">
+        <div class="eyebrow">fröhlich Deutsch · telc</div>
+        <h1>Schriftlicher Ausdruck</h1>
+        <p class="lead">70 Minuten · Stellungnahme · mind. 350 Wörter · 2 Themen zur Wahl.</p>
+        <div class="tips-inline-list">
+          <span class="tips-pill">📝 Erörterung</span>
+          <span class="tips-pill">🧭 Meinung</span>
+          <span class="tips-pill">📌 48 Punkte</span>
+        </div>
+      </div>
+      <div class="doc-hero-panel reveal" style="--delay: 120ms;">
+        <div class="panel-header">
+          <span class="panel-title">Snapshot</span>
+          <span class="panel-sub">48 Pkt · 4 Kriterien</span>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong>70'</strong>
+            <span>Zeit</span>
+          </div>
+          <div class="stat">
+            <strong>350+</strong>
+            <span>Wörter</span>
+          </div>
+          <div class="stat">
+            <strong>2</strong>
+            <span>Themen</span>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <div class="signal"></div>
+          <span class="panel-note">Quelle: Michaela Fröhlich + telc</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="eckdaten" class="section split">
+      <div class="split-col reveal">
+        <h2>Eckdaten</h2>
+        <p>Was ihr wissen müsst.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>Aufgabe</strong>
+            <p>Detaillierte, ausgewogene Stellungnahme mit eigener Meinung. Zwei Themen zur Wahl, jeweils mit Zitaten aus unterschiedlichen Perspektiven.</p>
+          </div>
+          <div class="timeline-item">
+            <strong>Themenwahl</strong>
+            <p>Wählt das Thema, zu dem euch am meisten einfällt. Vorwissen aktivieren: Was wisst ihr darüber?</p>
+          </div>
+          <div class="timeline-item">
+            <strong>Umfang</strong>
+            <p>Mindestens 350 Wörter. Nicht auf Notizpapier vorfertigen – die Zeit reicht nicht.</p>
+          </div>
+        </div>
+      </div>
+      <div class="split-col reveal" style="--delay: 120ms;">
+        <h2>Bewertung</h2>
+        <p>48 Punkte auf vier Kriterien (je 12 Punkte max.).</p>
+        <div class="einfuehrung-row reveal">
+          <table class="einfuehrung-table einfuehrung-table-numeric">
+            <thead>
+              <tr>
+                <th class="th-teil">Kriterium</th>
+                <th class="th-unterteil">Leitfrage</th>
+                <th class="th-num">max</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="td-teil">1. Aufgabengerechtheit</td><td class="td-unterteil">Richtiges Thema? Roter Faden? Kritische Auseinandersetzung mit Pro/Contra?</td><td class="td-center">12</td></tr>
+              <tr><td class="td-teil">2. Korrektheit</td><td class="td-unterteil">Morphologie, Syntax, Orthografie. Komplexe Konstruktionen weitgehend korrekt.</td><td class="td-center">12</td></tr>
+              <tr><td class="td-teil">3. Repertoire</td><td class="td-unterteil">Variierter Wortschatz, vielfältige Strukturen statt nur einfacher Hauptsätze.</td><td class="td-center">12</td></tr>
+              <tr><td class="td-teil">4. Kommunikative Gestaltung</td><td class="td-unterteil">Verknüpfungen, Kohärenz, Konnektoren. Gedanken logisch verbunden.</td><td class="td-center">12</td></tr>
+              <tr class="einfuehrung-sum-row"><td colspan="2" class="td-unterteil"><strong>Gesamt</strong></td><td class="td-center td-punkte"><strong>48</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="bewertung" class="section">
+      <div class="section-head reveal">
+        <h2>Punktevergabe pro Kriterium</h2>
+        <p>A = 12 · B = 8 · C = 4 · D = 0 für jede der vier Kriterien.</p>
+      </div>
+      <div class="einfuehrung-row reveal">
+        <table class="einfuehrung-table einfuehrung-table-numeric">
+          <thead>
+            <tr>
+              <th class="th-teil">Kriterium</th>
+              <th class="th-unterteil">A = 12</th>
+              <th class="th-unterteil">B = 8</th>
+              <th class="th-unterteil">C = 4</th>
+              <th class="th-unterteil">D = 0</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-teil">1. Aufgabengerechtheit</td>
+              <td class="td-unterteil">Anforderungen werden vollständig erfüllt.</td>
+              <td class="td-unterteil">Anforderungen werden weitgehend erfüllt.</td>
+              <td class="td-unterteil">Nur teilweise erfüllt oder Textsorte/Situation nicht vollständig behandelt.</td>
+              <td class="td-unterteil">Kaum erfüllt oder Textsorte/Situation nicht behandelt.</td>
+            </tr>
+            <tr>
+              <td class="td-teil">2. Korrektheit</td>
+              <td class="td-unterteil">Wenige Fehler in Grammatik, Rechtschreibung, Syntax.</td>
+              <td class="td-unterteil">Einige Fehler, keine systematischen, Verständnis nicht beeinträchtigt.</td>
+              <td class="td-unterteil">Zahlreiche oder systematische Fehler. Verständnis teilweise beeinträchtigt.</td>
+              <td class="td-unterteil">Zahlreiche Fehler, die das Textverständnis beeinträchtigen.</td>
+            </tr>
+            <tr>
+              <td class="td-teil">3. Repertoire</td>
+              <td class="td-unterteil">Variierter, anspruchsvoller Wortschatz und Ausdruck.</td>
+              <td class="td-unterteil">An wenigen Stellen begrenzt oder einfacher Wortschatz.</td>
+              <td class="td-unterteil">An mehreren Stellen einfach oder repetitiv. Fehler in anspruchsvollerem Wortschatz beeinträchtigen Verständnis.</td>
+              <td class="td-unterteil">Durchgehend einfacher Wortschatz. Anspruchsvollere Begriffe misslingen und führen zu unverständlichen Passagen.</td>
+            </tr>
+            <tr>
+              <td class="td-teil">4. Kommunikative Gestaltung</td>
+              <td class="td-unterteil">Passende Verknüpfungen und Bezüge. Kohärenz auch auf Absatzebene.</td>
+              <td class="td-unterteil">Einfachere Verknüpfungen oder geringe Unklarheiten an einzelnen Stellen.</td>
+              <td class="td-unterteil">Unklare Verknüpfungen oder nur einfache Verbindungen an mehreren Stellen.</td>
+              <td class="td-unterteil">Brüche und/oder unklare Verknüpfungen. Textstruktur auch auf Absatzebene unklar.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="strategy" class="section">
+      <div class="section-head reveal">
+        <h2>Lösungsstrategie</h2>
+        <p>So geht's – fünf Schritte.</p>
+      </div>
+      <div class="einfuehrung-desc-list">
+        <div class="einfuehrung-desc-item reveal">
+          <div class="lese-strategie">
+            <h4>So geht's</h4>
+            <ol>
+              <li><strong>Beide Aufgaben/Themen und Zitate lesen.</strong> Vorwissen aktivieren: Was wisst ihr über diese Themen?</li>
+              <li><strong>Schnell entscheiden:</strong> Welche Aufgabe bearbeitet ihr? Zu welchem Thema fallen euch spontan Argumente ein? Mit welchem kennt ihr euch besser aus?</li>
+              <li><strong>Notizen machen:</strong> Positive und negative Aspekte, Beispiele, persönliche Erfahrungen.</li>
+              <li><strong>Schreiben:</strong> Detaillierte Erörterung mit Einleitung, verschiedenen Aspekten und Argumenten, Beispielen und Erfahrungen. Am Ende Fazit und eigene Meinung.</li>
+              <li><strong>Korrekturlesen:</strong> Schlüssige Argumentation? Angemessene Strukturen (Verknüpfungen, Wortschatz)? Korrektheit (Grammatik, Rechtschreibung)?</li>
+            </ol>
+          </div>
+          <ul>
+            <li><strong>Wichtig:</strong> Nicht auf Notizpapier vorfertigen – Zeit ist knapp.</li>
+            <li><strong>Wichtig:</strong> Roter Faden, logischer Aufbau, angemessene Verknüpfungen.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="aufbau" class="section">
+      <div class="section-head reveal">
+        <h2>Aufbau der Erörterung</h2>
+        <p>Einleitung, Hauptteil, Schluss.</p>
+      </div>
+      <div class="einfuehrung-desc-list">
+        <div class="einfuehrung-desc-item reveal">
+          <div class="einfuehrung-desc-head">
+            <span class="einfuehrung-desc-num">1</span>
+            <h3>Einleitung</h3>
+          </div>
+          <p class="einfuehrung-desc-summary">Interesse wecken, ins Thema einführen.</p>
+          <ul>
+            <li><strong>Fragen:</strong> Warum ist das Thema aktuell? Für wen ist es relevant?</li>
+            <li><strong>Vorsicht:</strong> Keine abgedroschenen Phrasen. „Heutzutage" oft nicht der beste Einstieg.</li>
+            <li><strong>Regel:</strong> Keine Argumente und keine eigene Meinung in der Einleitung. Am Ende eine klare Fragestellung formulieren.</li>
+          </ul>
+        </div>
+        <div class="einfuehrung-desc-item reveal" style="--delay: 40ms;">
+          <div class="einfuehrung-desc-head">
+            <span class="einfuehrung-desc-num">2</span>
+            <h3>Hauptteil</h3>
+          </div>
+          <p class="einfuehrung-desc-summary">Das Herzstück – Argumentation.</p>
+          <ul>
+            <li><strong>Inhalt:</strong> Zitate aus der Aufgabe aufgreifen, weitere Pro- und Contra-Argumente finden.</li>
+            <li><strong>Schema:</strong> These → Argument → Beispiel. „Bei Teamarbeit profitieren alle (These), da individuelle Stärken die Schwächen anderer ausgleichen (Argument). So arbeitet einer analytisch, während der andere kreativ ist (Beispiel)."</li>
+            <li><strong>Sachlichkeit:</strong> Objektiv bleiben. Konjunktiv I für fremde Meinungen (Zitate). Eigene Meinung hier noch tabu.</li>
+          </ul>
+        </div>
+        <div class="einfuehrung-desc-item reveal" style="--delay: 80ms;">
+          <div class="einfuehrung-desc-head">
+            <span class="einfuehrung-desc-num">3</span>
+            <h3>Schluss (Fazit)</h3>
+          </div>
+          <p class="einfuehrung-desc-summary">Kurz zusammenfassen, Stellung beziehen.</p>
+          <ul>
+            <li><strong>Keine neuen Argumente:</strong> Alles Wichtige muss im Hauptteil stehen.</li>
+            <li><strong>Stellung:</strong> Eigene Meinung begründet darlegen, die in der Einleitung gestellte Frage beantworten.</li>
+            <li><strong>Ausblick:</strong> Lösungsvorschlag oder Blick in die Zukunft rundet den Text ab.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="tipps" class="section">
+      <div class="section-head reveal">
+        <h2>Tipps und Strategien</h2>
+        <p>Was ihr tun sollt und vermeiden sollt.</p>
+      </div>
+      <div class="grid modules">
+        <div class="module-card tips-card reveal" style="--delay: 60ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">🎯</span>
+            <div>
+              <strong>Beim Thema bleiben</strong>
+              <span>Schweift nicht ab. Ein völlig anderes Thema führt zu 0 Punkten bei Aufgabengerechtheit.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 100ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">📝</span>
+            <div>
+              <strong>Sachlich formulieren</strong>
+              <span>Keine Umgangssprache, Redewendungen, zu blumige Metaphern oder pathetische Sprache.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 140ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">📚</span>
+            <div>
+              <strong>Wortschatz variieren</strong>
+              <span>Statt „man", „Menschen", „Leute" – Kommilitonen, Bürger, Forscher. Synonyme für benutzen, brauchen, machen, gut, wichtig.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 180ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">🔗</span>
+            <div>
+              <strong>Gründe und Folgen ausdrücken</strong>
+              <span>Nicht nur „weil" oder „deshalb". Nominalisierungen mit Präpositionen, Konjunktionaladverbien.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 220ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">👁️</span>
+            <div>
+              <strong>Perspektivwechsel</strong>
+              <span>Wer ist betroffen? Bei Studiengebühren: Studenten, Gesellschaft, Universitäten. Hilft, mehr Argumente zu finden.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 260ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">⏱️</span>
+            <div>
+              <strong>Zeitmanagement</strong>
+              <span>Nicht den Text vorfertigen – 350 Wörter zweimal schreiben reicht nicht. Gliederung machen, dann direkt Endfassung.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 300ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">📖</span>
+            <div>
+              <strong>Vorbereitung</strong>
+              <span>Nachrichten verfolgen. YouTube: „Erörterung schreiben". Vokabeln nach Themenfeldern gruppieren. Unter Realbedingungen üben (Timer 70 Min).</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-block reveal">
+      <div class="cta-content">
+        <h2>Weiter</h2>
+        <p>Mündlicher Ausdruck, Einführung oder Übungstest.</p>
+      </div>
+      <div class="cta-actions" style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <a class="btn primary" href="../muendlicher-ausdruck/index.html">Mündlicher Ausdruck</a>
+        <a class="btn ghost" href="../einfuehrung/index.html">Einführung</a>
+        <a class="btn ghost" href="../../index.html#uebungstest">Übungstest</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>TELC – Schriftlicher Ausdruck</span>
+    <span>Quelle: Michaela Fröhlich (fröhlich Deutsch) · telc Handbuch</span>
+  </footer>
+
+  <script>
+    document.body.classList.remove("no-js");
+    requestAnimationFrame(() => document.body.classList.add("is-ready"));
+    (() => {
+      document.documentElement.classList.add("no-flash");
+      const storageKey = `telc-scroll:${location.pathname}${location.search}`;
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      const save = () => sessionStorage.setItem(storageKey, String(window.scrollY || window.pageYOffset || 0));
+      const restore = () => { const s = sessionStorage.getItem(storageKey); if (s != null) { const y = Number(s); if (!Number.isNaN(y)) window.scrollTo(0, y); } };
+      const scheduleRestore = () => { restore(); requestAnimationFrame(restore); setTimeout(restore, 60); setTimeout(restore, 220); };
+      window.addEventListener("pagehide", save);
+      window.addEventListener("beforeunload", save);
+      document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") save(); });
+      document.addEventListener("click", (e) => { const a = e.target.closest("a"); if (a?.href) try { const u = new URL(a.href, location.href); if (u.origin === location.origin) save(); } catch {} });
+      window.addEventListener("pageshow", scheduleRestore);
+      window.addEventListener("load", scheduleRestore);
+    })();
+  </script>
+</body>
+</html>

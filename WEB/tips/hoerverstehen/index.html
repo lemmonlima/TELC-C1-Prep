@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <style>html,body{background:#12110f}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>TELC Tips – Hörverstehen</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <script>(function(){var p=location.pathname,h=location.hash||"",f=p+h;function gt(x){if(/\/grammatik\//.test(x))return"grammatik";if(/\/texte\//.test(x))return"texte";if(/\/notizen\//.test(x))return"notizen";if(/\/woerter\//.test(x))return"woerter";if(/\/tips\//.test(x))return"tips";return"start"}function it(x,t){if(t==="grammatik")return/\/grammatik\/index\.html$/.test(x)||/\/grammatik\/?$/.test(x);if(t==="texte")return/\/texte\/index\.html$/.test(x)||/\/texte\/?$/.test(x);if(t==="notizen")return/\/notizen\/index\.html$/.test(x)||/\/notizen\/?$/.test(x);if(t==="woerter")return/\/woerter\/index\.html$/.test(x)||/\/woerter\/?$/.test(x);if(t==="tips")return/\/tips\/index\.html$/.test(x)||/\/tips\/?$/.test(x);return!1}var k="telc_scroll_"+p;function save(){try{sessionStorage.setItem(k,JSON.stringify({x:scrollX,y:scrollY}));sessionStorage.setItem("telc_last_"+gt(p),f)}catch(e){}}function r(){try{var s=sessionStorage.getItem(k);if(s){var j=JSON.parse(s);scrollTo(j.x,j.y)}}catch(e){}}function go(){requestAnimationFrame(function(){setTimeout(r,50);setTimeout(r,300)})}window.addEventListener("pagehide",save);window.addEventListener("beforeunload",save);document.addEventListener("click",function(e){var a=e.target.closest("a");if(!a||!a.href)return;try{var u=new URL(a.href,location.href);if(u.origin!==location.origin)return;save();var tp=u.pathname,tt=gt(tp);if(!it(tp,tt))return;var ct=gt(p);if(ct===tt){e.preventDefault();if(it(p,ct)){scrollTo(0,0)}else{sessionStorage.setItem("telc_scroll_"+tp,JSON.stringify({x:0,y:0}));location.href=location.origin+tp+(u.hash||"")}return}var last=sessionStorage.getItem("telc_last_"+tt);if(!last||last===(tp+(u.hash||"")))return;e.preventDefault();location.href=location.origin+last}catch(x){}},!0);document.readyState==="complete"?go():window.addEventListener("load",go)})();</script>
+  <script>document.addEventListener("DOMContentLoaded",function(){var t=document.querySelector(".topbar");if(!t)return;var b=document.body;if(sessionStorage.getItem("telc_topbar_hidden")==="1")b.classList.add("topbar-hidden");var c=t.querySelector(".cta"),a=document.createElement("div");a.className="topbar-actions";var h=document.createElement("button"),r=document.createElement("button");h.type="button";h.className="topbar-btn topbar-hide";h.title="Barra minimizar";h.setAttribute("aria-label","Barra minimizar");h.textContent="−";r.type="button";r.className="topbar-btn topbar-reset";r.title="Reiniciar";r.setAttribute("aria-label","Reiniciar");r.textContent="↺";a.appendChild(h);a.appendChild(r);if(c)a.appendChild(c);t.appendChild(a);var g=document.createElement("div");g.className="topbar-show-trigger";g.title="Mostrar barra";g.textContent="▼";t.parentNode.insertBefore(g,t);h.onclick=function(){b.classList.add("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.setItem("telc_topbar_hidden","1")};g.onclick=function(){b.classList.remove("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.removeItem("telc_topbar_hidden")};r.onclick=function(){var ks=[];for(var i=0;i<sessionStorage.length;i++){var k=sessionStorage.key(i);if(k&&k.indexOf("telc_")===0)ks.push(k)}ks.forEach(function(k){sessionStorage.removeItem(k)});location.reload()}})();</script>
+</head>
+<body class="no-js doc-page tips-page">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Tips</span>
+    </div>
+    <nav class="nav">
+      <a href="../../index.html#start">Start</a>
+      <a href="../../grammatik/index.html">Grammatik</a>
+      <a href="../../texte/index.html">Texte</a>
+      <a href="../../notizen/index.html">Notizen</a>
+      <a href="../../woerter/index.html">Wörter</a>
+    </nav>
+    <a class="cta" href="../einfuehrung/index.html">Einstufung</a>
+  </header>
+
+  <main class="doc-main">
+    <section class="doc-hero">
+      <div class="doc-hero-text reveal">
+        <div class="eyebrow">fröhlich Deutsch · telc</div>
+        <h1>Hörverstehen</h1>
+        <p class="lead">3 Teile · ca. 40 Minuten · einmal hören · 48 Punkte.</p>
+        <div class="tips-inline-list">
+          <span class="tips-pill">🎧 Global</span>
+          <span class="tips-pill">🔍 Detail</span>
+          <span class="tips-pill">📝 Transfer</span>
+        </div>
+      </div>
+      <div class="doc-hero-panel reveal" style="--delay: 120ms;">
+        <div class="panel-header">
+          <span class="panel-title">Snapshot</span>
+          <span class="panel-sub">48 Punkte · 1× hören</span>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong>Hör 1</strong>
+            <span>~8' · 8 Pkt</span>
+          </div>
+          <div class="stat">
+            <strong>Hör 2</strong>
+            <span>~9' · 20 Pkt</span>
+          </div>
+          <div class="stat">
+            <strong>Hör 3</strong>
+            <span>~20' + 5'</span>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <div class="signal"></div>
+          <span class="panel-note">Quelle: Michaela Fröhlich + telc</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="kurz" class="section split">
+      <div class="split-col reveal">
+        <h2>Eckdaten</h2>
+        <p>Was ihr wissen müsst.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>Zeit</strong>
+            <p>Ca. 40 Minuten gesamt. 5 Minuten am Ende zum Übertragen der Antworten – knapp.</p>
+          </div>
+          <div class="timeline-item">
+            <strong>Einmal hören</strong>
+            <p>Jeden Teil hört ihr nur ein einziges Mal. Gutes Zeitmanagement ist essenziell.</p>
+          </div>
+        </div>
+      </div>
+      <div class="split-col reveal" style="--delay: 120ms;">
+        <h2>Punkteverteilung</h2>
+        <p>48 Punkte gesamt.</p>
+        <div class="einfuehrung-row reveal">
+          <table class="einfuehrung-table einfuehrung-table-numeric">
+            <thead>
+              <tr>
+                <th class="th-teil">Teil</th>
+                <th class="th-unterteil">Aufgabe</th>
+                <th class="th-num">Anzahl</th>
+                <th class="th-num">Pkt/Item</th>
+                <th class="th-num">Punkte</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="td-teil">Hör 1</td><td class="td-unterteil">Globalverstehen · Meinungen zuordnen</td><td class="td-center">8</td><td class="td-center">1</td><td class="td-center">8</td></tr>
+              <tr><td class="td-teil">Hör 2</td><td class="td-unterteil">Detailverstehen · MC (A/B/C)</td><td class="td-center">10</td><td class="td-center">2</td><td class="td-center">20</td></tr>
+              <tr><td class="td-teil">Hör 3</td><td class="td-unterteil">Informationstransfer · Folien ergänzen</td><td class="td-center">—</td><td class="td-center">bis 2</td><td class="td-center">20</td></tr>
+              <tr class="einfuehrung-sum-row"><td colspan="2" class="td-unterteil"><strong>Gesamt</strong></td><td class="td-center">—</td><td class="td-center">—</td><td class="td-center td-punkte"><strong>48</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="teile" class="section">
+      <div class="section-head reveal">
+        <h2>Teile und Strategien</h2>
+        <p>Was jeder Teil prüft – So geht's und Tipps.</p>
+      </div>
+      <div class="einfuehrung-desc-list">
+        <div class="einfuehrung-desc-item reveal">
+          <div class="einfuehrung-desc-head">
+            <span class="einfuehrung-desc-num">1</span>
+            <h3>Globalverstehen</h3>
+            <span class="einfuehrung-desc-time">~8 Min</span>
+          </div>
+          <p class="einfuehrung-desc-summary">8 Meinungen zu einem Thema · 10 Aussagen (2 passen nicht).</p>
+          <div class="lese-strategie">
+            <h4>So geht's</h4>
+            <ol>
+              <li>Die 10 Aussagen lesen, Schlüsselwörter markieren. 1 Minute Zeit.</li>
+              <li>Die 8 Hörtexte nacheinander hören (nur einmal). Schlüsselwörter zu den Hörtexten notieren, klare Lösungen eventuell schon markieren.</li>
+              <li>Nummern der Hörtexte zu den passenden Aussagen zuordnen. Auf Schlüsselwörter achten. Lösungen nach dem Hören überarbeiten.</li>
+              <li>Lösungen auf den Antwortbogen eintragen.</li>
+            </ol>
+          </div>
+          <ul>
+            <li><strong>Falle:</strong> 10 Aussagen, aber nur 8 Sprecher – 2 passen nicht.</li>
+            <li><strong>Tendenz:</strong> + oder „Pro" für Zustimmung, − oder „Contra" für Ablehnung.</li>
+            <li><strong>Wichtig:</strong> Antworten direkt eintragen – keine zusätzliche Zeit am Ende.</li>
+          </ul>
+        </div>
+
+        <div class="einfuehrung-desc-item reveal" style="--delay: 40ms;">
+          <div class="einfuehrung-desc-head">
+            <span class="einfuehrung-desc-num">2</span>
+            <h3>Detailverstehen</h3>
+            <span class="einfuehrung-desc-time">~9 Min</span>
+          </div>
+          <p class="einfuehrung-desc-summary">Radiointerview · 10 Aufgaben · jeweils 3 Antworten (A, B, C).</p>
+          <div class="lese-strategie">
+            <h4>So geht's</h4>
+            <ol>
+              <li>Aufgabenstellung, Aufgaben und Antwortmöglichkeiten lesen. Schlüsselwörter markieren. 3 Minuten Zeit.</li>
+              <li>Interview hören. Auf Schlüsselwörter achten, entscheiden welche Aussage richtig ist.</li>
+              <li>Lösungen eventuell noch einmal überarbeiten.</li>
+              <li>Lösungen auf den Antwortbogen markieren.</li>
+            </ol>
+          </div>
+          <ul>
+            <li><strong>Herausforderung:</strong> Begriffe aus allen 3 Antworten kommen vor – oft nur die zeitliche Einordnung oder Zuordnung zur Person passt nur bei einer.</li>
+            <li><strong>Haltung:</strong> Mit +/− markieren, welche Antwort zu welcher Haltung passt.</li>
+            <li><strong>Tipp:</strong> Nicht zu lange an einer Aufgabe aufhalten – sonst nächste verpassen. Symbol „?" für Unsicherheit.</li>
+          </ul>
+        </div>
+
+        <div class="einfuehrung-desc-item reveal" style="--delay: 80ms;">
+          <div class="einfuehrung-desc-head">
+            <span class="einfuehrung-desc-num">3</span>
+            <h3>Informationstransfer</h3>
+            <span class="einfuehrung-desc-time">~20 Min + 5 Min</span>
+          </div>
+          <p class="einfuehrung-desc-summary">Vortrag/Vorlesung · Stichpunkte auf Folien ergänzen.</p>
+          <div class="lese-strategie">
+            <h4>So geht's</h4>
+            <ol>
+              <li>Aufgabenstellung und Stichworte auf den Folien lesen. Überblick über das Thema. 1 Minute Zeit.</li>
+              <li>Vortrag hören (nur einmal). Dem Vortrag anhand der Stichpunkte folgen, fehlende Informationen stichpunktartig ergänzen.</li>
+              <li>Lösungen überarbeiten. Prüfen, ob die Ergänzungen zu den Folien passen.</li>
+              <li>5 Minuten Zeit, Antworten auf den Antwortbogen zu übertragen.</li>
+            </ol>
+          </div>
+          <ul>
+            <li><strong>Rechtschreibung:</strong> Grammatik- und Rechtschreibfehler werden nicht gewertet, solange sie das Verständnis nicht beeinträchtigen. Teilweise richtige Antwort = 1 Punkt.</li>
+            <li><strong>Präzision:</strong> „Jeder Vierte liest keine Bücher" ≠ „Jeder Vierte liest nicht" (könnte Zeitschriften sein).</li>
+            <li><strong>Signalwörter:</strong> Sobald der Sprecher diese nennt, folgt meist die Information für die Lücke.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="tipps" class="section">
+      <div class="section-head reveal">
+        <h2>Allgemeine Tipps</h2>
+        <p>Über alle Teile hinweg.</p>
+      </div>
+      <div class="grid modules">
+        <div class="module-card tips-card reveal" style="--delay: 60ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">🎯</span>
+            <div>
+              <strong>Konzentration</strong>
+              <span>Das A und O. Die meisten Fehler entstehen durch kurze Unaufmerksamkeit. Ausgeruht sein, genug trinken.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 100ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">📚</span>
+            <div>
+              <strong>Keine Fachangst</strong>
+              <span>Sprachprüfung, keine Inhaltsprüfung. Ihr müsst die sprachlichen Zusammenhänge verstehen, nicht Experten sein.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 140ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">⏱️</span>
+            <div>
+              <strong>Zeitmanagement</strong>
+              <span>5 Min zum Übertragen sind knapp. Am Ende von Teil 3 (wenn sich der Sprecher verabschiedet) schon mit dem Übertragen beginnen.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 180ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">✓</span>
+            <div>
+              <strong>Mut zur Lücke</strong>
+              <span>Bei Teil 1 und 2: Wenn gar nichts verstanden – irgendetwas ankreuzen. Kein Punktabzug. Chance auf einen Punkt besser als leer.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 220ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">💡</span>
+            <div>
+              <strong>Erste Intuition</strong>
+              <span>Die erste Antwort ist meistens die richtige. Nur ändern, wenn ihr einen klaren Beweis für einen Fehler habt.</span>
+            </div>
+          </div>
+        </div>
+        <div class="module-card tips-card reveal" style="--delay: 260ms;">
+          <div class="tips-kpi">
+            <span class="tips-icon">🎧</span>
+            <div>
+              <strong>Training im Alltag</strong>
+              <span>Podcasts, Radio, Online-Vorlesungen. Beim Hören Notizen machen – bereitet auf Prüfung und echtes Uni-Leben vor.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-block reveal">
+      <div class="cta-content">
+        <h2>Weiter</h2>
+        <p>Leseverstehen, Einführung oder Übungstest.</p>
+      </div>
+      <div class="cta-actions" style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <a class="btn primary" href="../leseverstehen/index.html">Leseverstehen</a>
+        <a class="btn ghost" href="../einfuehrung/index.html">Einführung</a>
+        <a class="btn ghost" href="../../index.html#uebungstest">Übungstest</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>TELC – Hörverstehen</span>
+    <span>Quelle: Michaela Fröhlich (fröhlich Deutsch) · telc Handbuch</span>
+  </footer>
+
+  <script>
+    document.body.classList.remove("no-js");
+    requestAnimationFrame(() => document.body.classList.add("is-ready"));
+    (() => {
+      document.documentElement.classList.add("no-flash");
+      const storageKey = `telc-scroll:${location.pathname}${location.search}`;
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      const save = () => sessionStorage.setItem(storageKey, String(window.scrollY || window.pageYOffset || 0));
+      const restore = () => { const s = sessionStorage.getItem(storageKey); if (s != null) { const y = Number(s); if (!Number.isNaN(y)) window.scrollTo(0, y); } };
+      const scheduleRestore = () => { restore(); requestAnimationFrame(restore); setTimeout(restore, 60); setTimeout(restore, 220); };
+      window.addEventListener("pagehide", save);
+      window.addEventListener("beforeunload", save);
+      document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") save(); });
+      document.addEventListener("click", (e) => { const a = e.target.closest("a"); if (a?.href) try { const u = new URL(a.href, location.href); if (u.origin === location.origin) save(); } catch {} });
+      window.addEventListener("pageshow", scheduleRestore);
+      window.addEventListener("load", scheduleRestore);
+    })();
+  </script>
+</body>
+</html>

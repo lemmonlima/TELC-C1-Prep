@@ -1,0 +1,106 @@
+{
+  "title": "Notizen",
+  "description": "Frases y palabras interesantes para repasar.",
+  "items": [
+    {
+      "id": "1",
+      "text": "Inwiefern sich diese Ergebnisse verallgemeinern lassen, ist zwar fraglich. Tatsache ist aber, dass",
+      "explanationId": "inwiefern-verallgemeinern-fraglich-tatsache"
+    },
+    {
+      "id": "2",
+      "text": "Obwohl neue Gesetze geschaffen wurden, mangelt es noch an deren konsequenter Umsetzung.",
+      "explanationId": "obwohl-gesetze-umsetzung"
+    },
+    {
+      "id": "3",
+      "text": "Wo lagen die Interessen?",
+      "explanationId": "wo-lagen-die-interessen"
+    },
+    {
+      "id": "4",
+      "text": "Es nützt wenig, wenn",
+      "explanationId": "es-nuetzt-wenig-wenn"
+    },
+    {
+      "id": "5",
+      "text": "überlassen bleiben",
+      "explanationId": "ueberlassen-bleiben"
+    },
+    {
+      "id": "6",
+      "text": "Die statistischen Auswertungen jedenfalls lassen darauf schließen, dass",
+      "explanationId": "statistischen-auswertungen-schliessen"
+    },
+    {
+      "id": "7",
+      "text": "Vielen Menschen sind \"etwas\" unheimlich.",
+      "explanationId": "vielen-menschen-sind-etwas-unheimlich"
+    },
+    {
+      "id": "8",
+      "text": "ausgezeichnete Stabilität gewährleisten",
+      "explanationId": "ausgezeichnete-stabilitaet-gewaehrleisten"
+    },
+    {
+      "id": "9",
+      "text": "erscheint es paradox",
+      "explanationId": "erscheint-es-paradox"
+    },
+    {
+      "id": "10",
+      "text": "Ein weiterer häufiger Kritikpunkt betrifft",
+      "explanationId": "ein-weiterer-haeufiger-kritikpunkt-betrifft"
+    },
+    {
+      "id": "11",
+      "text": "Hier wird oft gefragt",
+      "explanationId": "hier-wird-oft-gefragt"
+    },
+    {
+      "id": "12",
+      "text": "Es liegt an uns",
+      "explanationId": "es-liegt-an-uns"
+    },
+    {
+      "id": "13",
+      "text": "eine Zukunft zu fordern",
+      "explanationId": "eine-zukunft-zu-fordern"
+    },
+    {
+      "id": "14",
+      "text": "eine Frage des politischen Willens",
+      "explanationId": "eine-frage-des-politischen-willens"
+    },
+    {
+      "id": "15",
+      "text": "gesellschaftlichen Verantwortung",
+      "explanationId": "gesellschaftlichen-verantwortung"
+    },
+    {
+      "id": "16",
+      "text": "Ich habe erhebliche Zweifel an",
+      "explanationId": "ich-habe-erhebliche-zweifel-an"
+    },
+    {
+      "id": "17",
+      "text": "Es ist doch bekannt, dass",
+      "explanationId": "es-ist-doch-bekannt-dass"
+    },
+    {
+      "id": "18",
+      "text": "Die Situation spitzt sich zu",
+      "explanationId": "die-situation-spitzt-sich-zu"
+    },
+    {
+      "id": "19",
+      "text": "ich ziehe die Wahrheit in Zweifel",
+      "explanationId": "ich-ziehe-die-wahrheit-in-zweifel"
+    },
+    {
+      "id": "20",
+      "text": "Stellt sich somit die Frage",
+      "explanationId": "stellt-sich-somit-die-frage"
+    }
+  ]
+}

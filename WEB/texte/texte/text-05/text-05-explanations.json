@@ -1,0 +1,209 @@
+{
+  "ueber-die-rolle-sprechen": {
+    "word": "über die Rolle ... sprechen",
+    "translation": "hablar sobre el papel (de algo)",
+    "sentence": "Guten Tag, heute möchte ich über die Rolle der Religion in gesellschaftlichen und politischen Konflikten sprechen.",
+    "sentenceTranslation": "Buenos días, hoy quisiera hablar sobre el papel de la religión en los conflictos sociales y políticos.",
+    "explanation": "Construcción verbal: 'über etwas (Akk) sprechen' = hablar sobre algo. La preposición 'über' rige acusativo. Las partes pueden estar separadas por complementos.",
+    "parts": ["über die Rolle", "sprechen"],
+    "type": "phrase",
+    "components": [
+      {"word": "über", "type": "präposition"},
+      {"word": "die Rolle", "type": "nomen"},
+      {"word": "sprechen", "type": "verb"}
+    ],
+    "examples": [
+      {"example": "In der Diskussion sprachen wir ausführlich über die Rolle der Zivilgesellschaft bei der Bekämpfung von Korruption.", "translation": "En el debate hablamos extensamente sobre el papel de la sociedad civil en la lucha contra la corrupción."},
+      {"example": "Die Expertin wird morgen über die Rolle künstlicher Intelligenz in der medizinischen Diagnostik sprechen.", "translation": "La experta hablará mañana sobre el papel de la inteligencia artificial en el diagnóstico médico."}
+    ]
+  },
+  "genauer-gesagt-geht-es-um": {
+    "word": "Genauer gesagt geht es um",
+    "translation": "Más concretamente, se trata de; Dicho con más precisión, es cuestión de",
+    "sentence": "Genauer gesagt geht es um die These, dass Religionen Konflikte nicht zwangsläufig verursachen.",
+    "sentenceTranslation": "Más concretamente, se trata de la tesis de que las religiones no causan necesariamente los conflictos.",
+    "explanation": "Fórmula para precisar o concretar el tema. 'Genauer gesagt' = dicho con más precisión; 'es geht um' = se trata de, es cuestión de.",
+    "type": "phrase",
+    "components": [
+      {"word": "Genauer gesagt", "type": "adverb"},
+      {"word": "geht", "type": "verb"},
+      {"word": "es", "type": "pronomen"},
+      {"word": "um", "type": "präposition"}
+    ],
+    "examples": [
+      {"example": "Die Reform betrifft das gesamte Bildungssystem. Genauer gesagt geht es um die Neugestaltung der Lehrerausbildung und die Einführung digitaler Lernmethoden.", "translation": "La reforma afecta a todo el sistema educativo. Más concretamente, se trata del rediseño de la formación docente y la introducción de métodos de aprendizaje digitales."},
+      {"example": "Wir diskutieren über Nachhaltigkeit in der Wirtschaft. Genauer gesagt geht es um die Balance zwischen ökonomischen Interessen und ökologischer Verantwortung.", "translation": "Discutimos sobre sostenibilidad en la economía. Dicho con más precisión, es cuestión del equilibrio entre intereses económicos y responsabilidad ecológica."}
+    ]
+  },
+  "zwangslaeufig": {
+    "word": "zwangsläufig",
+    "translation": "inevitablemente, necesariamente, por fuerza",
+    "sentence": "Dass Religionen Konflikte nicht zwangsläufig verursachen, sondern häufig von Menschen oder politischen Akteuren genutzt werden.",
+    "sentenceTranslation": "Que las religiones no causan inevitablemente los conflictos, sino que a menudo son utilizadas por personas o actores políticos.",
+    "explanation": "Adverbio. Indica que algo ocurre por necesidad lógica o causal, sin posibilidad de evitarlo. De 'Zwang' (coacción) + 'läufig' (que corre).",
+    "baseForm": "zwangsläufig",
+    "type": "adverb",
+    "examples": [
+      {"example": "Die Globalisierung führt nicht zwangsläufig zu kultureller Homogenisierung; vielmehr können lokale Identitäten gestärkt werden.", "translation": "La globalización no conduce necesariamente a la homogeneización cultural; más bien pueden fortalecerse las identidades locales."},
+      {"example": "Wirtschaftswachstum bedeutet zwangsläufig einen höheren Ressourcenverbrauch, sofern keine Effizienzsteigerungen erzielt werden.", "translation": "El crecimiento económico significa por fuerza un mayor consumo de recursos, siempre que no se logren aumentos de eficiencia."}
+    ]
+  },
+  "verursachen": {
+    "word": "verursachen",
+    "translation": "causar, provocar, ocasionar",
+    "sentence": "Dass Religionen Konflikte nicht zwangsläufig verursachen, sondern häufig von Menschen oder politischen Akteuren genutzt werden.",
+    "sentenceTranslation": "Que las religiones no causan inevitablemente los conflictos, sino que a menudo son utilizadas por personas o actores políticos.",
+    "explanation": "Verbo regular inseparable. Indica que algo es la causa directa de un efecto o consecuencia.",
+    "conjugation": {
+      "present": {"ich": "verursache", "du": "verursachst", "er/sie/es": "verursacht", "wir": "verursachen", "ihr": "verursacht", "sie/Sie": "verursachen"},
+      "preterite": {"ich": "verursachte", "du": "verursachtest", "er/sie/es": "verursachte", "wir": "verursachten", "ihr": "verursachtet", "sie/Sie": "verursachten"},
+      "perfect": "hat verursacht",
+      "infinitive": "verursachen"
+    },
+    "type": "verb",
+    "verbType": "untrennbar",
+    "examples": [
+      {"example": "Die verspätete Lieferung der Bauteile hat eine Verzögerung des gesamten Produktionsprozesses verursacht.", "translation": "El retraso en la entrega de los componentes ha causado un retraso en todo el proceso de producción."},
+      {"example": "Missverständnisse in der interkulturellen Kommunikation können erhebliche Spannungen im Team verursachen.", "translation": "Los malentendidos en la comunicación intercultural pueden provocar tensiones considerables en el equipo."}
+    ]
+  },
+  "haeufig": {
+    "word": "häufig",
+    "translation": "a menudo, frecuentemente, con frecuencia",
+    "sentence": "Dass Religionen Konflikte nicht zwangsläufig verursachen, sondern häufig von Menschen oder politischen Akteuren genutzt werden.",
+    "sentenceTranslation": "Que las religiones no causan inevitablemente los conflictos, sino que a menudo son utilizadas por personas o actores políticos.",
+    "explanation": "Adverbio de frecuencia. Indica que algo ocurre muchas veces o en muchos casos. De 'Häufigkeit' (frecuencia).",
+    "baseForm": "häufig",
+    "type": "adverb",
+    "examples": [
+      {"example": "Bei komplexen Verhandlungen kommt es häufig vor, dass Kompromisse erst in letzter Minute erzielt werden.", "translation": "En negociaciones complejas ocurre a menudo que los compromisos se alcanzan solo en el último momento."},
+      {"example": "Wissenschaftliche Durchbrüche entstehen häufig an den Schnittstellen verschiedener Disziplinen.", "translation": "Los avances científicos surgen frecuentemente en las intersecciones de diferentes disciplinas."}
+    ]
+  },
+  "von-akteuren-genutzt": {
+    "word": "von ... Akteuren genutzt",
+    "translation": "utilizado por actores, usado por actores",
+    "sentence": "Dass Religionen Konflikte nicht zwangsläufig verursachen, sondern häufig von Menschen oder politischen Akteuren genutzt werden.",
+    "sentenceTranslation": "Que las religiones no causan inevitablemente los conflictos, sino que a menudo son utilizadas por personas o actores políticos.",
+    "explanation": "Construcción pasiva: 'von + Dativo + Partizip II' = ser utilizado por. 'Akteur' = actor (político, social). Típica en análisis de poder e instrumentación.",
+    "type": "phrase",
+    "components": [
+      {"word": "von", "type": "präposition"},
+      {"word": "Akteuren", "type": "nomen"},
+      {"word": "genutzt", "type": "verb"}
+    ],
+    "examples": [
+      {"example": "Soziale Medien werden zunehmend von wirtschaftlichen Akteuren genutzt, um Konsumverhalten gezielt zu beeinflussen.", "translation": "Las redes sociales son utilizadas cada vez más por actores económicos para influir de manera específica en el comportamiento de consumo."},
+      {"example": "Die Angst vor Terrorismus wird häufig von populistischen Akteuren genutzt, um restriktive Sicherheitsgesetze durchzusetzen.", "translation": "El miedo al terrorismo es utilizado frecuentemente por actores populistas para imponer leyes de seguridad restrictivas."}
+    ]
+  },
+  "bestehende": {
+    "word": "bestehende",
+    "translation": "existentes, vigentes, actuales",
+    "sentence": "Um bestehende Konflikte zu legitimieren oder Unterstützung zu gewinnen.",
+    "sentenceTranslation": "Para legitimar conflictos existentes o ganar apoyo.",
+    "explanation": "Participio I de 'bestehen' (existir). Adjetivo que indica que algo ya existe o está vigente. Se declina como adjetivo.",
+    "baseForm": "bestehend",
+    "type": "adjektiv",
+    "examples": [
+      {"example": "Die Digitalisierung stellt bestehende Geschäftsmodelle grundlegend infrage und zwingt Unternehmen zur Neuausrichtung.", "translation": "La digitalización cuestiona fundamentalmente los modelos de negocio existentes y obliga a las empresas a reorientarse."},
+      {"example": "Trotz bestehender Handelsabkommen bleiben zahlreiche protektionistische Maßnahmen in Kraft.", "translation": "A pesar de los acuerdos comerciales vigentes, numerosas medidas proteccionistas permanecen en vigor."}
+    ]
+  },
+  "legitimieren": {
+    "word": "legitimieren",
+    "translation": "legitimar, justificar",
+    "sentence": "Um bestehende Konflikte zu legitimieren oder Unterstützung zu gewinnen.",
+    "sentenceTranslation": "Para legitimar conflictos existentes o ganar apoyo.",
+    "explanation": "Verbo regular inseparable. Dar validez o justificación a algo; hacer que algo parezca legítimo o aceptable.",
+    "conjugation": {
+      "present": {"ich": "legitimiere", "du": "legitimierst", "er/sie/es": "legitimiert", "wir": "legitimieren", "ihr": "legitimiert", "sie/Sie": "legitimieren"},
+      "preterite": {"ich": "legitimierte", "du": "legitimiertest", "er/sie/es": "legitimierte", "wir": "legitimierten", "ihr": "legitimiertet", "sie/Sie": "legitimierten"},
+      "perfect": "hat legitimiert",
+      "infinitive": "legitimieren"
+    },
+    "type": "verb",
+    "verbType": "untrennbar",
+    "examples": [
+      {"example": "Autoritäre Regime legitimieren ihre Machtausübung häufig durch konstruierte externe Bedrohungsszenarien.", "translation": "Los regímenes autoritarios legitiman frecuentemente su ejercicio del poder mediante escenarios de amenaza externa construidos."},
+      {"example": "Wissenschaftliche Erkenntnisse werden mitunter selektiv herangezogen, um politische Entscheidungen nachträglich zu legitimieren.", "translation": "Los conocimientos científicos se utilizan a veces de forma selectiva para legitimar retrospectivamente decisiones políticas."}
+    ]
+  },
+  "unterstuetzung": {
+    "word": "Unterstützung",
+    "translation": "apoyo, respaldo",
+    "sentence": "Um bestehende Konflikte zu legitimieren oder Unterstützung zu gewinnen.",
+    "sentenceTranslation": "Para legitimar conflictos existentes o ganar apoyo.",
+    "explanation": "Sustantivo femenino. Ayuda, respaldo o respaldo activo. 'Unterstützung gewinnen' = ganar apoyo.",
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "examples": [
+      {"example": "Die Durchsetzung ambitionierter Klimaziele erfordert die breite Unterstützung sowohl der Wirtschaft als auch der Bevölkerung.", "translation": "La implementación de objetivos climáticos ambiciosos requiere el amplio apoyo tanto de la economía como de la población."},
+      {"example": "Ohne finanzielle Unterstützung seitens internationaler Organisationen wäre der Wiederaufbau der Infrastruktur kaum möglich gewesen.", "translation": "Sin el apoyo financiero por parte de organizaciones internacionales, la reconstrucción de la infraestructura apenas habría sido posible."}
+    ]
+  },
+  "gewinnen": {
+    "word": "gewinnen",
+    "translation": "ganar, obtener, lograr",
+    "sentence": "Um bestehende Konflikte zu legitimieren oder Unterstützung zu gewinnen.",
+    "sentenceTranslation": "Para legitimar conflictos existentes o ganar apoyo.",
+    "explanation": "Verbo irregular. 'Unterstützung gewinnen' = ganar apoyo. También: ganar (competición), obtener (información).",
+    "conjugation": {
+      "present": {"ich": "gewinne", "du": "gewinnst", "er/sie/es": "gewinnt", "wir": "gewinnen", "ihr": "gewinnt", "sie/Sie": "gewinnen"},
+      "preterite": {"ich": "gewann", "du": "gewannst", "er/sie/es": "gewann", "wir": "gewannen", "ihr": "gewannt", "sie/Sie": "gewannen"},
+      "perfect": "hat gewonnen",
+      "infinitive": "gewinnen"
+    },
+    "type": "verb",
+    "examples": [
+      {"example": "Aus den gescheiterten Verhandlungen lassen sich wertvolle Erkenntnisse für künftige Gespräche gewinnen.", "translation": "De las negociaciones fracasadas se pueden obtener conocimientos valiosos para futuras conversaciones."},
+      {"example": "Die Opposition konnte durch ihre konstruktive Kritik an Glaubwürdigkeit gewinnen und ihre Position im Parlament stärken.", "translation": "La oposición pudo ganar credibilidad mediante su crítica constructiva y fortalecer su posición en el parlamento."}
+    ]
+  },
+  "zunaechst": {
+    "word": "zunächst",
+    "translation": "en primer lugar, primero, para empezar",
+    "sentence": "Zunächst ist es wichtig festzustellen, dass viele Konflikte, die als „religiös\" bezeichnet werden, ihre eigentlichen Ursachen in ganz anderen Bereichen haben.",
+    "sentenceTranslation": "En primer lugar es importante constatar que muchos conflictos que se califican de „religiosos\" tienen sus causas reales en ámbitos muy distintos.",
+    "explanation": "Adverbio. Introduce el primer punto o paso de una secuencia. 'Zunächst' = primero, para empezar, antes de continuar.",
+    "baseForm": "zunächst",
+    "type": "adverb",
+    "examples": [
+      {"example": "Zunächst erschien die Hypothese plausibel, doch weitere Untersuchungen widerlegten die anfänglichen Annahmen vollständig.", "translation": "En un principio la hipótesis parecía plausible, pero investigaciones posteriores refutaron completamente las suposiciones iniciales."},
+      {"example": "Die Verhandlungspartner einigten sich zunächst auf ein vorläufiges Rahmenabkommen, bevor die Details ausgearbeitet wurden.", "translation": "Los socios negociadores acordaron primero un acuerdo marco provisional antes de elaborar los detalles."}
+    ]
+  },
+  "festzustellen": {
+    "word": "festzustellen",
+    "translation": "constatar, establecer, determinar",
+    "sentence": "Zunächst ist es wichtig festzustellen, dass viele Konflikte, die als „religiös\" bezeichnet werden, ihre eigentlichen Ursachen in ganz anderen Bereichen haben.",
+    "sentenceTranslation": "En primer lugar es importante constatar que muchos conflictos que se califican de „religiosos\" tienen sus causas reales en ámbitos muy distintos.",
+    "explanation": "Verbo separable. 'Feststellen' = constatar, establecer como hecho. 'Es ist wichtig festzustellen, dass' = es importante constatar que.",
+    "parts": ["fest", "zustellen"],
+    "conjugation": {
+      "present": {"ich": "stelle fest", "du": "stellst fest", "er/sie/es": "stellt fest", "wir": "stellen fest", "ihr": "stellt fest", "sie/Sie": "stellen fest"},
+      "preterite": {"ich": "stellte fest", "du": "stelltest fest", "er/sie/es": "stellte fest", "wir": "stellten fest", "ihr": "stelltet fest", "sie/Sie": "stellten fest"},
+      "perfect": "hat festgestellt",
+      "infinitive": "feststellen"
+    },
+    "type": "verb",
+    "verbType": "separable",
+    "examples": [
+      {"example": "Die Kommission stellte gravierende Mängel in der Umsetzung der Richtlinien fest und forderte umgehende Korrekturen.", "translation": "La comisión constató deficiencias graves en la implementación de las directrices y exigió correcciones inmediatas."},
+      {"example": "Anhand der empirischen Daten lässt sich eindeutig feststellen, dass ein kausaler Zusammenhang zwischen beiden Variablen besteht.", "translation": "A partir de los datos empíricos se puede constatar claramente que existe una relación causal entre ambas variables."}
+    ]
+  },
+  "bezeichnet-werden": {
+    "word": "bezeichnet werden",
+    "translation": "ser calificado, ser designado, ser llamado",
+    "sentence": "Zunächst ist es wichtig festzustellen, dass viele Konflikte, die als „religiös\" bezeichnet werden, ihre eigentlichen Ursachen in ganz anderen Bereichen haben.",
+    "sentenceTranslation": "En primer lugar es importante constatar que muchos conflictos que se califican de „religiosos\" tienen sus causas reales en ámbitos muy distintos.",
+    "explanation": "Pasiva de 'bezeichnen' (designar, calificar). 'Als X bezeichnet werden' = ser calificado/llamado X. 'Bezeichnen' = designar, nombrar.",
+    "parts": ["bezeichnet", "werden"],
+    "type": "phrase",
+    "examples": [
+      {"example": "Die Epoche wird in der Geschichtsschreibung gemeinhin als Wendepunkt der europäischen Integration bezeichnet.", "translation": "La época es designada comúnmente en la historiografía como punto de inflexión de la integración europea."},
+      {"example": "Was heute als innovative Lösung bezeichnet wird, könnte sich morgen bereits als überholt erweisen.", "translation": "Lo que hoy se califica como solución innovadora podría resultar mañana ya obsoleto."}
+    ]
+  }
+}

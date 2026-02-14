@@ -1,0 +1,1250 @@
+{
+  "verbs": [
+    {
+      "word": "arbeiten",
+      "preposition": "an + Dativ",
+      "translation": "trabajar en",
+      "example": "Die Forschungsgruppe arbeitet an einer innovativen Methode zur Datenanalyse.",
+      "exampleES": "El grupo de investigación trabaja en un método innovador para el análisis de datos."
+    },
+    {
+      "word": "sich orientieren",
+      "preposition": "an + Dativ",
+      "translation": "orientarse en/por",
+      "example": "Die Studierenden orientieren sich an den aktuellen wissenschaftlichen Standards.",
+      "exampleES": "Los estudiantes se orientan por los estándares científicos actuales."
+    },
+    {
+      "word": "erinnern",
+      "preposition": "an + Akkusativ",
+      "translation": "recordar a alguien algo",
+      "example": "Der Dozent erinnert die Studierenden an die Abgabefrist der Seminararbeit.",
+      "exampleES": "El docente recuerda a los estudiantes la fecha límite de entrega del trabajo de seminario."
+    },
+    {
+      "word": "sich erinnern",
+      "preposition": "an + Akkusativ",
+      "translation": "acordarse de",
+      "example": "Die Absolventin erinnert sich gern an ihre Studienzeit an der Universität.",
+      "exampleES": "La graduada recuerda con gusto su época de estudios en la universidad."
+    },
+    {
+      "word": "sterben",
+      "preposition": "an + Dativ",
+      "translation": "morir de",
+      "example": "Viele Patienten sterben an den Folgen chronischer Erkrankungen.",
+      "exampleES": "Muchos pacientes mueren de las consecuencias de enfermedades crónicas."
+    },
+    {
+      "word": "sich beteiligen",
+      "preposition": "an + Dativ",
+      "translation": "participar en",
+      "example": "Die Universität beteiligt sich an einem internationalen Forschungsprojekt.",
+      "exampleES": "La universidad participa en un proyecto de investigación internacional."
+    },
+    {
+      "word": "denken",
+      "preposition": "an + Akkusativ",
+      "translation": "pensar en",
+      "example": "Bei der Planung muss man an alle möglichen Risiken denken.",
+      "exampleES": "En la planificación hay que pensar en todos los riesgos posibles."
+    },
+    {
+      "word": "erkennen",
+      "preposition": "an + Dativ",
+      "translation": "reconocer por",
+      "example": "Man erkennt qualitativ hochwertige Forschung an der methodischen Präzision.",
+      "exampleES": "Se reconoce la investigación de alta calidad por la precisión metodológica."
+    },
+    {
+      "word": "gewöhnen",
+      "preposition": "an + Akkusativ",
+      "translation": "acostumbrar a",
+      "example": "Die Dozentin gewöhnt die Studierenden an wissenschaftliches Arbeiten.",
+      "exampleES": "La docente acostumbra a los estudiantes al trabajo científico."
+    },
+    {
+      "word": "sich gewöhnen",
+      "preposition": "an + Akkusativ",
+      "translation": "acostumbrarse a",
+      "example": "Ausländische Studierende müssen sich an das deutsche Hochschulsystem gewöhnen.",
+      "exampleES": "Los estudiantes extranjeros deben acostumbrarse al sistema universitario alemán."
+    },
+    {
+      "word": "glauben",
+      "preposition": "an + Akkusativ",
+      "translation": "creer en",
+      "example": "Viele Wissenschaftler glauben an die Kraft der interdisziplinären Zusammenarbeit.",
+      "exampleES": "Muchos científicos creen en el poder de la colaboración interdisciplinaria."
+    },
+    {
+      "word": "leiden",
+      "preposition": "an + Dativ",
+      "translation": "sufrir de",
+      "example": "Das Bildungssystem leidet an strukturellen Defiziten.",
+      "exampleES": "El sistema educativo sufre de déficits estructurales."
+    },
+    {
+      "word": "liegen",
+      "preposition": "an + Dativ",
+      "translation": "deberse a",
+      "example": "Der Erfolg des Projekts liegt an der exzellenten Teamarbeit.",
+      "exampleES": "El éxito del proyecto se debe al excelente trabajo en equipo."
+    },
+    {
+      "word": "teilnehmen",
+      "preposition": "an + Dativ",
+      "translation": "participar en",
+      "example": "Alle Doktoranden nehmen an dem wissenschaftlichen Kolloquium teil.",
+      "exampleES": "Todos los doctorandos participan en el coloquio científico."
+    },
+    {
+      "word": "sich wenden",
+      "preposition": "an + Akkusativ",
+      "translation": "dirigirse a",
+      "example": "Bei Fragen zur Promotion wenden Sie sich bitte an die Graduiertenschule.",
+      "exampleES": "Para preguntas sobre el doctorado, por favor diríjase a la escuela de posgrado."
+    },
+    {
+      "word": "zweifeln",
+      "preposition": "an + Dativ",
+      "translation": "dudar de",
+      "example": "Die Gutachter zweifeln an der Validität der empirischen Daten.",
+      "exampleES": "Los evaluadores dudan de la validez de los datos empíricos."
+    },
+    {
+      "word": "fehlen",
+      "preposition": "an + Dativ",
+      "translation": "faltar",
+      "example": "Es fehlt der Studie an einer theoretischen Fundierung.",
+      "exampleES": "Al estudio le falta una fundamentación teórica."
+    },
+    {
+      "word": "achten",
+      "preposition": "auf + Akkusativ",
+      "translation": "prestar atención a",
+      "example": "Bei der Literaturrecherche muss man auf die Aktualität der Quellen achten.",
+      "exampleES": "En la búsqueda bibliográfica hay que prestar atención a la actualidad de las fuentes."
+    },
+    {
+      "word": "hoffen",
+      "preposition": "auf + Akkusativ",
+      "translation": "esperar",
+      "example": "Die Forschungsgruppe hofft auf eine Bewilligung der Fördergelder.",
+      "exampleES": "El grupo de investigación espera la aprobación de los fondos de financiación."
+    },
+    {
+      "word": "warten",
+      "preposition": "auf + Akkusativ",
+      "translation": "esperar",
+      "example": "Die Doktoranden warten auf die Rückmeldung der Gutachter.",
+      "exampleES": "Los doctorandos esperan la retroalimentación de los evaluadores."
+    },
+    {
+      "word": "sich verlassen",
+      "preposition": "auf + Akkusativ",
+      "translation": "confiar en",
+      "example": "Man kann sich auf die Qualität dieser wissenschaftlichen Publikation verlassen.",
+      "exampleES": "Se puede confiar en la calidad de esta publicación científica."
+    },
+    {
+      "word": "antworten",
+      "preposition": "auf + Akkusativ",
+      "translation": "responder a",
+      "example": "Die Forscherin antwortet auf die kritischen Einwände der Gutachter.",
+      "exampleES": "La investigadora responde a las objeciones críticas de los evaluadores."
+    },
+    {
+      "word": "beruhen",
+      "preposition": "auf + Dativ",
+      "translation": "basarse en",
+      "example": "Die Theorie beruht auf empirischen Untersuchungen aus den letzten zwei Jahrzehnten.",
+      "exampleES": "La teoría se basa en investigaciones empíricas de las últimas dos décadas."
+    },
+    {
+      "word": "sich beschränken",
+      "preposition": "auf + Akkusativ",
+      "translation": "limitarse a",
+      "example": "Die Studie beschränkt sich auf die Analyse quantitativer Daten.",
+      "exampleES": "El estudio se limita al análisis de datos cuantitativos."
+    },
+    {
+      "word": "bestehen",
+      "preposition": "auf + Dativ",
+      "translation": "insistir en",
+      "example": "Die Ethikkommission besteht auf der Einhaltung aller Forschungsrichtlinien.",
+      "exampleES": "El comité de ética insiste en el cumplimiento de todas las directrices de investigación."
+    },
+    {
+      "word": "eingehen",
+      "preposition": "auf + Akkusativ",
+      "translation": "entrar en (detalle)",
+      "example": "In der Diskussion geht die Professorin ausführlich auf die methodischen Schwierigkeiten ein.",
+      "exampleES": "En la discusión la profesora entra en detalle sobre las dificultades metodológicas."
+    },
+    {
+      "word": "einwirken",
+      "preposition": "auf + Akkusativ",
+      "translation": "actuar sobre",
+      "example": "Externe Faktoren wirken stark auf die Forschungsergebnisse ein.",
+      "exampleES": "Los factores externos actúan fuertemente sobre los resultados de investigación."
+    },
+    {
+      "word": "sich freuen",
+      "preposition": "auf + Akkusativ / über + Akkusativ",
+      "translation": "alegrarse de (futuro: auf / pasado: über)",
+      "example": "Die Studierenden freuen sich auf die vorlesungsfreie Zeit.",
+      "exampleES": "Los estudiantes se alegran del período sin clases."
+    },
+    {
+      "word": "hinweisen",
+      "preposition": "auf + Akkusativ",
+      "translation": "señalar, indicar",
+      "example": "Die Dozentin weist auf die Bedeutung der korrekten Zitierweise hin.",
+      "exampleES": "La docente señala la importancia de la forma correcta de citar."
+    },
+    {
+      "word": "sich konzentrieren",
+      "preposition": "auf + Akkusativ",
+      "translation": "concentrarse en",
+      "example": "Die Forscherin konzentriert sich auf die Analyse qualitativer Daten.",
+      "exampleES": "La investigadora se concentra en el análisis de datos cualitativos."
+    },
+    {
+      "word": "schätzen",
+      "preposition": "auf + Akkusativ",
+      "translation": "estimar en",
+      "example": "Experten schätzen die Kosten des Forschungsprojekts auf mehrere Millionen Euro.",
+      "exampleES": "Los expertos estiman los costos del proyecto de investigación en varios millones de euros."
+    },
+    {
+      "word": "sich spezialisieren",
+      "preposition": "auf + Akkusativ",
+      "translation": "especializarse en",
+      "example": "Das Institut spezialisiert sich auf die Erforschung neurodegenerativer Erkrankungen.",
+      "exampleES": "El instituto se especializa en la investigación de enfermedades neurodegenerativas."
+    },
+    {
+      "word": "stoßen",
+      "preposition": "auf + Akkusativ",
+      "translation": "toparse con",
+      "example": "Bei der Archivrecherche stieß die Historikerin auf bisher unbekannte Dokumente.",
+      "exampleES": "En la investigación de archivo la historiadora se topó con documentos hasta ahora desconocidos."
+    },
+    {
+      "word": "verweisen",
+      "preposition": "auf + Akkusativ",
+      "translation": "remitir a",
+      "example": "Die Autorin verweist auf die grundlegenden Arbeiten von Weber und Durkheim.",
+      "exampleES": "La autora remite a los trabajos fundamentales de Weber y Durkheim."
+    },
+    {
+      "word": "verzichten",
+      "preposition": "auf + Akkusativ",
+      "translation": "renunciar a",
+      "example": "Die Forschungsgruppe verzichtet auf die Verwendung umstrittener Methoden.",
+      "exampleES": "El grupo de investigación renuncia al uso de métodos controvertidos."
+    },
+    {
+      "word": "vorbereiten",
+      "preposition": "auf + Akkusativ",
+      "translation": "preparar para",
+      "example": "Das Propädeutikum bereitet die Studierenden auf das wissenschaftliche Arbeiten vor.",
+      "exampleES": "El propedéutico prepara a los estudiantes para el trabajo científico."
+    },
+    {
+      "word": "sich vorbereiten",
+      "preposition": "auf + Akkusativ",
+      "translation": "prepararse para",
+      "example": "Die Doktoranden bereiten sich intensiv auf die Disputation vor.",
+      "exampleES": "Los doctorandos se preparan intensivamente para la defensa."
+    },
+    {
+      "word": "wirken",
+      "preposition": "auf + Akkusativ",
+      "translation": "actuar sobre",
+      "example": "Soziale Faktoren wirken nachweislich auf die kognitive Entwicklung.",
+      "exampleES": "Los factores sociales actúan demostrablemente sobre el desarrollo cognitivo."
+    },
+    {
+      "word": "zurückführen",
+      "preposition": "auf + Akkusativ",
+      "translation": "atribuir a",
+      "example": "Die Wissenschaftler führen das Phänomen auf klimatische Veränderungen zurück.",
+      "exampleES": "Los científicos atribuyen el fenómeno a cambios climáticos."
+    },
+    {
+      "word": "ankommen",
+      "preposition": "auf + Akkusativ",
+      "translation": "depender de",
+      "example": "Bei der Promotion kommt es auf Ausdauer und methodische Präzision an.",
+      "exampleES": "En el doctorado depende de la perseverancia y la precisión metodológica."
+    },
+    {
+      "word": "berichten",
+      "preposition": "über + Akkusativ",
+      "translation": "informar sobre",
+      "example": "Die Fachzeitschrift berichtet über aktuelle Forschungsergebnisse.",
+      "exampleES": "La revista especializada informa sobre resultados de investigación actuales."
+    },
+    {
+      "word": "diskutieren",
+      "preposition": "über + Akkusativ",
+      "translation": "discutir sobre",
+      "example": "Im Seminar diskutieren wir über aktuelle gesellschaftspolitische Entwicklungen.",
+      "exampleES": "En el seminario discutimos sobre desarrollos sociopolíticos actuales."
+    },
+    {
+      "word": "klagen",
+      "preposition": "über + Akkusativ",
+      "translation": "quejarse de",
+      "example": "Die Studierenden klagen über die hohe Arbeitsbelastung im Masterstudium.",
+      "exampleES": "Los estudiantes se quejan de la alta carga de trabajo en el máster."
+    },
+    {
+      "word": "sich wundern",
+      "preposition": "über + Akkusativ",
+      "translation": "sorprenderse de",
+      "example": "Die Fachöffentlichkeit wundert sich über die unerwarteten Forschungsergebnisse.",
+      "exampleES": "La comunidad especializada se sorprende de los resultados de investigación inesperados."
+    },
+    {
+      "word": "sich ärgern",
+      "preposition": "über + Akkusativ",
+      "translation": "enfadarse por",
+      "example": "Die Autorin ärgert sich über die ungerechtfertigte Kritik an ihrer Publikation.",
+      "exampleES": "La autora se enfada por la crítica injustificada a su publicación."
+    },
+    {
+      "word": "sich aufregen",
+      "preposition": "über + Akkusativ",
+      "translation": "alterarse por",
+      "example": "Man sollte sich nicht über methodische Differenzen aufregen.",
+      "exampleES": "No debería uno alterarse por diferencias metodológicas."
+    },
+    {
+      "word": "sich beschweren",
+      "preposition": "über + Akkusativ (bei + Dativ)",
+      "translation": "quejarse de (ante)",
+      "example": "Die Doktoranden beschweren sich bei der Fakultät über die unzureichende Betreuung.",
+      "exampleES": "Los doctorandos se quejan ante la facultad de la supervisión insuficiente."
+    },
+    {
+      "word": "entscheiden",
+      "preposition": "über + Akkusativ",
+      "translation": "decidir sobre",
+      "example": "Das Gremium entscheidet über die Vergabe der Forschungsstipendien.",
+      "exampleES": "El comité decide sobre la adjudicación de las becas de investigación."
+    },
+    {
+      "word": "hinausgehen",
+      "preposition": "über + Akkusativ",
+      "translation": "sobrepasar",
+      "example": "Die Dissertation geht über den aktuellen Forschungsstand hinaus.",
+      "exampleES": "La tesis doctoral sobrepasa el estado actual de la investigación."
+    },
+    {
+      "word": "informieren",
+      "preposition": "über + Akkusativ",
+      "translation": "informar sobre",
+      "example": "Die Pressestelle informiert über die neuesten wissenschaftlichen Durchbrüche.",
+      "exampleES": "La oficina de prensa informa sobre los últimos avances científicos."
+    },
+    {
+      "word": "sich informieren",
+      "preposition": "über + Akkusativ",
+      "translation": "informarse sobre",
+      "example": "Die Studierenden informieren sich über die Zulassungsvoraussetzungen für das Promotionsstudium.",
+      "exampleES": "Los estudiantes se informan sobre los requisitos de admisión para el doctorado."
+    },
+    {
+      "word": "lachen",
+      "preposition": "über + Akkusativ",
+      "translation": "reírse de",
+      "example": "Über methodische Fehler in der Studie kann man nicht lachen.",
+      "exampleES": "No se puede reír de los errores metodológicos en el estudio."
+    },
+    {
+      "word": "nachdenken",
+      "preposition": "über + Akkusativ",
+      "translation": "reflexionar sobre",
+      "example": "Die Philosophin denkt über die ethischen Implikationen der Künstlichen Intelligenz nach.",
+      "exampleES": "La filósofa reflexiona sobre las implicaciones éticas de la inteligencia artificial."
+    },
+    {
+      "word": "sprechen",
+      "preposition": "über + Akkusativ",
+      "translation": "hablar sobre",
+      "example": "Im Kolloquium sprechen wir über die theoretischen Grundlagen der Forschungsarbeit.",
+      "exampleES": "En el coloquio hablamos sobre los fundamentos teóricos del trabajo de investigación."
+    },
+    {
+      "word": "verfügen",
+      "preposition": "über + Akkusativ",
+      "translation": "disponer de",
+      "example": "Exzellenzuniversitäten verfügen über umfangreiche Forschungsressourcen.",
+      "exampleES": "Las universidades de excelencia disponen de amplios recursos de investigación."
+    },
+    {
+      "word": "verhandeln",
+      "preposition": "über + Akkusativ",
+      "translation": "negociar sobre",
+      "example": "Die Gremien verhandeln über die Neustrukturierung des Fachbereichs.",
+      "exampleES": "Los comités negocian sobre la reestructuración del departamento."
+    },
+    {
+      "word": "sich beschäftigen",
+      "preposition": "mit + Dativ",
+      "translation": "ocuparse de",
+      "example": "Die Arbeitsgruppe beschäftigt sich mit den Auswirkungen des Klimawandels.",
+      "exampleES": "El grupo de trabajo se ocupa de los efectos del cambio climático."
+    },
+    {
+      "word": "sich unterhalten",
+      "preposition": "mit + Dativ (über + Akkusativ)",
+      "translation": "conversar con (sobre)",
+      "example": "Die Wissenschaftler unterhalten sich mit Kollegen über aktuelle Forschungstrends.",
+      "exampleES": "Los científicos conversan con colegas sobre tendencias de investigación actuales."
+    },
+    {
+      "word": "sich begnügen",
+      "preposition": "mit + Dativ",
+      "translation": "contentarse con",
+      "example": "Die Forschungsgruppe begnügt sich nicht mit oberflächlichen Erklärungen.",
+      "exampleES": "El grupo de investigación no se contenta con explicaciones superficiales."
+    },
+    {
+      "word": "anfangen",
+      "preposition": "mit + Dativ",
+      "translation": "empezar con",
+      "example": "Das Seminar fängt mit einer theoretischen Einführung an.",
+      "exampleES": "El seminario empieza con una introducción teórica."
+    },
+    {
+      "word": "aufhören",
+      "preposition": "mit + Dativ",
+      "translation": "terminar con",
+      "example": "Die Universität hört mit der Verwendung veralteter Lehrmethoden auf.",
+      "exampleES": "La universidad termina con el uso de métodos de enseñanza obsoletos."
+    },
+    {
+      "word": "sich befassen",
+      "preposition": "mit + Dativ",
+      "translation": "ocuparse de",
+      "example": "Die Dissertation befasst sich mit den sozioökonomischen Auswirkungen der Digitalisierung.",
+      "exampleES": "La tesis doctoral se ocupa de los efectos socioeconómicos de la digitalización."
+    },
+    {
+      "word": "beginnen",
+      "preposition": "mit + Dativ",
+      "translation": "comenzar con",
+      "example": "Die Vorlesung beginnt mit einer Übersicht über den aktuellen Forschungsstand.",
+      "exampleES": "La clase magistral comienza con una visión general del estado actual de la investigación."
+    },
+    {
+      "word": "handeln",
+      "preposition": "mit + Dativ",
+      "translation": "tratar de; comerciar con",
+      "example": "Der Vortrag handelt mit den ethischen Implikationen der Genforschung.",
+      "exampleES": "La ponencia trata de las implicaciones éticas de la investigación genética."
+    },
+    {
+      "word": "rechnen",
+      "preposition": "mit + Dativ",
+      "translation": "contar con",
+      "example": "Die Projektleitung rechnet mit einer Verlängerung der Forschungsphase.",
+      "exampleES": "La dirección del proyecto cuenta con una prolongación de la fase de investigación."
+    },
+    {
+      "word": "übereinstimmen",
+      "preposition": "mit + Dativ",
+      "translation": "coincidir con",
+      "example": "Die empirischen Befunde stimmen mit den theoretischen Vorhersagen überein.",
+      "exampleES": "Los hallazgos empíricos coinciden con las predicciones teóricas."
+    },
+    {
+      "word": "verbinden",
+      "preposition": "mit + Dativ",
+      "translation": "conectar con; combinar con",
+      "example": "Die Studie verbindet quantitative Methoden mit qualitativen Ansätzen.",
+      "exampleES": "El estudio combina métodos cuantitativos con enfoques cualitativos."
+    },
+    {
+      "word": "vergleichen",
+      "preposition": "mit + Dativ",
+      "translation": "comparar con",
+      "example": "Die Forscherin vergleicht die deutschen Bildungssysteme mit den skandinavischen Modellen.",
+      "exampleES": "La investigadora compara los sistemas educativos alemanes con los modelos escandinavos."
+    },
+    {
+      "word": "versorgen",
+      "preposition": "mit + Dativ",
+      "translation": "abastecer con, proveer de",
+      "example": "Die Bibliothek versorgt die Forschenden mit aktueller Fachliteratur.",
+      "exampleES": "La biblioteca provee a los investigadores de literatura especializada actual."
+    },
+    {
+      "word": "verwechseln",
+      "preposition": "mit + Dativ",
+      "translation": "confundir con",
+      "example": "Man darf Korrelation nicht mit Kausalität verwechseln.",
+      "exampleES": "No se debe confundir correlación con causalidad."
+    },
+    {
+      "word": "zusammenhängen",
+      "preposition": "mit + Dativ",
+      "translation": "estar relacionado con",
+      "example": "Die Forschungsergebnisse hängen eng mit den gesellschaftlichen Rahmenbedingungen zusammen.",
+      "exampleES": "Los resultados de investigación están estrechamente relacionados con las condiciones marco sociales."
+    },
+    {
+      "word": "zusammenstoßen",
+      "preposition": "mit + Dativ",
+      "translation": "chocar con",
+      "example": "Die neue Theorie stößt mit den etablierten Paradigmen zusammen.",
+      "exampleES": "La nueva teoría choca con los paradigmas establecidos."
+    },
+    {
+      "word": "beitragen",
+      "preposition": "zu + Dativ",
+      "translation": "contribuir a",
+      "example": "Innovative Forschungsmethoden tragen zur Weiterentwicklung der Wissenschaft bei.",
+      "exampleES": "Los métodos de investigación innovadores contribuyen al desarrollo de la ciencia."
+    },
+    {
+      "word": "führen",
+      "preposition": "zu + Dativ",
+      "translation": "conducir a",
+      "example": "Eine gründliche Literaturrecherche führt zu fundierten wissenschaftlichen Erkenntnissen.",
+      "exampleES": "Una búsqueda bibliográfica minuciosa conduce a conocimientos científicos fundamentados."
+    },
+    {
+      "word": "gratulieren",
+      "preposition": "zu + Dativ",
+      "translation": "felicitar por",
+      "example": "Die Fakultät gratuliert der Absolventin zu ihrer herausragenden Dissertation.",
+      "exampleES": "La facultad felicita a la graduada por su sobresaliente tesis doctoral."
+    },
+    {
+      "word": "gehören",
+      "preposition": "zu + Dativ",
+      "translation": "pertenecer a",
+      "example": "Die Literaturrecherche gehört zu den grundlegenden Aufgaben wissenschaftlichen Arbeitens.",
+      "exampleES": "La búsqueda bibliográfica pertenece a las tareas fundamentales del trabajo científico."
+    },
+    {
+      "word": "sich eignen",
+      "preposition": "zu + Dativ / für + Akkusativ",
+      "translation": "servir para",
+      "example": "Diese Methode eignet sich besonders zur Analyse komplexer Datenstrukturen.",
+      "exampleES": "Este método sirve especialmente para el análisis de estructuras de datos complejas."
+    },
+    {
+      "word": "sich entschließen",
+      "preposition": "zu + Dativ",
+      "translation": "decidirse a",
+      "example": "Die Forscherin entschloss sich zu einer Neuausrichtung ihres Forschungsprojekts.",
+      "exampleES": "La investigadora se decidió a una reorientación de su proyecto de investigación."
+    },
+    {
+      "word": "rechnen",
+      "preposition": "zu + Dativ",
+      "translation": "contar entre",
+      "example": "Man rechnet Einstein zu den bedeutendsten Physikern des 20. Jahrhunderts.",
+      "exampleES": "Se cuenta a Einstein entre los físicos más importantes del siglo XX."
+    },
+    {
+      "word": "überreden",
+      "preposition": "zu + Dativ",
+      "translation": "convencer de, persuadir a",
+      "example": "Die Professorin überredete die Studentin zur Teilnahme am Forschungsprojekt.",
+      "exampleES": "La profesora convenció a la estudiante de participar en el proyecto de investigación."
+    },
+    {
+      "word": "werden",
+      "preposition": "zu + Dativ",
+      "translation": "convertirse en",
+      "example": "Unter hohem Druck wird Kohlenstoff zu Diamant.",
+      "exampleES": "Bajo alta presión el carbono se convierte en diamante."
+    },
+    {
+      "word": "zählen",
+      "preposition": "zu + Dativ",
+      "translation": "contar entre",
+      "example": "Diese Publikation zählt zu den meistzitierten Werken der Soziologie.",
+      "exampleES": "Esta publicación cuenta entre las obras más citadas de la sociología."
+    },
+    {
+      "word": "kommen",
+      "preposition": "zu + Dativ",
+      "translation": "llegar a",
+      "example": "Nach der Konferenz kam es zu einer intensiven Fachdiskussion.",
+      "exampleES": "Después de la conferencia se llegó a una intensa discusión especializada."
+    },
+    {
+      "word": "abhängen",
+      "preposition": "von + Dativ",
+      "translation": "depender de",
+      "example": "Der Erfolg der Studie hängt von der Qualität der Datenerhebung ab.",
+      "exampleES": "El éxito del estudio depende de la calidad de la recopilación de datos."
+    },
+    {
+      "word": "ausgehen",
+      "preposition": "von + Dativ",
+      "translation": "partir de",
+      "example": "Die Theorie geht von der Annahme aus, dass alle Menschen rational handeln.",
+      "exampleES": "La teoría parte del supuesto de que todas las personas actúan racionalmente."
+    },
+    {
+      "word": "berichten",
+      "preposition": "von + Dativ",
+      "translation": "informar de",
+      "example": "Die Forscherin berichtet von ihren Erfahrungen im Feldforschungsprojekt.",
+      "exampleES": "La investigadora informa de sus experiencias en el proyecto de investigación de campo."
+    },
+    {
+      "word": "profitieren",
+      "preposition": "von + Dativ",
+      "translation": "beneficiarse de",
+      "example": "Die Studierenden profitieren von der interdisziplinären Ausrichtung des Studiengangs.",
+      "exampleES": "Los estudiantes se benefician de la orientación interdisciplinaria del programa de estudios."
+    },
+    {
+      "word": "absehen",
+      "preposition": "von + Dativ",
+      "translation": "prescindir de",
+      "example": "Wenn man von den methodischen Schwächen absieht, ist die Studie wertvoll.",
+      "exampleES": "Si se prescinde de las debilidades metodológicas, el estudio es valioso."
+    },
+    {
+      "word": "trennen",
+      "preposition": "von + Dativ",
+      "translation": "separar de",
+      "example": "Man muss Korrelation von Kausalität trennen.",
+      "exampleES": "Hay que separar correlación de causalidad."
+    },
+    {
+      "word": "unterscheiden",
+      "preposition": "von + Dativ",
+      "translation": "distinguir de",
+      "example": "Man muss qualitative Forschung von quantitativen Ansätzen unterscheiden.",
+      "exampleES": "Hay que distinguir la investigación cualitativa de los enfoques cuantitativos."
+    },
+    {
+      "word": "sich verabschieden",
+      "preposition": "von + Dativ",
+      "translation": "despedirse de",
+      "example": "Die Professorin verabschiedete sich von den Absolventinnen und Absolventen.",
+      "exampleES": "La profesora se despidió de los graduados y graduadas."
+    },
+    {
+      "word": "sich bewerben",
+      "preposition": "für + Akkusativ",
+      "translation": "postularse para",
+      "example": "Die Doktorandin bewirbt sich für ein Forschungsstipendium.",
+      "exampleES": "La doctoranda se postula para una beca de investigación."
+    },
+    {
+      "word": "sich entscheiden",
+      "preposition": "für + Akkusativ / gegen + Akkusativ",
+      "translation": "decidirse por / contra",
+      "example": "Die Kommission entschied sich für die Förderung des innovativen Projekts.",
+      "exampleES": "La comisión se decidió por el fomento del proyecto innovador."
+    },
+    {
+      "word": "sorgen",
+      "preposition": "für + Akkusativ",
+      "translation": "preocuparse por, cuidar de",
+      "example": "Die Universität sorgt für optimale Forschungsbedingungen.",
+      "exampleES": "La universidad cuida de condiciones óptimas de investigación."
+    },
+    {
+      "word": "sich interessieren",
+      "preposition": "für + Akkusativ",
+      "translation": "interesarse por",
+      "example": "Viele Studierende interessieren sich für interdisziplinäre Forschungsansätze.",
+      "exampleES": "Muchos estudiantes se interesan por enfoques de investigación interdisciplinarios."
+    },
+    {
+      "word": "danken",
+      "preposition": "für + Akkusativ",
+      "translation": "agradecer por",
+      "example": "Die Forscherin dankt der Stiftung für die finanzielle Unterstützung.",
+      "exampleES": "La investigadora agradece a la fundación por el apoyo financiero."
+    },
+    {
+      "word": "eintreten",
+      "preposition": "für + Akkusativ",
+      "translation": "defender, abogar por",
+      "example": "Die Wissenschaftler treten für die Freiheit der Forschung ein.",
+      "exampleES": "Los científicos defienden la libertad de investigación."
+    },
+    {
+      "word": "sich entschuldigen",
+      "preposition": "für + Akkusativ (bei + Dativ)",
+      "translation": "disculparse por (ante)",
+      "example": "Der Dozent entschuldigt sich bei den Studierenden für die Verspätung.",
+      "exampleES": "El docente se disculpa ante los estudiantes por el retraso."
+    },
+    {
+      "word": "gelten",
+      "preposition": "für + Akkusativ",
+      "translation": "valer para, ser válido para",
+      "example": "Diese Regelung gilt für alle Promovierenden der Fakultät.",
+      "exampleES": "Esta regulación es válida para todos los doctorandos de la facultad."
+    },
+    {
+      "word": "halten",
+      "preposition": "für + Akkusativ",
+      "translation": "considerar, tomar por",
+      "example": "Die Gutachter halten die Methodik für wissenschaftlich fundiert.",
+      "exampleES": "Los evaluadores consideran la metodología científicamente fundamentada."
+    },
+    {
+      "word": "kämpfen",
+      "preposition": "für + Akkusativ / gegen + Akkusativ",
+      "translation": "luchar por / contra",
+      "example": "Die Studierendenvertretung kämpft für bessere Studienbedingungen.",
+      "exampleES": "La representación estudiantil lucha por mejores condiciones de estudio."
+    },
+    {
+      "word": "sich kümmern",
+      "preposition": "um + Akkusativ",
+      "translation": "ocuparse de, preocuparse por",
+      "example": "Die Betreuerin kümmert sich intensiv um die Doktoranden.",
+      "exampleES": "La supervisora se ocupa intensivamente de los doctorandos."
+    },
+    {
+      "word": "sich bemühen",
+      "preposition": "um + Akkusativ",
+      "translation": "esforzarse por",
+      "example": "Das Institut bemüht sich um eine Verbesserung der Forschungsinfrastruktur.",
+      "exampleES": "El instituto se esfuerza por una mejora de la infraestructura de investigación."
+    },
+    {
+      "word": "bitten",
+      "preposition": "um + Akkusativ",
+      "translation": "pedir",
+      "example": "Die Forschungsgruppe bittet um eine Verlängerung der Projektlaufzeit.",
+      "exampleES": "El grupo de investigación pide una prolongación del período del proyecto."
+    },
+    {
+      "word": "trauern",
+      "preposition": "um + Akkusativ",
+      "translation": "estar de luto por",
+      "example": "Die Fakultät trauert um den verstorbenen Emeritus.",
+      "exampleES": "La facultad está de luto por el emérito fallecido."
+    },
+    {
+      "word": "gehen",
+      "preposition": "um + Akkusativ",
+      "translation": "tratarse de",
+      "example": "In der Dissertation geht es um die Auswirkungen der Globalisierung.",
+      "exampleES": "En la tesis doctoral se trata de los efectos de la globalización."
+    },
+    {
+      "word": "sich handeln",
+      "preposition": "um + Akkusativ (bei + Dativ)",
+      "translation": "tratarse de",
+      "example": "Bei dieser Publikation handelt es sich um eine Grundlagenarbeit.",
+      "exampleES": "En esta publicación se trata de un trabajo fundamental."
+    },
+    {
+      "word": "sich erkundigen",
+      "preposition": "nach + Dativ",
+      "translation": "informarse sobre",
+      "example": "Die Studierenden erkundigen sich nach den Zulassungsvoraussetzungen.",
+      "exampleES": "Los estudiantes se informan sobre los requisitos de admisión."
+    },
+    {
+      "word": "fragen",
+      "preposition": "nach + Dativ",
+      "translation": "preguntar por",
+      "example": "Der Doktorand fragt nach der Meinung seiner Betreuerin.",
+      "exampleES": "El doctorando pregunta por la opinión de su supervisora."
+    },
+    {
+      "word": "suchen",
+      "preposition": "nach + Dativ",
+      "translation": "buscar",
+      "example": "Die Wissenschaftler suchen nach den Ursachen des Phänomens.",
+      "exampleES": "Los científicos buscan las causas del fenómeno."
+    },
+    {
+      "word": "sich richten",
+      "preposition": "nach + Dativ",
+      "translation": "regirse por",
+      "example": "Die Bewertung richtet sich nach transparenten Kriterien.",
+      "exampleES": "La evaluación se rige por criterios transparentes."
+    },
+    {
+      "word": "ableiten",
+      "preposition": "aus + Dativ",
+      "translation": "derivar de",
+      "example": "Man kann diese Hypothese aus den empirischen Befunden ableiten.",
+      "exampleES": "Se puede derivar esta hipótesis de los hallazgos empíricos."
+    },
+    {
+      "word": "bestehen",
+      "preposition": "aus + Dativ",
+      "translation": "consistir en",
+      "example": "Die Forschungsgruppe besteht aus Wissenschaftlern verschiedener Disziplinen.",
+      "exampleES": "El grupo de investigación consiste en científicos de diversas disciplinas."
+    },
+    {
+      "word": "entstehen",
+      "preposition": "aus + Dativ",
+      "translation": "surgir de",
+      "example": "Aus der Kooperation entstand eine innovative Forschungsmethode.",
+      "exampleES": "De la cooperación surgió un método de investigación innovador."
+    },
+    {
+      "word": "sich ergeben",
+      "preposition": "aus + Dativ",
+      "translation": "resultar de",
+      "example": "Aus den Daten ergibt sich, dass die Hypothese bestätigt wird.",
+      "exampleES": "De los datos resulta que la hipótesis se confirma."
+    },
+    {
+      "word": "folgen",
+      "preposition": "aus + Dativ",
+      "translation": "seguirse de",
+      "example": "Aus den Prämissen folgt logisch, dass die Schlussfolgerung korrekt ist.",
+      "exampleES": "De las premisas se sigue lógicamente que la conclusión es correcta."
+    },
+    {
+      "word": "sich bedanken",
+      "preposition": "bei + Dativ (für + Akkusativ)",
+      "translation": "agradecer a (por)",
+      "example": "Die Absolventin bedankt sich bei ihrer Betreuerin für die Unterstützung.",
+      "exampleES": "La graduada agradece a su supervisora por el apoyo."
+    },
+    {
+      "word": "ersetzen",
+      "preposition": "durch + Akkusativ",
+      "translation": "reemplazar por",
+      "example": "Traditionelle Lehrmethoden werden zunehmend durch digitale Formate ersetzt.",
+      "exampleES": "Los métodos de enseñanza tradicionales son reemplazados cada vez más por formatos digitales."
+    },
+    {
+      "word": "protestieren",
+      "preposition": "gegen + Akkusativ",
+      "translation": "protestar contra",
+      "example": "Die Studierenden protestieren gegen die Studiengebühren.",
+      "exampleES": "Los estudiantes protestan contra las tasas de matrícula."
+    },
+    {
+      "word": "verstoßen",
+      "preposition": "gegen + Akkusativ",
+      "translation": "infringir, violar",
+      "example": "Wer plagiiert, verstößt gegen die Regeln guter wissenschaftlicher Praxis.",
+      "exampleES": "Quien plagia infringe las reglas de buena práctica científica."
+    },
+    {
+      "word": "sich wenden",
+      "preposition": "gegen + Akkusativ",
+      "translation": "oponerse a",
+      "example": "Die Fachgesellschaft wendet sich gegen unwissenschaftliche Methoden.",
+      "exampleES": "La sociedad especializada se opone a métodos no científicos."
+    },
+    {
+      "word": "eindringen",
+      "preposition": "in + Akkusativ",
+      "translation": "penetrar en",
+      "example": "Die Forschung dringt in bisher unerforschte Bereiche ein.",
+      "exampleES": "La investigación penetra en áreas hasta ahora inexploradas."
+    },
+    {
+      "word": "sich irren",
+      "preposition": "in + Dativ",
+      "translation": "equivocarse en",
+      "example": "Der Wissenschaftler irrte sich in seiner ursprünglichen Annahme.",
+      "exampleES": "El científico se equivocó en su suposición original."
+    },
+    {
+      "word": "leiden",
+      "preposition": "unter + Dativ",
+      "translation": "sufrir de/por",
+      "example": "Die Forschungsqualität leidet unter den knappen finanziellen Ressourcen.",
+      "exampleES": "La calidad de investigación sufre por los escasos recursos financieros."
+    },
+    {
+      "word": "verstehen",
+      "preposition": "unter + Dativ",
+      "translation": "entender por",
+      "example": "Unter Wissenschaftlichkeit versteht man die Einhaltung methodischer Standards.",
+      "exampleES": "Por cientificidad se entiende el cumplimiento de estándares metodológicos."
+    },
+    {
+      "word": "fliehen",
+      "preposition": "vor + Dativ",
+      "translation": "huir de",
+      "example": "Viele Wissenschaftler flohen vor dem totalitären Regime.",
+      "exampleES": "Muchos científicos huyeron del régimen totalitario."
+    },
+    {
+      "word": "sich fürchten",
+      "preposition": "vor + Dativ",
+      "translation": "temer",
+      "example": "Einige Forscher fürchten sich vor den ethischen Konsequenzen ihrer Arbeit.",
+      "exampleES": "Algunos investigadores temen las consecuencias éticas de su trabajo."
+    },
+    {
+      "word": "schützen",
+      "preposition": "vor + Dativ",
+      "translation": "proteger de",
+      "example": "Datenschutzrichtlinien schützen Probanden vor Missbrauch ihrer Daten.",
+      "exampleES": "Las directrices de protección de datos protegen a los participantes del abuso de sus datos."
+    },
+    {
+      "word": "warnen",
+      "preposition": "vor + Dativ",
+      "translation": "advertir de",
+      "example": "Experten warnen vor den Risiken unkritischer Dateninterpretation.",
+      "exampleES": "Los expertos advierten de los riesgos de la interpretación acrítica de datos."
+    },
+    {
+      "word": "unterscheiden",
+      "preposition": "zwischen + Dativ",
+      "translation": "distinguir entre",
+      "example": "Man muss zwischen Korrelation und Kausalität unterscheiden.",
+      "exampleES": "Hay que distinguir entre correlación y causalidad."
+    },
+    {
+      "word": "entsprechen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "corresponder a",
+      "example": "Die Forschungsergebnisse entsprechen den wissenschaftlichen Erwartungen.",
+      "exampleES": "Los resultados de investigación corresponden a las expectativas científicas."
+    },
+    {
+      "word": "fehlen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "faltar a",
+      "example": "Dem Forschungsinstitut fehlen die finanziellen Mittel für Grundlagenforschung.",
+      "exampleES": "Al instituto de investigación le faltan los medios financieros para investigación básica."
+    },
+    {
+      "word": "helfen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "ayudar a",
+      "example": "Die Methodenberatung hilft den Doktoranden bei der Datenanalyse.",
+      "exampleES": "La asesoría metodológica ayuda a los doctorandos en el análisis de datos."
+    },
+    {
+      "word": "vertrauen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "confiar en",
+      "example": "Die Forschungsgemeinschaft vertraut den Ergebnissen peer-reviewter Studien.",
+      "exampleES": "La comunidad investigadora confía en los resultados de estudios revisados por pares."
+    },
+    {
+      "word": "abgewöhnen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "desacostumbrar",
+      "example": "Die Studierenden müssen sich oberflächliches Lesen abgewöhnen.",
+      "exampleES": "Los estudiantes deben desacostumbrarse de la lectura superficial."
+    },
+    {
+      "word": "angewöhnen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "acostumbrar",
+      "example": "Man sollte sich systematisches Arbeiten angewöhnen.",
+      "exampleES": "Uno debería acostumbrarse al trabajo sistemático."
+    },
+    {
+      "word": "angehören",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "pertenecer a",
+      "example": "Die Wissenschaftlerin gehört mehreren Fachgesellschaften an.",
+      "exampleES": "La científica pertenece a varias sociedades especializadas."
+    },
+    {
+      "word": "anvertrauen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "confiar a",
+      "example": "Der Doktorand vertraut seiner Betreuerin seine methodischen Zweifel an.",
+      "exampleES": "El doctorando confía sus dudas metodológicas a su supervisora."
+    },
+    {
+      "word": "auffallen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "llamar la atención a",
+      "example": "Den Gutachtern fällt die innovative Methodik besonders auf.",
+      "exampleES": "A los evaluadores les llama especialmente la atención la metodología innovadora."
+    },
+    {
+      "word": "befehlen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "ordenar a",
+      "example": "Die Ethikkommission befiehlt den Forschern die Einhaltung der Richtlinien.",
+      "exampleES": "El comité de ética ordena a los investigadores el cumplimiento de las directrices."
+    },
+    {
+      "word": "beibringen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "enseñar a",
+      "example": "Die Dozentin bringt den Studierenden wissenschaftliche Arbeitsmethoden bei.",
+      "exampleES": "La docente enseña a los estudiantes métodos de trabajo científico."
+    },
+    {
+      "word": "beitreten",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "adherirse a",
+      "example": "Das Institut tritt dem internationalen Forschungsnetzwerk bei.",
+      "exampleES": "El instituto se adhiere a la red de investigación internacional."
+    },
+    {
+      "word": "bekommen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "sentar bien/mal a",
+      "example": "Die intensive Forschungsarbeit ist der Wissenschaftlerin gut bekommen.",
+      "exampleES": "El intenso trabajo de investigación le ha sentado bien a la científica."
+    },
+    {
+      "word": "dienen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "servir a",
+      "example": "Die Grundlagenforschung dient dem wissenschaftlichen Fortschritt.",
+      "exampleES": "La investigación básica sirve al progreso científico."
+    },
+    {
+      "word": "entnehmen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "deducir de",
+      "example": "Den Daten entnimmt man, dass die Hypothese bestätigt wird.",
+      "exampleES": "De los datos se deduce que la hipótesis se confirma."
+    },
+    {
+      "word": "entziehen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "retirar a",
+      "example": "Die Universität entzog dem Wissenschaftler die Lehrbefugnis.",
+      "exampleES": "La universidad retiró al científico la autorización docente."
+    },
+    {
+      "word": "ermöglichen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "posibilitar a",
+      "example": "Das Stipendium ermöglicht der Doktorandin einen Forschungsaufenthalt.",
+      "exampleES": "La beca posibilita a la doctoranda una estancia de investigación."
+    },
+    {
+      "word": "gegenüberstehen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "estar frente a",
+      "example": "Den theoretischen Annahmen stehen empirische Befunde gegenüber.",
+      "exampleES": "Frente a los supuestos teóricos están los hallazgos empíricos."
+    },
+    {
+      "word": "gleichen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "parecerse a",
+      "example": "Die neue Studie gleicht methodisch den früheren Untersuchungen.",
+      "exampleES": "El nuevo estudio se parece metodológicamente a las investigaciones anteriores."
+    },
+    {
+      "word": "hinzufügen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "añadir a",
+      "example": "Die Forscherin fügt der Diskussion neue Perspektiven hinzu.",
+      "exampleES": "La investigadora añade nuevas perspectivas a la discusión."
+    },
+    {
+      "word": "leidtun",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "lamentar",
+      "example": "Es tut der Fakultät leid, dass die Stelle nicht besetzt werden konnte.",
+      "exampleES": "La facultad lamenta que el puesto no haya podido ser ocupado."
+    },
+    {
+      "word": "passen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "convenir a",
+      "example": "Der Termin passt den meisten Teilnehmern nicht.",
+      "exampleES": "La fecha no conviene a la mayoría de los participantes."
+    },
+    {
+      "word": "schulden",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "deber a",
+      "example": "Die Wissenschaft schuldet der Gesellschaft Transparenz.",
+      "exampleES": "La ciencia debe transparencia a la sociedad."
+    },
+    {
+      "word": "überlassen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "dejar a",
+      "example": "Die Professorin überlässt den Studierenden die Themenwahl.",
+      "exampleES": "La profesora deja a los estudiantes la elección del tema."
+    },
+    {
+      "word": "unterliegen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "estar sujeto a",
+      "example": "Forschungsdaten unterliegen strengen Datenschutzbestimmungen.",
+      "exampleES": "Los datos de investigación están sujetos a estrictas disposiciones de protección de datos."
+    },
+    {
+      "word": "verdanken",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "deber a",
+      "example": "Die Wissenschaft verdankt der Aufklärung grundlegende Prinzipien.",
+      "exampleES": "La ciencia debe principios fundamentales a la Ilustración."
+    },
+    {
+      "word": "vorenthalten",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "ocultar a",
+      "example": "Man darf der Öffentlichkeit wichtige Forschungsergebnisse nicht vorenthalten.",
+      "exampleES": "No se deben ocultar al público resultados de investigación importantes."
+    },
+    {
+      "word": "widersprechen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "contradecir a",
+      "example": "Die neuen Befunde widersprechen den bisherigen Annahmen.",
+      "exampleES": "Los nuevos hallazgos contradicen los supuestos anteriores."
+    },
+    {
+      "word": "zuordnen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "asignar a",
+      "example": "Die Probanden ordnen den Begriffen bestimmte Kategorien zu.",
+      "exampleES": "Los participantes asignan categorías específicas a los conceptos."
+    },
+    {
+      "word": "zutrauen",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "creer capaz a",
+      "example": "Die Betreuerin traut der Doktorandin eine exzellente Arbeit zu.",
+      "exampleES": "La supervisora cree capaz a la doctoranda de un trabajo excelente."
+    },
+    {
+      "word": "sich zuwenden",
+      "preposition": "Dativ (ohne Präposition)",
+      "translation": "dedicarse a",
+      "example": "Die Forschungsgruppe wendet sich einem neuen Themenfeld zu.",
+      "exampleES": "El grupo de investigación se dedica a un nuevo campo temático."
+    },
+    {
+      "word": "bedürfen",
+      "preposition": "Genitiv (ohne Präposition)",
+      "translation": "necesitar, requerir",
+      "example": "Die komplexe Methodik bedarf einer ausführlichen Erklärung.",
+      "exampleES": "La metodología compleja requiere una explicación detallada."
+    },
+    {
+      "word": "sich enthalten",
+      "preposition": "Genitiv (ohne Präposition)",
+      "translation": "abstenerse de",
+      "example": "Die Gutachterin enthält sich jeder voreiligen Bewertung.",
+      "exampleES": "La evaluadora se abstiene de toda valoración precipitada."
+    },
+    {
+      "word": "sich schämen",
+      "preposition": "Genitiv (ohne Präposition)",
+      "translation": "avergonzarse de",
+      "example": "Der Wissenschaftler schämt sich seiner methodischen Fehler.",
+      "exampleES": "El científico se avergüenza de sus errores metodológicos."
+    },
+    {
+      "word": "gedenken",
+      "preposition": "Genitiv (ohne Präposition)",
+      "translation": "conmemorar",
+      "example": "Die Universität gedenkt der verstorbenen Wissenschaftler.",
+      "exampleES": "La universidad conmemora a los científicos fallecidos."
+    },
+    {
+      "word": "beschuldigen",
+      "preposition": "Genitiv (ohne Präposition)",
+      "translation": "acusar de",
+      "example": "Man beschuldigt den Forscher des wissenschaftlichen Fehlverhaltens.",
+      "exampleES": "Se acusa al investigador de mala conducta científica."
+    },
+    {
+      "word": "bezichtigen",
+      "preposition": "Genitiv (ohne Präposition)",
+      "translation": "acusar de",
+      "example": "Die Kommission bezichtigt ihn des Plagiats.",
+      "exampleES": "La comisión lo acusa de plagio."
+    },
+    {
+      "word": "entbehren",
+      "preposition": "Genitiv (ohne Präposition)",
+      "translation": "carecer de",
+      "example": "Die Argumentation entbehrt jeder wissenschaftlichen Grundlage.",
+      "exampleES": "La argumentación carece de toda base científica."
+    },
+    {
+      "word": "sich erfreuen",
+      "preposition": "Genitiv (ohne Präposition)",
+      "translation": "gozar de",
+      "example": "Die Publikation erfreut sich großer Beliebtheit in der Fachwelt.",
+      "exampleES": "La publicación goza de gran popularidad en el mundo especializado."
+    },
+    {
+      "word": "überführen",
+      "preposition": "Genitiv (ohne Präposition)",
+      "translation": "demostrar culpabilidad de",
+      "example": "Man konnte den Wissenschaftler der Datenfälschung überführen.",
+      "exampleES": "Se pudo demostrar la culpabilidad del científico de falsificación de datos."
+    },
+    {
+      "word": "verdächtigen",
+      "preposition": "Genitiv (ohne Präposition)",
+      "translation": "sospechar de",
+      "example": "Die Kommission verdächtigt mehrere Forscher des Betrugs.",
+      "exampleES": "La comisión sospecha de varios investigadores de fraude."
+    },
+    {
+      "word": "sich unterscheiden",
+      "preposition": "in + Dativ / durch + Akkusativ",
+      "translation": "diferenciarse en / por",
+      "example": "Die beiden Forschungsansätze unterscheiden sich grundlegend in ihrer Methodik.",
+      "exampleES": "Los dos enfoques de investigación se diferencian fundamentalmente en su metodología."
+    },
+    {
+      "word": "sein",
+      "preposition": "Nominativ-Ergänzung",
+      "translation": "ser",
+      "example": "Die Dissertation ist eine umfassende Analyse des Themas.",
+      "exampleES": "La tesis doctoral es un análisis exhaustivo del tema."
+    },
+    {
+      "word": "gelten als",
+      "preposition": "Nominativ-Ergänzung",
+      "translation": "considerarse como",
+      "example": "Diese Methode gilt als besonders zuverlässig in der empirischen Forschung.",
+      "exampleES": "Este método se considera especialmente fiable en la investigación empírica."
+    },
+    {
+      "word": "sich erweisen als",
+      "preposition": "Nominativ-Ergänzung",
+      "translation": "resultar ser",
+      "example": "Die Hypothese erwies sich als korrekt.",
+      "exampleES": "La hipótesis resultó ser correcta."
+    },
+    {
+      "word": "betrachten als",
+      "preposition": "Akkusativ-Ergänzung",
+      "translation": "considerar como",
+      "example": "Man betrachtet Einstein als den bedeutendsten Physiker des 20. Jahrhunderts.",
+      "exampleES": "Se considera a Einstein como el físico más importante del siglo XX."
+    },
+    {
+      "word": "behandeln wie",
+      "preposition": "Akkusativ-Ergänzung",
+      "translation": "tratar como",
+      "example": "Die Ethikkommission behandelt alle Anträge wie gleichwertige Fälle.",
+      "exampleES": "El comité de ética trata todas las solicitudes como casos equivalentes."
+    },
+    {
+      "word": "nennen",
+      "preposition": "Akkusativ-Ergänzung",
+      "translation": "llamar, denominar",
+      "example": "Man nennt diese Methode die qualitative Inhaltsanalyse.",
+      "exampleES": "Se denomina este método el análisis de contenido cualitativo."
+    }
+  ]
+}

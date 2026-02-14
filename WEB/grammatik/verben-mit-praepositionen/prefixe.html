@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <style>html,body{background:#12110f}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>TELC Grammatik – Präfixe im Überblick</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .prefix-table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin: 20px 0; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .prefix-table th, .prefix-table td { 
+      padding: 12px 16px; 
+      text-align: left; 
+      border: 1px solid var(--line); 
+    }
+    .prefix-table th { 
+      background: var(--surface-200); 
+      font-weight: 600; 
+      font-size: 0.95em;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .prefix-table td:first-child { 
+      font-weight: 600; 
+      color: var(--accent);
+      font-family: 'Courier New', monospace;
+    }
+    .prefix-table tbody tr:hover {
+      background: var(--surface-100);
+    }
+    .doc-relaxed h2 { 
+      margin-top: 2em; 
+      margin-bottom: 0.75em;
+      padding-bottom: 0.5em;
+      border-bottom: 2px solid var(--line);
+    }
+    .doc-relaxed h3 { 
+      margin-top: 2em; 
+      margin-bottom: 0.75em; 
+      color: var(--accent);
+    }
+    .doc-relaxed ul { 
+      margin: 1em 0 1.5em 1.5em; 
+      line-height: 1.8;
+    }
+    .doc-relaxed ul li {
+      margin-bottom: 0.5em;
+    }
+    .doc-relaxed .lead + .section { 
+      margin-top: 32px; 
+    }
+    .info-box {
+      background: var(--surface-100);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .info-box strong {
+      color: var(--accent);
+    }
+    .prefix-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--bg);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      font-weight: 600;
+      margin-right: 4px;
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    @media (max-width: 768px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .comparison-card {
+      background: var(--surface-100);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+    }
+    .comparison-card h4 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+    
+    /* Modal para verbos */
+    .verb-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--surface-100);
+      border: 2px solid var(--accent);
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 500px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+      z-index: 10000;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    
+    .verb-modal.active {
+      display: block;
+      animation: modalFadeIn 0.2s ease-out;
+    }
+    
+    @keyframes modalFadeIn {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -48%);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+    
+    .verb-modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+    }
+    
+    .verb-modal-overlay.active {
+      display: block;
+    }
+    
+    .verb-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--line);
+    }
+    
+    .verb-modal-title {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0;
+    }
+    
+    .verb-modal-close {
+      background: transparent;
+      border: none;
+      font-size: 1.8em;
+      color: var(--text);
+      cursor: pointer;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    
+    .verb-modal-close:hover {
+      background: var(--surface-200);
+      color: var(--accent);
+    }
+    
+    .verb-modal-content {
+      line-height: 1.6;
+    }
+    
+    .verb-modal-section {
+      margin-bottom: 16px;
+    }
+    
+    .verb-modal-label {
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 4px;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .verb-modal-text {
+      margin: 0;
+      padding: 8px 0;
+    }
+    
+    .verb-modal-example {
+      background: var(--surface-200);
+      padding: 12px;
+      border-radius: 6px;
+      border-left: 3px solid var(--accent);
+      margin: 8px 0;
+    }
+    
+    .verb-modal-example-de {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .verb-modal-example-es {
+      color: var(--text-muted);
+      font-style: italic;
+    }
+    
+    .mark.mark-verb {
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .mark.mark-verb:hover {
+      background: var(--accent);
+      color: var(--bg);
+      transform: scale(1.05);
+    }
+  </style>
+  <script>(function(){var p=location.pathname,h=location.hash||"",f=p+h;function gt(x){if(/\/grammatik\//.test(x))return"grammatik";if(/\/texte\//.test(x))return"texte";if(/\/notizen\//.test(x))return"notizen";if(/\/woerter\//.test(x))return"woerter";if(/\/tips\//.test(x))return"tips";return"start"}function it(x,t){if(t==="grammatik")return/\/grammatik\/index\.html$/.test(x)||/\/grammatik\/?$/.test(x);if(t==="texte")return/\/texte\/index\.html$/.test(x)||/\/texte\/?$/.test(x);if(t==="notizen")return/\/notizen\/index\.html$/.test(x)||/\/notizen\/?$/.test(x);if(t==="woerter")return/\/woerter\/index\.html$/.test(x)||/\/woerter\/?$/.test(x);if(t==="tips")return/\/tips\/index\.html$/.test(x)||/\/tips\/?$/.test(x);if(t==="start")return/\/index\.html$/.test(x)&&!/\/grammatik\//.test(x)&&!/\/texte\//.test(x)&&!/\/notizen\//.test(x)&&!/\/woerter\//.test(x)&&!/\/tips\//.test(x);return!1}var k="telc_scroll_"+p;function save(){try{sessionStorage.setItem(k,JSON.stringify({x:scrollX,y:scrollY}));sessionStorage.setItem("telc_last_"+gt(p),f)}catch(e){}}function r(){try{var s=sessionStorage.getItem(k);if(s){var j=JSON.parse(s);scrollTo(j.x,j.y)}}catch(e){}}function go(){requestAnimationFrame(function(){setTimeout(r,50);setTimeout(r,300)})}window.addEventListener("pagehide",save);window.addEventListener("beforeunload",save);document.addEventListener("click",function(e){var a=e.target.closest("a");if(!a||!a.href)return;try{var u=new URL(a.href,location.href);if(u.origin!==location.origin)return;save();var tp=u.pathname,tt=gt(tp);if(!it(tp,tt))return;var ct=gt(p);if(ct===tt){e.preventDefault();if(it(p,ct)){scrollTo(0,0)}else{sessionStorage.setItem("telc_scroll_"+tp,JSON.stringify({x:0,y:0}));location.href=location.origin+tp+(u.hash||"")}return}var last=sessionStorage.getItem("telc_last_"+tt);if(!last||last===(tp+(u.hash||"")))return;e.preventDefault();location.href=location.origin+last}catch(x){}},!0);document.readyState==="complete"?go():window.addEventListener("load",go)})();</script>
+  <script>document.addEventListener("DOMContentLoaded",function(){var t=document.querySelector(".topbar");if(!t)return;var b=document.body;if(sessionStorage.getItem("telc_topbar_hidden")==="1")b.classList.add("topbar-hidden");var c=t.querySelector(".cta"),a=document.createElement("div");a.className="topbar-actions";var h=document.createElement("button"),r=document.createElement("button");h.type="button";h.className="topbar-btn topbar-hide";h.title="Barra minimizar";h.setAttribute("aria-label","Barra minimizar");h.textContent="−";r.type="button";r.className="topbar-btn topbar-reset";r.title="Reiniciar (olvidar posiciones)";r.setAttribute("aria-label","Reiniciar");r.textContent="↺";a.appendChild(h);a.appendChild(r);if(c)a.appendChild(c);t.appendChild(a);var g=document.createElement("div");g.className="topbar-show-trigger";g.title="Mostrar barra";g.textContent="▼";t.parentNode.insertBefore(g,t);h.onclick=function(){b.classList.add("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.setItem("telc_topbar_hidden","1")};g.onclick=function(){b.classList.remove("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.removeItem("telc_topbar_hidden")};r.onclick=function(){var ks=[];for(var i=0;i<sessionStorage.length;i++){var k=sessionStorage.key(i);if(k&&k.indexOf("telc_")===0)ks.push(k)}ks.forEach(function(k){sessionStorage.removeItem(k)});location.reload()}})();</script>
+</head>
+<body class="no-js doc-page">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Grammatik</span>
+    </div>
+    <nav class="nav">
+      <a href="../../index.html#start">Start</a>
+      <a href="../index.html">Grammatik</a>
+      <a href="../../texte/index.html">Texte</a>
+      <a href="../../notizen/index.html">Notizen</a>
+      <a href="../../woerter/index.html">Wörter</a>
+      <a href="../../tips/index.html">Tips</a>
+      <a href="index.html">Präfixverben</a>
+    </nav>
+    <a class="cta" href="../../tips/einfuehrung/index.html">Einstufung</a>
+  </header>
+
+  <main class="doc-main">
+    <section class="doc-hero">
+      <div class="doc-hero-text reveal">
+        <div class="eyebrow">Grammatik – Verbpräfixe</div>
+        <h1>Präfixe im Überblick</h1>
+        <p class="lead">
+          Ein vollständiger Leitfaden zu trennbaren und untrennbaren Präfixen: Bedeutungen, Konnotationen, Betonungsregeln und wichtige Ausnahmen.
+        </p>
+      </div>
+    </section>
+
+    <article class="doc doc-relaxed section">
+      <h2 id="grundlagen">Grundlagen: Trennbar vs. Untrennbar</h2>
+      
+      <div class="comparison-grid">
+        <div class="comparison-card">
+          <h4><span class="prefix-badge">Trennbar</span></h4>
+          <p><strong>Position:</strong> Das Präfix steht im Hauptsatz am Satzende</p>
+          <p><strong>Beispiel:</strong> Ich mache die Heizung <span class="mark mark-verb">an</span>.</p>
+          <p><strong>Betonung:</strong> Auf dem Präfix (<strong>AN</strong>machen)</p>
+          <p><strong>Partizip II:</strong> Mit -ge- zwischen Präfix und Stamm (an<strong>ge</strong>macht)</p>
+          <p><strong>Typische Präfixe:</strong> ab-, an-, auf-, aus-, bei-, ein-, mit-, nach-, vor-, zu-</p>
+        </div>
+        
+        <div class="comparison-card">
+          <h4><span class="prefix-badge">Untrennbar</span></h4>
+          <p><strong>Position:</strong> Das Präfix bleibt immer am Verb</p>
+          <p><strong>Beispiel:</strong> Er <span class="mark mark-verb">besucht</span> mich.</p>
+          <p><strong>Betonung:</strong> Auf der Stammsilbe (be<strong>SU</strong>chen)</p>
+          <p><strong>Partizip II:</strong> Ohne -ge- (besucht, nicht *begesucht)</p>
+          <p><strong>Typische Präfixe:</strong> be-, emp-, ent-, er-, ge-, miss-, ver-, zer-</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>⚠️ Wichtig:</strong> Die Präfixe <strong>durch-, über-, um-, unter-</strong> können je nach Verb trennbar oder untrennbar sein. Bedeutung und Betonung entscheiden über die Trennbarkeit.
+      </div>
+
+      <h2 id="trennbare-praefixe">Trennbare Präfixe – Bedeutungen und Beispiele</h2>
+      
+      <table class="prefix-table">
+        <thead>
+          <tr>
+            <th>Präfix</th>
+            <th>Kernbedeutung</th>
+            <th>Significado central (ES)</th>
+            <th>Konnotation</th>
+            <th>Connotación (ES)</th>
+            <th>Beispiele</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ab-</td>
+            <td>Weg, Trennung</td>
+            <td>Alejamiento, separación</td>
+            <td>Abschluss, Abnahme, Entfernung</td>
+            <td>Conclusión, disminución, distancia</td>
+            <td><span class="mark mark-verb">abfahren</span>, <span class="mark mark-verb">abmachen</span>, <span class="mark mark-verb">abnehmen</span>, <span class="mark mark-verb">abreisen</span></td>
+          </tr>
+          <tr>
+            <td>an-</td>
+            <td>Heran, Kontakt</td>
+            <td>Acercamiento, contacto</td>
+            <td>Beginn, Annäherung, Aktivierung</td>
+            <td>Inicio, aproximación, activación</td>
+            <td><span class="mark mark-verb">anmachen</span>, <span class="mark mark-verb">anfangen</span>, <span class="mark mark-verb">ankommen</span>, <span class="mark mark-verb">anrufen</span></td>
+          </tr>
+          <tr>
+            <td>auf-</td>
+            <td>Nach oben, Öffnung</td>
+            <td>Hacia arriba, apertura</td>
+            <td>Beginn, Öffnen, Aufwärtsbewegung</td>
+            <td>Inicio, abrir, movimiento ascendente</td>
+            <td><span class="mark mark-verb">aufmachen</span>, <span class="mark mark-verb">aufstehen</span>, <span class="mark mark-verb">aufhören</span>, <span class="mark mark-verb">aufwachen</span></td>
+          </tr>
+          <tr>
+            <td>aus-</td>
+            <td>Heraus, Ende</td>
+            <td>Hacia afuera, fin</td>
+            <td>Beendigung, Ausschaltung, Verlassen</td>
+            <td>Terminación, desactivación, abandono</td>
+            <td><span class="mark mark-verb">ausmachen</span>, <span class="mark mark-verb">ausgehen</span>, <span class="mark mark-verb">aussteigen</span>, <span class="mark mark-verb">ausschalten</span></td>
+          </tr>
+          <tr>
+            <td>bei-</td>
+            <td>Dabei, hinzu</td>
+            <td>Junto a, añadido</td>
+            <td>Begleitung, Unterstützung, Zusatz</td>
+            <td>Acompañamiento, apoyo, adición</td>
+            <td><span class="mark mark-verb">beilegen</span>, <span class="mark mark-verb">beitreten</span>, <span class="mark mark-verb">beistehen</span>, <span class="mark mark-verb">beifügen</span></td>
+          </tr>
+          <tr>
+            <td>ein-</td>
+            <td>Hinein, Einschluss</td>
+            <td>Hacia adentro, inclusión</td>
+            <td>Eintritt, Aktivierung, Einbeziehung</td>
+            <td>Entrada, activación, inclusión</td>
+            <td><span class="mark mark-verb">einmachen</span>, <span class="mark mark-verb">einsteigen</span>, <span class="mark mark-verb">eintreffen</span>, <span class="mark mark-verb">einladen</span></td>
+          </tr>
+          <tr>
+            <td>mit-</td>
+            <td>Zusammen, gemeinsam</td>
+            <td>Juntos, en común</td>
+            <td>Teilnahme, Begleitung, Kooperation</td>
+            <td>Participación, acompañamiento, cooperación</td>
+            <td><span class="mark mark-verb">mitmachen</span>, <span class="mark mark-verb">mitnehmen</span>, <span class="mark mark-verb">mitkommen</span>, <span class="mark mark-verb">mitarbeiten</span></td>
+          </tr>
+          <tr>
+            <td>nach-</td>
+            <td>Hinterher, später</td>
+            <td>Después, posteriormente</td>
+            <td>Nachahmung, Wiederholung, Folge</td>
+            <td>Imitación, repetición, consecuencia</td>
+            <td><span class="mark mark-verb">nachmachen</span>, <span class="mark mark-verb">nachgeben</span>, <span class="mark mark-verb">nachdenken</span>, <span class="mark mark-verb">nachprüfen</span></td>
+          </tr>
+          <tr>
+            <td>vor-</td>
+            <td>Vorher, davor</td>
+            <td>Antes, delante</td>
+            <td>Vorbereitung, Präsentation, Priorität</td>
+            <td>Preparación, presentación, prioridad</td>
+            <td><span class="mark mark-verb">vorbereiten</span>, <span class="mark mark-verb">vorschlagen</span>, <span class="mark mark-verb">vorhaben</span>, <span class="mark mark-verb">vorlesen</span></td>
+          </tr>
+          <tr>
+            <td>zu-</td>
+            <td>Hinzu, Schließung</td>
+            <td>Hacia, cierre</td>
+            <td>Schließen, Zunahme, Zustimmung</td>
+            <td>Cerrar, aumento, aprobación</td>
+            <td><span class="mark mark-verb">zumachen</span>, <span class="mark mark-verb">zunehmen</span>, <span class="mark mark-verb">zutreffen</span>, <span class="mark mark-verb">zuhören</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="untrennbare-praefixe">Untrennbare Präfixe – Bedeutungen und Beispiele</h2>
+      
+      <table class="prefix-table">
+        <thead>
+          <tr>
+            <th>Präfix</th>
+            <th>Kernbedeutung</th>
+            <th>Significado central (ES)</th>
+            <th>Konnotation</th>
+            <th>Connotación (ES)</th>
+            <th>Beispiele</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>be-</td>
+            <td>Versorgung, Betroffenheit</td>
+            <td>Provisión, afectación</td>
+            <td>Objektbezug, Vollständigkeit, Ausstattung</td>
+            <td>Relación con objeto, completitud, equipamiento</td>
+            <td><span class="mark mark-verb">besuchen</span>, <span class="mark mark-verb">bekommen</span>, <span class="mark mark-verb">betreffen</span>, <span class="mark mark-verb">behandeln</span></td>
+          </tr>
+          <tr>
+            <td>emp-</td>
+            <td>Wahrnehmung, Aufnahme</td>
+            <td>Percepción, recepción</td>
+            <td>Empfang, Gefühl (oft mit -find-)</td>
+            <td>Recepción, sentimiento (a menudo con -find-)</td>
+            <td><span class="mark mark-verb">empfinden</span>, <span class="mark mark-verb">empfehlen</span>, <span class="mark mark-verb">empfangen</span>, <span class="mark mark-verb">empören</span></td>
+          </tr>
+          <tr>
+            <td>ent-</td>
+            <td>Entfernung, Entzug</td>
+            <td>Alejamiento, privación</td>
+            <td>Gegenteil, Befreiung, Entstehung</td>
+            <td>Contrario, liberación, surgimiento</td>
+            <td><span class="mark mark-verb">entfernen</span>, <span class="mark mark-verb">entscheiden</span>, <span class="mark mark-verb">entstehen</span>, <span class="mark mark-verb">entkommen</span></td>
+          </tr>
+          <tr>
+            <td>er-</td>
+            <td>Ergebnis, Erreichen</td>
+            <td>Resultado, alcanzar</td>
+            <td>Vollendung, Beginn, Intensivierung</td>
+            <td>Culminación, inicio, intensificación</td>
+            <td><span class="mark mark-verb">erklären</span>, <span class="mark mark-verb">erreichen</span>, <span class="mark mark-verb">erfinden</span>, <span class="mark mark-verb">erleben</span></td>
+          </tr>
+          <tr>
+            <td>ge-</td>
+            <td>Zusammengehörigkeit</td>
+            <td>Pertenencia conjunta</td>
+            <td>Kollektiv, selten produktiv</td>
+            <td>Colectivo, raramente productivo</td>
+            <td><span class="mark mark-verb">gehören</span>, <span class="mark mark-verb">gedenken</span>, <span class="mark mark-verb">gefallen</span>, <span class="mark mark-verb">gelingen</span></td>
+          </tr>
+          <tr>
+            <td>miss-</td>
+            <td>Fehl-, Negativ</td>
+            <td>Error, negativo</td>
+            <td>Misserfolg, Fehler, Gegenteil</td>
+            <td>Fracaso, error, contrario</td>
+            <td><span class="mark mark-verb">missverstehen</span>, <span class="mark mark-verb">misslingen</span>, <span class="mark mark-verb">missbrauchen</span></td>
+          </tr>
+          <tr>
+            <td>ver-</td>
+            <td>Veränderung, Vollzug</td>
+            <td>Cambio, realización</td>
+            <td>Verschlechterung, Fehler, Vollständigkeit</td>
+            <td>Empeoramiento, error, completitud</td>
+            <td><span class="mark mark-verb">verstehen</span>, <span class="mark mark-verb">verlieren</span>, <span class="mark mark-verb">versprechen</span>, <span class="mark mark-verb">verbrauchen</span></td>
+          </tr>
+          <tr>
+            <td>zer-</td>
+            <td>Zerstörung, Zerlegung</td>
+            <td>Destrucción, descomposición</td>
+            <td>Auseinandernehmen, Auflösung</td>
+            <td>Desmontar, disolución</td>
+            <td><span class="mark mark-verb">zerstören</span>, <span class="mark mark-verb">zerbrechen</span>, <span class="mark mark-verb">zerlegen</span>, <span class="mark mark-verb">zerreißen</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="doppelpraefixe">Doppelpräfixe (variabel trennbar)</h2>
+      
+      <div class="info-box">
+        <strong>📌 Regel:</strong> Bei Doppelpräfixen entscheidet die <strong>Betonung</strong> über die Trennbarkeit:
+        <ul style="margin-top: 10px;">
+          <li><strong>Betonung auf Präfix</strong> → meist trennbar (räumliche Bedeutung)</li>
+          <li><strong>Betonung auf Stamm</strong> → meist untrennbar (figurative Bedeutung)</li>
+        </ul>
+      </div>
+
+      <table class="prefix-table">
+        <thead>
+          <tr>
+            <th>Präfix</th>
+            <th>Trennbar (räumlich) / Separable (espacial)</th>
+            <th>Untrennbar (figurativ) / Inseparable (figurativo)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>durch-</td>
+            <td>
+              <strong>DURCHgehen</strong> (hindurchgehen / pasar a través)<br>
+              <strong>DURCHlesen</strong> (von Anfang bis Ende lesen / leer de principio a fin)<br>
+              <em>Ich <span class="mark mark-verb">lese</span> das Buch <span class="mark mark-verb">durch</span>.</em>
+            </td>
+            <td>
+              <strong>durch<u>FÜH</u>ren</strong> (ausführen, realisieren / ejecutar, realizar)<br>
+              <strong>durch<u>BRE</u>chen</strong> (unterbrechen / interrumpir)<br>
+              <em>Wir <span class="mark mark-verb">durchführen</span> das Projekt.</em>
+            </td>
+          </tr>
+          <tr>
+            <td>über-</td>
+            <td>
+              <strong>ÜBERsetzen</strong> (hinüberfahren / cruzar)<br>
+              <strong>ÜBERlaufen</strong> (überfließen / desbordarse)<br>
+              <em>Wir <span class="mark mark-verb">setzen</span> mit der Fähre <span class="mark mark-verb">über</span>.</em>
+            </td>
+            <td>
+              <strong>über<u>SET</u>zen</strong> (translate / traducir)<br>
+              <strong>über<u>TREI</u>ben</strong> (exaggerate / exagerar)<br>
+              <strong>über<u>NEH</u>men</strong> (take over / asumir, hacerse cargo)<br>
+              <em>Ich <span class="mark mark-verb">übersetze</span> den Text.</em>
+            </td>
+          </tr>
+          <tr>
+            <td>um-</td>
+            <td>
+              <strong>UMsteigen</strong> (transfer / hacer transbordo)<br>
+              <strong>UMziehen</strong> (move house / mudarse)<br>
+              <strong>UMkippen</strong> (tip over / volcarse)<br>
+              <em>Ich <span class="mark mark-verb">steige</span> in Berlin <span class="mark mark-verb">um</span>.</em>
+            </td>
+            <td>
+              <strong>um<u>GE</u>hen</strong> (avoid, bypass / evitar, rodear)<br>
+              <strong>um<u>AR</u>men</strong> (embrace / abrazar)<br>
+              <strong>um<u>SCHREI</u>ben</strong> (rewrite / reescribir)<br>
+              <em>Er <span class="mark mark-verb">umgeht</span> das Problem.</em>
+            </td>
+          </tr>
+          <tr>
+            <td>unter-</td>
+            <td>
+              <strong>UNTERgehen</strong> (sink, set / hundirse, ponerse)<br>
+              <strong>UNTERbringen</strong> (accommodate / alojar)<br>
+              <em>Die Sonne <span class="mark mark-verb">geht</span> <span class="mark mark-verb">unter</span>.</em>
+            </td>
+            <td>
+              <strong>unter<u>DRÜ</u>cken</strong> (suppress / suprimir, reprimir)<br>
+              <strong>unter<u>NEH</u>men</strong> (undertake / emprender)<br>
+              <strong>unter<u>STÜT</u>zen</strong> (support / apoyar)<br>
+              <em>Sie <span class="mark mark-verb">unternehmen</span> eine Reise.</em>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="konnotationen">Konnotationen und semantische Muster</h2>
+      
+      <h3>be- (Transitivierung)</h3>
+      <p><strong>be-</strong> macht aus intransitiven Verben oft transitive Verben und fügt ein direktes Objekt hinzu:</p>
+      <ul>
+        <li><span class="mark mark-verb">antworten</span> <span class="mark mark-prep">auf</span> <span class="mark mark-a">etwas</span> → <span class="mark mark-verb">beantworten</span> <span class="mark mark-a">etwas</span> – <em>Ich <span class="mark mark-verb">beantworte</span> <span class="mark mark-a">die Frage</span>.</em></li>
+        <li><span class="mark mark-verb">folgen</span> <span class="mark mark-d">jemandem</span> → <span class="mark mark-verb">befolgen</span> <span class="mark mark-a">etwas</span> – <em>Er <span class="mark mark-verb">befolgt</span> <span class="mark mark-a">die Regeln</span>.</em></li>
+        <li><span class="mark mark-verb">steigen</span> <span class="mark mark-prep">auf</span> <span class="mark mark-a">etwas</span> → <span class="mark mark-verb">besteigen</span> <span class="mark mark-a">etwas</span> – <em>Wir <span class="mark mark-verb">besteigen</span> <span class="mark mark-a">den Berg</span>.</em></li>
+        <li><span class="mark mark-verb">treten</span> <span class="mark mark-prep">auf</span> <span class="mark mark-a">etwas</span> → <span class="mark mark-verb">betreten</span> <span class="mark mark-a">etwas</span> – <em>Sie <span class="mark mark-verb">betritt</span> <span class="mark mark-a">das Zimmer</span>.</em></li>
+      </ul>
+
+      <h3>er- (Resultat und Beginn)</h3>
+      <p><strong>er-</strong> drückt oft „zum Ergebnis kommen" oder „durch Handlung erreichen" aus:</p>
+      <ul>
+        <li><span class="mark mark-verb">arbeiten</span> → <span class="mark mark-verb">erarbeiten</span> – <em>Wir <span class="mark mark-verb">erarbeiten</span> <span class="mark mark-a">eine Lösung</span>.</em></li>
+        <li><span class="mark mark-verb">finden</span> → <span class="mark mark-verb">erfinden</span> – <em>Er <span class="mark mark-verb">erfindet</span> <span class="mark mark-a">eine neue Maschine</span>.</em></li>
+        <li><span class="mark mark-verb">klingen</span> → <span class="mark mark-verb">erklingen</span> – <em>Die Musik <span class="mark mark-verb">erklingt</span>.</em></li>
+        <li><span class="mark mark-verb">zählen</span> → <span class="mark mark-verb">erzählen</span> – <em>Sie <span class="mark mark-verb">erzählt</span> <span class="mark mark-a">eine Geschichte</span>.</em> (historisch: aufzählen)</li>
+      </ul>
+
+      <h3>ver- (Verschlechterung oder Vollständigkeit)</h3>
+      <p><strong>ver-</strong> kann verschiedene Bedeutungen haben:</p>
+      <ul>
+        <li><strong>Fehler/Verschlechterung:</strong> sich <span class="mark mark-verb">versprechen</span>, <span class="mark mark-verb">verlaufen</span> (sich verirren), <span class="mark mark-verb">verlernen</span></li>
+        <li><strong>Vollständigkeit:</strong> <span class="mark mark-verb">verbrauchen</span>, <span class="mark mark-verb">verkaufen</span>, <span class="mark mark-verb">verteilen</span></li>
+        <li><strong>Veränderung:</strong> <span class="mark mark-verb">verwandeln</span>, <span class="mark mark-verb">verbessern</span>, <span class="mark mark-verb">verschönern</span></li>
+        <li><strong>Verschluss:</strong> <span class="mark mark-verb">verschließen</span>, <span class="mark mark-verb">verpacken</span>, <span class="mark mark-verb">versiegeln</span></li>
+      </ul>
+
+      <h3>ent- (Entfernung und Gegenteil)</h3>
+      <p><strong>ent-</strong> drückt oft Entfernung, Befreiung oder das Gegenteil aus:</p>
+      <ul>
+        <li><strong>Entfernung:</strong> <span class="mark mark-verb">entfernen</span>, <span class="mark mark-verb">entnehmen</span>, <span class="mark mark-verb">entziehen</span></li>
+        <li><strong>Befreiung:</strong> <span class="mark mark-verb">entlasten</span>, <span class="mark mark-verb">entbinden</span>, <span class="mark mark-verb">entkommen</span></li>
+        <li><strong>Entstehung:</strong> <span class="mark mark-verb">entstehen</span>, <span class="mark mark-verb">entwickeln</span>, <span class="mark mark-verb">entfalten</span></li>
+      </ul>
+
+      <h2 id="besondere-faelle">Besondere Fälle und Ausnahmen</h2>
+      
+      <h3>Immer trennbare Präfixe</h3>
+      <ul>
+        <li><strong>her-</strong> (Richtung zum Sprecher): <span class="mark mark-verb">herkommen</span>, <span class="mark mark-verb">hergeben</span>, <span class="mark mark-verb">herstellen</span></li>
+        <li><strong>hin-</strong> (Richtung vom Sprecher weg): <span class="mark mark-verb">hingehen</span>, <span class="mark mark-verb">hinfahren</span>, <span class="mark mark-verb">hinfallen</span></li>
+        <li><strong>weg-</strong> (Entfernung): <span class="mark mark-verb">weggehen</span>, <span class="mark mark-verb">wegnehmen</span>, <span class="mark mark-verb">wegwerfen</span></li>
+        <li><strong>zurück-</strong> (Rückkehr): <span class="mark mark-verb">zurückkommen</span>, <span class="mark mark-verb">zurückgeben</span>, <span class="mark mark-verb">zurückfahren</span></li>
+        <li><strong>zusammen-</strong> (Vereinigung): <span class="mark mark-verb">zusammenkommen</span>, <span class="mark mark-verb">zusammenarbeiten</span>, <span class="mark mark-verb">zusammenfassen</span></li>
+      </ul>
+
+      <h3>wieder- vs. wider-</h3>
+      <ul>
+        <li><strong>wieder-</strong> (erneut, nochmal) – <strong>trennbar:</strong> <span class="mark mark-verb">wiederholen</span>, <span class="mark mark-verb">wiedersehen</span>, <span class="mark mark-verb">wiederkommen</span>
+          <br><em>Ich <span class="mark mark-verb">sehe</span> dich morgen <span class="mark mark-verb">wieder</span>.</em></li>
+        <li><strong>wider-</strong> (gegen) – <strong>untrennbar:</strong> <span class="mark mark-verb">widersprechen</span>, <span class="mark mark-verb">widerstehen</span>, <span class="mark mark-verb">widerrufen</span>
+          <br><em>Er <span class="mark mark-verb">widerspricht</span> mir ständig.</em></li>
+      </ul>
+
+      <h3>Wichtige Ausnahmen zum Merken</h3>
+      <ul>
+        <li><span class="mark mark-verb">unternehmen</span> – untrennbar (Betonung: unter<strong>NEH</strong>men)
+          <br><em>Wir <span class="mark mark-verb">unternehmen</span> <span class="mark mark-a">eine Reise</span>.</em> (nicht: *Wir nehmen eine Reise unter.)</li>
+        <li><span class="mark mark-verb">hinterlassen</span> – untrennbar (Betonung: hinter<strong>LAS</strong>sen)
+          <br><em>Er <span class="mark mark-verb">hinterlässt</span> <span class="mark mark-a">eine Nachricht</span>.</em></li>
+        <li><span class="mark mark-verb">überlegen</span> – untrennbar (Betonung: über<strong>LE</strong>gen)
+          <br><em>Ich <span class="mark mark-verb">überlege</span> mir das.</em></li>
+      </ul>
+
+      <h2 id="lerntipps">Lerntipps und Strategien</h2>
+      
+      <div class="info-box">
+        <strong>💡 Praktische Tipps:</strong>
+        <ul style="margin-top: 10px;">
+          <li><strong>Betonung hören:</strong> Präfix betont → meist trennbar; Stamm betont → meist untrennbar</li>
+          <li><strong>Partizip II prüfen:</strong> Mit -ge- zwischen Präfix und Stamm → trennbar (an<strong>ge</strong>macht)</li>
+          <li><strong>Räumlich vs. figurativ:</strong> Bei Doppelpräfixen ist die räumliche Bedeutung meist trennbar</li>
+          <li><strong>Wörterbuch nutzen:</strong> Gute Wörterbücher markieren trennbare Verben (z.B. an|machen)</li>
+          <li><strong>Kontext beachten:</strong> Manche Verben existieren in beiden Formen mit unterschiedlicher Bedeutung</li>
+        </ul>
+      </div>
+
+      <p style="margin-top: 40px;"><a href="index.html" class="btn ghost">← Zurück zur Präfixverben-Liste</a></p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <span>Grammatik – Präfixverben – Präfixe im Überblick</span>
+  </footer>
+
+  <!-- Modal para verbos -->
+  <div class="verb-modal-overlay" id="verbModalOverlay"></div>
+  <div class="verb-modal" id="verbModal">
+    <div class="verb-modal-header">
+      <h3 class="verb-modal-title" id="verbModalTitle"></h3>
+      <button class="verb-modal-close" id="verbModalClose" aria-label="Cerrar">×</button>
+    </div>
+    <div class="verb-modal-content" id="verbModalContent">
+      <!-- Contenido dinámico -->
+    </div>
+  </div>
+
+  <script defer src="../grammatik.js"></script>
+  <script>
+    (() => {
+      document.documentElement.classList.add("no-flash");
+      const storageKey = "telc-scroll:" + location.pathname + location.search;
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      const save = () => { sessionStorage.setItem(storageKey, String(window.scrollY || window.pageYOffset || 0)); };
+      const restore = () => { const saved = sessionStorage.getItem(storageKey); if (saved == null) return; const y = Number(saved); if (!Number.isNaN(y)) window.scrollTo(0, y); };
+      window.addEventListener("pagehide", save);
+      window.addEventListener("beforeunload", save);
+      document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") save(); });
+      window.addEventListener("pageshow", () => { restore(); requestAnimationFrame(restore); });
+      window.addEventListener("load", () => { restore(); requestAnimationFrame(restore); });
+    })();
+  </script>
+  
+  <script>
+    // Sistema de modal para verbos
+    document.addEventListener('DOMContentLoaded', async () => {
+      console.log('DOM cargado, iniciando sistema de modal...');
+      
+      const modal = document.getElementById('verbModal');
+      const overlay = document.getElementById('verbModalOverlay');
+      const closeBtn = document.getElementById('verbModalClose');
+      const modalTitle = document.getElementById('verbModalTitle');
+      const modalContent = document.getElementById('verbModalContent');
+      
+      if (!modal || !overlay || !closeBtn) {
+        console.error('Elementos del modal no encontrados');
+        return;
+      }
+      
+      let verbsData = null;
+      
+      // Cargar datos de verbos desde el JSON específico de prefijos
+      console.log('Intentando cargar JSON...');
+      try {
+        const response = await fetch('prefixe-verben.json');
+        console.log('Response status:', response.status);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        verbsData = await response.json();
+        console.log('✅ Verbos cargados exitosamente:', verbsData.verbs ? verbsData.verbs.length : 0, 'verbos');
+        console.log('Primeros 3 verbos:', verbsData.verbs ? verbsData.verbs.slice(0, 3).map(v => v.word) : []);
+      } catch (error) {
+        console.error('❌ Error cargando verbos:', error);
+      }
+      
+      // Función para normalizar texto (quitar umlauts para búsqueda)
+      function normalize(text) {
+        return text.toLowerCase()
+          .replace(/ä/g, 'ae')
+          .replace(/ö/g, 'oe')
+          .replace(/ü/g, 'ue')
+          .replace(/ß/g, 'ss');
+      }
+      
+      // Función para buscar verbo
+      function findVerb(verbText) {
+        if (!verbsData || !verbsData.verbs) return null;
+        
+        const searchText = verbText.trim().toLowerCase();
+        const normalizedSearch = normalize(searchText);
+        
+        return verbsData.verbs.find(verb => {
+          const word = (verb.word || '').toLowerCase();
+          const normalizedWord = normalize(word);
+          return word === searchText || normalizedWord === normalizedSearch;
+        });
+      }
+      
+      // Función para mostrar modal
+      function showModal(verbText) {
+        // Verificar si los datos se cargaron
+        if (!verbsData || !verbsData.verbs) {
+          modalTitle.textContent = 'Error';
+          modalContent.innerHTML = `
+            <div class="verb-modal-section">
+              <p class="verb-modal-text" style="color: var(--text-muted); text-align: center; padding: 20px;">
+                ⚠️ No se pudieron cargar los datos de verbos.<br>
+                <small>Por favor, recarga la página.</small>
+              </p>
+            </div>
+          `;
+          modal.classList.add('active');
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+          return;
+        }
+        
+        const verb = findVerb(verbText);
+        
+        if (!verb) {
+          // Mostrar mensaje de que el verbo no está en la base de datos
+          modalTitle.textContent = verbText;
+          modalContent.innerHTML = `
+            <div class="verb-modal-section">
+              <p class="verb-modal-text" style="color: var(--text-muted); text-align: center; padding: 20px;">
+                ℹ️ Este verbo aún no está en la base de datos.<br>
+                <small>Verbo: <strong>${verbText}</strong></small>
+              </p>
+            </div>
+          `;
+          
+          // Mostrar modal con mensaje
+          modal.classList.add('active');
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+          return;
+        }
+        
+        // Título
+        modalTitle.textContent = verb.word || verbText;
+        
+        // Contenido
+        let content = '';
+        
+        // Traducción
+        if (verb.translation) {
+          content += `
+            <div class="verb-modal-section">
+              <div class="verb-modal-label">Traducción</div>
+              <p class="verb-modal-text">${verb.translation}</p>
+            </div>
+          `;
+        }
+        
+        // Tipo (trennbar/untrennbar)
+        if (verb.trennbar !== undefined) {
+          const trennbarText = verb.trennbar ? 'Trennbar (separable)' : 'Untrennbar (inseparable)';
+          content += `
+            <div class="verb-modal-section">
+              <div class="verb-modal-label">Tipo</div>
+              <p class="verb-modal-text">${trennbarText}</p>
+            </div>
+          `;
+        }
+        
+        // Base verb
+        if (verb.baseVerb && verb.baseVerb !== verb.word) {
+          content += `
+            <div class="verb-modal-section">
+              <div class="verb-modal-label">Verbo base</div>
+              <p class="verb-modal-text">${verb.baseVerb}</p>
+            </div>
+          `;
+        }
+        
+        // Ejemplo
+        if (verb.example) {
+          content += `<div class="verb-modal-section"><div class="verb-modal-label">Ejemplo</div>`;
+          content += `
+            <div class="verb-modal-example">
+              <div class="verb-modal-example-de">${verb.example}</div>
+              ${verb.exampleES ? `<div class="verb-modal-example-es">${verb.exampleES}</div>` : ''}
+            </div>
+          `;
+          content += `</div>`;
+        }
+        
+        modalContent.innerHTML = content;
+        
+        // Mostrar modal
+        modal.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      // Función para cerrar modal
+      function closeModal() {
+        modal.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      
+      // Event listeners para cerrar
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+      
+      // Cerrar con ESC
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          closeModal();
+        }
+      });
+      
+      // Agregar event listeners a todos los verbos marcados
+      document.addEventListener('click', (e) => {
+        const verbMark = e.target.closest('.mark.mark-verb');
+        if (verbMark) {
+          e.preventDefault();
+          const verbText = verbMark.textContent.trim();
+          console.log('Click en verbo:', verbText);
+          showModal(verbText);
+        }
+      });
+      
+      console.log('Sistema de modal inicializado correctamente');
+    });
+  </script>
+</body>
+</html>

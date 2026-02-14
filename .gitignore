@@ -1,0 +1,23 @@
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Node modules (if any)
+node_modules/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Large reference files (PDFs, archives)
+# These stay on the Pi but don't get backed up to GitHub
+Other/

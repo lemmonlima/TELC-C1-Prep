@@ -1,0 +1,515 @@
+{
+  "nouns": [
+    {
+      "word": "der Anteil",
+      "preposition": "an + Dativ",
+      "translation": "la proporción, la parte",
+      "example": "Der Anteil an internationalen Studierenden an deutschen Universitäten steigt kontinuierlich.",
+      "exampleES": "La proporción de estudiantes internacionales en universidades alemanas aumenta continuamente."
+    },
+    {
+      "word": "das Interesse",
+      "preposition": "an + Dativ",
+      "translation": "el interés en",
+      "example": "Das Interesse an interdisziplinären Forschungsansätzen wächst in der Wissenschaft.",
+      "exampleES": "El interés en enfoques de investigación interdisciplinarios crece en la ciencia."
+    },
+    {
+      "word": "der Mangel",
+      "preposition": "an + Dativ",
+      "translation": "la falta de",
+      "example": "Der Mangel an qualifizierten Nachwuchswissenschaftlern ist besorgniserregend.",
+      "exampleES": "La falta de jóvenes científicos cualificados es preocupante."
+    },
+    {
+      "word": "die Teilnahme",
+      "preposition": "an + Dativ",
+      "translation": "la participación en",
+      "example": "Die Teilnahme an internationalen Konferenzen ist für Doktoranden wichtig.",
+      "exampleES": "La participación en conferencias internacionales es importante para los doctorandos."
+    },
+    {
+      "word": "die Antwort",
+      "preposition": "auf + Akkusativ",
+      "translation": "la respuesta a",
+      "example": "Die Antwort auf die Forschungsfrage ergibt sich aus der empirischen Analyse.",
+      "exampleES": "La respuesta a la pregunta de investigación resulta del análisis empírico."
+    },
+    {
+      "word": "die Hoffnung",
+      "preposition": "auf + Akkusativ",
+      "translation": "la esperanza en",
+      "example": "Die Hoffnung auf eine Bewilligung der Forschungsgelder bleibt bestehen.",
+      "exampleES": "La esperanza en la aprobación de los fondos de investigación persiste."
+    },
+    {
+      "word": "die Reaktion",
+      "preposition": "auf + Akkusativ",
+      "translation": "la reacción a",
+      "example": "Die Reaktion auf die Publikation in der Fachwelt war überwiegend positiv.",
+      "exampleES": "La reacción a la publicación en el mundo especializado fue predominantemente positiva."
+    },
+    {
+      "word": "der Verzicht",
+      "preposition": "auf + Akkusativ",
+      "translation": "la renuncia a",
+      "example": "Der Verzicht auf umstrittene Forschungsmethoden ist ethisch geboten.",
+      "exampleES": "La renuncia a métodos de investigación controvertidos es éticamente necesaria."
+    },
+    {
+      "word": "die Entscheidung",
+      "preposition": "für + Akkusativ",
+      "translation": "la decisión por",
+      "example": "Die Entscheidung für eine qualitative Forschungsmethodik war wohlbegründet.",
+      "exampleES": "La decisión por una metodología de investigación cualitativa estaba bien fundamentada."
+    },
+    {
+      "word": "der Grund",
+      "preposition": "für + Akkusativ",
+      "translation": "la razón para",
+      "example": "Die Gründe für den Rückgang der Studierendenzahlen sind vielfältig.",
+      "exampleES": "Las razones para la disminución del número de estudiantes son diversas."
+    },
+    {
+      "word": "die Hilfe",
+      "preposition": "für + Akkusativ",
+      "translation": "la ayuda para",
+      "example": "Die finanzielle Hilfe für Nachwuchswissenschaftler ist essentiell.",
+      "exampleES": "La ayuda financiera para jóvenes científicos es esencial."
+    },
+    {
+      "word": "der Kampf",
+      "preposition": "für + Akkusativ",
+      "translation": "la lucha por",
+      "example": "Der Kampf für die Freiheit der Wissenschaft muss weitergehen.",
+      "exampleES": "La lucha por la libertad de la ciencia debe continuar."
+    },
+    {
+      "word": "der Nutzen",
+      "preposition": "für + Akkusativ",
+      "translation": "el beneficio para",
+      "example": "Der Nutzen für die Gesellschaft sollte bei Forschungsprojekten berücksichtigt werden.",
+      "exampleES": "El beneficio para la sociedad debería considerarse en proyectos de investigación."
+    },
+    {
+      "word": "der Preis",
+      "preposition": "für + Akkusativ",
+      "translation": "el precio por",
+      "example": "Der Preis für wissenschaftliche Publikationen in renommierten Journals ist hoch.",
+      "exampleES": "El precio por publicaciones científicas en revistas renombradas es alto."
+    },
+    {
+      "word": "der Schaden",
+      "preposition": "für + Akkusativ",
+      "translation": "el daño para",
+      "example": "Der Schaden für die Reputation durch Plagiatsvorwürfe ist erheblich.",
+      "exampleES": "El daño para la reputación por acusaciones de plagio es considerable."
+    },
+    {
+      "word": "die Verantwortung",
+      "preposition": "für + Akkusativ",
+      "translation": "la responsabilidad por",
+      "example": "Die Verantwortung für die Einhaltung ethischer Standards liegt bei den Forschenden.",
+      "exampleES": "La responsabilidad por el cumplimiento de estándares éticos recae en los investigadores."
+    },
+    {
+      "word": "die Voraussetzung",
+      "preposition": "für + Akkusativ",
+      "translation": "el requisito para",
+      "example": "Ein abgeschlossenes Masterstudium ist Voraussetzung für die Promotion.",
+      "exampleES": "Un máster completado es requisito para el doctorado."
+    },
+    {
+      "word": "die Diskussion",
+      "preposition": "über + Akkusativ",
+      "translation": "la discusión sobre",
+      "example": "Die Diskussion über die Reformierung des Hochschulsystems dauert an.",
+      "exampleES": "La discusión sobre la reforma del sistema universitario continúa."
+    },
+    {
+      "word": "die Freude",
+      "preposition": "über + Akkusativ",
+      "translation": "la alegría por",
+      "example": "Die Freude über die erfolgreiche Verteidigung der Dissertation war groß.",
+      "exampleES": "La alegría por la defensa exitosa de la tesis doctoral fue grande."
+    },
+    {
+      "word": "die Angst",
+      "preposition": "um + Akkusativ",
+      "translation": "el miedo por",
+      "example": "Die Angst um die Zukunft der Grundlagenforschung ist berechtigt.",
+      "exampleES": "El miedo por el futuro de la investigación básica está justificado."
+    },
+    {
+      "word": "die Bemühung",
+      "preposition": "um + Akkusativ",
+      "translation": "el esfuerzo por",
+      "example": "Die Bemühungen um eine Verbesserung der Lehrbedingungen zeigen erste Erfolge.",
+      "exampleES": "Los esfuerzos por una mejora de las condiciones de enseñanza muestran primeros éxitos."
+    },
+    {
+      "word": "die Bitte",
+      "preposition": "um + Akkusativ",
+      "translation": "la petición de",
+      "example": "Die Bitte um Verlängerung der Projektlaufzeit wurde bewilligt.",
+      "exampleES": "La petición de prolongación del período del proyecto fue aprobada."
+    },
+    {
+      "word": "der Krieg",
+      "preposition": "um + Akkusativ",
+      "translation": "la guerra por",
+      "example": "Kriege um natürliche Ressourcen sind Gegenstand aktueller Forschung.",
+      "exampleES": "Las guerras por recursos naturales son objeto de investigación actual."
+    },
+    {
+      "word": "die Sorge",
+      "preposition": "um + Akkusativ",
+      "translation": "la preocupación por",
+      "example": "Die Sorge um die Qualität der akademischen Ausbildung wächst.",
+      "exampleES": "La preocupación por la calidad de la formación académica crece."
+    },
+    {
+      "word": "der Streit",
+      "preposition": "um + Akkusativ",
+      "translation": "la disputa por",
+      "example": "Der Streit um die Verteilung der Forschungsgelder ist noch nicht beigelegt.",
+      "exampleES": "La disputa por la distribución de los fondos de investigación aún no está resuelta."
+    },
+    {
+      "word": "das Angebot",
+      "preposition": "an + Dativ",
+      "translation": "la oferta de",
+      "example": "Das Angebot an interdisziplinären Studiengängen wird kontinuierlich erweitert.",
+      "exampleES": "La oferta de programas de estudio interdisciplinarios se amplía continuamente."
+    },
+    {
+      "word": "die Arbeit",
+      "preposition": "an + Dativ",
+      "translation": "el trabajo en",
+      "example": "Die Arbeit an der Dissertation erfordert Ausdauer und Disziplin.",
+      "exampleES": "El trabajo en la tesis doctoral requiere perseverancia y disciplina."
+    },
+    {
+      "word": "der Bedarf",
+      "preposition": "an + Dativ",
+      "translation": "la necesidad de",
+      "example": "Der Bedarf an hochqualifizierten Fachkräften in der Forschung steigt.",
+      "exampleES": "La necesidad de personal altamente cualificado en la investigación aumenta."
+    },
+    {
+      "word": "die Kritik",
+      "preposition": "an + Dativ",
+      "translation": "la crítica a",
+      "example": "Die Kritik an der Methodik der Studie war berechtigt.",
+      "exampleES": "La crítica a la metodología del estudio estaba justificada."
+    },
+    {
+      "word": "der Verbrauch",
+      "preposition": "an + Dativ",
+      "translation": "el consumo de",
+      "example": "Der Verbrauch an Ressourcen in Forschungslaboren sollte reduziert werden.",
+      "exampleES": "El consumo de recursos en laboratorios de investigación debería reducirse."
+    },
+    {
+      "word": "der Vorrat",
+      "preposition": "an + Dativ",
+      "translation": "la reserva de",
+      "example": "Der Vorrat an wissenschaftlicher Literatur in der Bibliothek ist umfangreich.",
+      "exampleES": "La reserva de literatura científica en la biblioteca es extensa."
+    },
+    {
+      "word": "der Zweifel",
+      "preposition": "an + Dativ",
+      "translation": "la duda sobre",
+      "example": "Die Zweifel an der Validität der Daten waren begründet.",
+      "exampleES": "Las dudas sobre la validez de los datos estaban fundamentadas."
+    },
+    {
+      "word": "der Appell",
+      "preposition": "an + Akkusativ",
+      "translation": "el llamamiento a",
+      "example": "Der Appell an die Wissenschaft, gesellschaftliche Verantwortung zu übernehmen, wird lauter.",
+      "exampleES": "El llamamiento a la ciencia de asumir responsabilidad social se hace más fuerte."
+    },
+    {
+      "word": "die Erinnerung",
+      "preposition": "an + Akkusativ",
+      "translation": "el recuerdo de",
+      "example": "Die Erinnerung an die Studienzeit bleibt vielen Absolventen positiv in Erinnerung.",
+      "exampleES": "El recuerdo de la época de estudios permanece positivo en la memoria de muchos graduados."
+    },
+    {
+      "word": "der Gedanke",
+      "preposition": "an + Akkusativ",
+      "translation": "el pensamiento en",
+      "example": "Der Gedanke an die bevorstehende Disputation macht sie nervös.",
+      "exampleES": "El pensamiento en la defensa inminente la pone nerviosa."
+    },
+    {
+      "word": "der Glaube",
+      "preposition": "an + Akkusativ",
+      "translation": "la fe en",
+      "example": "Der Glaube an den wissenschaftlichen Fortschritt prägt die Moderne.",
+      "exampleES": "La fe en el progreso científico caracteriza la modernidad."
+    },
+    {
+      "word": "die Mitteilung",
+      "preposition": "an + Akkusativ",
+      "translation": "la comunicación a",
+      "example": "Die Mitteilung an alle Fakultätsmitglieder erfolgt per E-Mail.",
+      "exampleES": "La comunicación a todos los miembros de la facultad se realiza por correo electrónico."
+    },
+    {
+      "word": "die Übergabe",
+      "preposition": "an + Akkusativ",
+      "translation": "la entrega a",
+      "example": "Die Übergabe an die nächste Generation von Forschenden ist wichtig.",
+      "exampleES": "La entrega a la siguiente generación de investigadores es importante."
+    },
+    {
+      "word": "der Angriff",
+      "preposition": "auf + Akkusativ",
+      "translation": "el ataque a",
+      "example": "Angriffe auf die Wissenschaftsfreiheit müssen entschieden zurückgewiesen werden.",
+      "exampleES": "Los ataques a la libertad científica deben ser rechazados decididamente."
+    },
+    {
+      "word": "die Beschränkung",
+      "preposition": "auf + Akkusativ",
+      "translation": "la limitación a",
+      "example": "Die Beschränkung auf quantitative Methoden schränkt die Forschungsperspektive ein.",
+      "exampleES": "La limitación a métodos cuantitativos restringe la perspectiva de investigación."
+    },
+    {
+      "word": "der Druck",
+      "preposition": "auf + Akkusativ",
+      "translation": "la presión sobre",
+      "example": "Der Druck auf Nachwuchswissenschaftler, schnell zu publizieren, ist enorm.",
+      "exampleES": "La presión sobre jóvenes científicos de publicar rápidamente es enorme."
+    },
+    {
+      "word": "der Hinweis",
+      "preposition": "auf + Akkusativ",
+      "translation": "la indicación de",
+      "example": "Der Hinweis auf methodische Schwächen ist für die Verbesserung der Studie wichtig.",
+      "exampleES": "La indicación de debilidades metodológicas es importante para la mejora del estudio."
+    },
+    {
+      "word": "die Lust",
+      "preposition": "auf + Akkusativ",
+      "translation": "las ganas de",
+      "example": "Die Lust auf wissenschaftliche Entdeckungen treibt viele Forschende an.",
+      "exampleES": "Las ganas de descubrimientos científicos impulsan a muchos investigadores."
+    },
+    {
+      "word": "das Recht",
+      "preposition": "auf + Akkusativ",
+      "translation": "el derecho a",
+      "example": "Das Recht auf freien Zugang zu wissenschaftlichen Publikationen wird diskutiert.",
+      "exampleES": "El derecho a acceso libre a publicaciones científicas se discute."
+    },
+    {
+      "word": "der Verdacht",
+      "preposition": "auf + Akkusativ",
+      "translation": "la sospecha de",
+      "example": "Der Verdacht auf wissenschaftliches Fehlverhalten muss gründlich untersucht werden.",
+      "exampleES": "La sospecha de mala conducta científica debe investigarse minuciosamente."
+    },
+    {
+      "word": "das Vertrauen",
+      "preposition": "auf + Akkusativ",
+      "translation": "la confianza en",
+      "example": "Das Vertrauen auf die Integrität der Forschung ist fundamental.",
+      "exampleES": "La confianza en la integridad de la investigación es fundamental."
+    },
+    {
+      "word": "die Vorfreude",
+      "preposition": "auf + Akkusativ",
+      "translation": "la ilusión por",
+      "example": "Die Vorfreude auf die Konferenz ist bei den Teilnehmenden groß.",
+      "exampleES": "La ilusión por la conferencia es grande entre los participantes."
+    },
+    {
+      "word": "der Besuch",
+      "preposition": "bei + Dativ",
+      "translation": "la visita a",
+      "example": "Der Besuch bei internationalen Partneruniversitäten fördert den Austausch.",
+      "exampleES": "La visita a universidades asociadas internacionales fomenta el intercambio."
+    },
+    {
+      "word": "der Protest",
+      "preposition": "gegen + Akkusativ",
+      "translation": "la protesta contra",
+      "example": "Der Protest gegen Studiengebühren mobilisiert viele Studierende.",
+      "exampleES": "La protesta contra las tasas de matrícula moviliza a muchos estudiantes."
+    },
+    {
+      "word": "die Dankbarkeit",
+      "preposition": "gegenüber + Dativ",
+      "translation": "la gratitud hacia",
+      "example": "Die Dankbarkeit gegenüber den Betreuenden wird in der Danksagung ausgedrückt.",
+      "exampleES": "La gratitud hacia los supervisores se expresa en los agradecimientos."
+    },
+    {
+      "word": "das Misstrauen",
+      "preposition": "gegenüber + Dativ",
+      "translation": "la desconfianza hacia",
+      "example": "Das Misstrauen gegenüber kommerziell finanzierten Studien ist berechtigt.",
+      "exampleES": "La desconfianza hacia estudios financiados comercialmente está justificada."
+    },
+    {
+      "word": "das Vorurteil",
+      "preposition": "gegenüber + Dativ",
+      "translation": "el prejuicio hacia",
+      "example": "Vorurteile gegenüber interdisziplinären Ansätzen sollten abgebaut werden.",
+      "exampleES": "Los prejuicios hacia enfoques interdisciplinarios deberían eliminarse."
+    },
+    {
+      "word": "das Verhalten",
+      "preposition": "gegenüber + Dativ",
+      "translation": "el comportamiento hacia",
+      "example": "Das Verhalten gegenüber Studierenden sollte respektvoll und unterstützend sein.",
+      "exampleES": "El comportamiento hacia los estudiantes debería ser respetuoso y de apoyo."
+    },
+    {
+      "word": "die Ähnlichkeit",
+      "preposition": "mit + Dativ",
+      "translation": "la similitud con",
+      "example": "Die Ähnlichkeit mit früheren Studien ist auffällig und muss diskutiert werden.",
+      "exampleES": "La similitud con estudios anteriores es llamativa y debe discutirse."
+    },
+    {
+      "word": "die Bekanntschaft",
+      "preposition": "mit + Dativ",
+      "translation": "el conocimiento de",
+      "example": "Die Bekanntschaft mit aktuellen Forschungsmethoden ist essentiell.",
+      "exampleES": "El conocimiento de métodos de investigación actuales es esencial."
+    },
+    {
+      "word": "die Begegnung",
+      "preposition": "mit + Dativ",
+      "translation": "el encuentro con",
+      "example": "Die Begegnung mit neuen theoretischen Perspektiven erweitert den Horizont.",
+      "exampleES": "El encuentro con nuevas perspectivas teóricas amplía el horizonte."
+    },
+    {
+      "word": "das Einverständnis",
+      "preposition": "mit + Dativ",
+      "translation": "el consentimiento con",
+      "example": "Das Einverständnis mit den ethischen Richtlinien ist Voraussetzung für die Forschung.",
+      "exampleES": "El consentimiento con las directrices éticas es requisito para la investigación."
+    },
+    {
+      "word": "die Versorgung",
+      "preposition": "mit + Dativ",
+      "translation": "el abastecimiento con",
+      "example": "Die Versorgung mit aktueller Fachliteratur ist für Forschende wichtig.",
+      "exampleES": "El abastecimiento con literatura especializada actual es importante para los investigadores."
+    },
+    {
+      "word": "die Forderung",
+      "preposition": "nach + Dativ",
+      "translation": "la exigencia de",
+      "example": "Die Forderung nach mehr Transparenz in der Forschung wird lauter.",
+      "exampleES": "La exigencia de más transparencia en la investigación se hace más fuerte."
+    },
+    {
+      "word": "die Frage",
+      "preposition": "nach + Dativ",
+      "translation": "la pregunta por",
+      "example": "Die Frage nach der gesellschaftlichen Relevanz von Forschung ist zentral.",
+      "exampleES": "La pregunta por la relevancia social de la investigación es central."
+    },
+    {
+      "word": "der Wunsch",
+      "preposition": "nach + Dativ",
+      "translation": "el deseo de",
+      "example": "Der Wunsch nach interdisziplinärer Zusammenarbeit wächst in der Wissenschaft.",
+      "exampleES": "El deseo de colaboración interdisciplinaria crece en la ciencia."
+    },
+    {
+      "word": "der Ärger",
+      "preposition": "über + Akkusativ",
+      "translation": "el enfado por",
+      "example": "Der Ärger über die Ablehnung des Forschungsantrags war verständlich.",
+      "exampleES": "El enfado por el rechazo de la solicitud de investigación era comprensible."
+    },
+    {
+      "word": "die Aufregung",
+      "preposition": "über + Akkusativ",
+      "translation": "la agitación por",
+      "example": "Die Aufregung über die geplanten Reformen im Hochschulbereich ist groß.",
+      "exampleES": "La agitación por las reformas planificadas en el ámbito universitario es grande."
+    },
+    {
+      "word": "der Bericht",
+      "preposition": "über + Akkusativ",
+      "translation": "el informe sobre",
+      "example": "Der Bericht über die Forschungsergebnisse wurde in einer Fachzeitschrift veröffentlicht.",
+      "exampleES": "El informe sobre los resultados de investigación fue publicado en una revista especializada."
+    },
+    {
+      "word": "die Verhandlung",
+      "preposition": "über + Akkusativ",
+      "translation": "la negociación sobre",
+      "example": "Die Verhandlungen über die Finanzierung des Projekts sind noch nicht abgeschlossen.",
+      "exampleES": "Las negociaciones sobre la financiación del proyecto aún no están concluidas."
+    },
+    {
+      "word": "die Abhängigkeit",
+      "preposition": "von + Dativ",
+      "translation": "la dependencia de",
+      "example": "Die Abhängigkeit von Drittmitteln stellt viele Forschungseinrichtungen vor Herausforderungen.",
+      "exampleES": "La dependencia de fondos externos plantea desafíos a muchas instituciones de investigación."
+    },
+    {
+      "word": "die Befreiung",
+      "preposition": "von + Dativ",
+      "translation": "la liberación de",
+      "example": "Die Befreiung von dogmatischen Denkmustern ist für wissenschaftlichen Fortschritt wichtig.",
+      "exampleES": "La liberación de patrones de pensamiento dogmáticos es importante para el progreso científico."
+    },
+    {
+      "word": "die Furcht",
+      "preposition": "vor + Dativ",
+      "translation": "el temor a",
+      "example": "Die Furcht vor dem Scheitern der Dissertation ist bei vielen Doktoranden präsent.",
+      "exampleES": "El temor al fracaso de la tesis doctoral está presente en muchos doctorandos."
+    },
+    {
+      "word": "die Bereitschaft",
+      "preposition": "zu + Dativ",
+      "translation": "la disposición a",
+      "example": "Die Bereitschaft zu interdisziplinärer Zusammenarbeit ist in der Forschung wichtig.",
+      "exampleES": "La disposición a la colaboración interdisciplinaria es importante en la investigación."
+    },
+    {
+      "word": "die Fähigkeit",
+      "preposition": "zu + Dativ",
+      "translation": "la capacidad de",
+      "example": "Die Fähigkeit zu kritischem Denken ist zentral für wissenschaftliches Arbeiten.",
+      "exampleES": "La capacidad de pensamiento crítico es central para el trabajo científico."
+    },
+    {
+      "word": "die Erlaubnis",
+      "preposition": "zu + Dativ",
+      "translation": "el permiso para",
+      "example": "Die Erlaubnis zu dem Zugang zu sensiblen Daten muss von der Ethikkommission erteilt werden.",
+      "exampleES": "El permiso para el acceso a datos sensibles debe ser otorgado por el comité de ética."
+    },
+    {
+      "word": "die Freundschaft",
+      "preposition": "zu + Dativ",
+      "translation": "la amistad con",
+      "example": "Die Freundschaft zu Kollegen aus anderen Disziplinen bereichert die Forschung.",
+      "exampleES": "La amistad con colegas de otras disciplinas enriquece la investigación."
+    },
+    {
+      "word": "die Liebe",
+      "preposition": "zu + Dativ",
+      "translation": "el amor a",
+      "example": "Die Liebe zu der Wissenschaft motiviert viele Forschende trotz schwieriger Bedingungen.",
+      "exampleES": "El amor a la ciencia motiva a muchos investigadores a pesar de condiciones difíciles."
+    }
+  ]
+}

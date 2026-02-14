@@ -1,0 +1,1218 @@
+{
+  "studium": {
+    "word": "Studium",
+    "translation": "Estudios",
+    "sentence": "Welche Chancen und Risiken birgt der Einsatz künstlicher Intelligenz im Studium?",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Studium = Estudios."
+  },
+  "kunstlicher-intelligenz": {
+    "word": "künstlicher Intelligenz",
+    "translation": "",
+    "sentence": "Die rasante Entwicklung künstlicher Intelligenz hat in den vergangenen Jahren nahezu alle Lebensbereiche erfasst.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. künstlicher Intelligenz = ."
+  },
+  "einsatz": {
+    "word": "Einsatz",
+    "translation": "Misión",
+    "sentence": "Welche Chancen und Risiken birgt der Einsatz künstlicher Intelligenz im Studium?",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Einsatz = Misión."
+  },
+  "risiken": {
+    "word": "Risiken",
+    "translation": "Riesgos",
+    "sentence": "Welche Chancen und Risiken birgt der Einsatz künstlicher Intelligenz im Studium?",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Risiken = Riesgos."
+  },
+  "chancen": {
+    "word": "Chancen",
+    "translation": "Oportunidades",
+    "sentence": "Welche Chancen und Risiken birgt der Einsatz künstlicher Intelligenz im Studium?",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Chancen = Oportunidades."
+  },
+  "bedeutung": {
+    "word": "Bedeutung",
+    "translation": "Significado",
+    "sentence": "Für Studierende, Lehrende und Bildungspolitiker gleichermaßen ist diese Entwicklung von zentraler Bedeutung.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Bedeutung = Significado."
+  },
+  "gleicherma-en": {
+    "word": "gleichermaßen",
+    "translation": "",
+    "sentence": "Für Studierende, Lehrende und Bildungspolitiker gleichermaßen ist diese Entwicklung von zentraler Bedeutung.",
+    "sentenceTranslation": "",
+    "type": "verb",
+    "explanation": "Verbo frecuente en textos academicos. gleichermaßen = ."
+  },
+  "bildungspolitiker": {
+    "word": "Bildungspolitiker",
+    "translation": "político educativo",
+    "sentence": "Für Studierende, Lehrende und Bildungspolitiker gleichermaßen ist diese Entwicklung von zentraler Bedeutung.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Bildungspolitiker = político educativo."
+  },
+  "lehrende": {
+    "word": "Lehrende",
+    "translation": "profesores",
+    "sentence": "Für Studierende, Lehrende und Bildungspolitiker gleichermaßen ist diese Entwicklung von zentraler Bedeutung.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Lehrende = profesores."
+  },
+  "studierende": {
+    "word": "Studierende",
+    "translation": "estudiantes",
+    "sentence": "Für Studierende, Lehrende und Bildungspolitiker gleichermaßen ist diese Entwicklung von zentraler Bedeutung.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Studierende = estudiantes."
+  },
+  "integritat": {
+    "word": "Integrität",
+    "translation": "integridad",
+    "sentence": "Während einige Hochschulen bereits KI-Anwendungen in Lehre und Forschung integrieren, befürchten andere einen Verlust akademischer Integrität.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Integrität = integridad."
+  },
+  "akademischer": {
+    "word": "akademischer",
+    "translation": "más académico",
+    "sentence": "Während einige Hochschulen bereits KI-Anwendungen in Lehre und Forschung integrieren, befürchten andere einen Verlust akademischer Integrität.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. akademischer = más académico."
+  },
+  "verlust": {
+    "word": "Verlust",
+    "translation": "Pérdida",
+    "sentence": "Während einige Hochschulen bereits KI-Anwendungen in Lehre und Forschung integrieren, befürchten andere einen Verlust akademischer Integrität.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Verlust = Pérdida."
+  },
+  "integrieren": {
+    "word": "integrieren",
+    "translation": "",
+    "sentence": "Während einige Hochschulen bereits KI-Anwendungen in Lehre und Forschung integrieren, befürchten andere einen Verlust akademischer Integrität.",
+    "sentenceTranslation": "",
+    "type": "verb",
+    "explanation": "Verbo frecuente en textos academicos. integrieren = ."
+  },
+  "forschung": {
+    "word": "Forschung",
+    "translation": "Investigación",
+    "sentence": "Während einige Hochschulen bereits KI-Anwendungen in Lehre und Forschung integrieren, befürchten andere einen Verlust akademischer Integrität.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Forschung = Investigación."
+  },
+  "in-lehre": {
+    "word": "in Lehre",
+    "translation": "",
+    "sentence": "Während einige Hochschulen bereits KI-Anwendungen in Lehre und Forschung integrieren, befürchten andere einen Verlust akademischer Integrität.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. in Lehre = ."
+  },
+  "ki-anwendungen": {
+    "word": "KI-Anwendungen",
+    "translation": "Aplicaciones de IA",
+    "sentence": "Während einige Hochschulen bereits KI-Anwendungen in Lehre und Forschung integrieren, befürchten andere einen Verlust akademischer Integrität.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. KI-Anwendungen = Aplicaciones de IA."
+  },
+  "hochschulen": {
+    "word": "Hochschulen",
+    "translation": "universidades",
+    "sentence": "Während einige Hochschulen bereits KI-Anwendungen in Lehre und Forschung integrieren, befürchten andere einen Verlust akademischer Integrität.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Hochschulen = universidades."
+  },
+  "wahrend": {
+    "word": "Während",
+    "translation": "Mientras",
+    "sentence": "Während einige Hochschulen bereits KI-Anwendungen in Lehre und Forschung integrieren, befürchten andere einen Verlust akademischer Integrität.",
+    "sentenceTranslation": "",
+    "type": "konjunktion",
+    "explanation": "Conjuncion para estructurar argumentos. Während = Mientras."
+  },
+  "werkzeuge": {
+    "word": "Werkzeuge",
+    "translation": "Herramientas",
+    "sentence": "Besonders im Hochschulwesen stellt sich die Frage, welche Rolle KI-gestützte Werkzeuge künftig spielen werden.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Werkzeuge = Herramientas."
+  },
+  "ki-gestutzte": {
+    "word": "KI-gestützte",
+    "translation": "Impulsado por IA",
+    "sentence": "Besonders im Hochschulwesen stellt sich die Frage, welche Rolle KI-gestützte Werkzeuge künftig spielen werden.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. KI-gestützte = Impulsado por IA."
+  },
+  "rolle": {
+    "word": "Rolle",
+    "translation": "role",
+    "sentence": "Besonders im Hochschulwesen stellt sich die Frage, welche Rolle KI-gestützte Werkzeuge künftig spielen werden.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Rolle = role."
+  },
+  "frage": {
+    "word": "Frage",
+    "translation": "Preguntar",
+    "sentence": "Besonders im Hochschulwesen stellt sich die Frage, welche Rolle KI-gestützte Werkzeuge künftig spielen werden.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Frage = Preguntar."
+  },
+  "hochschulwesen": {
+    "word": "Hochschulwesen",
+    "translation": "Educación superior",
+    "sentence": "Besonders im Hochschulwesen stellt sich die Frage, welche Rolle KI-gestützte Werkzeuge künftig spielen werden.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Hochschulwesen = Educación superior."
+  },
+  "besonders": {
+    "word": "Besonders",
+    "translation": "Particularmente",
+    "sentence": "Besonders im Hochschulwesen stellt sich die Frage, welche Rolle KI-gestützte Werkzeuge künftig spielen werden.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Besonders = Particularmente."
+  },
+  "lebensbereiche": {
+    "word": "Lebensbereiche",
+    "translation": "Áreas de la vida",
+    "sentence": "Die rasante Entwicklung künstlicher Intelligenz hat in den vergangenen Jahren nahezu alle Lebensbereiche erfasst.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Lebensbereiche = Áreas de la vida."
+  },
+  "vergangenen-jahren": {
+    "word": "vergangenen Jahren",
+    "translation": "",
+    "sentence": "Die rasante Entwicklung künstlicher Intelligenz hat in den vergangenen Jahren nahezu alle Lebensbereiche erfasst.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. vergangenen Jahren = ."
+  },
+  "intelligenz": {
+    "word": "Intelligenz",
+    "translation": "inteligencia",
+    "sentence": "Die rasante Entwicklung künstlicher Intelligenz hat in den vergangenen Jahren nahezu alle Lebensbereiche erfasst.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Intelligenz = inteligencia."
+  },
+  "kunstlicher": {
+    "word": "künstlicher",
+    "translation": "",
+    "sentence": "Die rasante Entwicklung künstlicher Intelligenz hat in den vergangenen Jahren nahezu alle Lebensbereiche erfasst.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. künstlicher = ."
+  },
+  "entwicklung": {
+    "word": "Entwicklung",
+    "translation": "Desarrollo",
+    "sentence": "Die rasante Entwicklung künstlicher Intelligenz hat in den vergangenen Jahren nahezu alle Lebensbereiche erfasst.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Entwicklung = Desarrollo."
+  },
+  "lernprozesses": {
+    "word": "Lernprozesses",
+    "translation": "proceso de aprendizaje",
+    "sentence": "Dieser personalisierte Ansatz könne die Effizienz des Lernprozesses erheblich steigern.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Lernprozesses = proceso de aprendizaje."
+  },
+  "effizienz": {
+    "word": "Effizienz",
+    "translation": "Eficiencia",
+    "sentence": "Dieser personalisierte Ansatz könne die Effizienz des Lernprozesses erheblich steigern.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Effizienz = Eficiencia."
+  },
+  "personalisierte-ansatz": {
+    "word": "personalisierte Ansatz",
+    "translation": "",
+    "sentence": "Dieser personalisierte Ansatz könne die Effizienz des Lernprozesses erheblich steigern.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. personalisierte Ansatz = ."
+  },
+  "datenanalyse": {
+    "word": "Datenanalyse",
+    "translation": "Análisis de datos",
+    "sentence": "Während ein Kommilitone zusätzliche Erklärungen zur Statistik benötigt, erhält ein anderer vertiefende Aufgaben zur Datenanalyse.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Datenanalyse = Análisis de datos."
+  },
+  "aufgaben": {
+    "word": "Aufgaben",
+    "translation": "Tareas",
+    "sentence": "Während ein Kommilitone zusätzliche Erklärungen zur Statistik benötigt, erhält ein anderer vertiefende Aufgaben zur Datenanalyse.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Aufgaben = Tareas."
+  },
+  "vertiefende": {
+    "word": "vertiefende",
+    "translation": "",
+    "sentence": "Während ein Kommilitone zusätzliche Erklärungen zur Statistik benötigt, erhält ein anderer vertiefende Aufgaben zur Datenanalyse.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. vertiefende = ."
+  },
+  "statistik": {
+    "word": "Statistik",
+    "translation": "estadística",
+    "sentence": "Während ein Kommilitone zusätzliche Erklärungen zur Statistik benötigt, erhält ein anderer vertiefende Aufgaben zur Datenanalyse.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Statistik = estadística."
+  },
+  "erklarungen": {
+    "word": "Erklärungen",
+    "translation": "Explicaciones",
+    "sentence": "Während ein Kommilitone zusätzliche Erklärungen zur Statistik benötigt, erhält ein anderer vertiefende Aufgaben zur Datenanalyse.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Erklärungen = Explicaciones."
+  },
+  "zusatzliche": {
+    "word": "zusätzliche",
+    "translation": "",
+    "sentence": "Während ein Kommilitone zusätzliche Erklärungen zur Statistik benötigt, erhält ein anderer vertiefende Aufgaben zur Datenanalyse.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. zusätzliche = ."
+  },
+  "kommilitone": {
+    "word": "Kommilitone",
+    "translation": "compañero de estudios",
+    "sentence": "Während ein Kommilitone zusätzliche Erklärungen zur Statistik benötigt, erhält ein anderer vertiefende Aufgaben zur Datenanalyse.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Kommilitone = compañero de estudios."
+  },
+  "bereitzustellen": {
+    "word": "bereitzustellen",
+    "translation": "",
+    "sentence": "KI-basierte Lernplattformen seien in der Lage, den Wissensstand jedes Studierenden zu analysieren und maßgeschneiderte Übungen bereitzustellen.",
+    "sentenceTranslation": "",
+    "type": "verb",
+    "explanation": "Verbo frecuente en textos academicos. bereitzustellen = ."
+  },
+  "ma-geschneiderte-ubungen": {
+    "word": "maßgeschneiderte Übungen",
+    "translation": "",
+    "sentence": "KI-basierte Lernplattformen seien in der Lage, den Wissensstand jedes Studierenden zu analysieren und maßgeschneiderte Übungen bereitzustellen.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. maßgeschneiderte Übungen = ."
+  },
+  "analysieren": {
+    "word": "analysieren",
+    "translation": "analizar",
+    "sentence": "KI-basierte Lernplattformen seien in der Lage, den Wissensstand jedes Studierenden zu analysieren und maßgeschneiderte Übungen bereitzustellen.",
+    "sentenceTranslation": "",
+    "type": "verb",
+    "explanation": "Verbo frecuente en textos academicos. analysieren = analizar."
+  },
+  "studierenden": {
+    "word": "Studierenden",
+    "translation": "estudiantes",
+    "sentence": "KI-basierte Lernplattformen seien in der Lage, den Wissensstand jedes Studierenden zu analysieren und maßgeschneiderte Übungen bereitzustellen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Studierenden = estudiantes."
+  },
+  "wissensstand": {
+    "word": "Wissensstand",
+    "translation": "Nivel de conocimiento",
+    "sentence": "KI-basierte Lernplattformen seien in der Lage, den Wissensstand jedes Studierenden zu analysieren und maßgeschneiderte Übungen bereitzustellen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Wissensstand = Nivel de conocimiento."
+  },
+  "lage": {
+    "word": "Lage",
+    "translation": "Posición",
+    "sentence": "KI-basierte Lernplattformen seien in der Lage, den Wissensstand jedes Studierenden zu analysieren und maßgeschneiderte Übungen bereitzustellen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Lage = Posición."
+  },
+  "lernplattformen": {
+    "word": "Lernplattformen",
+    "translation": "Plataformas de aprendizaje",
+    "sentence": "KI-basierte Lernplattformen seien in der Lage, den Wissensstand jedes Studierenden zu analysieren und maßgeschneiderte Übungen bereitzustellen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Lernplattformen = Plataformas de aprendizaje."
+  },
+  "ki-basierte": {
+    "word": "KI-basierte",
+    "translation": "basado en IA",
+    "sentence": "KI-basierte Lernplattformen seien in der Lage, den Wissensstand jedes Studierenden zu analysieren und maßgeschneiderte Übungen bereitzustellen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. KI-basierte = basado en IA."
+  },
+  "individualisieren": {
+    "word": "individualisieren",
+    "translation": "",
+    "sentence": "Befürworter des KI-Einsatzes argumentieren, dass intelligente Systeme das Lernen individualisieren können.",
+    "sentenceTranslation": "",
+    "type": "verb",
+    "explanation": "Verbo frecuente en textos academicos. individualisieren = ."
+  },
+  "lernen": {
+    "word": "Lernen",
+    "translation": "Aprender",
+    "sentence": "Befürworter des KI-Einsatzes argumentieren, dass intelligente Systeme das Lernen individualisieren können.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Lernen = Aprender."
+  },
+  "intelligente-systeme": {
+    "word": "intelligente Systeme",
+    "translation": "",
+    "sentence": "Befürworter des KI-Einsatzes argumentieren, dass intelligente Systeme das Lernen individualisieren können.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. intelligente Systeme = ."
+  },
+  "argumentieren": {
+    "word": "argumentieren",
+    "translation": "argumentar",
+    "sentence": "Befürworter des KI-Einsatzes argumentieren, dass intelligente Systeme das Lernen individualisieren können.",
+    "sentenceTranslation": "",
+    "type": "verb",
+    "explanation": "Verbo frecuente en textos academicos. argumentieren = argumentar."
+  },
+  "ki-einsatzes": {
+    "word": "KI-Einsatzes",
+    "translation": "uso de IA",
+    "sentence": "Befürworter des KI-Einsatzes argumentieren, dass intelligente Systeme das Lernen individualisieren können.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. KI-Einsatzes = uso de IA."
+  },
+  "befurworter": {
+    "word": "Befürworter",
+    "translation": "Seguidor",
+    "sentence": "Befürworter des KI-Einsatzes argumentieren, dass intelligente Systeme das Lernen individualisieren können.",
+    "sentenceTranslation": "",
+    "type": "adverb",
+    "explanation": "Adverbio o conector formal. Befürworter = Seguidor."
+  },
+  "eigenstandige-analyse": {
+    "word": "eigenständige Analyse",
+    "translation": "",
+    "sentence": "Folglich bliebe mehr Zeit für kritische Auseinandersetzung und eigenständige Analyse.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. eigenständige Analyse = ."
+  },
+  "auseinandersetzung": {
+    "word": "Auseinandersetzung",
+    "translation": "Controversia",
+    "sentence": "Folglich bliebe mehr Zeit für kritische Auseinandersetzung und eigenständige Analyse.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Auseinandersetzung = Controversia."
+  },
+  "zeit": {
+    "word": "Zeit",
+    "translation": "Tiempo",
+    "sentence": "Darüber hinaus wird betont, dass KI-Werkzeuge zeitaufwendige Routineaufgaben übernehmen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Zeit = Tiempo."
+  },
+  "folglich": {
+    "word": "Folglich",
+    "translation": "Como consecuencia",
+    "sentence": "Folglich bliebe mehr Zeit für kritische Auseinandersetzung und eigenständige Analyse.",
+    "sentenceTranslation": "",
+    "type": "adverb",
+    "explanation": "Adverbio o conector formal. Folglich = Como consecuencia."
+  },
+  "forschungsarbeiten": {
+    "word": "Forschungsarbeiten",
+    "translation": "Trabajos de investigación",
+    "sentence": "Anstatt Stunden mit der Literaturrecherche zu verbringen, ermögliche eine KI-gestützte Datenbank binnen Minuten einen Überblick über relevante Forschungsarbeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Forschungsarbeiten = Trabajos de investigación."
+  },
+  "uberblick": {
+    "word": "Überblick",
+    "translation": "",
+    "sentence": "Anstatt Stunden mit der Literaturrecherche zu verbringen, ermögliche eine KI-gestützte Datenbank binnen Minuten einen Überblick über relevante Forschungsarbeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Überblick = ."
+  },
+  "binnen-minuten": {
+    "word": "binnen Minuten",
+    "translation": "",
+    "sentence": "Anstatt Stunden mit der Literaturrecherche zu verbringen, ermögliche eine KI-gestützte Datenbank binnen Minuten einen Überblick über relevante Forschungsarbeiten.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. binnen Minuten = ."
+  },
+  "datenbank": {
+    "word": "Datenbank",
+    "translation": "base de datos",
+    "sentence": "Anstatt Stunden mit der Literaturrecherche zu verbringen, ermögliche eine KI-gestützte Datenbank binnen Minuten einen Überblick über relevante Forschungsarbeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Datenbank = base de datos."
+  },
+  "literaturrecherche": {
+    "word": "Literaturrecherche",
+    "translation": "investigación literaria",
+    "sentence": "Anstatt Stunden mit der Literaturrecherche zu verbringen, ermögliche eine KI-gestützte Datenbank binnen Minuten einen Überblick über relevante Forschungsarbeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Literaturrecherche = investigación literaria."
+  },
+  "stunden": {
+    "word": "Stunden",
+    "translation": "Horas",
+    "sentence": "Anstatt Stunden mit der Literaturrecherche zu verbringen, ermögliche eine KI-gestützte Datenbank binnen Minuten einen Überblick über relevante Forschungsarbeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Stunden = Horas."
+  },
+  "anstatt": {
+    "word": "Anstatt",
+    "translation": "En lugar de",
+    "sentence": "Anstatt Stunden mit der Literaturrecherche zu verbringen, ermögliche eine KI-gestützte Datenbank binnen Minuten einen Überblick über relevante Forschungsarbeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Anstatt = En lugar de."
+  },
+  "konzentrieren": {
+    "word": "konzentrieren",
+    "translation": "",
+    "sentence": "Studierende könnten sich dadurch auf komplexere Denkprozesse konzentrieren.",
+    "sentenceTranslation": "",
+    "type": "verb",
+    "explanation": "Verbo frecuente en textos academicos. konzentrieren = ."
+  },
+  "denkprozesse": {
+    "word": "Denkprozesse",
+    "translation": "Procesos de pensamiento",
+    "sentence": "Studierende könnten sich dadurch auf komplexere Denkprozesse konzentrieren.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Denkprozesse = Procesos de pensamiento."
+  },
+  "routineaufgaben": {
+    "word": "Routineaufgaben",
+    "translation": "Tareas rutinarias",
+    "sentence": "Darüber hinaus wird betont, dass KI-Werkzeuge zeitaufwendige Routineaufgaben übernehmen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Routineaufgaben = Tareas rutinarias."
+  },
+  "ki-werkzeuge": {
+    "word": "KI-Werkzeuge",
+    "translation": "herramientas de inteligencia artificial",
+    "sentence": "Darüber hinaus wird betont, dass KI-Werkzeuge zeitaufwendige Routineaufgaben übernehmen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. KI-Werkzeuge = herramientas de inteligencia artificial."
+  },
+  "daruber-hinaus-wird-betont-dass": {
+    "word": "Darüber hinaus wird betont, dass",
+    "translation": "Además, se destaca que",
+    "sentence": "Darüber hinaus wird betont, dass KI-Werkzeuge zeitaufwendige Routineaufgaben übernehmen.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. Darüber hinaus wird betont, dass = Además, se destaca que."
+  },
+  "ki-kenntnisse": {
+    "word": "KI-Kenntnisse",
+    "translation": "Conocimiento de IA",
+    "sentence": "In nahezu allen Branchen – von der Medizin über die Wirtschaft bis zur Ingenieurwissenschaft – würden KI-Kenntnisse zunehmend vorausgesetzt.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. KI-Kenntnisse = Conocimiento de IA."
+  },
+  "ingenieurwissenschaft": {
+    "word": "Ingenieurwissenschaft",
+    "translation": "Ciencias de la Ingeniería",
+    "sentence": "In nahezu allen Branchen – von der Medizin über die Wirtschaft bis zur Ingenieurwissenschaft – würden KI-Kenntnisse zunehmend vorausgesetzt.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Ingenieurwissenschaft = Ciencias de la Ingeniería."
+  },
+  "wirtschaft": {
+    "word": "Wirtschaft",
+    "translation": "Negocio",
+    "sentence": "In nahezu allen Branchen – von der Medizin über die Wirtschaft bis zur Ingenieurwissenschaft – würden KI-Kenntnisse zunehmend vorausgesetzt.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Wirtschaft = Negocio."
+  },
+  "medizin": {
+    "word": "Medizin",
+    "translation": "medicamento",
+    "sentence": "In nahezu allen Branchen – von der Medizin über die Wirtschaft bis zur Ingenieurwissenschaft – würden KI-Kenntnisse zunehmend vorausgesetzt.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Medizin = medicamento."
+  },
+  "branchen": {
+    "word": "Branchen",
+    "translation": "Industrias",
+    "sentence": "In nahezu allen Branchen – von der Medizin über die Wirtschaft bis zur Ingenieurwissenschaft – würden KI-Kenntnisse zunehmend vorausgesetzt.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Branchen = Industrias."
+  },
+  "wettbewerbsvorteil": {
+    "word": "Wettbewerbsvorteil",
+    "translation": "Ventaja competitiva",
+    "sentence": "Absolventen, die bereits während des Studiums den Einsatz intelligenter Systeme erlernt haben, verfügten über einen entscheidenden Wettbewerbsvorteil.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Wettbewerbsvorteil = Ventaja competitiva."
+  },
+  "intelligenter-systeme": {
+    "word": "intelligenter Systeme",
+    "translation": "",
+    "sentence": "Absolventen, die bereits während des Studiums den Einsatz intelligenter Systeme erlernt haben, verfügten über einen entscheidenden Wettbewerbsvorteil.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. intelligenter Systeme = ."
+  },
+  "studiums": {
+    "word": "Studiums",
+    "translation": "estudios",
+    "sentence": "Absolventen, die bereits während des Studiums den Einsatz intelligenter Systeme erlernt haben, verfügten über einen entscheidenden Wettbewerbsvorteil.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Studiums = estudios."
+  },
+  "absolventen": {
+    "word": "Absolventen",
+    "translation": "graduados",
+    "sentence": "Absolventen, die bereits während des Studiums den Einsatz intelligenter Systeme erlernt haben, verfügten über einen entscheidenden Wettbewerbsvorteil.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Absolventen = graduados."
+  },
+  "arbeitsmarkt": {
+    "word": "Arbeitsmarkt",
+    "translation": "Mercado de trabajo",
+    "sentence": "Zudem wird argumentiert, dass der Umgang mit KI-Technologien eine Schlüsselkompetenz für den Arbeitsmarkt darstelle.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Arbeitsmarkt = Mercado de trabajo."
+  },
+  "schlusselkompetenz": {
+    "word": "Schlüsselkompetenz",
+    "translation": "Competencia clave",
+    "sentence": "Zudem wird argumentiert, dass der Umgang mit KI-Technologien eine Schlüsselkompetenz für den Arbeitsmarkt darstelle.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Schlüsselkompetenz = Competencia clave."
+  },
+  "ki-technologien": {
+    "word": "KI-Technologien",
+    "translation": "tecnologías de inteligencia artificial",
+    "sentence": "Zudem wird argumentiert, dass der Umgang mit KI-Technologien eine Schlüsselkompetenz für den Arbeitsmarkt darstelle.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. KI-Technologien = tecnologías de inteligencia artificial."
+  },
+  "umgang": {
+    "word": "Umgang",
+    "translation": "Manejo",
+    "sentence": "Zudem wird argumentiert, dass der Umgang mit KI-Technologien eine Schlüsselkompetenz für den Arbeitsmarkt darstelle.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Umgang = Manejo."
+  },
+  "zudem": {
+    "word": "Zudem",
+    "translation": "Además",
+    "sentence": "Zudem wird argumentiert, dass der Umgang mit KI-Technologien eine Schlüsselkompetenz für den Arbeitsmarkt darstelle.",
+    "sentenceTranslation": "",
+    "type": "adverb",
+    "explanation": "Adverbio o conector formal. Zudem = Además."
+  },
+  "analysefahigkeiten": {
+    "word": "Analysefähigkeiten",
+    "translation": "Habilidades analíticas",
+    "sentence": "Langfristig drohe ein Rückgang kritischer Analysefähigkeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Analysefähigkeiten = Habilidades analíticas."
+  },
+  "ruckgang": {
+    "word": "Rückgang",
+    "translation": "rechazar",
+    "sentence": "Langfristig drohe ein Rückgang kritischer Analysefähigkeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Rückgang = rechazar."
+  },
+  "langfristig": {
+    "word": "Langfristig",
+    "translation": "Largo plazo",
+    "sentence": "Langfristig drohe ein Rückgang kritischer Analysefähigkeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Langfristig = Largo plazo."
+  },
+  "fachliteratur": {
+    "word": "Fachliteratur",
+    "translation": "Literatura especializada",
+    "sentence": "Wer gewohnt sei, dass eine KI komplexe Texte vereinfache, verlerne möglicherweise, sich selbst durch anspruchsvolle Fachliteratur zu arbeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Fachliteratur = Literatura especializada."
+  },
+  "komplexe-texte": {
+    "word": "komplexe Texte",
+    "translation": "",
+    "sentence": "Wer gewohnt sei, dass eine KI komplexe Texte vereinfache, verlerne möglicherweise, sich selbst durch anspruchsvolle Fachliteratur zu arbeiten.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. komplexe Texte = ."
+  },
+  "eigenstandigen-denkens": {
+    "word": "eigenständigen Denkens",
+    "translation": "",
+    "sentence": "Wenn Studierende sich zu stark auf KI-generierte Zusammenfassungen oder Lösungsvorschläge verließen, könne dies die Entwicklung eigenständigen Denkens behindern.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. eigenständigen Denkens = ."
+  },
+  "losungsvorschlage": {
+    "word": "Lösungsvorschläge",
+    "translation": "Soluciones sugeridas",
+    "sentence": "Wenn Studierende sich zu stark auf KI-generierte Zusammenfassungen oder Lösungsvorschläge verließen, könne dies die Entwicklung eigenständigen Denkens behindern.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Lösungsvorschläge = Soluciones sugeridas."
+  },
+  "zusammenfassungen": {
+    "word": "Zusammenfassungen",
+    "translation": "Resúmenes",
+    "sentence": "Wenn Studierende sich zu stark auf KI-generierte Zusammenfassungen oder Lösungsvorschläge verließen, könne dies die Entwicklung eigenständigen Denkens behindern.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Zusammenfassungen = Resúmenes."
+  },
+  "ki-generierte": {
+    "word": "KI-generierte",
+    "translation": "IA generada",
+    "sentence": "Wenn Studierende sich zu stark auf KI-generierte Zusammenfassungen oder Lösungsvorschläge verließen, könne dies die Entwicklung eigenständigen Denkens behindern.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. KI-generierte = IA generada."
+  },
+  "fahigkeiten": {
+    "word": "Fähigkeiten",
+    "translation": "habilidades",
+    "sentence": "Kritiker hingegen warnen vor einer Erosion akademischer Fähigkeiten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Fähigkeiten = habilidades."
+  },
+  "vor-einer-erosion": {
+    "word": "vor einer Erosion",
+    "translation": "",
+    "sentence": "Kritiker hingegen warnen vor einer Erosion akademischer Fähigkeiten.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. vor einer Erosion = ."
+  },
+  "kritiker-hingegen": {
+    "word": "Kritiker hingegen",
+    "translation": "Los críticos, sin embargo",
+    "sentence": "Kritiker hingegen warnen vor einer Erosion akademischer Fähigkeiten.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. Kritiker hingegen = Los críticos, sin embargo."
+  },
+  "studierender": {
+    "word": "Studierender",
+    "translation": "alumno",
+    "sentence": "Dies untergrabe die Glaubwürdigkeit akademischer Abschlüsse und entwertet die Leistungen ehrlicher Studierender.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Studierender = alumno."
+  },
+  "leistungen": {
+    "word": "Leistungen",
+    "translation": "Servicios",
+    "sentence": "Dies untergrabe die Glaubwürdigkeit akademischer Abschlüsse und entwertet die Leistungen ehrlicher Studierender.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Leistungen = Servicios."
+  },
+  "abschlusse": {
+    "word": "Abschlüsse",
+    "translation": "Grados",
+    "sentence": "Dies untergrabe die Glaubwürdigkeit akademischer Abschlüsse und entwertet die Leistungen ehrlicher Studierender.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Abschlüsse = Grados."
+  },
+  "glaubwurdigkeit": {
+    "word": "Glaubwürdigkeit",
+    "translation": "credibilidad",
+    "sentence": "Dies untergrabe die Glaubwürdigkeit akademischer Abschlüsse und entwertet die Leistungen ehrlicher Studierender.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Glaubwürdigkeit = credibilidad."
+  },
+  "dies": {
+    "word": "Dies",
+    "translation": "Este",
+    "sentence": "Für Studierende, Lehrende und Bildungspolitiker gleichermaßen ist diese Entwicklung von zentraler Bedeutung.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Dies = Este."
+  },
+  "identifizieren": {
+    "word": "identifizieren",
+    "translation": "",
+    "sentence": "Obwohl Plagiatssoftware weiterentwickelt werde, sei es schwierig, KI-generierte Texte zuverlässig zu identifizieren.",
+    "sentenceTranslation": "",
+    "type": "verb",
+    "explanation": "Verbo frecuente en textos academicos. identifizieren = ."
+  },
+  "generierte-texte": {
+    "word": "-generierte Texte",
+    "translation": "-textos generados",
+    "sentence": "Obwohl Plagiatssoftware weiterentwickelt werde, sei es schwierig, KI-generierte Texte zuverlässig zu identifizieren.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. -generierte Texte = -textos generados."
+  },
+  "plagiatssoftware": {
+    "word": "Plagiatssoftware",
+    "translation": "Software de plagio",
+    "sentence": "Obwohl Plagiatssoftware weiterentwickelt werde, sei es schwierig, KI-generierte Texte zuverlässig zu identifizieren.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Plagiatssoftware = Software de plagio."
+  },
+  "obwohl": {
+    "word": "Obwohl",
+    "translation": "A pesar de",
+    "sentence": "Obwohl Plagiatssoftware weiterentwickelt werde, sei es schwierig, KI-generierte Texte zuverlässig zu identifizieren.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Obwohl = A pesar de."
+  },
+  "nennenswerten-beitrag": {
+    "word": "nennenswerten Beitrag",
+    "translation": "",
+    "sentence": "KI-Systeme könnten dazu missbraucht werden, Hausarbeiten oder Abschlussarbeiten zu verfassen, ohne dass Studierende selbst einen nennenswerten Beitrag leisten.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. nennenswerten Beitrag = ."
+  },
+  "ohne-dass-studierende": {
+    "word": "ohne dass Studierende",
+    "translation": "",
+    "sentence": "KI-Systeme könnten dazu missbraucht werden, Hausarbeiten oder Abschlussarbeiten zu verfassen, ohne dass Studierende selbst einen nennenswerten Beitrag leisten.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. ohne dass Studierende = ."
+  },
+  "abschlussarbeiten": {
+    "word": "Abschlussarbeiten",
+    "translation": "Tesis finales",
+    "sentence": "KI-Systeme könnten dazu missbraucht werden, Hausarbeiten oder Abschlussarbeiten zu verfassen, ohne dass Studierende selbst einen nennenswerten Beitrag leisten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Abschlussarbeiten = Tesis finales."
+  },
+  "hausarbeiten": {
+    "word": "Hausarbeiten",
+    "translation": "Tarea",
+    "sentence": "KI-Systeme könnten dazu missbraucht werden, Hausarbeiten oder Abschlussarbeiten zu verfassen, ohne dass Studierende selbst einen nennenswerten Beitrag leisten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Hausarbeiten = Tarea."
+  },
+  "ki-systeme": {
+    "word": "KI-Systeme",
+    "translation": "sistemas de inteligencia artificial",
+    "sentence": "KI-Systeme könnten dazu missbraucht werden, Hausarbeiten oder Abschlussarbeiten zu verfassen, ohne dass Studierende selbst einen nennenswerten Beitrag leisten.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. KI-Systeme = sistemas de inteligencia artificial."
+  },
+  "fehlverhaltens": {
+    "word": "Fehlverhaltens",
+    "translation": "mala conducta",
+    "sentence": "Überdies bestehe die Gefahr akademischen Fehlverhaltens.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Fehlverhaltens = mala conducta."
+  },
+  "gefahr": {
+    "word": "Gefahr",
+    "translation": "Peligro",
+    "sentence": "Überdies bestehe die Gefahr akademischen Fehlverhaltens.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Gefahr = Peligro."
+  },
+  "uberdies": {
+    "word": "Überdies",
+    "translation": "",
+    "sentence": "Überdies bestehe die Gefahr akademischen Fehlverhaltens.",
+    "sentenceTranslation": "",
+    "type": "adverb",
+    "explanation": "Adverbio o conector formal. Überdies = ."
+  },
+  "bildungsungleichheiten": {
+    "word": "Bildungsungleichheiten",
+    "translation": "Desigualdades educativas",
+    "sentence": "Aufgrund dieser Diskrepanz könnten bestehende Bildungsungleichheiten verschärft werden.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Bildungsungleichheiten = Desigualdades educativas."
+  },
+  "diskrepanz": {
+    "word": "Diskrepanz",
+    "translation": "discrepancia",
+    "sentence": "Aufgrund dieser Diskrepanz könnten bestehende Bildungsungleichheiten verschärft werden.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Diskrepanz = discrepancia."
+  },
+  "aufgrund": {
+    "word": "Aufgrund",
+    "translation": "Debido a",
+    "sentence": "Aufgrund dieser Diskrepanz könnten bestehende Bildungsungleichheiten verschärft werden.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Aufgrund = Debido a."
+  },
+  "alternativen": {
+    "word": "Alternativen",
+    "translation": "Alternativas",
+    "sentence": "Während finanziell bessergestellte Kommilitonen kostenpflichtige Premium-Dienste nutzen könnten, seien andere auf kostenlose, weniger leistungsfähige Alternativen angewiesen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Alternativen = Alternativas."
+  },
+  "premium-dienste": {
+    "word": "Premium-Dienste",
+    "translation": "Servicios Premium",
+    "sentence": "Während finanziell bessergestellte Kommilitonen kostenpflichtige Premium-Dienste nutzen könnten, seien andere auf kostenlose, weniger leistungsfähige Alternativen angewiesen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Premium-Dienste = Servicios Premium."
+  },
+  "kommilitonen": {
+    "word": "Kommilitonen",
+    "translation": "compañeros de estudios",
+    "sentence": "Während finanziell bessergestellte Kommilitonen kostenpflichtige Premium-Dienste nutzen könnten, seien andere auf kostenlose, weniger leistungsfähige Alternativen angewiesen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Kommilitonen = compañeros de estudios."
+  },
+  "ki-werkzeugen": {
+    "word": "KI-Werkzeugen",
+    "translation": "herramientas de inteligencia artificial",
+    "sentence": "Nicht alle Studierenden hätten gleichermaßen Zugang zu leistungsfähigen KI-Werkzeugen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. KI-Werkzeugen = herramientas de inteligencia artificial."
+  },
+  "zugang": {
+    "word": "Zugang",
+    "translation": "Acceso",
+    "sentence": "Nicht alle Studierenden hätten gleichermaßen Zugang zu leistungsfähigen KI-Werkzeugen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Zugang = Acceso."
+  },
+  "ungleichheiten": {
+    "word": "Ungleichheiten",
+    "translation": "Desigualdades",
+    "sentence": "Schließlich wird auf soziale Ungleichheiten hingewiesen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Ungleichheiten = Desigualdades."
+  },
+  "schlie-lich": {
+    "word": "Schließlich",
+    "translation": "Finalmente",
+    "sentence": "Schließlich wird auf soziale Ungleichheiten hingewiesen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Schließlich = Finalmente."
+  },
+  "soziale-ungleichheiten": {
+    "word": "soziale Ungleichheiten",
+    "translation": "",
+    "sentence": "Schließlich wird auf soziale Ungleichheiten hingewiesen.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. soziale Ungleichheiten = ."
+  },
+  "akademische-integritat": {
+    "word": "akademische Integrität",
+    "translation": "integridad académica",
+    "sentence": "Andererseits besteht die Gefahr, dass kritisches Denken verkümmert, akademische Integrität leidet und soziale Ungleichheiten zunehmen.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. akademische Integrität = integridad académica."
+  },
+  "kritisches-denken": {
+    "word": "kritisches Denken",
+    "translation": "",
+    "sentence": "Andererseits besteht die Gefahr, dass kritisches Denken verkümmert, akademische Integrität leidet und soziale Ungleichheiten zunehmen.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. kritisches Denken = ."
+  },
+  "andererseits": {
+    "word": "Andererseits",
+    "translation": "por otro lado",
+    "sentence": "Andererseits besteht die Gefahr, dass kritisches Denken verkümmert, akademische Integrität leidet und soziale Ungleichheiten zunehmen.",
+    "sentenceTranslation": "",
+    "type": "adverb",
+    "explanation": "Adverbio o conector formal. Andererseits = por otro lado."
+  },
+  "arbeitsmarktes": {
+    "word": "Arbeitsmarktes",
+    "translation": "mercado de trabajo",
+    "sentence": "Einerseits ermöglicht sie personalisiertes Lernen, entlastet von Routineaufgaben und bereitet auf die Anforderungen des Arbeitsmarktes vor.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Arbeitsmarktes = mercado de trabajo."
+  },
+  "anforderungen": {
+    "word": "Anforderungen",
+    "translation": "Requisitos",
+    "sentence": "Einerseits ermöglicht sie personalisiertes Lernen, entlastet von Routineaufgaben und bereitet auf die Anforderungen des Arbeitsmarktes vor.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Anforderungen = Requisitos."
+  },
+  "von-routineaufgaben": {
+    "word": "von Routineaufgaben",
+    "translation": "",
+    "sentence": "Einerseits ermöglicht sie personalisiertes Lernen, entlastet von Routineaufgaben und bereitet auf die Anforderungen des Arbeitsmarktes vor.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. von Routineaufgaben = ."
+  },
+  "personalisiertes-lernen": {
+    "word": "personalisiertes Lernen",
+    "translation": "",
+    "sentence": "Einerseits ermöglicht sie personalisiertes Lernen, entlastet von Routineaufgaben und bereitet auf die Anforderungen des Arbeitsmarktes vor.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. personalisiertes Lernen = ."
+  },
+  "einerseits": {
+    "word": "Einerseits",
+    "translation": "Por un lado",
+    "sentence": "Einerseits ermöglicht sie personalisiertes Lernen, entlastet von Routineaufgaben und bereitet auf die Anforderungen des Arbeitsmarktes vor.",
+    "sentenceTranslation": "",
+    "type": "adverb",
+    "explanation": "Adverbio o conector formal. Einerseits = Por un lado."
+  },
+  "hochschulstudium": {
+    "word": "Hochschulstudium",
+    "translation": "estudios universitarios",
+    "sentence": "Zusammenfassend lässt sich festhalten, dass künstliche Intelligenz sowohl erhebliche Potenziale als auch beachtliche Risiken für das Hochschulstudium mit sich bringt.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Hochschulstudium = estudios universitarios."
+  },
+  "beachtliche-risiken": {
+    "word": "beachtliche Risiken",
+    "translation": "",
+    "sentence": "Zusammenfassend lässt sich festhalten, dass künstliche Intelligenz sowohl erhebliche Potenziale als auch beachtliche Risiken für das Hochschulstudium mit sich bringt.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. beachtliche Risiken = ."
+  },
+  "potenziale": {
+    "word": "Potenziale",
+    "translation": "Potenciales",
+    "sentence": "Zusammenfassend lässt sich festhalten, dass künstliche Intelligenz sowohl erhebliche Potenziale als auch beachtliche Risiken für das Hochschulstudium mit sich bringt.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Potenziale = Potenciales."
+  },
+  "kunstliche-intelligenz": {
+    "word": "künstliche Intelligenz",
+    "translation": "",
+    "sentence": "Zusammenfassend lässt sich festhalten, dass künstliche Intelligenz sowohl erhebliche Potenziale als auch beachtliche Risiken für das Hochschulstudium mit sich bringt.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. künstliche Intelligenz = ."
+  },
+  "zusammenfassend-lasst-sich-festhalten-dass": {
+    "word": "Zusammenfassend lässt sich festhalten, dass",
+    "translation": "En resumen se puede afirmar que",
+    "sentence": "Zusammenfassend lässt sich festhalten, dass künstliche Intelligenz sowohl erhebliche Potenziale als auch beachtliche Risiken für das Hochschulstudium mit sich bringt.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. Zusammenfassend lässt sich festhalten, dass = En resumen se puede afirmar que."
+  },
+  "bildung": {
+    "word": "Bildung",
+    "translation": "Educación",
+    "sentence": "Für Studierende, Lehrende und Bildungspolitiker gleichermaßen ist diese Entwicklung von zentraler Bedeutung.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Bildung = Educación."
+  },
+  "grundpfeiler": {
+    "word": "Grundpfeiler",
+    "translation": "piedra angular",
+    "sentence": "Nur durch einen reflektierten Umgang mit künstlicher Intelligenz lässt sich deren Potenzial nutzen, ohne die Grundpfeiler akademischer Bildung zu gefährden.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Grundpfeiler = piedra angular."
+  },
+  "potenzial": {
+    "word": "Potenzial",
+    "translation": "potencial",
+    "sentence": "Zusammenfassend lässt sich festhalten, dass künstliche Intelligenz sowohl erhebliche Potenziale als auch beachtliche Risiken für das Hochschulstudium mit sich bringt.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Potenzial = potencial."
+  },
+  "mit-kunstlicher-intelligenz": {
+    "word": "mit künstlicher Intelligenz",
+    "translation": "",
+    "sentence": "Nur durch einen reflektierten Umgang mit künstlicher Intelligenz lässt sich deren Potenzial nutzen, ohne die Grundpfeiler akademischer Bildung zu gefährden.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. mit künstlicher Intelligenz = ."
+  },
+  "reflektierten-umgang": {
+    "word": "reflektierten Umgang",
+    "translation": "",
+    "sentence": "Nur durch einen reflektierten Umgang mit künstlicher Intelligenz lässt sich deren Potenzial nutzen, ohne die Grundpfeiler akademischer Bildung zu gefährden.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. reflektierten Umgang = ."
+  },
+  "vordergrund": {
+    "word": "Vordergrund",
+    "translation": "primer plano",
+    "sentence": "Lehrende wiederum müssen Prüfungsformate anpassen, die eigenständiges Denken und Kreativität in den Vordergrund stellen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Vordergrund = primer plano."
+  },
+  "kreativitat": {
+    "word": "Kreativität",
+    "translation": "creatividad",
+    "sentence": "Lehrende wiederum müssen Prüfungsformate anpassen, die eigenständiges Denken und Kreativität in den Vordergrund stellen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Kreativität = creatividad."
+  },
+  "eigenstandiges-denken": {
+    "word": "eigenständiges Denken",
+    "translation": "",
+    "sentence": "Lehrende wiederum müssen Prüfungsformate anpassen, die eigenständiges Denken und Kreativität in den Vordergrund stellen.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. eigenständiges Denken = ."
+  },
+  "prufungsformate": {
+    "word": "Prüfungsformate",
+    "translation": "Formatos de examen",
+    "sentence": "Lehrende wiederum müssen Prüfungsformate anpassen, die eigenständiges Denken und Kreativität in den Vordergrund stellen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Prüfungsformate = Formatos de examen."
+  },
+  "hilfsmittel": {
+    "word": "Hilfsmittel",
+    "translation": "SIDA",
+    "sentence": "Studierende sollten lernen, KI-Werkzeuge als Hilfsmittel zu nutzen, ohne dabei die Entwicklung eigener Kompetenzen zu vernachlässigen.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Hilfsmittel = SIDA."
+  },
+  "fur-deren-einsatz": {
+    "word": "für deren Einsatz",
+    "translation": "",
+    "sentence": "Anstatt KI pauschal abzulehnen oder unkritisch zu übernehmen, gilt es, klare Richtlinien für deren Einsatz zu entwickeln.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. für deren Einsatz = ."
+  },
+  "richtlinien": {
+    "word": "Richtlinien",
+    "translation": "Pautas",
+    "sentence": "Anstatt KI pauschal abzulehnen oder unkritisch zu übernehmen, gilt es, klare Richtlinien für deren Einsatz zu entwickeln.",
+    "sentenceTranslation": "",
+    "type": "nomen",
+    "explanation": "Sustantivo clave del tema. Richtlinien = Pautas."
+  },
+  "ausgewogenen-weg": {
+    "word": "ausgewogenen Weg",
+    "translation": "",
+    "sentence": "Meiner Ansicht nach sollten Hochschulen einen ausgewogenen Weg einschlagen.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. ausgewogenen Weg = ."
+  },
+  "sollten-hochschulen": {
+    "word": "sollten Hochschulen",
+    "translation": "",
+    "sentence": "Meiner Ansicht nach sollten Hochschulen einen ausgewogenen Weg einschlagen.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. sollten Hochschulen = ."
+  },
+  "meiner-ansicht-nach": {
+    "word": "Meiner Ansicht nach",
+    "translation": "En mi opinión",
+    "sentence": "Meiner Ansicht nach sollten Hochschulen einen ausgewogenen Weg einschlagen.",
+    "sentenceTranslation": "",
+    "type": "phrase",
+    "explanation": "Expresion util para argumentacion formal. Meiner Ansicht nach = En mi opinión."
+  }
+}

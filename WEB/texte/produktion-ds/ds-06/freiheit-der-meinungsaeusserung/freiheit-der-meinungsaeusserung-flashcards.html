@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <style>html,body{background:#12110f}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>DS 06 – Freiheit der Meinungsäußerung – Flashcards</title>
+  <link rel="stylesheet" href="../../../../styles.css" />
+  <script>(function(){var p=location.pathname,h=location.hash||"",f=p+h;function gt(x){if(/\/grammatik\//.test(x))return"grammatik";if(/\/texte\//.test(x))return"texte";if(/\/notizen\//.test(x))return"notizen";if(/\/woerter\//.test(x))return"woerter";if(/\/tips\//.test(x))return"tips";return"start"}function it(x,t){if(t==="grammatik")return/\/grammatik\/index\.html$/.test(x)||/\/grammatik\/?$/.test(x);if(t==="texte")return/\/texte\/index\.html$/.test(x)||/\/texte\/?$/.test(x);if(t==="notizen")return/\/notizen\/index\.html$/.test(x)||/\/notizen\/?$/.test(x);if(t==="woerter")return/\/woerter\/index\.html$/.test(x)||/\/woerter\/?$/.test(x);if(t==="tips")return/\/tips\/index\.html$/.test(x)||/\/tips\/?$/.test(x);if(t==="start")return/\/index\.html$/.test(x)&&!/\/grammatik\//.test(x)&&!/\/texte\//.test(x)&&!/\/notizen\//.test(x)&&!/\/woerter\//.test(x)&&!/\/tips\//.test(x);return!1}var k="telc_scroll_"+p;function save(){try{sessionStorage.setItem(k,JSON.stringify({x:scrollX,y:scrollY}));sessionStorage.setItem("telc_last_"+gt(p),f)}catch(e){}}function r(){try{var s=sessionStorage.getItem(k);if(s){var j=JSON.parse(s);scrollTo(j.x,j.y)}}catch(e){}}function go(){requestAnimationFrame(function(){setTimeout(r,50);setTimeout(r,300)})}window.addEventListener("pagehide",save);window.addEventListener("beforeunload",save);document.addEventListener("click",function(e){var a=e.target.closest("a");if(!a||!a.href)return;try{var u=new URL(a.href,location.href);if(u.origin!==location.origin)return;save();var tp=u.pathname,tt=gt(tp);if(!it(tp,tt))return;var ct=gt(p);if(ct===tt){e.preventDefault();if(it(p,ct)){scrollTo(0,0)}else{sessionStorage.setItem("telc_scroll_"+tp,JSON.stringify({x:0,y:0}));location.href=location.origin+tp+(u.hash||"")}return}var last=sessionStorage.getItem("telc_last_"+tt);if(!last||last===(tp+(u.hash||"")))return;e.preventDefault();location.href=location.origin+last}catch(x){}},!0);document.readyState==="complete"?go():window.addEventListener("load",go)})();</script>
+  <script>document.addEventListener("DOMContentLoaded",function(){var t=document.querySelector(".topbar");if(!t)return;var b=document.body;if(sessionStorage.getItem("telc_topbar_hidden")==="1")b.classList.add("topbar-hidden");var c=t.querySelector(".cta"),a=document.createElement("div");a.className="topbar-actions";var h=document.createElement("button"),r=document.createElement("button");h.type="button";h.className="topbar-btn topbar-hide";h.title="Barra minimizar";h.setAttribute("aria-label","Barra minimizar");h.textContent="−";r.type="button";r.className="topbar-btn topbar-reset";r.title="Reiniciar (olvidar posiciones)";r.setAttribute("aria-label","Reiniciar");r.textContent="↺";a.appendChild(h);a.appendChild(r);if(c)a.appendChild(c);t.appendChild(a);var g=document.createElement("div");g.className="topbar-show-trigger";g.title="Mostrar barra";g.textContent="▼";t.parentNode.insertBefore(g,t);h.onclick=function(){b.classList.add("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.setItem("telc_topbar_hidden","1")};g.onclick=function(){b.classList.remove("topbar-hidden");b.classList.remove("topbar-auto-hidden");sessionStorage.removeItem("telc_topbar_hidden")};r.onclick=function(){var ks=[];for(var i=0;i<sessionStorage.length;i++){var k=sessionStorage.key(i);if(k&&k.indexOf("telc_")===0)ks.push(k)}ks.forEach(function(k){sessionStorage.removeItem(k)});location.reload()}})();</script>
+</head>
+<body class="no-js doc-page">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Texte</span>
+    </div>
+    <nav class="nav">
+      <a href="../../../../index.html#start">Start</a>
+      <a href="../../../../grammatik/index.html">Grammatik</a>
+      <a href="../../../../index.html">Texte</a>
+      <a href="../../../../notizen/index.html">Notizen</a>
+      <a href="../../../../woerter/index.html">Wörter</a>
+      <a href="../../../../tips/index.html">Tips</a>
+      <a href="index.html">Freiheit der Meinungsäußerung</a>
+    </nav>
+    <a class="cta" href="../../../../tips/einfuehrung/index.html">Einstufung</a>
+  </header>
+
+  <main class="doc-main">
+    <section class="doc-hero">
+      <div class="doc-hero-text reveal">
+        <div class="eyebrow">Modul DS 06 – Flashcards</div>
+        <h1>Freiheit der Meinungsäußerung</h1>
+        <p class="lead">Trainiere Wortschatz mit Karten (sobald Wörter markiert sind).</p>
+      </div>
+    </section>
+
+    <section id="flashcards" class="section">
+      <div class="section-head reveal">
+        <h2>Flashcards</h2>
+        <p>Alle markierten Wörter des Textes als Karten. Derzeit sind noch keine Wörter markiert.</p>
+      </div>
+
+      <div class="flashcards-panel reveal">
+        <div class="flashcards-stage" id="flash-stage" data-empty="true">
+          <div class="flashcards-empty" id="flash-empty">Cargando palabras del texto…</div>
+          <div class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="Karte aufdecken">
+            <div class="flashcard-inner">
+              <div class="flashcard-face flashcard-front">
+                <div class="flashcard-label" id="flashcard-label">Wort</div>
+                <div class="flashcard-term" id="flashcard-term">—</div>
+                <div class="flashcard-prompt">Übersetzung &amp; Beispiel?</div>
+              </div>
+              <div class="flashcard-face flashcard-back">
+                <div class="flashcard-label">Antwort</div>
+                <div class="flashcard-answer" id="flashcard-answer">—</div>
+                <div class="flashcard-example" id="flashcard-example">—</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcards-progress">
+            <div class="flashcards-progress-bar" id="flash-progress-bar"></div>
+          </div>
+          <div class="flashcards-meta">
+            <span id="flash-progress-text">0 / 0</span>
+          </div>
+          <div class="flashcards-controls">
+            <button class="btn ghost" id="flash-prev" type="button">Zurück</button>
+            <button class="btn ghost" id="flash-flip" type="button">Aufdecken</button>
+            <button class="btn ghost" id="flash-next" type="button">Weiter</button>
+            <button class="btn ghost" id="flash-exit" type="button">Neu mischen</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="../index.html">← Modul DS 06</a>
+  </footer>
+
+  <script defer src="freiheit-der-meinungsaeusserung-flashcards.js"></script>
+  <script>
+    (() => {
+      document.documentElement.classList.add("no-flash");
+      const storageKey = "telc-scroll:" + location.pathname + location.search;
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      const save = () => { sessionStorage.setItem(storageKey, String(window.scrollY || window.pageYOffset || 0)); };
+      const restore = () => { const saved = sessionStorage.getItem(storageKey); if (saved == null) return; const y = Number(saved); if (!Number.isNaN(y)) window.scrollTo(0, y); };
+      const scheduleRestore = () => { restore(); requestAnimationFrame(restore); setTimeout(restore, 60); setTimeout(restore, 220); };
+      window.addEventListener("pagehide", save);
+      window.addEventListener("beforeunload", save);
+      document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") save(); });
+      document.addEventListener("click", (e) => { const link = e.target.closest("a"); if (!link || !link.href) return; try { const u = new URL(link.href, location.href); if (u.origin === location.origin) save(); } catch (_) {} });
+      window.addEventListener("pageshow", scheduleRestore);
+      window.addEventListener("load", scheduleRestore);
+    })();
+  </script>
+</body>
+</html>

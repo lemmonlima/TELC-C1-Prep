@@ -1,0 +1,2015 @@
+{
+  "spaetestens": {
+    "word": "Spätestens",
+    "translation": "a más tardar, como muy tarde",
+    "sentence": "Spätestens seit der Pandemie sind Online-Formate für viele Studierende zur Normalität geworden.",
+    "sentenceTranslation": "Como muy tarde desde la pandemia, los formatos en línea se han convertido en algo normal para muchos estudiantes.",
+    "explanation": "Conector temporal que indica el límite máximo de tiempo. No significa 'finalmente' sino 'a más tardar' o 'como muy tarde'.",
+    "examples": [
+      "Spätestens morgen brauche ich eine Antwort. = A más tardar mañana necesito una respuesta.",
+      "Spätestens mit 30 sollte man einen Plan haben. = Como muy tarde a los 30 uno debería tener un plan."
+    ],
+    "synonyms": ["frühestens (a más temprano)", "bis spätestens (hasta como muy tarde)"],
+    "type": "adverb"
+  },
+  "zugenommen": {
+    "word": "zugenommen",
+    "translation": "ha aumentado, ha crecido",
+    "sentence": "In den letzten Jahren haben digitale Vorlesungen an Hochschulen stark zugenommen.",
+    "sentenceTranslation": "En los últimos años las clases digitales en las universidades han aumentado mucho.",
+    "explanation": "Participio II de \"zunehmen\" (aumentar, crecer). Se usa con el auxiliar \"haben\" para formar el Perfekt: \"haben ... zugenommen\" = han aumentado.",
+    "parts": ["haben", "zugenommen"],
+    "conjugation": {
+      "present": {
+        "ich": "nehme zu",
+        "du": "nimmst zu",
+        "er/sie/es": "nimmt zu",
+        "wir": "nehmen zu",
+        "ihr": "nehmt zu",
+        "sie/Sie": "nehmen zu"
+      },
+      "preterite": {
+        "ich": "nahm zu",
+        "du": "nahmst zu",
+        "er/sie/es": "nahm zu",
+        "wir": "nahmen zu",
+        "ihr": "nahmt zu",
+        "sie/Sie": "nahmen zu"
+      },
+      "indirekteRede": {
+        "ich": "nehme zu",
+        "du": "nehmest zu",
+        "er/sie/es": "nehme zu",
+        "wir": "nehmen zu",
+        "ihr": "nehmet zu",
+        "sie/Sie": "nehmen zu"
+      },
+      "perfect": "hat zugenommen",
+      "infinitive": "zunehmen"
+    },
+    "examples": [
+      "Mein Gewicht hat über die Feiertage zugenommen. = Mi peso ha aumentado durante las fiestas.",
+      "Die Verkehrsunfälle nehmen im Winter zu. = Los accidentes de tráfico aumentan en invierno."
+    ],
+    "synonyms": ["gestiegen (ha subido)", "mehr geworden (se ha vuelto más)"],
+    "type": "verb",
+    "verbType": "compound-auxiliary"
+  },
+  "zur-normalitaet-geworden": {
+    "word": "zur Normalität geworden",
+    "translation": "se ha convertido en algo normal, se ha vuelto habitual",
+    "sentence": "Spätestens seit der Pandemie sind Online-Formate für viele Studierende zur Normalität geworden.",
+    "sentenceTranslation": "Como muy tarde desde la pandemia, los formatos en línea se han convertido en algo normal para muchos estudiantes.",
+    "explanation": "Perfekt de 'werden' (volverse, convertirse). 'zur Normalität' = 'en algo normal'. Estructura: sein + geworden. En este caso, 'sind' (auxiliar) y 'zur Normalität geworden' (participio con complemento) forman el verbo compuesto completo.",
+    "parts": ["sind", "zur Normalität geworden"],
+    "conjugation": {
+      "present": {
+        "ich": "werde zur Normalität",
+        "du": "wirst zur Normalität",
+        "er/sie/es": "wird zur Normalität",
+        "wir": "werden zur Normalität",
+        "ihr": "werdet zur Normalität",
+        "sie/Sie": "werden zur Normalität"
+      },
+      "preterite": {
+        "ich": "wurde zur Normalität",
+        "du": "wurdest zur Normalität",
+        "er/sie/es": "wurde zur Normalität",
+        "wir": "wurden zur Normalität",
+        "ihr": "wurdet zur Normalität",
+        "sie/Sie": "wurden zur Normalität"
+      },
+      "indirekteRede": {
+        "ich": "werde zur Normalität",
+        "du": "werdest zur Normalität",
+        "er/sie/es": "werde zur Normalität",
+        "wir": "werden zur Normalität",
+        "ihr": "werdet zur Normalität",
+        "sie/Sie": "werden zur Normalität"
+      },
+      "perfect": "ist zur Normalität geworden",
+      "infinitive": "zur Normalität werden"
+    },
+    "examples": [
+      "Homeoffice ist zur Gewohnheit geworden. = El trabajo desde casa se ha vuelto una costumbre.",
+      "Sie wird langsam zur Expertin. = Ella se está convirtiendo poco a poco en experta."
+    ],
+    "type": "verb",
+    "verbType": "compound-auxiliary"
+  },
+  "waehrend": {
+    "word": "Während",
+    "translation": "mientras (que)",
+    "sentence": "Während einige diese Entwicklung als großen Fortschritt sehen, berichten andere von Konzentrationsproblemen und sozialer Isolation.",
+    "sentenceTranslation": "Mientras que algunas personas ven este desarrollo como un gran avance, otras cuentan que tienen problemas de concentración y aislamiento social.",
+    "explanation": "Conector que introduce contraste entre dos grupos o situaciones. Puede ser conjunción (con verbo al final) o preposición (con dativo).",
+    "examples": [
+      "Während der Prüfung ist Ruhe wichtig. = Durante el examen es importante el silencio.",
+      "Während sie kocht, räume ich auf. = Mientras ella cocina, yo ordeno."
+    ],
+    "synonyms": ["währenddessen (mientras tanto)", "indes (mientras, formal)"],
+    "type": "subjunktion"
+  },
+  "berichten-von": {
+    "word": "berichten von",
+    "translation": "informar de, contar que padecen, reportar sobre",
+    "sentence": "Während einige diese Entwicklung als großen Fortschritt sehen, berichten andere von Konzentrationsproblemen und sozialer Isolation.",
+    "sentenceTranslation": "Mientras que algunas personas ven este desarrollo como un gran avance, otras cuentan que tienen problemas de concentración y aislamiento social.",
+    "explanation": "Verbo con preposición 'von' (dativo). Se usa mucho en registros formales para reportar problemas o situaciones.",
+    "conjugation": {
+      "present": {
+        "ich": "berichte von",
+        "du": "berichtest von",
+        "er/sie/es": "berichtet von",
+        "wir": "berichten von",
+        "ihr": "berichtet von",
+        "sie/Sie": "berichten von"
+      },
+      "preterite": {
+        "ich": "berichtete von",
+        "du": "berichtetest von",
+        "er/sie/es": "berichtete von",
+        "wir": "berichteten von",
+        "ihr": "berichtetet von",
+        "sie/Sie": "berichteten von"
+      },
+      "indirekteRede": {
+        "ich": "berichte von",
+        "du": "berichtest von",
+        "er/sie/es": "berichte von",
+        "wir": "berichten von",
+        "ihr": "berichtet von",
+        "sie/Sie": "berichten von"
+      },
+      "perfect": "hat von ... berichtet",
+      "infinitive": "von ... berichten"
+    },
+    "examples": [
+      "Die Medien berichten von einem Skandal. = Los medios informan de un escándalo.",
+      "Meine Freundin berichtet von ihrer Reise. = Mi amiga cuenta sobre su viaje."
+    ],
+    "synonyms": ["erzählen von (contar sobre)", "sprechen von (hablar de)"],
+    "type": "verb"
+  },
+  "rahmenbedingungen": {
+    "word": "Rahmenbedingungen",
+    "translation": "condiciones marco, contexto y condiciones",
+    "sentence": "Entscheidend sind die Rahmenbedingungen, die didaktische Gestaltung sowie die Fähigkeit zur Selbstorganisation.",
+    "sentenceTranslation": "Lo decisivo son las condiciones marco, el diseño didáctico, así como la capacidad de autoorganización.",
+    "explanation": "Sustantivo compuesto (plural). Se refiere al conjunto de condiciones: infraestructura, reglas, recursos, organización, etc. Muy usado en contextos académicos y administrativos.",
+    "examples": [
+      "Die Rahmenbedingungen für Startups haben sich verbessert. = Las condiciones marco para startups han mejorado.",
+      "Ohne gute Rahmenbedingungen kann das Projekt nicht gelingen. = Sin buenas condiciones marco el proyecto no puede tener éxito."
+    ],
+    "synonyms": ["Bedingungen (condiciones)", "Voraussetzungen (requisitos previos)"],
+    "type": "nomen",
+    "gender": "die (femenino, plural en el texto)",
+    "case": "Nominativ Plural (die Rahmenbedingungen)",
+    "singular": "die Rahmenbedingung",
+    "plural": "die Rahmenbedingungen"
+  },
+  "fortschritt": {
+    "word": "Fortschritt",
+    "translation": "progreso, avance",
+    "sentence": "Während einige diese Entwicklung als großen Fortschritt sehen, berichten andere von Konzentrationsproblemen und sozialer Isolation.",
+    "sentenceTranslation": "Mientras que algunas personas ven este desarrollo como un gran progreso, otras cuentan que tienen problemas de concentración y aislamiento social.",
+    "explanation": "Sustantivo masculino. Se refiere al avance positivo en un proceso, desarrollo o tecnología.",
+    "examples": [
+      "Die Wissenschaft macht große Fortschritte. = La ciencia hace grandes progresos.",
+      "Ohne Fortschritt gibt es keine Entwicklung. = Sin progreso no hay desarrollo."
+    ],
+    "synonyms": ["Entwicklung (desarrollo)", "Verbesserung (mejora)"],
+    "type": "nomen",
+    "gender": "der (masculino)",
+    "case": "Akkusativ Singular (großen Fortschritt)",
+    "singular": "der Fortschritt",
+    "plural": "die Fortschritte"
+  },
+  "didaktische-gestaltung": {
+    "word": "didaktische Gestaltung",
+    "translation": "diseño didáctico, forma en que se estructura y enseña",
+    "sentence": "Entscheidend sind die Rahmenbedingungen, die didaktische Gestaltung sowie die Fähigkeit zur Selbstorganisation.",
+    "sentenceTranslation": "Lo decisivo son las condiciones marco, el diseño didáctico, así como la capacidad de autoorganización.",
+    "explanation": "Sustantivo compuesto. Se refiere a cómo se estructura y enseña: actividades, ritmo, interacción, materiales. 'didaktisch' = relacionado con la enseñanza.",
+    "examples": [
+      "Die didaktische Gestaltung des Museums ist sehr modern. = El diseño didáctico del museo es muy moderno.",
+      "Eine kreative didaktische Gestaltung motiviert die Schüler. = Un diseño didáctico creativo motiva a los estudiantes."
+    ],
+    "synonyms": ["Unterrichtsgestaltung (estructura de la clase)", "Lehrplanung (planificación docente)"],
+    "type": "noun-phrase"
+  },
+  "selbstorganisation": {
+    "word": "Selbstorganisation",
+    "translation": "autoorganización, capacidad de organizarse por cuenta propia",
+    "sentence": "Entscheidend sind die Rahmenbedingungen, die didaktische Gestaltung sowie die Fähigkeit zur Selbstorganisation.",
+    "sentenceTranslation": "Lo decisivo son las condiciones marco, el diseño didáctico, así como la capacidad de autoorganización.",
+    "explanation": "Sustantivo femenino. Se refiere a la capacidad de planificar, priorizar, mantener disciplina y gestionar tiempo de forma autónoma.",
+    "examples": [
+      "Freelancer brauchen viel Selbstorganisation. = Los freelancers necesitan mucha autoorganización.",
+      "Meine Selbstorganisation hat sich während des Studiums verbessert. = Mi autoorganización ha mejorado durante los estudios."
+    ],
+    "synonyms": ["Selbstdisziplin (autodisciplina)", "Eigenverantwortung (autorresponsabilidad)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Dativ Singular (zur Selbstorganisation)",
+    "singular": "die Selbstorganisation",
+    "plural": "die Selbstorganisationen"
+  },
+  "meiner-meinung-nach": {
+    "word": "Meiner Meinung nach",
+    "translation": "en mi opinión",
+    "sentence": "Meiner Meinung nach sind digitale Lehrformate eine sinnvolle Ergänzung, aber kein vollständiger Ersatz für Präsenzlehre.",
+    "sentenceTranslation": "En mi opinión, las formas de enseñanza digital son un complemento útil, pero no un sustituto completo de la enseñanza presencial.",
+    "explanation": "Expresión fija para introducir una opinión personal. Literalmente: \"según mi opinión\".",
+    "examples": [
+      "Meiner Meinung nach ist Pizza das beste Essen. = En mi opinión, la pizza es la mejor comida.",
+      "Meiner Meinung nach war der Film langweilig. = En mi opinión, la película fue aburrida."
+    ],
+    "synonyms": ["ich finde, dass ... (pienso que ...)", "aus meiner Sicht (desde mi punto de vista)"],
+    "type": "phrase",
+    "components": [
+      { "word": "Meiner", "type": "pronomen" },
+      { "word": "Meinung", "type": "nomen" },
+      { "word": "nach", "type": "präposition" }
+    ]
+  },
+  "ersatz": {
+    "word": "Ersatz",
+    "translation": "sustituto, reemplazo",
+    "sentence": "Meiner Meinung nach sind digitale Lehrformate eine sinnvolle Ergänzung, aber kein vollständiger Ersatz für Präsenzlehre.",
+    "sentenceTranslation": "En mi opinión, las formas de enseñanza digital son un complemento útil, pero no un sustituto completo de la enseñanza presencial.",
+    "explanation": "Sustantivo masculino. Significa algo que reemplaza a otra cosa, a menudo con el matiz de que no es tan bueno como el original.",
+    "examples": [
+      "Zucker-Ersatz ist nicht immer gesünder. = Los sustitutos del azúcar no siempre son más saludables.",
+      "Wir brauchen einen Ersatz für den kaputten Computer. = Necesitamos un reemplazo para la computadora rota."
+    ],
+    "synonyms": ["Vertretung (sustitución)", "Alternative (alternativa)"],
+    "type": "nomen",
+    "gender": "der (masculino)",
+    "case": "Nominativ Singular (kein vollständiger Ersatz)",
+    "singular": "der Ersatz",
+    "plural": "die Ersätze"
+  },
+  "entscheidend-sind": {
+    "word": "Entscheidend sind",
+    "translation": "lo decisivo son, lo determinante es",
+    "sentence": "Entscheidend sind die Rahmenbedingungen, die didaktische Gestaltung sowie die Fähigkeit zur Selbstorganisation.",
+    "sentenceTranslation": "Lo decisivo son las condiciones marco, el diseño didáctico, así como la capacidad de autoorganización.",
+    "explanation": "Estructura típica para enfatizar qué factores son determinantes. \"entscheidend\" = decisivo, determinante; \"sind\" = forma de \"sein\".",
+    "examples": [
+      "Entscheidend sind die ersten fünf Minuten. = Los primeros cinco minutos son decisivos.",
+      "Entscheidend ist nicht das Geld, sondern die Zeit. = Lo decisivo no es el dinero, sino el tiempo."
+    ],
+    "type": "phrase",
+    "components": [
+      { "word": "Entscheidend", "type": "adjektiv" },
+      { "word": "sind", "type": "verb" }
+    ]
+  },
+  "betreuungspflichten": {
+    "word": "Betreuungspflichten",
+    "translation": "obligaciones de cuidado, responsabilidades de cuidado",
+    "sentence": "Studierende können ortsunabhängig teilnehmen, was besonders für Pendlerinnen und Pendler, Studierende mit Nebenjob oder Menschen mit Betreuungspflichten wichtig ist.",
+    "sentenceTranslation": "Los estudiantes pueden participar independientemente del lugar, lo cual es especialmente importante para quienes viajan diariamente, estudiantes con trabajo secundario o personas con obligaciones de cuidado.",
+    "explanation": "Sustantivo plural. Se refiere a obligaciones de cuidado, sobre todo hijos (Kinderbetreuung) o familiares (Pflege). Muy usado en contextos administrativos y académicos.",
+    "examples": [
+      "Viele Frauen haben familiäre Betreuungspflichten. = Muchas mujeres tienen obligaciones familiares de cuidado.",
+      "Betreuungspflichten erschweren die Karriere. = Las obligaciones de cuidado dificultan la carrera."
+    ],
+    "synonyms": ["familiäre Verpflichtungen (obligaciones familiares)", "Kinderbetreuung (cuidado de niños)", "Pflegeverpflichtungen (obligaciones de cuidado/enfermería)"],
+    "type": "nomen",
+    "gender": "die (femenino, plural en el texto)",
+    "case": "Dativ Plural (mit Betreuungspflichten)",
+    "singular": "die Betreuungspflicht",
+    "plural": "die Betreuungspflichten"
+  },
+  "zeitversetzt": {
+    "word": "zeitversetzt",
+    "translation": "con desfase temporal, en diferido, más tarde",
+    "sentence": "Außerdem lassen sich aufgezeichnete Vorlesungen zeitversetzt ansehen.",
+    "sentenceTranslation": "Además, las clases grabadas se pueden ver en diferido.",
+    "explanation": "Adjetivo/adverbio. Significa 'con desfase temporal', es decir, no en vivo sino más tarde, cuando convenga.",
+    "examples": [
+      "Das Interview wird zeitversetzt gesendet. = La entrevista se transmite en diferido.",
+      "Wir arbeiten zeitversetzt in verschiedenen Zeitzonen. = Trabajamos con desfase temporal en diferentes zonas horarias."
+    ],
+    "synonyms": ["später (más tarde)", "zu einem anderen Zeitpunkt (en otro momento)"],
+    "type": "adjektiv"
+  },
+  "dadurch": {
+    "word": "Dadurch",
+    "translation": "por eso, gracias a eso, mediante eso, a través de eso",
+    "sentence": "Außerdem lassen sich aufgezeichnete Vorlesungen zeitversetzt ansehen. Dadurch kann man schwierige Inhalte wiederholen, anhalten und Notizen in Ruhe ergänzen.",
+    "sentenceTranslation": "Además, las clases grabadas se pueden ver en diferido. Gracias a eso se puede repetir contenidos difíciles, pausar y completar notas con calma.",
+    "explanation": "Adverbio pronominal (conector). Retoma un hecho anterior y lo convierte en causa/medio. Tiene matiz de 'medio o mecanismo' ('a través de eso'), no solo 'resultado'.",
+    "examples": [
+      "Ich habe viel geübt. Dadurch bin ich besser geworden. = He practicado mucho. Por eso he mejorado.",
+      "Dadurch entstehen neue Möglichkeiten. = A través de eso surgen nuevas posibilidades."
+    ],
+    "synonyms": ["deshalb (por eso)", "darum (por eso)", "damit (con eso, de ese modo)", "aus diesem Grund (por este motivo, más formal)"],
+    "type": "adverb"
+  },
+  "hinzu-kommt": {
+    "word": "Hinzu kommt",
+    "translation": "además, se suma que, hay que añadir que",
+    "sentence": "Hinzu kommt, dass digitale Formate Ressourcen sparen können, zum Beispiel Zeit für die Anfahrt oder Kosten für eine Unterkunft, wenn man nicht in der Hochschulstadt wohnt.",
+    "sentenceTranslation": "Además, se suma que los formatos digitales pueden ahorrar recursos, por ejemplo tiempo de desplazamiento o costos de alojamiento, si uno no vive en la ciudad universitaria.",
+    "explanation": "Expresión fija. Introduce un punto adicional, normalmente positivo. Estructura: 'Hinzu kommt, dass...' (se suma que...).",
+    "examples": [
+      "Hinzu kommt, dass das Wetter schlecht ist. = Además, el clima está malo.",
+      "Hinzu kommt die Tatsache, dass wir wenig Zeit haben. = Se suma el hecho de que tenemos poco tiempo."
+    ],
+    "synonyms": ["außerdem (además)", "zusätzlich (adicionalmente)", "darüber hinaus (además de eso)"],
+    "type": "phrase",
+    "components": [
+      {
+        "word": "Hinzu",
+        "type": "adverb"
+      },
+      {
+        "word": "kommt",
+        "type": "verb"
+      }
+    ]
+  },
+  "anhalten": {
+    "word": "anhalten",
+    "translation": "detener, pausar",
+    "sentence": "Außerdem lassen sich aufgezeichnete Vorlesungen zeitversetzt ansehen. Dadurch kann man schwierige Inhalte wiederholen, anhalten und Notizen in Ruhe ergänzen.",
+    "sentenceTranslation": "Además, se pueden ver las clases grabadas en diferido. Gracias a eso se pueden repetir los contenidos difíciles, hacer pausas y completar las notas con calma.",
+    "explanation": "Verbo separable. Significa detener algo por un momento (por ejemplo, un vídeo).",
+    "conjugation": {
+      "present": {
+        "ich": "halte an",
+        "du": "hältst an",
+        "er/sie/es": "hält an",
+        "wir": "halten an",
+        "ihr": "haltet an",
+        "sie/Sie": "halten an"
+      },
+      "preterite": {
+        "ich": "hielt an",
+        "du": "hieltst an",
+        "er/sie/es": "hielt an",
+        "wir": "hielten an",
+        "ihr": "hieltet an",
+        "sie/Sie": "hielten an"
+      },
+      "indirekteRede": {
+        "ich": "halte an",
+        "du": "haltest an",
+        "er/sie/es": "halte an",
+        "wir": "halten an",
+        "ihr": "haltet an",
+        "sie/Sie": "halten an"
+      },
+      "perfect": "hat angehalten",
+      "infinitive": "anhalten"
+    },
+    "examples": [
+      "Der Bus hält an der nächsten Haltestelle an. = El autobús para en la siguiente parada.",
+      "Die Diskussion hielt drei Stunden an. = La discusión duró tres horas."
+    ],
+    "synonyms": ["stoppen (detener)", "unterbrechen (interrumpir)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "ergaenzen": {
+    "word": "ergänzen",
+    "translation": "completar, añadir",
+    "sentence": "Außerdem lassen sich aufgezeichnete Vorlesungen zeitversetzt ansehen. Dadurch kann man schwierige Inhalte wiederholen, anhalten und Notizen in Ruhe ergänzen.",
+    "sentenceTranslation": "Además, se pueden ver las clases grabadas en diferido. Gracias a eso se pueden repetir los contenidos difíciles, hacer pausas y completar las notas con calma.",
+    "explanation": "Verbo no separable. Significa completar algo añadiendo lo que falta.",
+    "conjugation": {
+      "present": {
+        "ich": "ergänze",
+        "du": "ergänzt",
+        "er/sie/es": "ergänzt",
+        "wir": "ergänzen",
+        "ihr": "ergänzt",
+        "sie/Sie": "ergänzen"
+      },
+      "preterite": {
+        "ich": "ergänzte",
+        "du": "ergänztest",
+        "er/sie/es": "ergänzte",
+        "wir": "ergänzten",
+        "ihr": "ergänztet",
+        "sie/Sie": "ergänzten"
+      },
+      "indirekteRede": {
+        "ich": "ergänze",
+        "du": "ergänzest",
+        "er/sie/es": "ergänze",
+        "wir": "ergänzen",
+        "ihr": "ergänzet",
+        "sie/Sie": "ergänzen"
+      },
+      "perfect": "hat ergänzt",
+      "infinitive": "ergänzen"
+    },
+    "examples": [
+      "Die beiden Farben ergänzen sich perfekt. = Los dos colores se complementan perfectamente.",
+      "Kannst du bitte deine Adresse ergänzen? = ¿Puedes completar tu dirección, por favor?"
+    ],
+    "synonyms": ["vervollständigen (completar)", "hinzufügen (añadir)"],
+    "type": "verb"
+  },
+  "ressourcen-sparen": {
+    "word": "Ressourcen sparen",
+    "translation": "ahorrar recursos",
+    "sentence": "Hinzu kommt, dass digitale Formate Ressourcen sparen können, zum Beispiel Zeit für die Anfahrt oder Kosten für eine Unterkunft, wenn man nicht in der Hochschulstadt wohnt.",
+    "sentenceTranslation": "Además, se suma que los formatos digitales pueden ahorrar recursos, por ejemplo tiempo de desplazamiento o costos de alojamiento, si uno no vive en la ciudad universitaria.",
+    "explanation": "Verbo separable. 'Ressourcen' = recursos (tiempo, dinero, energía, esfuerzo). 'sparen' = ahorrar.",
+    "conjugation": {
+      "present": {
+        "ich": "spare Ressourcen",
+        "du": "sparst Ressourcen",
+        "er/sie/es": "spart Ressourcen",
+        "wir": "sparen Ressourcen",
+        "ihr": "spart Ressourcen",
+        "sie/Sie": "sparen Ressourcen"
+      },
+      "preterite": {
+        "ich": "sparte Ressourcen",
+        "du": "spartest Ressourcen",
+        "er/sie/es": "sparte Ressourcen",
+        "wir": "sparten Ressourcen",
+        "ihr": "spartet Ressourcen",
+        "sie/Sie": "sparten Ressourcen"
+      },
+      "indirekteRede": {
+        "ich": "spare Ressourcen",
+        "du": "sparest Ressourcen",
+        "er/sie/es": "spare Ressourcen",
+        "wir": "sparen Ressourcen",
+        "ihr": "sparet Ressourcen",
+        "sie/Sie": "sparen Ressourcen"
+      },
+      "perfect": "hat Ressourcen gespart",
+      "infinitive": "Ressourcen sparen"
+    },
+    "examples": [
+      "Recycling hilft dabei, natürliche Ressourcen zu sparen. = El reciclaje ayuda a ahorrar recursos naturales.",
+      "Durch Homeoffice spare ich Zeit und Geld. = Con el trabajo desde casa ahorro tiempo y dinero."
+    ],
+    "synonyms": ["einsparen (ahorrar, reducir)", "sparen (ahorrar)"],
+    "type": "verb"
+  },
+  "wirkt-kuenstlich": {
+    "word": "wirkt künstlich",
+    "translation": "se siente artificial, parece forzado, no se siente natural",
+    "sentence": "In Online-Formaten fällt das oft weg oder wirkt künstlich.",
+    "sentenceTranslation": "En formatos online eso muchas veces desaparece o se siente artificial.",
+    "explanation": "Expresión. 'wirken' = dar impresión, parecer. 'künstlich' = artificial, forzado. No dice que sea artificial de verdad, sino que da esa impresión.",
+    "conjugation": {
+      "present": {
+        "ich": "wirke künstlich",
+        "du": "wirkst künstlich",
+        "er/sie/es": "wirkt künstlich",
+        "wir": "wirken künstlich",
+        "ihr": "wirkt künstlich",
+        "sie/Sie": "wirken künstlich"
+      },
+      "preterite": {
+        "ich": "wirkte künstlich",
+        "du": "wirktest künstlich",
+        "er/sie/es": "wirkte künstlich",
+        "wir": "wirkten künstlich",
+        "ihr": "wirktet künstlich",
+        "sie/Sie": "wirkten künstlich"
+      },
+      "indirekteRede": {
+        "ich": "wirke künstlich",
+        "du": "wirkest künstlich",
+        "er/sie/es": "wirke künstlich",
+        "wir": "wirken künstlich",
+        "ihr": "wirket künstlich",
+        "sie/Sie": "wirken künstlich"
+      },
+      "perfect": "hat künstlich gewirkt",
+      "infinitive": "künstlich wirken"
+    },
+    "examples": [
+      "Sein Lächeln wirkt sehr künstlich. = Su sonrisa se ve muy artificial.",
+      "Die Blumen wirken echt, sind aber künstlich. = Las flores parecen reales, pero son artificiales."
+    ],
+    "synonyms": ["wirkt gestellt (se ve armado, actuado)", "wirkt aufgesetzt (se siente afectado)", "wirkt gezwungen (se siente forzado)", "wirkt unnatürlich (se siente poco natural)"],
+    "type": "verb"
+  },
+  "hemmschwelle": {
+    "word": "Hemmschwelle",
+    "translation": "barrera psicológica, inhibición, umbral de vergüenza/miedo",
+    "sentence": "Die Hemmschwelle, einfach die Kamera auszuschalten und nebenbei etwas anderes zu machen, ist niedrig.",
+    "sentenceTranslation": "La barrera para simplemente apagar la cámara y hacer otra cosa al mismo tiempo es baja.",
+    "explanation": "Sustantivo femenino. Literalmente el 'umbral' a partir del cual te animas a hacer algo. 'Hemmung' = inhibición, freno interno. 'Schwelle' = umbral.",
+    "examples": [
+      "Die Hemmschwelle für Online-Shopping ist sehr niedrig. = La barrera para comprar online es muy baja.",
+      "Bei Jugendlichen ist die Hemmschwelle für Risiken oft niedriger. = En los jóvenes la barrera para los riesgos suele ser más baja."
+    ],
+    "synonyms": ["Hemmung (inhibición)", "Scheu (temor, recelo)"],
+    "antonyms": ["Unbefangenheit (desinhibición)", "Selbstsicherheit (seguridad en sí mismo)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Nominativ Singular (Die Hemmschwelle ... ist niedrig.)",
+    "singular": "die Hemmschwelle",
+    "plural": "die Hemmschwellen"
+  },
+  "unuebersichtliche": {
+    "word": "unübersichtliche",
+    "translation": "confuso/a, poco claro/a, difícil de navegar, desordenado/a",
+    "sentence": "Technische Probleme, schlechte Internetverbindung oder unübersichtliche Plattformen können außerdem Stress verursachen und den Lernfluss stören.",
+    "sentenceTranslation": "Los problemas técnicos, mala conexión a internet o plataformas confusas pueden además causar estrés y perturbar el flujo de aprendizaje.",
+    "explanation": "Adjetivo. No es que sea 'misterioso', sino que la estructura no ayuda: cuesta orientarse, encontrar cosas, entender dónde está qué. Se usa mucho para interfaces, webs, plataformas.",
+    "examples": [
+      "Der Stadtplan ist völlig unübersichtlich. = El mapa de la ciudad es completamente confuso.",
+      "Das Büro ist so unübersichtlich, dass ich nichts finde. = La oficina está tan desordenada que no encuentro nada."
+    ],
+    "synonyms": ["verwirrend (confuso, desorientador)", "chaotisch (caótico, más fuerte)", "unklar (no está claro)"],
+    "antonyms": ["übersichtlich (claro, bien organizado)", "strukturiert (estructurado)"],
+    "type": "adjektiv",
+    "baseForm": "unübersichtlich"
+  },
+  "nicht-zuletzt": {
+    "word": "Nicht zuletzt",
+    "translation": "por último, finalmente, y no menos importante",
+    "sentence": "Nicht zuletzt ist digitale Lehre für manche Fächer nur begrenzt geeignet, etwa wenn Laborversuche, praktische Übungen oder bestimmte Diskussionen im Vordergrund stehen.",
+    "sentenceTranslation": "Por último, la enseñanza digital solo es adecuada de forma limitada para algunas asignaturas, por ejemplo cuando los experimentos de laboratorio, las prácticas o ciertos debates son lo más importante.",
+    "explanation": "Conector que introduce un punto más, normalmente hacia el final. No es 'finalmente' en el sentido de 'al fin', sino 'último punto relevante' o 'y no menos importante'.",
+    "examples": [
+      "Nicht zuletzt wegen der Kosten haben wir abgesagt. = Y también por los costos hemos cancelado.",
+      "Nicht zuletzt ist Gesundheit das Wichtigste. = Y no menos importante, la salud es lo más importante."
+    ],
+    "synonyms": ["schließlich (finalmente)", "zuletzt (por último)", "nicht zu vergessen (no hay que olvidar)"],
+    "type": "phrase",
+    "components": [
+      {
+        "word": "Nicht",
+        "type": "partikel"
+      },
+      {
+        "word": "zuletzt",
+        "type": "adverb"
+      }
+    ]
+  },
+  "nur-begrenzt-geeignet": {
+    "word": "nur begrenzt geeignet",
+    "translation": "solo adecuado de forma limitada, apto solo hasta cierto punto",
+    "sentence": "Nicht zuletzt ist digitale Lehre für manche Fächer nur begrenzt geeignet, etwa wenn Laborversuche, praktische Übungen oder bestimmte Diskussionen im Vordergrund stehen.",
+    "sentenceTranslation": "Por último, la enseñanza digital solo es adecuada de forma limitada para algunas asignaturas, por ejemplo cuando los experimentos de laboratorio, las prácticas o ciertos debates son lo más importante.",
+    "explanation": "Expresión. 'geeignet' = adecuado/a, apto/a. 'nur begrenzt' = solo de manera limitada. No es 'imposible', sino: sirve, pero no del todo. Muy usado para suavizar. Estructura: sein (ist) + geeignet.",
+    "parts": ["ist", "geeignet"],
+    "examples": [
+      "Dieser Stoff ist nur begrenzt wasserdicht. = Este material es resistente al agua solo hasta cierto punto.",
+      "Meine Erfahrung ist nur begrenzt geeignet für diesen Job. = Mi experiencia es adecuada solo de forma limitada para este trabajo."
+    ],
+    "synonyms": ["nur teilweise geeignet (solo parcialmente adecuado)", "nicht in allen Fällen geeignet (no adecuado en todos los casos)"],
+    "type": "verb",
+    "verbType": "compound-auxiliary"
+  },
+  "im-vordergrund-stehen": {
+    "word": "im Vordergrund stehen",
+    "translation": "ser lo principal, estar en primer plano, ser el enfoque",
+    "sentence": "Nicht zuletzt ist digitale Lehre für manche Fächer nur begrenzt geeignet, etwa wenn Laborversuche, praktische Übungen oder bestimmte Diskussionen im Vordergrund stehen.",
+    "sentenceTranslation": "Por último, la enseñanza digital solo es adecuada de forma limitada para algunas asignaturas, por ejemplo cuando los experimentos de laboratorio, las prácticas o ciertos debates son lo más importante.",
+    "explanation": "Expresión fija. 'im Vordergrund' = en primer plano (in dem Vordergrund, dativo). 'stehen' = estar, en sentido figurado. Significa ser lo principal, tener prioridad.",
+    "parts": ["stehen"],
+    "conjugation": {
+      "present": {
+        "ich": "stehe im Vordergrund",
+        "du": "stehst im Vordergrund",
+        "er/sie/es": "steht im Vordergrund",
+        "wir": "stehen im Vordergrund",
+        "ihr": "steht im Vordergrund",
+        "sie/Sie": "stehen im Vordergrund"
+      },
+      "preterite": {
+        "ich": "stand im Vordergrund",
+        "du": "standest im Vordergrund",
+        "er/sie/es": "stand im Vordergrund",
+        "wir": "standen im Vordergrund",
+        "ihr": "standet im Vordergrund",
+        "sie/Sie": "standen im Vordergrund"
+      },
+      "indirekteRede": {
+        "ich": "stehe im Vordergrund",
+        "du": "stehest im Vordergrund",
+        "er/sie/es": "stehe im Vordergrund",
+        "wir": "stehen im Vordergrund",
+        "ihr": "stehet im Vordergrund",
+        "sie/Sie": "stehen im Vordergrund"
+      },
+      "perfect": "hat im Vordergrund gestanden",
+      "infinitive": "im Vordergrund stehen"
+    },
+    "examples": [
+      "Bei der Hochzeit steht die Liebe im Vordergrund. = En la boda el amor está en primer plano.",
+      "In diesem Job steht Teamwork im Vordergrund. = En este trabajo el trabajo en equipo es lo principal."
+    ],
+    "synonyms": ["im Mittelpunkt stehen (estar en el centro)", "Priorität haben (tener prioridad)"],
+    "type": "verb"
+  },
+  "absagen-example": {
+    "word": "absagen",
+    "translation": "cancelar, anular",
+    "sentence": "Ich muss die Veranstaltung absagen, weil ich krank bin.",
+    "sentenceTranslation": "Debo cancelar el evento porque estoy enfermo.",
+    "explanation": "Verbo separable. El prefijo 'ab-' se separa en presente, pretérito y en oraciones principales. En infinitivo y participio, el verbo está junto: 'absagen', 'abgesagt'.",
+    "parts": ["muss", "ab", "sagen"],
+    "conjugation": {
+      "present": {
+        "ich": "sage ab",
+        "du": "sagst ab",
+        "er/sie/es": "sagt ab",
+        "wir": "sagen ab",
+        "ihr": "sagt ab",
+        "sie/Sie": "sagen ab"
+      },
+      "preterite": {
+        "ich": "sagte ab",
+        "du": "sagtest ab",
+        "er/sie/es": "sagte ab",
+        "wir": "sagten ab",
+        "ihr": "sagtet ab",
+        "sie/Sie": "sagten ab"
+      },
+      "indirekteRede": {
+        "ich": "sage ab",
+        "du": "sagest ab",
+        "er/sie/es": "sage ab",
+        "wir": "sagen ab",
+        "ihr": "saget ab",
+        "sie/Sie": "sagen ab"
+      },
+      "perfect": "hat abgesagt",
+      "infinitive": "absagen"
+    },
+    "examples": [
+      "Der Konzert wurde wegen Regen abgesagt. = El concierto fue cancelado por la lluvia.",
+      "Ich sage meinen Termin beim Arzt ab. = Cancelo mi cita con el médico."
+    ],
+    "synonyms": ["stornieren (cancelar, anular)", "abbrechen (cancelar, interrumpir)"],
+    "type": "verb",
+    "verbType": "separable-modal"
+  },
+  "deutliche": {
+    "word": "deutliche",
+    "translation": "claros/as, evidentes, marcados/as",
+    "sentence": "Trotzdem gibt es deutliche Nachteile.",
+    "sentenceTranslation": "Sin embargo, hay desventajas claras.",
+    "explanation": "Adjetivo declinado (plural, nominativo). 'deutlich' = claro, evidente, marcado. Se usa para enfatizar que algo es obvio o notable.",
+    "examples": [
+      "Es gibt deutliche Verbesserungen. = Hay mejoras evidentes.",
+      "Sie hat deutliche Fortschritte gemacht. = Ella ha hecho progresos marcados."
+    ],
+    "synonyms": ["klar (claro)", "offensichtlich (obvio)", "markant (marcado)"],
+    "type": "adjektiv",
+    "baseForm": "deutlich"
+  },
+  "gespraeche": {
+    "word": "Gespräche",
+    "translation": "conversaciones, charlas",
+    "sentence": "In Präsenzveranstaltungen entstehen spontane Fragen, kurze Gespräche nach dem Seminar oder Lerngruppen, die den Studienalltag stabilisieren.",
+    "sentenceTranslation": "En las clases presenciales surgen preguntas espontáneas, breves conversaciones después del seminario o grupos de estudio que estabilizan el día a día de los estudios.",
+    "explanation": "Plural de \"Gespräch\" (conversación). Aquí se refiere a intercambios breves e informales entre personas.",
+    "examples": [
+      "Wir führen wichtige Gespräche mit unseren Kunden. = Llevamos a cabo conversaciones importantes con nuestros clientes.",
+      "Die Gespräche zwischen den Ländern waren erfolgreich. = Las conversaciones entre los países fueron exitosas."
+    ],
+    "synonyms": ["Unterhaltungen (charlas)", "Dialoge (diálogos)"],
+    "type": "nomen",
+    "gender": "das (neutro)",
+    "case": "Akkusativ Plural (kurze Gespräche)",
+    "singular": "das Gespräch",
+    "plural": "die Gespräche"
+  },
+  "faellt-weg": {
+    "word": "fällt ... weg",
+    "translation": "desaparece, se pierde",
+    "sentence": "In Online-Formaten fällt das oft weg oder wirkt künstlich.",
+    "sentenceTranslation": "En los formatos en línea eso a menudo desaparece o se siente artificial.",
+    "explanation": "Forma de \"wegfallen\" (quedar suprimido, desaparecer). Se usa para expresar que algo ya no ocurre o ya no está presente.",
+    "parts": ["fällt", "weg"],
+    "conjugation": {
+      "present": {
+        "ich": "falle weg",
+        "du": "fällst weg",
+        "er/sie/es": "fällt weg",
+        "wir": "fallen weg",
+        "ihr": "fallt weg",
+        "sie/Sie": "fallen weg"
+      },
+      "preterite": {
+        "ich": "fiel weg",
+        "du": "fielst weg",
+        "er/sie/es": "fiel weg",
+        "wir": "fielen weg",
+        "ihr": "fielt weg",
+        "sie/Sie": "fielen weg"
+      },
+      "indirekteRede": {
+        "ich": "falle weg",
+        "du": "fallest weg",
+        "er/sie/es": "falle weg",
+        "wir": "fallen weg",
+        "ihr": "fallet weg",
+        "sie/Sie": "fallen weg"
+      },
+      "perfect": "ist weggefallen",
+      "infinitive": "wegfallen"
+    },
+    "examples": [
+      "Die Überstunden fallen nächste Woche weg. = Las horas extra desaparecen la próxima semana.",
+      "Mein Lieblingsfach ist weggefallen. = Mi materia favorita fue eliminada."
+    ],
+    "synonyms": ["verschwindet (desaparece)", "ist nicht mehr da (ya no está)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "studienalltag": {
+    "word": "Studienalltag",
+    "translation": "vida diaria de estudios, rutina estudiantil",
+    "sentence": "In Präsenzveranstaltungen entstehen spontane Fragen, kurze Gespräche nach dem Seminar oder Lerngruppen, die den Studienalltag stabilisieren.",
+    "sentenceTranslation": "En eventos presenciales surgen preguntas espontáneas, conversaciones cortas después del seminario o grupos de estudio que estabilizan la vida diaria de estudios.",
+    "explanation": "Sustantivo compuesto masculino. 'Studium' = estudios + 'Alltag' = vida diaria, rutina. Se refiere a la rutina diaria de un estudiante universitario.",
+    "examples": [
+      "Mein Studienalltag beginnt um 8 Uhr morgens. = Mi rutina estudiantil comienza a las 8 de la mañana.",
+      "Der Studienalltag in Deutschland ist sehr strukturiert. = La vida diaria de estudios en Alemania está muy estructurada."
+    ],
+    "synonyms": ["Unialltag (vida diaria universitaria)", "Studienroutine (rutina de estudios)"],
+    "type": "nomen",
+    "gender": "der (masculino)",
+    "case": "Akkusativ Singular (den Studienalltag)",
+    "singular": "der Studienalltag",
+    "plural": "die Studienalltage"
+  },
+  "tagesablauf": {
+    "word": "Tagesablauf",
+    "translation": "rutina diaria, transcurso del día",
+    "sentence": "Zusätzlich sinkt bei vielen die Motivation, wenn der Tagesablauf nur vor dem Bildschirm stattfindet.",
+    "sentenceTranslation": "Además, en muchos baja la motivación cuando la rutina diaria solo transcurre frente a la pantalla.",
+    "explanation": "Sustantivo compuesto masculino. 'Tag' = día + 'Ablauf' = transcurso, desarrollo. Se refiere a cómo se desarrolla un día, la rutina diaria.",
+    "examples": [
+      "Mein Tagesablauf ist immer gleich: Arbeit, Sport, Abendessen. = Mi rutina diaria es siempre igual: trabajo, deporte, cena.",
+      "Ein geregelter Tagesablauf hilft bei der Organisation. = Una rutina diaria regulada ayuda con la organización."
+    ],
+    "synonyms": ["Tagesroutine (rutina diaria)", "Tagesplan (plan del día)"],
+    "type": "nomen",
+    "gender": "der (masculino)",
+    "case": "Nominativ Singular (der Tagesablauf ... stattfindet)",
+    "singular": "der Tagesablauf",
+    "plural": "die Tagesabläufe"
+  },
+  "stattfindet": {
+    "word": "stattfindet",
+    "translation": "tiene lugar, se lleva a cabo, ocurre",
+    "sentence": "Zusätzlich sinkt bei vielen die Motivation, wenn der Tagesablauf nur vor dem Bildschirm stattfindet.",
+    "sentenceTranslation": "Además, en muchos baja la motivación cuando la rutina diaria solo transcurre frente a la pantalla.",
+    "explanation": "Verbo separable. 'stattfinden' = tener lugar, celebrarse, ocurrir. Se usa para eventos, actividades, reuniones. El prefijo 'statt-' se separa en presente y pretérito.",
+    "conjugation": {
+      "present": {
+        "ich": "finde statt",
+        "du": "findest statt",
+        "er/sie/es": "findet statt",
+        "wir": "finden statt",
+        "ihr": "findet statt",
+        "sie/Sie": "finden statt"
+      },
+      "preterite": {
+        "ich": "fand statt",
+        "du": "fandest statt",
+        "er/sie/es": "fand statt",
+        "wir": "fanden statt",
+        "ihr": "fandet statt",
+        "sie/Sie": "fanden statt"
+      },
+      "indirekteRede": {
+        "ich": "finde statt",
+        "du": "findest statt",
+        "er/sie/es": "finde statt",
+        "wir": "finden statt",
+        "ihr": "findet statt",
+        "sie/Sie": "finden statt"
+      },
+      "perfect": "hat stattgefunden",
+      "infinitive": "stattfinden"
+    },
+    "examples": [
+      "Das Konzert findet im Park statt. = El concierto tiene lugar en el parque.",
+      "Wann findet das Meeting statt? = ¿Cuándo se lleva a cabo la reunión?"
+    ],
+    "synonyms": ["sich ereignen (ocurrir)", "abgehalten werden (ser celebrado)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "etwa-wenn": {
+    "word": "etwa wenn",
+    "translation": "por ejemplo cuando, como cuando",
+    "sentence": "Nicht zuletzt ist digitale Lehre für manche Fächer nur begrenzt geeignet, etwa wenn Laborversuche, praktische Übungen oder bestimmte Diskussionen im Vordergrund stehen.",
+    "sentenceTranslation": "Por último, la enseñanza digital solo es adecuada de forma limitada para algunas asignaturas, por ejemplo cuando los experimentos de laboratorio, las prácticas o ciertos debates son lo más importante.",
+    "explanation": "Expresión. 'etwa' aquí significa 'por ejemplo' (no 'aproximadamente'). 'wenn' introduce una subordinada condicional o de ejemplo. Introduce casos concretos o ejemplos típicos.",
+    "examples": [
+      "Ich bin gestresst, etwa wenn ich zu viel Arbeit habe. = Estoy estresado, por ejemplo cuando tengo demasiado trabajo.",
+      "Probleme entstehen, etwa wenn die Kommunikation schlecht ist. = Surgen problemas, como cuando la comunicación es mala."
+    ],
+    "synonyms": ["zum Beispiel wenn (por ejemplo cuando)", "beispielsweise wenn (por ejemplo cuando)"],
+    "type": "phrase",
+    "components": [
+      {
+        "word": "etwa",
+        "type": "adverb"
+      },
+      {
+        "word": "wenn",
+        "type": "subjunktion"
+      }
+    ]
+  },
+  "sinnvoll-sind": {
+    "word": "sinnvoll sind",
+    "translation": "son útiles, tienen sentido, son apropiados",
+    "sentence": "Damit Online-Veranstaltungen sinnvoll sind, braucht es klare Bedingungen.",
+    "sentenceTranslation": "Para que los eventos en línea sean útiles, se necesitan condiciones claras.",
+    "explanation": "Expresión con verbo sein. 'sinnvoll' = útil, que tiene sentido, apropiado. Estructura: sein (sind) + sinnvoll. Se usa para evaluar si algo es útil o apropiado.",
+    "parts": ["sind", "sinnvoll"],
+    "examples": [
+      "Regelmäßige Pausen sind sinnvoll. = Los descansos regulares son útiles.",
+      "Ist es sinnvoll, so viel Geld auszugeben? = ¿Tiene sentido gastar tanto dinero?"
+    ],
+    "synonyms": ["nützlich sind (son útiles)", "zweckmäßig sind (son apropiados)"],
+    "type": "verb",
+    "verbType": "compound-auxiliary"
+  },
+  "bedingungen": {
+    "word": "Bedingungen",
+    "translation": "condiciones, requisitos",
+    "sentence": "Damit Online-Veranstaltungen sinnvoll sind, braucht es klare Bedingungen.",
+    "sentenceTranslation": "Para que los eventos en línea sean útiles, se necesitan condiciones claras.",
+    "explanation": "Sustantivo plural (singular: die Bedingung). Se refiere a condiciones, requisitos o circunstancias necesarias para que algo funcione o sea posible.",
+    "examples": [
+      "Die Arbeitsbedingungen haben sich verbessert. = Las condiciones de trabajo han mejorado.",
+      "Unter welchen Bedingungen können wir das machen? = ¿Bajo qué condiciones podemos hacer eso?"
+    ],
+    "synonyms": ["Voraussetzungen (requisitos previos)", "Anforderungen (requisitos)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Akkusativ Plural (klare Bedingungen)",
+    "singular": "die Bedingung",
+    "plural": "die Bedingungen"
+  },
+  "angepasst-werden": {
+    "word": "angepasst werden",
+    "translation": "ser adaptado, ser ajustado, ser modificado",
+    "sentence": "Erstens muss die Didaktik angepasst werden: Eine zweistündige Vorlesung, die nur als Monolog vorgetragen wird, funktioniert online selten gut.",
+    "sentenceTranslation": "Primero, la didáctica debe ser adaptada: una clase de dos horas que solo se presenta como monólogo rara vez funciona bien en línea.",
+    "explanation": "Verbo en pasiva con 'werden'. 'anpassen' = adaptar, ajustar. Estructura: werden (muss werden) + angepasst (participio). Se usa en pasiva para indicar que algo debe ser adaptado o modificado.",
+    "parts": ["muss", "angepasst", "werden"],
+    "conjugation": {
+      "present": {
+        "ich": "werde angepasst",
+        "du": "wirst angepasst",
+        "er/sie/es": "wird angepasst",
+        "wir": "werden angepasst",
+        "ihr": "werdet angepasst",
+        "sie/Sie": "werden angepasst"
+      },
+      "preterite": {
+        "ich": "wurde angepasst",
+        "du": "wurdest angepasst",
+        "er/sie/es": "wurde angepasst",
+        "wir": "wurden angepasst",
+        "ihr": "wurdet angepasst",
+        "sie/Sie": "wurden angepasst"
+      },
+      "indirekteRede": {
+        "ich": "werde angepasst",
+        "du": "werdest angepasst",
+        "er/sie/es": "werde angepasst",
+        "wir": "werden angepasst",
+        "ihr": "werdet angepasst",
+        "sie/Sie": "werden angepasst"
+      },
+      "perfect": "ist angepasst worden",
+      "infinitive": "angepasst werden"
+    },
+    "examples": [
+      "Die Software wird an die neuen Anforderungen angepasst. = El software se adapta a los nuevos requisitos.",
+      "Tiere passen sich an ihre Umgebung an. = Los animales se adaptan a su entorno."
+    ],
+    "synonyms": ["modifiziert werden (ser modificado)", "angemessen werden (ser ajustado)"],
+    "type": "verb",
+    "verbType": "compound-auxiliary"
+  },
+  "zweistuendige": {
+    "word": "zweistündige",
+    "translation": "de dos horas",
+    "sentence": "Eine zweistündige Vorlesung, die nur als Monolog vorgetragen wird, funktioniert online selten gut.",
+    "sentenceTranslation": "Una clase de dos horas que solo se presenta como monólogo rara vez funciona bien en línea.",
+    "explanation": "Adjetivo compuesto declinado. 'zwei' = dos + 'Stunde' = hora + '-ig' (sufijo adjetival). Se usa para indicar duración. Aquí está declinado en nominativo femenino singular.",
+    "examples": [
+      "Wir haben eine dreistündige Fahrt vor uns. = Tenemos un viaje de tres horas por delante.",
+      "Das war eine fünfstündige Operation. = Esa fue una operación de cinco horas."
+    ],
+    "synonyms": ["zwei Stunden dauernd (que dura dos horas)"],
+    "type": "adjektiv",
+    "baseForm": "zweistündig"
+  },
+  "vorgetragen-wird": {
+    "word": "vorgetragen wird",
+    "translation": "se presenta, se expone, se recita",
+    "sentence": "Eine zweistündige Vorlesung, die nur als Monolog vorgetragen wird, funktioniert online selten gut.",
+    "sentenceTranslation": "Una clase de dos horas que solo se presenta como monólogo rara vez funciona bien en línea.",
+    "explanation": "Verbo separable en pasiva. 'vortragen' = presentar, exponer, recitar. Estructura: werden (wird) + vorgetragen (participio). Se usa en pasiva para indicar que algo se presenta o se expone.",
+    "parts": ["wird", "vorgetragen"],
+    "conjugation": {
+      "present": {
+        "ich": "werde vorgetragen",
+        "du": "wirst vorgetragen",
+        "er/sie/es": "wird vorgetragen",
+        "wir": "werden vorgetragen",
+        "ihr": "werdet vorgetragen",
+        "sie/Sie": "werden vorgetragen"
+      },
+      "preterite": {
+        "ich": "wurde vorgetragen",
+        "du": "wurdest vorgetragen",
+        "er/sie/es": "wurde vorgetragen",
+        "wir": "wurden vorgetragen",
+        "ihr": "wurdet vorgetragen",
+        "sie/Sie": "wurden vorgetragen"
+      },
+      "indirekteRede": {
+        "ich": "werde vorgetragen",
+        "du": "werdest vorgetragen",
+        "er/sie/es": "werde vorgetragen",
+        "wir": "werden vorgetragen",
+        "ihr": "werdet vorgetragen",
+        "sie/Sie": "werden vorgetragen"
+      },
+      "perfect": "ist vorgetragen worden",
+      "infinitive": "vorgetragen werden"
+    },
+    "examples": [
+      "Das Gedicht wird von einem Schauspieler vorgetragen. = El poema es recitado por un actor.",
+      "Die Ergebnisse werden morgen vorgetragen. = Los resultados se presentarán mañana."
+    ],
+    "synonyms": ["präsentiert werden (ser presentado)", "dargeboten werden (ser ofrecido)"],
+    "type": "verb",
+    "verbType": "separable-auxiliary"
+  },
+  "aktivierungsphasen": {
+    "word": "Aktivierungsphasen",
+    "translation": "fases de activación, momentos de activación",
+    "sentence": "Besser sind kürzere Einheiten, strukturierte Folien, klare Lernziele und regelmäßige Aktivierungsphasen, zum Beispiel kleine Aufgaben, Umfragen oder Diskussionsräume.",
+    "sentenceTranslation": "Mejor son unidades más cortas, diapositivas estructuradas, objetivos de aprendizaje claros y fases regulares de activación, por ejemplo pequeñas tareas, encuestas o espacios de discusión.",
+    "explanation": "Sustantivo compuesto plural (singular: die Aktivierungsphase). 'Aktivierung' = activación + 'Phase' = fase. Se refiere a momentos o fases en una clase donde se activa a los estudiantes, por ejemplo con preguntas, tareas o discusiones.",
+    "examples": [
+      "Im Fitnessstudio gibt es Aktivierungsphasen vor dem Training. = En el gimnasio hay fases de activación antes del entrenamiento.",
+      "Die Aktivierungsphase am Morgen ist sehr wichtig. = La fase de activación por la mañana es muy importante."
+    ],
+    "synonyms": ["Aktivierungsmomente (momentos de activación)", "Interaktionsphasen (fases de interacción)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Nominativ Plural (regelmäßige Aktivierungsphasen)",
+    "singular": "die Aktivierungsphase",
+    "plural": "die Aktivierungsphasen"
+  },
+  "umfragen": {
+    "word": "Umfragen",
+    "translation": "encuestas, sondeos",
+    "sentence": "Besser sind kürzere Einheiten, strukturierte Folien, klare Lernziele und regelmäßige Aktivierungsphasen, zum Beispiel kleine Aufgaben, Umfragen oder Diskussionsräume.",
+    "sentenceTranslation": "Mejor son unidades más cortas, diapositivas estructuradas, objetivos de aprendizaje claros y fases regulares de activación, por ejemplo pequeñas tareas, encuestas o espacios de discusión.",
+    "explanation": "Sustantivo plural (singular: die Umfrage). 'Umfrage' = encuesta, sondeo. Se refiere a preguntas o sondeos para obtener opiniones o información de un grupo.",
+    "examples": [
+      "Politische Umfragen zeigen interessante Trends. = Las encuestas políticas muestran tendencias interesantes.",
+      "Wir machen eine Umfrage über Essgewohnheiten. = Hacemos una encuesta sobre hábitos alimentarios."
+    ],
+    "synonyms": ["Befragungen (encuestas)", "Erhebungen (sondeos, investigaciones)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Nominativ Plural (kleine ... Umfragen)",
+    "singular": "die Umfrage",
+    "plural": "die Umfragen"
+  },
+  "diskussionsraeume": {
+    "word": "Diskussionsräume",
+    "translation": "espacios de discusión, salas de debate",
+    "sentence": "Besser sind kürzere Einheiten, strukturierte Folien, klare Lernziele und regelmäßige Aktivierungsphasen, zum Beispiel kleine Aufgaben, Umfragen oder Diskussionsräume.",
+    "sentenceTranslation": "Mejor son unidades más cortas, diapositivas estructuradas, objetivos de aprendizaje claros y fases regulares de activación, por ejemplo pequeñas tareas, encuestas o espacios de discusión.",
+    "explanation": "Sustantivo compuesto plural (singular: der Diskussionsraum). 'Diskussion' = discusión + 'Raum' = espacio, sala. Se refiere a espacios (físicos o virtuales) donde se puede discutir o debatir.",
+    "examples": [
+      "In der Bibliothek gibt es spezielle Diskussionsräume. = En la biblioteca hay espacios especiales de discusión.",
+      "Online-Diskussionsräume fördern den Austausch. = Los espacios de discusión online fomentan el intercambio."
+    ],
+    "synonyms": ["Debattenräume (salas de debate)", "Gesprächsräume (espacios de conversación)"],
+    "type": "nomen",
+    "gender": "der (masculino)",
+    "case": "Nominativ Plural (Diskussionsräume)",
+    "singular": "der Diskussionsraum",
+    "plural": "die Diskussionsräume"
+  },
+  "verbindlich-organisiert-sein": {
+    "word": "verbindlich organisiert sein",
+    "translation": "estar organizado de forma vinculante, estar estructurado de manera obligatoria",
+    "sentence": "Zweitens sollte die Kommunikation verbindlich organisiert sein. Das bedeutet feste Sprechstunden, transparente Regeln für Fragen und ein funktionierendes Forum, damit niemand allein bleibt.",
+    "sentenceTranslation": "Segundo, la comunicación debería estar organizada de forma vinculante. Esto significa horarios fijos de consulta, reglas transparentes para preguntas y un foro funcional, para que nadie se quede solo.",
+    "explanation": "Expresión con verbo sein. 'verbindlich' = vinculante, obligatorio, formal. 'organisiert' = organizado. Estructura: sein (sollte sein) + verbindlich organisiert. Indica que algo debe estar organizado de forma formal y obligatoria.",
+    "parts": ["sollte", "verbindlich", "organisiert", "sein"],
+    "examples": [
+      "Die Arbeitszeiten sollten verbindlich organisiert sein. = Los horarios de trabajo deberían estar organizados de forma vinculante.",
+      "Meetings müssen verbindlich organisiert werden. = Las reuniones deben organizarse de forma obligatoria."
+    ],
+    "synonyms": ["formell organisiert sein (estar organizado formalmente)", "strukturiert organisiert sein (estar organizado de forma estructurada)"],
+    "type": "verb",
+    "verbType": "compound-auxiliary"
+  },
+  "sprechstunden": {
+    "word": "Sprechstunden",
+    "translation": "horarios de consulta, horas de atención",
+    "sentence": "Das bedeutet feste Sprechstunden, transparente Regeln für Fragen und ein funktionierendes Forum, damit niemand allein bleibt.",
+    "sentenceTranslation": "Esto significa horarios fijos de consulta, reglas transparentes para preguntas y un foro funcional, para que nadie se quede solo.",
+    "explanation": "Sustantivo compuesto plural (singular: die Sprechstunde). 'Sprechen' = hablar + 'Stunde' = hora. Se refiere a horarios fijos en los que un profesor o profesional está disponible para consultas o conversaciones.",
+    "examples": [
+      "Der Arzt hat nur vormittags Sprechstunden. = El médico solo tiene horarios de consulta por la mañana.",
+      "Die Sprechstunden des Bürgermeisters sind sehr beliebt. = Los horarios de atención del alcalde son muy populares."
+    ],
+    "synonyms": ["Beratungszeiten (horarios de asesoramiento)", "Konsultationszeiten (horarios de consulta)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Akkusativ Plural (feste Sprechstunden)",
+    "singular": "die Sprechstunde",
+    "plural": "die Sprechstunden"
+  },
+  "sowohl-als-auch": {
+    "word": "sowohl... als auch",
+    "translation": "tanto... como..., así como",
+    "sentence": "Drittens braucht es eine gute technische Infrastruktur, sowohl an der Hochschule als auch auf Seiten der Studierenden.",
+    "sentenceTranslation": "Tercero, se necesita una buena infraestructura técnica, tanto en la universidad como del lado de los estudiantes.",
+    "explanation": "Conjunción correlativa. 'sowohl' siempre va acompañado de 'als auch' para formar la expresión completa 'sowohl... als auch' (tanto... como...). Introduce dos elementos de una comparación o enumeración que son igualmente importantes. La estructura es: sowohl [elemento 1] als auch [elemento 2].",
+    "parts": ["sowohl", "als auch"],
+    "examples": [
+      "Ich mag sowohl Kaffee als auch Tee. = Me gusta tanto el café como el té.",
+      "Er spricht sowohl Deutsch als auch Englisch. = Él habla tanto alemán como inglés."
+    ],
+    "synonyms": ["ebenso (igualmente)", "sowohl... wie auch (tanto... como también, menos común)"],
+    "type": "konjunktion"
+  },
+  "zuverlaessigen": {
+    "word": "zuverlässigen",
+    "translation": "confiable, fiable, de confianza",
+    "sentence": "Wer kein ruhiges Zimmer oder keinen zuverlässigen Laptop hat, ist sonst benachteiligt.",
+    "sentenceTranslation": "Quien no tiene una habitación tranquila o una laptop confiable, está en desventaja.",
+    "explanation": "Adjetivo declinado (acusativo masculino singular). 'zuverlässig' = confiable, fiable, de confianza. Se usa para describir algo o alguien en quien se puede confiar.",
+    "examples": [
+      "Mein Auto ist sehr zuverlässig. = Mi auto es muy confiable.",
+      "Sie ist eine zuverlässige Mitarbeiterin. = Ella es una empleada confiable."
+    ],
+    "synonyms": ["verlässlich (confiable)", "vertrauenswürdig (digno de confianza)"],
+    "type": "adjektiv",
+    "baseForm": "zuverlässig"
+  },
+  "benachteiligt": {
+    "word": "benachteiligt",
+    "translation": "en desventaja, perjudicado, desfavorecido",
+    "sentence": "Wer kein ruhiges Zimmer oder keinen zuverlässigen Laptop hat, ist sonst benachteiligt.",
+    "sentenceTranslation": "Quien no tiene una habitación tranquila o una laptop confiable, está en desventaja.",
+    "explanation": "Adjetivo/participio. 'benachteiligen' = perjudicar, poner en desventaja. Aquí usado como predicativo con 'sein' (ist benachteiligt = está en desventaja). Indica que alguien tiene menos oportunidades o está en peor situación.",
+    "examples": [
+      "Kinder aus armen Familien sind oft benachteiligt. = Los niños de familias pobres a menudo están en desventaja.",
+      "Frauen sind in manchen Berufen noch benachteiligt. = Las mujeres aún están en desventaja en algunas profesiones."
+    ],
+    "synonyms": ["nachteilig (desventajoso)", "ungleich behandelt (tratado de forma desigual)"],
+    "antonyms": ["bevorzugt (favorecido)", "begünstigt (beneficiado)"],
+    "type": "adjektiv"
+  },
+  "in-diesem-zusammenhang": {
+    "word": "In diesem Zusammenhang",
+    "translation": "en este contexto, en relación con esto",
+    "sentence": "In diesem Zusammenhang spielen Selbstorganisation und soziale Kontakte eine besonders große Rolle.",
+    "sentenceTranslation": "En este contexto, la autoorganización y los contactos sociales juegan un papel particularmente importante.",
+    "explanation": "Expresión preposicional. Introduce una conexión o relación con lo mencionado anteriormente. 'Zusammenhang' = contexto, conexión. Se usa para relacionar ideas o temas.",
+    "examples": [
+      "In diesem Zusammenhang möchte ich erwähnen... = En este contexto quiero mencionar...",
+      "In diesem Zusammenhang sind die Kosten relevant. = En relación con esto, los costos son relevantes."
+    ],
+    "synonyms": ["in diesem Kontext (en este contexto)", "in diesem Rahmen (en este marco)", "dabei (en relación con eso)"],
+    "type": "phrase",
+    "components": [
+      {
+        "word": "In",
+        "type": "präposition"
+      },
+      {
+        "word": "diesem",
+        "type": "pronomen"
+      },
+      {
+        "word": "Zusammenhang",
+        "type": "nomen"
+      }
+    ]
+  },
+  "grosse-rolle-spielen": {
+    "word": "eine große Rolle spielen",
+    "translation": "jugar un papel importante, tener un papel relevante",
+    "sentence": "In diesem Zusammenhang spielen Selbstorganisation und soziale Kontakte eine besonders große Rolle.",
+    "sentenceTranslation": "En este contexto, la autoorganización y los contactos sociales juegan un papel particularmente importante.",
+    "explanation": "Expresión fija. 'Rolle spielen' = jugar un papel. 'eine große Rolle' = un papel importante. Estructura: [sujeto] spielt/spielen eine [adjetivo] Rolle. Se usa para indicar la importancia de algo.",
+    "parts": ["spielen", "eine besonders große Rolle"],
+    "conjugation": {
+      "present": {
+        "ich": "spiele eine große Rolle",
+        "du": "spielst eine große Rolle",
+        "er/sie/es": "spielt eine große Rolle",
+        "wir": "spielen eine große Rolle",
+        "ihr": "spielt eine große Rolle",
+        "sie/Sie": "spielen eine große Rolle"
+      },
+      "preterite": {
+        "ich": "spielte eine große Rolle",
+        "du": "spieltest eine große Rolle",
+        "er/sie/es": "spielte eine große Rolle",
+        "wir": "spielten eine große Rolle",
+        "ihr": "spieltet eine große Rolle",
+        "sie/Sie": "spielten eine große Rolle"
+      },
+      "indirekteRede": {
+        "ich": "spiele eine große Rolle",
+        "du": "spielest eine große Rolle",
+        "er/sie/es": "spiele eine große Rolle",
+        "wir": "spielen eine große Rolle",
+        "ihr": "spielet eine große Rolle",
+        "sie/Sie": "spielen eine große Rolle"
+      },
+      "perfect": "hat eine große Rolle gespielt",
+      "infinitive": "eine große Rolle spielen"
+    },
+    "examples": [
+      "Glück spielt eine große Rolle im Leben. = La suerte juega un papel importante en la vida.",
+      "Geld spielt keine Rolle bei dieser Entscheidung. = El dinero no juega ningún papel en esta decisión."
+    ],
+    "synonyms": ["wichtig sein (ser importante)", "von Bedeutung sein (ser de importancia)", "eine wichtige Funktion haben (tener una función importante)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "lernzeiten": {
+    "word": "Lernzeiten",
+    "translation": "horarios de estudio, tiempos de aprendizaje",
+    "sentence": "Im Online-Studium müssen Studierende stärker planen: feste Lernzeiten, Pausen, klare Prioritäten und realistische Wochenziele.",
+    "sentenceTranslation": "En el estudio en línea, los estudiantes deben planificar más: horarios fijos de estudio, pausas, prioridades claras y objetivos semanales realistas.",
+    "explanation": "Sustantivo compuesto plural (singular: die Lernzeit). 'Lernen' = aprender, estudiar + 'Zeit' = tiempo. Se refiere a los períodos de tiempo dedicados al estudio o aprendizaje.",
+    "examples": [
+      "Meine Lernzeiten sind am Abend am effektivsten. = Mis horarios de estudio son más efectivos por la noche.",
+      "Kurze Lernzeiten mit Pausen sind besser als lange Sessions. = Horarios cortos de estudio con pausas son mejores que sesiones largas."
+    ],
+    "synonyms": ["Studienzeiten (horarios de estudio)", "Lernphasen (fases de aprendizaje)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Akkusativ Plural (feste Lernzeiten)",
+    "singular": "die Lernzeit",
+    "plural": "die Lernzeiten"
+  },
+  "wochenziele": {
+    "word": "Wochenziele",
+    "translation": "objetivos semanales, metas semanales",
+    "sentence": "Im Online-Studium müssen Studierende stärker planen: feste Lernzeiten, Pausen, klare Prioritäten und realistische Wochenziele.",
+    "sentenceTranslation": "En el estudio en línea, los estudiantes deben planificar más: horarios fijos de estudio, pausas, prioridades claras y objetivos semanales realistas.",
+    "explanation": "Sustantivo compuesto plural (singular: das Wochenziel). 'Woche' = semana + 'Ziel' = objetivo, meta. Se refiere a objetivos o metas que se establecen para una semana.",
+    "examples": [
+      "Meine Wochenziele schreibe ich jeden Sonntag auf. = Escribo mis objetivos semanales cada domingo.",
+      "Kleine Wochenziele sind leichter zu erreichen als große Jahresziele. = Los objetivos semanales pequeños son más fáciles de alcanzar que las grandes metas anuales."
+    ],
+    "synonyms": ["wöchentliche Ziele (objetivos semanales)", "Wochenplanung (planificación semanal)"],
+    "type": "nomen",
+    "gender": "das (neutro)",
+    "case": "Akkusativ Plural (realistische Wochenziele)",
+    "singular": "das Wochenziel",
+    "plural": "die Wochenziele"
+  },
+  "in-prokrastination-geraten": {
+    "word": "in Prokrastination geraten",
+    "translation": "caer en la procrastinación, empezar a procrastinar",
+    "sentence": "Ohne Struktur kann man schnell in Prokrastination geraten.",
+    "sentenceTranslation": "Sin estructura, uno puede caer rápidamente en la procrastinación.",
+    "explanation": "Expresión con verbo 'geraten'. 'Prokrastination' = procrastinación (postergar tareas importantes). 'in etwas geraten' = caer en algo, entrar en un estado. Estructura: in [Akkusativ] geraten.",
+    "parts": ["geraten", "in Prokrastination"],
+    "conjugation": {
+      "present": {
+        "ich": "gerate in Prokrastination",
+        "du": "gerätst in Prokrastination",
+        "er/sie/es": "gerät in Prokrastination",
+        "wir": "geraten in Prokrastination",
+        "ihr": "geratet in Prokrastination",
+        "sie/Sie": "geraten in Prokrastination"
+      },
+      "preterite": {
+        "ich": "geriet in Prokrastination",
+        "du": "gerietest in Prokrastination",
+        "er/sie/es": "geriet in Prokrastination",
+        "wir": "gerieten in Prokrastination",
+        "ihr": "gerietet in Prokrastination",
+        "sie/Sie": "gerieten in Prokrastination"
+      },
+      "indirekteRede": {
+        "ich": "gerate in Prokrastination",
+        "du": "geratest in Prokrastination",
+        "er/sie/es": "gerate in Prokrastination",
+        "wir": "geraten in Prokrastination",
+        "ihr": "geratet in Prokrastination",
+        "sie/Sie": "geraten in Prokrastination"
+      },
+      "perfect": "ist in Prokrastination geraten",
+      "infinitive": "in Prokrastination geraten"
+    },
+    "examples": [
+      "Ich bin in Panik geraten. = Entré en pánico.",
+      "Er ist in finanzielle Schwierigkeiten geraten. = Él cayó en dificultades financieras."
+    ],
+    "synonyms": ["aufgeschoben werden (ser postergado)", "verschoben werden (ser aplazado)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "nicht-unterschaetzt-werden": {
+    "word": "nicht unterschätzt werden",
+    "translation": "no ser subestimado, no ser menospreciado",
+    "sentence": "Gleichzeitig dürfen soziale Kontakte nicht unterschätzt werden.",
+    "sentenceTranslation": "Al mismo tiempo, los contactos sociales no deben ser subestimados.",
+    "explanation": "Verbo en pasiva con 'werden'. 'unterschätzen' = subestimar, menospreciar. Estructura: werden (dürfen werden) + nicht unterschätzt (participio). Se usa en pasiva para indicar que algo no debe ser subestimado.",
+    "parts": ["dürfen", "nicht unterschätzt", "werden"],
+    "conjugation": {
+      "present": {
+        "ich": "werde nicht unterschätzt",
+        "du": "wirst nicht unterschätzt",
+        "er/sie/es": "wird nicht unterschätzt",
+        "wir": "werden nicht unterschätzt",
+        "ihr": "werdet nicht unterschätzt",
+        "sie/Sie": "werden nicht unterschätzt"
+      },
+      "preterite": {
+        "ich": "wurde nicht unterschätzt",
+        "du": "wurdest nicht unterschätzt",
+        "er/sie/es": "wurde nicht unterschätzt",
+        "wir": "wurden nicht unterschätzt",
+        "ihr": "wurdet nicht unterschätzt",
+        "sie/Sie": "wurden nicht unterschätzt"
+      },
+      "indirekteRede": {
+        "ich": "werde nicht unterschätzt",
+        "du": "werdest nicht unterschätzt",
+        "er/sie/es": "werde nicht unterschätzt",
+        "wir": "werden nicht unterschätzt",
+        "ihr": "werdet nicht unterschätzt",
+        "sie/Sie": "werden nicht unterschätzt"
+      },
+      "perfect": "ist nicht unterschätzt worden",
+      "infinitive": "nicht unterschätzt werden"
+    },
+    "examples": [
+      "Die Gefahr darf nicht unterschätzt werden. = El peligro no debe ser subestimado.",
+      "Seine Fähigkeiten werden oft unterschätzt. = Sus habilidades a menudo son subestimadas."
+    ],
+    "synonyms": ["nicht gering geschätzt werden (no ser valorado poco)", "nicht unterschätzt werden dürfen (no deben ser subestimados)"],
+    "type": "verb",
+    "verbType": "compound-auxiliary"
+  },
+  "informationsaufnahme": {
+    "word": "Informationsaufnahme",
+    "translation": "adquisición de información, absorción de información",
+    "sentence": "Lernen ist nicht nur Informationsaufnahme, sondern auch Austausch, Feedback und emotionale Unterstützung.",
+    "sentenceTranslation": "Aprender no es solo adquisición de información, sino también intercambio, retroalimentación y apoyo emocional.",
+    "explanation": "Sustantivo compuesto femenino. 'Information' = información + 'Aufnahme' = recepción, adquisición. Se refiere al proceso de recibir, procesar y asimilar información.",
+    "examples": [
+      "Die Informationsaufnahme ist bei Kindern sehr schnell. = La adquisición de información es muy rápida en los niños.",
+      "Stress kann die Informationsaufnahme beeinträchtigen. = El estrés puede afectar la absorción de información."
+    ],
+    "synonyms": ["Wissensaufnahme (adquisición de conocimiento)", "Informationsverarbeitung (procesamiento de información)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Nominativ Singular (Informationsaufnahme ... ist ...)",
+    "singular": "die Informationsaufnahme",
+    "plural": "die Informationsaufnahmen"
+  },
+  "austausch": {
+    "word": "Austausch",
+    "translation": "intercambio, comunicación",
+    "sentence": "Lernen ist nicht nur Informationsaufnahme, sondern auch Austausch, Feedback und emotionale Unterstützung.",
+    "sentenceTranslation": "Aprender no es solo adquisición de información, sino también intercambio, retroalimentación y apoyo emocional.",
+    "explanation": "Sustantivo masculino. Se refiere al intercambio de ideas, información, experiencias o comunicación entre personas. Muy usado en contextos educativos y profesionales.",
+    "examples": [
+      "Der kulturelle Austausch zwischen den Ländern ist sehr wichtig. = El intercambio cultural entre los países es muy importante.",
+      "Wir brauchen mehr Austausch zwischen Theorie und Praxis. = Necesitamos más intercambio entre teoría y práctica.",
+      "Der Austausch von Erfahrungen hilft allen Beteiligten. = El intercambio de experiencias ayuda a todos los participantes."
+    ],
+    "synonyms": ["Kommunikation (comunicación)", "Wechsel (intercambio)", "Dialog (diálogo)"],
+    "type": "nomen",
+    "gender": "der (masculino)",
+    "case": "Nominativ Singular (auch Austausch)",
+    "singular": "der Austausch",
+    "plural": "die Austausche"
+  },
+  "unterstuetzung": {
+    "word": "Unterstützung",
+    "translation": "apoyo, respaldo, ayuda",
+    "sentence": "Lernen ist nicht nur Informationsaufnahme, sondern auch Austausch, Feedback und emotionale Unterstützung.",
+    "sentenceTranslation": "Aprender no es solo adquisición de información, sino también intercambio, retroalimentación y apoyo emocional.",
+    "explanation": "Sustantivo femenino. Se refiere a ayuda, respaldo o apoyo que se brinda a alguien. 'emotionale Unterstützung' = apoyo emocional. Muy usado en contextos educativos, profesionales y personales.",
+    "examples": [
+      "Die Familie bietet ihm finanzielle Unterstützung während des Studiums. = La familia le ofrece apoyo financiero durante los estudios.",
+      "Ohne die Unterstützung meiner Kollegen hätte ich das Projekt nicht geschafft. = Sin el apoyo de mis colegas no habría logrado el proyecto.",
+      "Die Regierung gewährt Unterstützung für kleine Unternehmen. = El gobierno otorga apoyo a las pequeñas empresas."
+    ],
+    "synonyms": ["Hilfe (ayuda)", "Beistand (apoyo, asistencia)", "Förderung (fomento, apoyo)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Nominativ Singular (emotionale Unterstützung)",
+    "singular": "die Unterstützung",
+    "plural": "die Unterstützungen"
+  },
+  "zusammenarbeit-schaffen": {
+    "word": "für die Zusammenarbeit schaffen",
+    "translation": "crear para la colaboración, establecer para el trabajo conjunto",
+    "sentence": "Deshalb sollten Hochschulen digitale Räume für die Zusammenarbeit schaffen, etwa verpflichtende Gruppenprojekte, moderierte Lerngruppen oder hybride Angebote, bei denen man sich regelmäßig auch vor Ort trifft.",
+    "sentenceTranslation": "Por eso, las universidades deberían crear espacios digitales para la colaboración, por ejemplo proyectos grupales obligatorios, grupos de estudio moderados u ofertas híbridas, en las que uno se reúne regularmente también presencialmente.",
+    "explanation": "Expresión con verbo 'schaffen'. 'Zusammenarbeit' = colaboración, trabajo conjunto. 'schaffen' = crear, establecer. Estructura: [etwas] für [Akkusativ] schaffen. Se usa para indicar que se crean condiciones o espacios para la colaboración.",
+    "parts": ["sollten", "für die Zusammenarbeit", "schaffen"],
+    "conjugation": {
+      "present": {
+        "ich": "schaffe für die Zusammenarbeit",
+        "du": "schaffst für die Zusammenarbeit",
+        "er/sie/es": "schafft für die Zusammenarbeit",
+        "wir": "schaffen für die Zusammenarbeit",
+        "ihr": "schafft für die Zusammenarbeit",
+        "sie/Sie": "schaffen für die Zusammenarbeit"
+      },
+      "preterite": {
+        "ich": "schuf für die Zusammenarbeit",
+        "du": "schufst für die Zusammenarbeit",
+        "er/sie/es": "schuf für die Zusammenarbeit",
+        "wir": "schufen für die Zusammenarbeit",
+        "ihr": "schuft für die Zusammenarbeit",
+        "sie/Sie": "schufen für die Zusammenarbeit"
+      },
+      "indirekteRede": {
+        "ich": "schaffe für die Zusammenarbeit",
+        "du": "schaffest für die Zusammenarbeit",
+        "er/sie/es": "schaffe für die Zusammenarbeit",
+        "wir": "schaffen für die Zusammenarbeit",
+        "ihr": "schaffet für die Zusammenarbeit",
+        "sie/Sie": "schaffen für die Zusammenarbeit"
+      },
+      "perfect": "hat für die Zusammenarbeit geschaffen",
+      "infinitive": "für die Zusammenarbeit schaffen"
+    },
+    "examples": [
+      "Die Firma will bessere Arbeitsplätze für die Zusammenarbeit schaffen. = La empresa quiere crear mejores lugares de trabajo para la colaboración.",
+      "Wir müssen Vertrauen für die Zusammenarbeit schaffen. = Tenemos que crear confianza para la colaboración.",
+      "Das neue Gesetz schafft Grundlagen für die internationale Zusammenarbeit. = La nueva ley crea bases para la colaboración internacional."
+    ],
+    "synonyms": ["zur Zusammenarbeit einladen (invitar a la colaboración)", "Zusammenarbeit ermöglichen (posibilitar la colaboración)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "etwa-verpflichtende-gruppenprojekte": {
+    "word": "etwa verpflichtende Gruppenprojekte",
+    "translation": "por ejemplo proyectos grupales obligatorios",
+    "sentence": "Deshalb sollten Hochschulen digitale Räume für die Zusammenarbeit schaffen, etwa verpflichtende Gruppenprojekte, moderierte Lerngruppen oder hybride Angebote, bei denen man sich regelmäßig auch vor Ort trifft.",
+    "sentenceTranslation": "Por eso, las universidades deberían crear espacios digitales para la colaboración, por ejemplo proyectos grupales obligatorios, grupos de estudio moderados u ofertas híbridas, en las que uno se reúne regularmente también presencialmente.",
+    "explanation": "Expresión con 'etwa' (por ejemplo) + ejemplo concreto. 'verpflichtend' = obligatorio. 'Gruppenprojekte' = proyectos grupales. 'etwa' introduce ejemplos específicos de lo mencionado anteriormente.",
+    "parts": ["etwa", "verpflichtende Gruppenprojekte"],
+    "examples": [
+      "Die Schule bietet verschiedene Aktivitäten an, etwa Musik, Sport oder Theater. = La escuela ofrece varias actividades, por ejemplo música, deporte o teatro.",
+      "Es gibt mehrere Lösungen, etwa eine Umleitung oder eine Reparatur. = Hay varias soluciones, por ejemplo un desvío o una reparación.",
+      "Man kann verschiedene Verkehrsmittel nutzen, etwa Bus, Bahn oder Fahrrad. = Se pueden usar varios medios de transporte, por ejemplo autobús, tren o bicicleta."
+    ],
+    "synonyms": ["zum Beispiel verpflichtende Gruppenprojekte (por ejemplo proyectos grupales obligatorios)", "beispielsweise verpflichtende Gruppenprojekte (por ejemplo proyectos grupales obligatorios)"],
+    "type": "phrase",
+    "components": [
+      {
+        "word": "etwa",
+        "type": "adverb"
+      },
+      {
+        "word": "verpflichtende",
+        "type": "adjektiv"
+      },
+      {
+        "word": "Gruppenprojekte",
+        "type": "nomen"
+      }
+    ]
+  },
+  "hybride-angebote": {
+    "word": "hybride Angebote",
+    "translation": "ofertas híbridas, propuestas híbridas",
+    "sentence": "Deshalb sollten Hochschulen digitale Räume für die Zusammenarbeit schaffen, etwa verpflichtende Gruppenprojekte, moderierte Lerngruppen oder hybride Angebote, bei denen man sich regelmäßig auch vor Ort trifft.",
+    "sentenceTranslation": "Por eso, las universidades deberían crear espacios digitales para la colaboración, por ejemplo proyectos grupales obligatorios, grupos de estudio moderados u ofertas híbridas, en las que uno se reúne regularmente también presencialmente.",
+    "explanation": "Expresión. 'hybrid' = híbrido (combinación de dos modalidades). 'Angebot' = oferta, propuesta. Se refiere a ofertas educativas o formatos que combinan elementos presenciales y digitales.",
+    "examples": [
+      "Das Unternehmen führt hybride Arbeitsmodelle ein. = La empresa introduce modelos de trabajo híbridos.",
+      "Hybride Autos kombinieren Benzin- und Elektromotor. = Los coches híbridos combinan motor de gasolina y eléctrico.",
+      "Die Bank bietet hybride Beratung an: online und in der Filiale. = El banco ofrece asesoramiento híbrido: en línea y en la sucursal."
+    ],
+    "synonyms": ["gemischte Angebote (ofertas mixtas)", "kombinierte Angebote (ofertas combinadas)"],
+    "type": "phrase",
+    "components": [
+      {
+        "word": "hybride",
+        "type": "adjektiv"
+      },
+      {
+        "word": "Angebote",
+        "type": "nomen"
+      }
+    ]
+  },
+  "bei-denen": {
+    "word": "bei denen",
+    "translation": "en los que, en las que, en los cuales",
+    "sentence": "Deshalb sollten Hochschulen digitale Räume für die Zusammenarbeit schaffen, etwa verpflichtende Gruppenprojekte, moderierte Lerngruppen oder hybride Angebote, bei denen man sich regelmäßig auch vor Ort trifft.",
+    "sentenceTranslation": "Por eso, las universidades deberían crear espacios digitales para la colaboración, por ejemplo proyectos grupales obligatorios, grupos de estudio moderados u ofertas híbridas, en las que uno se reúne regularmente también presencialmente.",
+    "explanation": "Pronombre relativo con preposición. 'bei' = en, con + 'denen' (dativo plural de 'der/die/das'). Introduce una oración relativa que se refiere a algo mencionado anteriormente (en este caso, 'hybride Angebote').",
+    "examples": [
+      "Ich kenne Leute, bei denen das anders ist. = Conozco gente en la que eso es diferente.",
+      "Es gibt Firmen, bei denen man gut verdient. = Hay empresas en las que se gana bien.",
+      "Das sind Situationen, bei denen man vorsichtig sein muss. = Esas son situaciones en las que hay que ser cuidadoso."
+    ],
+    "synonyms": ["in denen (en los que)", "wo (donde, coloquial)"],
+    "type": "phrase",
+    "components": [
+      {
+        "word": "bei",
+        "type": "präposition"
+      },
+      {
+        "word": "denen",
+        "type": "pronomen"
+      }
+    ]
+  },
+  "vor-ort-trifft": {
+    "word": "sich vor Ort trifft",
+    "translation": "se reúne presencialmente, se encuentra en persona",
+    "sentence": "Deshalb sollten Hochschulen digitale Räume für die Zusammenarbeit schaffen, etwa verpflichtende Gruppenprojekte, moderierte Lerngruppen oder hybride Angebote, bei denen man sich regelmäßig auch vor Ort trifft.",
+    "sentenceTranslation": "Por eso, las universidades deberían crear espacios digitales para la colaboración, por ejemplo proyectos grupales obligatorios, grupos de estudio moderados u ofertas híbridas, en las que uno se reúne regularmente también presencialmente.",
+    "explanation": "Expresión con verbo reflexivo 'sich treffen'. 'vor Ort' = presencialmente, en persona, en el lugar. 'sich treffen' = reunirse, encontrarse. Estructura: sich [vor Ort] treffen. 'sich' es el pronombre reflexivo necesario para el verbo. Se usa para indicar encuentros presenciales, no virtuales.",
+    "parts": ["sich", "trifft", "vor Ort"],
+    "conjugation": {
+      "present": {
+        "ich": "treffe mich vor Ort",
+        "du": "triffst dich vor Ort",
+        "er/sie/es": "trifft sich vor Ort",
+        "wir": "treffen uns vor Ort",
+        "ihr": "trefft euch vor Ort",
+        "sie/Sie": "treffen sich vor Ort"
+      },
+      "preterite": {
+        "ich": "traf mich vor Ort",
+        "du": "trafst dich vor Ort",
+        "er/sie/es": "traf sich vor Ort",
+        "wir": "trafen uns vor Ort",
+        "ihr": "traft euch vor Ort",
+        "sie/Sie": "trafen sich vor Ort"
+      },
+      "indirekteRede": {
+        "ich": "treffe mich vor Ort",
+        "du": "treffest dich vor Ort",
+        "er/sie/es": "treffe sich vor Ort",
+        "wir": "treffen uns vor Ort",
+        "ihr": "treffet euch vor Ort",
+        "sie/Sie": "treffen sich vor Ort"
+      },
+      "perfect": "hat sich vor Ort getroffen",
+      "infinitive": "sich vor Ort treffen"
+    },
+    "examples": [
+      "Der Techniker kommt vor Ort und repariert das Gerät. = El técnico viene al lugar y repara el aparato.",
+      "Wir arbeiten vor Ort im Büro, nicht im Homeoffice. = Trabajamos presencialmente en la oficina, no en casa.",
+      "Die Journalistin berichtet vor Ort über die Ereignisse. = La periodista informa desde el lugar sobre los acontecimientos."
+    ],
+    "synonyms": ["sich persönlich treffen (reunirse personalmente)", "präsenz treffen (reunirse en presencia)"],
+    "type": "verb",
+    "verbType": "reflexive-separable"
+  },
+  "lassen-sich-ansehen": {
+    "word": "lassen sich... ansehen",
+    "translation": "se pueden ver, se pueden observar",
+    "sentence": "Außerdem lassen sich aufgezeichnete Vorlesungen zeitversetzt ansehen.",
+    "sentenceTranslation": "Además, las clases grabadas se pueden ver en diferido.",
+    "explanation": "Construcción con 'lassen sich' + infinitivo. Forma pasiva impersonal. 'lassen sich' = se puede(n), se puede hacer algo. 'ansehen' = ver, observar. Estructura: lassen sich [objeto] ansehen.",
+    "parts": ["lassen", "sich", "ansehen"],
+    "conjugation": {
+      "present": {
+        "ich": "lasse mich ansehen",
+        "du": "lässt dich ansehen",
+        "er/sie/es": "lässt sich ansehen",
+        "wir": "lassen uns ansehen",
+        "ihr": "lasst euch ansehen",
+        "sie/Sie": "lassen sich ansehen"
+      },
+      "preterite": {
+        "ich": "ließ mich ansehen",
+        "du": "ließest dich ansehen",
+        "er/sie/es": "ließ sich ansehen",
+        "wir": "ließen uns ansehen",
+        "ihr": "ließt euch ansehen",
+        "sie/Sie": "ließen sich ansehen"
+      },
+      "indirekteRede": {
+        "ich": "lasse mich ansehen",
+        "du": "lassest dich ansehen",
+        "er/sie/es": "lasse sich ansehen",
+        "wir": "lassen uns ansehen",
+        "ihr": "lasset euch ansehen",
+        "sie/Sie": "lassen sich ansehen"
+      },
+      "perfect": "hat sich ansehen lassen",
+      "infinitive": "sich ansehen lassen"
+    },
+    "examples": [
+      "Die Dokumente lassen sich online einsehen. = Los documentos se pueden consultar en línea.",
+      "Diese Probleme lassen sich nicht so einfach lösen. = Estos problemas no se pueden resolver tan fácilmente.",
+      "Das Museum lässt sich in zwei Stunden besichtigen. = El museo se puede visitar en dos horas."
+    ],
+    "synonyms": ["können angesehen werden (pueden ser vistas)", "sind ansehbar (son visibles)"],
+    "type": "verb",
+    "verbType": "separable-auxiliary"
+  },
+  "anspruchsvollen": {
+    "word": "anspruchsvollen",
+    "translation": "exigentes, desafiantes, de alto nivel",
+    "sentence": "Gerade in anspruchsvollen Fächern führt das oft zu einem effizienteren Lernprozess.",
+    "sentenceTranslation": "Especialmente en asignaturas exigentes, esto a menudo conduce a un proceso de aprendizaje más eficiente.",
+    "explanation": "Adjetivo declinado (dativo plural). 'anspruchsvoll' = exigente, desafiante, de alto nivel. Se usa para describir materias, tareas o situaciones que requieren mucho esfuerzo o conocimiento.",
+    "examples": [
+      "Sie hat einen anspruchsvollen Geschmack bei Kunst. = Ella tiene un gusto exigente en arte.",
+      "Das ist ein anspruchsvoller Kunde, der nur das Beste will. = Ese es un cliente exigente que solo quiere lo mejor.",
+      "Anspruchsvolle Literatur erfordert Konzentration beim Lesen. = La literatura exigente requiere concentración al leer."
+    ],
+    "synonyms": ["herausfordernd (desafiante)", "komplex (complejo)", "schwierig (difícil)"],
+    "type": "adjektiv",
+    "baseForm": "anspruchsvoll"
+  },
+  "fuehrt-zu": {
+    "word": "führt zu",
+    "translation": "conduce a, lleva a, resulta en",
+    "sentence": "Gerade in anspruchsvollen Fächern führt das oft zu einem effizienteren Lernprozess.",
+    "sentenceTranslation": "Especialmente en asignaturas exigentes, esto a menudo conduce a un proceso de aprendizaje más eficiente.",
+    "explanation": "Verbo con preposición 'zu' (dativo). 'führen zu' = conducir a, llevar a, resultar en. Indica una consecuencia o resultado. Estructura: [sujeto] führt zu [Dativ].",
+    "parts": ["führt", "zu"],
+    "conjugation": {
+      "present": {
+        "ich": "führe zu",
+        "du": "führst zu",
+        "er/sie/es": "führt zu",
+        "wir": "führen zu",
+        "ihr": "führt zu",
+        "sie/Sie": "führen zu"
+      },
+      "preterite": {
+        "ich": "führte zu",
+        "du": "führtest zu",
+        "er/sie/es": "führte zu",
+        "wir": "führten zu",
+        "ihr": "führtet zu",
+        "sie/Sie": "führten zu"
+      },
+      "indirekteRede": {
+        "ich": "führe zu",
+        "du": "führest zu",
+        "er/sie/es": "führe zu",
+        "wir": "führen zu",
+        "ihr": "führet zu",
+        "sie/Sie": "führen zu"
+      },
+      "perfect": "hat zu ... geführt",
+      "infinitive": "zu ... führen"
+    },
+    "examples": [
+      "Zu viel Stress führt zu Krankheiten. = Demasiado estrés conduce a enfermedades.",
+      "Der neue Weg führt direkt zum Bahnhof. = El nuevo camino lleva directamente a la estación.",
+      "Seine Forschung führte zu wichtigen Entdeckungen. = Su investigación llevó a descubrimientos importantes."
+    ],
+    "synonyms": ["resultiert in (resulta en)", "bewirkt (causa, provoca)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "anfahrt": {
+    "word": "Anfahrt",
+    "translation": "viaje de ida, desplazamiento, trayecto",
+    "sentence": "Hinzu kommt, dass digitale Formate Ressourcen sparen können, zum Beispiel Zeit für die Anfahrt oder Kosten für eine Unterkunft, wenn man nicht in der Hochschulstadt wohnt.",
+    "sentenceTranslation": "Además, se suma que los formatos digitales pueden ahorrar recursos, por ejemplo tiempo de desplazamiento o costos de alojamiento, si uno no vive en la ciudad universitaria.",
+    "explanation": "Sustantivo femenino. Se refiere al viaje o desplazamiento hasta un lugar, especialmente el trayecto hasta la universidad o lugar de trabajo. Muy usado en contextos de transporte y planificación.",
+    "examples": [
+      "Die Anfahrt zum Flughafen dauert mit dem Auto 45 Minuten. = El trayecto al aeropuerto dura 45 minutos en coche.",
+      "Wegen der langen Anfahrt komme ich oft zu spät. = Por el largo desplazamiento a menudo llego tarde.",
+      "Bei schlechtem Wetter ist die Anfahrt ins Büro schwierig. = Con mal tiempo el trayecto a la oficina es difícil."
+    ],
+    "synonyms": ["Fahrt (viaje)", "Weg (camino, trayecto)", "Anreise (llegada, viaje de ida)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Akkusativ Singular (Zeit für die Anfahrt)",
+    "singular": "die Anfahrt",
+    "plural": "die Anfahrten"
+  },
+  "unterkunft": {
+    "word": "Unterkunft",
+    "translation": "alojamiento, hospedaje",
+    "sentence": "Hinzu kommt, dass digitale Formate Ressourcen sparen können, zum Beispiel Zeit für die Anfahrt oder Kosten für eine Unterkunft, wenn man nicht in der Hochschulstadt wohnt.",
+    "sentenceTranslation": "Además, se suma que los formatos digitales pueden ahorrar recursos, por ejemplo tiempo de desplazamiento o costos de alojamiento, si uno no vive en la ciudad universitaria.",
+    "explanation": "Sustantivo femenino. Se refiere a un lugar donde uno se aloja temporalmente: habitación, apartamento, residencia estudiantil, etc. Muy usado en contextos universitarios y de viajes.",
+    "examples": [
+      "Im Urlaub haben wir eine schöne Unterkunft am Strand gefunden. = En vacaciones encontramos un bonito alojamiento en la playa.",
+      "Die Unterkunft für Flüchtlinge wurde schnell organisiert. = El alojamiento para refugiados se organizó rápidamente.",
+      "Während der Messe ist jede Unterkunft in der Stadt ausgebucht. = Durante la feria todos los alojamientos de la ciudad están completos."
+    ],
+    "synonyms": ["Wohnung (apartamento)", "Unterbringung (alojamiento)", "Quartier (alojamiento, formal)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Akkusativ Singular (eine Unterkunft)",
+    "singular": "die Unterkunft",
+    "plural": "die Unterkünfte"
+  },
+  "verursachen": {
+    "word": "verursachen",
+    "translation": "causar, provocar, generar",
+    "sentence": "Technische Probleme, schlechte Internetverbindung oder unübersichtliche Plattformen können außerdem Stress verursachen und den Lernfluss stören.",
+    "sentenceTranslation": "Los problemas técnicos, mala conexión a internet o plataformas confusas pueden además causar estrés y perturbar el flujo de aprendizaje.",
+    "explanation": "Verbo transitivo. Significa causar, provocar o generar algo (generalmente negativo: problemas, estrés, dificultades). Estructura: [sujeto] verursacht [Akkusativ].",
+    "conjugation": {
+      "present": {
+        "ich": "verursache",
+        "du": "verursachst",
+        "er/sie/es": "verursacht",
+        "wir": "verursachen",
+        "ihr": "verursacht",
+        "sie/Sie": "verursachen"
+      },
+      "preterite": {
+        "ich": "verursachte",
+        "du": "verursachtest",
+        "er/sie/es": "verursachte",
+        "wir": "verursachten",
+        "ihr": "verursachtet",
+        "sie/Sie": "verursachten"
+      },
+      "indirekteRede": {
+        "ich": "verursache",
+        "du": "verursachest",
+        "er/sie/es": "verursache",
+        "wir": "verursachen",
+        "ihr": "verursachet",
+        "sie/Sie": "verursachen"
+      },
+      "perfect": "hat verursacht",
+      "infinitive": "verursachen"
+    },
+    "examples": [
+      "Der Unfall verursachte einen großen Stau. = El accidente causó un gran atasco.",
+      "Rauchen kann Krebs verursachen. = Fumar puede causar cáncer.",
+      "Die neue Software verursacht weniger Fehler. = El nuevo software causa menos errores."
+    ],
+    "synonyms": ["bewirken (causar, provocar)", "hervorrufen (provocar, generar)", "auslösen (desencadenar)"],
+    "type": "verb"
+  },
+  "bieten": {
+    "word": "bieten",
+    "translation": "ofrecer, brindar, proporcionar",
+    "sentence": "Zusammenfassend lässt sich sagen: Digitale Vorlesungen bieten große Chancen, vor allem durch Flexibilität und Wiederholbarkeit.",
+    "sentenceTranslation": "En resumen se puede decir: Las clases digitales ofrecen grandes oportunidades, sobre todo a través de la flexibilidad y la repetibilidad.",
+    "explanation": "Verbo transitivo. Significa ofrecer, brindar o proporcionar algo (oportunidades, posibilidades, ventajas). Estructura: [sujeto] bietet [Akkusativ].",
+    "conjugation": {
+      "present": {
+        "ich": "biete",
+        "du": "bietest",
+        "er/sie/es": "bietet",
+        "wir": "bieten",
+        "ihr": "bietet",
+        "sie/Sie": "bieten"
+      },
+      "preterite": {
+        "ich": "bot",
+        "du": "botest",
+        "er/sie/es": "bot",
+        "wir": "boten",
+        "ihr": "botet",
+        "sie/Sie": "boten"
+      },
+      "indirekteRede": {
+        "ich": "biete",
+        "du": "bietest",
+        "er/sie/es": "biete",
+        "wir": "bieten",
+        "ihr": "bietet",
+        "sie/Sie": "bieten"
+      },
+      "perfect": "hat geboten",
+      "infinitive": "bieten"
+    },
+    "examples": [
+      "Das Hotel bietet einen schönen Blick auf das Meer. = El hotel ofrece una hermosa vista al mar.",
+      "Die Stadt bietet viele kulturelle Veranstaltungen. = La ciudad ofrece muchos eventos culturales.",
+      "Dieser Job bietet gute Aufstiegsmöglichkeiten. = Este trabajo ofrece buenas oportunidades de ascenso."
+    ],
+    "synonyms": ["anbieten (ofrecer)", "ermöglichen (posibilitar)", "bereitstellen (proporcionar)"],
+    "type": "verb"
+  },
+  "vor-allem": {
+    "word": "vor allem",
+    "translation": "sobre todo, especialmente, principalmente",
+    "sentence": "Zusammenfassend lässt sich sagen: Digitale Vorlesungen bieten große Chancen, vor allem durch Flexibilität und Wiederholbarkeit.",
+    "sentenceTranslation": "En resumen se puede decir: Las clases digitales ofrecen grandes oportunidades, sobre todo a través de la flexibilidad y la repetibilidad.",
+    "explanation": "Expresión adverbial. Se usa para destacar o enfatizar algo como lo más importante o principal. Equivale a 'sobre todo' o 'especialmente'. Muy usado en textos argumentativos.",
+    "examples": [
+      "Ich mag Musik, vor allem Jazz und Blues. = Me gusta la música, sobre todo jazz y blues.",
+      "Das Wetter war schlecht, vor allem am Wochenende. = El tiempo estuvo malo, especialmente el fin de semana.",
+      "Er interessiert sich für Sport, vor allem für Fußball. = Le interesa el deporte, principalmente el fútbol."
+    ],
+    "synonyms": ["besonders (especialmente)", "hauptsächlich (principalmente)", "insbesondere (particularmente)"],
+    "type": "phrase",
+    "components": [
+      {
+        "word": "vor",
+        "type": "präposition"
+      },
+      {
+        "word": "allem",
+        "type": "pronomen"
+      }
+    ]
+  },
+  "wiederholbarkeit": {
+    "word": "Wiederholbarkeit",
+    "translation": "repetibilidad, posibilidad de repetir",
+    "sentence": "Zusammenfassend lässt sich sagen: Digitale Vorlesungen bieten große Chancen, vor allem durch Flexibilität und Wiederholbarkeit.",
+    "sentenceTranslation": "En resumen se puede decir: Las clases digitales ofrecen grandes oportunidades, sobre todo a través de la flexibilidad y la repetibilidad.",
+    "explanation": "Sustantivo femenino. Se refiere a la capacidad de repetir algo, especialmente contenido educativo. En el contexto de clases digitales, significa que se pueden ver múltiples veces.",
+    "examples": [
+      "Die Wiederholbarkeit des Experiments ist wichtig für die Wissenschaft. = La repetibilidad del experimento es importante para la ciencia.",
+      "Durch die Wiederholbarkeit der Übungen lernt man besser. = A través de la repetibilidad de los ejercicios se aprende mejor.",
+      "Die Wiederholbarkeit von Fehlern sollte vermieden werden. = La repetibilidad de errores debería evitarse."
+    ],
+    "synonyms": ["Wiederholungsmöglichkeit (posibilidad de repetición)", "Reproduzierbarkeit (reproducibilidad)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Akkusativ Singular (durch ... Wiederholbarkeit)",
+    "singular": "die Wiederholbarkeit",
+    "plural": "die Wiederholbarkeiten"
+  },
+  "entstehen-risiken": {
+    "word": "entstehen Risiken",
+    "translation": "surgen riesgos, aparecen riesgos",
+    "sentence": "Gleichzeitig entstehen Risiken, insbesondere bei Motivation und sozialer Einbindung.",
+    "sentenceTranslation": "Al mismo tiempo surgen riesgos, particularmente en cuanto a motivación e integración social.",
+    "explanation": "Expresión con verbo 'entstehen'. 'entstehen' = surgir, aparecer, originarse. 'Risiken' = riesgos. Estructura: [sujeto] entstehen. Se usa para indicar que algo negativo aparece o se desarrolla.",
+    "parts": ["entstehen", "Risiken"],
+    "conjugation": {
+      "present": {
+        "ich": "entstehe",
+        "du": "entstehst",
+        "er/sie/es": "entsteht",
+        "wir": "entstehen",
+        "ihr": "entsteht",
+        "sie/Sie": "entstehen"
+      },
+      "preterite": {
+        "ich": "entstand",
+        "du": "entstandest",
+        "er/sie/es": "entstand",
+        "wir": "entstanden",
+        "ihr": "entstandet",
+        "sie/Sie": "entstanden"
+      },
+      "indirekteRede": {
+        "ich": "entstehe",
+        "du": "entstehest",
+        "er/sie/es": "entstehe",
+        "wir": "entstehen",
+        "ihr": "entstehet",
+        "sie/Sie": "entstehen"
+      },
+      "perfect": "ist entstanden",
+      "infinitive": "entstehen"
+    },
+    "examples": [
+      "Durch den Regen entstehen Pfützen auf der Straße. = Por la lluvia se forman charcos en la calle.",
+      "Aus der Idee entstand ein erfolgreiches Unternehmen. = De la idea surgió una empresa exitosa.",
+      "Bei der Diskussion entstanden neue Fragen. = Durante la discusión surgieron nuevas preguntas."
+    ],
+    "synonyms": ["auftreten (aparecer, surgir)", "sich entwickeln (desarrollarse)", "sich ergeben (resultar)"],
+    "type": "verb",
+    "verbType": "separable"
+  },
+  "insbesondere": {
+    "word": "insbesondere",
+    "translation": "particularmente, especialmente, en particular",
+    "sentence": "Gleichzeitig entstehen Risiken, insbesondere bei Motivation und sozialer Einbindung.",
+    "sentenceTranslation": "Al mismo tiempo surgen riesgos, particularmente en cuanto a motivación e integración social.",
+    "explanation": "Adverbio. Se usa para especificar o destacar algo particular dentro de un grupo o contexto más amplio. Equivale a 'particularmente' o 'especialmente'. Muy usado en textos formales.",
+    "examples": [
+      "Alle Fächer sind wichtig, insbesondere Mathematik und Deutsch. = Todas las asignaturas son importantes, particularmente matemáticas y alemán.",
+      "Die Preise steigen, insbesondere für Energie und Lebensmittel. = Los precios suben, especialmente para energía y alimentos.",
+      "Kinder brauchen Schutz, insbesondere vor Gewalt. = Los niños necesitan protección, particularmente contra la violencia."
+    ],
+    "synonyms": ["besonders (especialmente)", "vor allem (sobre todo)", "speziell (especialmente)"],
+    "type": "adverb"
+  },
+  "sozialer-einbindung": {
+    "word": "sozialer Einbindung",
+    "translation": "integración social, inclusión social",
+    "sentence": "Gleichzeitig entstehen Risiken, insbesondere bei Motivation und sozialer Einbindung.",
+    "sentenceTranslation": "Al mismo tiempo surgen riesgos, particularmente en cuanto a motivación e integración social.",
+    "explanation": "Sustantivo compuesto femenino (dativo singular). 'sozial' = social + 'Einbindung' = integración, inclusión. Se refiere al proceso de integrarse o sentirse incluido en un grupo social. Muy usado en contextos educativos y sociales.",
+    "examples": [
+      "Die soziale Einbindung von Migranten ist eine wichtige Aufgabe. = La integración social de migrantes es una tarea importante.",
+      "Ohne soziale Einbindung fühlen sich Menschen oft einsam. = Sin integración social las personas a menudo se sienten solas.",
+      "Der Verein fördert die soziale Einbindung älterer Menschen. = La asociación fomenta la integración social de personas mayores."
+    ],
+    "synonyms": ["soziale Integration (integración social)", "soziale Teilhabe (participación social)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Dativ Singular (bei ... sozialer Einbindung)",
+    "singular": "die Einbindung",
+    "plural": "die Einbindungen"
+  },
+  "staerken": {
+    "word": "Stärken",
+    "translation": "fortalezas, puntos fuertes, ventajas",
+    "sentence": "Am besten funktioniert ein hybrides Modell, das die Stärken beider Welten kombiniert: Online für Inhalte, die sich gut vermitteln lassen, und Präsenz für Diskussion, Praxis und Gemeinschaft.",
+    "sentenceTranslation": "Funciona mejor un modelo híbrido que combina las fortalezas de ambos mundos: en línea para contenidos que se pueden transmitir bien, y presencial para discusión, práctica y comunidad.",
+    "explanation": "Sustantivo plural (singular: die Stärke). Se refiere a fortalezas, puntos fuertes o ventajas de algo o alguien. Muy usado en contextos de análisis, evaluación o comparación.",
+    "examples": [
+      "Jeder Mensch hat seine eigenen Stärken und Talente. = Cada persona tiene sus propias fortalezas y talentos.",
+      "Die Stärken des Teams liegen in der Kreativität. = Las fortalezas del equipo están en la creatividad.",
+      "Man sollte seine Stärken ausbauen und nutzen. = Uno debería desarrollar y aprovechar sus fortalezas."
+    ],
+    "synonyms": ["Vorteile (ventajas)", "Pluspunkte (puntos a favor)", "Stärkepunkte (puntos fuertes)"],
+    "antonyms": ["Schwächen (debilidades)", "Nachteile (desventajas)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Akkusativ Plural (die Stärken beider Welten)",
+    "singular": "die Stärke",
+    "plural": "die Stärken"
+  },
+  "sich-vermitteln-lassen": {
+    "word": "sich vermitteln lassen",
+    "translation": "se pueden transmitir, se pueden enseñar",
+    "sentence": "Am besten funktioniert ein hybrides Modell, das die Stärken beider Welten kombiniert: Online für Inhalte, die sich gut vermitteln lassen, und Präsenz für Diskussion, Praxis und Gemeinschaft.",
+    "sentenceTranslation": "Funciona mejor un modelo híbrido que combina las fortalezas de ambos mundos: en línea para contenidos que se pueden transmitir bien, y presencial para discusión, práctica y comunidad.",
+    "explanation": "Construcción con 'lassen sich' + infinitivo. Forma pasiva impersonal. 'sich vermitteln lassen' = se pueden transmitir, se pueden enseñar. 'vermitteln' = transmitir, enseñar, comunicar. Estructura: lassen sich [vermitteln].",
+    "parts": ["sich", "vermitteln", "lassen"],
+    "conjugation": {
+      "present": {
+        "ich": "lasse mich vermitteln",
+        "du": "lässt dich vermitteln",
+        "er/sie/es": "lässt sich vermitteln",
+        "wir": "lassen uns vermitteln",
+        "ihr": "lasst euch vermitteln",
+        "sie/Sie": "lassen sich vermitteln"
+      },
+      "preterite": {
+        "ich": "ließ mich vermitteln",
+        "du": "ließest dich vermitteln",
+        "er/sie/es": "ließ sich vermitteln",
+        "wir": "ließen uns vermitteln",
+        "ihr": "ließt euch vermitteln",
+        "sie/Sie": "ließen sich vermitteln"
+      },
+      "indirekteRede": {
+        "ich": "lasse mich vermitteln",
+        "du": "lassest dich vermitteln",
+        "er/sie/es": "lasse sich vermitteln",
+        "wir": "lassen uns vermitteln",
+        "ihr": "lasset euch vermitteln",
+        "sie/Sie": "lassen sich vermitteln"
+      },
+      "perfect": "hat sich vermitteln lassen",
+      "infinitive": "sich vermitteln lassen"
+    },
+    "examples": [
+      "Komplexe Theorien lassen sich schwer vermitteln. = Las teorías complejas son difíciles de transmitir.",
+      "Diese Werte lassen sich nicht in Zahlen vermitteln. = Estos valores no se pueden transmitir en números.",
+      "Praktische Fähigkeiten lassen sich am besten durch Übung vermitteln. = Las habilidades prácticas se transmiten mejor a través de la práctica."
+    ],
+    "synonyms": ["können vermittelt werden (pueden ser transmitidos)", "sind vermittelbar (son transmisibles)"],
+    "type": "verb",
+    "verbType": "separable-auxiliary"
+  },
+  "gemeinschaft": {
+    "word": "Gemeinschaft",
+    "translation": "comunidad, colectivo, grupo",
+    "sentence": "Am besten funktioniert ein hybrides Modell, das die Stärken beider Welten kombiniert: Online für Inhalte, die sich gut vermitteln lassen, und Präsenz für Diskussion, Praxis und Gemeinschaft.",
+    "sentenceTranslation": "Funciona mejor un modelo híbrido que combina las fortalezas de ambos mundos: en línea para contenidos que se pueden transmitir bien, y presencial para discusión, práctica y comunidad.",
+    "explanation": "Sustantivo femenino. Se refiere a un grupo de personas unidas por intereses, objetivos o características comunes. En contextos educativos, se refiere al sentido de comunidad y pertenencia.",
+    "examples": [
+      "Die Dorfgemeinschaft organisiert jedes Jahr ein Fest. = La comunidad del pueblo organiza una fiesta cada año.",
+      "In der Wohngemeinschaft teilen sich alle die Hausarbeit. = En la comunidad de vivienda todos comparten las tareas domésticas.",
+      "Die europäische Gemeinschaft arbeitet an gemeinsamen Zielen. = La comunidad europea trabaja en objetivos comunes."
+    ],
+    "synonyms": ["Gruppe (grupo)", "Kollektiv (colectivo)", "Gemeinde (comunidad, más formal)"],
+    "type": "nomen",
+    "gender": "die (femenino)",
+    "case": "Akkusativ Singular (für ... Gemeinschaft)",
+    "singular": "die Gemeinschaft",
+    "plural": "die Gemeinschaften"
+  },
+  "tatsaechlich": {
+    "word": "tatsächlich",
+    "translation": "realmente, de hecho, en realidad",
+    "sentence": "So kann digitale Lehre tatsächlich zu besserem Lernen beitragen, statt nur eine Notlösung zu sein.",
+    "sentenceTranslation": "Así, la enseñanza digital puede realmente contribuir a un mejor aprendizaje, en lugar de ser solo una solución de emergencia.",
+    "explanation": "Adverbio. Se usa para enfatizar que algo es real, verdadero o efectivo. Equivale a 'realmente', 'de hecho' o 'en realidad'. Muy usado para contrastar con expectativas o suposiciones previas.",
+    "examples": [
+      "Er sieht jung aus, ist aber tatsächlich schon 50 Jahre alt. = Parece joven, pero en realidad ya tiene 50 años.",
+      "Das Projekt war tatsächlich schwieriger als erwartet. = El proyecto fue realmente más difícil de lo esperado.",
+      "Tatsächlich habe ich keine Zeit für das Meeting. = De hecho no tengo tiempo para la reunión."
+    ],
+    "synonyms": ["wirklich (realmente)", "in der Tat (de hecho)", "tatsächlich (en realidad)"],
+    "type": "adverb"
+  },
+  "kann-beitragen": {
+    "word": "kann... beitragen",
+    "translation": "puede contribuir, puede aportar",
+    "sentence": "So kann digitale Lehre tatsächlich zu besserem Lernen beitragen, statt nur eine Notlösung zu sein.",
+    "sentenceTranslation": "Así, la enseñanza digital puede realmente contribuir a un mejor aprendizaje, en lugar de ser solo una solución de emergencia.",
+    "explanation": "Verbo con preposición 'zu' (dativo) y verbo modal. 'beitragen zu' = contribuir a, aportar a. Estructura: können (kann) + zu [Dativ] beitragen. Se usa para indicar que algo contribuye o aporta a un resultado positivo.",
+    "parts": ["kann", "beitragen", "zu"],
+    "conjugation": {
+      "present": {
+        "ich": "kann beitragen",
+        "du": "kannst beitragen",
+        "er/sie/es": "kann beitragen",
+        "wir": "können beitragen",
+        "ihr": "könnt beitragen",
+        "sie/Sie": "können beitragen"
+      },
+      "preterite": {
+        "ich": "konnte beitragen",
+        "du": "konntest beitragen",
+        "er/sie/es": "konnte beitragen",
+        "wir": "konnten beitragen",
+        "ihr": "konntet beitragen",
+        "sie/Sie": "konnten beitragen"
+      },
+      "indirekteRede": {
+        "ich": "könne beitragen",
+        "du": "könnest beitragen",
+        "er/sie/es": "könne beitragen",
+        "wir": "können beitragen",
+        "ihr": "könnet beitragen",
+        "sie/Sie": "können beitragen"
+      },
+      "perfect": "hat zu ... beigetragen",
+      "infinitive": "zu ... beitragen"
+    },
+    "examples": [
+      "Sport kann zur Gesundheit beitragen. = El deporte puede contribuir a la salud.",
+      "Jeder kann zum Erfolg des Projekts beitragen. = Cada uno puede contribuir al éxito del proyecto.",
+      "Bildung trägt zur Entwicklung der Gesellschaft bei. = La educación contribuye al desarrollo de la sociedad."
+    ],
+    "synonyms": ["helfen bei (ayudar en)", "fördern (fomentar)", "unterstützen (apoyar)"],
+    "type": "verb",
+    "verbType": "separable-modal"
+  },
+  "statt-notloesung-zu-sein": {
+    "word": "statt nur eine Notlösung zu sein",
+    "translation": "en lugar de ser solo una solución de emergencia, en vez de ser solo un parche",
+    "sentence": "So kann digitale Lehre tatsächlich zu besserem Lernen beitragen, statt nur eine Notlösung zu sein.",
+    "sentenceTranslation": "Así, la enseñanza digital puede realmente contribuir a un mejor aprendizaje, en lugar de ser solo una solución de emergencia.",
+    "explanation": "Expresión con 'statt' + infinitivo con 'zu'. 'statt' = en lugar de, en vez de. 'Notlösung' = solución de emergencia, parche temporal. 'zu sein' = ser. Estructura: statt [Infinitiv mit zu]. Se usa para contrastar con una alternativa negativa o temporal.",
+    "parts": ["statt", "nur eine Notlösung", "zu sein"],
+    "examples": [
+      "Er entschied sich zu studieren, statt sofort zu arbeiten. = Decidió estudiar en lugar de trabajar inmediatamente.",
+      "Sie wählte den Bus, statt mit dem Auto zu fahren. = Eligió el autobús en lugar de ir en coche.",
+      "Wir sollten das Problem lösen, statt es zu ignorieren. = Deberíamos resolver el problema en lugar de ignorarlo."
+    ],
+    "synonyms": ["anstatt nur eine Notlösung zu sein (en lugar de ser solo una solución de emergencia)", "nicht nur eine Übergangslösung sein (no ser solo una solución transitoria)"],
+    "type": "phrase",
+    "components": [
+      {
+        "word": "statt",
+        "type": "präposition"
+      },
+      {
+        "word": "nur",
+        "type": "partikel"
+      },
+      {
+        "word": "eine",
+        "type": "artikel"
+      },
+      {
+        "word": "Notlösung",
+        "type": "nomen"
+      },
+      {
+        "word": "zu",
+        "type": "partikel"
+      },
+      {
+        "word": "sein",
+        "type": "verb"
+      }
+    ]
+  }
+}
