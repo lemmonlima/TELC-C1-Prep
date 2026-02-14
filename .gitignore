@@ -18,6 +18,9 @@ node_modules/
 # Temporary files
 *.tmp
 
-# Large reference files (PDFs, archives)
-# These stay on the Pi but don't get backed up to GitHub
+# Large reference files (stay on Pi, don't back up to GitHub)
 Other/
+*.pdf
+*.rar
+*.zip
+*.mp3
