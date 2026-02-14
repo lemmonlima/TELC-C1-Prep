@@ -1,6 +1,6 @@
 #!/bin/bash
 # Auto-commit script for TELC project
-# This watches for file changes and commits them automatically
+# This watches for file changes, commits them, and pushes to GitHub
 
 cd /home/andres/Projects/TELC
 
@@ -18,5 +18,8 @@ while true; do
     git commit -m "Auto-commit: $TIMESTAMP" --quiet
     
     echo "✅ Auto-committed at $TIMESTAMP"
+    
+    # Push to GitHub
+    git push origin main --quiet 2>/dev/null && echo "📤 Pushed to GitHub" || echo "⚠️  Push failed (will retry next time)"
   fi
 done
