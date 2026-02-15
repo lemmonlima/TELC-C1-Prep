@@ -137,6 +137,43 @@
     .success-msg.show {
       display: block;
     }
+    
+    /* Mobile optimization */
+    @media (max-width: 768px) {
+      .pruefung-container {
+        padding: 1rem;
+        margin: 1rem auto;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .lead {
+        font-size: 1rem;
+      }
+      .aufgabe-box {
+        padding: 1rem;
+      }
+      .thema-box {
+        padding: 1rem;
+      }
+      .thema-box h3 {
+        font-size: 1.2rem;
+      }
+      textarea {
+        min-height: 300px;
+        font-size: 1rem;
+      }
+      .submit-section {
+        padding: 1rem;
+        margin: 1rem -1rem -1rem;
+        flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>

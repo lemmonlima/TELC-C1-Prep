@@ -163,6 +163,40 @@
       background: rgba(239, 68, 68, 0.15);
       border-left: 3px solid #ef4444;
     }
+    
+    /* Mobile optimization */
+    @media (max-width: 768px) {
+      .pruefung-container {
+        padding: 1rem;
+        margin: 1rem auto;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .lead {
+        font-size: 1rem;
+      }
+      .aufgabe-box, .text-box {
+        padding: 1rem;
+      }
+      .antwort-select {
+        gap: 0.75rem;
+      }
+      .antwort-btn {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        min-width: 3rem;
+      }
+      .submit-section {
+        padding: 1rem;
+        margin: 1rem -1rem -1rem;
+        flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
