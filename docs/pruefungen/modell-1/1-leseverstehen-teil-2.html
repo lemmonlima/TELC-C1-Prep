@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest 1 - Leseverstehen Teil 2 | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .pruefung-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+    .aufgabe-box {
+      background: var(--panel-bg, #1a1916);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .text-box {
+      background: var(--bg-secondary, #12110f);
+      padding: 1.5rem;
+      border-radius: 6px;
+      line-height: 1.8;
+      margin: 1rem 0;
+    }
+    .absatz {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: var(--panel-bg, #1a1916);
+      border-left: 3px solid var(--accent-ink, #457b9d);
+      border-radius: 4px;
+    }
+    .absatz-label {
+      font-weight: bold;
+      color: var(--accent-red, #e63946);
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .fragen-container {
+      display: grid;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .frage {
+      padding: 1rem;
+      background: var(--panel-bg, #1a1916);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 6px;
+    }
+    .frage-nummer {
+      font-weight: bold;
+      color: var(--accent-ink, #457b9d);
+      margin-bottom: 0.5rem;
+    }
+    .frage-text {
+      margin-bottom: 0.75rem;
+      font-style: italic;
+    }
+    .antwort-select {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .antwort-btn {
+      padding: 0.5rem 1rem;
+      background: var(--bg-secondary, #12110f);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: inherit;
+      min-width: 3rem;
+    }
+    .antwort-btn:hover {
+      border-color: var(--accent-ink, #457b9d);
+      background: var(--panel-bg, #1a1916);
+    }
+    .antwort-btn.selected {
+      border-color: var(--accent-red, #e63946);
+      background: rgba(230, 57, 70, 0.15);
+      font-weight: bold;
+    }
+    .submit-section {
+      position: sticky;
+      bottom: 0;
+      background: var(--bg-primary, #0f0e0d);
+      border-top: 1px solid var(--border-subtle, #2a2825);
+      padding: 1.5rem;
+      margin: 2rem -2rem -2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn.primary {
+      background: var(--accent-red, #e63946);
+      color: white;
+    }
+    .btn.primary:hover {
+      background: #d62839;
+      transform: translateY(-1px);
+    }
+    .btn.secondary {
+      background: var(--accent-ink, #457b9d);
+      color: white;
+    }
+    .btn.secondary:hover {
+      background: #3a6a85;
+    }
+    .ergebnisse {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: var(--panel-bg, #1a1916);
+      border-radius: 8px;
+      display: none;
+    }
+    .ergebnisse.show {
+      display: block;
+    }
+    .ergebnis-item {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ergebnis-item.korrekt {
+      background: rgba(34, 197, 94, 0.15);
+      border-left: 3px solid #22c55e;
+    }
+    .ergebnis-item.falsch {
+      background: rgba(239, 68, 68, 0.15);
+      border-left: 3px solid #ef4444;
+    }
+    
+    /* Mobile optimization */
+    @media (max-width: 768px) {
+      .pruefung-container {
+        padding: 1rem;
+        margin: 1rem auto;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .lead {
+        font-size: 1rem;
+      }
+      .aufgabe-box, .text-box, .absatz {
+        padding: 1rem;
+      }
+      .antwort-select {
+        gap: 0.75rem;
+      }
+      .antwort-btn {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        min-width: 3rem;
+      }
+      .submit-section {
+        padding: 1rem;
+        margin: 1rem -1rem -1rem;
+        flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Prüfungsvorbereitung</span>
+    </div>
+    <nav class="nav">
+      <a href="../../index.html">Start</a>
+      <a href="../../grammatik/index.html">Grammatik</a>
+      <a href="../../texte/index.html">Texte</a>
+      <a href="../../notizen/index.html">Notizen</a>
+      <a href="../../woerter/index.html">Wörter</a>
+      <a href="../index.html">Prüfungen</a>
+    </nav>
+  </header>
+
+  <main class="pruefung-container">
+    <h1>Modellprüfung 1 – Leseverstehen Teil 2</h1>
+    <p class="lead">Selektives Verstehen: 6 Zuordnungsaufgaben</p>
+
+    <div class="aufgabe-box">
+      <h2>Aufgabe</h2>
+      <p>Lesen Sie den folgenden Text. In welchem Textabsatz <strong>a–e</strong> finden Sie die Antworten auf die Fragen <strong>7–12</strong>?</p>
+      <p>Es gibt jeweils nur eine richtige Lösung. Jeder Absatz kann Antworten auf mehrere Fragen enthalten.</p>
+      <p><em>Beispiel: Frage 0 → Antwort b</em></p>
+    </div>
+
+    <div class="text-box">
+      <h3>Seniorenstudium: Fürs Lernen ist es nie zu spät</h3>
+
+      <div class="absatz">
+        <span class="absatz-label">Absatz a</span>
+        <p>Als mitten in der Vorlesung ein älterer Herr aufsteht, ist das kein gutes Zeichen. Der Geschichtsprofessor spricht gerade über die Zeit des Wirtschaftswunders. Sein Zuhörer, ein ehemaliger Chefarzt, ruft ihm zu: „Junger Mann, das muss ich jetzt noch mal klarstellen. Sie waren ja gar nicht dabei. Ich hingegen hab das damals live erlebt!" Viele Dozenten kennen solche Momente: wenn der Seniorenstudent als belehrender Zeitzeuge auftritt, als Besserwisser, der seine Erinnerung an lange Zurückliegendes für unbestechlich hält. Der Zeitzeuge ist der natürliche Feind des Historikers, so könnte man es überspitzt und etwas bissig formulieren. Daher ist er in geschichtswissenschaftlichen Veranstaltungen nicht unbedingt ein gerngesehener Gast. Junge Studenten berichten dagegen von handfesteren Schwierigkeiten mit den älteren Kommilitonen. Senioren blockierten mit als Frage getarnten Monologen ganze Veranstaltungen, beklagen sie. Und gewiss sorgt es auch für Verdruss, wenn die aus Frühaufstehern bestehenden „grauen Blöcke" frühmorgens in der ersten Vorlesung regelmäßig die besten Plätze besetzen, Pauschaltouristen ähnlich, die am Pool ihre Handtücher auf den Liegestühlen verteilen. Dass Alt und Jung zusammen und voneinander lernen sollen, klingt also in der Theorie besser, als es in der Praxis funktioniert. Was Anfang der achtziger Jahre innovativ war, weckt heute bei so manchen jungen Studenten und Dozenten Unmut, besonders wenn – wie gelegentlich in den Geisteswissenschaften – ältere Gasthörer in den Vorlesungen die Mehrheit bilden.</p>
+      </div>
+
+      <div class="absatz">
+        <span class="absatz-label">Absatz b</span>
+        <p>Denn die Zahl der Senioren unter den derzeit rund 34.000 Gasthörern an deutschen Universitäten steigt. Mehr als die Hälfte von ihnen sind über 60 Jahre alt. Frauen sind fast so häufig vertreten wie Männer, und ihr Anteil wächst. Dazu kommen noch diejenigen, die nicht nur als gelegentliche oder regelmäßige Gäste in den Vorlesungen sitzen, sondern in Vollzeit studieren, promovieren oder einen Studiengang für Senioren absolvieren. Zusammen macht das nach Angaben des Akademischen Vereins der Senioren in Deutschland (AVDS) rund 55.000 Ältere – bei etwa 2,7 Millionen Studierenden insgesamt. Das mit Abstand beliebteste Fach ist seit Jahren Geschichte, gefolgt von Philosophie und Wirtschaftswissenschaften. Der AVDS beziffert die Zahl der Älteren, die sich auch oder ausschließlich mit Geschichte beschäftigen, auf 10.000.</p>
+      </div>
+
+      <div class="absatz">
+        <span class="absatz-label">Absatz c</span>
+        <p>Die geschichtsinteressierten älteren Semester zieht es in der Tat besonders zu den Epochen hin, die sie selbst oder zumindest ihre Eltern noch miterlebt haben. Was also tun, wenn ein Seniorstudent dem „jungen Mann" am Pult die Kompetenz abspricht? Als Reaktion darauf könnte dieser scharf intervenieren, auch wenn es möglicherweise arrogant wirkt, wenn ein jüngerer Wissenschaftler ältere Hörer ignoriert oder gar zur Ordnung ruft. Besonders schwierig wird es, wenn es um die bei Senioren besonders beliebte zeitgenössische Geschichte geht – ein Problem, das auch Martin Sabrow sehr gut kennt: „Die Geschichte des 20. Jahrhunderts berührt uns persönlich. In jedem von uns kämpfen Zeitzeuge und Zeithistoriker miteinander." Der 60-Jährige ist Co-Direktor des Zentrums für Zeithistorische Forschung in Potsdam und Professor für Neueste Geschichte und Zeitgeschichte an der Humboldt-Universität zu Berlin. Weder der Dozent noch der Student dürfe auf seiner Sicht beharren, erklärt er. Und der Dozent muss das Ganze moderieren – die fachliche Auseinandersetzung ebenso wie das Miteinander von Älteren und Jüngeren im Hörsaal. Nur wie?</p>
+      </div>
+
+      <div class="absatz">
+        <span class="absatz-label">Absatz d</span>
+        <p>Denn oft entstehen im Dialog zwischen den Generationen Verständnisschwierigkeiten. Für die Dozenten ist es keine leichte Übung, sich Jüngeren und Älteren gleichermaßen verständlich zu machen – zu unterschiedlich sind Wissensstand und Erfahrungshintergrund. Und wenn schon die Vermittlung fachlicher Inhalte an so unterschiedliche Hörer Probleme bereitet, liegt es auf der Hand, dass diese auch einander oft rätselhaft bleiben. So besteht die Gefahr, dass es zu Konflikten kommt und junge und alte Studenten zwar nebeneinander, aber nicht miteinander lernen, was der ursprünglichen Idee des Seniorenstudiums widerspricht. Daher ist es für beide Seiten ratsam, unvoreingenommen aufeinander zuzugehen und sich die Sicht des Anderen zu erschließen.</p>
+      </div>
+
+      <div class="absatz">
+        <span class="absatz-label">Absatz e</span>
+        <p>Denn dann erkennen Jüngere, dass sie vom Erfahrungsschatz der Älteren durchaus profitieren können, während die Älteren durch den Kontakt mit den Jüngeren ganz neue Perspektiven kennenlernen. Dass nicht immer alles ganz reibungslos abläuft, spricht jedenfalls keinesfalls gegen das Seniorenstudium. Außerdem: Wer möchte schon im Alter nur zuhause sitzen? Es ist doch leicht nachvollziehbar, dass viele Senioren in ihrer freien Zeit ihren Wissensdurst stillen wollen, vor allem, wenn ihnen in der Jugend Bildungschancen verwehrt wurden. Schon die demographische Entwicklung lässt vermuten, dass das Studium im Alter immer wichtiger werden wird. Die Universitäten werden sich dadurch gewiss verändern – aber auch die Seniorenstudenten selbst. Eine Chance wird darin für beide Seiten liegen.</p>
+      </div>
+    </div>
+
+    <div class="aufgabe-box">
+      <h3>Fragen</h3>
+      <div class="fragen-container">
+        
+        <div class="frage" data-frage="7">
+          <div class="frage-nummer">7. In welchem Abschnitt …</div>
+          <div class="frage-text">… drückt sich der Autor polemisch aus?</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="a">a</button>
+            <button class="antwort-btn" data-answer="b">b</button>
+            <button class="antwort-btn" data-answer="c">c</button>
+            <button class="antwort-btn" data-answer="d">d</button>
+            <button class="antwort-btn" data-answer="e">e</button>
+          </div>
+        </div>
+
+        <div class="frage" data-frage="8">
+          <div class="frage-nummer">8. In welchem Abschnitt …</div>
+          <div class="frage-text">… gibt der Autor eine Empfehlung?</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="a">a</button>
+            <button class="antwort-btn" data-answer="b">b</button>
+            <button class="antwort-btn" data-answer="c">c</button>
+            <button class="antwort-btn" data-answer="d">d</button>
+            <button class="antwort-btn" data-answer="e">e</button>
+          </div>
+        </div>
+
+        <div class="frage" data-frage="9">
+          <div class="frage-nummer">9. In welchem Abschnitt …</div>
+          <div class="frage-text">… gibt der Autor eine fremde Einschätzung wieder?</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="a">a</button>
+            <button class="antwort-btn" data-answer="b">b</button>
+            <button class="antwort-btn" data-answer="c">c</button>
+            <button class="antwort-btn" data-answer="d">d</button>
+            <button class="antwort-btn" data-answer="e">e</button>
+          </div>
+        </div>
+
+        <div class="frage" data-frage="10">
+          <div class="frage-nummer">10. In welchem Abschnitt …</div>
+          <div class="frage-text">… möchte der Autor zur Belustigung beitragen?</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="a">a</button>
+            <button class="antwort-btn" data-answer="b">b</button>
+            <button class="antwort-btn" data-answer="c">c</button>
+            <button class="antwort-btn" data-answer="d">d</button>
+            <button class="antwort-btn" data-answer="e">e</button>
+          </div>
+        </div>
+
+        <div class="frage" data-frage="11">
+          <div class="frage-nummer">11. In welchem Abschnitt …</div>
+          <div class="frage-text">… spricht der Autor eine Warnung aus?</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="a">a</button>
+            <button class="antwort-btn" data-answer="b">b</button>
+            <button class="antwort-btn" data-answer="c">c</button>
+            <button class="antwort-btn" data-answer="d">d</button>
+            <button class="antwort-btn" data-answer="e">e</button>
+          </div>
+        </div>
+
+        <div class="frage" data-frage="12">
+          <div class="frage-nummer">12. In welchem Abschnitt …</div>
+          <div class="frage-text">… stellt der Autor eine Prognose?</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="a">a</button>
+            <button class="antwort-btn" data-answer="b">b</button>
+            <button class="antwort-btn" data-answer="c">c</button>
+            <button class="antwort-btn" data-answer="d">d</button>
+            <button class="antwort-btn" data-answer="e">e</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="ergebnisse" id="ergebnisse">
+      <h3>Ihre Ergebnisse</h3>
+      <div id="ergebnis-liste"></div>
+      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
+    </div>
+
+    <div class="submit-section">
+      <button class="btn secondary" onclick="window.location.href='../'">← Zurück zur Übersicht</button>
+      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
+    </div>
+  </main>
+
+  <script>
+    // Correct answers
+    const correctAnswers = {
+      7: 'a',
+      8: 'd',
+      9: 'c',
+      10: 'a',
+      11: 'd',
+      12: 'e'
+    };
+
+    // Store user answers
+    const userAnswers = {};
+
+    // Handle answer button clicks
+    document.querySelectorAll('.antwort-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const frage = e.target.closest('.frage');
+        const frageNr = frage.dataset.frage;
+        const answer = e.target.dataset.answer;
+        
+        // Deselect other buttons in this question
+        frage.querySelectorAll('.antwort-btn').forEach(b => b.classList.remove('selected'));
+        
+        // Select this button
+        e.target.classList.add('selected');
+        
+        // Store answer
+        userAnswers[frageNr] = answer;
+      });
+    });
+
+    // Evaluate answers
+    document.getElementById('auswerten-btn').addEventListener('click', () => {
+      const ergebnisListe = document.getElementById('ergebnis-liste');
+      const ergebnisse = document.getElementById('ergebnisse');
+      let correct = 0;
+      let html = '';
+
+      for (let i = 7; i <= 12; i++) {
+        const userAnswer = userAnswers[i] || '—';
+        const correctAnswer = correctAnswers[i];
+        const isCorrect = userAnswer === correctAnswer;
+        
+        if (isCorrect) correct++;
+
+        html += `
+          <div class="ergebnis-item ${isCorrect ? 'korrekt' : 'falsch'}">
+            <span>Frage ${i}: Ihre Antwort <strong>${userAnswer}</strong></span>
+            <span>${isCorrect ? '✓ Korrekt' : `✗ Richtig: ${correctAnswer}`}</span>
+          </div>
+        `;
+      }
+
+      ergebnisListe.innerHTML = html;
+      document.getElementById('punkte').textContent = `${correct} von 6 Punkten (${Math.round(correct / 6 * 12)} von 12 Prüfungspunkten)`;
+      ergebnisse.classList.add('show');
+      ergebnisse.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  </script>
+</body>
+</html>

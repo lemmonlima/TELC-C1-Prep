@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest 1 - Leseverstehen Teil 3 | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .pruefung-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+    .aufgabe-box {
+      background: var(--panel-bg, #1a1916);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .text-box {
+      background: var(--bg-secondary, #12110f);
+      padding: 1.5rem;
+      border-radius: 6px;
+      line-height: 1.8;
+      margin: 1rem 0;
+    }
+    .text-box h3 {
+      color: var(--accent-red, #e63946);
+      margin-bottom: 1rem;
+    }
+    .text-box p {
+      margin: 1rem 0;
+    }
+    .aussagen-container {
+      display: grid;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .aussage {
+      padding: 1rem;
+      background: var(--panel-bg, #1a1916);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 6px;
+    }
+    .aussage-nummer {
+      font-weight: bold;
+      color: var(--accent-ink, #457b9d);
+      margin-bottom: 0.5rem;
+    }
+    .aussage-text {
+      margin-bottom: 0.75rem;
+    }
+    .antwort-select {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .antwort-btn {
+      padding: 0.5rem 1.25rem;
+      background: var(--bg-secondary, #12110f);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: inherit;
+      min-width: 3.5rem;
+    }
+    .antwort-btn:hover {
+      border-color: var(--accent-ink, #457b9d);
+      background: var(--panel-bg, #1a1916);
+    }
+    .antwort-btn.selected {
+      border-color: var(--accent-red, #e63946);
+      background: rgba(230, 57, 70, 0.15);
+      font-weight: bold;
+    }
+    .legende {
+      display: flex;
+      gap: 2rem;
+      padding: 1rem;
+      background: var(--bg-secondary, #12110f);
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .legende-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .legende-symbol {
+      font-weight: bold;
+      color: var(--accent-red, #e63946);
+    }
+    .submit-section {
+      position: sticky;
+      bottom: 0;
+      background: var(--bg-primary, #0f0e0d);
+      border-top: 1px solid var(--border-subtle, #2a2825);
+      padding: 1.5rem;
+      margin: 2rem -2rem -2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn.primary {
+      background: var(--accent-red, #e63946);
+      color: white;
+    }
+    .btn.primary:hover {
+      background: #d62839;
+      transform: translateY(-1px);
+    }
+    .btn.secondary {
+      background: var(--accent-ink, #457b9d);
+      color: white;
+    }
+    .btn.secondary:hover {
+      background: #3a6a85;
+    }
+    .ergebnisse {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: var(--panel-bg, #1a1916);
+      border-radius: 8px;
+      display: none;
+    }
+    .ergebnisse.show {
+      display: block;
+    }
+    .ergebnis-item {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ergebnis-item.korrekt {
+      background: rgba(34, 197, 94, 0.15);
+      border-left: 3px solid #22c55e;
+    }
+    .ergebnis-item.falsch {
+      background: rgba(239, 68, 68, 0.15);
+      border-left: 3px solid #ef4444;
+    }
+    
+    /* Mobile optimization */
+    @media (max-width: 768px) {
+      .pruefung-container {
+        padding: 1rem;
+        margin: 1rem auto;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .lead {
+        font-size: 1rem;
+      }
+      .aufgabe-box, .text-box {
+        padding: 1rem;
+      }
+      .antwort-select {
+        gap: 0.75rem;
+      }
+      .antwort-btn {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+      }
+      .legende {
+        gap: 1rem;
+      }
+      .submit-section {
+        padding: 1rem;
+        margin: 1rem -1rem -1rem;
+        flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Prüfungsvorbereitung</span>
+    </div>
+    <nav class="nav">
+      <a href="../../index.html">Start</a>
+      <a href="../../grammatik/index.html">Grammatik</a>
+      <a href="../../texte/index.html">Texte</a>
+      <a href="../../notizen/index.html">Notizen</a>
+      <a href="../../woerter/index.html">Wörter</a>
+      <a href="../index.html">Prüfungen</a>
+    </nav>
+  </header>
+
+  <main class="pruefung-container">
+    <h1>Modellprüfung 1 – Leseverstehen Teil 3</h1>
+    <p class="lead">Detailverstehen: 11 Aussagen + 1 Globalverstehen</p>
+
+    <div class="aufgabe-box">
+      <h2>Aufgabe</h2>
+      <p>Lesen Sie den folgenden Text und die Aussagen 13–23. Welche der Aussagen sind <strong>richtig (+)</strong>, <strong>falsch (−)</strong> oder <strong>gar nicht im Text enthalten (×)</strong>?</p>
+      <p>Es gibt jeweils nur eine richtige Lösung.</p>
+      
+      <div class="legende">
+        <div class="legende-item">
+          <span class="legende-symbol">+</span>
+          <span>richtig</span>
+        </div>
+        <div class="legende-item">
+          <span class="legende-symbol">−</span>
+          <span>falsch</span>
+        </div>
+        <div class="legende-item">
+          <span class="legende-symbol">×</span>
+          <span>nicht im Text</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-box">
+      <h3>„Sprachbad" im Kindergarten</h3>
+      
+      <p><em>Mehrsprachigkeit ist in der zunehmend globalisierten Welt ein Muss. Lernen Kinder in der frühkindlichen Phase Sprachen besonders leicht oder können Erwachsene dies ebenso gut? Forscher streiten sich.</em></p>
+
+      <p>Mit Immersion tauchen Kinder schon im Alter von zwei bis sechs Jahren in Fremdsprachen ein. Ohne Schulunterricht beherrschen sie diese später wie eine zweite Muttersprache. Bei Immersion wird die zu lernende Sprache als Arbeitssprache eingesetzt, so dass die Kinder sich die Sprache auf natürliche Weise aneignen können. Wissenschaftlich ist nachgewiesen, dass Immersion ein sehr erfolgreiches Modell zum Erlernen von Fremdsprachen ist.</p>
+
+      <p>„This little light of mine, I'm gonna let it shine. Let it shine, let it shine, let it shine", singen die zwei- bis sechsjährigen Kinder lauthals und beschreiben mit ausgestreckten Zeigefingern einen Kreis in der Luft. „Hide it under a bushel? No! I'm gonna let it shine". – Ihr Englisch müssen diese Kinder wahrlich nicht unter den Scheffel stellen! Man könnte meinen, man sei einige hundert Kilometer weiter westlich auf den britischen Inseln gelandet, doch wir befinden uns im Norden Deutschlands, in der Kindertagesstätte der Arbeiterwohlfahrt in Altenholz bei Kiel. Mit Leichtigkeit singen die Kinder den Liedtext in englischer Sprache, die eigentlich eine Fremdsprache für sie ist.</p>
+
+      <p>In Altenholz wird seit 1996 das Immersionskonzept angewandt. In Kanada schon seit vielen Jahrzehnten bewährt, ist diese frühkindliche und natürliche Vermittlung von Fremdsprachen in Deutschland bislang noch sehr selten. Der aus dem Englischen abgeleitete Begriff der Immersion bedeutet, dass die Kinder in die fremde Sprache regelrecht „eintauchen". „Man eignet sich die Sprache ganz eigenständig an und wird nicht korrigiert oder verbessert wie in der Schule", sagt Sprachwissenschaftler Prof. Dr. Henning Wode von der Universität Kiel, der das Projekt in Altenholz wissenschaftlich begleitet hat. Ähnlich wie beim Erwerb der Muttersprache wird der Sinn des Gehörten aus dem Zusammenhang erschlossen.</p>
+
+      <p>Für eine Kita bedeutet dies, dass Englisch „Verkehrssprache" und nicht „Lernsprache" ist. Entscheidend ist dabei, dass die Sprache von den pädagogischen Kräften im Kontext alltäglicher Situationen verwendet wird, so dass die Kinder sie sich ohne Erklärungen erschließen können. In der Kita Altenholz geschieht dies nicht nur im Englischen, sondern fächerübergreifend. „Immersion fordert die Aufmerksamkeit der Kinder mehr", sagt Wode. „Sie haben dadurch eine andere Lernhaltung und folgen den gemeinsamen Gruppenaktivitäten insgesamt aufmerksamer." Eine besondere Begabung sei für die Immersion nicht erforderlich. Die Kinder in Altenholz seien in dieser Hinsicht ganz normal.</p>
+
+      <p>In der Kita kümmern sich elf pädagogische Kräfte, unter ihnen drei Englisch-Muttersprachler, um 103 Kinder in fünf Gruppen. In drei Gruppen findet der Alltag auf Englisch statt. Hier wird möglichst ausschließlich Englisch mit den Kindern gesprochen. Dabei reagieren diese auf die fremde Sprache zunächst recht unterschiedlich. „Einige Kinder, beispielsweise mit einem mehrsprachigen familiären Hintergrund, haben gar keine Berührungsängste", sagt Kita-Leiterin Sabine Devich-Henningsen, die selbst eine dänische Immersions-Kita besucht hat. „Andere Kinder, für die das neu ist, orientieren sich erst an den deutschsprachigen Mitarbeitern." Nach drei Wochen sei in dieser Hinsicht jedoch schon kein Unterschied mehr zwischen den Kindern festzustellen und nach maximal sechs Wochen verstünden die Kinder alles, was ihnen gesagt werde.</p>
+
+      <p>Mit dem aktiven Sprechen klappt es häufig noch nicht so gut. Wenn sie auf Englisch angesprochen werden, antworten die Kleinen in der Regel auch am Ende der Kita-Zeit noch auf Deutsch. Dies erwies sich zum Teil als problematisch, sobald die Kinder eingeschult wurden. Um dieser Passivität entgegenzuwirken, wird auf Wunsch der Leitung der Claus-Rixen-Schule seit Sommer 2006 an einem Vormittag in der Woche in der Kita ausschließlich Englisch gesprochen, wobei die Kinder zum aktiven Sprachgebrauch aufgefordert werden.</p>
+
+      <p>Immersion wird schon im Kindergarten durchgeführt, um genügend Zeit zu gewinnen, damit die Kinder während ihrer Schulzeit drei Sprachen auf einem funktional angemessenen Niveau lernen können. Wenn bereits in der Kita im Alter von drei Jahren mit der ersten Fremdsprache begonnen wird, so beherrschen die Kinder bis zum Ende der Grundschule die erste auf einem derart hervorragenden Niveau, dass genug Zeit bleibt, auch eine weitere Sprache intensiv zu lernen. Nur mit der Immersionsmethode lassen sich die Ziele der EU, die ja die Dreisprachigkeit fordert, erreichen.</p>
+
+      <p>Von schulischen Vorgaben und Zwängen sind die Kinder der Kita in Altenholz indes noch weit entfernt. Sie lernen die englische Sprache spielerisch kennen und entscheiden selbst, wie viel Englisch sie sich aneignen und ob sie sich lieber an den deutschen oder englischen Pädagogen orientieren wollen. Bis morgens um halb zehn können sie in der Kita frei spielen, so dass auch die Kinder der deutschsprachigen Gruppen regelmäßig mit der englischen Sprache in Kontakt kommen. Wahlweise bedienen sie sich in den Gruppenräumen an den Frühstücks- oder „breakfast"-Tischen.</p>
+
+      <p>Für ihren weiteren Lebensweg profitieren die Kleinen nicht nur von den ausgezeichneten Englischkenntnissen, die sie hier kindgerecht erwerben und die in einer globalisierten Arbeitswelt immer notwendiger werden. Bilinguale Kita- und Schulprojekte zeigen auch, dass damit die interkulturelle Kompetenz gestärkt wird. Die Kinder sind insgesamt aufgeschlossener und toleranter gegenüber anderssprachigen Menschen und fremden Kulturen.</p>
+
+      <p>Um halb zehn versammeln sich dann alle zum „morning circle". Im täglichen Wechsel bereitet jede der fünf Gruppen Gesangseinlagen, Theateraufführungen und Geburtstagsfeiern vor. Und meistens wird dann Englisch gesprochen. Heute wird gesungen. „This little light of mine, I'm gonna let it shine", wiederholen die Kinder den Refrain immer wieder. Man möchte meinen, man sei in Newcastle oder Edinburgh und nicht in der Nähe der Kieler Förde, so zwanglos und doch sicher gehen die Kleinen mit der englischen Sprache um.</p>
+
+      <p>Einige Hirnforscher meinen, dass die ersten vier Lebensjahre für den Fremdsprachenerwerb entscheidend seien. Aber dies ist nicht die Mehrheitsmeinung, und es ist auch zu einseitig. Es wird der Eindruck erweckt, dass man eine Fremdsprache nur dann erfolgreich erlernen kann, wenn dies während der ersten drei bis vier Lebensjahre einsetzt. Das ist falsch.</p>
+
+      <p>Aus linguistischer Perspektive hat das Projekt in Altenholz gezeigt, dass das Englische hervorragend gelernt wird. Gleichzeitig leidet das Deutsche keineswegs. Lesetests im Deutschen haben gezeigt, dass die immersiv in Englisch beschulten Kinder im Schnitt 10 bis 15 Prozent über den Leistungen von ausschließlich auf Deutsch unterrichteten Kindern liegen. Darüber hinaus ist ein nicht zu vernachlässigender Vorteil der Immersionsmethode, dass sie keine zusätzlichen Personalkosten verursacht, weil eine Pädagogin ihre Zeit sozusagen doppelt einbringt.</p>
+    </div>
+
+    <div class="aufgabe-box">
+      <h3>Aussagen 13–23</h3>
+      <div class="aussagen-container">
+        
+        <div class="aussage" data-aussage="13">
+          <div class="aussage-nummer">13.</div>
+          <div class="aussage-text">Immersion ist eine Methode zur Förderung der zweiten Muttersprache.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+        <div class="aussage" data-aussage="14">
+          <div class="aussage-nummer">14.</div>
+          <div class="aussage-text">Die Kinder singen in dem norddeutschen Kindergarten auch deutsche Lieder.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+        <div class="aussage" data-aussage="15">
+          <div class="aussage-nummer">15.</div>
+          <div class="aussage-text">Die Immersionsmethode funktioniert anders als der Sprachunterricht in der Schule.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+        <div class="aussage" data-aussage="16">
+          <div class="aussage-nummer">16.</div>
+          <div class="aussage-text">In deutschen Kitas wird immer mehr Englisch unterrichtet.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+        <div class="aussage" data-aussage="17">
+          <div class="aussage-nummer">17.</div>
+          <div class="aussage-text">Einsprachig aufgewachsenen Kindern fällt es auch nach vielen Wochen schwer, Englisch zu verstehen.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+        <div class="aussage" data-aussage="18">
+          <div class="aussage-nummer">18.</div>
+          <div class="aussage-text">Die Immersionsmethode wird von der EU auch für Erwachsene empfohlen.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+        <div class="aussage" data-aussage="19">
+          <div class="aussage-nummer">19.</div>
+          <div class="aussage-text">Die Kinder der Kita Altenholz müssen alle Englisch lernen.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+        <div class="aussage" data-aussage="20">
+          <div class="aussage-nummer">20.</div>
+          <div class="aussage-text">Die Immersionsmethode vermittelt auch interkulturelle Kompetenz.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+        <div class="aussage" data-aussage="21">
+          <div class="aussage-nummer">21.</div>
+          <div class="aussage-text">Jeden Morgen singen die Kinder ein englischsprachiges Lied.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+        <div class="aussage" data-aussage="22">
+          <div class="aussage-nummer">22.</div>
+          <div class="aussage-text">Studien zeigen, dass das Erlernen einer Fremdsprache auch später noch auf muttersprachlichem Niveau möglich ist.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+        <div class="aussage" data-aussage="23">
+          <div class="aussage-nummer">23.</div>
+          <div class="aussage-text">Wenn man als Kleinkind eine Fremdsprache lernt, macht man in der Muttersprache weniger Fortschritte.</div>
+          <div class="antwort-select">
+            <button class="antwort-btn" data-answer="+">+ richtig</button>
+            <button class="antwort-btn" data-answer="−">− falsch</button>
+            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="aufgabe-box">
+      <h3>Globalverstehen – Aufgabe 24</h3>
+      <p><strong>Welche der Überschriften a, b oder c trifft die Aussage des Textes am besten?</strong></p>
+      <div class="aussage" data-aussage="24">
+        <div class="antwort-select">
+          <button class="antwort-btn" data-answer="a">a) Fremdsprachenunterricht in deutschen Kindergärten</button>
+          <button class="antwort-btn" data-answer="b">b) „Sprachbad" im Kindergarten</button>
+          <button class="antwort-btn" data-answer="c">c) Der Begriff der Immersion</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="ergebnisse" id="ergebnisse">
+      <h3>Ihre Ergebnisse</h3>
+      <div id="ergebnis-liste"></div>
+      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
+    </div>
+
+    <div class="submit-section">
+      <button class="btn secondary" onclick="window.location.href='../'">← Zurück zur Übersicht</button>
+      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
+    </div>
+  </main>
+
+  <script>
+    // Correct answers (using special encoding to avoid character issues)
+    const correctAnswers = {
+      13: 'falsch',
+      14: 'nicht',
+      15: 'richtig',
+      16: 'nicht',
+      17: 'falsch',
+      18: 'nicht',
+      19: 'falsch',
+      20: 'richtig',
+      21: 'falsch',
+      22: 'nicht',
+      23: 'falsch',
+      24: 'b'
+    };
+
+    // Store user answers
+    const userAnswers = {};
+
+    // Map symbols to words
+    const symbolMap = {
+      '+': 'richtig',
+      '−': 'falsch',
+      '×': 'nicht'
+    };
+
+    // Handle answer button clicks
+    document.querySelectorAll('.antwort-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const aussage = e.target.closest('.aussage');
+        const aussageNr = aussage.dataset.aussage;
+        let answer = e.target.dataset.answer;
+        
+        // Deselect other buttons in this aussage
+        aussage.querySelectorAll('.antwort-btn').forEach(b => b.classList.remove('selected'));
+        
+        // Select this button
+        e.target.classList.add('selected');
+        
+        // Map symbol to word if needed
+        if (symbolMap[answer]) {
+          answer = symbolMap[answer];
+        }
+        
+        // Store answer
+        userAnswers[aussageNr] = answer;
+      });
+    });
+
+    // Evaluate answers
+    document.getElementById('auswerten-btn').addEventListener('click', () => {
+      const ergebnisListe = document.getElementById('ergebnis-liste');
+      const ergebnisse = document.getElementById('ergebnisse');
+      let correct = 0;
+      let html = '';
+
+      // Questions 13-23 (worth 2 points each = 22 points total)
+      for (let i = 13; i <= 23; i++) {
+        const userAnswer = userAnswers[i] || '—';
+        const correctAnswer = correctAnswers[i];
+        const isCorrect = userAnswer === correctAnswer;
+        
+        if (isCorrect) correct += 2;
+
+        const displayCorrect = correctAnswer === 'richtig' ? '+' : correctAnswer === 'falsch' ? '−' : '×';
+        const displayUser = userAnswer === 'richtig' ? '+' : userAnswer === 'falsch' ? '−' : userAnswer === 'nicht' ? '×' : userAnswer;
+
+        html += `
+          <div class="ergebnis-item ${isCorrect ? 'korrekt' : 'falsch'}">
+            <span>Aussage ${i}: Ihre Antwort <strong>${displayUser}</strong></span>
+            <span>${isCorrect ? '✓ Korrekt' : `✗ Richtig: ${displayCorrect}`}</span>
+          </div>
+        `;
+      }
+
+      // Question 24 (worth 2 points)
+      const userAnswer24 = userAnswers[24] || '—';
+      const correctAnswer24 = correctAnswers[24];
+      const isCorrect24 = userAnswer24 === correctAnswer24;
+      
+      if (isCorrect24) correct += 2;
+
+      html += `
+        <div class="ergebnis-item ${isCorrect24 ? 'korrekt' : 'falsch'}">
+          <span>Aufgabe 24: Ihre Antwort <strong>${userAnswer24}</strong></span>
+          <span>${isCorrect24 ? '✓ Korrekt' : `✗ Richtig: ${correctAnswer24}`}</span>
+        </div>
+      `;
+
+      ergebnisListe.innerHTML = html;
+      document.getElementById('punkte').textContent = `${correct} von 24 Prüfungspunkten (${Math.round(correct / 24 * 100)}%)`;
+      ergebnisse.classList.add('show');
+      ergebnisse.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  </script>
+</body>
+</html>
