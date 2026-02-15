@@ -1,4 +1,39 @@
 {
+  "es-hat-ihn-immer-gegeben": {
+    "word": "es hat ihn immer gegeben",
+    "translation": "siempre lo ha habido, siempre ha existido",
+    "sentence": "Es gibt einen Kult der Unwissenheit in den Vereinigten Staaten, und es hat ihn immer gegeben.",
+    "sentenceTranslation": "Existe un culto a la ignorancia en los Estados Unidos, y siempre lo ha habido.",
+    "explanation": "Construcción idiomática del verbo 'geben' en perfecto. 'Es gibt' (hay, existe) se convierte en 'es hat gegeben' (ha habido, ha existido) en pasado. El pronombre 'ihn' (acusativo masculino) se refiere a 'einen Kult der Unwissenheit' mencionado antes. Literalmente: 'lo ha habido siempre'. Es la forma estándar de expresar que algo ha existido durante mucho tiempo.",
+    "examples": [
+      "Es gibt viele Probleme, und es hat sie schon immer gegeben. = Hay muchos problemas, y siempre los ha habido.",
+      "Diesen Konflikt hat es bereits im letzten Jahrhundert gegeben. = Este conflicto ya existió en el siglo pasado."
+    ],
+    "components": [
+      {
+        "word": "es",
+        "type": "pronomen"
+      },
+      {
+        "word": "hat",
+        "type": "verb"
+      },
+      {
+        "word": "ihn",
+        "type": "pronomen"
+      },
+      {
+        "word": "immer",
+        "type": "adverb"
+      },
+      {
+        "word": "gegeben",
+        "type": "verb"
+      }
+    ],
+    "synonyms": ["es gab ihn schon immer (ya existía desde siempre)", "er existierte schon immer (existía desde siempre)"],
+    "type": "phrase"
+  },
   "unwissenheit": {
     "word": "Unwissenheit",
     "translation": "ignorancia, falta de conocimiento, desconocimiento",
