@@ -1,4 +1,74 @@
 {
+  "stroemung": {
+    "word": "Strömung",
+    "translation": "corriente, tendencia, flujo",
+    "sentence": "Die Strömung des Antiintellektualismus ist ein beständiger Faden, der sich durch unser politisches und kulturelles Leben zieht.",
+    "sentenceTranslation": "La corriente del antiintelectualismo es un hilo constante que se extiende a través de nuestra vida política y cultural.",
+    "explanation": "Sustantivo femenino. Literalmente 'flujo' o 'corriente' (de agua, aire). Metafóricamente se usa para tendencias, movimientos o corrientes de pensamiento que atraviesan la sociedad o la historia. Similar a 'Tendenz' pero con más connotación de continuidad y fluidez.",
+    "examples": [
+      "Es gibt verschiedene politische Strömungen in der Partei. = Hay diferentes corrientes políticas en el partido.",
+      "Die feministische Strömung wurde in den 1970ern stärker. = La corriente feminista se fortaleció en los años 70."
+    ],
+    "gender": "die (femenino)",
+    "case": "Nominativ Singular",
+    "singular": "Strömung",
+    "plural": "Strömungen",
+    "synonyms": ["Tendenz (tendencia)", "Bewegung (movimiento)", "Richtung (dirección)"],
+    "antonyms": ["Stillstand (estancamiento)", "Stagnation (estancamiento)"],
+    "type": "nomen"
+  },
+  "bestaendiger-faden": {
+    "word": "beständiger Faden",
+    "translation": "hilo constante, hilo permanente, hebra continua",
+    "sentence": "Die Strömung des Antiintellektualismus ist ein beständiger Faden, der sich durch unser politisches und kulturelles Leben zieht.",
+    "sentenceTranslation": "La corriente del antiintelectualismo es un hilo constante que se extiende a través de nuestra vida política y cultural.",
+    "explanation": "Metáfora literaria. 'beständig' = constante, permanente, que perdura. 'Faden' = hilo, hebra. Juntos forman una imagen poética de algo que persiste a lo largo del tiempo, conectando diferentes momentos o aspectos. Es una forma elegante de decir que algo es una característica continua que une diferentes épocas o elementos.",
+    "examples": [
+      "Gewalt ist ein roter Faden durch die Geschichte der Menschheit. = La violencia es un hilo rojo a través de la historia de la humanidad.",
+      "Ein beständiges Thema in seiner Arbeit ist die Einsamkeit. = Un tema constante en su trabajo es la soledad."
+    ],
+    "gender": "der (masculino)",
+    "case": "Nominativ Singular",
+    "singular": "beständiger Faden",
+    "plural": "beständige Fäden",
+    "synonyms": ["roter Faden (hilo conductor)", "konstantes Element (elemento constante)", "durchgehende Linie (línea continua)"],
+    "type": "nomen"
+  },
+  "sich-zieht": {
+    "word": "sich ziehen",
+    "translation": "extenderse, prolongarse, atravesar",
+    "sentence": "Die Strömung des Antiintellektualismus ist ein beständiger Faden, der sich durch unser politisches und kulturelles Leben zieht.",
+    "sentenceTranslation": "La corriente del antiintelectualismo es un hilo constante que se extiende a través de nuestra vida política y cultural.",
+    "explanation": "Verbo reflexivo. 'sich durch etwas ziehen' = extenderse a través de algo, atravesar algo de forma continua. La imagen viene de un hilo o línea que se extiende de un punto a otro. Usado frecuentemente en contextos metafóricos para describir temas, patrones o características que persisten a lo largo del tiempo o a través de diferentes ámbitos.",
+    "parts": ["sich", "zieht"],
+    "conjugation": {
+      "present": {
+        "ich": "ziehe mich",
+        "du": "ziehst dich",
+        "er/sie/es": "zieht sich",
+        "wir": "ziehen uns",
+        "ihr": "zieht euch",
+        "sie/Sie": "ziehen sich"
+      },
+      "preterite": {
+        "ich": "zog mich",
+        "du": "zogst dich",
+        "er/sie/es": "zog sich",
+        "wir": "zogen uns",
+        "ihr": "zogt euch",
+        "sie/Sie": "zogen sich"
+      },
+      "perfect": "hat sich gezogen",
+      "infinitive": "sich ziehen"
+    },
+    "examples": [
+      "Der Konflikt zieht sich über mehrere Jahre. = El conflicto se prolonga durante varios años.",
+      "Eine Narbe zieht sich über sein Gesicht. = Una cicatriz se extiende por su cara."
+    ],
+    "synonyms": ["sich erstrecken (extenderse)", "verlaufen (transcurrir, extenderse)", "sich hinziehen (prolongarse)"],
+    "type": "verb",
+    "verbType": "reflexive"
+  },
   "es-hat-ihn-immer-gegeben": {
     "word": "es hat ihn immer gegeben",
     "translation": "siempre lo ha habido, siempre ha existido",
