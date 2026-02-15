@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest 1 - Schriftlicher Ausdruck | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .pruefung-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+    .aufgabe-box {
+      background: var(--panel-bg, #1a1916);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .themen-container {
+      display: grid;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .thema-box {
+      background: var(--bg-secondary, #12110f);
+      border: 2px solid var(--border-subtle, #2a2825);
+      border-radius: 8px;
+      padding: 1.5rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .thema-box:hover {
+      border-color: var(--accent-ink, #457b9d);
+    }
+    .thema-box.selected {
+      border-color: var(--accent-red, #e63946);
+      background: rgba(230, 57, 70, 0.1);
+    }
+    .thema-box h3 {
+      margin: 0 0 1rem 0;
+      color: var(--accent-red, #e63946);
+    }
+    .zitat {
+      font-style: italic;
+      opacity: 0.9;
+      margin: 0.5rem 0;
+      padding-left: 1rem;
+      border-left: 2px solid var(--accent-ink, #457b9d);
+    }
+    .editor-container {
+      margin: 2rem 0;
+      display: none;
+    }
+    .editor-container.show {
+      display: block;
+    }
+    textarea {
+      width: 100%;
+      min-height: 400px;
+      padding: 1rem;
+      background: var(--bg-secondary, #12110f);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 6px;
+      color: inherit;
+      font-family: inherit;
+      font-size: 1rem;
+      line-height: 1.6;
+      resize: vertical;
+    }
+    textarea:focus {
+      outline: none;
+      border-color: var(--accent-ink, #457b9d);
+    }
+    .word-count {
+      margin-top: 0.5rem;
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+    .word-count.warning {
+      color: #ef4444;
+    }
+    .word-count.ok {
+      color: #22c55e;
+    }
+    .submit-section {
+      position: sticky;
+      bottom: 0;
+      background: var(--bg-primary, #0f0e0d);
+      border-top: 1px solid var(--border-subtle, #2a2825);
+      padding: 1.5rem;
+      margin: 2rem -2rem -2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn.primary {
+      background: var(--accent-red, #e63946);
+      color: white;
+    }
+    .btn.primary:hover {
+      background: #d62839;
+      transform: translateY(-1px);
+    }
+    .btn.secondary {
+      background: var(--accent-ink, #457b9d);
+      color: white;
+    }
+    .btn.secondary:hover {
+      background: #3a6a85;
+    }
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .success-msg {
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid #22c55e;
+      color: #22c55e;
+      padding: 1rem;
+      border-radius: 6px;
+      margin: 1rem 0;
+      display: none;
+    }
+    .success-msg.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Prüfungsvorbereitung</span>
+    </div>
+    <nav class="nav">
+      <a href="../../index.html">Start</a>
+      <a href="../">Modellprüfungen</a>
+    </nav>
+  </header>
+
+  <main class="pruefung-container">
+    <h1>Modellprüfung 1 – Schriftlicher Ausdruck</h1>
+    <p class="lead">70 Minuten • Mindestens 350 Wörter</p>
+
+    <div class="aufgabe-box">
+      <h2>Aufgabenstellung</h2>
+      <p>In einer Seminararbeit sollen Sie ein Thema aus unterschiedlichen Perspektiven beleuchten.</p>
+      <p><strong>Anforderungen:</strong></p>
+      <ul>
+        <li>Sie können die unten stehenden Zitate zur Orientierung verwenden, aber auch andere Aspekte des Themas darlegen.</li>
+        <li>Argumentieren Sie überzeugend und führen Sie Beispiele an.</li>
+        <li>Gliedern Sie Ihren Text in <strong>Einleitung, Hauptteil und Schluss</strong>.</li>
+        <li>Mindestens <strong>350 Wörter</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="aufgabe-box">
+      <h2>Wählen Sie ein Thema</h2>
+      <div class="themen-container">
+        <div class="thema-box" data-thema="literatur">
+          <h3>Thema 1: Literatur</h3>
+          <div class="zitat">„Literatur hat nie etwas Negatives verhindern können."</div>
+          <div class="zitat">„Literatur bietet mehr Orientierung als alles andere."</div>
+        </div>
+
+        <div class="thema-box" data-thema="gruppenarbeit">
+          <h3>Thema 2: Gruppenarbeit</h3>
+          <div class="zitat">„Gruppenarbeit kostet doch nur Zeit, weil man alles ausdiskutieren muss."</div>
+          <div class="zitat">„Teamarbeit bietet dem Einzelnen viel mehr Möglichkeiten."</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="editor-container" id="editor-container">
+      <div class="aufgabe-box">
+        <h2 id="selected-thema-title">Ihr Text</h2>
+        <textarea id="text-input" placeholder="Schreiben Sie hier Ihren Text..."></textarea>
+        <div class="word-count" id="word-count">0 Wörter</div>
+      </div>
+    </div>
+
+    <div class="success-msg" id="success-msg">
+      ✓ Text wurde in die Zwischenablage kopiert! Sie können ihn jetzt in eine KI einfügen zur Evaluation.
+    </div>
+
+    <div class="submit-section">
+      <button class="btn secondary" onclick="window.location.href='../'">← Zurück zur Übersicht</button>
+      <button class="btn primary" id="kopieren-btn" disabled>📋 Für Evaluation kopieren</button>
+    </div>
+  </main>
+
+  <script>
+    let selectedThema = null;
+    const textInput = document.getElementById('text-input');
+    const wordCountEl = document.getElementById('word-count');
+    const kopierenBtn = document.getElementById('kopieren-btn');
+    const successMsg = document.getElementById('success-msg');
+    const editorContainer = document.getElementById('editor-container');
+    const selectedThemaTitle = document.getElementById('selected-thema-title');
+
+    // Thema selection
+    document.querySelectorAll('.thema-box').forEach(box => {
+      box.addEventListener('click', () => {
+        document.querySelectorAll('.thema-box').forEach(b => b.classList.remove('selected'));
+        box.classList.add('selected');
+        selectedThema = box.dataset.thema;
+        editorContainer.classList.add('show');
+        
+        if (selectedThema === 'literatur') {
+          selectedThemaTitle.textContent = 'Thema 1: Literatur';
+        } else {
+          selectedThemaTitle.textContent = 'Thema 2: Gruppenarbeit';
+        }
+        
+        updateWordCount();
+      });
+    });
+
+    // Word count
+    function updateWordCount() {
+      const text = textInput.value.trim();
+      const words = text ? text.split(/\s+/).length : 0;
+      wordCountEl.textContent = `${words} Wörter`;
+      
+      if (words >= 350) {
+        wordCountEl.classList.add('ok');
+        wordCountEl.classList.remove('warning');
+        kopierenBtn.disabled = false;
+      } else {
+        wordCountEl.classList.add('warning');
+        wordCountEl.classList.remove('ok');
+        kopierenBtn.disabled = true;
+      }
+    }
+
+    textInput.addEventListener('input', updateWordCount);
+
+    // Copy to clipboard with evaluation criteria
+    kopierenBtn.addEventListener('click', async () => {
+      const themaText = selectedThema === 'literatur' 
+        ? `Thema 1: Literatur
+
+Zitate zur Orientierung:
+- "Literatur hat nie etwas Negatives verhindern können."
+- "Literatur bietet mehr Orientierung als alles andere."`
+        : `Thema 2: Gruppenarbeit
+
+Zitate zur Orientierung:
+- "Gruppenarbeit kostet doch nur Zeit, weil man alles ausdiskutieren muss."
+- "Teamarbeit bietet dem Einzelnen viel mehr Möglichkeiten."`;
+
+      const evaluationCriteria = `
+═══════════════════════════════════════════════════════════════
+TELC DEUTSCH C1 HOCHSCHULE – BEWERTUNGSKRITERIEN
+SCHRIFTLICHER AUSDRUCK
+═══════════════════════════════════════════════════════════════
+
+${themaText}
+
+───────────────────────────────────────────────────────────────
+AUFGABENSTELLUNG:
+───────────────────────────────────────────────────────────────
+In einer Seminararbeit sollen Sie das Thema aus unterschiedlichen 
+Perspektiven beleuchten. Sie können die Zitate zur Orientierung 
+verwenden, aber auch andere Aspekte darlegen.
+
+- Argumentieren Sie überzeugend und führen Sie Beispiele an.
+- Gliedern Sie Ihren Text in Einleitung, Hauptteil und Schluss.
+- Mindestens 350 Wörter.
+
+───────────────────────────────────────────────────────────────
+MEIN TEXT:
+───────────────────────────────────────────────────────────────
+
+${textInput.value.trim()}
+
+───────────────────────────────────────────────────────────────
+BEWERTUNGSKRITERIEN (A = 12 Punkte, B = 8, C = 4, D = 0)
+───────────────────────────────────────────────────────────────
+
+1. AUFGABENGERECHTHEIT (max. 12 Punkte)
+   - Deckt die Aufgabenstellung in Bezug auf inhaltliche Vorgaben voll ab
+   - Text hat einen "roten Faden"
+   - Kritische Auseinandersetzung mit dem Thema findet statt
+   
+   A: Entspricht durchgängig den Anforderungen
+   B: Entspricht weitgehend den Anforderungen
+   C: Entspricht nur teilweise den Anforderungen
+   D: Entspricht (fast) überhaupt nicht
+
+2. KORREKTHEIT (max. 12 Punkte)
+   - Sehr wenige oder keine Fehler in Morphologie, Syntax, Orthographie
+   - Einige wenige Fehler nur bei komplexen Konstruktionen
+   
+   A: Durchgängig dem Zielniveau entsprechend
+   B: Größtenteils entsprechend, Fehler (fast) nur in komplexen Strukturen
+   C: Auch in einfachen Strukturen mehrere Fehler
+   D: Zahlreiche Fehler, Text teilweise unverständlich
+
+3. REPERTOIRE (max. 12 Punkte)
+   - Weitreichende Kompetenz in Bezug auf Umfang und Komplexität
+   - Komplexe Satzformen werden verwendet, wo sie angemessen sind
+   
+   A: Durchgängig dem Zielniveau entsprechend
+   B: An wenigen Stellen sprachliche Einschränkungen
+   C: An mehreren Stellen Einschränkungen, häufig einfacher Wortschatz
+   D: (Fast) durchgängig sprachliche Einschränkungen, fast nur einfache Strukturen
+
+4. KOMMUNIKATIVE GESTALTUNG (max. 12 Punkte)
+   - Gut strukturiert auf Mikroebene (Absätze/Sinnabschnitte)
+   - Angemessene Verknüpfungsmittel (Konnektive, Pro-Formen, Ellipse, etc.)
+   - Absätze/Sinnabschnitte hinsichtlich Kohäsion und Kohärenz gelungen
+   
+   A: Entspricht dem geforderten Niveau durchgehend
+   B: Entspricht weitgehend, vereinzelte Unklarheiten
+   C: Nicht immer klar gestaltet, einige Brüche in der Struktur
+   D: An vielen Stellen unklar, unklare Struktur
+
+───────────────────────────────────────────────────────────────
+BITTE BEWERTEN SIE:
+───────────────────────────────────────────────────────────────
+Geben Sie für jedes der 4 Kriterien eine Bewertung (A/B/C/D) mit 
+Begründung. Berechnen Sie die Gesamtpunktzahl (max. 48 Punkte).
+
+Geben Sie konkrete Verbesserungsvorschläge für:
+- Aufgabengerechtheit (Struktur, roter Faden, kritische Auseinandersetzung)
+- Korrektheit (grammatische Fehler, Orthographie)
+- Repertoire (Wortschatzvielfalt, komplexe Strukturen)
+- Kommunikative Gestaltung (Kohäsion, Verknüpfungen)
+
+═══════════════════════════════════════════════════════════════
+`;
+
+      try {
+        await navigator.clipboard.writeText(evaluationCriteria);
+        successMsg.classList.add('show');
+        setTimeout(() => successMsg.classList.remove('show'), 4000);
+      } catch (err) {
+        alert('Fehler beim Kopieren. Bitte manuell kopieren.');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest 1 - Leseverstehen Teil 1 | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .pruefung-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+    .aufgabe-box {
+      background: var(--panel-bg, #1a1916);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .text-box {
+      background: var(--bg-secondary, #12110f);
+      padding: 1.5rem;
+      border-radius: 6px;
+      line-height: 1.8;
+      margin: 1rem 0;
+    }
+    .luecke {
+      display: inline-block;
+      width: 2em;
+      height: 1.2em;
+      border-bottom: 2px solid var(--accent-red, #e63946);
+      margin: 0 0.3em;
+      vertical-align: baseline;
+      font-weight: bold;
+      color: var(--accent-red, #e63946);
+    }
+    .optionen {
+      display: grid;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .option-item {
+      display: flex;
+      gap: 0.75rem;
+      padding: 1rem;
+      background: var(--bg-secondary, #12110f);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .option-item:hover {
+      border-color: var(--accent-ink, #457b9d);
+      background: var(--panel-bg, #1a1916);
+    }
+    .option-item.selected {
+      border-color: var(--accent-red, #e63946);
+      background: rgba(230, 57, 70, 0.1);
+    }
+    .option-label {
+      font-weight: bold;
+      color: var(--accent-red, #e63946);
+      min-width: 2em;
+    }
+    .frage {
+      margin: 2rem 0;
+      padding: 1rem;
+      background: var(--panel-bg, #1a1916);
+      border-left: 3px solid var(--accent-ink, #457b9d);
+      border-radius: 4px;
+    }
+    .frage-nummer {
+      font-weight: bold;
+      color: var(--accent-ink, #457b9d);
+      margin-bottom: 0.5rem;
+    }
+    .antwort-select {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .antwort-btn {
+      padding: 0.5rem 1rem;
+      background: var(--bg-secondary, #12110f);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: inherit;
+    }
+    .antwort-btn:hover {
+      border-color: var(--accent-ink, #457b9d);
+      background: var(--panel-bg, #1a1916);
+    }
+    .antwort-btn.selected {
+      border-color: var(--accent-red, #e63946);
+      background: rgba(230, 57, 70, 0.15);
+      font-weight: bold;
+    }
+    .submit-section {
+      position: sticky;
+      bottom: 0;
+      background: var(--bg-primary, #0f0e0d);
+      border-top: 1px solid var(--border-subtle, #2a2825);
+      padding: 1.5rem;
+      margin: 2rem -2rem -2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn.primary {
+      background: var(--accent-red, #e63946);
+      color: white;
+    }
+    .btn.primary:hover {
+      background: #d62839;
+      transform: translateY(-1px);
+    }
+    .btn.secondary {
+      background: var(--accent-ink, #457b9d);
+      color: white;
+    }
+    .btn.secondary:hover {
+      background: #3a6a85;
+    }
+    .ergebnisse {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: var(--panel-bg, #1a1916);
+      border-radius: 8px;
+      display: none;
+    }
+    .ergebnisse.show {
+      display: block;
+    }
+    .ergebnis-item {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ergebnis-item.korrekt {
+      background: rgba(34, 197, 94, 0.15);
+      border-left: 3px solid #22c55e;
+    }
+    .ergebnis-item.falsch {
+      background: rgba(239, 68, 68, 0.15);
+      border-left: 3px solid #ef4444;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Prüfungsvorbereitung</span>
+    </div>
+    <nav class="nav">
+      <a href="../../index.html">Start</a>
+      <a href="../">Modellprüfungen</a>
+    </nav>
+  </header>
+
+  <main class="pruefung-container">
+    <h1>Modellprüfung 1 – Leseverstehen Teil 1</h1>
+    <p class="lead">Textrekonstruktion: 6 Zuordnungsaufgaben</p>
+
+    <div class="aufgabe-box">
+      <h2>Aufgabe</h2>
+      <p>Lesen Sie den folgenden Text. Welche der Sätze <strong>a–h</strong> gehören in die Lücken <strong>1–6</strong>? Es gibt jeweils nur eine richtige Lösung. Zwei Sätze können nicht zugeordnet werden.</p>
+      <p><em>Lücke (0) ist ein Beispiel.</em></p>
+    </div>
+
+    <div class="text-box">
+      <h3>Vom Abakus bis zur Z3</h3>
+      <p>Im Jahre 1623 entwickelte Wilhelm Schickard, deutscher Astronom und Mathematiker, die erste Rechenmaschine. <span class="luecke">0</span> Nicht viel später, im Jahre 1644, stellte der französische Mathematiker und Philosoph Blaise Pascal ebenfalls eine Rechenmaschine fertig. <span class="luecke">1</span> Sein Modell war Ende des 17. Jahrhunderts funktionsfähig.</p>
+
+      <h4>Charles Babbage – auf dem Weg zur Programmierung</h4>
+      <p>Mit diesen ersten Rechenmaschinen konnte man jedoch nur diejenigen Rechenoperationen durchführen, für die die Maschinen konstruiert worden waren. <span class="luecke">2</span> Erst viel später konnte Charles Babbage, Erfinder und Professor in Cambridge, diese Lücke zunächst theoretisch schließen. Er entwickelte 1833 erstmals konkrete Pläne für einen vollständig programmierbaren Rechenautomaten und nannte ihn „Analytical Engine". <span class="luecke">3</span></p>
+
+      <p>Mit Hilfe von Lochkarten konnten beliebige Befehle in ebenfalls beliebiger Reihenfolge und beliebigem Umfang ausgeführt werden. Neben den einzelnen Lochkarten sollten Kombinationskarten eingesetzt werden. <span class="luecke">4</span> Neben den vier Grundrechenarten sollte auch das Wurzelziehen möglich sein. Die Maschine war so konstruiert, dass sich vierzigstellige Zahlen mit ihr berechnen lassen konnten. Babbage konnte seine Pläne aus finanziellen Gründen jedoch niemals in die Realität umsetzen. <span class="luecke">5</span> Dennoch waren Babbages Konstruktionen so klar und überzeugend, dass aus heutiger Sicht gesagt werden kann, dass diese Pläne der Grundstein für unsere Computer waren.</p>
+
+      <h4>Babbages Theorie wird Realität</h4>
+      <p>Es dauerte nochmals fast 100 Jahre, bis Babbages Vorstellungen umgesetzt und das Zeitalter der mechanischen Rechenmaschinen überwunden werden konnte. <span class="luecke">6</span> Es war Konrad Zuse, der mit der Z3 den ersten funktionsfähigen digitalen Rechner konstruierte und baute – der erste Computer überhaupt. Die Z3 wurde im Jahre 1941 fertiggestellt. Jedoch wurde die Maschine nur zwei Jahre später zerstört. Dennoch kann man die Z3 auch heute noch besichtigen: Das Deutsche Museum in München stellt einen kompletten Nachbau der Z3 aus.</p>
+    </div>
+
+    <div class="aufgabe-box">
+      <h3>Wählen Sie die passenden Sätze</h3>
+      
+      <div class="optionen" id="optionen">
+        <div class="option-item" data-option="a">
+          <span class="option-label">a</span>
+          <span>Diese Konstruktion aus dem 19. Jahrhundert kann als der direkte Vorläufer unserer heutigen Computer angesehen werden.</span>
+        </div>
+        <div class="option-item" data-option="b">
+          <span class="option-label">b</span>
+          <span>Diese sollten die Anzahl der Wiederholungen steuern, die jede einzelne Lochkarte durchläuft.</span>
+        </div>
+        <div class="option-item" data-option="c">
+          <span class="option-label">c</span>
+          <span>Wenn eine Nadel durch die Karte ging, wurde ein Stromkreis geschlossen und ein elektrischer Zähler bedient.</span>
+        </div>
+        <div class="option-item" data-option="d">
+          <span class="option-label">d</span>
+          <span>Dann war der erste Rechner, der programmgesteuert funktionierte, reif.</span>
+        </div>
+        <div class="option-item" data-option="e">
+          <span class="option-label">e</span>
+          <span>Nachträgliche Änderungen waren also nicht möglich, denn die hochkomplexe Mechanik ließ diese nicht zu.</span>
+        </div>
+        <div class="option-item" data-option="f">
+          <span class="option-label">f</span>
+          <span>Noch größere Zahlen konnten im Speicher aufbewahrt werden, um sie anschließend z. B. zu dividieren und als vierzigstellige Zahl auszugeben.</span>
+        </div>
+        <div class="option-item" data-option="g">
+          <span class="option-label">g</span>
+          <span>Schließlich arbeitete im selben Jahrhundert auch der deutsche Universalgelehrte Gottfried Wilhelm Leibniz an einer Rechenmaschine.</span>
+        </div>
+        <div class="option-item" data-option="h">
+          <span class="option-label">h</span>
+          <span>Seine Rechenmaschine blieb also ein theoretisches Konstrukt, dessen Funktionsfähigkeit sich nicht empirisch überprüfen ließ.</span>
+        </div>
+        <div class="option-item" data-option="z">
+          <span class="option-label">z</span>
+          <span>Mit ihr ließen sich Operationen in den vier Grundrechenarten durchführen. <strong>(Beispiel für Lücke 0)</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="aufgabe-box">
+      <h3>Ihre Antworten</h3>
+      <div class="frage" data-luecke="1">
+        <div class="frage-nummer">Lücke 1</div>
+        <div class="antwort-select">
+          <button class="antwort-btn" data-answer="a">a</button>
+          <button class="antwort-btn" data-answer="b">b</button>
+          <button class="antwort-btn" data-answer="c">c</button>
+          <button class="antwort-btn" data-answer="d">d</button>
+          <button class="antwort-btn" data-answer="e">e</button>
+          <button class="antwort-btn" data-answer="f">f</button>
+          <button class="antwort-btn" data-answer="g">g</button>
+          <button class="antwort-btn" data-answer="h">h</button>
+        </div>
+      </div>
+
+      <div class="frage" data-luecke="2">
+        <div class="frage-nummer">Lücke 2</div>
+        <div class="antwort-select">
+          <button class="antwort-btn" data-answer="a">a</button>
+          <button class="antwort-btn" data-answer="b">b</button>
+          <button class="antwort-btn" data-answer="c">c</button>
+          <button class="antwort-btn" data-answer="d">d</button>
+          <button class="antwort-btn" data-answer="e">e</button>
+          <button class="antwort-btn" data-answer="f">f</button>
+          <button class="antwort-btn" data-answer="g">g</button>
+          <button class="antwort-btn" data-answer="h">h</button>
+        </div>
+      </div>
+
+      <div class="frage" data-luecke="3">
+        <div class="frage-nummer">Lücke 3</div>
+        <div class="antwort-select">
+          <button class="antwort-btn" data-answer="a">a</button>
+          <button class="antwort-btn" data-answer="b">b</button>
+          <button class="antwort-btn" data-answer="c">c</button>
+          <button class="antwort-btn" data-answer="d">d</button>
+          <button class="antwort-btn" data-answer="e">e</button>
+          <button class="antwort-btn" data-answer="f">f</button>
+          <button class="antwort-btn" data-answer="g">g</button>
+          <button class="antwort-btn" data-answer="h">h</button>
+        </div>
+      </div>
+
+      <div class="frage" data-luecke="4">
+        <div class="frage-nummer">Lücke 4</div>
+        <div class="antwort-select">
+          <button class="antwort-btn" data-answer="a">a</button>
+          <button class="antwort-btn" data-answer="b">b</button>
+          <button class="antwort-btn" data-answer="c">c</button>
+          <button class="antwort-btn" data-answer="d">d</button>
+          <button class="antwort-btn" data-answer="e">e</button>
+          <button class="antwort-btn" data-answer="f">f</button>
+          <button class="antwort-btn" data-answer="g">g</button>
+          <button class="antwort-btn" data-answer="h">h</button>
+        </div>
+      </div>
+
+      <div class="frage" data-luecke="5">
+        <div class="frage-nummer">Lücke 5</div>
+        <div class="antwort-select">
+          <button class="antwort-btn" data-answer="a">a</button>
+          <button class="antwort-btn" data-answer="b">b</button>
+          <button class="antwort-btn" data-answer="c">c</button>
+          <button class="antwort-btn" data-answer="d">d</button>
+          <button class="antwort-btn" data-answer="e">e</button>
+          <button class="antwort-btn" data-answer="f">f</button>
+          <button class="antwort-btn" data-answer="g">g</button>
+          <button class="antwort-btn" data-answer="h">h</button>
+        </div>
+      </div>
+
+      <div class="frage" data-luecke="6">
+        <div class="frage-nummer">Lücke 6</div>
+        <div class="antwort-select">
+          <button class="antwort-btn" data-answer="a">a</button>
+          <button class="antwort-btn" data-answer="b">b</button>
+          <button class="antwort-btn" data-answer="c">c</button>
+          <button class="antwort-btn" data-answer="d">d</button>
+          <button class="antwort-btn" data-answer="e">e</button>
+          <button class="antwort-btn" data-answer="f">f</button>
+          <button class="antwort-btn" data-answer="g">g</button>
+          <button class="antwort-btn" data-answer="h">h</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="ergebnisse" id="ergebnisse">
+      <h3>Ihre Ergebnisse</h3>
+      <div id="ergebnis-liste"></div>
+      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
+    </div>
+
+    <div class="submit-section">
+      <button class="btn secondary" onclick="window.location.href='../'">← Zurück zur Übersicht</button>
+      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
+    </div>
+  </main>
+
+  <script>
+    // Correct answers
+    const correctAnswers = {
+      1: 'g',
+      2: 'e',
+      3: 'a',
+      4: 'b',
+      5: 'h',
+      6: 'd'
+    };
+
+    // Store user answers
+    const userAnswers = {};
+
+    // Handle answer button clicks
+    document.querySelectorAll('.antwort-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const frage = e.target.closest('.frage');
+        const luecke = frage.dataset.luecke;
+        const answer = e.target.dataset.answer;
+        
+        // Deselect other buttons in this question
+        frage.querySelectorAll('.antwort-btn').forEach(b => b.classList.remove('selected'));
+        
+        // Select this button
+        e.target.classList.add('selected');
+        
+        // Store answer
+        userAnswers[luecke] = answer;
+      });
+    });
+
+    // Evaluate answers
+    document.getElementById('auswerten-btn').addEventListener('click', () => {
+      const ergebnisListe = document.getElementById('ergebnis-liste');
+      const ergebnisse = document.getElementById('ergebnisse');
+      let correct = 0;
+      let html = '';
+
+      for (let i = 1; i <= 6; i++) {
+        const userAnswer = userAnswers[i] || '—';
+        const correctAnswer = correctAnswers[i];
+        const isCorrect = userAnswer === correctAnswer;
+        
+        if (isCorrect) correct++;
+
+        html += `
+          <div class="ergebnis-item ${isCorrect ? 'korrekt' : 'falsch'}">
+            <span>Lücke ${i}: Ihre Antwort <strong>${userAnswer}</strong></span>
+            <span>${isCorrect ? '✓ Korrekt' : `✗ Richtig: ${correctAnswer}`}</span>
+          </div>
+        `;
+      }
+
+      ergebnisListe.innerHTML = html;
+      document.getElementById('punkte').textContent = `${correct} von 6 Punkten (${Math.round(correct / 6 * 12)} von 12 Prüfungspunkten)`;
+      ergebnisse.classList.add('show');
+      ergebnisse.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  </script>
+</body>
+</html>
