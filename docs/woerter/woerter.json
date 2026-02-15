@@ -513,5 +513,21 @@
       "type": "adverb",
       "tags": ["matiz", "grado", "aplicación"]
     }
+  ],
+    {
+      "id": "angesichts",
+      "word": "angesichts",
+      "translation": "ante, frente a, en vista de, dado/dada",
+      "explanation": "Preposición formal que rige genitivo. Introduce una circunstancia o situación que se toma como punto de partida para una reflexión o decisión. Muy frecuente en textos académicos y argumentativos.",
+      "erklärung": "Formale Präposition mit Genitiv. Drückt aus, dass etwas angesichts einer Situation oder Tatsache betrachtet wird.",
+      "examples": [
+        { "example": "Angesichts des Klimawandels müssen wir handeln.", "translation": "Ante el cambio climático debemos actuar." },
+        { "example": "Angesichts der steigenden Kosten ist eine Reform nötig.", "translation": "En vista de los costos crecientes es necesaria una reforma." },
+        { "example": "Angesichts dieser Entwicklung stellt sich die Frage, ob", "translation": "Dada esta evolución surge la pregunta de si" },
+        { "example": "Angesichts der Herausforderungen brauchen wir neue Lösungen.", "translation": "Frente a los desafíos necesitamos nuevas soluciones." }
+      ],
+      "type": "präposition",
+      "tags": ["formal", "argumentación", "contexto"]
+    }
   ]
 }
