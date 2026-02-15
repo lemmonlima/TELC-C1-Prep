@@ -1,4 +1,22 @@
 {
+  "unwissenheit": {
+    "word": "Unwissenheit",
+    "translation": "ignorancia, falta de conocimiento, desconocimiento",
+    "sentence": "Es gibt einen Kult der Unwissenheit in den Vereinigten Staaten, und es hat ihn immer gegeben.",
+    "sentenceTranslation": "Existe un culto a la ignorancia en los Estados Unidos, y siempre lo ha habido.",
+    "explanation": "Sustantivo femenino abstracto. Significa la falta de conocimiento o información sobre algo, especialmente cuando esta falta es deliberada o valorada. Opuesto a 'Wissen' (conocimiento). En el contexto del antiintelectualismo, se refiere a la celebración o aceptación de no saber.",
+    "examples": [
+      "Unwissenheit schützt vor Strafe nicht. = La ignorancia no protege del castigo. (dicho legal)",
+      "Seine Unwissenheit über politische Themen ist erstaunlich. = Su ignorancia sobre temas políticos es asombrosa."
+    ],
+    "gender": "die (femenino)",
+    "case": "Genitiv Singular",
+    "singular": "Unwissenheit",
+    "plural": "Unwissenheiten (raro, usado solo en contextos específicos)",
+    "synonyms": ["Ignoranz (ignorancia)", "Ahnungslosigkeit (falta de idea)", "Dummheit (estupidez, cuando es deliberada)"],
+    "antonyms": ["Wissen (conocimiento)", "Kenntnis (conocimiento específico)", "Bildung (educación, formación)"],
+    "type": "nomen"
+  },
   "einarbeiten-zu-koennen": {
     "word": "einarbeiten zu können",
     "translation": "poder incorporar, poder integrar, poder incluir",
