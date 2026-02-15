@@ -1,2 +1,37 @@
 {
+  "einarbeiten-zu-koennen": {
+    "word": "einarbeiten zu können",
+    "translation": "poder incorporar, poder integrar, poder incluir",
+    "sentence": "Zunächst hatte ich gehofft, dieses Zitat von Isaac Asimov einarbeiten zu können.",
+    "sentenceTranslation": "Al principio había esperado poder incorporar esta cita de Isaac Asimov.",
+    "explanation": "Verbo separable con partícula modal. 'einarbeiten' = incorporar, integrar (verbo separable: ein- + arbeiten). 'zu können' = poder (modal). La construcción 'zu + infinitivo' con modal expresa capacidad o posibilidad. El prefijo 'ein-' se mantiene unido en infinitivo.",
+    "parts": ["einarbeiten", "zu", "können"],
+    "conjugation": {
+      "present": {
+        "ich": "kann einarbeiten",
+        "du": "kannst einarbeiten",
+        "er/sie/es": "kann einarbeiten",
+        "wir": "können einarbeiten",
+        "ihr": "könnt einarbeiten",
+        "sie/Sie": "können einarbeiten"
+      },
+      "preterite": {
+        "ich": "konnte einarbeiten",
+        "du": "konntest einarbeiten",
+        "er/sie/es": "konnte einarbeiten",
+        "wir": "konnten einarbeiten",
+        "ihr": "konntet einarbeiten",
+        "sie/Sie": "konnten einarbeiten"
+      },
+      "perfect": "hat einarbeiten können",
+      "infinitive": "einarbeiten können"
+    },
+    "examples": [
+      "Ich kann die neuen Daten nicht in den Bericht einarbeiten. = No puedo incorporar los nuevos datos en el informe.",
+      "Sie möchte sich schnell in das Team einarbeiten können. = Ella quiere poder integrarse rápidamente en el equipo."
+    ],
+    "synonyms": ["integrieren können (poder integrar)", "einfügen können (poder insertar)", "aufnehmen können (poder incluir)"],
+    "type": "verb",
+    "verbType": "separable-modal"
+  }
 }
