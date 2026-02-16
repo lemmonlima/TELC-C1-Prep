@@ -70,13 +70,13 @@ const Pruefung = (() => {
   function initButtons(btnSelector, groupAttr, valueAttr, store, onSelect) {
     document.querySelectorAll(btnSelector).forEach(btn => {
       btn.addEventListener('click', () => {
-        const group = btn.closest(`[${groupAttr}]`)?.getAttribute(groupAttr)
-                   || btn.getAttribute(groupAttr);
+        const container = btn.closest(`[${groupAttr}]`);
+        const group = container?.getAttribute(groupAttr) || btn.getAttribute(groupAttr);
         const value = btn.getAttribute(valueAttr);
 
-        // Deselect siblings
-        const parent = btn.closest(`[${groupAttr}]`) || btn.parentElement;
-        parent.querySelectorAll(btnSelector).forEach(b => b.classList.remove('selected'));
+        // Prefer parent container with groupAttr; fall back to parentElement
+        const scope = (container && container !== btn) ? container : btn.parentElement;
+        scope.querySelectorAll(btnSelector).forEach(b => b.classList.remove('selected'));
         btn.classList.add('selected');
 
         store[group] = value;
