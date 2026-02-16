@@ -6,6 +6,60 @@
   <title>Modelltest 1 - Hörverstehen Teil 1 | TELC C1 Hochschule</title>
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="pruefung.css">
+  <style>
+    .sprecher-box { margin-bottom: 2rem; }
+    .sprecher-titel {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      color: var(--accent-ink, #457b9d);
+    }
+    .aussage-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.6rem 0.85rem;
+      margin-bottom: 0.4rem;
+      border: 2px solid var(--ink-300, #3a3935);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      font-size: 0.92rem;
+      line-height: 1.4;
+    }
+    .aussage-option:hover {
+      border-color: var(--accent-ink, #457b9d);
+      background: rgba(69, 123, 157, 0.08);
+    }
+    .aussage-option.selected {
+      border-color: var(--accent-red, #e63946);
+      background: rgba(230, 57, 70, 0.12);
+    }
+    .aussage-option.used {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+    .aussage-option.used.selected {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .option-letter {
+      flex-shrink: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--ink-300, #3a3935);
+      font-weight: bold;
+      font-size: 0.85rem;
+    }
+    .aussage-option.selected .option-letter {
+      background: var(--accent-red, #e63946);
+      color: #fff;
+    }
+  </style>
   <script src="../../topbar.js"></script>
   <script src="../../navigation.js"></script>
 </head>
