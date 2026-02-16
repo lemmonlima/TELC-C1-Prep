@@ -41,9 +41,19 @@
 
   // Calculate relative path from current page to target
   function getRelativePath(currentPath, targetPath) {
-    const currentDepth = currentPath.split('/').filter(p => p && p !== 'index.html').length;
-    const prefix = currentDepth > 0 ? '../'.repeat(currentDepth) : './';
-    return prefix + targetPath.substring(1); // Remove leading slash
+    // Get the directory of the current file
+    const currentParts = currentPath.split('/').filter(p => p);
+    // Remove the filename (last part) to get directory depth
+    const currentDepth = currentParts.length - 1;
+    
+    // Build relative path
+    if (currentDepth === 0) {
+      // We're at root level
+      return '.' + targetPath;
+    } else {
+      // Go up the required number of levels
+      return '../'.repeat(currentDepth) + targetPath.substring(1);
+    }
   }
 
   // Create topbar HTML
@@ -51,6 +61,9 @@
     const currentPath = window.location.pathname;
     const currentSection = getCurrentSection(currentPath);
     const sectionName = getSectionName(currentPath);
+    
+    console.log('[TELC Topbar] Current path:', currentPath);
+    console.log('[TELC Topbar] Current section:', currentSection);
 
     const navLinks = SECTIONS.map(section => {
       const href = section.id === currentSection && section.id !== 'start'
