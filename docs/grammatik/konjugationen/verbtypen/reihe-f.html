@@ -25,6 +25,10 @@
       <a href="../../../pruefungen/index.html">Prüfungen</a>
     </nav>
     <a class="cta" href="../../../tips/einfuehrung/index.html">Einstufung</a>
+    <div class="topbar-actions">
+      <button type="button" class="topbar-btn topbar-hide" title="Barra minimizar" aria-label="Barra minimizar">−</button>
+      <button type="button" class="topbar-btn topbar-reset" title="Reiniciar (olvidar posiciones)" aria-label="Reiniciar">↺</button>
+    </div>
   </header>
   <main class="doc-main">
     <section class="doc-hero">
@@ -128,6 +132,61 @@
 
       window.addEventListener("pageshow", scheduleRestore);
       window.addEventListener("load", scheduleRestore);
+    })();
+  </script>
+
+
+  <script>
+    // Topbar controls
+    (function() {
+      const topbar = document.querySelector('.topbar');
+      if (!topbar) return;
+      
+      const body = document.body;
+      
+      // Restore hidden state
+      if (sessionStorage.getItem('telc_topbar_hidden') === '1') {
+        body.classList.add('topbar-hidden');
+      }
+      
+      // Create show trigger
+      const showTrigger = document.createElement('div');
+      showTrigger.className = 'topbar-show-trigger';
+      showTrigger.title = 'Mostrar barra';
+      showTrigger.textContent = '▼';
+      topbar.parentNode.insertBefore(showTrigger, topbar);
+      
+      // Get buttons
+      const hideBtn = topbar.querySelector('.topbar-hide');
+      const resetBtn = topbar.querySelector('.topbar-reset');
+      
+      if (hideBtn) {
+        hideBtn.onclick = () => {
+          body.classList.add('topbar-hidden');
+          body.classList.remove('topbar-auto-hidden');
+          sessionStorage.setItem('telc_topbar_hidden', '1');
+        };
+      }
+      
+      if (showTrigger) {
+        showTrigger.onclick = () => {
+          body.classList.remove('topbar-hidden');
+          body.classList.remove('topbar-auto-hidden');
+          sessionStorage.removeItem('telc_topbar_hidden');
+        };
+      }
+      
+      if (resetBtn) {
+        resetBtn.onclick = () => {
+          const keys = [];
+          for (let i = 0; i < sessionStorage.length; i++) {
+            const key = sessionStorage.key(i);
+            if (key && key.indexOf('telc_') === 0) keys.push(key);
+          }
+          keys.forEach(k => sessionStorage.removeItem(k));
+          location.reload();
+        };
+      }
     })();
   </script>
 
