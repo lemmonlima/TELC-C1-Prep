@@ -127,61 +127,43 @@
     <div class="aufgabe-box" style="margin-top: 3rem;">
       <h2>Diskussionssimulation mit KI</h2>
       <p>Wählen Sie ein Diskussionsthema und kopieren Sie die Aufgabe. Eine KI wird dann als Ihr Diskussionspartner agieren und Sie nach TELC C1 Standards bewerten.</p>
-      
-      <div style="margin: 1.5rem 0;">
-        <label for="zitat-auswahl" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Gewähltes Diskussionsthema:</label>
-        <select id="zitat-auswahl" style="width: 100%; padding: 0.75rem; background: var(--bg-secondary, #12110f); border: 1px solid var(--border-subtle, #2a2825); border-radius: 4px; color: inherit; font-family: inherit; font-size: 1rem;">
-          <option value="">-- Bitte wählen Sie ein Thema --</option>
-          <option value="1">Diskussionsthema 1: „Die beste Bildung findet ein kluger Mensch auf Reisen." (Goethe)</option>
-          <option value="2">Diskussionsthema 2: „Am Mut hängt der Erfolg." (Fontane)</option>
-          <option value="3">Diskussionsthema 3: „Auf Kinder wirkt das Vorbild, nicht die Kritik." (Thiersch)</option>
-          <option value="4">Diskussionsthema 4: „Ohne Leiden bildet sich kein Charakter." (Feuchtersleben)</option>
-        </select>
-      </div>
 
-      <div id="zitat-vorschau" style="display: none; margin: 1.5rem 0; padding: 1.5rem; background: var(--bg-secondary, #12110f); border-left: 3px solid var(--accent-red, #e63946); border-radius: 4px;">
-        <p style="font-size: 1.2rem; font-style: italic; color: var(--accent-red, #e63946);" id="zitat-text-vorschau"></p>
-        <p style="text-align: right; font-style: italic; color: var(--ink-600); margin-top: 0.5rem;" id="zitat-autor-vorschau"></p>
-        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle, #2a2825);">
-          <strong>Mögliche Diskussionsaspekte:</strong>
-          <ul id="diskussionsaspekte-vorschau" style="margin-top: 0.5rem; line-height: 1.6;"></ul>
+      <div class="themen-container">
+        <div class="thema-box" data-zitat="1">
+          <h3>Diskussionsthema 1</h3>
+          <div class="zitat">„Die beste Bildung findet ein kluger Mensch auf Reisen."</div>
+          <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Goethe</p>
+        </div>
+
+        <div class="thema-box" data-zitat="2">
+          <h3>Diskussionsthema 2</h3>
+          <div class="zitat">„Am Mut hängt der Erfolg."</div>
+          <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Fontane</p>
+        </div>
+
+        <div class="thema-box" data-zitat="3">
+          <h3>Diskussionsthema 3</h3>
+          <div class="zitat">„Auf Kinder wirkt das Vorbild, nicht die Kritik."</div>
+          <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Thiersch</p>
+        </div>
+
+        <div class="thema-box" data-zitat="4">
+          <h3>Diskussionsthema 4</h3>
+          <div class="zitat">„Ohne Leiden bildet sich kein Charakter."</div>
+          <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Feuchtersleben</p>
         </div>
       </div>
 
-      <div style="margin: 1.5rem 0; padding: 1.5rem; background: var(--bg-secondary, #12110f); border-radius: 6px;">
-        <h3 style="margin-top: 0; color: var(--accent-red, #e63946);">Bewertungskriterien</h3>
-        <p style="font-size: 0.9rem; color: var(--ink-600); margin-bottom: 1rem;">Diese Kriterien werden automatisch beim Kopieren hinzugefügt.</p>
-        
-        <div style="font-size: 0.9rem; line-height: 1.8;">
-          <p><strong>INHALTLICHE ANGEMESSENHEIT</strong></p>
-          
-          <p style="margin-top: 1rem;"><strong>Aufgabengerechtheit - Teil 2 Diskussion (0-6 Punkte)</strong></p>
-          <ul style="margin-left: 1.5rem; font-size: 0.9rem;">
-            <li><strong>A (6 Punkte):</strong> Entspricht durchgängig den Anforderungen</li>
-            <li><strong>B (4 Punkte):</strong> Entspricht weitgehend den Anforderungen</li>
-            <li><strong>C (2 Punkte):</strong> Entspricht nur teilweise den Anforderungen</li>
-            <li><strong>D (0 Punkte):</strong> Entspricht nicht den Anforderungen</li>
-          </ul>
-
-          <p style="margin-top: 1rem;"><strong>SPRACHLICHE ANGEMESSENHEIT (gesamt für alle Teile)</strong></p>
-          <ul style="margin-left: 1.5rem; font-size: 0.9rem;">
-            <li>Flüssigkeit: 0-8 Punkte</li>
-            <li>Repertoire: 0-8 Punkte</li>
-            <li>Grammatische Richtigkeit: 0-8 Punkte</li>
-            <li>Aussprache und Intonation: 0-8 Punkte</li>
-          </ul>
-
-          <p style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle, #2a2825);"><strong>Maximal: 38 Punkte (6 + 32)</strong></p>
-        </div>
+      <div id="zitat-vorschau" class="hidden" style="margin: 1.5rem 0; padding: 1rem; background: var(--panel-bg, #1a1916); border-left: 3px solid var(--accent-ink, #457b9d); border-radius: 4px;">
+        <strong>Mögliche Diskussionsaspekte:</strong>
+        <ul id="diskussionsaspekte-vorschau" style="margin-top: 0.5rem; line-height: 1.6;"></ul>
       </div>
 
       <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-        <button id="kopieren-diskussion-btn" class="btn primary" style="background: var(--accent-red, #e63946);">
-          📋 Diskussionsaufgabe kopieren (für KI)
-        </button>
+        <button id="kopieren-diskussion-btn" class="btn primary">📋 Diskussionsaufgabe kopieren (für KI)</button>
       </div>
 
-      <div id="kopiert-info-diskussion" style="display: none; margin-top: 1rem; padding: 1rem; background: rgba(34, 197, 94, 0.15); border-left: 3px solid #22c55e; border-radius: 4px;">
+      <div id="kopiert-info-diskussion" class="success-msg">
         ✓ Aufgabe wurde in die Zwischenablage kopiert! Fügen Sie sie jetzt in eine KI ein (z.B. ChatGPT, Claude) um die Diskussion zu beginnen.
       </div>
     </div>
