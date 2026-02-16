@@ -246,14 +246,24 @@ const Exam = (() => {
       });
     });
 
-    // .antwort-btn inside [data-frage] (LV2, HV2)
+    // .antwort-btn inside [data-frage] parent (LV2)
     container.querySelectorAll('[data-frage] .antwort-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const frage = btn.closest('[data-frage]');
         const key = frage.dataset.frage;
         frage.querySelectorAll('.antwort-btn').forEach(b => b.classList.remove('selected'));
         btn.classList.add('selected');
-        store[key] = (tabId === 'hv2') ? btn.dataset.wert : btn.dataset.answer;
+        store[key] = btn.dataset.answer;
+      });
+    });
+
+    // .antwort-btn with data-frage ON the button itself (HV2)
+    container.querySelectorAll('.antwort-btn[data-frage][data-wert]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.dataset.frage;
+        container.querySelectorAll(`.antwort-btn[data-frage="${key}"]`).forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        store[key] = btn.dataset.wert;
       });
     });
 
