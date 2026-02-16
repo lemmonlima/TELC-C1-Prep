@@ -1,61 +1,164 @@
-/**
- * Topbar: siempre visible. Solo se oculta con el botón "Ocultar barra" (−).
- * Al ocultar se guarda en sessionStorage; el trigger "▼" la vuelve a mostrar.
- */
-(function () {
-  document.addEventListener("DOMContentLoaded", function () {
-    var t = document.querySelector(".topbar");
-    if (!t) return;
-    var b = document.body;
-    if (sessionStorage.getItem("telc_topbar_hidden") === "1") b.classList.add("topbar-hidden");
+// TELC Topbar Component - Single source of truth for navigation
+(function() {
+  'use strict';
 
-    var c = t.querySelector(".cta"),
-      a = document.createElement("div");
-    a.className = "topbar-actions";
-    var h = document.createElement("button"),
-      r = document.createElement("button");
-    h.type = "button";
-    h.className = "topbar-btn topbar-hide";
-    h.title = "Barra minimizar";
-    h.setAttribute("aria-label", "Barra minimizar");
-    h.textContent = "−";
-    r.type = "button";
-    r.className = "topbar-btn topbar-reset";
-    r.title = "Reiniciar (olvidar posiciones)";
-    r.setAttribute("aria-label", "Reiniciar");
-    r.textContent = "↺";
-    a.appendChild(h);
-    a.appendChild(r);
-    if (c) a.appendChild(c);
-    t.appendChild(a);
+  // Configuration
+  const SECTIONS = [
+    { id: 'start', label: 'Start', path: '/index.html', hash: '#start' },
+    { id: 'grammatik', label: 'Grammatik', path: '/grammatik/index.html' },
+    { id: 'texte', label: 'Texte', path: '/texte/index.html' },
+    { id: 'notizen', label: 'Notizen', path: '/notizen/index.html' },
+    { id: 'woerter', label: 'Wörter', path: '/woerter/index.html' },
+    { id: 'pruefungen', label: 'Prüfungen', path: '/pruefungen/index.html' }
+  ];
 
-    var g = document.createElement("div");
-    g.className = "topbar-show-trigger";
-    g.title = "Mostrar barra";
-    g.textContent = "▼";
-    t.parentNode.insertBefore(g, t);
+  const CTA_CONFIG = {
+    label: 'Einstufung',
+    path: '/tips/einfuehrung/index.html'
+  };
 
-    h.onclick = function () {
-      b.classList.add("topbar-hidden");
-      b.classList.remove("topbar-auto-hidden");
-      sessionStorage.setItem("telc_topbar_hidden", "1");
-    };
-    g.onclick = function () {
-      b.classList.remove("topbar-hidden");
-      b.classList.remove("topbar-auto-hidden");
-      sessionStorage.removeItem("telc_topbar_hidden");
-    };
-
-    r.onclick = function () {
-      var ks = [];
-      for (var i = 0; i < sessionStorage.length; i++) {
-        var k = sessionStorage.key(i);
-        if (k && k.indexOf("telc_") === 0) ks.push(k);
+  // Determine current section from path
+  function getCurrentSection(pathname) {
+    for (const section of SECTIONS) {
+      if (section.id === 'start') {
+        const isIndex = /\/index\.html$/.test(pathname);
+        const isRoot = pathname === '/' || pathname === '';
+        const notInOtherSection = !SECTIONS.slice(1).some(s => pathname.includes(`/${s.id}/`));
+        if ((isIndex || isRoot) && notInOtherSection) return section.id;
+      } else {
+        if (pathname.includes(`/${section.id}/`)) return section.id;
       }
-      ks.forEach(function (k) {
-        sessionStorage.removeItem(k);
-      });
+    }
+    return 'start';
+  }
+
+  // Get section name for brand
+  function getSectionName(pathname) {
+    const currentSection = getCurrentSection(pathname);
+    const section = SECTIONS.find(s => s.id === currentSection);
+    return section ? section.label : 'Deutschprogramm';
+  }
+
+  // Calculate relative path from current page to target
+  function getRelativePath(currentPath, targetPath) {
+    const currentDepth = currentPath.split('/').filter(p => p && p !== 'index.html').length;
+    const prefix = currentDepth > 0 ? '../'.repeat(currentDepth) : './';
+    return prefix + targetPath.substring(1); // Remove leading slash
+  }
+
+  // Create topbar HTML
+  function createTopbar() {
+    const currentPath = window.location.pathname;
+    const currentSection = getCurrentSection(currentPath);
+    const sectionName = getSectionName(currentPath);
+
+    const navLinks = SECTIONS.map(section => {
+      const href = section.id === currentSection && section.id !== 'start'
+        ? 'index.html'
+        : getRelativePath(currentPath, section.path) + (section.hash || '');
+      return `<a href="${href}">${section.label}</a>`;
+    }).join('\n      ');
+
+    const ctaHref = getRelativePath(currentPath, CTA_CONFIG.path);
+
+    return `
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">${sectionName}</span>
+    </div>
+    <nav class="nav">
+      ${navLinks}
+    </nav>
+    <a class="cta" href="${ctaHref}">${CTA_CONFIG.label}</a>
+  </header>`;
+  }
+
+  // Initialize topbar on page load
+  function initTopbar() {
+    // Insert topbar at the beginning of body
+    const topbarHTML = createTopbar();
+    document.body.insertAdjacentHTML('afterbegin', topbarHTML);
+
+    // Initialize topbar controls (minimize, reset)
+    initTopbarControls();
+  }
+
+  // Initialize topbar controls
+  function initTopbarControls() {
+    const topbar = document.querySelector('.topbar');
+    if (!topbar) return;
+
+    const body = document.body;
+
+    // Restore hidden state
+    if (sessionStorage.getItem('telc_topbar_hidden') === '1') {
+      body.classList.add('topbar-hidden');
+    }
+
+    // Get or create CTA element
+    const cta = topbar.querySelector('.cta');
+
+    // Create actions container
+    const actions = document.createElement('div');
+    actions.className = 'topbar-actions';
+
+    // Create hide button
+    const hideBtn = document.createElement('button');
+    hideBtn.type = 'button';
+    hideBtn.className = 'topbar-btn topbar-hide';
+    hideBtn.title = 'Barra minimizar';
+    hideBtn.setAttribute('aria-label', 'Barra minimizar');
+    hideBtn.textContent = '−';
+
+    // Create reset button
+    const resetBtn = document.createElement('button');
+    resetBtn.type = 'button';
+    resetBtn.className = 'topbar-btn topbar-reset';
+    resetBtn.title = 'Reiniciar (olvidar posiciones)';
+    resetBtn.setAttribute('aria-label', 'Reiniciar');
+    resetBtn.textContent = '↺';
+
+    actions.appendChild(hideBtn);
+    actions.appendChild(resetBtn);
+    if (cta) actions.appendChild(cta);
+    topbar.appendChild(actions);
+
+    // Create show trigger
+    const showTrigger = document.createElement('div');
+    showTrigger.className = 'topbar-show-trigger';
+    showTrigger.title = 'Mostrar barra';
+    showTrigger.textContent = '▼';
+    topbar.parentNode.insertBefore(showTrigger, topbar);
+
+    // Event handlers
+    hideBtn.onclick = () => {
+      body.classList.add('topbar-hidden');
+      body.classList.remove('topbar-auto-hidden');
+      sessionStorage.setItem('telc_topbar_hidden', '1');
+    };
+
+    showTrigger.onclick = () => {
+      body.classList.remove('topbar-hidden');
+      body.classList.remove('topbar-auto-hidden');
+      sessionStorage.removeItem('telc_topbar_hidden');
+    };
+
+    resetBtn.onclick = () => {
+      const keys = [];
+      for (let i = 0; i < sessionStorage.length; i++) {
+        const key = sessionStorage.key(i);
+        if (key && key.indexOf('telc_') === 0) keys.push(key);
+      }
+      keys.forEach(k => sessionStorage.removeItem(k));
       location.reload();
     };
-  });
+  }
+
+  // Wait for DOM to be ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTopbar);
+  } else {
+    initTopbar();
+  }
 })();
