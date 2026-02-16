@@ -52,61 +52,92 @@
         <p>Fünf vollständige Prüfungssimulationen mit allen Prüfungsteilen.</p>
       </div>
       <div class="grid modules">
-        
-        <a href="modell-1/" class="module-card" style="text-decoration: none; color: inherit; display: block; background: var(--panel-bg, #1a1916); border: 1px solid var(--border-subtle, #2a2825); border-radius: 8px; padding: 1.5rem; transition: all 0.2s ease;">
-          <h2 style="margin: 0 0 0.5rem 0; color: var(--accent-red, #e63946);">Modellprüfung 1</h2>
-          <p style="margin: 0; opacity: 0.8;">Interaktive Übungen • Automatische Auswertung • Evaluationshilfe</p>
+        <a class="module-card module-link reveal" style="--delay: 80ms;" href="modell-1/">
+          <span class="badge">Modell 1</span>
+          <h3>Modellprüfung 1</h3>
+          <p>Interaktive Übungen • Automatische Auswertung • Evaluationshilfe</p>
         </a>
 
-        <a href="modell-2/" class="module-card" style="text-decoration: none; color: inherit; display: block; background: var(--panel-bg, #1a1916); border: 1px solid var(--border-subtle, #2a2825); border-radius: 8px; padding: 1.5rem; transition: all 0.2s ease;">
-          <h2 style="margin: 0 0 0.5rem 0; color: var(--accent-red, #e63946);">Modellprüfung 2</h2>
-          <p style="margin: 0; opacity: 0.8;">Interaktive Übungen • Automatische Auswertung • Evaluationshilfe</p>
+        <a class="module-card module-link reveal" style="--delay: 120ms;" href="modell-2/">
+          <span class="badge">Modell 2</span>
+          <h3>Modellprüfung 2</h3>
+          <p>Interaktive Übungen • Automatische Auswertung • Evaluationshilfe</p>
         </a>
 
-        <a href="modell-3/" class="module-card" style="text-decoration: none; color: inherit; display: block; background: var(--panel-bg, #1a1916); border: 1px solid var(--border-subtle, #2a2825); border-radius: 8px; padding: 1.5rem; transition: all 0.2s ease;">
-          <h2 style="margin: 0 0 0.5rem 0; color: var(--accent-red, #e63946);">Modellprüfung 3</h2>
-          <p style="margin: 0; opacity: 0.8;">Interaktive Übungen • Automatische Auswertung • Evaluationshilfe</p>
+        <a class="module-card module-link reveal" style="--delay: 160ms;" href="modell-3/">
+          <span class="badge">Modell 3</span>
+          <h3>Modellprüfung 3</h3>
+          <p>Interaktive Übungen • Automatische Auswertung • Evaluationshilfe</p>
         </a>
 
-        <a href="modell-4/" class="module-card" style="text-decoration: none; color: inherit; display: block; background: var(--panel-bg, #1a1916); border: 1px solid var(--border-subtle, #2a2825); border-radius: 8px; padding: 1.5rem; transition: all 0.2s ease;">
-          <h2 style="margin: 0 0 0.5rem 0; color: var(--accent-red, #e63946);">Modellprüfung 4</h2>
-          <p style="margin: 0; opacity: 0.8;">Interaktive Übungen • Automatische Auswertung • Evaluationshilfe</p>
+        <a class="module-card module-link reveal" style="--delay: 200ms;" href="modell-4/">
+          <span class="badge">Modell 4</span>
+          <h3>Modellprüfung 4</h3>
+          <p>Interaktive Übungen • Automatische Auswertung • Evaluationshilfe</p>
         </a>
 
-        <a href="modell-5/" class="module-card" style="text-decoration: none; color: inherit; display: block; background: var(--panel-bg, #1a1916); border: 1px solid var(--border-subtle, #2a2825); border-radius: 8px; padding: 1.5rem; transition: all 0.2s ease;">
-          <h2 style="margin: 0 0 0.5rem 0; color: var(--accent-red, #e63946);">Modellprüfung 5</h2>
-          <p style="margin: 0; opacity: 0.8;">Interaktive Übungen • Automatische Auswertung • Evaluationshilfe</p>
+        <a class="module-card module-link reveal" style="--delay: 240ms;" href="modell-5/">
+          <span class="badge">Modell 5</span>
+          <h3>Modellprüfung 5</h3>
+          <p>Interaktive Übungen • Automatische Auswertung • Evaluationshilfe</p>
         </a>
-
       </div>
     </section>
   </main>
 
-  <style>
-    .module-card:hover {
-      border-color: var(--accent-ink, #457b9d) !important;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    }
-    
-    @media (max-width: 768px) {
-      main {
-        padding: 1rem !important;
-        margin: 1rem auto !important;
+  <footer class="footer">
+    <span>TELC Prüfungen – Modellprüfungen</span>
+    <span>Strukturiert für optimale Prüfungsvorbereitung</span>
+  </footer>
+
+  <script>
+    (() => {
+      document.documentElement.classList.add("no-flash");
+      const storageKey = `telc-scroll:${location.pathname}${location.search}`;
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
       }
-      h1 {
-        font-size: 1.5rem;
-      }
-      .lead {
-        font-size: 1rem;
-      }
-      .module-card {
-        padding: 1rem !important;
-      }
-      .module-card h2 {
-        font-size: 1.3rem;
-      }
-    }
-  </style>
+
+      const save = () => {
+        sessionStorage.setItem(storageKey, String(window.scrollY || window.pageYOffset || 0));
+      };
+
+      const restore = () => {
+        const saved = sessionStorage.getItem(storageKey);
+        if (saved == null) return;
+        const y = Number(saved);
+        if (!Number.isNaN(y)) {
+          window.scrollTo(0, y);
+        }
+      };
+
+      const scheduleRestore = () => {
+        restore();
+        requestAnimationFrame(restore);
+        setTimeout(restore, 60);
+        setTimeout(restore, 220);
+      };
+
+      window.addEventListener("pagehide", save);
+      window.addEventListener("beforeunload", save);
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "hidden") save();
+      });
+      document.addEventListener("click", (event) => {
+        const link = event.target.closest("a");
+        if (!link || !link.href) return;
+        try {
+          const url = new URL(link.href, location.href);
+          if (url.origin === location.origin) save();
+        } catch {
+          return;
+        }
+      });
+
+      window.addEventListener("pageshow", scheduleRestore);
+      window.addEventListener("load", scheduleRestore);
+    })();
+  </script>
+
 </body>
 </html>
