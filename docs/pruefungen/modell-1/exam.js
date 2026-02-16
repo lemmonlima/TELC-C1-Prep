@@ -783,8 +783,16 @@ Bitte geben Sie für jedes Kriterium:
     // Start button
     $('btn-start').addEventListener('click', () => enterPhase(1)); // → lesen
 
-    // Skip/finish button
+    // Skip/finish current section
     skipBtn().addEventListener('click', () => nextPhase());
+
+    // End entire exam → jump to results
+    $('btn-end-exam').addEventListener('click', () => {
+      if (confirm('Möchten Sie die gesamte Prüfung jetzt beenden und zu den Ergebnissen gehen?')) {
+        stopTimer();
+        enterPhase(PHASES.length - 1); // last phase = results
+      }
+    });
 
     // Break skip
     $('btn-skip-break').addEventListener('click', () => nextPhase());
