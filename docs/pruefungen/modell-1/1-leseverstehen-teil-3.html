@@ -240,24 +240,18 @@
     // Store user answers
     const userAnswers = {};
 
-    // Initialize button handlers for questions 13-23
+    // Initialize button handlers for questions 13-23 (convert symbols to words)
     Pruefung.initButtons(
-      '.aussage[data-aussage]:not([data-aussage="24"]) .antwort-btn',
+      '.aussage[data-aussage] .antwort-btn',
       'data-aussage',
       'data-answer',
       userAnswers,
       (group, value) => {
-        // Convert symbol to word for storage
-        userAnswers[group] = symbolMap[value] || value;
+        // Convert symbol to word for storage (only for questions 13-23)
+        if (group !== '24') {
+          userAnswers[group] = symbolMap[value] || value;
+        }
       }
-    );
-
-    // Initialize button handler for question 24
-    Pruefung.initButtons(
-      '.aussage[data-aussage="24"] .antwort-btn',
-      'data-aussage',
-      'data-answer',
-      userAnswers
     );
 
     // Evaluate answers
