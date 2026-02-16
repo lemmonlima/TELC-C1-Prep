@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest 1 - Hörverstehen Teil 1 | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .pruefung-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+    .aufgabe-box {
+      background: var(--panel-bg, #1a1916);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .aussagen-box {
+      background: var(--bg-secondary, #12110f);
+      padding: 1.5rem;
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+    .aussage-item {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      background: var(--panel-bg, #1a1916);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 4px;
+    }
+    .aussage-label {
+      font-weight: bold;
+      color: var(--accent-ink, #457b9d);
+      margin-bottom: 0.25rem;
+    }
+    .sprecher-container {
+      display: grid;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .sprecher-box {
+      padding: 1.25rem;
+      background: var(--panel-bg, #1a1916);
+      border: 2px solid var(--border-subtle, #2a2825);
+      border-radius: 6px;
+    }
+    .sprecher-titel {
+      font-weight: bold;
+      color: var(--accent-red, #e63946);
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+    .auswahl-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .auswahl-btn {
+      padding: 0.5rem;
+      background: var(--bg-secondary, #12110f);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+      font-size: 1rem;
+      color: inherit;
+      text-align: center;
+      font-weight: 600;
+    }
+    .auswahl-btn:hover {
+      border-color: var(--accent-ink, #457b9d);
+      background: var(--panel-bg, #1a1916);
+    }
+    .auswahl-btn.selected {
+      border-color: var(--accent-red, #e63946);
+      background: rgba(230, 57, 70, 0.15);
+      font-weight: bold;
+    }
+    .submit-section {
+      position: sticky;
+      bottom: 0;
+      background: var(--bg-primary, #0f0e0d);
+      border-top: 1px solid var(--border-subtle, #2a2825);
+      padding: 1.5rem;
+      margin: 2rem -2rem -2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn.primary {
+      background: var(--accent-red, #e63946);
+      color: white;
+    }
+    .btn.primary:hover {
+      background: #d62839;
+      transform: translateY(-1px);
+    }
+    .btn.secondary {
+      background: var(--accent-ink, #457b9d);
+      color: white;
+    }
+    .btn.secondary:hover {
+      background: #3a6a85;
+    }
+    .ergebnisse {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: var(--panel-bg, #1a1916);
+      border-radius: 8px;
+      display: none;
+    }
+    .ergebnisse.show {
+      display: block;
+    }
+    .ergebnis-item {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ergebnis-item.korrekt {
+      background: rgba(34, 197, 94, 0.15);
+      border-left: 3px solid #22c55e;
+    }
+    .ergebnis-item.falsch {
+      background: rgba(239, 68, 68, 0.15);
+      border-left: 3px solid #ef4444;
+    }
+    .audio-note {
+      background: rgba(230, 57, 70, 0.1);
+      border-left: 3px solid var(--accent-red, #e63946);
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+    
+    /* Mobile optimization */
+    @media (max-width: 768px) {
+      .pruefung-container {
+        padding: 1rem;
+        margin: 1rem auto;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .aufgabe-box {
+        padding: 1rem;
+      }
+      .auswahl-buttons {
+        grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+      }
+      .submit-section {
+        padding: 1rem;
+        margin: 1rem -1rem -1rem;
+        flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  </style>
+  <!-- TELC Navigation System -->
+  <script src="../../topbar.js"></script>
+  <script src="../../navigation.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Prüfungen</span>
+    </div>
+    <nav class="nav">
+      <a href="../../index.html#start">Start</a>
+      <a href="../../grammatik/index.html">Grammatik</a>
+      <a href="../../texte/index.html">Texte</a>
+      <a href="../../notizen/index.html">Notizen</a>
+      <a href="../../woerter/index.html">Wörter</a>
+      <a href="../../pruefungen/index.html">Prüfungen</a>
+    </nav>
+    <a class="cta" href="../../tips/einfuehrung/index.html">Einstufung</a>
+    <div class="topbar-actions">
+      <button type="button" class="topbar-btn topbar-hide" title="Barra minimizar" aria-label="Barra minimizar">−</button>
+      <button type="button" class="topbar-btn topbar-reset" title="Reiniciar (olvidar posiciones)" aria-label="Reiniciar">↺</button>
+    </div>
+  </header>
+  <main class="pruefung-container">
+    <h1>Modellprüfung 1 – Hörverstehen Teil 1</h1>
+    <p class="lead">Globalverstehen: 8 Personen zuordnen</p>
+
+    <div class="audio-note">
+      <strong>⚠️ Hinweis:</strong> Die Audiodateien sind in diesem Test nicht verfügbar. Sie benötigen die offiziellen TELC Audio-CDs oder das Original-Testmaterial, um diesen Teil zu üben.
+    </div>
+
+    <div class="aufgabe-box">
+      <h2>Aufgabe</h2>
+      <p><strong>Thema:</strong> Studentische Lebensformen</p>
+      <p>Sie hören die Meinungen von acht Personen. Sie hören die Meinungen <strong>nur einmal</strong>.</p>
+      <p>Entscheiden Sie beim Hören, welche Aussage (a–j) zu welcher Person (Sprecher/-in 1–8) passt.</p>
+      <p><strong>Zwei Aussagen passen nicht.</strong></p>
+    </div>
+
+    <div class="aussagen-box">
+      <h3>Aussagen a–j</h3>
+      <div class="aussage-item">
+        <div class="aussage-label">a</div>
+        <div>Viele Studierende wohnen lieber allein, obwohl es relativ teuer ist.</div>
+      </div>
+      <div class="aussage-item">
+        <div class="aussage-label">b</div>
+        <div>Für mich gehört es zu einem Studium dazu, mit anderen Studierenden zusammenzuwohnen.</div>
+      </div>
+      <div class="aussage-item">
+        <div class="aussage-label">c</div>
+        <div>In einem Mehrbettzimmer ist praktisch kein Raum für Privates.</div>
+      </div>
+      <div class="aussage-item">
+        <div class="aussage-label">d</div>
+        <div>In einer Wohngemeinschaft sind Konflikte vorprogrammiert.</div>
+      </div>
+      <div class="aussage-item">
+        <div class="aussage-label">e</div>
+        <div>Man hat in einem Mehrbettzimmer noch genügend Raum für sich, wenn nicht alle Betten belegt sind.</div>
+      </div>
+      <div class="aussage-item">
+        <div class="aussage-label">f</div>
+        <div>Man hat mehr Entscheidungsfreiheit, wenn man eine Wohnung für sich selbst sucht.</div>
+      </div>
+      <div class="aussage-item">
+        <div class="aussage-label">g</div>
+        <div>Manchmal hilft der Zufall dabei, die richtige Wohnform für sich selbst zu finden.</div>
+      </div>
+      <div class="aussage-item">
+        <div class="aussage-label">h</div>
+        <div>Sowohl Ältere als auch Jüngere können vom Zusammenleben profitieren.</div>
+      </div>
+      <div class="aussage-item">
+        <div class="aussage-label">i</div>
+        <div>Unter Studierenden geht der Trend eher weg von Singlewohnungen.</div>
+      </div>
+      <div class="aussage-item">
+        <div class="aussage-label">j</div>
+        <div>Wenn mehrere Generationen zusammenwohnen, gehören Konflikte zum Alltag.</div>
+      </div>
+    </div>
+
+    <div class="sprecher-container">
+      
+      <div class="sprecher-box">
+        <div class="sprecher-titel">Sprecher/in 1 (Aufgabe 47)</div>
+        <div class="auswahl-buttons">
+          <button class="auswahl-btn" data-sprecher="47" data-wert="a">a</button>
+          <button class="auswahl-btn" data-sprecher="47" data-wert="b">b</button>
+          <button class="auswahl-btn" data-sprecher="47" data-wert="c">c</button>
+          <button class="auswahl-btn" data-sprecher="47" data-wert="d">d</button>
+          <button class="auswahl-btn" data-sprecher="47" data-wert="e">e</button>
+          <button class="auswahl-btn" data-sprecher="47" data-wert="f">f</button>
+          <button class="auswahl-btn" data-sprecher="47" data-wert="g">g</button>
+          <button class="auswahl-btn" data-sprecher="47" data-wert="h">h</button>
+          <button class="auswahl-btn" data-sprecher="47" data-wert="i">i</button>
+          <button class="auswahl-btn" data-sprecher="47" data-wert="j">j</button>
+        </div>
+      </div>
+
+      <div class="sprecher-box">
+        <div class="sprecher-titel">Sprecher/in 2 (Aufgabe 48)</div>
+        <div class="auswahl-buttons">
+          <button class="auswahl-btn" data-sprecher="48" data-wert="a">a</button>
+          <button class="auswahl-btn" data-sprecher="48" data-wert="b">b</button>
+          <button class="auswahl-btn" data-sprecher="48" data-wert="c">c</button>
+          <button class="auswahl-btn" data-sprecher="48" data-wert="d">d</button>
+          <button class="auswahl-btn" data-sprecher="48" data-wert="e">e</button>
+          <button class="auswahl-btn" data-sprecher="48" data-wert="f">f</button>
+          <button class="auswahl-btn" data-sprecher="48" data-wert="g">g</button>
+          <button class="auswahl-btn" data-sprecher="48" data-wert="h">h</button>
+          <button class="auswahl-btn" data-sprecher="48" data-wert="i">i</button>
+          <button class="auswahl-btn" data-sprecher="48" data-wert="j">j</button>
+        </div>
+      </div>
+
+      <div class="sprecher-box">
+        <div class="sprecher-titel">Sprecher/in 3 (Aufgabe 49)</div>
+        <div class="auswahl-buttons">
+          <button class="auswahl-btn" data-sprecher="49" data-wert="a">a</button>
+          <button class="auswahl-btn" data-sprecher="49" data-wert="b">b</button>
+          <button class="auswahl-btn" data-sprecher="49" data-wert="c">c</button>
+          <button class="auswahl-btn" data-sprecher="49" data-wert="d">d</button>
+          <button class="auswahl-btn" data-sprecher="49" data-wert="e">e</button>
+          <button class="auswahl-btn" data-sprecher="49" data-wert="f">f</button>
+          <button class="auswahl-btn" data-sprecher="49" data-wert="g">g</button>
+          <button class="auswahl-btn" data-sprecher="49" data-wert="h">h</button>
+          <button class="auswahl-btn" data-sprecher="49" data-wert="i">i</button>
+          <button class="auswahl-btn" data-sprecher="49" data-wert="j">j</button>
+        </div>
+      </div>
+
+      <div class="sprecher-box">
+        <div class="sprecher-titel">Sprecher/in 4 (Aufgabe 50)</div>
+        <div class="auswahl-buttons">
+          <button class="auswahl-btn" data-sprecher="50" data-wert="a">a</button>
+          <button class="auswahl-btn" data-sprecher="50" data-wert="b">b</button>
+          <button class="auswahl-btn" data-sprecher="50" data-wert="c">c</button>
+          <button class="auswahl-btn" data-sprecher="50" data-wert="d">d</button>
+          <button class="auswahl-btn" data-sprecher="50" data-wert="e">e</button>
+          <button class="auswahl-btn" data-sprecher="50" data-wert="f">f</button>
+          <button class="auswahl-btn" data-sprecher="50" data-wert="g">g</button>
+          <button class="auswahl-btn" data-sprecher="50" data-wert="h">h</button>
+          <button class="auswahl-btn" data-sprecher="50" data-wert="i">i</button>
+          <button class="auswahl-btn" data-sprecher="50" data-wert="j">j</button>
+        </div>
+      </div>
+
+      <div class="sprecher-box">
+        <div class="sprecher-titel">Sprecher/in 5 (Aufgabe 51)</div>
+        <div class="auswahl-buttons">
+          <button class="auswahl-btn" data-sprecher="51" data-wert="a">a</button>
+          <button class="auswahl-btn" data-sprecher="51" data-wert="b">b</button>
+          <button class="auswahl-btn" data-sprecher="51" data-wert="c">c</button>
+          <button class="auswahl-btn" data-sprecher="51" data-wert="d">d</button>
+          <button class="auswahl-btn" data-sprecher="51" data-wert="e">e</button>
+          <button class="auswahl-btn" data-sprecher="51" data-wert="f">f</button>
+          <button class="auswahl-btn" data-sprecher="51" data-wert="g">g</button>
+          <button class="auswahl-btn" data-sprecher="51" data-wert="h">h</button>
+          <button class="auswahl-btn" data-sprecher="51" data-wert="i">i</button>
+          <button class="auswahl-btn" data-sprecher="51" data-wert="j">j</button>
+        </div>
+      </div>
+
+      <div class="sprecher-box">
+        <div class="sprecher-titel">Sprecher/in 6 (Aufgabe 52)</div>
+        <div class="auswahl-buttons">
+          <button class="auswahl-btn" data-sprecher="52" data-wert="a">a</button>
+          <button class="auswahl-btn" data-sprecher="52" data-wert="b">b</button>
+          <button class="auswahl-btn" data-sprecher="52" data-wert="c">c</button>
+          <button class="auswahl-btn" data-sprecher="52" data-wert="d">d</button>
+          <button class="auswahl-btn" data-sprecher="52" data-wert="e">e</button>
+          <button class="auswahl-btn" data-sprecher="52" data-wert="f">f</button>
+          <button class="auswahl-btn" data-sprecher="52" data-wert="g">g</button>
+          <button class="auswahl-btn" data-sprecher="52" data-wert="h">h</button>
+          <button class="auswahl-btn" data-sprecher="52" data-wert="i">i</button>
+          <button class="auswahl-btn" data-sprecher="52" data-wert="j">j</button>
+        </div>
+      </div>
+
+      <div class="sprecher-box">
+        <div class="sprecher-titel">Sprecher/in 7 (Aufgabe 53)</div>
+        <div class="auswahl-buttons">
+          <button class="auswahl-btn" data-sprecher="53" data-wert="a">a</button>
+          <button class="auswahl-btn" data-sprecher="53" data-wert="b">b</button>
+          <button class="auswahl-btn" data-sprecher="53" data-wert="c">c</button>
+          <button class="auswahl-btn" data-sprecher="53" data-wert="d">d</button>
+          <button class="auswahl-btn" data-sprecher="53" data-wert="e">e</button>
+          <button class="auswahl-btn" data-sprecher="53" data-wert="f">f</button>
+          <button class="auswahl-btn" data-sprecher="53" data-wert="g">g</button>
+          <button class="auswahl-btn" data-sprecher="53" data-wert="h">h</button>
+          <button class="auswahl-btn" data-sprecher="53" data-wert="i">i</button>
+          <button class="auswahl-btn" data-sprecher="53" data-wert="j">j</button>
+        </div>
+      </div>
+
+      <div class="sprecher-box">
+        <div class="sprecher-titel">Sprecher/in 8 (Aufgabe 54)</div>
+        <div class="auswahl-buttons">
+          <button class="auswahl-btn" data-sprecher="54" data-wert="a">a</button>
+          <button class="auswahl-btn" data-sprecher="54" data-wert="b">b</button>
+          <button class="auswahl-btn" data-sprecher="54" data-wert="c">c</button>
+          <button class="auswahl-btn" data-sprecher="54" data-wert="d">d</button>
+          <button class="auswahl-btn" data-sprecher="54" data-wert="e">e</button>
+          <button class="auswahl-btn" data-sprecher="54" data-wert="f">f</button>
+          <button class="auswahl-btn" data-sprecher="54" data-wert="g">g</button>
+          <button class="auswahl-btn" data-sprecher="54" data-wert="h">h</button>
+          <button class="auswahl-btn" data-sprecher="54" data-wert="i">i</button>
+          <button class="auswahl-btn" data-sprecher="54" data-wert="j">j</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ergebnisse" id="ergebnisse">
+      <h3>Ihre Ergebnisse</h3>
+      <div id="ergebnis-liste"></div>
+      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
+    </div>
+
+    <div class="submit-section">
+      <button class="btn secondary" onclick="window.location.href='./'">← Zurück zur Übersicht</button>
+      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
+    </div>
+  </main>
+
+  <script>
+    // Correct answers based on the answer key
+    const correctAnswers = {
+      47: 'g',
+      48: 'f',
+      49: 'c',
+      50: 'i',
+      51: 'b',
+      52: 'd',
+      53: 'h',
+      54: 'j'
+    };
+
+    // Store user answers
+    const userAnswers = {};
+
+    // Handle button clicks
+    document.querySelectorAll('.auswahl-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const sprecher = e.target.dataset.sprecher;
+        const wert = e.target.dataset.wert;
+        
+        // Deselect other buttons for this speaker
+        document.querySelectorAll(`[data-sprecher="${sprecher}"]`).forEach(b => {
+          b.classList.remove('selected');
+        });
+        
+        // Select this button
+        e.target.classList.add('selected');
+        
+        // Store answer
+        userAnswers[sprecher] = wert;
+      });
+    });
+
+    // Evaluate answers
+    document.getElementById('auswerten-btn').addEventListener('click', () => {
+      const ergebnisListe = document.getElementById('ergebnis-liste');
+      const ergebnisse = document.getElementById('ergebnisse');
+      let correct = 0;
+      let html = '';
+
+      // Check all answers (questions 47-54)
+      for (let i = 47; i <= 54; i++) {
+        const userAnswer = userAnswers[i] || '—';
+        const correctAnswer = correctAnswers[i];
+        const isCorrect = userAnswer === correctAnswer;
+        
+        if (isCorrect) correct++;
+
+        html += `
+          <div class="ergebnis-item ${isCorrect ? 'korrekt' : 'falsch'}">
+            <span>Sprecher/in ${i - 46}: Ihre Antwort <strong>${userAnswer}</strong></span>
+            <span>${isCorrect ? '✓ Korrekt' : `✗ Richtig: ${correctAnswer}`}</span>
+          </div>
+        `;
+      }
+
+      ergebnisListe.innerHTML = html;
+      document.getElementById('punkte').textContent = `${correct} von 8 korrekt (${Math.round(correct / 8 * 100)}%)`;
+      ergebnisse.classList.add('show');
+      ergebnisse.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  </script>
+
+  <script>
+    // Topbar controls
+    (function() {
+      const topbar = document.querySelector('.topbar');
+      if (!topbar) return;
+      
+      const body = document.body;
+      
+      // Restore hidden state
+      if (sessionStorage.getItem('telc_topbar_hidden') === '1') {
+        body.classList.add('topbar-hidden');
+      }
+      
+      // Create show trigger
+      const showTrigger = document.createElement('div');
+      showTrigger.className = 'topbar-show-trigger';
+      showTrigger.title = 'Mostrar barra';
+      showTrigger.textContent = '▼';
+      topbar.parentNode.insertBefore(showTrigger, topbar);
+      
+      // Get buttons
+      const hideBtn = topbar.querySelector('.topbar-hide');
+      const resetBtn = topbar.querySelector('.topbar-reset');
+      
+      if (hideBtn) {
+        hideBtn.onclick = () => {
+          body.classList.add('topbar-hidden');
+          body.classList.remove('topbar-auto-hidden');
+          sessionStorage.setItem('telc_topbar_hidden', '1');
+        };
+      }
+      
+      if (showTrigger) {
+        showTrigger.onclick = () => {
+          body.classList.remove('topbar-hidden');
+          body.classList.remove('topbar-auto-hidden');
+          sessionStorage.removeItem('telc_topbar_hidden');
+        };
+      }
+      
+      if (resetBtn) {
+        resetBtn.onclick = () => {
+          const keys = [];
+          for (let i = 0; i < sessionStorage.length; i++) {
+            const key = sessionStorage.key(i);
+            if (key && key.indexOf('telc_') === 0) keys.push(key);
+          }
+          keys.forEach(k => sessionStorage.removeItem(k));
+          location.reload();
+        };
+      }
+    })();
+  </script>
+
+</body>
+</html>
