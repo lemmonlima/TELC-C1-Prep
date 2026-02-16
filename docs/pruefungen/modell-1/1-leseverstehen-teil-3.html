@@ -4,220 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Modelltest 1 - Leseverstehen Teil 3 | TELC C1 Hochschule</title>
-  <link rel="stylesheet" href="../../styles.css" />
-  <style>
-    .pruefung-container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem;
-    }
-    .aufgabe-box {
-      background: var(--panel-bg, #1a1916);
-      border: 1px solid var(--border-subtle, #2a2825);
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-    }
-    .text-box {
-      background: var(--bg-secondary, #12110f);
-      padding: 1.5rem;
-      border-radius: 6px;
-      line-height: 1.8;
-      margin: 1rem 0;
-    }
-    .text-box h3 {
-      color: var(--accent-red, #e63946);
-      margin-bottom: 1rem;
-    }
-    .text-box p {
-      margin: 1rem 0;
-    }
-    .aussagen-container {
-      display: grid;
-      gap: 1rem;
-      margin: 1.5rem 0;
-    }
-    .aussage {
-      padding: 1rem;
-      background: var(--panel-bg, #1a1916);
-      border: 1px solid var(--border-subtle, #2a2825);
-      border-radius: 6px;
-    }
-    .aussage-nummer {
-      font-weight: bold;
-      color: var(--accent-ink, #457b9d);
-      margin-bottom: 0.5rem;
-    }
-    .aussage-text {
-      margin-bottom: 0.75rem;
-    }
-    .antwort-select {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    .antwort-btn {
-      padding: 0.5rem 1.25rem;
-      background: var(--bg-secondary, #12110f);
-      border: 1px solid var(--border-subtle, #2a2825);
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      font-family: inherit;
-      font-size: 0.95rem;
-      color: inherit;
-      min-width: 3.5rem;
-    }
-    .antwort-btn:hover {
-      border-color: var(--accent-ink, #457b9d);
-      background: var(--panel-bg, #1a1916);
-    }
-    .antwort-btn.selected {
-      border-color: var(--accent-red, #e63946);
-      background: rgba(230, 57, 70, 0.15);
-      font-weight: bold;
-    }
-    .legende {
-      display: flex;
-      gap: 2rem;
-      padding: 1rem;
-      background: var(--bg-secondary, #12110f);
-      border-radius: 6px;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-    }
-    .legende-item {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .legende-symbol {
-      font-weight: bold;
-      color: var(--accent-red, #e63946);
-    }
-    .submit-section {
-      position: sticky;
-      bottom: 0;
-      background: var(--bg-primary, #0f0e0d);
-      border-top: 1px solid var(--border-subtle, #2a2825);
-      padding: 1.5rem;
-      margin: 2rem -2rem -2rem;
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-    }
-    .btn {
-      padding: 0.75rem 2rem;
-      border: none;
-      border-radius: 6px;
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      font-family: inherit;
-    }
-    .btn.primary {
-      background: var(--accent-red, #e63946);
-      color: white;
-    }
-    .btn.primary:hover {
-      background: #d62839;
-      transform: translateY(-1px);
-    }
-    .btn.secondary {
-      background: var(--accent-ink, #457b9d);
-      color: white;
-    }
-    .btn.secondary:hover {
-      background: #3a6a85;
-    }
-    .ergebnisse {
-      margin: 2rem 0;
-      padding: 1.5rem;
-      background: var(--panel-bg, #1a1916);
-      border-radius: 8px;
-      display: none;
-    }
-    .ergebnisse.show {
-      display: block;
-    }
-    .ergebnis-item {
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border-radius: 4px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .ergebnis-item.korrekt {
-      background: rgba(34, 197, 94, 0.15);
-      border-left: 3px solid #22c55e;
-    }
-    .ergebnis-item.falsch {
-      background: rgba(239, 68, 68, 0.15);
-      border-left: 3px solid #ef4444;
-    }
-    
-    /* Mobile optimization */
-    @media (max-width: 768px) {
-      .pruefung-container {
-        padding: 1rem;
-        margin: 1rem auto;
-      }
-      h1 {
-        font-size: 1.5rem;
-      }
-      .lead {
-        font-size: 1rem;
-      }
-      .aufgabe-box, .text-box {
-        padding: 1rem;
-      }
-      .antwort-select {
-        gap: 0.75rem;
-      }
-      .antwort-btn {
-        padding: 0.75rem 1rem;
-        font-size: 1rem;
-      }
-      .legende {
-        gap: 1rem;
-      }
-      .submit-section {
-        padding: 1rem;
-        margin: 1rem -1rem -1rem;
-        flex-direction: column;
-      }
-      .btn {
-        width: 100%;
-        padding: 1rem;
-      }
-    }
-  </style>
-  <!-- TELC Navigation System -->
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="pruefung.css">
   <script src="../../topbar.js"></script>
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <span class="brand-mark">TELC</span>
-      <span class="brand-name">Prüfungen</span>
-    </div>
-    <nav class="nav">
-      <a href="../../index.html#start">Start</a>
-      <a href="../../grammatik/index.html">Grammatik</a>
-      <a href="../../texte/index.html">Texte</a>
-      <a href="../../notizen/index.html">Notizen</a>
-      <a href="../../woerter/index.html">Wörter</a>
-      <a href="../../pruefungen/index.html">Prüfungen</a>
-    </nav>
-    <a class="cta" href="../../tips/einfuehrung/index.html">Einstufung</a>
-    <div class="topbar-actions">
-      <button type="button" class="topbar-btn topbar-hide" title="Barra minimizar" aria-label="Barra minimizar">−</button>
-      <button type="button" class="topbar-btn topbar-reset" title="Reiniciar (olvidar posiciones)" aria-label="Reiniciar">↺</button>
-    </div>
-  </header>
   <main class="pruefung-container">
     <h1>Modellprüfung 1 – Leseverstehen Teil 3</h1>
     <p class="lead">Detailverstehen: 11 Aussagen + 1 Globalverstehen</p>
@@ -409,13 +201,13 @@
     </div>
 
     <div class="submit-section">
-      <button class="btn secondary" onclick="window.location.href='../'">← Zurück zur Übersicht</button>
       <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
     </div>
   </main>
 
+  <script src="pruefung.js"></script>
   <script>
-    // Correct answers (using special encoding to avoid character issues)
+    // Correct answers
     const correctAnswers = {
       13: 'falsch',
       14: 'nicht',
@@ -431,63 +223,69 @@
       24: 'b'
     };
 
-    // Store user answers
-    const userAnswers = {};
-
-    // Map symbols to words
+    // Symbol mapping: button symbols → internal values
     const symbolMap = {
       '+': 'richtig',
       '−': 'falsch',
       '×': 'nicht'
     };
 
-    // Handle answer button clicks
-    document.querySelectorAll('.antwort-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const aussage = e.target.closest('.aussage');
-        const aussageNr = aussage.dataset.aussage;
-        let answer = e.target.dataset.answer;
-        
-        // Deselect other buttons in this aussage
-        aussage.querySelectorAll('.antwort-btn').forEach(b => b.classList.remove('selected'));
-        
-        // Select this button
-        e.target.classList.add('selected');
-        
-        // Map symbol to word if needed
-        if (symbolMap[answer]) {
-          answer = symbolMap[answer];
-        }
-        
-        // Store answer
-        userAnswers[aussageNr] = answer;
-      });
-    });
+    // Reverse mapping: internal values → display symbols
+    const symbolDisplay = {
+      'richtig': '+',
+      'falsch': '−',
+      'nicht': '×'
+    };
+
+    // Store user answers
+    const userAnswers = {};
+
+    // Initialize button handlers for questions 13-23
+    Pruefung.initButtons(
+      '.aussage[data-aussage]:not([data-aussage="24"]) .antwort-btn',
+      'data-aussage',
+      'data-answer',
+      userAnswers,
+      (group, value) => {
+        // Convert symbol to word for storage
+        userAnswers[group] = symbolMap[value] || value;
+      }
+    );
+
+    // Initialize button handler for question 24
+    Pruefung.initButtons(
+      '.aussage[data-aussage="24"] .antwort-btn',
+      'data-aussage',
+      'data-answer',
+      userAnswers
+    );
 
     // Evaluate answers
     document.getElementById('auswerten-btn').addEventListener('click', () => {
-      const ergebnisListe = document.getElementById('ergebnis-liste');
-      const ergebnisse = document.getElementById('ergebnisse');
-      let correct = 0;
-      let html = '';
+      const items = [];
+      let totalPoints = 0;
+      let earnedPoints = 0;
 
-      // Questions 13-23 (worth 2 points each = 22 points total)
+      // Questions 13-23 (worth 2 points each)
       for (let i = 13; i <= 23; i++) {
         const userAnswer = userAnswers[i] || '—';
         const correctAnswer = correctAnswers[i];
         const isCorrect = userAnswer === correctAnswer;
         
-        if (isCorrect) correct += 2;
+        totalPoints += 2;
+        if (isCorrect) earnedPoints += 2;
 
-        const displayCorrect = correctAnswer === 'richtig' ? '+' : correctAnswer === 'falsch' ? '−' : '×';
-        const displayUser = userAnswer === 'richtig' ? '+' : userAnswer === 'falsch' ? '−' : userAnswer === 'nicht' ? '×' : userAnswer;
+        // Display symbols, not words
+        const displayUser = symbolDisplay[userAnswer] || userAnswer;
+        const displayCorrect = symbolDisplay[correctAnswer] || correctAnswer;
 
-        html += `
-          <div class="ergebnis-item ${isCorrect ? 'korrekt' : 'falsch'}">
-            <span>Aussage ${i}: Ihre Antwort <strong>${displayUser}</strong></span>
-            <span>${isCorrect ? '✓ Korrekt' : `✗ Richtig: ${displayCorrect}`}</span>
-          </div>
-        `;
+        items.push({
+          label: `Aussage ${i}`,
+          userAnswer: displayUser,
+          correctAnswer: displayCorrect,
+          isCorrect: isCorrect,
+          points: isCorrect ? 2 : 0
+        });
       }
 
       // Question 24 (worth 2 points)
@@ -495,74 +293,20 @@
       const correctAnswer24 = correctAnswers[24];
       const isCorrect24 = userAnswer24 === correctAnswer24;
       
-      if (isCorrect24) correct += 2;
+      totalPoints += 2;
+      if (isCorrect24) earnedPoints += 2;
 
-      html += `
-        <div class="ergebnis-item ${isCorrect24 ? 'korrekt' : 'falsch'}">
-          <span>Aufgabe 24: Ihre Antwort <strong>${userAnswer24}</strong></span>
-          <span>${isCorrect24 ? '✓ Korrekt' : `✗ Richtig: ${correctAnswer24}`}</span>
-        </div>
-      `;
+      items.push({
+        label: 'Aufgabe 24',
+        userAnswer: userAnswer24,
+        correctAnswer: correctAnswer24,
+        isCorrect: isCorrect24,
+        points: isCorrect24 ? 2 : 0
+      });
 
-      ergebnisListe.innerHTML = html;
-      document.getElementById('punkte').textContent = `${correct} von 24 Prüfungspunkten (${Math.round(correct / 24 * 100)}%)`;
-      ergebnisse.classList.add('show');
-      ergebnisse.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      const summary = `${earnedPoints} von ${totalPoints} Prüfungspunkten (${Math.round(earnedPoints / totalPoints * 100)}%)`;
+      Pruefung.showResults(items, summary);
     });
-  </script>
-
-  <script>
-    // Topbar controls
-    (function() {
-      const topbar = document.querySelector('.topbar');
-      if (!topbar) return;
-      
-      const body = document.body;
-      
-      // Restore hidden state
-      if (sessionStorage.getItem('telc_topbar_hidden') === '1') {
-        body.classList.add('topbar-hidden');
-      }
-      
-      // Create show trigger
-      const showTrigger = document.createElement('div');
-      showTrigger.className = 'topbar-show-trigger';
-      showTrigger.title = 'Mostrar barra';
-      showTrigger.textContent = '▼';
-      topbar.parentNode.insertBefore(showTrigger, topbar);
-      
-      // Get buttons
-      const hideBtn = topbar.querySelector('.topbar-hide');
-      const resetBtn = topbar.querySelector('.topbar-reset');
-      
-      if (hideBtn) {
-        hideBtn.onclick = () => {
-          body.classList.add('topbar-hidden');
-          body.classList.remove('topbar-auto-hidden');
-          sessionStorage.setItem('telc_topbar_hidden', '1');
-        };
-      }
-      
-      if (showTrigger) {
-        showTrigger.onclick = () => {
-          body.classList.remove('topbar-hidden');
-          body.classList.remove('topbar-auto-hidden');
-          sessionStorage.removeItem('telc_topbar_hidden');
-        };
-      }
-      
-      if (resetBtn) {
-        resetBtn.onclick = () => {
-          const keys = [];
-          for (let i = 0; i < sessionStorage.length; i++) {
-            const key = sessionStorage.key(i);
-            if (key && key.indexOf('telc_') === 0) keys.push(key);
-          }
-          keys.forEach(k => sessionStorage.removeItem(k));
-          location.reload();
-        };
-      }
-    })();
   </script>
 
 </body>
