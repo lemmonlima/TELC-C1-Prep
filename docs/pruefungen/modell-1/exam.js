@@ -375,6 +375,74 @@ const Exam = (() => {
       });
     });
 
+    // Präsentation: copy for AI evaluation
+    const THEMA_TEXTE = {
+      a1: 'Welche Erfindung halten Sie für besonders wichtig? Hat diese Erfindung nur Vorteile oder auch Nachteile?',
+      a2: 'Beschreiben Sie das System der universitären Ausbildung in einem Land Ihrer Wahl.',
+      b1: 'Beschreiben Sie, welche Erfahrungen oder bisherigen Tätigkeiten Sie zu Ihrer Studien- oder Berufswahl bewogen haben.',
+      b2: 'Welche künstlerischen Fächer sollten im Schulunterricht gelehrt werden? Begründen Sie Ihre Meinung.',
+      c1: 'Wie man Fremdsprachen lernt, ist kulturell unterschiedlich. Beschreiben Sie Gemeinsamkeiten und Unterschiede.',
+      c2: 'Welche Fächer sind wichtiger: Natur- oder Geisteswissenschaften? Begründen Sie Ihre Meinung.'
+    };
+
+    $('praesentation-copy-btn').addEventListener('click', () => {
+      const topic = answers.muendlich.topic;
+      if (!topic) { alert('Kein Thema gewählt (Vorbereitung).'); return; }
+      const text = $('praesentation-text').value.trim();
+      if (!text) { alert('Bitte schreiben Sie zuerst Ihre Präsentation.'); return; }
+
+      const aufgabe = THEMA_TEXTE[topic] || topic;
+      const aiText = `# TELC C1 Hochschule – Mündliche Prüfung: Präsentation (Teil 1A)
+
+## GEWÄHLTES THEMA
+${aufgabe}
+
+## PRÄSENTATION DES KANDIDATEN
+
+${text}
+
+---
+
+## OFFIZIELLE TELC BEWERTUNGSKRITERIEN
+
+### INHALTLICHE ANGEMESSENHEIT
+
+**1. Aufgabengerechtheit – Teil 1A Präsentation (0-6 Punkte)**
+
+*Erfüllung der Aufgabe, aktive Beteiligung, Strukturiertheit der Rede, Präzision und Klarheit, strategische Kompetenz*
+
+- **A (6 Punkte):** TN-Leistung entspricht (fast) durchgängig den Anforderungen.
+- **B (4 Punkte):** TN-Leistung entspricht weitgehend den Anforderungen.
+- **C (2 Punkte):** TN-Leistung entspricht den Anforderungen in mehreren Merkmalen nicht.
+- **D (0 Punkte):** TN-Leistung entspricht den Anforderungen (fast) überhaupt nicht.
+
+### SPRACHLICHE ANGEMESSENHEIT
+
+**2. Flüssigkeit (0-8):** A=8 durchgängig flüssig | B=5 weitgehend | C=2 teilweise gestört | D=0
+**3. Repertoire (0-8):** A=8 C1-Kompetenz | B=5 gelegentliche Einschränkungen | C=2 oft | D=0
+**4. Grammatische Richtigkeit (0-8):** A=8 hohes Maß | B=5 nur komplexe Fehler | C=2 etliche | D=0
+**5. Aussprache und Intonation (0-8):** A=8 klar und natürlich | B=5 größtenteils | C=2 erfordern Aufmerksamkeit | D=0
+
+---
+
+## BEWERTUNGSAUFTRAG
+
+Bitte geben Sie für jedes Kriterium:
+1. Die Bewertung (A/B/C/D) mit Punktzahl
+2. Eine kurze Begründung (2-3 Sätze)
+3. Spezifische Beispiele aus dem Text
+
+| Kriterium | Note | Punkte |
+|---|---|---|
+| 1. Aufgabengerechtheit (Teil 1A) | _/A | _/6 |
+| 2. Flüssigkeit | _/A | _/8 |
+| 3. Repertoire | _/A | _/8 |
+| 4. Grammatische Richtigkeit | _/A | _/8 |
+| 5. Aussprache und Intonation | _/A | _/8 |
+| **GESAMT** | | _/38 |`;
+      copyText(aiText, 'praesentation-copy-msg');
+    });
+
     // Zusammenfassung ready: copy partner text
     $('btn-copy-partner').addEventListener('click', () => {
       const topic = answers.muendlich.topic;
