@@ -623,37 +623,14 @@ Bitte geben Sie für jedes Kriterium:
     const container = $('results-content');
     container.innerHTML = '';
 
-    // Section groups for display
-    const sections = [
-      { key:'lv1', title:'Leseverstehen Teil 1', group:'lv' },
-      { key:'lv2', title:'Leseverstehen Teil 2', group:'lv' },
-      { key:'lv3', title:'Leseverstehen Teil 3', group:'lv' },
-      { key:'sb',  title:'Sprachbausteine', group:'sb' },
-      { key:'hv1', title:'Hörverstehen Teil 1', group:'hv' },
-      { key:'hv2', title:'Hörverstehen Teil 2', group:'hv' },
-      { key:'hv3', title:'Hörverstehen Teil 3', group:'hv' },
-    ];
-
     // Calculate subtotals
     const lvTotal = results.lv1.earned + results.lv2.earned + results.lv3.earned;
     const sbTotal = results.sb.earned;
     const hvTotal = results.hv1.earned + results.hv2.earned + results.hv3.earned;
     const autoTotal = lvTotal + sbTotal + hvTotal;
 
-    // Render each section with review items
-    sections.forEach(sec => {
-      const r = results[sec.key];
-      let html = `<div class="results-section"><h3>${sec.title} — ${r.earned}/${r.max} Punkte</h3>`;
-      r.items.forEach(item => {
-        const cls = item.ok ? 'correct' : (item.partial ? 'partial' : 'incorrect');
-        const rightTxt = item.ok ? '' : ` → ${item.correct}`;
-        html += `<div class="review-item ${cls}"><span class="q-label">${item.q}</span><span class="q-user">${item.user}</span><span class="q-correct">${rightTxt}</span></div>`;
-      });
-      html += '</div>';
-      container.innerHTML += html;
-    });
+    // ── 1. Auto summary + AI inputs + calculate → certificate (TOP) ──
 
-    // Subtotals summary
     container.innerHTML += `
     <div class="results-section">
       <h3>Automatisch bewertet</h3>
@@ -663,10 +640,8 @@ Bitte geben Sie für jedes Kriterium:
       <div class="score-row" style="font-weight:700;border-top:2px solid var(--border-subtle,#2a2825);padding-top:0.75rem;">
         <span class="label">Gesamt (automatisch)</span><span class="value">${autoTotal} / 118</span>
       </div>
-    </div>`;
+    </div>
 
-    // AI-scored inputs
-    container.innerHTML += `
     <div class="results-section">
       <h3>KI-bewertete Teile</h3>
       <p style="margin-bottom:1rem;opacity:0.7;">Geben Sie die Punkte ein, die Ihnen die KI gegeben hat.</p>
@@ -694,7 +669,35 @@ Bitte geben Sie für jedes Kriterium:
     <div style="text-align:center;margin:2rem 0;">
       <button class="btn primary" id="btn-calculate">Ergebnis berechnen</button>
     </div>
-    <div id="certificate-area"></div>`;
+    <div id="certificate-area"></div>
+
+    <hr style="border:none;border-top:2px solid var(--border-subtle,#2a2825);margin:3rem 0;">
+
+    <h2 style="margin-bottom:1.5rem;">Antworten im Detail</h2>`;
+
+    // ── 2. Detailed review per section (BELOW certificate) ──
+
+    const sections = [
+      { key:'lv1', title:'Leseverstehen Teil 1' },
+      { key:'lv2', title:'Leseverstehen Teil 2' },
+      { key:'lv3', title:'Leseverstehen Teil 3' },
+      { key:'sb',  title:'Sprachbausteine' },
+      { key:'hv1', title:'Hörverstehen Teil 1' },
+      { key:'hv2', title:'Hörverstehen Teil 2' },
+      { key:'hv3', title:'Hörverstehen Teil 3' },
+    ];
+
+    sections.forEach(sec => {
+      const r = results[sec.key];
+      let html = `<div class="results-section"><h3>${sec.title} — ${r.earned}/${r.max} Punkte</h3>`;
+      r.items.forEach(item => {
+        const cls = item.ok ? 'correct' : (item.partial ? 'partial' : 'incorrect');
+        const rightTxt = item.ok ? '' : ` → ${item.correct}`;
+        html += `<div class="review-item ${cls}"><span class="q-label">${item.q}</span><span class="q-user">${item.user}</span><span class="q-correct">${rightTxt}</span></div>`;
+      });
+      html += '</div>';
+      container.innerHTML += html;
+    });
 
     // Calculate button
     setTimeout(() => {
