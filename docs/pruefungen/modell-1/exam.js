@@ -32,9 +32,6 @@ const Exam = (() => {
     }
   };
 
-  // LV3 symbol mapping
-  const LV3_MAP = { '+':'richtig', '−':'-', '−':'-', '−':'-', '-':'-', '×':'×' };
-
   /* ── Phase definitions ───────────────────────────── */
   const PHASES = [
     { id:'start', type:'screen' },
