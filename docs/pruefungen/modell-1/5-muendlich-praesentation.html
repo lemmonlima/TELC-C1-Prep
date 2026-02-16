@@ -227,9 +227,248 @@
       </ul>
     </div>
 
+    <div class="aufgabe-box" style="margin-top: 3rem;">
+      <h2>Ihre Präsentation vorbereiten</h2>
+      <p>Wählen Sie ein Thema aus und schreiben Sie Ihre Präsentation. Sie können dann alles kopieren und an eine KI zur Bewertung senden.</p>
+      
+      <div style="margin: 1.5rem 0;">
+        <label for="thema-auswahl" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Gewähltes Thema:</label>
+        <select id="thema-auswahl" style="width: 100%; padding: 0.75rem; background: var(--bg-secondary, #12110f); border: 1px solid var(--border-subtle, #2a2825); border-radius: 4px; color: inherit; font-family: inherit; font-size: 1rem;">
+          <option value="">-- Bitte wählen Sie ein Thema --</option>
+          <optgroup label="Teilnehmer/in A">
+            <option value="a1">Thema 1: Welche Erfindung halten Sie für besonders wichtig?</option>
+            <option value="a2">Thema 2: System der universitären Ausbildung</option>
+          </optgroup>
+          <optgroup label="Teilnehmer/in B">
+            <option value="b1">Thema 1: Erfahrungen zur Studien-/Berufswahl</option>
+            <option value="b2">Thema 2: Künstlerische Fächer im Schulunterricht</option>
+          </optgroup>
+          <optgroup label="Teilnehmer/in C">
+            <option value="c1">Thema 1: Fremdsprachen lernen - kulturelle Unterschiede</option>
+            <option value="c2">Thema 2: Natur- oder Geisteswissenschaften?</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div id="thema-beschreibung" style="display: none; margin: 1.5rem 0; padding: 1rem; background: var(--panel-bg, #1a1916); border-left: 3px solid var(--accent-ink, #457b9d); border-radius: 4px;">
+        <strong>Vollständige Aufgabe:</strong>
+        <p id="thema-text" style="margin-top: 0.5rem; line-height: 1.6;"></p>
+      </div>
+
+      <div style="margin: 1.5rem 0;">
+        <label for="praesentation-text" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Ihre Präsentation (Stichworte oder Volltext):</label>
+        <textarea id="praesentation-text" rows="15" placeholder="Schreiben Sie hier Ihre Präsentation als Stichworte oder als vollständigen Text..." style="width: 100%; padding: 1rem; background: var(--bg-secondary, #12110f); border: 1px solid var(--border-subtle, #2a2825); border-radius: 4px; color: inherit; font-family: inherit; font-size: 1rem; line-height: 1.6; resize: vertical;"></textarea>
+      </div>
+
+      <div style="margin: 1.5rem 0; padding: 1.5rem; background: var(--bg-secondary, #12110f); border-radius: 6px;">
+        <h3 style="margin-top: 0; color: var(--accent-red, #e63946);">Bewertungskriterien (für KI-Bewertung)</h3>
+        <p style="font-size: 0.9rem; color: var(--ink-600); margin-bottom: 1rem;">Diese Kriterien werden automatisch beim Kopieren hinzugefügt.</p>
+        
+        <div id="kriterien-anzeige" style="font-size: 0.9rem; line-height: 1.8;">
+          <p><strong>1. Aufgabengerechtheit (0-6 Punkte)</strong></p>
+          <ul style="margin-left: 1.5rem;">
+            <li>Erfüllt die Präsentation die Aufgabenstellung vollständig?</li>
+            <li>Ist die Präsentation gut strukturiert (Einleitung, Hauptteil, Schluss)?</li>
+            <li>Sind die Beiträge klar und präzise?</li>
+          </ul>
+
+          <p style="margin-top: 1rem;"><strong>2. Flüssigkeit (0-8 Punkte)</strong></p>
+          <ul style="margin-left: 1.5rem;">
+            <li>Wirkt die Darstellung natürlich und flüssig?</li>
+            <li>Gibt es Stockungen oder Pausen?</li>
+            <li>Sind die Sätze kohärent verbunden?</li>
+          </ul>
+
+          <p style="margin-top: 1rem;"><strong>3. Repertoire (0-8 Punkte)</strong></p>
+          <ul style="margin-left: 1.5rem;">
+            <li>Ist der Wortschatz reichhaltig und abwechslungsreich?</li>
+            <li>Werden komplexe Satzstrukturen verwendet?</li>
+            <li>Gibt es Wiederholungen oder Einschränkungen?</li>
+          </ul>
+
+          <p style="margin-top: 1rem;"><strong>4. Grammatische Richtigkeit (0-8 Punkte)</strong></p>
+          <ul style="margin-left: 1.5rem;">
+            <li>Sind die Sätze grammatisch korrekt?</li>
+            <li>Gibt es Fehler in Morphologie oder Syntax?</li>
+            <li>Beeinträchtigen Fehler das Verständnis?</li>
+          </ul>
+
+          <p style="margin-top: 1rem;"><strong>5. Aussprache und Intonation (0-8 Punkte)</strong></p>
+          <ul style="margin-left: 1.5rem;">
+            <li>Ist die Aussprache klar und verständlich? (Hinweis: Bewerte basierend auf dem Text, ob er gut vorlesbar wäre)</li>
+            <li>Werden komplexe Wörter korrekt verwendet?</li>
+            <li>Gibt es Hinweise auf eine natürliche Betonung?</li>
+          </ul>
+
+          <p style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle, #2a2825);"><strong>Maximal: 38 Punkte</strong> (6 + 8 + 8 + 8 + 8)</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+        <button id="kopieren-btn" class="btn primary" style="background: var(--accent-red, #e63946);">
+          📋 Alles kopieren (für KI-Bewertung)
+        </button>
+        <button id="reset-btn" class="btn secondary" style="background: var(--ink-500);">
+          ↺ Zurücksetzen
+        </button>
+      </div>
+
+      <div id="kopiert-info" style="display: none; margin-top: 1rem; padding: 1rem; background: rgba(34, 197, 94, 0.15); border-left: 3px solid #22c55e; border-radius: 4px;">
+        ✓ Text wurde in die Zwischenablage kopiert! Fügen Sie ihn jetzt in eine KI ein (z.B. ChatGPT, Claude).
+      </div>
+    </div>
+
     <div class="submit-section">
       <button class="btn secondary" onclick="window.location.href='./'">← Zurück zur Übersicht</button>
     </div>
+
+    <script>
+      // Theme descriptions
+      const themaTexte = {
+        'a1': 'Welche Erfindung halten Sie für besonders wichtig? Hat diese Erfindung nur Vorteile oder auch Nachteile? Bitte begründen Sie Ihre Meinung.',
+        'a2': 'Beschreiben Sie das System der universitären Ausbildung in einem Land Ihrer Wahl.',
+        'b1': 'Beschreiben Sie, welche Erfahrungen oder bisherigen Tätigkeiten Sie zu Ihrer Studien- oder Berufswahl bewogen haben.',
+        'b2': 'Welche künstlerischen Fächer (Kunst, Musik, Tanz, Theater etc.) sollten im Schulunterricht unbedingt gelehrt werden? Bitte begründen Sie Ihre Meinung. Gibt es Gegenargumente?',
+        'c1': 'Wie man Fremdsprachen lernt und lehrt, ist kulturell unterschiedlich. Beschreiben Sie Gemeinsamkeiten und Unterschiede, die Ihnen im Umgang mit Lehrern und Lehrbüchern aus verschiedenen Ländern aufgefallen sind.',
+        'c2': 'Welche Fächer sind für die Menschheit wichtiger: Natur- oder Geisteswissenschaften? Begründen Sie Ihre Meinung. Gibt es Gegenargumente?'
+      };
+
+      // Show theme description
+      document.getElementById('thema-auswahl').addEventListener('change', (e) => {
+        const beschreibung = document.getElementById('thema-beschreibung');
+        const text = document.getElementById('thema-text');
+        const wert = e.target.value;
+
+        if (wert && themaTexte[wert]) {
+          text.textContent = themaTexte[wert];
+          beschreibung.style.display = 'block';
+        } else {
+          beschreibung.style.display = 'none';
+        }
+      });
+
+      // Copy to clipboard
+      document.getElementById('kopieren-btn').addEventListener('click', () => {
+        const themaSelect = document.getElementById('thema-auswahl');
+        const themaWert = themaSelect.value;
+        const themaName = themaSelect.options[themaSelect.selectedIndex].text;
+        const praesentation = document.getElementById('praesentation-text').value;
+
+        if (!themaWert) {
+          alert('Bitte wählen Sie zuerst ein Thema aus.');
+          return;
+        }
+
+        if (!praesentation.trim()) {
+          alert('Bitte schreiben Sie zuerst Ihre Präsentation.');
+          return;
+        }
+
+        // Build text for AI
+        const aiText = `# TELC C1 Hochschule - Mündliche Prüfung: Präsentation
+
+## GEWÄHLTES THEMA
+${themaName}
+
+**Vollständige Aufgabe:**
+${themaTexte[themaWert]}
+
+## PRÄSENTATION DES KANDIDATEN
+
+${praesentation}
+
+## BEWERTUNGSKRITERIEN
+
+Bitte bewerten Sie diese Präsentation nach den folgenden TELC C1 Hochschule Kriterien:
+
+### 1. Aufgabengerechtheit (0-6 Punkte)
+- Erfüllt die Präsentation die Aufgabenstellung vollständig?
+- Ist die Präsentation gut strukturiert (Einleitung, Hauptteil, Schluss)?
+- Sind die Beiträge klar und präzise?
+
+**Bewertung:**
+A (6 Punkte): Entspricht durchgängig den Anforderungen
+B (4 Punkte): Entspricht weitgehend den Anforderungen
+C (2 Punkte): Entspricht nur teilweise den Anforderungen
+D (0 Punkte): Entspricht nicht den Anforderungen
+
+### 2. Flüssigkeit (0-8 Punkte)
+- Wirkt die Darstellung natürlich und flüssig?
+- Gibt es Stockungen oder Wiederholungen?
+- Sind die Sätze kohärent verbunden?
+
+**Bewertung:**
+A (8 Punkte): Durchgängig flüssig und natürlich
+B (5 Punkte): Weitgehend flüssig mit wenigen Stockungen
+C (2 Punkte): Teilweise gestört, öfters Stockungen
+D (0 Punkte): Viele Pausen, die das Verstehen behindern
+
+### 3. Repertoire (0-8 Punkte)
+- Ist der Wortschatz reichhaltig und abwechslungsreich?
+- Werden komplexe Satzstrukturen verwendet?
+- Gibt es sprachliche Einschränkungen?
+
+**Bewertung:**
+A (8 Punkte): Zeigt durchgängig dem Zielniveau entsprechende Kompetenz
+B (5 Punkte): Zeigt weitgehend Kompetenz mit gelegentlichen Einschränkungen
+C (2 Punkte): Zeigt oft Einschränkungen, häufig einfacher Wortschatz
+D (0 Punkte): Fast nur einfache Strukturen und Wortschatz
+
+### 4. Grammatische Richtigkeit (0-8 Punkte)
+- Sind die Sätze grammatisch korrekt?
+- Gibt es Fehler in Morphologie oder Syntax?
+- Beeinträchtigen Fehler das Verständnis?
+
+**Bewertung:**
+A (8 Punkte): Durchgängig hohes Maß an Korrektheit
+B (5 Punkte): Fehler fast nur in komplexen Strukturen
+C (2 Punkte): Etliche Fehler, auch in einfachen Strukturen
+D (0 Punkte): Zahlreiche Fehler, die das Verstehen erschweren
+
+### 5. Aussprache und Intonation (0-8 Punkte)
+(Hinweis: Bewerte basierend darauf, ob der Text gut vorlesbar wäre und natürlich klingt)
+- Ist die Sprache klar und verständlich?
+- Werden komplexe Wörter korrekt verwendet?
+- Gibt es Hinweise auf natürliche Betonung durch Satzstruktur?
+
+**Bewertung:**
+A (8 Punkte): Klar und natürlich, gut vorlesbar
+B (5 Punkte): Größtenteils klar, gelegentlich erhöhte Aufmerksamkeit nötig
+C (2 Punkte): Fehler, die durchgängig Aufmerksamkeit erfordern
+D (0 Punkte): Zahlreiche Probleme beim Verständnis
+
+---
+
+**MAXIMAL: 38 PUNKTE**
+
+Bitte geben Sie für jedes Kriterium:
+1. Die Bewertung (A/B/C/D)
+2. Die erreichten Punkte
+3. Eine kurze Begründung
+4. Am Ende: Gesamtpunktzahl und konstruktives Feedback`;
+
+        // Copy to clipboard
+        navigator.clipboard.writeText(aiText).then(() => {
+          const info = document.getElementById('kopiert-info');
+          info.style.display = 'block';
+          setTimeout(() => {
+            info.style.display = 'none';
+          }, 5000);
+        }).catch(err => {
+          alert('Fehler beim Kopieren: ' + err);
+        });
+      });
+
+      // Reset button
+      document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm('Möchten Sie wirklich alles zurücksetzen?')) {
+          document.getElementById('thema-auswahl').value = '';
+          document.getElementById('praesentation-text').value = '';
+          document.getElementById('thema-beschreibung').style.display = 'none';
+          document.getElementById('kopiert-info').style.display = 'none';
+        }
+      });
+    </script>
   </main>
 
   <script>
