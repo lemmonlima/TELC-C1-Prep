@@ -436,21 +436,46 @@ const Exam = (() => {
     }).catch(err => alert('Fehler beim Kopieren: ' + err));
   }
 
+  /* ── Official TELC C1 Hochschule scoring ───────────
+     Total: 214 pts
+     Schriftliche Prüfung (166): LV 48 + SB 22 + HV 48 + SA 48
+     Mündliche Prüfung (48): Inhalt 16 + Sprache 32
+     Pass: total ≥ 128, Schriftlich ≥ 99, Mündlich ≥ 29
+     ─────────────────────────────────────────────────── */
+
+  // HV3 max points per sub-item (compound items get 1 pt per sub-part)
+  const HV3_MAX = { 65:2, 66:2, '67a':1, '67b':1, '68a':1, '68b':1, 69:2, '70a':1, '70b':1, '71a':1, '71b':1, 72:2, 73:2, 74:2 };
+
+  function checkHV3(key, userAnswer) {
+    if (!userAnswer) return 0;
+    const possible = CORRECT.hv3[key] || [];
+    const ul = userAnswer.toLowerCase();
+    const max = HV3_MAX[key] || 2;
+    for (const c of possible) {
+      if (ul.includes(c) || c.includes(ul)) return max;
+    }
+    // Partial keyword match → half credit
+    const kw = possible.join(' ').split(' ');
+    for (const w of ul.split(' ')) {
+      if (w.length > 3 && kw.some(k => k.includes(w) || w.includes(k))) return Math.max(1, max - 1);
+    }
+    return 0;
+  }
+
   /* ── Evaluation ──────────────────────────────────── */
   function evaluateAutoScored() {
     const results = {};
 
-    // LV1: 6 questions, 2 pts each = 12
+    // LV1: 6 items × 2 pts = 12
     results.lv1 = { items: [], max: 12 };
     for (let i = 1; i <= 6; i++) {
       const u = answers.lv1[i] || '—';
       const c = CORRECT.lv1[i];
-      const ok = u === c;
-      results.lv1.items.push({ q: `Lücke ${i}`, user: u, correct: c, ok });
+      results.lv1.items.push({ q: `Lücke ${i}`, user: u, correct: c, ok: u === c });
     }
     results.lv1.earned = results.lv1.items.filter(r => r.ok).length * 2;
 
-    // LV2: 6 questions, 2 pts each = 12
+    // LV2: 6 items × 2 pts = 12
     results.lv2 = { items: [], max: 12 };
     for (let i = 7; i <= 12; i++) {
       const u = answers.lv2[i] || '—';
@@ -459,7 +484,7 @@ const Exam = (() => {
     }
     results.lv2.earned = results.lv2.items.filter(r => r.ok).length * 2;
 
-    // LV3: 12 questions (13-23 + 24), 2 pts each = 24
+    // LV3: 12 items × 2 pts = 24
     results.lv3 = { items: [], max: 24 };
     for (let i = 13; i <= 23; i++) {
       const u = answers.lv3[i] || '—';
@@ -470,8 +495,8 @@ const Exam = (() => {
     results.lv3.items.push({ q: 'Aufgabe 24', user: u24, correct: 'b', ok: u24 === 'b' });
     results.lv3.earned = results.lv3.items.filter(r => r.ok).length * 2;
 
-    // SB: 23 questions, 1 pt each = 23 (but in real exam worth 48 Prüfungspunkte proportional)
-    results.sb = { items: [], max: 48 };
+    // SB: 22 Prüfungspunkte (1 per item, scale 23 items → 22)
+    results.sb = { items: [], max: 22 };
     let sbCorrect = 0;
     for (let i = 25; i <= 47; i++) {
       const u = answers.sb[i] || '—';
@@ -480,18 +505,18 @@ const Exam = (() => {
       if (ok) sbCorrect++;
       results.sb.items.push({ q: `Lücke ${i}`, user: u, correct: c, ok });
     }
-    results.sb.earned = Math.round(sbCorrect / 23 * 48);
+    results.sb.earned = Math.min(sbCorrect, 22);
 
-    // HV1: 8 questions, 2 pts each = 16
-    results.hv1 = { items: [], max: 16 };
+    // HV1: 8 items × 1 pt = 8
+    results.hv1 = { items: [], max: 8 };
     for (let i = 47; i <= 54; i++) {
       const u = answers.hv1[i] || '—';
       const c = CORRECT.hv1[i];
       results.hv1.items.push({ q: `Sprecher ${i-46}`, user: u, correct: c, ok: u === c });
     }
-    results.hv1.earned = results.hv1.items.filter(r => r.ok).length * 2;
+    results.hv1.earned = results.hv1.items.filter(r => r.ok).length;
 
-    // HV2: 10 questions, 2 pts each = 20
+    // HV2: 10 items × 2 pts = 20
     results.hv2 = { items: [], max: 20 };
     for (let i = 55; i <= 64; i++) {
       const u = answers.hv2[i] || '—';
@@ -500,31 +525,23 @@ const Exam = (() => {
     }
     results.hv2.earned = results.hv2.items.filter(r => r.ok).length * 2;
 
-    // HV3: flexible matching, 14 sub-questions, 20 pts total
+    // HV3: 10 items (14 sub-items), max 20 pts
     results.hv3 = { items: [], max: 20 };
     let hv3pts = 0;
-    const hv3keys = [65,66,'67a','67b','68a','68b',69,'70a','70b','71a','71b',72,73,74];
-    const hv3labels = {65:'65',66:'66','67a':'67a','67b':'67b','68a':'68a','68b':'68b',69:'69','70a':'70a','70b':'70b','71a':'71a','71b':'71b',72:'72',73:'73',74:'74'};
+    const hv3keys = [65, 66, '67a', '67b', '68a', '68b', 69, '70a', '70b', '71a', '71b', 72, 73, 74];
     hv3keys.forEach(key => {
       const u = answers.hv3[key] || '';
       const possible = CORRECT.hv3[key] || [];
-      let pts = 0;
-      if (u) {
-        const ul = u.toLowerCase();
-        for (const correct of possible) {
-          if (ul.includes(correct) || correct.includes(ul)) { pts = 2; break; }
-        }
-        if (pts === 0) {
-          const kw = possible.join(' ').split(' ');
-          for (const w of ul.split(' ')) {
-            if (w.length > 3 && kw.some(k => k.includes(w) || w.includes(k))) { pts = 1; break; }
-          }
-        }
-      }
+      const maxPts = HV3_MAX[key] || 2;
+      const pts = checkHV3(key, u);
       hv3pts += pts;
-      results.hv3.items.push({ q: `Frage ${hv3labels[key]}`, user: u || '—', correct: possible.slice(0,2).join(', '), ok: pts === 2, partial: pts === 1 });
+      results.hv3.items.push({
+        q: `Frage ${key}`, user: u || '—',
+        correct: possible.slice(0, 2).join(', '),
+        ok: pts === maxPts, partial: pts > 0 && pts < maxPts
+      });
     });
-    results.hv3.earned = hv3pts;
+    results.hv3.earned = Math.min(hv3pts, 20);
 
     return results;
   }
@@ -538,24 +555,26 @@ const Exam = (() => {
     const container = $('results-content');
     container.innerHTML = '';
 
-    // Auto-scored sections
-    const autoSections = [
-      { key:'lv1', title:'Leseverstehen Teil 1' },
-      { key:'lv2', title:'Leseverstehen Teil 2' },
-      { key:'lv3', title:'Leseverstehen Teil 3' },
-      { key:'sb',  title:'Sprachbausteine' },
-      { key:'hv1', title:'Hörverstehen Teil 1' },
-      { key:'hv2', title:'Hörverstehen Teil 2' },
-      { key:'hv3', title:'Hörverstehen Teil 3' },
+    // Section groups for display
+    const sections = [
+      { key:'lv1', title:'Leseverstehen Teil 1', group:'lv' },
+      { key:'lv2', title:'Leseverstehen Teil 2', group:'lv' },
+      { key:'lv3', title:'Leseverstehen Teil 3', group:'lv' },
+      { key:'sb',  title:'Sprachbausteine', group:'sb' },
+      { key:'hv1', title:'Hörverstehen Teil 1', group:'hv' },
+      { key:'hv2', title:'Hörverstehen Teil 2', group:'hv' },
+      { key:'hv3', title:'Hörverstehen Teil 3', group:'hv' },
     ];
 
-    let totalAuto = 0, maxAuto = 0;
+    // Calculate subtotals
+    const lvTotal = results.lv1.earned + results.lv2.earned + results.lv3.earned;
+    const sbTotal = results.sb.earned;
+    const hvTotal = results.hv1.earned + results.hv2.earned + results.hv3.earned;
+    const autoTotal = lvTotal + sbTotal + hvTotal;
 
-    autoSections.forEach(sec => {
+    // Render each section with review items
+    sections.forEach(sec => {
       const r = results[sec.key];
-      totalAuto += r.earned;
-      maxAuto += r.max;
-
       let html = `<div class="results-section"><h3>${sec.title} — ${r.earned}/${r.max} Punkte</h3>`;
       r.items.forEach(item => {
         const cls = item.ok ? 'correct' : (item.partial ? 'partial' : 'incorrect');
@@ -566,8 +585,17 @@ const Exam = (() => {
       container.innerHTML += html;
     });
 
-    // Auto total
-    container.innerHTML += `<div class="results-section"><h3>Automatisch bewertet: ${totalAuto} / ${maxAuto} Punkte</h3></div>`;
+    // Subtotals summary
+    container.innerHTML += `
+    <div class="results-section">
+      <h3>Automatisch bewertet</h3>
+      <div class="score-row"><span class="label">Leseverstehen</span><span class="value">${lvTotal} / 48</span></div>
+      <div class="score-row"><span class="label">Sprachbausteine</span><span class="value">${sbTotal} / 22</span></div>
+      <div class="score-row"><span class="label">Hörverstehen</span><span class="value">${hvTotal} / 48</span></div>
+      <div class="score-row" style="font-weight:700;border-top:2px solid var(--border-subtle,#2a2825);padding-top:0.75rem;">
+        <span class="label">Gesamt (automatisch)</span><span class="value">${autoTotal} / 118</span>
+      </div>
+    </div>`;
 
     // AI-scored inputs
     container.innerHTML += `
@@ -576,25 +604,23 @@ const Exam = (() => {
       <p style="margin-bottom:1rem;opacity:0.7;">Geben Sie die Punkte ein, die Ihnen die KI gegeben hat.</p>
 
       <h4 style="color:var(--accent-ink);margin:1.5rem 0 0.75rem;">Schriftlicher Ausdruck (max. 48)</h4>
-      <div class="score-row"><span class="label">Aufgabengerechtheit</span><input class="score-input ai-score" data-part="sa" data-crit="1" type="number" min="0" max="12" placeholder="/12"></div>
-      <div class="score-row"><span class="label">Korrektheit</span><input class="score-input ai-score" data-part="sa" data-crit="2" type="number" min="0" max="12" placeholder="/12"></div>
-      <div class="score-row"><span class="label">Repertoire</span><input class="score-input ai-score" data-part="sa" data-crit="3" type="number" min="0" max="12" placeholder="/12"></div>
-      <div class="score-row"><span class="label">Kommunikative Gestaltung</span><input class="score-input ai-score" data-part="sa" data-crit="4" type="number" min="0" max="12" placeholder="/12"></div>
+      <p style="opacity:0.6;font-size:0.85rem;margin-bottom:0.5rem;">Skala: A=12 / B=8 / C=4 / D=0</p>
+      <div class="score-row"><span class="label">Aufgabengerechtheit</span><input class="score-input ai-score" data-group="sa" type="number" min="0" max="12" placeholder="/12"></div>
+      <div class="score-row"><span class="label">Korrektheit</span><input class="score-input ai-score" data-group="sa" type="number" min="0" max="12" placeholder="/12"></div>
+      <div class="score-row"><span class="label">Repertoire</span><input class="score-input ai-score" data-group="sa" type="number" min="0" max="12" placeholder="/12"></div>
+      <div class="score-row"><span class="label">Kommunikative Gestaltung</span><input class="score-input ai-score" data-group="sa" type="number" min="0" max="12" placeholder="/12"></div>
 
-      <h4 style="color:var(--accent-ink);margin:1.5rem 0 0.75rem;">Mündlich – Präsentation (max. 6)</h4>
-      <div class="score-row"><span class="label">Aufgabengerechtheit 1A</span><input class="score-input ai-score" data-part="pres" data-crit="1" type="number" min="0" max="6" placeholder="/6"></div>
-
-      <h4 style="color:var(--accent-ink);margin:1.5rem 0 0.75rem;">Mündlich – Zusammenfassung (max. 4)</h4>
-      <div class="score-row"><span class="label">Aufgabengerechtheit 1B</span><input class="score-input ai-score" data-part="zus" data-crit="1" type="number" min="0" max="4" placeholder="/4"></div>
-
-      <h4 style="color:var(--accent-ink);margin:1.5rem 0 0.75rem;">Mündlich – Diskussion (max. 6)</h4>
-      <div class="score-row"><span class="label">Aufgabengerechtheit Teil 2</span><input class="score-input ai-score" data-part="disk" data-crit="1" type="number" min="0" max="6" placeholder="/6"></div>
+      <h4 style="color:var(--accent-ink);margin:1.5rem 0 0.75rem;">Mündlich – Inhaltliche Angemessenheit (max. 16)</h4>
+      <div class="score-row"><span class="label">Präsentation (Teil 1A)</span><input class="score-input ai-score" data-group="muend-inhalt" type="number" min="0" max="6" placeholder="/6"></div>
+      <div class="score-row"><span class="label">Zusammenfassung (Teil 1B)</span><input class="score-input ai-score" data-group="muend-inhalt" type="number" min="0" max="4" placeholder="/4"></div>
+      <div class="score-row"><span class="label">Diskussion (Teil 2)</span><input class="score-input ai-score" data-group="muend-inhalt" type="number" min="0" max="6" placeholder="/6"></div>
 
       <h4 style="color:var(--accent-ink);margin:1.5rem 0 0.75rem;">Mündlich – Sprachliche Angemessenheit (max. 32)</h4>
-      <div class="score-row"><span class="label">Flüssigkeit</span><input class="score-input ai-score" data-part="sprach" data-crit="1" type="number" min="0" max="8" placeholder="/8"></div>
-      <div class="score-row"><span class="label">Repertoire</span><input class="score-input ai-score" data-part="sprach" data-crit="2" type="number" min="0" max="8" placeholder="/8"></div>
-      <div class="score-row"><span class="label">Grammatische Richtigkeit</span><input class="score-input ai-score" data-part="sprach" data-crit="3" type="number" min="0" max="8" placeholder="/8"></div>
-      <div class="score-row"><span class="label">Aussprache und Intonation</span><input class="score-input ai-score" data-part="sprach" data-crit="4" type="number" min="0" max="8" placeholder="/8"></div>
+      <p style="opacity:0.6;font-size:0.85rem;margin-bottom:0.5rem;">Skala: A=8 / B=5 / C=2 / D=0</p>
+      <div class="score-row"><span class="label">Flüssigkeit</span><input class="score-input ai-score" data-group="muend-sprach" type="number" min="0" max="8" placeholder="/8"></div>
+      <div class="score-row"><span class="label">Repertoire</span><input class="score-input ai-score" data-group="muend-sprach" type="number" min="0" max="8" placeholder="/8"></div>
+      <div class="score-row"><span class="label">Grammatische Richtigkeit</span><input class="score-input ai-score" data-group="muend-sprach" type="number" min="0" max="8" placeholder="/8"></div>
+      <div class="score-row"><span class="label">Aussprache und Intonation</span><input class="score-input ai-score" data-group="muend-sprach" type="number" min="0" max="8" placeholder="/8"></div>
     </div>
 
     <div style="text-align:center;margin:2rem 0;">
@@ -605,26 +631,76 @@ const Exam = (() => {
     // Calculate button
     setTimeout(() => {
       $('btn-calculate').addEventListener('click', () => {
-        let aiTotal = 0;
+        // Collect AI scores by group
+        let saScore = 0, muendInhalt = 0, muendSprach = 0;
         document.querySelectorAll('.ai-score').forEach(inp => {
-          aiTotal += parseInt(inp.value) || 0;
+          const v = parseFloat(inp.value) || 0;
+          const g = inp.dataset.group;
+          if (g === 'sa') saScore += v;
+          else if (g === 'muend-inhalt') muendInhalt += v;
+          else if (g === 'muend-sprach') muendSprach += v;
         });
-        const grandTotal = totalAuto + aiTotal;
-        const maxTotal = maxAuto + 48 + 6 + 4 + 6 + 32; // SA(48) + Pres(6) + Zus(4) + Disk(6) + Sprach(32)
-        const pct = Math.round(grandTotal / maxTotal * 100);
 
-        // Determine pass/fail (60% threshold as placeholder)
-        const passed = pct >= 60;
-        const grade = pct >= 90 ? 'Sehr gut' : pct >= 75 ? 'Gut' : pct >= 60 ? 'Befriedigend' : pct >= 50 ? 'Ausreichend' : 'Nicht bestanden';
+        const muendTotal = muendInhalt + muendSprach;
+        const schriftlich = lvTotal + sbTotal + hvTotal + saScore; // max 166
+        const muendlich = muendTotal; // max 48
+        const grandTotal = schriftlich + muendlich; // max 214
+
+        // Pass/fail rules
+        const schriftlichPass = schriftlich >= 99;
+        const muendlichPass = muendlich >= 29;
+        const totalPass = grandTotal >= 128;
+        const passed = schriftlichPass && muendlichPass && totalPass;
+
+        // Grade bands (official TELC)
+        let grade, gradeClass;
+        if (grandTotal >= 193) { grade = 'Sehr gut'; gradeClass = 'passed'; }
+        else if (grandTotal >= 172) { grade = 'Gut'; gradeClass = 'passed'; }
+        else if (grandTotal >= 151) { grade = 'Befriedigend'; gradeClass = 'passed'; }
+        else if (grandTotal >= 128 && passed) { grade = 'Ausreichend'; gradeClass = 'passed'; }
+        else { grade = 'Nicht bestanden'; gradeClass = 'failed'; }
+
+        // If total ≥ 128 but a section fails the 60% rule
+        if (grandTotal >= 128 && !passed) {
+          grade = 'Nicht bestanden';
+          gradeClass = 'failed';
+        }
+
+        // Build failure reasons
+        let failReasons = '';
+        if (!totalPass) failReasons += `<li>Gesamtpunktzahl unter 128 (${grandTotal})</li>`;
+        if (!schriftlichPass) failReasons += `<li>Schriftliche Prüfung unter 99 Punkte (${schriftlich}/166)</li>`;
+        if (!muendlichPass) failReasons += `<li>Mündliche Prüfung unter 29 Punkte (${muendlich}/48)</li>`;
 
         $('certificate-area').innerHTML = `
         <div class="certificate">
           <h2>TELC Deutsch C1 Hochschule</h2>
           <p class="exam-title">Modellprüfung 1 – Ergebnis</p>
-          <div class="total-score">${grandTotal} / ${maxTotal} Punkte (${pct}%)</div>
-          <div class="grade ${passed ? 'passed' : 'failed'}">${grade}</div>
-          <p style="margin-top:1rem;">${passed ? 'Herzlichen Glückwunsch! Sie haben bestanden.' : 'Leider nicht bestanden. Weiter üben!'}</p>
-          <p style="margin-top:1.5rem;opacity:0.7;font-size:0.85rem;">Automatisch bewertet: ${totalAuto}/${maxAuto} | KI-bewertet: ${aiTotal}/${maxTotal - maxAuto}</p>
+          <div class="grade ${gradeClass}">${grade}</div>
+          <div class="total-score">${grandTotal} / 214 Punkte</div>
+
+          <div style="text-align:left;margin:2rem auto;max-width:400px;">
+            <div class="score-row"><span class="label">Schriftliche Prüfung</span><span class="value ${schriftlichPass ? 'correct' : 'incorrect'}">${schriftlich} / 166</span></div>
+            <div class="score-row" style="padding-left:1.5rem;opacity:0.8;"><span class="label">Leseverstehen</span><span class="value">${lvTotal}/48</span></div>
+            <div class="score-row" style="padding-left:1.5rem;opacity:0.8;"><span class="label">Sprachbausteine</span><span class="value">${sbTotal}/22</span></div>
+            <div class="score-row" style="padding-left:1.5rem;opacity:0.8;"><span class="label">Hörverstehen</span><span class="value">${hvTotal}/48</span></div>
+            <div class="score-row" style="padding-left:1.5rem;opacity:0.8;"><span class="label">Schriftlicher Ausdruck</span><span class="value">${saScore}/48</span></div>
+            <div class="score-row"><span class="label">Mündliche Prüfung</span><span class="value ${muendlichPass ? 'correct' : 'incorrect'}">${muendlich} / 48</span></div>
+            <div class="score-row" style="padding-left:1.5rem;opacity:0.8;"><span class="label">Inhalt</span><span class="value">${muendInhalt}/16</span></div>
+            <div class="score-row" style="padding-left:1.5rem;opacity:0.8;"><span class="label">Sprache</span><span class="value">${muendSprach}/32</span></div>
+          </div>
+
+          ${passed
+            ? '<p style="margin-top:1rem;color:#22c55e;">Herzlichen Glückwunsch! Sie haben die Prüfung bestanden.</p>'
+            : `<div style="margin-top:1rem;color:var(--accent-red,#e63946);text-align:left;max-width:400px;margin-left:auto;margin-right:auto;">
+                <p><strong>Nicht bestanden:</strong></p><ul style="margin:0.5rem 0 0 1.5rem;">${failReasons}</ul>
+               </div>`
+          }
+
+          <p style="margin-top:2rem;opacity:0.5;font-size:0.8rem;">
+            Notenstufen: sehr gut (193–214) · gut (172–192) · befriedigend (151–171) · ausreichend (128–150)<br>
+            Bestehen: ≥128 gesamt, ≥99 schriftlich (60%), ≥29 mündlich (60%)
+          </p>
         </div>`;
         $('certificate-area').scrollIntoView({ behavior: 'smooth' });
       });
