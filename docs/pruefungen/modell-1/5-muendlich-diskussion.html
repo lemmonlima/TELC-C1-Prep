@@ -271,9 +271,274 @@
       </ul>
     </div>
 
+    <div class="aufgabe-box" style="margin-top: 3rem;">
+      <h2>Diskussionssimulation mit KI</h2>
+      <p>Wählen Sie ein Diskussionsthema und kopieren Sie die Aufgabe. Eine KI wird dann als Ihr Diskussionspartner agieren und Sie nach TELC C1 Standards bewerten.</p>
+      
+      <div style="margin: 1.5rem 0;">
+        <label for="zitat-auswahl" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Gewähltes Diskussionsthema:</label>
+        <select id="zitat-auswahl" style="width: 100%; padding: 0.75rem; background: var(--bg-secondary, #12110f); border: 1px solid var(--border-subtle, #2a2825); border-radius: 4px; color: inherit; font-family: inherit; font-size: 1rem;">
+          <option value="">-- Bitte wählen Sie ein Thema --</option>
+          <option value="1">Diskussionsthema 1: „Die beste Bildung findet ein kluger Mensch auf Reisen." (Goethe)</option>
+          <option value="2">Diskussionsthema 2: „Am Mut hängt der Erfolg." (Fontane)</option>
+          <option value="3">Diskussionsthema 3: „Auf Kinder wirkt das Vorbild, nicht die Kritik." (Thiersch)</option>
+          <option value="4">Diskussionsthema 4: „Ohne Leiden bildet sich kein Charakter." (Feuchtersleben)</option>
+        </select>
+      </div>
+
+      <div id="zitat-vorschau" style="display: none; margin: 1.5rem 0; padding: 1.5rem; background: var(--bg-secondary, #12110f); border-left: 3px solid var(--accent-red, #e63946); border-radius: 4px;">
+        <p style="font-size: 1.2rem; font-style: italic; color: var(--accent-red, #e63946);" id="zitat-text-vorschau"></p>
+        <p style="text-align: right; font-style: italic; color: var(--ink-600); margin-top: 0.5rem;" id="zitat-autor-vorschau"></p>
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle, #2a2825);">
+          <strong>Mögliche Diskussionsaspekte:</strong>
+          <ul id="diskussionsaspekte-vorschau" style="margin-top: 0.5rem; line-height: 1.6;"></ul>
+        </div>
+      </div>
+
+      <div style="margin: 1.5rem 0; padding: 1.5rem; background: var(--bg-secondary, #12110f); border-radius: 6px;">
+        <h3 style="margin-top: 0; color: var(--accent-red, #e63946);">Bewertungskriterien</h3>
+        <p style="font-size: 0.9rem; color: var(--ink-600); margin-bottom: 1rem;">Diese Kriterien werden automatisch beim Kopieren hinzugefügt.</p>
+        
+        <div style="font-size: 0.9rem; line-height: 1.8;">
+          <p><strong>INHALTLICHE ANGEMESSENHEIT</strong></p>
+          
+          <p style="margin-top: 1rem;"><strong>Aufgabengerechtheit - Teil 2 Diskussion (0-6 Punkte)</strong></p>
+          <ul style="margin-left: 1.5rem; font-size: 0.9rem;">
+            <li><strong>A (6 Punkte):</strong> Entspricht durchgängig den Anforderungen</li>
+            <li><strong>B (4 Punkte):</strong> Entspricht weitgehend den Anforderungen</li>
+            <li><strong>C (2 Punkte):</strong> Entspricht nur teilweise den Anforderungen</li>
+            <li><strong>D (0 Punkte):</strong> Entspricht nicht den Anforderungen</li>
+          </ul>
+
+          <p style="margin-top: 1rem;"><strong>SPRACHLICHE ANGEMESSENHEIT (gesamt für alle Teile)</strong></p>
+          <ul style="margin-left: 1.5rem; font-size: 0.9rem;">
+            <li>Flüssigkeit: 0-8 Punkte</li>
+            <li>Repertoire: 0-8 Punkte</li>
+            <li>Grammatische Richtigkeit: 0-8 Punkte</li>
+            <li>Aussprache und Intonation: 0-8 Punkte</li>
+          </ul>
+
+          <p style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle, #2a2825);"><strong>Maximal: 38 Punkte (6 + 32)</strong></p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+        <button id="kopieren-diskussion-btn" class="btn primary" style="background: var(--accent-red, #e63946);">
+          📋 Diskussionsaufgabe kopieren (für KI)
+        </button>
+      </div>
+
+      <div id="kopiert-info-diskussion" style="display: none; margin-top: 1rem; padding: 1rem; background: rgba(34, 197, 94, 0.15); border-left: 3px solid #22c55e; border-radius: 4px;">
+        ✓ Aufgabe wurde in die Zwischenablage kopiert! Fügen Sie sie jetzt in eine KI ein (z.B. ChatGPT, Claude) um die Diskussion zu beginnen.
+      </div>
+    </div>
+
     <div class="submit-section">
       <button class="btn secondary" onclick="window.location.href='./'">← Zurück zur Übersicht</button>
     </div>
+
+    <script>
+      // Zitat data
+      const zitate = {
+        1: {
+          text: 'Die beste Bildung findet ein kluger Mensch auf Reisen.',
+          autor: 'Johann Wolfgang von Goethe (1749–1832), Dichter',
+          aspekte: [
+            'Was bedeutet „Bildung durch Reisen"?',
+            'Welche Erfahrungen haben Sie selbst gemacht?',
+            'Kann man auch ohne Reisen gebildet werden?',
+            'Welche Rolle spielen Bücher, Internet, persönliche Begegnungen?'
+          ]
+        },
+        2: {
+          text: 'Am Mut hängt der Erfolg.',
+          autor: 'Theodor Fontane (1819–1898), Schriftsteller',
+          aspekte: [
+            'Ist Mut die wichtigste Voraussetzung für Erfolg?',
+            'Welche Rolle spielen andere Faktoren (Talent, Fleiß, Glück)?',
+            'Gibt es Beispiele aus Ihrer Erfahrung?',
+            'Kann zu viel Mut auch schaden?'
+          ]
+        },
+        3: {
+          text: 'Auf Kinder wirkt das Vorbild, nicht die Kritik.',
+          autor: 'Heinrich Thiersch (1817–1885), Theologe',
+          aspekte: [
+            'Warum sind Vorbilder wichtiger als Worte?',
+            'Welche Rolle spielt konstruktive Kritik in der Erziehung?',
+            'Haben Sie selbst wichtige Vorbilder?',
+            'Was macht ein gutes Vorbild aus?'
+          ]
+        },
+        4: {
+          text: 'Ohne Leiden bildet sich kein Charakter.',
+          autor: 'Ernst von Feuchtersleben (1806–1849), Arzt',
+          aspekte: [
+            'Müssen Menschen leiden, um zu wachsen?',
+            'Welche positiven Erfahrungen prägen auch den Charakter?',
+            'Gibt es Beispiele aus Geschichte oder persönlicher Erfahrung?',
+            'Ist „Leiden" immer notwendig für Entwicklung?'
+          ]
+        }
+      };
+
+      // Show preview
+      document.getElementById('zitat-auswahl').addEventListener('change', (e) => {
+        const wert = e.target.value;
+        const vorschau = document.getElementById('zitat-vorschau');
+        
+        if (wert && zitate[wert]) {
+          const z = zitate[wert];
+          document.getElementById('zitat-text-vorschau').textContent = `„${z.text}"`;
+          document.getElementById('zitat-autor-vorschau').textContent = `— ${z.autor}`;
+          
+          const aspekte = document.getElementById('diskussionsaspekte-vorschau');
+          aspekte.innerHTML = z.aspekte.map(a => `<li>${a}</li>`).join('');
+          
+          vorschau.style.display = 'block';
+        } else {
+          vorschau.style.display = 'none';
+        }
+      });
+
+      // Copy to clipboard
+      document.getElementById('kopieren-diskussion-btn').addEventListener('click', () => {
+        const zitatWert = document.getElementById('zitat-auswahl').value;
+        
+        if (!zitatWert) {
+          alert('Bitte wählen Sie zuerst ein Diskussionsthema aus.');
+          return;
+        }
+
+        const z = zitate[zitatWert];
+        const aspekteText = z.aspekte.map((a, i) => `${i + 1}. ${a}`).join('\n');
+
+        const aiText = `# TELC C1 Hochschule - Mündliche Prüfung: Diskussion (Teil 2)
+
+## IHRE ROLLE
+
+Sie sind mein Diskussionspartner in einer TELC C1 Hochschule Prüfung (Mündlicher Ausdruck, Teil 2: Diskussion). 
+
+**Wichtige Hinweise für Sie:**
+- Wir führen eine **6-minütige Diskussion** über das unten stehende Zitat
+- Sie sollen **aktiv mit mir diskutieren**, nicht nur zuhören
+- Stellen Sie mir Fragen, geben Sie Gegenargumente, bringen Sie eigene Beispiele
+- Achten Sie darauf, dass ich **auf C1-Niveau** argumentiere
+- Am Ende bewerten Sie mich nach den unten stehenden offiziellen TELC-Kriterien
+
+## DISKUSSIONSTHEMA
+
+**Zitat:**
+„${z.text}"
+
+**Autor:** ${z.autor}
+
+**Mögliche Diskussionsaspekte:**
+${aspekteText}
+
+---
+
+## AUFGABENSTELLUNG (für mich)
+
+Diskutieren Sie mit mir über diese Aussage:
+- Wie verstehe ich diese Aussage?
+- Inwiefern teile ich diese Ansicht?
+- Geben Sie Gründe und Beispiele an
+- Gehen Sie auf meine Argumente ein
+
+**Format:** Es soll ein Austausch von Argumenten stattfinden.
+
+---
+
+## SO FUNKTIONIERT DIE DISKUSSION
+
+1. **Ich beginne** mit meiner ersten Stellungnahme zum Zitat
+2. **Sie reagieren** darauf: Fragen stellen, Gegenargumente bringen, vertiefen
+3. **Wir diskutieren** ca. 6 Minuten hin und her
+4. **Sie bewerten** am Ende nach den TELC-Kriterien
+
+**Wichtig:** Fordern Sie mich heraus! Fragen Sie nach, wenn etwas unklar ist. Bringen Sie Gegenargumente. Helfen Sie mir, verschiedene Perspektiven zu zeigen.
+
+---
+
+## OFFIZIELLE TELC BEWERTUNGSKRITERIEN
+
+Nach der Diskussion bewerten Sie mich bitte nach diesen Kriterien:
+
+### INHALTLICHE ANGEMESSENHEIT
+
+**Aufgabengerechtheit - Teil 2 Diskussion (0-6 Punkte)**
+
+*Erfüllung der Aufgabe, aktive Beteiligung, Strukturiertheit der Rede, Präzision und Klarheit, strategische Kompetenz*
+
+- **A (6 Punkte):** TN-Leistung entspricht (fast) durchgängig den Anforderungen
+- **B (4 Punkte):** TN-Leistung entspricht weitgehend den Anforderungen
+- **C (2 Punkte):** TN-Leistung entspricht den Anforderungen in mehreren Merkmalen nicht
+- **D (0 Punkte):** TN-Leistung entspricht den Anforderungen (fast) überhaupt nicht
+
+### SPRACHLICHE ANGEMESSENHEIT (gesamt für alle Teile)
+
+**2. Flüssigkeit (0-8 Punkte)**
+- A (8): Durchgängig flüssig und natürlich
+- B (5): Weitgehend flüssig mit wenigen Stockungen
+- C (2): Teilweise gestört, öfters Stockungen
+- D (0): Viele Pausen
+
+**3. Repertoire (0-8 Punkte)**
+- A (8): Zeigt durchgängig C1-Kompetenz
+- B (5): Gelegentliche sprachliche Einschränkungen
+- C (2): Oft Einschränkungen, einfacher Wortschatz
+- D (0): Fast nur einfache Strukturen
+
+**4. Grammatische Richtigkeit (0-8 Punkte)**
+- A (8): Hohes Maß an Korrektheit
+- B (5): Fehler fast nur in komplexen Strukturen
+- C (2): Etliche Fehler
+- D (0): Zahlreiche Fehler
+
+**5. Aussprache und Intonation (0-8 Punkte)**
+- A (8): Klar und natürlich
+- B (5): Größtenteils klar
+- C (2): Fehler erfordern erhöhte Aufmerksamkeit
+- D (0): Zahlreiche Fehler
+
+**Maximal: 38 Punkte (6 + 32)**
+
+---
+
+## BEWERTUNGSFORMAT (am Ende)
+
+Bitte geben Sie nach der Diskussion:
+
+1. **Für jedes Kriterium:**
+   - Bewertung (A/B/C/D) mit Punktzahl
+   - Kurze Begründung mit konkreten Beispielen aus unserer Diskussion
+
+2. **Gesamtfeedback:**
+   - Gesamtpunktzahl
+   - Stärken meiner Diskussionsführung
+   - Verbesserungsvorschläge
+   - Was hat auf C1-Niveau gut funktioniert?
+   - Wo sollte ich noch arbeiten?
+
+---
+
+## BEREIT?
+
+Ich fange jetzt an. Bitte reagieren Sie aktiv und führen Sie eine echte Diskussion mit mir!`;
+
+        // Copy to clipboard
+        navigator.clipboard.writeText(aiText).then(() => {
+          const info = document.getElementById('kopiert-info-diskussion');
+          info.style.display = 'block';
+          setTimeout(() => {
+            info.style.display = 'none';
+          }, 5000);
+        }).catch(err => {
+          alert('Fehler beim Kopieren: ' + err);
+        });
+      });
+    </script>
   </main>
 
   <script>
