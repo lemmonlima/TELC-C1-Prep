@@ -218,33 +218,31 @@
       }
     };
 
-    // Show preview
-    document.getElementById('zitat-auswahl').addEventListener('change', (e) => {
-      const wert = e.target.value;
-      const vorschau = document.getElementById('zitat-vorschau');
-      
-      if (wert && zitate[wert]) {
-        const z = zitate[wert];
-        document.getElementById('zitat-text-vorschau').textContent = `„${z.text}"`;
-        document.getElementById('zitat-autor-vorschau').textContent = `— ${z.autor}`;
-        
+    let selectedZitat = null;
+
+    // Theme selection via clickable boxes
+    document.querySelectorAll('.thema-box[data-zitat]').forEach(box => {
+      box.addEventListener('click', () => {
+        document.querySelectorAll('.thema-box[data-zitat]').forEach(b => b.classList.remove('selected'));
+        box.classList.add('selected');
+        selectedZitat = box.dataset.zitat;
+
+        const z = zitate[selectedZitat];
+        const vorschau = document.getElementById('zitat-vorschau');
         const aspekte = document.getElementById('diskussionsaspekte-vorschau');
         aspekte.innerHTML = z.aspekte.map(a => `<li>${a}</li>`).join('');
-        
-        vorschau.style.display = 'block';
-      } else {
-        vorschau.style.display = 'none';
-      }
+        vorschau.classList.remove('hidden');
+      });
     });
 
     // Copy to clipboard
     document.getElementById('kopieren-diskussion-btn').addEventListener('click', () => {
-      const zitatWert = document.getElementById('zitat-auswahl').value;
-      
-      if (!zitatWert) {
+      if (!selectedZitat) {
         alert('Bitte wählen Sie zuerst ein Diskussionsthema aus.');
         return;
       }
+
+      const zitatWert = selectedZitat;
 
       const z = zitate[zitatWert];
       const aspekteText = z.aspekte.map((a, i) => `${i + 1}. ${a}`).join('\n');
@@ -380,13 +378,10 @@ Berechnen Sie die Gesamtnote:
 
 Ich fange jetzt an. Bitte reagieren Sie aktiv und führen Sie eine echte Diskussion mit mir!`;
 
-      // Copy to clipboard
       navigator.clipboard.writeText(aiText).then(() => {
         const info = document.getElementById('kopiert-info-diskussion');
-        info.style.display = 'block';
-        setTimeout(() => {
-          info.style.display = 'none';
-        }, 5000);
+        info.classList.add('show');
+        setTimeout(() => info.classList.remove('show'), 5000);
       }).catch(err => {
         alert('Fehler beim Kopieren: ' + err);
       });
