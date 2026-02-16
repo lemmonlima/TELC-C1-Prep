@@ -4,21 +4,29 @@
   <style>html,body{background:#12110f}</style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>TELC Wörter – Solo</title>
+  <title>Título de la página</title>
   <link rel="stylesheet" href="../styles.css" />
   <!-- TELC Navigation System -->
   <script src="../topbar.js"></script>
   <script src="../navigation.js"></script>
 </head>
-<body class="no-js doc-page woerter-solo">
+<body class="no-js doc-page">
   <!-- La barra de navegación se genera automáticamente -->
+  
   <main class="doc-main">
-    <section class="doc-section">
-      <article id="woerter-content" class="doc doc-relaxed" aria-busy="true"></article>
-    </section>
+    <!-- Tu contenido aquí -->
   </main>
 
-  <script defer src="../grammatik/grammatik.js"></script>
-  <script defer src="woerter.js"></script>
+  <footer class="footer">
+    <span>TELC – Sección</span>
+    <span>Descripción</span>
+  </footer>
+
+  <script>
+    // Script de scroll restoration (opcional, ya incluido en navigation.js)
+    (() => {
+      document.documentElement.classList.add("no-flash");
+    })();
+  </script>
 </body>
 </html>
