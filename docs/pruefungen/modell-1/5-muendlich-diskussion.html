@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest 1 - Mündliche Prüfung: Diskussion | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .pruefung-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+    .aufgabe-box {
+      background: var(--panel-bg, #1a1916);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .zitat-container {
+      display: grid;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .zitat-box {
+      background: var(--bg-secondary, #12110f);
+      border: 2px solid var(--border-subtle, #2a2825);
+      border-radius: 8px;
+      padding: 2rem;
+    }
+    .zitat-nummer {
+      font-weight: bold;
+      color: var(--accent-ink, #457b9d);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .zitat-text {
+      font-size: 1.4rem;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--accent-red, #e63946);
+      margin: 1.5rem 0;
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--panel-bg, #1a1916);
+      border-radius: 6px;
+      border-left: 4px solid var(--accent-red, #e63946);
+    }
+    .zitat-autor {
+      text-align: right;
+      font-size: 1rem;
+      color: var(--ink-600);
+      margin-top: 0.75rem;
+      font-style: italic;
+    }
+    .diskussionsfragen {
+      background: var(--panel-bg, #1a1916);
+      border: 1px solid var(--border-subtle, #2a2825);
+      border-radius: 6px;
+      padding: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .diskussionsfragen h4 {
+      color: var(--accent-ink, #457b9d);
+      margin-bottom: 1rem;
+    }
+    .diskussionsfragen ul {
+      margin: 0;
+      padding-left: 1.5rem;
+      line-height: 1.8;
+    }
+    .info-box {
+      background: rgba(69, 123, 157, 0.1);
+      border-left: 3px solid var(--accent-ink, #457b9d);
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+    .submit-section {
+      position: sticky;
+      bottom: 0;
+      background: var(--bg-primary, #0f0e0d);
+      border-top: 1px solid var(--border-subtle, #2a2825);
+      padding: 1.5rem;
+      margin: 2rem -2rem -2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn.secondary {
+      background: var(--accent-ink, #457b9d);
+      color: white;
+    }
+    .btn.secondary:hover {
+      background: #3a6a85;
+    }
+    
+    /* Mobile optimization */
+    @media (max-width: 768px) {
+      .pruefung-container {
+        padding: 1rem;
+        margin: 1rem auto;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .zitat-box {
+        padding: 1.25rem;
+      }
+      .zitat-text {
+        font-size: 1.2rem;
+        padding: 1rem;
+      }
+      .submit-section {
+        padding: 1rem;
+        margin: 1rem -1rem -1rem;
+        flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  </style>
+  <!-- TELC Navigation System -->
+  <script src="../../topbar.js"></script>
+  <script src="../../navigation.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Prüfungen</span>
+    </div>
+    <nav class="nav">
+      <a href="../../index.html#start">Start</a>
+      <a href="../../grammatik/index.html">Grammatik</a>
+      <a href="../../texte/index.html">Texte</a>
+      <a href="../../notizen/index.html">Notizen</a>
+      <a href="../../woerter/index.html">Wörter</a>
+      <a href="../../pruefungen/index.html">Prüfungen</a>
+    </nav>
+    <a class="cta" href="../../tips/einfuehrung/index.html">Einstufung</a>
+    <div class="topbar-actions">
+      <button type="button" class="topbar-btn topbar-hide" title="Barra minimizar" aria-label="Barra minimizar">−</button>
+      <button type="button" class="topbar-btn topbar-reset" title="Reiniciar (olvidar posiciones)" aria-label="Reiniciar">↺</button>
+    </div>
+  </header>
+  <main class="pruefung-container">
+    <h1>Modellprüfung 1 – Mündliche Prüfung</h1>
+    <p class="lead">Teil 2: Diskussion (6 Minuten)</p>
+
+    <div class="info-box">
+      <p><strong>⏱️ Dauer:</strong> ca. 6 Minuten</p>
+      <p><strong>👥 Format:</strong> Diskussion mit Ihrem/Ihrer Prüfungspartner/in</p>
+      <p><strong>📝 Hinweis:</strong> Keine Vorbereitungszeit - Sie erhalten das Thema direkt im Prüfungsraum</p>
+    </div>
+
+    <div class="aufgabe-box">
+      <h2>Aufgabe</h2>
+      <p>Diskutieren Sie mit Ihrer Partnerin oder Ihrem Partner über eine der folgenden Aussagen:</p>
+      <ul style="line-height: 1.8; margin: 1rem 0;">
+        <li>Wie verstehen Sie diese Aussage?</li>
+        <li>Inwiefern teilen Sie diese Ansicht?</li>
+        <li>Geben Sie dazu Gründe und Beispiele an.</li>
+        <li>Gehen Sie auch auf die Argumente Ihrer Partnerin/Ihres Partners ein.</li>
+      </ul>
+      <p><strong>Es soll ein Austausch von Argumenten stattfinden.</strong></p>
+    </div>
+
+    <div class="zitat-container">
+      
+      <div class="zitat-box">
+        <div class="zitat-nummer">Diskussionsthema 1</div>
+        <div class="zitat-text">
+          „Die beste Bildung findet ein kluger Mensch auf Reisen."
+        </div>
+        <div class="zitat-autor">
+          — Johann Wolfgang von Goethe (1749–1832), Dichter
+        </div>
+        <div class="diskussionsfragen">
+          <h4>Mögliche Diskussionsaspekte:</h4>
+          <ul>
+            <li>Was bedeutet „Bildung durch Reisen"?</li>
+            <li>Welche Erfahrungen haben Sie selbst gemacht?</li>
+            <li>Kann man auch ohne Reisen gebildet werden?</li>
+            <li>Welche Rolle spielen Bücher, Internet, persönliche Begegnungen?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="zitat-box">
+        <div class="zitat-nummer">Diskussionsthema 2</div>
+        <div class="zitat-text">
+          „Am Mut hängt der Erfolg."
+        </div>
+        <div class="zitat-autor">
+          — Theodor Fontane (1819–1898), Schriftsteller
+        </div>
+        <div class="diskussionsfragen">
+          <h4>Mögliche Diskussionsaspekte:</h4>
+          <ul>
+            <li>Ist Mut die wichtigste Voraussetzung für Erfolg?</li>
+            <li>Welche Rolle spielen andere Faktoren (Talent, Fleiß, Glück)?</li>
+            <li>Gibt es Beispiele aus Ihrer Erfahrung?</li>
+            <li>Kann zu viel Mut auch schaden?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="zitat-box">
+        <div class="zitat-nummer">Diskussionsthema 3</div>
+        <div class="zitat-text">
+          „Auf Kinder wirkt das Vorbild, nicht die Kritik."
+        </div>
+        <div class="zitat-autor">
+          — Heinrich Thiersch (1817–1885), Theologe
+        </div>
+        <div class="diskussionsfragen">
+          <h4>Mögliche Diskussionsaspekte:</h4>
+          <ul>
+            <li>Warum sind Vorbilder wichtiger als Worte?</li>
+            <li>Welche Rolle spielt konstruktive Kritik in der Erziehung?</li>
+            <li>Haben Sie selbst wichtige Vorbilder?</li>
+            <li>Was macht ein gutes Vorbild aus?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="zitat-box">
+        <div class="zitat-nummer">Diskussionsthema 4</div>
+        <div class="zitat-text">
+          „Ohne Leiden bildet sich kein Charakter."
+        </div>
+        <div class="zitat-autor">
+          — Ernst von Feuchtersleben (1806–1849), Arzt
+        </div>
+        <div class="diskussionsfragen">
+          <h4>Mögliche Diskussionsaspekte:</h4>
+          <ul>
+            <li>Müssen Menschen leiden, um zu wachsen?</li>
+            <li>Welche positiven Erfahrungen prägen auch den Charakter?</li>
+            <li>Gibt es Beispiele aus Geschichte oder persönlicher Erfahrung?</li>
+            <li>Ist „Leiden" immer notwendig für Entwicklung?</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="aufgabe-box">
+      <h3>Tipps für die Diskussion</h3>
+      <ul style="line-height: 1.8;">
+        <li><strong>Aktiv zuhören:</strong> Auf die Argumente des Partners eingehen</li>
+        <li><strong>Klar argumentieren:</strong> Beispiele und Begründungen nennen</li>
+        <li><strong>Respektvoll bleiben:</strong> Auch bei unterschiedlichen Meinungen</li>
+        <li><strong>Nachfragen:</strong> „Wie meinst du das?" / „Könntest du ein Beispiel nennen?"</li>
+        <li><strong>Position einnehmen:</strong> Eigene Meinung klar vertreten, aber auch Kompromisse zeigen</li>
+        <li><strong>Sprache:</strong> Redemittel nutzen wie „Meiner Meinung nach...", „Ich sehe das anders, weil..."</li>
+      </ul>
+    </div>
+
+    <div class="submit-section">
+      <button class="btn secondary" onclick="window.location.href='./'">← Zurück zur Übersicht</button>
+    </div>
+  </main>
+
+  <script>
+    // Topbar controls
+    (function() {
+      const topbar = document.querySelector('.topbar');
+      if (!topbar) return;
+      
+      const body = document.body;
+      
+      if (sessionStorage.getItem('telc_topbar_hidden') === '1') {
+        body.classList.add('topbar-hidden');
+      }
+      
+      const showTrigger = document.createElement('div');
+      showTrigger.className = 'topbar-show-trigger';
+      showTrigger.title = 'Mostrar barra';
+      showTrigger.textContent = '▼';
+      topbar.parentNode.insertBefore(showTrigger, topbar);
+      
+      const hideBtn = topbar.querySelector('.topbar-hide');
+      const resetBtn = topbar.querySelector('.topbar-reset');
+      
+      if (hideBtn) {
+        hideBtn.onclick = () => {
+          body.classList.add('topbar-hidden');
+          body.classList.remove('topbar-auto-hidden');
+          sessionStorage.setItem('telc_topbar_hidden', '1');
+        };
+      }
+      
+      if (showTrigger) {
+        showTrigger.onclick = () => {
+          body.classList.remove('topbar-hidden');
+          body.classList.remove('topbar-auto-hidden');
+          sessionStorage.removeItem('telc_topbar_hidden');
+        };
+      }
+      
+      if (resetBtn) {
+        resetBtn.onclick = () => {
+          const keys = [];
+          for (let i = 0; i < sessionStorage.length; i++) {
+            const key = sessionStorage.key(i);
+            if (key && key.indexOf('telc_') === 0) keys.push(key);
+          }
+          keys.forEach(k => sessionStorage.removeItem(k));
+          location.reload();
+        };
+      }
+    })();
+  </script>
+
+</body>
+</html>
