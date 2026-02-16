@@ -232,7 +232,29 @@ Bitte geben Sie für jedes Kriterium:
 1. Die Bewertung (A/B/C/D) mit Punktzahl
 2. Eine kurze, konkrete Begründung (2-3 Sätze)
 3. Spezifische Beispiele aus dem Text
-4. Am Ende: Gesamtpunktzahl, Stärken, Verbesserungsvorschläge`;
+4. Am Ende: Bewertungstabelle, Gesamtnote, Stärken, Verbesserungsvorschläge
+
+---
+
+## ZUSAMMENFASSUNG DER BEWERTUNG
+
+Geben Sie am Ende eine Bewertungstabelle in folgendem Format:
+
+| Kriterium                        | Note | Punkte |
+|----------------------------------|------|--------|
+| 1. Aufgabengerechtheit (Teil 1A) | _/A  | _/6    |
+| 2. Flüssigkeit                   | _/A  | _/8    |
+| 3. Repertoire                    | _/A  | _/8    |
+| 4. Grammatische Richtigkeit      | _/A  | _/8    |
+| 5. Aussprache und Intonation     | _/A  | _/8    |
+| **GESAMT**                       |      | _/38   |
+
+Berechnen Sie die Gesamtnote:
+- 38–32 Punkte → Sehr gut
+- 31–25 Punkte → Gut
+- 24–18 Punkte → Befriedigend
+- 17–12 Punkte → Ausreichend (Bestanden)
+- 11–0  Punkte → Nicht bestanden`;
 
       navigator.clipboard.writeText(aiText).then(() => {
         const info = document.getElementById('kopiert-info');
