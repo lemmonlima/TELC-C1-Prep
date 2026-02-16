@@ -6,6 +6,42 @@
   <title>Modelltest 1 - Hörverstehen Teil 3 | TELC C1 Hochschule</title>
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="pruefung.css">
+  <style>
+    .slide-input {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      padding: 0.5rem 0.75rem;
+      margin: 0.4rem 0;
+      background: var(--bg-primary, #0f0e0d);
+      border: 2px solid var(--accent-ink, #457b9d);
+      border-radius: 4px;
+      color: inherit;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+    .slide-input:focus {
+      outline: none;
+      border-color: var(--accent-red, #e63946);
+      background: var(--panel-bg, #1a1916);
+    }
+    .slide-input::placeholder {
+      font-weight: 400;
+      opacity: 0.5;
+    }
+    .slide-input.filled {
+      border-color: rgba(34, 197, 94, 0.5);
+    }
+    .input-label {
+      font-weight: bold;
+      color: var(--accent-ink, #457b9d);
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      display: block;
+    }
+  </style>
   <script src="../../topbar.js"></script>
   <script src="../../navigation.js"></script>
 </head>
@@ -26,7 +62,7 @@
     </div>
 
     <div class="slides-container">
-      
+
       <div class="slide-box">
         <div class="slide-titel">Präsentation</div>
         <div class="slide-content">
@@ -43,9 +79,12 @@
         <div class="slide-titel">Umfrageergebnisse</div>
         <div class="slide-content">
           <p><strong>Stiftung Lesen</strong></p>
-          <div class="antwort-feld" data-nummer="65">___________</div>
-          <p style="margin-top: 1rem;"><strong>Medienpädagogischer Forschungsverbund</strong></p>
-          <div class="antwort-feld" data-nummer="66">___________</div>
+          <span class="input-label">65.</span>
+          <input type="text" class="slide-input" data-nummer="65" placeholder="Zentrale Aussage …">
+
+          <p style="margin-top: 1.25rem;"><strong>Medienpädagogischer Forschungsverbund</strong></p>
+          <span class="input-label">66.</span>
+          <input type="text" class="slide-input" data-nummer="66" placeholder="Beruhigende Nachricht …">
         </div>
       </div>
 
@@ -55,8 +94,14 @@
           <p><strong>Internationale Grundschul-Lese-Untersuchung</strong></p>
           <p>Anregende Formen des Unterrichts:</p>
           <ul>
-            <li><span class="antwort-feld" data-nummer="67">___________</span></li>
-            <li><span class="antwort-feld" data-nummer="67">___________</span></li>
+            <li>
+              <span class="input-label">67a.</span>
+              <input type="text" class="slide-input" data-nummer="67a" placeholder="Erste anregende Form">
+            </li>
+            <li>
+              <span class="input-label">67b.</span>
+              <input type="text" class="slide-input" data-nummer="67b" placeholder="Zweite anregende Form">
+            </li>
           </ul>
         </div>
       </div>
@@ -68,8 +113,14 @@
           <ul>
             <li>Kreative Präsentationen, z. B.:
               <ul>
-                <li><span class="antwort-feld" data-nummer="68">___________</span></li>
-                <li><span class="antwort-feld" data-nummer="68">___________</span></li>
+                <li>
+                  <span class="input-label">68a.</span>
+                  <input type="text" class="slide-input" data-nummer="68a" placeholder="Erste kreative Präsentation">
+                </li>
+                <li>
+                  <span class="input-label">68b.</span>
+                  <input type="text" class="slide-input" data-nummer="68b" placeholder="Zweite kreative Präsentation">
+                </li>
               </ul>
             </li>
           </ul>
@@ -80,9 +131,16 @@
         <div class="slide-titel">Alte Methode / Neue Methode</div>
         <div class="slide-content">
           <p><strong>Neuer Rahmenplan „Deutsch als Fremdsprache"</strong></p>
-          <p><span class="antwort-feld" data-nummer="69">___________</span></p>
-          <p style="margin-top: 1rem;"><strong>Alte Methode:</strong> <span class="antwort-feld" data-nummer="70">___________</span></p>
-          <p style="margin-top: 0.5rem;"><strong>Neue Methode:</strong> <span class="antwort-feld" data-nummer="70">___________</span></p>
+          <span class="input-label">69.</span>
+          <input type="text" class="slide-input" data-nummer="69" placeholder="Neuer Rahmenplan …">
+
+          <p style="margin-top: 1.25rem;"><strong>Alte Methode:</strong></p>
+          <span class="input-label">70a.</span>
+          <input type="text" class="slide-input" data-nummer="70a" placeholder="Alte Methode">
+
+          <p style="margin-top: 0.75rem;"><strong>Neue Methode:</strong></p>
+          <span class="input-label">70b.</span>
+          <input type="text" class="slide-input" data-nummer="70b" placeholder="Neue Methode">
         </div>
       </div>
 
@@ -91,12 +149,15 @@
         <div class="slide-content">
           <ul>
             <li>Jährlich 6000 neue Kinder- und Jugendbücher</li>
-            <li>Identifikationsthemen<br>
-              <span class="antwort-feld" data-nummer="71">___________</span><br>
-              <span class="antwort-feld" data-nummer="71">___________</span>
+            <li>Identifikationsthemen
+              <span class="input-label">71a.</span>
+              <input type="text" class="slide-input" data-nummer="71a" placeholder="Erstes Identifikationsthema">
+              <span class="input-label">71b.</span>
+              <input type="text" class="slide-input" data-nummer="71b" placeholder="Zweites Identifikationsthema">
             </li>
-            <li>Unterrichtsideen, z. B.:<br>
-              <span class="antwort-feld" data-nummer="72">___________</span>
+            <li>Unterrichtsideen, z. B.:
+              <span class="input-label">72.</span>
+              <input type="text" class="slide-input" data-nummer="72" placeholder="Unterrichtsidee">
             </li>
           </ul>
         </div>
@@ -106,80 +167,19 @@
         <div class="slide-titel">Textauswahl für den Einsatz im Unterricht</div>
         <div class="slide-content">
           <ul>
-            <li>Texte, die gut verständlich sind, dabei aber<br>
-              <span class="antwort-feld" data-nummer="73">___________</span>
+            <li>Texte, die gut verständlich sind, dabei aber
+              <span class="input-label">73.</span>
+              <input type="text" class="slide-input" data-nummer="73" placeholder="… dabei aber …">
             </li>
             <li>Enzensberger: „Lektüre ist ein anarchischer Akt."</li>
-            <li>Eher trifft aber zu:<br>
-              <span class="antwort-feld" data-nummer="74">___________</span>
+            <li>Eher trifft aber zu:
+              <span class="input-label">74.</span>
+              <input type="text" class="slide-input" data-nummer="74" placeholder="Eher trifft zu …">
             </li>
           </ul>
         </div>
       </div>
 
-    </div>
-
-    <div class="eingabe-box">
-      <h3>Ihre Antworten</h3>
-      <p style="margin-bottom: 1rem; font-size: 0.9rem; color: var(--ink-600);">Schreiben Sie Ihre Antworten stichwortartig (keine ganzen Sätze).</p>
-      <div class="eingabe-grid">
-        <div class="eingabe-item">
-          <span class="eingabe-label">65.</span>
-          <input type="text" class="antwort-input" data-nummer="65" placeholder="Zentrale Aussage: …">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">66.</span>
-          <input type="text" class="antwort-input" data-nummer="66" placeholder="Beruhigende Nachricht: …">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">67a.</span>
-          <input type="text" class="antwort-input" data-nummer="67a" placeholder="Erste anregende Form">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">67b.</span>
-          <input type="text" class="antwort-input" data-nummer="67b" placeholder="Zweite anregende Form">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">68a.</span>
-          <input type="text" class="antwort-input" data-nummer="68a" placeholder="Erste kreative Präsentation">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">68b.</span>
-          <input type="text" class="antwort-input" data-nummer="68b" placeholder="Zweite kreative Präsentation">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">69.</span>
-          <input type="text" class="antwort-input" data-nummer="69" placeholder="Neuer Rahmenplan: …">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">70a.</span>
-          <input type="text" class="antwort-input" data-nummer="70a" placeholder="Alte Methode">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">70b.</span>
-          <input type="text" class="antwort-input" data-nummer="70b" placeholder="Neue Methode">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">71a.</span>
-          <input type="text" class="antwort-input" data-nummer="71a" placeholder="Erstes Identifikationsthema">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">71b.</span>
-          <input type="text" class="antwort-input" data-nummer="71b" placeholder="Zweites Identifikationsthema">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">72.</span>
-          <input type="text" class="antwort-input" data-nummer="72" placeholder="Unterrichtsidee">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">73.</span>
-          <input type="text" class="antwort-input" data-nummer="73" placeholder="Texte, die gut verständlich sind, dabei aber …">
-        </div>
-        <div class="eingabe-item">
-          <span class="eingabe-label">74.</span>
-          <input type="text" class="antwort-input" data-nummer="74" placeholder="Eher trifft zu: …">
-        </div>
-      </div>
     </div>
 
     <div class="ergebnisse" id="ergebnisse">
@@ -198,7 +198,6 @@
 
   <script src="pruefung.js"></script>
   <script>
-    // Correct answers based on the answer key (simplified for matching)
     const correctAnswers = {
       65: ['jeder vierte', '4.', 'vierte', 'keine bücher', 'nicht bücher', 'liest keine', 'liest nicht'],
       66: ['bücher werden', 'weiter', 'weiterhin', 'noch', 'immer noch', 'in zukunft', 'gelesen'],
@@ -216,54 +215,43 @@
       74: ['autonomie', 'leser', 'selbst entscheiden']
     };
 
-    // Store user answers
     const userAnswers = {};
 
-    // Handle input changes
-    document.querySelectorAll('.antwort-input').forEach(input => {
-      input.addEventListener('input', (e) => {
-        const nummer = e.target.dataset.nummer;
-        const wert = e.target.value.toLowerCase().trim();
-        userAnswers[nummer] = wert;
+    // Mark filled inputs visually
+    document.querySelectorAll('.slide-input').forEach(input => {
+      input.addEventListener('input', () => {
+        const nummer = input.dataset.nummer;
+        const wert = input.value.trim();
+        userAnswers[nummer] = wert.toLowerCase();
+        input.classList.toggle('filled', wert.length > 0);
       });
     });
 
-    // Check if answer matches (flexible matching)
     function checkAnswer(nummer, userAnswer) {
       if (!userAnswer) return 0;
-      
       const possibleAnswers = correctAnswers[nummer] || [];
       const userLower = userAnswer.toLowerCase();
-      
-      // Check for exact or partial match
+
       for (const correct of possibleAnswers) {
         if (userLower.includes(correct.toLowerCase()) || correct.toLowerCase().includes(userLower)) {
-          return 2; // Full points
+          return 2;
         }
       }
-      
-      // Check for keywords (partial credit)
+
       const keywords = possibleAnswers.join(' ').toLowerCase().split(' ');
       const userWords = userLower.split(' ');
-      let matches = 0;
-      
       for (const word of userWords) {
         if (word.length > 3 && keywords.some(k => k.includes(word) || word.includes(k))) {
-          matches++;
+          return 1;
         }
       }
-      
-      if (matches >= 1) return 1; // Partial credit
-      
-      return 0; // No match
+      return 0;
     }
 
-    // Evaluate answers
     document.getElementById('auswerten-btn').addEventListener('click', () => {
       const items = [];
       let totalPoints = 0;
 
-      // Map input fields to question numbers (for display)
       const questionMap = {
         65: '65', 66: '66',
         '67a': '67 (Teil 1)', '67b': '67 (Teil 2)',
@@ -274,27 +262,22 @@
         72: '72', 73: '73', 74: '74'
       };
 
-      // Check all answers
       Object.keys(questionMap).forEach(key => {
         const userAnswer = userAnswers[key] || '';
         const points = checkAnswer(key, userAnswer);
         totalPoints += points;
-
-        const displayNum = questionMap[key];
-        const isCorrect = points === 2;
         const possibleAnswers = correctAnswers[key] ? correctAnswers[key].slice(0, 2).join(', ') : '';
 
         items.push({
-          label: `Frage ${displayNum}`,
+          label: `Frage ${questionMap[key]}`,
           userAnswer: userAnswer || '—',
-          correctAnswer: possibleAnswers || '',
-          isCorrect: isCorrect,
+          correctAnswer: possibleAnswers,
+          isCorrect: points === 2,
           points: points
         });
       });
 
-      const summary = `${totalPoints} von 20 Prüfungspunkten (${Math.round(totalPoints / 20 * 100)}%)`;
-      Pruefung.showResults(items, summary);
+      Pruefung.showResults(items, `${totalPoints} von 20 Prüfungspunkten (${Math.round(totalPoints / 20 * 100)}%)`);
     });
   </script>
 
