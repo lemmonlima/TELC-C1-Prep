@@ -69,6 +69,7 @@
       const href = section.id === currentSection && section.id !== 'start'
         ? 'index.html'
         : getRelativePath(currentPath, section.path) + (section.hash || '');
+      console.log(`[TELC Topbar] ${section.label} -> ${href}`);
       return `<a href="${href}">${section.label}</a>`;
     }).join('\n      ');
 
