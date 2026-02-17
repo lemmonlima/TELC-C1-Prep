@@ -847,6 +847,199 @@ function getRandomPartnerPraesentation(meinThema) {
 
 **Rango ideal: 350–450 palabras** (~3 minutos a 100–130 wpm hablando)
 
+---
+
+## 6.1. Hörverstehen Transkripte y botón de copiar
+
+**NUEVO:** Para facilitar la práctica, cada Modelltest debe incluir transcripciones completas de los tres Hörverstehenteile.
+
+### Archivo: `hoerverstehen-transkript.md`
+
+Crea este archivo en la carpeta del Modelltest (`modell-N/hoerverstehen-transkript.md`) con las transcripciones completas de los tres audios.
+
+**Estructura del archivo:**
+
+```markdown
+# Modellprüfung N — Hörverstehen Transkripte
+
+Esta transkripte sind für Übungszwecke gedacht. In der echten Prüfung erhalten Sie keine schriftliche Version der Hörtexte.
+
+---
+
+## Teil 1: Globalverstehen — [Tema]
+
+**Thema:** [Tema del HV1]
+
+**Hinweis:** Sie hören acht verschiedene Personen...
+
+---
+
+### Sprecher 1
+
+[Transcripción completa del Sprecher 1...]
+
+### Sprecher 2
+
+[Transcripción completa del Sprecher 2...]
+
+[... hasta Sprecher 8]
+
+---
+
+## Teil 2: Detailverstehen — [Tema]
+
+**Thema:** [Tema del HV2]
+
+**Hinweis:** Sie hören ein Radiointerview...
+
+---
+
+**Moderator:** [Texto del moderador...]
+
+**Expert/in:** [Texto del experto...]
+
+[Diálogo completo del interview]
+
+---
+
+## Teil 3: Informationstransfer — [Tema]
+
+**Thema:** [Tema del HV3]
+
+**Hinweis:** Sie hören einen Vortrag...
+
+---
+
+[Transcripción completa del Vortrag]
+```
+
+### Longitudes de referencia (basadas en 150-180 wpm)
+
+| Sección | Palabras objetivo | Duración aproximada (puro audio) |
+|---------|------------------:|--------------------------------:|
+| HV Teil 1 (8 sprecher) | ~850-900 palabras | ~5-6 minutos |
+| HV Teil 2 (interview) | ~650-700 palabras | ~4-5 minutos |
+| HV Teil 3 (vortrag) | ~700-750 palabras | ~4-5 minutos |
+| **Total** | **~2200-2350 palabras** | **~13-16 minutos** |
+
+> **Nota:** La prueba entera de Hörverstehen dura ~40-45 minutos, pero eso incluye tiempo para leer las preguntas, pensar y responder. El audio puro es mucho más corto.
+
+### Botón "Transkript kopieren" en los HTMLs
+
+Cada uno de los tres archivos HTML de Hörverstehen debe incluir un botón que copie la transcripción correspondiente al portapapeles.
+
+**Paso 1:** Agregar el botón después de la `aufgabe-box` inicial:
+
+```html
+<div class="aufgabe-box" style="background-color: #fff3cd; border-left: 4px solid #ffc107;">
+  <h3>📄 Transkript für Übungszwecke</h3>
+  <p>In der echten Prüfung erhalten Sie keine Transkription. Für die Übung können Sie das Transkript hier kopieren:</p>
+  <button id="copy-transkript-btn" class="check-btn" style="background-color: #ffc107; color: #000;">Transkript kopieren</button>
+  <p id="copy-status" style="margin-top: 0.5rem; color: #28a745; display: none;">✓ Transkript in Zwischenablage kopiert!</p>
+</div>
+```
+
+**Paso 2:** Agregar el script al final del HTML (antes de `</body>`), ajustado para cada Teil:
+
+**Para HV Teil 1:**
+
+```javascript
+// Transkript kopieren
+document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
+  const transkriptUrl = 'hoerverstehen-transkript.md';
+  try {
+    const response = await fetch(transkriptUrl);
+    const text = await response.text();
+    
+    // Nur den Teil 1 extrahieren
+    const teil1Start = text.indexOf('## Teil 1: Globalverstehen');
+    const teil2Start = text.indexOf('## Teil 2: Detailverstehen');
+    const teil1Text = text.substring(teil1Start, teil2Start).trim();
+    
+    await navigator.clipboard.writeText(teil1Text);
+    
+    const status = document.getElementById('copy-status');
+    status.style.display = 'block';
+    setTimeout(() => { status.style.display = 'none'; }, 3000);
+  } catch (err) {
+    alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
+  }
+});
+```
+
+**Para HV Teil 2:**
+
+```javascript
+// Transkript kopieren
+document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
+  const transkriptUrl = 'hoerverstehen-transkript.md';
+  try {
+    const response = await fetch(transkriptUrl);
+    const text = await response.text();
+    
+    // Nur den Teil 2 extrahieren
+    const teil2Start = text.indexOf('## Teil 2: Detailverstehen');
+    const teil3Start = text.indexOf('## Teil 3: Informationstransfer');
+    const teil2Text = text.substring(teil2Start, teil3Start).trim();
+    
+    await navigator.clipboard.writeText(teil2Text);
+    
+    const status = document.getElementById('copy-status');
+    status.style.display = 'block';
+    setTimeout(() => { status.style.display = 'none'; }, 3000);
+  } catch (err) {
+    alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
+  }
+});
+```
+
+**Para HV Teil 3:**
+
+```javascript
+// Transkript kopieren
+document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
+  const transkriptUrl = 'hoerverstehen-transkript.md';
+  try {
+    const response = await fetch(transkriptUrl);
+    const text = await response.text();
+    
+    // Nur den Teil 3 extrahieren
+    const teil3Start = text.indexOf('## Teil 3: Informationstransfer');
+    const teil3Text = text.substring(teil3Start).trim();
+    
+    await navigator.clipboard.writeText(teil3Text);
+    
+    const status = document.getElementById('copy-status');
+    status.style.display = 'block';
+    setTimeout(() => { status.style.display = 'none'; }, 3000);
+  } catch (err) {
+    alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
+  }
+});
+```
+
+### Consejos para escribir transcripciones realistas
+
+**HV Teil 1 (8 sprecher):**
+- Cada Sprecher debe sonar como una persona real hablando espontáneamente
+- Usa marcadores del lenguaje oral: "also", "ja", "ich muss ehrlich sagen", "klar"
+- Cada persona debe tener un estilo ligeramente diferente
+- Longitud: ~100-120 palabras por Sprecher
+
+**HV Teil 2 (interview):**
+- Diálogo natural entre Moderator y Expert/in
+- El Moderator hace preguntas, el experto responde con detalle
+- Usa transiciones conversacionales: "Das ist eine gute Frage", "Vielen Dank"
+- El experto debe responder directamente a las preguntas del examen
+
+**HV Teil 3 (vortrag):**
+- Estilo académico pero comprensible
+- Estructura clara: introducción → puntos principales → conclusión
+- Usa conectores: "Zunächst", "Kommen wir zu", "Zusammenfassend"
+- Las palabras clave de las respuestas deben aparecer claramente en el texto
+
+---
+
 ### Estructura del texto de presentación
 
 Cada texto debe tener:
