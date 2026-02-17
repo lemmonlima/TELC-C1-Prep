@@ -1398,6 +1398,17 @@ Para cada nuevo Modelltest, verifica:
 - [ ] `praesentation-texte.js` — 6 textos completos (350–450 palabras c/u) con versión `text` y `html`
 - [ ] `praesentation-texte.js` — Función `getRandomPartnerPraesentation` (copiar idéntica)
 
+### Hörverstehen (transcripciones)
+
+- [ ] `hoerverstehen-transkript.md` — Archivo creado en la carpeta modell-N/
+- [ ] HV Teil 1 transcripción completa (~850-900 palabras, 8 sprecher)
+- [ ] HV Teil 2 transcripción completa (~650-700 palabras, interview)
+- [ ] HV Teil 3 transcripción completa (~700-750 palabras, vortrag)
+- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-1.html`
+- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-2.html`
+- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-3.html`
+- [ ] Scripts de copiar funcionan correctamente (extraen la sección correcta del .md)
+
 ### Verificación
 
 - [ ] Las respuestas en el `<script>` de cada HTML coinciden con `exam-data.js`
