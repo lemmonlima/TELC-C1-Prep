@@ -99,7 +99,7 @@ Para cada `modell-N/` (N = 2, 3, 4, 5), debes editar:
 | `3-hoerverstehen-teil-3.html` | Tema, folien/slides con lücken |
 | `4-schriftlicher-ausdruck.html` | 2 temas con 2 citas c/u |
 | `5-muendlich-praesentation.html` | 6 temas (2 por participante A/B/C) |
-| `5-muendlich-zusammenfassung.html` | Solo instrucciones (ya existente) |
+| `5-muendlich-zusammenfassung.html` | Actualizar botones con nombres de temas de Teil 1A |
 | `5-muendlich-diskussion.html` | 4 citas con autor + aspectos de discusión |
 
 ### Archivos JavaScript (actualizar datos)
