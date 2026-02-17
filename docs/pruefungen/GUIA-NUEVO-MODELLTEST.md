@@ -928,6 +928,10 @@ Esta transkripte sind für Übungszwecke gedacht. In der echten Prüfung erhalte
 
 ### Botón "Transkript kopieren" en los HTMLs
 
+**Hay DOS lugares donde agregar botones de copiar:**
+
+#### A) En cada sección individual de HV (para práctica por sección)
+
 Cada uno de los tres archivos HTML de Hörverstehen debe incluir un botón que copie la transcripción correspondiente al portapapeles.
 
 **Paso 1:** Agregar el botón después de la `aufgabe-box` inicial:
