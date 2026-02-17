@@ -1,9 +1,8 @@
-/* Modellprüfung 3 — Exam data (answers, themes, quotes) */
+/* Modellprüfung 2 — Exam data (answers, themes, quotes) */
 'use strict';
 
-// TODO: Fill in correct answers and content for Modellprüfung 3
 const EXAM_DATA = {
-  title: 'Modellprüfung 3',
+  title: 'Modellprüfung 2',
 
   correct: {
     lv1: { 1:'', 2:'', 3:'', 4:'', 5:'', 6:'' },
