@@ -593,7 +593,67 @@ Pruefung.initPraesentation({
 
 ### 4.10 Mündliche Prüfung Teil 1B — Zusammenfassung
 
-**Este archivo normalmente NO necesita cambios** — es genérico (instrucciones para resumir la presentación del compañero). Solo verifica que existe y está correcto.
+**IMPORTANTE: Este archivo SÍ necesita cambios.** No es genérico — referencia directamente los temas de Teil 1A y carga los textos de `praesentation-texte.js`.
+
+**Cómo funciona (flujo del estudiante):**
+1. El estudiante elige cuál tema presentó ÉL en Teil 1A (ej: "a1: Erfindungen")
+2. El sistema le muestra un texto de presentación DIFERENTE (aleatorio de los otros 5)
+3. El estudiante debe resumir ese texto (como si hubiera escuchado a su compañero)
+
+**Relación Teil 1A → Teil 1B → praesentation-texte.js:**
+
+```
+Teil 1A (praesentation.html)     praesentation-texte.js          Teil 1B (zusammenfassung.html)
+─────────────────────────────    ──────────────────────────       ────────────────────────────────
+Tema a1: "Erfindungen"      →   Texto a1: presentación sobre  →  Botón "Thema 1: Erfindungen"
+                                 el internet (~340 palabras)
+Tema a2: "Universitätssystem"→   Texto a2: presentación sobre  →  Botón "Thema 2: Universitätssystem"
+                                 Hochschulsystem (~370 pal.)
+Tema b1: "Studien-/Berufswahl"→ Texto b1: presentación sobre  →  Botón "Thema 1: Studien-/Berufswahl"
+                                 elección de carrera (~360 pal.)
+... (6 temas en total)
+```
+
+**Qué debes actualizar en `5-muendlich-zusammenfassung.html`:**
+
+Los textos de los botones deben coincidir con los temas de Teil 1A:
+
+```html
+<h3 style="...">Teilnehmer/in A - Themen:</h3>
+<div class="thema-auswahl-grid">
+  <button class="thema-btn" data-thema="a1">Thema 1: Erfindungen</button>
+  <button class="thema-btn" data-thema="a2">Thema 2: Universitätssystem</button>
+</div>
+
+<h3 style="...">Teilnehmer/in B - Themen:</h3>
+<div class="thema-auswahl-grid">
+  <button class="thema-btn" data-thema="b1">Thema 1: Studien-/Berufswahl</button>
+  <button class="thema-btn" data-thema="b2">Thema 2: Künstlerische Fächer</button>
+</div>
+
+<h3 style="...">Teilnehmer/in C - Themen:</h3>
+<div class="thema-auswahl-grid">
+  <button class="thema-btn" data-thema="c1">Thema 1: Fremdsprachen lernen</button>
+  <button class="thema-btn" data-thema="c2">Thema 2: Natur- vs Geisteswissenschaften</button>
+</div>
+```
+
+> Las claves `data-thema="a1"`, `"a2"`, etc. **deben** coincidir con las claves en `praesentation-texte.js`.
+
+**Qué debes crear en `praesentation-texte.js`:**
+
+Un texto de presentación completo (350–450 palabras) por cada tema de Teil 1A. Cada texto simula lo que un compañero habría presentado sobre ese tema. Ver [sección 6](#6-formato-de-praesentation-textejs) para el formato exacto.
+
+**Ejemplo de coherencia (Modell 1):**
+
+| Teil 1A tema | praesentation-texte.js texto | Teil 1B botón |
+|-------------|------------------------------|---------------|
+| a1: „Welche Erfindung halten Sie für besonders wichtig?" | Presentación sobre el Internet como invención (340 pal.) | „Thema 1: Erfindungen" |
+| a2: „Beschreiben Sie das System der universitären Ausbildung…" | Presentación sobre el sistema universitario alemán (370 pal.) | „Thema 2: Universitätssystem" |
+| b1: „Beschreiben Sie, welche Erfahrungen…" | Presentación sobre el camino hacia Gesundheitswissenschaften (360 pal.) | „Thema 1: Studien-/Berufswahl" |
+| b2: „Welche künstlerischen Fächer…?" | Presentación sobre Musik, Kunst, Theater en la escuela (400 pal.) | „Thema 2: Künstlerische Fächer" |
+| c1: „Wie man Fremdsprachen lernt…" | Presentación sobre diferencias culturales en 3 países (400 pal.) | „Thema 1: Fremdsprachen lernen" |
+| c2: „Welche Fächer sind wichtiger…?" | Presentación sobre Natur- vs. Geisteswissenschaften (450 pal.) | „Thema 2: Natur- vs Geisteswissenschaften" |
 
 ---
 
