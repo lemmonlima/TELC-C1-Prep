@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest 2 - Sprachbausteine | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../shared/pruefung.css">
+  <script src="../../topbar.js"></script>
+  <script src="../../navigation.js"></script>
+</head>
+<body>
+  <main class="pruefung-container">
+    <h1>Modellprüfung 2 – Sprachbausteine</h1>
+    <p class="lead">Grammatik und Lexik: 22 Aufgaben</p>
+
+    <div class="aufgabe-box">
+      <h2>Aufgabe</h2>
+      <p>Lesen Sie den folgenden Text. Welche Lösung (a, b, c oder d) ist jeweils richtig?</p>
+      <p><strong>Klicken Sie auf die unterstrichenen Lücken im Text und wählen Sie die passende Option.</strong></p>
+    </div>
+
+    <div class="text-box">
+      <!-- TODO: Titel und Text mit Lücken hier einfügen -->
+      <h3><!-- TODO: Titel --></h3>
+      <!-- TODO: Text mit <span class="lucke" data-lucke="25">____</span> bis <span class="lucke" data-lucke="47">____</span> -->
+      <p><!-- TODO: Absätze mit Lücken 25-47 --></p>
+    </div>
+
+    <div class="optionen-box">
+      <h3>Auswahloptionen</h3>
+      
+      <!-- TODO: Für jede Lücke 25-47 eine option-gruppe einfügen -->
+      <!-- Beispiel-Struktur pro Lücke: -->
+      <!--
+      <div class="option-gruppe">
+        <div class="option-gruppe-titel">25</div>
+        <div class="optionen-grid">
+          <button class="option-btn" data-lucke="25" data-wert="a">Option a</button>
+          <button class="option-btn" data-lucke="25" data-wert="b">Option b</button>
+          <button class="option-btn" data-lucke="25" data-wert="c">Option c</button>
+          <button class="option-btn" data-lucke="25" data-wert="d">Option d</button>
+        </div>
+      </div>
+      -->
+
+    </div>
+
+    <div class="ergebnisse" id="ergebnisse">
+      <h3>Ihre Ergebnisse</h3>
+      <div id="ergebnis-liste"></div>
+      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
+    </div>
+
+    <div class="submit-section">
+      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
+    </div>
+  </main>
+
+  <script src="../shared/pruefung.js"></script>
+  <script>
+    // TODO: Correct answers einfügen
+    const correctAnswers = {
+      25: '', 26: '', 27: '', 28: '', 29: '', 30: '', 31: '', 32: '',
+      33: '', 34: '', 35: '', 36: '', 37: '', 38: '', 39: '', 40: '',
+      41: '', 42: '', 43: '', 44: '', 45: '', 46: '', 47: ''
+    };
+
+    const userAnswers = {};
+
+    // Handle lucke clicks to scroll to option group
+    document.querySelectorAll('.lucke').forEach(lucke => {
+      lucke.addEventListener('click', () => {
+        const luckeNr = lucke.dataset.lucke;
+        const gruppen = document.querySelectorAll('.option-gruppe');
+        for (const gruppe of gruppen) {
+          const titel = gruppe.querySelector('.option-gruppe-titel');
+          if (titel && titel.textContent.trim() === luckeNr) {
+            gruppe.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            break;
+          }
+        }
+      });
+    });
+
+    // Handle option button clicks
+    document.querySelectorAll('.option-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const luckeNr = btn.dataset.lucke;
+        const wert = btn.dataset.wert;
+        document.querySelectorAll(`.option-btn[data-lucke="${luckeNr}"]`).forEach(b => {
+          b.classList.remove('selected');
+        });
+        btn.classList.add('selected');
+        const lucke = document.querySelector(`.lucke[data-lucke="${luckeNr}"]`);
+        if (lucke) { lucke.textContent = wert; lucke.classList.add('filled'); }
+        userAnswers[luckeNr] = wert;
+      });
+    });
+
+    document.getElementById('auswerten-btn').addEventListener('click', () => {
+      const items = [];
+      let correct = 0;
+      for (let i = 25; i <= 47; i++) {
+        const userAnswer = userAnswers[i] || '—';
+        const correctAnswer = correctAnswers[i];
+        const isCorrect = userAnswer === correctAnswer;
+        if (isCorrect) correct++;
+        items.push({
+          label: `Lücke ${i}`,
+          userAnswer: userAnswer,
+          correctAnswer: correctAnswer,
+          isCorrect: isCorrect,
+          points: isCorrect ? 1 : 0
+        });
+      }
+      const summary = `${correct} von 23 korrekt (${Math.round(correct / 23 * 100)}%)`;
+      Pruefung.showResults(items, summary);
+    });
+  </script>
+
+</body>
+</html>

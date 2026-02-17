@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest 2 - Schriftlicher Ausdruck | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../shared/pruefung.css">
+  <script src="../../topbar.js"></script>
+  <script src="../../navigation.js"></script>
+</head>
+<body>
+  <main class="pruefung-container">
+    <h1>Modellprüfung 2 – Schriftlicher Ausdruck</h1>
+    <p class="lead">70 Minuten • Mindestens 350 Wörter</p>
+
+    <div class="aufgabe-box">
+      <h2>Aufgabenstellung</h2>
+      <p>In einer Seminararbeit sollen Sie ein Thema aus unterschiedlichen Perspektiven beleuchten.</p>
+      <p><strong>Anforderungen:</strong></p>
+      <ul>
+        <li>Sie können die unten stehenden Zitate zur Orientierung verwenden, aber auch andere Aspekte des Themas darlegen.</li>
+        <li>Argumentieren Sie überzeugend und führen Sie Beispiele an.</li>
+        <li>Gliedern Sie Ihren Text in <strong>Einleitung, Hauptteil und Schluss</strong>.</li>
+        <li>Mindestens <strong>350 Wörter</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="aufgabe-box">
+      <h2>Wählen Sie ein Thema</h2>
+      <div class="themen-container">
+        <!-- TODO: Themen und Zitate einfügen -->
+        <div class="thema-box" data-thema="thema1">
+          <h3>Thema 1: <!-- TODO --></h3>
+          <div class="zitat"><!-- TODO: Zitat 1a --></div>
+          <div class="zitat"><!-- TODO: Zitat 1b --></div>
+        </div>
+
+        <div class="thema-box" data-thema="thema2">
+          <h3>Thema 2: <!-- TODO --></h3>
+          <div class="zitat"><!-- TODO: Zitat 2a --></div>
+          <div class="zitat"><!-- TODO: Zitat 2b --></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="editor-container" id="editor-container">
+      <div class="aufgabe-box">
+        <h2 id="selected-thema-title">Ihr Text</h2>
+        <textarea id="text-input" placeholder="Schreiben Sie hier Ihren Text..."></textarea>
+        <div class="word-count" id="word-count">0 Wörter</div>
+      </div>
+    </div>
+
+    <div class="success-msg" id="success-msg">
+      ✓ Text wurde in die Zwischenablage kopiert! Sie können ihn jetzt in eine KI einfügen zur Evaluation.
+    </div>
+
+    <div class="submit-section">
+      <button class="btn primary" id="kopieren-btn" disabled>📋 Für Evaluation kopieren</button>
+    </div>
+  </main>
+
+  <script src="../shared/pruefung.js"></script>
+  <script>
+    let selectedThema = null;
+    const textInput = document.getElementById('text-input');
+    const wordCountEl = document.getElementById('word-count');
+    const kopierenBtn = document.getElementById('kopieren-btn');
+    const successMsg = document.getElementById('success-msg');
+    const editorContainer = document.getElementById('editor-container');
+    const selectedThemaTitle = document.getElementById('selected-thema-title');
+
+    // TODO: Thema-Texte und Zitate hier einfügen
+    const themaTexte = {
+      thema1: { name: 'Thema 1: TODO', zitate: ['TODO: Zitat 1a', 'TODO: Zitat 1b'] },
+      thema2: { name: 'Thema 2: TODO', zitate: ['TODO: Zitat 2a', 'TODO: Zitat 2b'] }
+    };
+
+    document.querySelectorAll('.thema-box').forEach(box => {
+      box.addEventListener('click', () => {
+        document.querySelectorAll('.thema-box').forEach(b => b.classList.remove('selected'));
+        box.classList.add('selected');
+        selectedThema = box.dataset.thema;
+        editorContainer.classList.add('show');
+        selectedThemaTitle.textContent = themaTexte[selectedThema]?.name || 'Ihr Text';
+        updateWordCount();
+      });
+    });
+
+    function updateWordCount() {
+      const text = textInput.value.trim();
+      const words = text ? text.split(/\s+/).length : 0;
+      wordCountEl.textContent = `${words} Wörter`;
+      if (words >= 350) {
+        wordCountEl.classList.add('ok');
+        wordCountEl.classList.remove('warning');
+        kopierenBtn.disabled = false;
+      } else {
+        wordCountEl.classList.add('warning');
+        wordCountEl.classList.remove('ok');
+        kopierenBtn.disabled = true;
+      }
+    }
+
+    textInput.addEventListener('input', updateWordCount);
+
+    kopierenBtn.addEventListener('click', async () => {
+      const t = themaTexte[selectedThema];
+      const themaText = `${t.name}\n\nZitate zur Orientierung:\n- "${t.zitate[0]}"\n- "${t.zitate[1]}"`;
+
+      const evaluationCriteria = `
+═══════════════════════════════════════════════════════════════
+TELC DEUTSCH C1 HOCHSCHULE – BEWERTUNGSKRITERIEN
+SCHRIFTLICHER AUSDRUCK
+═══════════════════════════════════════════════════════════════
+
+${themaText}
+
+───────────────────────────────────────────────────────────────
+AUFGABENSTELLUNG:
+───────────────────────────────────────────────────────────────
+In einer Seminararbeit sollen Sie das Thema aus unterschiedlichen 
+Perspektiven beleuchten. Sie können die Zitate zur Orientierung 
+verwenden, aber auch andere Aspekte darlegen.
+
+- Argumentieren Sie überzeugend und führen Sie Beispiele an.
+- Gliedern Sie Ihren Text in Einleitung, Hauptteil und Schluss.
+- Mindestens 350 Wörter.
+
+───────────────────────────────────────────────────────────────
+MEIN TEXT:
+───────────────────────────────────────────────────────────────
+
+${textInput.value.trim()}
+
+───────────────────────────────────────────────────────────────
+BEWERTUNGSKRITERIEN (A = 12 Punkte, B = 8, C = 4, D = 0)
+───────────────────────────────────────────────────────────────
+
+1. AUFGABENGERECHTHEIT (max. 12 Punkte)
+   A: Entspricht durchgängig den Anforderungen
+   B: Entspricht weitgehend den Anforderungen
+   C: Entspricht nur teilweise den Anforderungen
+   D: Entspricht (fast) überhaupt nicht
+
+2. KORREKTHEIT (max. 12 Punkte)
+   A: Durchgängig dem Zielniveau entsprechend
+   B: Größtenteils entsprechend
+   C: Auch in einfachen Strukturen mehrere Fehler
+   D: Zahlreiche Fehler
+
+3. REPERTOIRE (max. 12 Punkte)
+   A: Durchgängig dem Zielniveau entsprechend
+   B: An wenigen Stellen sprachliche Einschränkungen
+   C: An mehreren Stellen Einschränkungen
+   D: (Fast) durchgängig Einschränkungen
+
+4. KOMMUNIKATIVE GESTALTUNG (max. 12 Punkte)
+   A: Entspricht dem geforderten Niveau durchgehend
+   B: Entspricht weitgehend
+   C: Nicht immer klar gestaltet
+   D: An vielen Stellen unklar
+
+───────────────────────────────────────────────────────────────
+BITTE BEWERTEN SIE:
+───────────────────────────────────────────────────────────────
+Geben Sie für jedes der 4 Kriterien eine Bewertung (A/B/C/D) mit 
+Begründung. Berechnen Sie die Gesamtpunktzahl (max. 48 Punkte).
+
+───────────────────────────────────────────────────────────────
+ZUSAMMENFASSUNG DER BEWERTUNG
+───────────────────────────────────────────────────────────────
+
+| Kriterium                  | Note | Punkte |
+|----------------------------|------|--------|
+| 1. Aufgabengerechtheit     | _/A  | _/12   |
+| 2. Korrektheit             | _/A  | _/12   |
+| 3. Repertoire              | _/A  | _/12   |
+| 4. Kommunikative Gestaltung| _/A  | _/12   |
+| **GESAMT**                 |      | _/48   |
+
+═══════════════════════════════════════════════════════════════
+`;
+
+      try {
+        await navigator.clipboard.writeText(evaluationCriteria);
+        successMsg.classList.add('show');
+        setTimeout(() => successMsg.classList.remove('show'), 4000);
+      } catch (err) {
+        alert('Fehler beim Kopieren. Bitte manuell kopieren.');
+      }
+    });
+  </script>
+
+</body>
+</html>

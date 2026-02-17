@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest 2 - Mündliche Prüfung: Zusammenfassung | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../shared/pruefung.css">
+  <script src="../../topbar.js"></script>
+  <script src="../../navigation.js"></script>
+</head>
+<body>
+  <main class="pruefung-container">
+    <h1>Modellprüfung 2 – Mündliche Prüfung</h1>
+    <p class="lead">Teil 1B: Zusammenfassung und Anschlussfragen (ca. 2 Minuten)</p>
+
+    <div class="info-box">
+      <p><strong>📝 Ablauf:</strong></p>
+      <ol style="margin: 0.5rem 0; padding-left: 1.5rem;">
+        <li>Sie hören die Präsentation Ihres Partners/Ihrer Partnerin</li>
+        <li>Sie fassen zusammen, was für Sie besonders bemerkenswert war</li>
+        <li>Sie stellen mindestens eine Frage zum Thema</li>
+      </ol>
+      <p style="margin-top: 0.75rem;"><strong>⏱️ Zeit:</strong> ca. 2 Minuten</p>
+    </div>
+
+    <div class="aufgabe-box">
+      <h2>Schritt 1: Welches Thema haben SIE präsentiert?</h2>
+      <p>Wählen Sie das Thema, das Sie in Teil 1A präsentiert haben. Sie werden dann eine <strong>andere</strong> Präsentation zur Zusammenfassung erhalten.</p>
+      
+      <div class="meine-praesentation-box">
+        <!-- TODO: Themen-Buttons einfügen -->
+        <h3 style="margin-top: 0; color: var(--accent-ink, #457b9d);">Teilnehmer/in A - Themen:</h3>
+        <div class="thema-auswahl-grid">
+          <button class="thema-btn" data-thema="a1">Thema 1: TODO</button>
+          <button class="thema-btn" data-thema="a2">Thema 2: TODO</button>
+        </div>
+
+        <h3 style="margin-top: 1.5rem; color: var(--accent-ink, #457b9d);">Teilnehmer/in B - Themen:</h3>
+        <div class="thema-auswahl-grid">
+          <button class="thema-btn" data-thema="b1">Thema 1: TODO</button>
+          <button class="thema-btn" data-thema="b2">Thema 2: TODO</button>
+        </div>
+
+        <h3 style="margin-top: 1.5rem; color: var(--accent-ink, #457b9d);">Teilnehmer/in C - Themen:</h3>
+        <div class="thema-auswahl-grid">
+          <button class="thema-btn" data-thema="c1">Thema 1: TODO</button>
+          <button class="thema-btn" data-thema="c2">Thema 2: TODO</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="partner-praesentation-container" class="hidden">
+      <div class="aufgabe-box">
+        <h2>Schritt 2: Hören Sie die Präsentation Ihres Partners</h2>
+        <p>Lesen Sie die folgende Präsentation und machen Sie sich Notizen.</p>
+      </div>
+
+      <div class="partner-praesentation-box" id="partner-praesentation-text"></div>
+
+      <div class="aufgabe-box">
+        <h2>Schritt 3: Ihre Zusammenfassung</h2>
+        <p>Fassen Sie zusammen, was für Sie besonders bemerkenswert war. Stellen Sie auch mindestens eine Anschlussfrage.</p>
+        <textarea id="zusammenfassung-input" placeholder="Schreiben Sie hier Ihre Zusammenfassung und Anschlussfrage(n)..."></textarea>
+      </div>
+
+      <div class="aufgabe-box">
+        <h3>Bewertungskriterien (werden beim Kopieren hinzugefügt)</h3>
+        <p style="font-size: 0.95rem; line-height: 1.7;">
+          <strong>Aufgabengerechtheit - Teil 1B (0-4 Punkte):</strong><br>
+          A (4): Entspricht durchgängig | B (2): Weitgehend | C (1): Teilweise | D (0): Nicht
+        </p>
+      </div>
+
+      <div class="success-msg" id="success-msg">
+        ✓ Text wurde kopiert! Fügen Sie ihn jetzt in eine KI ein zur Bewertung.
+      </div>
+    </div>
+
+    <div class="submit-section">
+      <button class="btn primary" id="kopieren-btn" style="display: none;">📋 Für Evaluation kopieren</button>
+    </div>
+  </main>
+
+  <script src="praesentation-texte.js"></script>
+  <script src="../shared/pruefung.js"></script>
+  <script>
+    let meinThema = null;
+    let partnerText = null;
+
+    document.querySelectorAll('.thema-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.thema-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        meinThema = btn.dataset.thema;
+        partnerText = getRandomPartnerPraesentation(meinThema);
+        document.getElementById('partner-praesentation-text').innerHTML = partnerText.html;
+        document.getElementById('partner-praesentation-container').classList.remove('hidden');
+        document.getElementById('kopieren-btn').style.display = 'block';
+      });
+    });
+
+    document.getElementById('kopieren-btn').addEventListener('click', async () => {
+      const zusammenfassung = document.getElementById('zusammenfassung-input').value.trim();
+      if (!zusammenfassung) { alert('Bitte schreiben Sie zuerst Ihre Zusammenfassung.'); return; }
+
+      const aiText = `# TELC C1 Hochschule - Mündliche Prüfung: Zusammenfassung (Teil 1B)
+
+## PRÄSENTATION DES PARTNERS
+
+**Thema:** ${partnerText.titel}
+
+${partnerText.text}
+
+---
+
+## MEINE ZUSAMMENFASSUNG UND ANSCHLUSSFRAGE(N)
+
+${zusammenfassung}
+
+---
+
+## BEWERTUNGSKRITERIEN
+
+**Aufgabengerechtheit - Teil 1B (0-4 Punkte)**
+- **A (4):** Entspricht durchgängig | **B (2):** Weitgehend | **C (1):** Teilweise | **D (0):** Nicht
+
+## ZUSAMMENFASSUNG DER BEWERTUNG
+
+| Kriterium                        | Note | Punkte |
+|----------------------------------|------|--------|
+| 1. Aufgabengerechtheit (Teil 1B) | _/A  | _/4    |
+| **GESAMT Teil 1B**               |      | _/4    |`;
+
+      try {
+        await navigator.clipboard.writeText(aiText);
+        document.getElementById('success-msg').classList.add('show');
+        setTimeout(() => document.getElementById('success-msg').classList.remove('show'), 4000);
+      } catch (err) {
+        alert('Fehler beim Kopieren: ' + err);
+      }
+    });
+  </script>
+
+</body>
+</html>
