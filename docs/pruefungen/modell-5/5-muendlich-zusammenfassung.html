@@ -85,61 +85,7 @@
   <script src="praesentation-texte.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
-    let meinThema = null;
-    let partnerText = null;
-
-    document.querySelectorAll('.thema-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.thema-btn').forEach(b => b.classList.remove('selected'));
-        btn.classList.add('selected');
-        meinThema = btn.dataset.thema;
-        partnerText = getRandomPartnerPraesentation(meinThema);
-        document.getElementById('partner-praesentation-text').innerHTML = partnerText.html;
-        document.getElementById('partner-praesentation-container').classList.remove('hidden');
-        document.getElementById('kopieren-btn').style.display = 'block';
-      });
-    });
-
-    document.getElementById('kopieren-btn').addEventListener('click', async () => {
-      const zusammenfassung = document.getElementById('zusammenfassung-input').value.trim();
-      if (!zusammenfassung) { alert('Bitte schreiben Sie zuerst Ihre Zusammenfassung.'); return; }
-
-      const aiText = `# TELC C1 Hochschule - Mündliche Prüfung: Zusammenfassung (Teil 1B)
-
-## PRÄSENTATION DES PARTNERS
-
-**Thema:** ${partnerText.titel}
-
-${partnerText.text}
-
----
-
-## MEINE ZUSAMMENFASSUNG UND ANSCHLUSSFRAGE(N)
-
-${zusammenfassung}
-
----
-
-## BEWERTUNGSKRITERIEN
-
-**Aufgabengerechtheit - Teil 1B (0-4 Punkte)**
-- **A (4):** Entspricht durchgängig | **B (2):** Weitgehend | **C (1):** Teilweise | **D (0):** Nicht
-
-## ZUSAMMENFASSUNG DER BEWERTUNG
-
-| Kriterium                        | Note | Punkte |
-|----------------------------------|------|--------|
-| 1. Aufgabengerechtheit (Teil 1B) | _/A  | _/4    |
-| **GESAMT Teil 1B**               |      | _/4    |`;
-
-      try {
-        await navigator.clipboard.writeText(aiText);
-        document.getElementById('success-msg').classList.add('show');
-        setTimeout(() => document.getElementById('success-msg').classList.remove('show'), 4000);
-      } catch (err) {
-        alert('Fehler beim Kopieren: ' + err);
-      }
-    });
+    Pruefung.initZusammenfassung();
   </script>
 
 </body>

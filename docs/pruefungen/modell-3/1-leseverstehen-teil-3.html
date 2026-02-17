@@ -184,76 +184,10 @@
 
   <script src="../shared/pruefung.js"></script>
   <script>
-    // TODO: Correct answers einfügen (richtig/falsch/nicht, plus Q24 letter)
-    const correctAnswers = {
-      13: '',
-      14: '',
-      15: '',
-      16: '',
-      17: '',
-      18: '',
-      19: '',
-      20: '',
-      21: '',
-      22: '',
-      23: '',
-      24: ''
-    };
-
-    const symbolMap = { '+': 'richtig', '−': 'falsch', '×': 'nicht' };
-    const symbolDisplay = { 'richtig': '+', 'falsch': '−', 'nicht': '×' };
-    const userAnswers = {};
-
-    Pruefung.initButtons(
-      '.aussage[data-aussage] .antwort-btn',
-      'data-aussage',
-      'data-answer',
-      userAnswers,
-      (group, value) => {
-        if (group !== '24') {
-          userAnswers[group] = symbolMap[value] || value;
-        }
-      }
-    );
-
-    document.getElementById('auswerten-btn').addEventListener('click', () => {
-      const items = [];
-      let totalPoints = 0;
-      let earnedPoints = 0;
-
-      for (let i = 13; i <= 23; i++) {
-        const userAnswer = userAnswers[i] || '—';
-        const correctAnswer = correctAnswers[i];
-        const isCorrect = userAnswer === correctAnswer;
-        totalPoints += 2;
-        if (isCorrect) earnedPoints += 2;
-        const displayUser = symbolDisplay[userAnswer] || userAnswer;
-        const displayCorrect = symbolDisplay[correctAnswer] || correctAnswer;
-        items.push({
-          label: `Aussage ${i}`,
-          userAnswer: displayUser,
-          correctAnswer: displayCorrect,
-          isCorrect: isCorrect,
-          points: isCorrect ? 2 : 0
-        });
-      }
-
-      const userAnswer24 = userAnswers[24] || '—';
-      const correctAnswer24 = correctAnswers[24];
-      const isCorrect24 = userAnswer24 === correctAnswer24;
-      totalPoints += 2;
-      if (isCorrect24) earnedPoints += 2;
-      items.push({
-        label: 'Aufgabe 24',
-        userAnswer: userAnswer24,
-        correctAnswer: correctAnswer24,
-        isCorrect: isCorrect24,
-        points: isCorrect24 ? 2 : 0
-      });
-
-      const summary = `${earnedPoints} von ${totalPoints} Prüfungspunkten (${Math.round(earnedPoints / totalPoints * 100)}%)`;
-      Pruefung.showResults(items, summary);
-    });
+    Pruefung.initLV3({
+      13:'', 14:'', 15:'', 16:'', 17:'', 18:'',
+      19:'', 20:'', 21:'', 22:'', 23:'', 24:''
+    }); // TODO: answers
   </script>
 
 </body>

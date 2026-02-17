@@ -147,95 +147,10 @@
 
   <script src="../shared/pruefung.js"></script>
   <script>
-    // TODO: Thema-Texte einfügen
-    const themaTexte = {
-      'a1': 'TODO',
-      'a2': 'TODO',
-      'b1': 'TODO',
-      'b2': 'TODO',
-      'c1': 'TODO',
-      'c2': 'TODO'
-    };
-
-    document.getElementById('thema-auswahl').addEventListener('change', (e) => {
-      const box = document.getElementById('thema-beschreibung');
-      const text = document.getElementById('thema-text');
-      const wert = e.target.value;
-      if (wert && themaTexte[wert]) {
-        text.textContent = themaTexte[wert];
-        box.classList.remove('hidden');
-      } else {
-        box.classList.add('hidden');
-      }
-    });
-
-    document.getElementById('kopieren-btn').addEventListener('click', () => {
-      const sel = document.getElementById('thema-auswahl');
-      const wert = sel.value;
-      const name = sel.options[sel.selectedIndex].text;
-      const text = document.getElementById('praesentation-text').value;
-
-      if (!wert) { alert('Bitte wählen Sie zuerst ein Thema aus.'); return; }
-      if (!text.trim()) { alert('Bitte schreiben Sie zuerst Ihre Präsentation.'); return; }
-
-      const aiText = `# TELC C1 Hochschule - Mündliche Prüfung: Präsentation (Teil 1A)
-
-## GEWÄHLTES THEMA
-${name}
-
-**Vollständige Aufgabe:**
-${themaTexte[wert]}
-
-## PRÄSENTATION DES KANDIDATEN
-
-${text}
-
----
-
-## OFFIZIELLE TELC BEWERTUNGSKRITERIEN
-
-Bitte bewerten Sie diese Präsentation nach den offiziellen TELC C1 Hochschule Kriterien:
-
-### INHALTLICHE ANGEMESSENHEIT
-
-**1. Aufgabengerechtheit - Teil 1A Präsentation (0-6 Punkte)**
-
-- **A (6 Punkte):** TN-Leistung entspricht (fast) durchgängig den Anforderungen.
-- **B (4 Punkte):** TN-Leistung entspricht weitgehend den Anforderungen.
-- **C (2 Punkte):** TN-Leistung entspricht den Anforderungen in mehreren Merkmalen nicht.
-- **D (0 Punkte):** TN-Leistung entspricht den Anforderungen (fast) überhaupt nicht.
-
-### SPRACHLICHE ANGEMESSENHEIT
-
-**2. Flüssigkeit (0-8)** | **3. Repertoire (0-8)** | **4. Grammatische Richtigkeit (0-8)** | **5. Aussprache und Intonation (0-8)**
-
----
-
-## ZUSAMMENFASSUNG DER BEWERTUNG
-
-| Kriterium                        | Note | Punkte |
-|----------------------------------|------|--------|
-| 1. Aufgabengerechtheit (Teil 1A) | _/A  | _/6    |
-| 2. Flüssigkeit                   | _/A  | _/8    |
-| 3. Repertoire                    | _/A  | _/8    |
-| 4. Grammatische Richtigkeit      | _/A  | _/8    |
-| 5. Aussprache und Intonation     | _/A  | _/8    |
-| **GESAMT**                       |      | _/38   |`;
-
-      navigator.clipboard.writeText(aiText).then(() => {
-        const info = document.getElementById('kopiert-info');
-        info.classList.add('show');
-        setTimeout(() => info.classList.remove('show'), 5000);
-      }).catch(err => alert('Fehler beim Kopieren: ' + err));
-    });
-
-    document.getElementById('reset-btn').addEventListener('click', () => {
-      if (confirm('Möchten Sie wirklich alles zurücksetzen?')) {
-        document.getElementById('thema-auswahl').value = '';
-        document.getElementById('praesentation-text').value = '';
-        document.getElementById('thema-beschreibung').classList.add('hidden');
-        document.getElementById('kopiert-info').classList.remove('show');
-      }
+    Pruefung.initPraesentation({
+      'a1': '/* TODO */', 'a2': '/* TODO */',
+      'b1': '/* TODO */', 'b2': '/* TODO */',
+      'c1': '/* TODO */', 'c2': '/* TODO */'
     });
   </script>
 

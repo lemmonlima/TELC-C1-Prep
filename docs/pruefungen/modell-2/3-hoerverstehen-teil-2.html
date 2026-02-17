@@ -133,34 +133,7 @@
 
   <script src="../shared/pruefung.js"></script>
   <script>
-    // TODO: Correct answers einfügen
-    const correctAnswers = {
-      55: '', 56: '', 57: '', 58: '', 59: '',
-      60: '', 61: '', 62: '', 63: '', 64: ''
-    };
-
-    const userAnswers = {};
-    Pruefung.initButtons('.antwort-btn', 'data-frage', 'data-wert', userAnswers);
-
-    document.getElementById('auswerten-btn').addEventListener('click', () => {
-      const items = [];
-      let totalPoints = 0;
-      for (let i = 55; i <= 64; i++) {
-        const userAnswer = userAnswers[i] || '—';
-        const correctAnswer = correctAnswers[i];
-        const isCorrect = userAnswer === correctAnswer;
-        if (isCorrect) totalPoints += 2;
-        items.push({
-          label: `Frage ${i}`,
-          userAnswer: userAnswer,
-          correctAnswer: correctAnswer,
-          isCorrect: isCorrect,
-          points: isCorrect ? 2 : 0
-        });
-      }
-      const summary = `${totalPoints} von 20 Prüfungspunkten (${Math.round(totalPoints / 20 * 100)}%)`;
-      Pruefung.showResults(items, summary);
-    });
+    Pruefung.initHV2({ 55:'', 56:'', 57:'', 58:'', 59:'', 60:'', 61:'', 62:'', 63:'', 64:'' }); // TODO: answers
   </script>
 
 </body>
