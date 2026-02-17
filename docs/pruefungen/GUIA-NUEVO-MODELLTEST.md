@@ -112,12 +112,13 @@ Para cada `modell-N/` (N = 2, 3, 4, 5), debes editar:
 | `5-muendlich-zusammenfassung.html` | Actualizar botones con nombres de temas de Teil 1A |
 | `5-muendlich-diskussion.html` | 4 citas con autor + aspectos de discusión |
 
-### Archivos JavaScript (actualizar datos)
+### Archivos JavaScript y Markdown (actualizar datos)
 
 | Archivo | Qué rellenar |
 |---------|-------------|
 | `exam-data.js` | Respuestas correctas + temas SA + citas diskussion |
 | `praesentation-texte.js` | 6 textos de presentación (~350–400 palabras c/u) |
+| `hoerverstehen-transkript.md` | **NUEVO:** Transcripciones completas de HV1, HV2, HV3 + botones de copiar |
 
 ### Lo que NO debes tocar
 
