@@ -1046,6 +1046,80 @@ document.getElementById('copy-transkript-btn').addEventListener('click', async f
 
 ---
 
+#### B) En el modo examen (exam.html) — Botón completo antes de "Ich bin bereit"
+
+**IMPORTANTE:** Este botón debe agregarse SOLO en modell-2, modell-3, modell-4, modell-5. **NO en modell-1.**
+
+**Ubicación:** En el archivo `exam.html`, dentro del div `screen-hv-ready`, agregar un nuevo mensaje box ANTES del `<div class="btn-group">`.
+
+**Paso 1:** Agregar el HTML del mensaje y botón:
+
+```html
+<!-- Dentro de screen-hv-ready, DESPUÉS del primer .message y ANTES de .btn-group -->
+<div class="message" style="background-color: #fff3cd; border-left: 4px solid #ffc107; margin-top: 1.5rem;">
+  <h3>📄 Transkripte für Übungszwecke</h3>
+  <p>In der echten Prüfung gibt es keine Transkripte. Für die Übung können Sie hier das komplette Hörverstehen-Transkript kopieren:</p>
+  <button class="btn secondary" id="btn-copy-hv-transkript" style="background-color: #ffc107; color: #000; margin-bottom: 0.5rem;">Komplettes HV-Transkript kopieren</button>
+  <p id="copy-hv-status" style="color: #28a745; font-weight: bold; display: none; margin-top: 0.5rem;">✓ Transkript in Zwischenablage kopiert!</p>
+</div>
+```
+
+El HTML del `screen-hv-ready` quedaría así:
+
+```html
+<!-- HV READY -->
+<div id="screen-hv-ready" class="exam-screen">
+  <h2>Hörverstehen</h2>
+  <div class="message">
+    <p><strong>Vorbereitung:</strong> Starten Sie jetzt die Audiodatei auf Ihrem Gerät...</p>
+    <p>Sie haben <strong>45 Minuten</strong>...</p>
+    <p>Drücken Sie auf <strong>„Ich bin bereit"</strong> wenn das Audio läuft.</p>
+  </div>
+  
+  <!-- NUEVO: Botón de copiar transkript -->
+  <div class="message" style="background-color: #fff3cd; border-left: 4px solid #ffc107; margin-top: 1.5rem;">
+    <h3>📄 Transkripte für Übungszwecke</h3>
+    <p>In der echten Prüfung gibt es keine Transkripte. Für die Übung können Sie hier das komplette Hörverstehen-Transkript kopieren:</p>
+    <button class="btn secondary" id="btn-copy-hv-transkript" style="background-color: #ffc107; color: #000; margin-bottom: 0.5rem;">Komplettes HV-Transkript kopieren</button>
+    <p id="copy-hv-status" style="color: #28a745; font-weight: bold; display: none; margin-top: 0.5rem;">✓ Transkript in Zwischenablage kopiert!</p>
+  </div>
+  
+  <div class="btn-group">
+    <button class="btn primary" id="btn-start-hv">Ich bin bereit</button>
+  </div>
+</div>
+```
+
+**Paso 2:** Agregar el script al final de `exam.html` (antes de `</body>`):
+
+```javascript
+// Hörverstehen Transkript kopieren (für Übung)
+const btnCopyHV = document.getElementById('btn-copy-hv-transkript');
+if (btnCopyHV) {
+  btnCopyHV.addEventListener('click', async function() {
+    const transkriptUrl = 'hoerverstehen-transkript.md';
+    try {
+      const response = await fetch(transkriptUrl);
+      const text = await response.text();
+      
+      await navigator.clipboard.writeText(text);
+      
+      const status = document.getElementById('copy-hv-status');
+      status.style.display = 'block';
+      setTimeout(() => { status.style.display = 'none'; }, 3000);
+    } catch (err) {
+      alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
+    }
+  });
+}
+```
+
+Este código debe agregarse dentro del bloque `<script>` existente al final del archivo, justo antes de `</script>`.
+
+**Resultado:** Cuando el usuario llegue a la pantalla "Hörverstehen" en el modo examen, verá primero las instrucciones, luego el botón amarillo para copiar todo el transcripto, y finalmente el botón rojo "Ich bin bereit".
+
+---
+
 ### Estructura del texto de presentación
 
 Cada texto debe tener:
