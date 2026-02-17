@@ -198,86 +198,26 @@
 
   <script src="../shared/pruefung.js"></script>
   <script>
-    const correctAnswers = {
-      65: ['jeder vierte', '4.', 'vierte', 'keine bücher', 'nicht bücher', 'liest keine', 'liest nicht'],
-      66: ['bücher werden', 'weiter', 'weiterhin', 'noch', 'immer noch', 'in zukunft', 'gelesen'],
-      '67a': ['verfassen', 'schreiben', 'eigener', 'von texte', 'texte'],
-      '67b': ['kreative verarbeitung', 'verarbeitung', 'kreative', 'gelesenen', 'methoden'],
-      '68a': ['lieder', 'songs', 'musik'],
-      '68b': ['theater', 'stücke', 'theaterstücke', 'interviews', 'hörspiele'],
-      69: ['alltagskommunikation', 'interpretation', 'literatur'],
-      '70a': ['kreatives schreiben', 'neue lust', 'lesen', 'literatur', 'nicht mehr mittelpunkt'],
-      '70b': ['kreatives schreiben', 'neue lust', 'lesen', 'literatur', 'mittelpunkt'],
-      '71a': ['liebe', 'erste liebe', 'freundschaft', 'familie'],
-      '71b': ['freundschaft', 'familie', 'liebe'],
-      72: ['neues ende', 'ende', 'brief', 'hauptfigur', 'brief an hauptfigur'],
-      73: ['doppelsinnig', 'lustig', 'witzig'],
-      74: ['autonomie', 'leser', 'selbst entscheiden']
-    };
-
-    const userAnswers = {};
-
-    // Mark filled inputs visually
-    document.querySelectorAll('.slide-input').forEach(input => {
-      input.addEventListener('input', () => {
-        const nummer = input.dataset.nummer;
-        const wert = input.value.trim();
-        userAnswers[nummer] = wert.toLowerCase();
-        input.classList.toggle('filled', wert.length > 0);
-      });
-    });
-
-    function checkAnswer(nummer, userAnswer) {
-      if (!userAnswer) return 0;
-      const possibleAnswers = correctAnswers[nummer] || [];
-      const userLower = userAnswer.toLowerCase();
-
-      for (const correct of possibleAnswers) {
-        if (userLower.includes(correct.toLowerCase()) || correct.toLowerCase().includes(userLower)) {
-          return 2;
-        }
-      }
-
-      const keywords = possibleAnswers.join(' ').toLowerCase().split(' ');
-      const userWords = userLower.split(' ');
-      for (const word of userWords) {
-        if (word.length > 3 && keywords.some(k => k.includes(word) || word.includes(k))) {
-          return 1;
-        }
-      }
-      return 0;
-    }
-
-    document.getElementById('auswerten-btn').addEventListener('click', () => {
-      const items = [];
-      let totalPoints = 0;
-
-      const questionMap = {
-        65: '65', 66: '66',
-        '67a': '67 (Teil 1)', '67b': '67 (Teil 2)',
-        '68a': '68 (Teil 1)', '68b': '68 (Teil 2)',
-        69: '69',
-        '70a': '70 (Alte)', '70b': '70 (Neue)',
-        '71a': '71 (Teil 1)', '71b': '71 (Teil 2)',
-        72: '72', 73: '73', 74: '74'
-      };
-
-      Object.keys(questionMap).forEach(key => {
-        const userAnswer = userAnswers[key] || '';
-        const points = checkAnswer(key, userAnswer);
-        totalPoints += points;
-        const possibleAnswers = correctAnswers[key] ? correctAnswers[key].slice(0, 2).join(', ') : '';
-
-        items.push({
-          label: `Frage ${questionMap[key]}`,
-          userAnswer: userAnswer || '—',
-          correctAnswer: possibleAnswers,
-          isCorrect: points === 2,
-          points: points
-        });
-      });
-
-      Pruefung.showResults(items, `${totalPoints} von 20 Prüfungspunkten (${Math.round(totalPoints / 20 * 100)}%)`);
+    Pruefung.initHV3({
+      65:['jeder vierte','4.','vierte','keine bücher','nicht bücher','liest keine','liest nicht'],
+      66:['bücher werden','weiter','weiterhin','noch','immer noch','in zukunft','gelesen'],
+      '67a':['verfassen','schreiben','eigener','von texte','texte'],
+      '67b':['kreative verarbeitung','verarbeitung','kreative','gelesenen','methoden'],
+      '68a':['lieder','songs','musik'],
+      '68b':['theater','stücke','theaterstücke','interviews','hörspiele'],
+      69:['alltagskommunikation','interpretation','literatur'],
+      '70a':['kreatives schreiben','neue lust','lesen','literatur','nicht mehr mittelpunkt'],
+      '70b':['kreatives schreiben','neue lust','lesen','literatur','mittelpunkt'],
+      '71a':['liebe','erste liebe','freundschaft','familie'],
+      '71b':['freundschaft','familie','liebe'],
+      72:['neues ende','ende','brief','hauptfigur','brief an hauptfigur'],
+      73:['doppelsinnig','lustig','witzig'],
+      74:['autonomie','leser','selbst entscheiden']
+    }, {
+      65:'65', 66:'66', '67a':'67 (Teil 1)', '67b':'67 (Teil 2)',
+      '68a':'68 (Teil 1)', '68b':'68 (Teil 2)', 69:'69',
+      '70a':'70 (Alte)', '70b':'70 (Neue)', '71a':'71 (Teil 1)', '71b':'71 (Teil 2)',
+      72:'72', 73:'73', 74:'74'
     });
   </script>
 
