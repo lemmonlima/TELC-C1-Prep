@@ -3,90 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Modelltest 2 - Mündliche Prüfung: Zusammenfassung | TELC C1 Hochschule</title>
-  <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="../shared/pruefung.css">
+  <title>Modelltest 2 - Mündliche Prüfung (Zusammenfassung) | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../shared/pruefung.css" />
   <script src="../../topbar.js"></script>
   <script src="../../navigation.js"></script>
 </head>
 <body>
   <main class="pruefung-container">
     <h1>Modellprüfung 2 – Mündliche Prüfung</h1>
-    <p class="lead">Teil 1B: Zusammenfassung und Anschlussfragen (ca. 2 Minuten)</p>
-
-    <div class="info-box">
-      <p><strong>📝 Ablauf:</strong></p>
-      <ol style="margin: 0.5rem 0; padding-left: 1.5rem;">
-        <li>Sie hören die Präsentation Ihres Partners/Ihrer Partnerin</li>
-        <li>Sie fassen zusammen, was für Sie besonders bemerkenswert war</li>
-        <li>Sie stellen mindestens eine Frage zum Thema</li>
-      </ol>
-      <p style="margin-top: 0.75rem;"><strong>⏱️ Zeit:</strong> ca. 2 Minuten</p>
-    </div>
+    <h2>Teil 1B: Zusammenfassung</h2>
+    <p class="lead">Zeit: ca. 2 Minuten</p>
 
     <div class="aufgabe-box">
-      <h2>Schritt 1: Welches Thema haben SIE präsentiert?</h2>
-      <p>Wählen Sie das Thema, das Sie in Teil 1A präsentiert haben. Sie werden dann eine <strong>andere</strong> Präsentation zur Zusammenfassung erhalten.</p>
-      
-      <div class="meine-praesentation-box">
-        <!-- TODO: Themen-Buttons einfügen -->
-        <h3 style="margin-top: 0; color: var(--accent-ink, #457b9d);">Teilnehmer/in A - Themen:</h3>
-        <div class="thema-auswahl-grid">
-          <button class="thema-btn" data-thema="a1">Thema 1: TODO</button>
-          <button class="thema-btn" data-thema="a2">Thema 2: TODO</button>
-        </div>
+      <h2>Aufgabe</h2>
+      <p>Sie haben gerade die Präsentation eines Ihrer Gesprächspartner gehört. Fassen Sie die Hauptpunkte dieser Präsentation kurz zusammen.</p>
+      <p><strong>Hinweis:</strong> In der echten Prüfung hören Sie eine der anderen Präsentationen. Für die Übung wählen Sie unten ein Thema aus.</p>
+    </div>
 
-        <h3 style="margin-top: 1.5rem; color: var(--accent-ink, #457b9d);">Teilnehmer/in B - Themen:</h3>
-        <div class="thema-auswahl-grid">
-          <button class="thema-btn" data-thema="b1">Thema 1: TODO</button>
-          <button class="thema-btn" data-thema="b2">Thema 2: TODO</button>
-        </div>
+    <div class="thema-auswahl-container">
+      <h3 style="margin-top: 2rem;">Welches Thema haben SIE präsentiert?</h3>
+      <p><em>(Das System zeigt Ihnen dann eine ANDERE Präsentation zum Zusammenfassen)</em></p>
 
-        <h3 style="margin-top: 1.5rem; color: var(--accent-ink, #457b9d);">Teilnehmer/in C - Themen:</h3>
-        <div class="thema-auswahl-grid">
-          <button class="thema-btn" data-thema="c1">Thema 1: TODO</button>
-          <button class="thema-btn" data-thema="c2">Thema 2: TODO</button>
-        </div>
+      <h3 style="margin-top: 2rem;">Teilnehmer/in A - Themen:</h3>
+      <div class="thema-auswahl-grid">
+        <button class="thema-btn" data-thema="a1">Thema 1: Künstliche Intelligenz im Alltag</button>
+        <button class="thema-btn" data-thema="a2">Thema 2: Lebenslanges Lernen</button>
+      </div>
+
+      <h3 style="margin-top: 2rem;">Teilnehmer/in B - Themen:</h3>
+      <div class="thema-auswahl-grid">
+        <button class="thema-btn" data-thema="b1">Thema 1: Studienwahl und Berufsorientierung</button>
+        <button class="thema-btn" data-thema="b2">Thema 2: Nachhaltigkeit im Studium</button>
+      </div>
+
+      <h3 style="margin-top: 2rem;">Teilnehmer/in C - Themen:</h3>
+      <div class="thema-auswahl-grid">
+        <button class="thema-btn" data-thema="c1">Thema 1: Soziale Medien und Kommunikation</button>
+        <button class="thema-btn" data-thema="c2">Thema 2: Wissenschaft und Gesellschaft</button>
       </div>
     </div>
 
-    <div id="partner-praesentation-container" class="hidden">
-      <div class="aufgabe-box">
-        <h2>Schritt 2: Hören Sie die Präsentation Ihres Partners</h2>
-        <p>Lesen Sie die folgende Präsentation und machen Sie sich Notizen.</p>
-      </div>
-
-      <div class="partner-praesentation-box" id="partner-praesentation-text"></div>
-
-      <div class="aufgabe-box">
-        <h2>Schritt 3: Ihre Zusammenfassung</h2>
-        <p>Fassen Sie zusammen, was für Sie besonders bemerkenswert war. Stellen Sie auch mindestens eine Anschlussfrage.</p>
-        <textarea id="zusammenfassung-input" placeholder="Schreiben Sie hier Ihre Zusammenfassung und Anschlussfrage(n)..."></textarea>
+    <div id="praesentation-text-container" style="display:none;">
+      <div class="text-box">
+        <h3>Präsentation Ihres Gesprächspartners:</h3>
+        <div id="praesentation-text"></div>
       </div>
 
       <div class="aufgabe-box">
-        <h3>Bewertungskriterien (werden beim Kopieren hinzugefügt)</h3>
-        <p style="font-size: 0.95rem; line-height: 1.7;">
-          <strong>Aufgabengerechtheit - Teil 1B (0-4 Punkte):</strong><br>
-          A (4): Entspricht durchgängig | B (2): Weitgehend | C (1): Teilweise | D (0): Nicht
-        </p>
+        <h3>Ihre Aufgabe:</h3>
+        <p>Fassen Sie diese Präsentation in ca. 2 Minuten zusammen. Konzentrieren Sie sich auf:</p>
+        <ul>
+          <li>Das Hauptthema</li>
+          <li>Die wichtigsten Argumente/Punkte</li>
+          <li>Die Schlussfolgerung des Sprechers</li>
+        </ul>
       </div>
 
-      <div class="success-msg" id="success-msg">
-        ✓ Text wurde kopiert! Fügen Sie ihn jetzt in eine KI ein zur Bewertung.
+      <div class="notizen-box">
+        <h3>Ihre Notizen für die Zusammenfassung</h3>
+        <textarea id="zusammenfassung-notizen" placeholder="Notieren Sie die Hauptpunkte, die Sie zusammenfassen möchten..."></textarea>
       </div>
+
+      <button id="fertig-btn" class="check-btn">Zusammenfassung abschließen</button>
     </div>
 
-    <div class="submit-section">
-      <button class="btn primary" id="kopieren-btn" style="display: none;">📋 Für Evaluation kopieren</button>
-    </div>
   </main>
-
   <script src="praesentation-texte.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
     Pruefung.initZusammenfassung();
   </script>
-
 </body>
 </html>
