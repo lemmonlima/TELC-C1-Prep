@@ -15,7 +15,9 @@
    - 4.11: Teil 2 — Diskussion
 5. [Formato de exam-data.js](#5-formato-de-exam-datajs)
 6. [Formato de praesentation-texte.js](#6-formato-de-praesentation-textejs)
-   - 6.1: **Hörverstehen Transkripte y botón de copiar** (NUEVO)
+   - 6.1: **Hörverstehen Transkripte y botones de copiar** (NUEVO)
+     - A) Botones en HTMLs individuales (HV1, HV2, HV3)
+     - B) Botón completo en exam.html (antes de "Ich bin bereit")
 7. [Temas TELC C1 Hochschule — Catálogo completo](#7-temas-típicos-telc-c1-hochschule--catálogo-completo)
    - 7.1: Los 15 campos temáticos generales
    - 7.2: Temas concretos por campo (~150 temas)
