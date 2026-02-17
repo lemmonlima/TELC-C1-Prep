@@ -215,48 +215,7 @@
 
   <script src="../shared/pruefung.js"></script>
   <script>
-    // Correct answers based on the answer key
-    const correctAnswers = {
-      47: 'g',
-      48: 'f',
-      49: 'c',
-      50: 'i',
-      51: 'b',
-      52: 'd',
-      53: 'h',
-      54: 'j'
-    };
-
-    // Store user answers
-    const userAnswers = {};
-
-    // Initialize buttons using Pruefung API
-    Pruefung.initButtons('.auswahl-btn', 'data-sprecher', 'data-wert', userAnswers);
-
-    // Evaluate answers
-    document.getElementById('auswerten-btn').addEventListener('click', () => {
-      const items = [];
-      let correct = 0;
-
-      // Check all answers (questions 47-54)
-      for (let i = 47; i <= 54; i++) {
-        const userAnswer = userAnswers[i] || '—';
-        const correctAnswer = correctAnswers[i];
-        const isCorrect = userAnswer === correctAnswer;
-        
-        if (isCorrect) correct++;
-
-        items.push({
-          label: `Sprecher/in ${i - 46}`,
-          userAnswer: userAnswer,
-          correctAnswer: correctAnswer,
-          isCorrect: isCorrect
-        });
-      }
-
-      const summary = `${correct} von 8 korrekt (${Math.round(correct / 8 * 100)}%)`;
-      Pruefung.showResults(items, summary);
-    });
+    Pruefung.initHV1({ 47:'g', 48:'f', 49:'c', 50:'i', 51:'b', 52:'d', 53:'h', 54:'j' });
   </script>
 
 </body>

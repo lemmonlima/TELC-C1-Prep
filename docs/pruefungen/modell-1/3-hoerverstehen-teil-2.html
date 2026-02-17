@@ -132,51 +132,7 @@
 
   <script src="../shared/pruefung.js"></script>
   <script>
-    // Correct answers based on the answer key
-    const correctAnswers = {
-      55: 'a',
-      56: 'a',
-      57: 'a',
-      58: 'c',
-      59: 'b',
-      60: 'a',
-      61: 'a',
-      62: 'a',
-      63: 'b',
-      64: 'c'
-    };
-
-    // Store user answers
-    const userAnswers = {};
-
-    // Initialize buttons using Pruefung API
-    Pruefung.initButtons('.antwort-btn', 'data-frage', 'data-wert', userAnswers);
-
-    // Evaluate answers
-    document.getElementById('auswerten-btn').addEventListener('click', () => {
-      const items = [];
-      let totalPoints = 0;
-
-      // Check all answers (questions 55-64) - each worth 2 points
-      for (let i = 55; i <= 64; i++) {
-        const userAnswer = userAnswers[i] || '—';
-        const correctAnswer = correctAnswers[i];
-        const isCorrect = userAnswer === correctAnswer;
-        
-        if (isCorrect) totalPoints += 2;
-
-        items.push({
-          label: `Frage ${i}`,
-          userAnswer: userAnswer,
-          correctAnswer: correctAnswer,
-          isCorrect: isCorrect,
-          points: isCorrect ? 2 : 0
-        });
-      }
-
-      const summary = `${totalPoints} von 20 Prüfungspunkten (${Math.round(totalPoints / 20 * 100)}%)`;
-      Pruefung.showResults(items, summary);
-    });
+    Pruefung.initHV2({ 55:'a', 56:'a', 57:'a', 58:'c', 59:'b', 60:'a', 61:'a', 62:'a', 63:'b', 64:'c' });
   </script>
 
 </body>
