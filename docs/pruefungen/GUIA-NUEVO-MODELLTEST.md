@@ -1484,9 +1484,11 @@ Para cada nuevo Modelltest, verifica:
 - [ ] HV Teil 1 transcripción completa (~850-900 palabras, 8 sprecher)
 - [ ] HV Teil 2 transcripción completa (~650-700 palabras, interview)
 - [ ] HV Teil 3 transcripción completa (~700-750 palabras, vortrag)
-- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-1.html`
-- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-2.html`
-- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-3.html`
+- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-1.html` (para sección individual)
+- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-2.html` (para sección individual)
+- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-3.html` (para sección individual)
+- [ ] Botón completo de HV-Transkript agregado en `exam.html` dentro de `screen-hv-ready` (SOLO para modell-2/3/4/5, NO modell-1)
+- [ ] Script de copiar HV completo agregado al final de `exam.html`
 - [ ] Scripts de copiar funcionan correctamente (extraen la sección correcta del .md)
 
 ### Verificación
