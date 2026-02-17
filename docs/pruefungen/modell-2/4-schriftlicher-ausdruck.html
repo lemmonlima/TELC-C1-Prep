@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest 2 - Schriftlicher Ausdruck | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../shared/pruefung.css">
+  <script src="../../topbar.js"></script>
+  <script src="../../navigation.js"></script>
+</head>
+<body>
+  <main class="pruefung-container">
+    <h1>Modellprüfung 2 – Schriftlicher Ausdruck</h1>
+    <p class="lead">70 Minuten • Mindestens 350 Wörter</p>
+
+    <div class="aufgabe-box">
+      <h2>Aufgabenstellung</h2>
+      <p>In einer Seminararbeit sollen Sie ein Thema aus unterschiedlichen Perspektiven beleuchten.</p>
+      <p><strong>Anforderungen:</strong></p>
+      <ul>
+        <li>Sie können die unten stehenden Zitate zur Orientierung verwenden, aber auch andere Aspekte des Themas darlegen.</li>
+        <li>Argumentieren Sie überzeugend und führen Sie Beispiele an.</li>
+        <li>Gliedern Sie Ihren Text in <strong>Einleitung, Hauptteil und Schluss</strong>.</li>
+        <li>Mindestens <strong>350 Wörter</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="aufgabe-box">
+      <h2>Wählen Sie ein Thema</h2>
+      <div class="themen-container">
+        <!-- TODO: Themen und Zitate einfügen -->
+        <div class="thema-box" data-thema="thema1">
+          <h3>Thema 1: <!-- TODO --></h3>
+          <div class="zitat"><!-- TODO: Zitat 1a --></div>
+          <div class="zitat"><!-- TODO: Zitat 1b --></div>
+        </div>
+
+        <div class="thema-box" data-thema="thema2">
+          <h3>Thema 2: <!-- TODO --></h3>
+          <div class="zitat"><!-- TODO: Zitat 2a --></div>
+          <div class="zitat"><!-- TODO: Zitat 2b --></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="editor-container" id="editor-container">
+      <div class="aufgabe-box">
+        <h2 id="selected-thema-title">Ihr Text</h2>
+        <textarea id="text-input" placeholder="Schreiben Sie hier Ihren Text..."></textarea>
+        <div class="word-count" id="word-count">0 Wörter</div>
+      </div>
+    </div>
+
+    <div class="success-msg" id="success-msg">
+      ✓ Text wurde in die Zwischenablage kopiert! Sie können ihn jetzt in eine KI einfügen zur Evaluation.
+    </div>
+
+    <div class="submit-section">
+      <button class="btn primary" id="kopieren-btn" disabled>📋 Für Evaluation kopieren</button>
+    </div>
+  </main>
+
+  <script src="../shared/pruefung.js"></script>
+  <script>
+    Pruefung.initSA({
+      /* TODO: thema1key */
+      thema1: { title: '/* TODO */', zitate: ['/* TODO */', '/* TODO */'] },
+      /* TODO: thema2key */
+      thema2: { title: '/* TODO */', zitate: ['/* TODO */', '/* TODO */'] }
+    });
+  </script>
+
+</body>
+</html>
