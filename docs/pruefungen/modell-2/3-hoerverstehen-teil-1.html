@@ -217,6 +217,28 @@
   <script src="../shared/pruefung.js"></script>
   <script>
     Pruefung.initHV1({ 47:'d', 48:'i', 49:'c', 50:'b', 51:'h', 52:'a', 53:'g', 54:'e' });
+
+    // Transkript kopieren
+    document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
+      const transkriptUrl = 'hoerverstehen-transkript.md';
+      try {
+        const response = await fetch(transkriptUrl);
+        const text = await response.text();
+        
+        // Nur den Teil 1 extrahieren
+        const teil1Start = text.indexOf('## Teil 1: Globalverstehen');
+        const teil2Start = text.indexOf('## Teil 2: Detailverstehen');
+        const teil1Text = text.substring(teil1Start, teil2Start).trim();
+        
+        await navigator.clipboard.writeText(teil1Text);
+        
+        const status = document.getElementById('copy-status');
+        status.style.display = 'block';
+        setTimeout(() => { status.style.display = 'none'; }, 3000);
+      } catch (err) {
+        alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
+      }
+    });
   </script>
 </body>
 </html>
