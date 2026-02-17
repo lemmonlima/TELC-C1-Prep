@@ -857,59 +857,315 @@ La versión `html` es idéntica al `text` pero con markup:
 
 ---
 
-## 7. Temas típicos TELC C1 Hochschule
+## 7. Temas típicos TELC C1 Hochschule — Catálogo completo
 
-El examen TELC C1 Hochschule está orientado al **contexto académico/universitario**. Los temas giran en torno a:
+El examen TELC C1 Hochschule está orientado al **contexto académico/universitario (Hochschule)**. A diferencia del TELC C1 general, los textos y tareas siempre tienen un enfoque científico, universitario o de debate intelectual.
 
-### Temas frecuentes por sección
+---
 
-#### Leseverstehen (textos informativos/académicos)
-- Historia de la ciencia y tecnología (ej: "Vom Abakus bis zur Z3")
-- Educación y universidad (ej: "Seniorenstudium")
-- Pedagogía y didáctica (ej: "Sprachbad im Kindergarten")
-- Investigación médica/biológica
-- Psicología y sociología
-- Lingüística y comunicación
-- Historia contemporánea
-- Medio ambiente y sostenibilidad
-- Economía y mercado laboral
-- Filosofía y ética
+### 7.1 Los 15 campos temáticos generales
 
-#### Sprachbausteine (textos informativos)
-- Investigación y ciencia (ej: "Altersforschung")
-- Salud y medicina
-- Demografía y sociedad
-- Estadísticas y estudios
+Estos son los grandes campos de donde salen TODOS los temas de TODAS las secciones del examen:
 
-#### Hörverstehen
-- **Teil 1** (opiniones cortas): Vida estudiantil, formas de vivienda, hábitos de estudio
-- **Teil 2** (entrevista): Entrevistas con expertos/profesores sobre temas académicos
-- **Teil 3** (conferencia): Ponencias académicas sobre didáctica, literatura, investigación
+| # | Campo temático (DE) | Campo temático (ES) | Frecuencia |
+|---|---------------------|---------------------|------------|
+| 1 | **Bildung & Erziehung** | Educación y formación | Muy alta |
+| 2 | **Wissenschaft & Forschung** | Ciencia e investigación | Muy alta |
+| 3 | **Sprache & Kommunikation** | Lengua y comunicación | Alta |
+| 4 | **Gesellschaft & Soziales** | Sociedad y temas sociales | Alta |
+| 5 | **Medien & Digitalisierung** | Medios y digitalización | Alta |
+| 6 | **Arbeit & Beruf** | Trabajo y profesión | Media-alta |
+| 7 | **Umwelt & Nachhaltigkeit** | Medio ambiente y sostenibilidad | Media |
+| 8 | **Kultur & Kunst** | Cultura y arte | Media |
+| 9 | **Gesundheit & Medizin** | Salud y medicina | Media |
+| 10 | **Psychologie & Verhalten** | Psicología y comportamiento | Media |
+| 11 | **Wirtschaft & Ökonomie** | Economía | Media |
+| 12 | **Geschichte & Politik** | Historia y política | Media |
+| 13 | **Philosophie & Ethik** | Filosofía y ética | Media |
+| 14 | **Technologie & Innovation** | Tecnología e innovación | Media |
+| 15 | **Mobilität & Internationales** | Movilidad e internacionalización | Media |
 
-#### Schriftlicher Ausdruck (ensayo argumentativo)
-- Dos citas contrapuestas sobre:
-  - Literatur vs. praxis
-  - Individualarbeit vs. Teamarbeit
-  - Tradición vs. Modernität
-  - Technologie: Vorteil vs. Nachteil
-  - Bildung: formal vs. informell
+---
 
-#### Mündliche Prüfung
-- **Präsentation:** Erfindungen, Hochschulsysteme, Berufswahl, Kunstfächer, Sprachenlernen, Wissenschaftsdisziplinen
-- **Diskussion:** Citas de pensadores alemanes sobre Bildung, Erfolg, Erziehung, Charakter, Freiheit
+### 7.2 Temas concretos por campo (con ejemplos reales)
 
-### Pool de autores para citas (Diskussion)
+#### 1. Bildung & Erziehung
+- Seniorenstudium / Lebenslanges Lernen (aprender toda la vida)
+- Bologna-Prozess y la reforma universitaria
+- Duales Studium (estudio dual: empresa + universidad)
+- Frühkindliche Bildung / Kindergarten (educación temprana)
+- Schulreformen (reformas escolares)
+- Analphabetismus in Industrieländern (analfabetismo)
+- E-Learning vs. Präsenzunterricht (online vs. presencial)
+- Numerus clausus y acceso a la universidad
+- Studiengebühren (tasas universitarias): pro y contra
+- Inklusion im Bildungssystem (educación inclusiva)
+- PISA-Studien y rendimiento escolar internacional
+- Begabtenförderung vs. Chancengleichheit (talento vs. igualdad)
 
-| Autor | Años | Profesión | Ejemplo de cita |
+#### 2. Wissenschaft & Forschung
+- Geschichte der Technik (ej: "Vom Abakus bis zur Z3")
+- Forschungsethik (ética en la investigación)
+- Interdisziplinäre Forschung (investigación interdisciplinar)
+- Tierversuche in der Forschung (experimentación animal)
+- Plagiate in der Wissenschaft (plagio académico)
+- Peer-Review-Verfahren (proceso de revisión por pares)
+- Open Access vs. Verlagswesen (acceso abierto vs. editoriales)
+- Gentechnik / Biotechnologie (ingeniería genética)
+- Raumfahrt und Weltraumforschung (investigación espacial)
+- Wissenschaftskommunikation (divulgación científica)
+
+#### 3. Sprache & Kommunikation
+- Immersion / Sprachbad (ej: "Sprachbad im Kindergarten")
+- Mehrsprachigkeit (multilingüismo)
+- Deutsch als Fremdsprache (DaF) / Deutsch als Zweitsprache (DaZ)
+- Sprachenpolitik in der EU (política lingüística)
+- Anglizismen in der deutschen Sprache
+- Gebärdensprache (lengua de signos)
+- Sprachverfall vs. Sprachwandel (deterioro vs. evolución)
+- Akademisches Schreiben (escritura académica)
+- Rhetorik und Präsentationstechniken
+- Gendergerechte Sprache (lenguaje inclusivo)
+
+#### 4. Gesellschaft & Soziales
+- Demografischer Wandel (cambio demográfico) — ej: "Altersforschung"
+- Migration und Integration
+- Generationenkonflikte (conflictos generacionales)
+- Ehrenamtliches Engagement (voluntariado)
+- Soziale Ungleichheit (desigualdad social)
+- Urbanisierung vs. Landflucht (urbanización vs. éxodo rural)
+- Alternde Gesellschaft (sociedad envejecida)
+- Obdachlosigkeit (personas sin hogar)
+- Gender Pay Gap (brecha salarial de género)
+- Inklusion von Menschen mit Behinderung
+
+#### 5. Medien & Digitalisierung
+- Fake News / Desinformation
+- Soziale Medien: Einfluss auf Jugendliche
+- Datenschutz und Privatsphäre (protección de datos)
+- Künstliche Intelligenz (inteligencia artificial)
+- Medienkompetenz (competencia mediática)
+- Digitalisierung der Hochschulen
+- Algorithmen und Filterblasen (burbujas de filtro)
+- Cybermobbing (acoso digital)
+- Streaming vs. traditionelle Medien
+- Big Data in Wissenschaft und Gesellschaft
+
+#### 6. Arbeit & Beruf
+- Berufswahl und Studienwahl (elección de carrera)
+- Work-Life-Balance
+- Homeoffice / Remote-Arbeit (teletrabajo)
+- Fachkräftemangel (escasez de profesionales)
+- Gig-Economy / Freelancing
+- Praktika und Berufseinstieg (prácticas e inserción laboral)
+- Automatisierung und Arbeitsplätze
+- Gleichberechtigung im Beruf (igualdad en el trabajo)
+- Burnout und Stress am Arbeitsplatz
+- Unternehmensgründung / Start-ups
+
+#### 7. Umwelt & Nachhaltigkeit
+- Klimawandel (cambio climático)
+- Erneuerbare Energien (energías renovables)
+- Nachhaltiger Konsum (consumo sostenible)
+- Plastikverbrauch / Müllvermeidung
+- Biodiversität (biodiversidad)
+- Stadtplanung und grüne Städte
+- Elektromobilität (movilidad eléctrica)
+- Lebensmittelverschwendung (desperdicio alimentario)
+- Ökologischer Fußabdruck (huella ecológica)
+- Wasser als Ressource
+
+#### 8. Kultur & Kunst
+- Literatur im Unterricht (ej: "Literatur im Unterricht DaF")
+- Kunst- und Musikunterricht in Schulen
+- Interkulturalität (interculturalidad)
+- Museums- und Kulturpolitik
+- Kreativwirtschaft (industria creativa)
+- Kulturelles Erbe / UNESCO-Welterbe
+- Theater und Schauspiel
+- Film und Filmanalyse
+- Buchmarkt und Lesekultur
+- Populärkultur vs. Hochkultur
+
+#### 9. Gesundheit & Medizin
+- Altersforschung (ej: "Neue Ergebnisse aus der Altersforschung")
+- Psychische Gesundheit / Mental Health
+- Ernährung und Lebensstil
+- Impfungen und Impfskepsis
+- Gesundheitssystem: privat vs. gesetzlich
+- Stressmanagement für Studierende
+- Suchtprävention (prevención de adicciones)
+- Telemedizin (telemedicina)
+- Sport und Gesundheit
+- Schlafforschung (investigación del sueño)
+
+#### 10. Psychologie & Verhalten
+- Lernpsychologie (psicología del aprendizaje)
+- Motivation und Selbstdisziplin
+- Prokrastination (procrastinación)
+- Resilienz (resiliencia)
+- Gruppendynamik (dinámica de grupo)
+- Entscheidungsfindung (toma de decisiones)
+- Kreativität und Innovation
+- Emotionale Intelligenz
+- Vorurteile und Stereotype (prejuicios)
+- Glücksforschung (investigación sobre la felicidad)
+
+#### 11. Wirtschaft & Ökonomie
+- Globalisierung: Vor- und Nachteile
+- Sharing Economy (economía colaborativa)
+- Grundeinkommen (renta básica universal)
+- Wirtschaftswachstum vs. Nachhaltigkeit
+- Handelsbeziehungen (relaciones comerciales)
+- Unternehmensethik (ética empresarial)
+- Innovation und Wettbewerb (competencia)
+- Entwicklungshilfe (ayuda al desarrollo)
+- Armut und Reichtum
+- Finanzkompetenz (educación financiera)
+
+#### 12. Geschichte & Politik
+- Zeitgeschichte des 20. Jahrhunderts
+- Europäische Integration (integración europea)
+- Demokratie und Meinungsfreiheit
+- Menschenrechte (derechos humanos)
+- Wissenschaftsgeschichte (historia de la ciencia)
+- Erinnerungskultur (cultura de la memoria)
+- Politische Partizipation (participación política)
+- Wahlverhalten junger Menschen
+- Föderalismus in Deutschland
+- Kolonialismus und seine Folgen
+
+#### 13. Philosophie & Ethik
+- Bioethik (ej: Genforschung, Sterbehilfe)
+- KI-Ethik (ética de la inteligencia artificial)
+- Freiheit vs. Sicherheit
+- Gerechtigkeit (justicia)
+- Verantwortung der Wissenschaft
+- Fortschritt und Moral
+- Tierethik / Tierrechte
+- Wahrheit und Lüge in der Gesellschaft
+- Bildung als Wert (valor de la educación)
+- Toleranz und Pluralismus
+
+#### 14. Technologie & Innovation
+- Internet als Erfindung (ej: praesentation-texte a1)
+- Robotik und Automatisierung
+- Smart Cities / Intelligente Städte
+- 3D-Druck (impresión 3D)
+- Weltraumtechnologie
+- Nanotechnologie
+- Erneuerbare Energietechnologien
+- Virtuelle Realität (VR) / Augmented Reality (AR)
+- Quantencomputer
+- Medizintechnik (tecnología médica)
+
+#### 15. Mobilität & Internationales
+- Auslandsstudium (estudios en el extranjero)
+- Erasmus / akademischer Austausch
+- Kulturschock (choque cultural)
+- Reisen als Bildung (ej: Goethe-Zitat)
+- Internationale Zusammenarbeit
+- Brain Drain / Brain Gain (fuga/ganancia de cerebros)
+- Sprachreisen (viajes lingüísticos)
+- Interkulturelle Kompetenz
+- Weltweite Hochschulkooperationen
+- Visum und Aufenthaltserlaubnis für Studierende
+
+---
+
+### 7.3 Qué temas van en qué sección
+
+No todos los temas son aptos para todas las secciones. Aquí la distribución:
+
+| Sección | Tipo de tema | Campos más frecuentes |
+|---------|--------------|----------------------|
+| **LV Teil 1** (Textrekonstruktion) | Texto informativo/histórico con estructura lineal | 2, 14, 12, 1 |
+| **LV Teil 2** (Selektives Verstehen) | Texto opinativo/argumentativo con funciones comunicativas claras | 1, 4, 3, 8 |
+| **LV Teil 3** (Detailverstehen) | Texto largo periodístico/científico con detalles | 1, 3, 9, 7, 2 |
+| **Sprachbausteine** | Texto informativo con gramática C1 (científico/estadístico) | 2, 9, 4, 11 |
+| **HV Teil 1** (8 Sprecher) | Tema de vida estudiantil/cotidiana con opiniones | 1, 4, 6, 15 |
+| **HV Teil 2** (Interview) | Entrevista con experto sobre tema académico | 2, 1, 3, 8, 10 |
+| **HV Teil 3** (Vortrag) | Conferencia/ponencia universitaria | 3, 8, 1, 2, 10 |
+| **SA** (Schriftlicher Ausdruck) | Debate con 2 citas contrapuestas | 1, 5, 6, 13, 4 |
+| **MP Teil 1A** (Präsentation) | Temas abiertos para presentar/argumentar | 1, 14, 6, 8, 3, 2 |
+| **MP Teil 2** (Diskussion) | Cita filosófica/literaria para debatir | 13, 1, 12, 8 |
+
+> Los números refieren a los 15 campos de la sección 7.1.
+
+---
+
+### 7.4 Pool de autores para citas (Diskussion)
+
+| Autor | Años | Profesión | Citas de ejemplo |
 |-------|------|-----------|-----------------|
-| Goethe | 1749–1832 | Dichter | „Die beste Bildung findet ein kluger Mensch auf Reisen." |
-| Schiller | 1759–1805 | Dichter | „Der Mensch ist nur da ganz Mensch, wo er spielt." |
-| Fontane | 1819–1898 | Schriftsteller | „Am Mut hängt der Erfolg." |
-| Kant | 1724–1804 | Philosoph | „Habe Mut, dich deines eigenen Verstandes zu bedienen!" |
-| Humboldt | 1767–1835 | Bildungsreformer | „Im Grunde sind es die Verbindungen mit Menschen, die dem Leben seinen Wert geben." |
-| Hesse | 1877–1962 | Schriftsteller | „Man muss das Unmögliche versuchen, um das Mögliche zu erreichen." |
-| Lichtenberg | 1742–1799 | Physiker | „Ich weiß nicht, ob es besser wird, wenn es anders wird..." |
-| Einstein | 1879–1955 | Physiker | „Phantasie ist wichtiger als Wissen." |
+| Johann Wolfgang von Goethe | 1749–1832 | Dichter | „Die beste Bildung findet ein kluger Mensch auf Reisen." / „Es ist nicht genug zu wissen, man muss auch anwenden." |
+| Friedrich Schiller | 1759–1805 | Dichter | „Der Mensch ist nur da ganz Mensch, wo er spielt." / „Wer nicht mehr liebt und nicht mehr irrt, der lasse sich begraben." |
+| Theodor Fontane | 1819–1898 | Schriftsteller | „Am Mut hängt der Erfolg." |
+| Immanuel Kant | 1724–1804 | Philosoph | „Habe Mut, dich deines eigenen Verstandes zu bedienen!" / „Aufklärung ist der Ausgang des Menschen aus seiner selbstverschuldeten Unmündigkeit." |
+| Wilhelm von Humboldt | 1767–1835 | Bildungsreformer | „Im Grunde sind es die Verbindungen mit Menschen, die dem Leben seinen Wert geben." |
+| Hermann Hesse | 1877–1962 | Schriftsteller | „Man muss das Unmögliche versuchen, um das Mögliche zu erreichen." |
+| Georg Christoph Lichtenberg | 1742–1799 | Physiker/Aphoristiker | „Ich weiß nicht, ob es besser wird, wenn es anders wird. Aber es muss anders werden, wenn es besser werden soll." |
+| Albert Einstein | 1879–1955 | Physiker | „Phantasie ist wichtiger als Wissen, denn Wissen ist begrenzt." / „Probleme kann man niemals mit derselben Denkweise lösen, durch die sie entstanden sind." |
+| Heinrich Thiersch | 1817–1885 | Theologe | „Auf Kinder wirkt das Vorbild, nicht die Kritik." |
+| Ernst von Feuchtersleben | 1806–1849 | Arzt/Schriftsteller | „Ohne Leiden bildet sich kein Charakter." |
+| Arthur Schopenhauer | 1788–1860 | Philosoph | „Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt." |
+| Friedrich Nietzsche | 1844–1900 | Philosoph | „Wer ein Warum zu leben hat, erträgt fast jedes Wie." |
+| Marie von Ebner-Eschenbach | 1830–1916 | Schriftstellerin | „Wer nichts für andere tut, tut nichts für sich." |
+| Konfuzius | 551–479 v. Chr. | Philosoph | „Der Weg ist das Ziel." / „Lernen ohne zu denken ist nutzlos. Denken ohne zu lernen ist gefährlich." |
+| Seneca | 4 v. Chr.–65 n. Chr. | Philosoph | „Nicht weil es schwer ist, wagen wir es nicht, sondern weil wir es nicht wagen, ist es schwer." |
+| Hannah Arendt | 1906–1975 | Politologin | „Niemand hat das Recht zu gehorchen." |
+| Willy Brandt | 1913–1992 | Politiker | „Der beste Weg, die Zukunft vorauszusagen, ist, sie zu gestalten." |
+
+---
+
+### 7.5 Temas específicos para Schriftlicher Ausdruck (citas contrapuestas)
+
+El SA siempre presenta 2 temas con 2 citas opuestas cada uno. Aquí hay combinaciones típicas:
+
+| Tema | Cita A (positiva/pro) | Cita B (negativa/contra) |
+|------|----------------------|-------------------------|
+| Literatur | „Literatur bietet mehr Orientierung als alles andere." | „Literatur hat nie etwas Negatives verhindern können." |
+| Teamarbeit | „Teamarbeit bietet dem Einzelnen viel mehr Möglichkeiten." | „Gruppenarbeit kostet doch nur Zeit." |
+| Digitalisierung | „Digitale Medien eröffnen völlig neue Bildungschancen." | „Digitale Medien machen oberflächlich und abhängig." |
+| Reisen/Bildung | „Reisen bildet mehr als jedes Buch." | „Wahre Bildung findet am Schreibtisch statt." |
+| Tradition | „Traditionen geben Halt und Orientierung." | „Traditionen hindern uns am Fortschritt." |
+| Spezialisierung | „Nur wer sich spezialisiert, kann Großes erreichen." | „Ein breites Wissen ist wichtiger als Spezialisierung." |
+| Wissenschaft | „Wissenschaft ist die Lösung für alle Probleme der Menschheit." | „Wissenschaft schafft neue Probleme, statt alte zu lösen." |
+| Noten/Bewertung | „Noten sind ein wichtiger Leistungsanreiz." | „Noten zerstören die Freude am Lernen." |
+| Pflichtfächer | „Alle Studierenden sollten Pflichtkurse in Ethik belegen." | „Jeder sollte selbst entscheiden, was er lernt." |
+| Mehrsprachigkeit | „Mehrsprachigkeit ist die Schlüsselkompetenz des 21. Jahrhunderts." | „Es reicht, eine Fremdsprache gut zu beherrschen." |
+
+---
+
+### 7.6 Temas específicos para Mündliche Präsentation
+
+Los temas de presentación son siempre preguntas abiertas que permiten argumentar. Patrones típicos:
+
+**Tipo "Beschreiben Sie…" (descriptivo):**
+- Beschreiben Sie das System der universitären Ausbildung in einem Land Ihrer Wahl.
+- Beschreiben Sie, welche Erfahrungen Sie zu Ihrer Studien- oder Berufswahl bewogen haben.
+- Beschreiben Sie die Medienlandschaft in Ihrem Heimatland.
+- Beschreiben Sie, wie sich die Arbeitswelt in den letzten Jahren verändert hat.
+
+**Tipo "Welche… halten Sie für…?" (valorativo):**
+- Welche Erfindung halten Sie für besonders wichtig?
+- Welche künstlerischen Fächer sollten im Schulunterricht gelehrt werden?
+- Welche Eigenschaften sind für den beruflichen Erfolg am wichtigsten?
+- Welche Rolle spielen soziale Medien im akademischen Kontext?
+
+**Tipo "Vergleichen Sie…" (comparativo):**
+- Welche Fächer sind für die Menschheit wichtiger: Natur- oder Geisteswissenschaften?
+- Was ist wichtiger: Theorie oder Praxis im Studium?
+- Auslandsstudium oder Studium im Heimatland — was hat mehr Vorteile?
+- Ist Online-Lernen genauso effektiv wie Präsenzunterricht?
+
+**Tipo "Wie…?" (explicativo):**
+- Wie man Fremdsprachen lernt und lehrt, ist kulturell unterschiedlich. Beschreiben Sie Unterschiede.
+- Wie hat das Internet die akademische Forschung verändert?
+- Wie können Hochschulen inklusiver werden?
+- Wie beeinflusst der Klimawandel unser tägliches Leben?
+
+> **Regla:** Siempre 3 participantes (A, B, C) × 2 temas cada uno. Los temas deben ser variados (no repetir el mismo campo temático).
 
 ---
 
