@@ -10,9 +10,18 @@
 2. [Estructura de puntos y calificación](#2-estructura-de-puntos-y-calificación)
 3. [Archivos que debes editar por Modelltest](#3-archivos-que-debes-editar-por-modelltest)
 4. [Instrucciones por sección (con longitudes exactas)](#4-instrucciones-por-sección)
+   - 4.1–4.9: Cada sección del examen
+   - 4.10: **Teil 1B — Zusammenfassung** (relación con Teil 1A y praesentation-texte.js)
+   - 4.11: Teil 2 — Diskussion
 5. [Formato de exam-data.js](#5-formato-de-exam-datajs)
 6. [Formato de praesentation-texte.js](#6-formato-de-praesentation-textejs)
-7. [Temas típicos TELC C1 Hochschule](#7-temas-típicos-telc-c1-hochschule)
+7. [Temas TELC C1 Hochschule — Catálogo completo](#7-temas-típicos-telc-c1-hochschule--catálogo-completo)
+   - 7.1: Los 15 campos temáticos generales
+   - 7.2: Temas concretos por campo (~150 temas)
+   - 7.3: Qué temas van en qué sección
+   - 7.4: Pool de autores para citas
+   - 7.5: Temas para Schriftlicher Ausdruck
+   - 7.6: Temas para Mündliche Präsentation
 8. [Checklist final](#8-checklist-final)
 
 ---
@@ -1203,6 +1212,8 @@ Para cada nuevo Modelltest, verifica:
 - [ ] Los temas de SA en el HTML coinciden con los de `exam-data.js`
 - [ ] Los temas de presentación en el HTML coinciden con `exam-data.js` y `praesentation-texte.js`
 - [ ] Las citas de diskussion en el HTML coinciden con `exam-data.js`
+- [ ] Los botones de `5-muendlich-zusammenfassung.html` coinciden con los temas de `5-muendlich-praesentation.html`
+- [ ] Las claves en `praesentation-texte.js` (a1, a2, b1, b2, c1, c2) coinciden con los `data-thema` de ambos archivos mündlich
 - [ ] Los caracteres especiales están correctos: `−` (Unicode minus), `×` (Unicode times), `„"` (comillas alemanas)
 
 ---
