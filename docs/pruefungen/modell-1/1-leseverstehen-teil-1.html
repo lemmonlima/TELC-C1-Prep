@@ -177,45 +177,7 @@
 
   <script src="../shared/pruefung.js"></script>
   <script>
-    // Correct answers
-    const correctAnswers = {
-      1: 'g',
-      2: 'e',
-      3: 'a',
-      4: 'b',
-      5: 'h',
-      6: 'd'
-    };
-
-    // Store user answers
-    const userAnswers = {};
-
-    // Initialize button handling
-    Pruefung.initButtons('.antwort-btn', 'data-luecke', 'data-answer', userAnswers);
-
-    // Evaluate answers
-    document.getElementById('auswerten-btn').addEventListener('click', () => {
-      const items = [];
-      let correct = 0;
-
-      for (let i = 1; i <= 6; i++) {
-        const userAnswer = userAnswers[i] || '—';
-        const correctAnswer = correctAnswers[i];
-        const isCorrect = userAnswer === correctAnswer;
-        
-        if (isCorrect) correct++;
-
-        items.push({
-          label: `Lücke ${i}`,
-          userAnswer: userAnswer,
-          correctAnswer: correctAnswer,
-          isCorrect: isCorrect
-        });
-      }
-
-      const summary = `${correct} von 6 Punkten (${Math.round(correct / 6 * 12)} von 12 Prüfungspunkten)`;
-      Pruefung.showResults(items, summary);
-    });
+    Pruefung.initLV1({ 1:'g', 2:'e', 3:'a', 4:'b', 5:'h', 6:'d' });
   </script>
 
 </body>
