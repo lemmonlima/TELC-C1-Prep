@@ -286,102 +286,10 @@
 
   <script src="../shared/pruefung.js"></script>
   <script>
-    // Correct answers
-    const correctAnswers = {
-      25: 'a',
-      26: 'd',
-      27: 'a',
-      28: 'b',
-      29: 'd',
-      30: 'd',
-      31: 'a',
-      32: 'b',
-      33: 'a',
-      34: 'a',
-      35: 'c',
-      36: 'c',
-      37: 'b',
-      38: 'c',
-      39: 'd',
-      40: 'c',
-      41: 'c',
-      42: 'c',
-      43: 'd',
-      44: 'd',
-      45: 'a',
-      46: 'c',
-      47: 'a'
-    };
-
-    // Store user answers
-    const userAnswers = {};
-
-    // Handle lucke clicks to scroll to option group
-    document.querySelectorAll('.lucke').forEach(lucke => {
-      lucke.addEventListener('click', () => {
-        const luckeNr = lucke.dataset.lucke;
-        // Find the option group with matching title
-        const gruppen = document.querySelectorAll('.option-gruppe');
-        for (const gruppe of gruppen) {
-          const titel = gruppe.querySelector('.option-gruppe-titel');
-          if (titel && titel.textContent.trim() === luckeNr) {
-            gruppe.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            break;
-          }
-        }
-      });
-    });
-
-    // Handle option button clicks
-    document.querySelectorAll('.option-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const luckeNr = btn.dataset.lucke;
-        const wert = btn.dataset.wert;
-        
-        // Deselect other buttons in this group
-        document.querySelectorAll(`.option-btn[data-lucke="${luckeNr}"]`).forEach(b => {
-          b.classList.remove('selected');
-        });
-        
-        // Select this button
-        btn.classList.add('selected');
-        
-        // Update lucke in text
-        const lucke = document.querySelector(`.lucke[data-lucke="${luckeNr}"]`);
-        if (lucke) {
-          lucke.textContent = wert;
-          lucke.classList.add('filled');
-        }
-        
-        // Store answer
-        userAnswers[luckeNr] = wert;
-      });
-    });
-
-    // Evaluate answers
-    document.getElementById('auswerten-btn').addEventListener('click', () => {
-      const items = [];
-      let correct = 0;
-
-      // Check all answers (questions 25-47)
-      for (let i = 25; i <= 47; i++) {
-        const userAnswer = userAnswers[i] || '—';
-        const correctAnswer = correctAnswers[i];
-        const isCorrect = userAnswer === correctAnswer;
-        
-        if (isCorrect) correct++;
-
-        items.push({
-          label: `Lücke ${i}`,
-          userAnswer: userAnswer,
-          correctAnswer: correctAnswer,
-          isCorrect: isCorrect,
-          points: isCorrect ? 1 : 0
-        });
-      }
-
-      const summary = `${correct} von 23 korrekt (${Math.round(correct / 23 * 100)}%)`;
-      Pruefung.showResults(items, summary);
+    Pruefung.initSB({
+      25:'a',26:'d',27:'a',28:'b',29:'d',30:'d',31:'a',32:'b',33:'a',34:'a',
+      35:'c',36:'c',37:'b',38:'c',39:'d',40:'c',41:'c',42:'c',43:'d',44:'d',
+      45:'a',46:'c',47:'a'
     });
   </script>
 
