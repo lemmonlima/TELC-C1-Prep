@@ -130,6 +130,28 @@
   <script src="../shared/pruefung.js"></script>
   <script>
     Pruefung.initHV2({ 55:'b', 56:'a', 57:'b', 58:'c', 59:'b', 60:'b', 61:'b', 62:'b', 63:'b', 64:'a' });
+
+    // Transkript kopieren
+    document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
+      const transkriptUrl = 'hoerverstehen-transkript.md';
+      try {
+        const response = await fetch(transkriptUrl);
+        const text = await response.text();
+        
+        // Nur den Teil 2 extrahieren
+        const teil2Start = text.indexOf('## Teil 2: Detailverstehen');
+        const teil3Start = text.indexOf('## Teil 3: Informationstransfer');
+        const teil2Text = text.substring(teil2Start, teil3Start).trim();
+        
+        await navigator.clipboard.writeText(teil2Text);
+        
+        const status = document.getElementById('copy-status');
+        status.style.display = 'block';
+        setTimeout(() => { status.style.display = 'none'; }, 3000);
+      } catch (err) {
+        alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
+      }
+    });
   </script>
 </body>
 </html>
