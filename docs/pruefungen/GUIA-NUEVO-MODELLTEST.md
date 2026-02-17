@@ -1184,7 +1184,7 @@ Para cada nuevo Modelltest, verifica:
 - [ ] `3-hoerverstehen-teil-3.html` — Slides + 10+ lücken + keywords + labels
 - [ ] `4-schriftlicher-ausdruck.html` — 2 temas × 2 citas + config JS
 - [ ] `5-muendlich-praesentation.html` — 6 temas (A1,A2,B1,B2,C1,C2) + config JS
-- [ ] `5-muendlich-zusammenfassung.html` — Verificar que existe (genérico)
+- [ ] `5-muendlich-zusammenfassung.html` — Botones actualizados con los nombres de temas de Teil 1A (a1, a2, b1, b2, c1, c2)
 - [ ] `5-muendlich-diskussion.html` — 4 citas con autor + aspectos + config JS
 
 ### JavaScript (datos)
