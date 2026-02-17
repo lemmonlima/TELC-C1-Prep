@@ -146,130 +146,13 @@
 
   <script src="../shared/pruefung.js"></script>
   <script>
-    const themaTexte = {
+    Pruefung.initPraesentation({
       'a1': 'Welche Erfindung halten Sie für besonders wichtig? Hat diese Erfindung nur Vorteile oder auch Nachteile? Bitte begründen Sie Ihre Meinung.',
       'a2': 'Beschreiben Sie das System der universitären Ausbildung in einem Land Ihrer Wahl.',
       'b1': 'Beschreiben Sie, welche Erfahrungen oder bisherigen Tätigkeiten Sie zu Ihrer Studien- oder Berufswahl bewogen haben.',
       'b2': 'Welche künstlerischen Fächer (Kunst, Musik, Tanz, Theater etc.) sollten im Schulunterricht unbedingt gelehrt werden? Bitte begründen Sie Ihre Meinung. Gibt es Gegenargumente?',
       'c1': 'Wie man Fremdsprachen lernt und lehrt, ist kulturell unterschiedlich. Beschreiben Sie Gemeinsamkeiten und Unterschiede, die Ihnen im Umgang mit Lehrern und Lehrbüchern aus verschiedenen Ländern aufgefallen sind.',
       'c2': 'Welche Fächer sind für die Menschheit wichtiger: Natur- oder Geisteswissenschaften? Begründen Sie Ihre Meinung. Gibt es Gegenargumente?'
-    };
-
-    document.getElementById('thema-auswahl').addEventListener('change', (e) => {
-      const box = document.getElementById('thema-beschreibung');
-      const text = document.getElementById('thema-text');
-      const wert = e.target.value;
-      if (wert && themaTexte[wert]) {
-        text.textContent = themaTexte[wert];
-        box.classList.remove('hidden');
-      } else {
-        box.classList.add('hidden');
-      }
-    });
-
-    document.getElementById('kopieren-btn').addEventListener('click', () => {
-      const sel = document.getElementById('thema-auswahl');
-      const wert = sel.value;
-      const name = sel.options[sel.selectedIndex].text;
-      const text = document.getElementById('praesentation-text').value;
-
-      if (!wert) { alert('Bitte wählen Sie zuerst ein Thema aus.'); return; }
-      if (!text.trim()) { alert('Bitte schreiben Sie zuerst Ihre Präsentation.'); return; }
-
-      const aiText = `# TELC C1 Hochschule - Mündliche Prüfung: Präsentation (Teil 1A)
-
-## GEWÄHLTES THEMA
-${name}
-
-**Vollständige Aufgabe:**
-${themaTexte[wert]}
-
-## PRÄSENTATION DES KANDIDATEN
-
-${text}
-
----
-
-## OFFIZIELLE TELC BEWERTUNGSKRITERIEN
-
-Bitte bewerten Sie diese Präsentation nach den offiziellen TELC C1 Hochschule Kriterien:
-
-### INHALTLICHE ANGEMESSENHEIT
-
-**1. Aufgabengerechtheit - Teil 1A Präsentation (0-6 Punkte)**
-
-*Erfüllung der Aufgabe, aktive Beteiligung, Strukturiertheit der Rede, Präzision und Klarheit, strategische Kompetenz*
-
-- **A (6 Punkte):** TN-Leistung entspricht (fast) durchgängig den Anforderungen der jeweiligen Aufgabe.
-- **B (4 Punkte):** TN-Leistung entspricht weitgehend den Anforderungen der jeweiligen Aufgabe.
-- **C (2 Punkte):** TN-Leistung entspricht den Anforderungen in mehreren Merkmalen nicht.
-- **D (0 Punkte):** TN-Leistung entspricht den Anforderungen (fast) überhaupt nicht.
-
----
-
-### SPRACHLICHE ANGEMESSENHEIT
-
-**2. Flüssigkeit (0-8 Punkte)**
-- A (8): Durchgängig flüssig und natürlich | B (5): Weitgehend flüssig | C (2): Teilweise gestört | D (0): Viele Pausen
-
-**3. Repertoire (0-8 Punkte)**
-- A (8): C1-Kompetenz durchgängig | B (5): Gelegentliche Einschränkungen | C (2): Oft Einschränkungen | D (0): Fast nur einfache Strukturen
-
-**4. Grammatische Richtigkeit (0-8 Punkte)**
-- A (8): Hohes Maß an Korrektheit | B (5): Fehler nur in komplexen Strukturen | C (2): Etliche Fehler | D (0): Zahlreiche Fehler
-
-**5. Aussprache und Intonation (0-8 Punkte)**
-*Hinweis: Da dies ein schriftlicher Text ist, bewerten Sie, ob er natürlich und gut vorlesbar wäre.*
-- A (8): Klar und natürlich | B (5): Größtenteils klar | C (2): Fehler erfordern erhöhte Aufmerksamkeit | D (0): Zahlreiche Fehler
-
----
-
-**Maximal: 38 Punkte** (6 + 8+8+8+8)
-
-## BEWERTUNGSAUFTRAG
-
-Bitte geben Sie für jedes Kriterium:
-1. Die Bewertung (A/B/C/D) mit Punktzahl
-2. Eine kurze, konkrete Begründung (2-3 Sätze)
-3. Spezifische Beispiele aus dem Text
-4. Am Ende: Bewertungstabelle, Gesamtnote, Stärken, Verbesserungsvorschläge
-
----
-
-## ZUSAMMENFASSUNG DER BEWERTUNG
-
-Geben Sie am Ende eine Bewertungstabelle in folgendem Format:
-
-| Kriterium                        | Note | Punkte |
-|----------------------------------|------|--------|
-| 1. Aufgabengerechtheit (Teil 1A) | _/A  | _/6    |
-| 2. Flüssigkeit                   | _/A  | _/8    |
-| 3. Repertoire                    | _/A  | _/8    |
-| 4. Grammatische Richtigkeit      | _/A  | _/8    |
-| 5. Aussprache und Intonation     | _/A  | _/8    |
-| **GESAMT**                       |      | _/38   |
-
-Berechnen Sie die Gesamtnote:
-- 38–32 Punkte → Sehr gut
-- 31–25 Punkte → Gut
-- 24–18 Punkte → Befriedigend
-- 17–12 Punkte → Ausreichend (Bestanden)
-- 11–0  Punkte → Nicht bestanden`;
-
-      navigator.clipboard.writeText(aiText).then(() => {
-        const info = document.getElementById('kopiert-info');
-        info.classList.add('show');
-        setTimeout(() => info.classList.remove('show'), 5000);
-      }).catch(err => alert('Fehler beim Kopieren: ' + err));
-    });
-
-    document.getElementById('reset-btn').addEventListener('click', () => {
-      if (confirm('Möchten Sie wirklich alles zurücksetzen?')) {
-        document.getElementById('thema-auswahl').value = '';
-        document.getElementById('praesentation-text').value = '';
-        document.getElementById('thema-beschreibung').classList.add('hidden');
-        document.getElementById('kopiert-info').classList.remove('show');
-      }
     });
   </script>
 
