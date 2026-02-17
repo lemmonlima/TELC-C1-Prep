@@ -172,6 +172,27 @@
       '71a':'71 (Teil 1)', '71b':'71 (Teil 2)',
       72:'72', 73:'73', 74:'74'
     });
+
+    // Transkript kopieren
+    document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
+      const transkriptUrl = 'hoerverstehen-transkript.md';
+      try {
+        const response = await fetch(transkriptUrl);
+        const text = await response.text();
+        
+        // Nur den Teil 3 extrahieren
+        const teil3Start = text.indexOf('## Teil 3: Informationstransfer');
+        const teil3Text = text.substring(teil3Start).trim();
+        
+        await navigator.clipboard.writeText(teil3Text);
+        
+        const status = document.getElementById('copy-status');
+        status.style.display = 'block';
+        setTimeout(() => { status.style.display = 'none'; }, 3000);
+      } catch (err) {
+        alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
+      }
+    });
   </script>
 </body>
 </html>
