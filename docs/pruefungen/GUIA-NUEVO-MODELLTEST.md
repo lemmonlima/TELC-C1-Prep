@@ -849,6 +849,8 @@ const EXAM_DATA = {
     }
   },
 
+  hvTranskript: 'Transkript completo del Hörverstehen (HV1 + HV2 + HV3).\n\nSprecher 1: ...\nSprecher 2: ...',
+
   diskussionZitate: {
     1: { text:'Cita 1.', autor:'Autor',
          aspekte:['Aspecto 1','Aspecto 2','Aspecto 3','Aspecto 4'] },
@@ -861,6 +863,8 @@ const EXAM_DATA = {
   }
 };
 ```
+
+> **`hvTranskript`**: Texto plano con el transkript completo del audio del Hörverstehen. Si el campo no existe o empieza con `/*`, el botón "Transkript kopieren" no aparece en la pantalla de preparación del HV. Se muestra en `screen-hv-ready` para que el usuario lo copie y use con un TTS o para seguir el audio.
 
 ### Notas sobre los valores de respuesta
 
