@@ -9,20 +9,41 @@
   <script src="../../topbar.js"></script>
   <script src="../../navigation.js"></script>
   <style>
+    .modell-main {
+      max-width: 900px; margin: 2rem auto; padding: 2rem;
+    }
     .test-link {
       display: block;
       padding: 1rem 1.5rem;
+      min-height: 48px;
       background: var(--panel-bg, #1a1916);
       border: 1px solid var(--border-subtle, #2a2825);
       border-radius: 6px;
       text-decoration: none;
       color: inherit;
       transition: all 0.2s ease;
+      -webkit-tap-highlight-color: rgba(69, 123, 157, 0.2);
     }
-    .test-link:hover {
+    .test-link:hover, .test-link:active {
       border-color: var(--accent-ink, #457b9d);
-      transform: translateX(4px);
       background: rgba(69, 123, 157, 0.1);
+    }
+    .exam-cta {
+      display: block; padding: 1.25rem 2rem;
+      background: var(--accent-red, #e63946); color: white;
+      border-radius: 8px; text-decoration: none; text-align: center;
+      font-weight: 700; font-size: 1.2rem; transition: all 0.2s;
+      -webkit-tap-highlight-color: rgba(230, 57, 70, 0.3);
+    }
+    .exam-cta:active { transform: scale(0.98); }
+    .section-title {
+      color: var(--accent-red, #e63946); margin-bottom: 1rem; font-size: 1.1rem;
+    }
+    @media (max-width: 768px) {
+      .modell-main { padding: 1rem; margin: 0.5rem auto; }
+      .test-link { padding: 0.85rem 1rem; font-size: 0.9rem; }
+      .section-title { font-size: 1rem; }
+      .exam-cta { padding: 1rem 1.5rem; font-size: 1.1rem; }
     }
   </style>
 </head>
