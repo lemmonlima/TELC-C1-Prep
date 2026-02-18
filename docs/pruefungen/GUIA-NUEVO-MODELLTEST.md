@@ -1530,19 +1530,19 @@ Los temas de presentación son siempre preguntas abiertas que permiten argumenta
 
 Para cada nuevo Modelltest, verifica:
 
-### HTML (contenido)
+### HTML (contenido en `<div data-content>` + respuestas en `<script>`)
 
-- [ ] `1-leseverstehen-teil-1.html` — Texto (~250 palabras) + 8+1 opciones + respuestas
-- [ ] `1-leseverstehen-teil-2.html` — Texto 5 párrafos (~700 palabras) + 6 preguntas + respuestas
-- [ ] `1-leseverstehen-teil-3.html` — Texto largo (~1100 palabras) + 11 aussagen + 1 global + respuestas
-- [ ] `2-sprachbausteine.html` — Texto (~250 palabras) + 23 lücken × 4 opciones + respuestas
-- [ ] `3-hoerverstehen-teil-1.html` — Tema + 10 aussagen + respuestas
-- [ ] `3-hoerverstehen-teil-2.html` — Tema + 10 preguntas × 3 opciones + respuestas
-- [ ] `3-hoerverstehen-teil-3.html` — Slides + 10+ lücken + keywords + labels
-- [ ] `4-schriftlicher-ausdruck.html` — 2 temas × 2 citas + config JS
-- [ ] `5-muendlich-praesentation.html` — 6 temas (A1,A2,B1,B2,C1,C2) + config JS
-- [ ] `5-muendlich-zusammenfassung.html` — Botones actualizados con los nombres de temas de Teil 1A (a1, a2, b1, b2, c1, c2)
-- [ ] `5-muendlich-diskussion.html` — 4 citas con autor + aspectos + config JS
+- [ ] `1-leseverstehen-teil-1.html` — `data-content="text"` (~250 pal.) + `data-content="options"` (a–h, z) + `Pruefung.initLV1()`
+- [ ] `1-leseverstehen-teil-2.html` — `data-content="text"` (5 absätze ~700 pal.) + `data-content="fragen"` (6) + `Pruefung.initLV2()`
+- [ ] `1-leseverstehen-teil-3.html` — `data-content="text"` (~1100 pal.) + `data-content="aussagen"` (11) + `data-content="global"` (3) + `Pruefung.initLV3()`
+- [ ] `2-sprachbausteine.html` — `data-content="text"` (23 lücken) + `data-content="optionen"` (23 × 4) + `Pruefung.initSB()`
+- [ ] `3-hoerverstehen-teil-1.html` — `data-content="thema"` + `data-content="aussagen"` (a–j) + `Pruefung.initHV1()`
+- [ ] `3-hoerverstehen-teil-2.html` — `data-content="thema"` + `data-content="fragen"` (10 × 3) + `Pruefung.initHV2()`
+- [ ] `3-hoerverstehen-teil-3.html` — `data-content="thema"` + `data-content="slides"` (con inputs) + `Pruefung.initHV3()`
+- [ ] `4-schriftlicher-ausdruck.html` — `data-content="themen"` (2 × 2 citas) + `Pruefung.initSA()`
+- [ ] `5-muendlich-praesentation.html` — `data-content="teilnehmer"` + `data-content="select"` + `Pruefung.initPraesentation()`
+- [ ] `5-muendlich-zusammenfassung.html` — `data-content="themen"` (botones a1–c2 de Teil 1A) + `Pruefung.initZusammenfassung()`
+- [ ] `5-muendlich-diskussion.html` — `data-content="zitate"` + `data-content="simulation"` + `Pruefung.initDiskussion()`
 
 ### JavaScript (datos)
 
