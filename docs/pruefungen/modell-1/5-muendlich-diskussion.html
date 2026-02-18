@@ -10,30 +10,9 @@
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 1 – Mündliche Prüfung</h1>
-    <p class="lead">Teil 2: Diskussion (6 Minuten)</p>
+  <main class="pruefung-container" id="section-root" data-section="diskussion" data-modell="1">
 
-    <div class="info-box">
-      <p><strong>⏱️ Dauer:</strong> ca. 6 Minuten</p>
-      <p><strong>👥 Format:</strong> Diskussion mit Ihrem/Ihrer Prüfungspartner/in</p>
-      <p><strong>📝 Hinweis:</strong> Keine Vorbereitungszeit - Sie erhalten das Thema direkt im Prüfungsraum</p>
-    </div>
-
-    <div class="aufgabe-box">
-      <h2>Aufgabe</h2>
-      <p>Diskutieren Sie mit Ihrer Partnerin oder Ihrem Partner über eine der folgenden Aussagen:</p>
-      <ul style="line-height: 1.8; margin: 1rem 0;">
-        <li>Wie verstehen Sie diese Aussage?</li>
-        <li>Inwiefern teilen Sie diese Ansicht?</li>
-        <li>Geben Sie dazu Gründe und Beispiele an.</li>
-        <li>Gehen Sie auch auf die Argumente Ihrer Partnerin/Ihres Partners ein.</li>
-      </ul>
-      <p><strong>Es soll ein Austausch von Argumenten stattfinden.</strong></p>
-    </div>
-
-    <div class="zitat-container">
-      
+    <div data-content="zitate" hidden>
       <div class="zitat-box">
         <div class="zitat-nummer">Diskussionsthema 1</div>
         <div class="zitat-text">
@@ -109,71 +88,39 @@
           </ul>
         </div>
       </div>
-
     </div>
 
-    <div class="aufgabe-box">
-      <h3>Tipps für die Diskussion</h3>
-      <ul style="line-height: 1.8;">
-        <li><strong>Aktiv zuhören:</strong> Auf die Argumente des Partners eingehen</li>
-        <li><strong>Klar argumentieren:</strong> Beispiele und Begründungen nennen</li>
-        <li><strong>Respektvoll bleiben:</strong> Auch bei unterschiedlichen Meinungen</li>
-        <li><strong>Nachfragen:</strong> „Wie meinst du das?" / „Könntest du ein Beispiel nennen?"</li>
-        <li><strong>Position einnehmen:</strong> Eigene Meinung klar vertreten, aber auch Kompromisse zeigen</li>
-        <li><strong>Sprache:</strong> Redemittel nutzen wie „Meiner Meinung nach...", „Ich sehe das anders, weil..."</li>
-      </ul>
-    </div>
-
-    <div class="aufgabe-box" style="margin-top: 3rem;">
-      <h2>Diskussionssimulation mit KI</h2>
-      <p>Wählen Sie ein Diskussionsthema und kopieren Sie die Aufgabe. Eine KI wird dann als Ihr Diskussionspartner agieren und Sie nach TELC C1 Standards bewerten.</p>
-
-      <div class="themen-container">
-        <div class="thema-box" data-zitat="1">
-          <h3>Diskussionsthema 1</h3>
-          <div class="zitat">„Die beste Bildung findet ein kluger Mensch auf Reisen."</div>
-          <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Goethe</p>
-        </div>
-
-        <div class="thema-box" data-zitat="2">
-          <h3>Diskussionsthema 2</h3>
-          <div class="zitat">„Am Mut hängt der Erfolg."</div>
-          <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Fontane</p>
-        </div>
-
-        <div class="thema-box" data-zitat="3">
-          <h3>Diskussionsthema 3</h3>
-          <div class="zitat">„Auf Kinder wirkt das Vorbild, nicht die Kritik."</div>
-          <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Thiersch</p>
-        </div>
-
-        <div class="thema-box" data-zitat="4">
-          <h3>Diskussionsthema 4</h3>
-          <div class="zitat">„Ohne Leiden bildet sich kein Charakter."</div>
-          <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Feuchtersleben</p>
-        </div>
+    <div data-content="simulation" hidden>
+      <div class="thema-box" data-zitat="1">
+        <h3>Diskussionsthema 1</h3>
+        <div class="zitat">„Die beste Bildung findet ein kluger Mensch auf Reisen."</div>
+        <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Goethe</p>
       </div>
 
-      <div id="zitat-vorschau" class="hidden" style="margin: 1.5rem 0; padding: 1rem; background: var(--panel-bg, #1a1916); border-left: 3px solid var(--accent-ink, #457b9d); border-radius: 4px;">
-        <strong>Mögliche Diskussionsaspekte:</strong>
-        <ul id="diskussionsaspekte-vorschau" style="margin-top: 0.5rem; line-height: 1.6;"></ul>
+      <div class="thema-box" data-zitat="2">
+        <h3>Diskussionsthema 2</h3>
+        <div class="zitat">„Am Mut hängt der Erfolg."</div>
+        <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Fontane</p>
       </div>
 
-      <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-        <button id="kopieren-diskussion-btn" class="btn primary">📋 Diskussionsaufgabe kopieren (für KI)</button>
+      <div class="thema-box" data-zitat="3">
+        <h3>Diskussionsthema 3</h3>
+        <div class="zitat">„Auf Kinder wirkt das Vorbild, nicht die Kritik."</div>
+        <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Thiersch</p>
       </div>
 
-      <div id="kopiert-info-diskussion" class="success-msg">
-        ✓ Aufgabe wurde in die Zwischenablage kopiert! Fügen Sie sie jetzt in eine KI ein (z.B. ChatGPT, Claude) um die Diskussion zu beginnen.
+      <div class="thema-box" data-zitat="4">
+        <h3>Diskussionsthema 4</h3>
+        <div class="zitat">„Ohne Leiden bildet sich kein Charakter."</div>
+        <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Feuchtersleben</p>
       </div>
     </div>
 
-    <div class="submit-section">
-    </div>
   </main>
-
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
+    SectionBuilder.diskussion(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initDiskussion({
       1: { text:'Die beste Bildung findet ein kluger Mensch auf Reisen.', autor:'Johann Wolfgang von Goethe (1749–1832), Dichter',
            aspekte:['Was bedeutet „Bildung durch Reisen"?','Welche Erfahrungen haben Sie selbst gemacht?','Kann man auch ohne Reisen gebildet werden?','Welche Rolle spielen Bücher, Internet, persönliche Begegnungen?'] },
@@ -185,6 +132,5 @@
            aspekte:['Müssen Menschen leiden, um zu wachsen?','Welche positiven Erfahrungen prägen auch den Charakter?','Gibt es Beispiele aus Geschichte oder persönlicher Erfahrung?','Ist „Leiden" immer notwendig für Entwicklung?'] }
     });
   </script>
-
 </body>
 </html>
