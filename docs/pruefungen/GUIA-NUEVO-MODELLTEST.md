@@ -1,6 +1,6 @@
 # Guía completa para crear un nuevo Modelltest TELC C1 Hochschule
 
-> Esta guía documenta **todo** lo necesario para rellenar un Modelltest (2–5) a partir de las plantillas existentes. No necesitas modificar código, CSS ni lógica — solo contenido y datos.
+> Esta guía documenta **todo** lo necesario para rellenar un Modelltest (2–5) a partir de las plantillas existentes. Los HTML usan **SectionBuilder** para generar todo el boilerplate — solo necesitas rellenar los `<div data-content>` con contenido y las respuestas correctas.
 
 ---
 
@@ -1534,8 +1534,11 @@ Para cada nuevo Modelltest, verifica:
 
 | Esfuerzo | Porcentaje |
 |----------|-----------|
-| Rellenar HTML con contenido de PDFs | 90% |
-| Actualizar exam-data.js con respuestas | 5% |
-| Escribir/copiar praesentation-texte.js | 5% |
+| Rellenar `<div data-content>` con contenido de PDFs | 85% |
+| Actualizar respuestas en `Pruefung.initXXX()` | 5% |
+| Actualizar `exam-data.js` con las mismas respuestas | 5% |
+| Escribir/copiar `praesentation-texte.js` | 5% |
 
-**No necesitas:** cambiar lógica, crear componentes, modificar CSS, tocar archivos compartidos.
+**No necesitas:** cambiar lógica, crear componentes, modificar CSS, tocar archivos en `shared/`.
+
+**Arquitectura:** Cada HTML solo contiene datos únicos en `<div data-content hidden>`. Todo el boilerplate (instrucciones, botones, resultados, estructura visual) lo genera `SectionBuilder` desde `shared/section-builders.js`.
