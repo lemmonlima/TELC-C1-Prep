@@ -1003,101 +1003,45 @@ Esta transkripte sind für Übungszwecke gedacht. In der echten Prüfung erhalte
 
 ### Botón "Transkript kopieren" en los HTMLs
 
+> **Nota:** Con el nuevo formato SectionBuilder, el botón de copiar transcripción se puede agregar en el `<script>` inline, después de que el builder genere el HTML. El builder no incluye esta funcionalidad por defecto — es un feature adicional por sección.
+
 **Hay DOS lugares donde agregar botones de copiar:**
 
 #### A) En cada sección individual de HV (para práctica por sección)
 
-Cada uno de los tres archivos HTML de Hörverstehen debe incluir un botón que copie la transcripción correspondiente al portapapeles.
-
-**Paso 1:** Agregar el botón después de la `aufgabe-box` inicial:
-
-```html
-<div class="aufgabe-box" style="background-color: #fff3cd; border-left: 4px solid #ffc107;">
-  <h3>📄 Transkript für Übungszwecke</h3>
-  <p>In der echten Prüfung erhalten Sie keine Transkription. Für die Übung können Sie das Transkript hier kopieren:</p>
-  <button id="copy-transkript-btn" class="check-btn" style="background-color: #ffc107; color: #000;">Transkript kopieren</button>
-  <p id="copy-status" style="margin-top: 0.5rem; color: #28a745; display: none;">✓ Transkript in Zwischenablage kopiert!</p>
-</div>
-```
-
-**Paso 2:** Agregar el script al final del HTML (antes de `</body>`), ajustado para cada Teil:
-
-**Para HV Teil 1:**
+Agregar en el `<script>` inline, **después** de la llamada a `SectionBuilder.hvX(...)`, el código que inyecta un botón y su handler. Ejemplo para HV Teil 1:
 
 ```javascript
+SectionBuilder.hv1(document.getElementById('section-root'), document.getElementById('section-root'));
+Pruefung.initHV1({ /* respuestas */ });
+
 // Transkript kopieren
-document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
-  const transkriptUrl = 'hoerverstehen-transkript.md';
-  try {
-    const response = await fetch(transkriptUrl);
-    const text = await response.text();
-    
-    // Nur den Teil 1 extrahieren
-    const teil1Start = text.indexOf('## Teil 1: Globalverstehen');
-    const teil2Start = text.indexOf('## Teil 2: Detailverstehen');
-    const teil1Text = text.substring(teil1Start, teil2Start).trim();
-    
-    await navigator.clipboard.writeText(teil1Text);
-    
-    const status = document.getElementById('copy-status');
-    status.style.display = 'block';
-    setTimeout(() => { status.style.display = 'none'; }, 3000);
-  } catch (err) {
-    alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
-  }
-});
+(function() {
+  const root = document.getElementById('section-root');
+  const box = document.createElement('div');
+  box.className = 'aufgabe-box';
+  box.style.cssText = 'background-color: #fff3cd; border-left: 4px solid #ffc107; margin-top: 1.5rem;';
+  box.innerHTML = '<h3>Transkript für Übungszwecke</h3>'
+    + '<p>In der echten Prüfung erhalten Sie keine Transkription.</p>'
+    + '<button id="copy-transkript-btn" class="check-btn" style="background-color:#ffc107;color:#000;">Transkript kopieren</button>'
+    + '<p id="copy-status" style="margin-top:0.5rem;color:#28a745;display:none;">✓ Kopiert!</p>';
+  root.appendChild(box);
+
+  document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
+    try {
+      const text = await (await fetch('hoerverstehen-transkript.md')).text();
+      const start = text.indexOf('## Teil 1: Globalverstehen');
+      const end   = text.indexOf('## Teil 2: Detailverstehen');
+      await navigator.clipboard.writeText(text.substring(start, end).trim());
+      const s = document.getElementById('copy-status');
+      s.style.display = 'block';
+      setTimeout(() => s.style.display = 'none', 3000);
+    } catch (e) { alert('Fehler beim Kopieren.'); }
+  });
+})();
 ```
 
-**Para HV Teil 2:**
-
-```javascript
-// Transkript kopieren
-document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
-  const transkriptUrl = 'hoerverstehen-transkript.md';
-  try {
-    const response = await fetch(transkriptUrl);
-    const text = await response.text();
-    
-    // Nur den Teil 2 extrahieren
-    const teil2Start = text.indexOf('## Teil 2: Detailverstehen');
-    const teil3Start = text.indexOf('## Teil 3: Informationstransfer');
-    const teil2Text = text.substring(teil2Start, teil3Start).trim();
-    
-    await navigator.clipboard.writeText(teil2Text);
-    
-    const status = document.getElementById('copy-status');
-    status.style.display = 'block';
-    setTimeout(() => { status.style.display = 'none'; }, 3000);
-  } catch (err) {
-    alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
-  }
-});
-```
-
-**Para HV Teil 3:**
-
-```javascript
-// Transkript kopieren
-document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
-  const transkriptUrl = 'hoerverstehen-transkript.md';
-  try {
-    const response = await fetch(transkriptUrl);
-    const text = await response.text();
-    
-    // Nur den Teil 3 extrahieren
-    const teil3Start = text.indexOf('## Teil 3: Informationstransfer');
-    const teil3Text = text.substring(teil3Start).trim();
-    
-    await navigator.clipboard.writeText(teil3Text);
-    
-    const status = document.getElementById('copy-status');
-    status.style.display = 'block';
-    setTimeout(() => { status.style.display = 'none'; }, 3000);
-  } catch (err) {
-    alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
-  }
-});
-```
+Para HV Teil 2 y 3, ajustar los `indexOf` para extraer la sección correcta del `.md`.
 
 ### Consejos para escribir transcripciones realistas
 
