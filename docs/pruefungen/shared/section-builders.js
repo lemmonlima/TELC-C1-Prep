@@ -374,6 +374,7 @@ const SectionBuilder = (() => {
         <p style="margin-top:1.5rem;font-size:1.1rem;font-weight:bold;" id="punkte"></p>
       </div>`;
       html += submit();
+      html += sectionNav();
     }
 
     target.innerHTML = html;
@@ -425,6 +426,7 @@ const SectionBuilder = (() => {
     <div class="submit-section">
       <button class="btn primary" id="kopieren-btn" disabled>📋 Für Evaluation kopieren</button>
     </div>`;
+    if (!opts.exam) html += sectionNav();
 
     target.innerHTML = html;
   }
