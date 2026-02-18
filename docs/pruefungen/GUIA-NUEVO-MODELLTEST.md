@@ -547,32 +547,43 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 | Longitud mínima | 350 palabras |
 | Tiempo | 70 minutos |
 
-**Cómo rellenar:**
-
-1. Los 2 temas con citas:
+**Estructura del archivo** (`data-section="sa"`):
 
 ```html
-<div class="thema-box" data-thema="clave_tema_1">
-  <h3>Thema 1: Nombre del Tema</h3>
-  <div class="zitat">„Primera cita aquí."</div>
-  <div class="zitat">„Segunda cita (opinión contraria)."</div>
-</div>
+<main class="pruefung-container" id="section-root" data-section="sa" data-modell="N">
+
+  <div data-content="themen" hidden>
+    <div data-thema="literatur">
+      <h3>Thema 1: Literatur</h3>
+      <div class="zitat">„Literatur hat nie etwas Negatives verhindern können."</div>
+      <div class="zitat">„Literatur bietet mehr Orientierung als alles andere."</div>
+    </div>
+    <div data-thema="gruppenarbeit">
+      <h3>Thema 2: Gruppenarbeit</h3>
+      <div class="zitat">„Gruppenarbeit kostet doch nur Zeit."</div>
+      <div class="zitat">„Teamarbeit bietet dem Einzelnen viel mehr Möglichkeiten."</div>
+    </div>
+  </div>
+
+</main>
+<script src="../shared/section-builders.js"></script>
+<script src="../shared/pruefung.js"></script>
+<script>
+  SectionBuilder.sa(document.getElementById('section-root'), document.getElementById('section-root'));
+  Pruefung.initSA({
+    literatur: {
+      title: 'Thema 1: Literatur',
+      zitate: ['Literatur hat nie etwas Negatives verhindern können.', 'Literatur bietet mehr Orientierung als alles andere.']
+    },
+    gruppenarbeit: {
+      title: 'Thema 2: Gruppenarbeit',
+      zitate: ['Gruppenarbeit kostet doch nur Zeit.', 'Teamarbeit bietet dem Einzelnen viel mehr Möglichkeiten.']
+    }
+  });
+</script>
 ```
 
-2. Configuración en el `<script>`:
-
-```javascript
-Pruefung.initSA({
-  clave_tema_1: {
-    title: 'Thema 1: Nombre',
-    zitate: ['Primera cita.', 'Segunda cita.']
-  },
-  clave_tema_2: {
-    title: 'Thema 2: Nombre',
-    zitate: ['Tercera cita.', 'Cuarta cita.']
-  }
-});
-```
+> **Nota:** Las claves del objeto en `initSA` (ej: `literatur`, `gruppenarbeit`) deben coincidir con los `data-thema` del HTML.
 
 **Temas típicos del SA:**
 - Literatur / Medien
