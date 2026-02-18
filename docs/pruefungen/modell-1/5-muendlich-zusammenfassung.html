@@ -10,87 +10,35 @@
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 1 – Mündliche Prüfung</h1>
-    <p class="lead">Teil 1B: Zusammenfassung und Anschlussfragen (ca. 2 Minuten)</p>
+  <main class="pruefung-container" id="section-root" data-section="zusammenfassung" data-modell="1">
 
-    <div class="info-box">
-      <p><strong>📝 Ablauf:</strong></p>
-      <ol style="margin: 0.5rem 0; padding-left: 1.5rem;">
-        <li>Sie hören die Präsentation Ihres Partners/Ihrer Partnerin</li>
-        <li>Sie fassen zusammen, was für Sie besonders bemerkenswert war</li>
-        <li>Sie stellen mindestens eine Frage zum Thema</li>
-      </ol>
-      <p style="margin-top: 0.75rem;"><strong>⏱️ Zeit:</strong> ca. 2 Minuten</p>
-    </div>
+    <div data-content="themen" hidden>
+      <h3 style="margin-top: 0; color: var(--accent-ink, #457b9d);">Teilnehmer/in A - Themen:</h3>
+      <div class="thema-auswahl-grid">
+        <button class="thema-btn" data-thema="a1">Thema 1: Erfindungen</button>
+        <button class="thema-btn" data-thema="a2">Thema 2: Universitätssystem</button>
+      </div>
 
-    <div class="aufgabe-box">
-      <h2>Schritt 1: Welches Thema haben SIE präsentiert?</h2>
-      <p>Wählen Sie das Thema, das Sie in Teil 1A präsentiert haben. Sie werden dann eine <strong>andere</strong> Präsentation zur Zusammenfassung erhalten.</p>
-      
-      <div class="meine-praesentation-box">
-        <h3 style="margin-top: 0; color: var(--accent-ink, #457b9d);">Teilnehmer/in A - Themen:</h3>
-        <div class="thema-auswahl-grid">
-          <button class="thema-btn" data-thema="a1">Thema 1: Erfindungen</button>
-          <button class="thema-btn" data-thema="a2">Thema 2: Universitätssystem</button>
-        </div>
+      <h3 style="margin-top: 1.5rem; color: var(--accent-ink, #457b9d);">Teilnehmer/in B - Themen:</h3>
+      <div class="thema-auswahl-grid">
+        <button class="thema-btn" data-thema="b1">Thema 1: Studien-/Berufswahl</button>
+        <button class="thema-btn" data-thema="b2">Thema 2: Künstlerische Fächer</button>
+      </div>
 
-        <h3 style="margin-top: 1.5rem; color: var(--accent-ink, #457b9d);">Teilnehmer/in B - Themen:</h3>
-        <div class="thema-auswahl-grid">
-          <button class="thema-btn" data-thema="b1">Thema 1: Studien-/Berufswahl</button>
-          <button class="thema-btn" data-thema="b2">Thema 2: Künstlerische Fächer</button>
-        </div>
-
-        <h3 style="margin-top: 1.5rem; color: var(--accent-ink, #457b9d);">Teilnehmer/in C - Themen:</h3>
-        <div class="thema-auswahl-grid">
-          <button class="thema-btn" data-thema="c1">Thema 1: Fremdsprachen lernen</button>
-          <button class="thema-btn" data-thema="c2">Thema 2: Natur- vs Geisteswissenschaften</button>
-        </div>
+      <h3 style="margin-top: 1.5rem; color: var(--accent-ink, #457b9d);">Teilnehmer/in C - Themen:</h3>
+      <div class="thema-auswahl-grid">
+        <button class="thema-btn" data-thema="c1">Thema 1: Fremdsprachen lernen</button>
+        <button class="thema-btn" data-thema="c2">Thema 2: Natur- vs Geisteswissenschaften</button>
       </div>
     </div>
 
-    <div id="partner-praesentation-container" class="hidden">
-      <div class="aufgabe-box">
-        <h2>Schritt 2: Hören Sie die Präsentation Ihres Partners</h2>
-        <p>Lesen Sie die folgende Präsentation und machen Sie sich Notizen.</p>
-      </div>
-
-      <div class="partner-praesentation-box" id="partner-praesentation-text">
-        <!-- Text wird hier eingefügt -->
-      </div>
-
-      <div class="aufgabe-box">
-        <h2>Schritt 3: Ihre Zusammenfassung</h2>
-        <p>Fassen Sie zusammen, was für Sie besonders bemerkenswert war. Stellen Sie auch mindestens eine Anschlussfrage.</p>
-        <textarea id="zusammenfassung-input" placeholder="Schreiben Sie hier Ihre Zusammenfassung und Anschlussfrage(n)..."></textarea>
-      </div>
-
-      <div class="aufgabe-box">
-        <h3>Bewertungskriterien (werden beim Kopieren hinzugefügt)</h3>
-        <p style="font-size: 0.95rem; line-height: 1.7;">
-          <strong>Aufgabengerechtheit - Teil 1B (0-4 Punkte):</strong><br>
-          A (4): Entspricht durchgängig | B (2): Weitgehend | C (1): Teilweise | D (0): Nicht
-        </p>
-        <p style="font-size: 0.9rem; margin-top: 0.75rem; color: var(--ink-600);">
-          Plus: Sprachliche Angemessenheit (Flüssigkeit, Repertoire, Grammatik, Aussprache) wird gesamt bewertet.
-        </p>
-      </div>
-
-      <div class="success-msg" id="success-msg">
-        ✓ Text wurde kopiert! Fügen Sie ihn jetzt in eine KI ein zur Bewertung.
-      </div>
-    </div>
-
-    <div class="submit-section">
-      <button class="btn primary" id="kopieren-btn" style="display: none;">📋 Für Evaluation kopieren</button>
-    </div>
   </main>
-
   <script src="praesentation-texte.js"></script>
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
+    SectionBuilder.zusammenfassung(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initZusammenfassung();
   </script>
-
 </body>
 </html>
