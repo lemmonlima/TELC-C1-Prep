@@ -206,33 +206,37 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 | Absatz e | ~100 |
 | Cada pregunta | ~5–10 |
 
-**Cómo rellenar:**
-
-1. Título del texto:
+**Estructura del archivo** (`data-section="lv2"`):
 
 ```html
-<h3>Seniorenstudium: Fürs Lernen ist es nie zu spät</h3>
-```
+<main class="pruefung-container" id="section-root" data-section="lv2" data-modell="N">
 
-2. Cada párrafo va dentro de su `<div class="absatz">`:
+  <div data-content="text" hidden>
+    <h3>Título del Texto</h3>
+    <div class="absatz">
+      <span class="absatz-label">Absatz a</span>
+      <p>Texto completo del párrafo a...</p>
+    </div>
+    <div class="absatz">
+      <span class="absatz-label">Absatz b</span>
+      <p>Texto completo del párrafo b...</p>
+    </div>
+    <!-- absatz c, d, e -->
+  </div>
 
-```html
-<div class="absatz">
-  <span class="absatz-label">Absatz a</span>
-  <p>Texto completo del párrafo a aquí...</p>
-</div>
-```
+  <div data-content="fragen" hidden>
+    <div data-frage="7">… drückt sich der Autor polemisch aus?</div>
+    <div data-frage="8">… gibt der Autor eine Empfehlung?</div>
+    <!-- preguntas 9–12 -->
+  </div>
 
-3. Las preguntas empiezan con "In welchem Abschnitt…":
-
-```html
-<div class="frage-text">… drückt sich der Autor polemisch aus?</div>
-```
-
-4. Respuestas:
-
-```javascript
-Pruefung.initLV2({ 7:'a', 8:'d', 9:'c', 10:'a', 11:'d', 12:'e' });
+</main>
+<script src="../shared/section-builders.js"></script>
+<script src="../shared/pruefung.js"></script>
+<script>
+  SectionBuilder.lv2(document.getElementById('section-root'), document.getElementById('section-root'));
+  Pruefung.initLV2({ 7:'a', 8:'d', 9:'c', 10:'a', 11:'d', 12:'e' });
+</script>
 ```
 
 **Reglas del contenido:**
