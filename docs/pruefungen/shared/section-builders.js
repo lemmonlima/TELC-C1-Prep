@@ -16,6 +16,21 @@
 
 const SectionBuilder = (() => {
 
+  /* ── Section navigation order ───────────────────── */
+  const NAV = [
+    { id: 'lv1', file: '1-leseverstehen-teil-1.html', label: 'LV Teil 1' },
+    { id: 'lv2', file: '1-leseverstehen-teil-2.html', label: 'LV Teil 2' },
+    { id: 'lv3', file: '1-leseverstehen-teil-3.html', label: 'LV Teil 3' },
+    { id: 'sb',  file: '2-sprachbausteine.html',      label: 'Sprachbausteine' },
+    { id: 'hv1', file: '3-hoerverstehen-teil-1.html',  label: 'HV Teil 1' },
+    { id: 'hv2', file: '3-hoerverstehen-teil-2.html',  label: 'HV Teil 2' },
+    { id: 'hv3', file: '3-hoerverstehen-teil-3.html',  label: 'HV Teil 3' },
+    { id: 'sa',  file: '4-schriftlicher-ausdruck.html', label: 'Schriftl. Ausdruck' },
+    { id: 'praesentation',    file: '5-muendlich-praesentation.html',    label: 'Präsentation' },
+    { id: 'zusammenfassung',  file: '5-muendlich-zusammenfassung.html',  label: 'Zusammenfassung' },
+    { id: 'diskussion',       file: '5-muendlich-diskussion.html',       label: 'Diskussion' },
+  ];
+
   /* ── Shared fragments ──────────────────────────── */
 
   function ergebnisse() {
@@ -39,14 +54,30 @@ const SectionBuilder = (() => {
     </div>`;
   }
 
+  function sectionNav(sectionId) {
+    const idx = NAV.findIndex(n => n.id === sectionId);
+    const prev = idx > 0 ? NAV[idx - 1] : null;
+    const next = idx < NAV.length - 1 ? NAV[idx + 1] : null;
+    let html = '<nav class="section-nav">';
+    html += '<a href="index.html" class="section-nav-back">&larr; Modellprüfung</a>';
+    html += '<div class="section-nav-links">';
+    if (prev) html += `<a href="${prev.file}" class="section-nav-link prev">&larr; ${prev.label}</a>`;
+    if (next) html += `<a href="${next.file}" class="section-nav-link next">${next.label} &rarr;</a>`;
+    html += '</div></nav>';
+    return html;
+  }
+
   function header(modell, teil, lead, opts) {
     if (opts?.exam) return '';
-    return `<h1>Modellprüfung ${modell} – ${teil}</h1>\n<p class="lead">${lead}</p>`;
+    const sectionId = opts?._sectionId || '';
+    return sectionNav(sectionId)
+      + `<h1>Modellprüfung ${modell} – ${teil}</h1>\n<p class="lead">${lead}</p>`;
   }
 
   function footer(opts) {
     if (opts?.exam) return '';
-    return ergebnisse() + submit();
+    const sectionId = opts?._sectionId || '';
+    return ergebnisse() + submit() + sectionNav(sectionId);
   }
 
   function buttons(letters, attrName, attrValue, valueAttr) {
