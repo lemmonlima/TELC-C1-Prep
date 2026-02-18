@@ -4,40 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Modelltest 1 - Leseverstehen Teil 3 | TELC C1 Hochschule</title>
-  <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="../shared/pruefung.css">
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../shared/pruefung.css" />
   <script src="../../topbar.js"></script>
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 1 – Leseverstehen Teil 3</h1>
-    <p class="lead">Detailverstehen: 11 Aussagen + 1 Globalverstehen</p>
+  <main class="pruefung-container" id="section-root" data-section="lv3" data-modell="1">
 
-    <div class="aufgabe-box">
-      <h2>Aufgabe</h2>
-      <p>Lesen Sie den folgenden Text und die Aussagen 13–23. Welche der Aussagen sind <strong>richtig (+)</strong>, <strong>falsch (−)</strong> oder <strong>gar nicht im Text enthalten (×)</strong>?</p>
-      <p>Es gibt jeweils nur eine richtige Lösung.</p>
-      
-      <div class="legende">
-        <div class="legende-item">
-          <span class="legende-symbol">+</span>
-          <span>richtig</span>
-        </div>
-        <div class="legende-item">
-          <span class="legende-symbol">−</span>
-          <span>falsch</span>
-        </div>
-        <div class="legende-item">
-          <span class="legende-symbol">×</span>
-          <span>nicht im Text</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-box">
+    <div data-content="text" hidden>
       <h3>„Sprachbad" im Kindergarten</h3>
-      
+
       <p><em>Mehrsprachigkeit ist in der zunehmend globalisierten Welt ein Muss. Lernen Kinder in der frühkindlichen Phase Sprachen besonders leicht oder können Erwachsene dies ebenso gut? Forscher streiten sich.</em></p>
 
       <p>Mit Immersion tauchen Kinder schon im Alter von zwei bis sechs Jahren in Fremdsprachen ein. Ohne Schulunterricht beherrschen sie diese später wie eine zweite Muttersprache. Bei Immersion wird die zu lernende Sprache als Arbeitssprache eingesetzt, so dass die Kinder sich die Sprache auf natürliche Weise aneignen können. Wissenschaftlich ist nachgewiesen, dass Immersion ein sehr erfolgreiches Modell zum Erlernen von Fremdsprachen ist.</p>
@@ -65,153 +42,32 @@
       <p>Aus linguistischer Perspektive hat das Projekt in Altenholz gezeigt, dass das Englische hervorragend gelernt wird. Gleichzeitig leidet das Deutsche keineswegs. Lesetests im Deutschen haben gezeigt, dass die immersiv in Englisch beschulten Kinder im Schnitt 10 bis 15 Prozent über den Leistungen von ausschließlich auf Deutsch unterrichteten Kindern liegen. Darüber hinaus ist ein nicht zu vernachlässigender Vorteil der Immersionsmethode, dass sie keine zusätzlichen Personalkosten verursacht, weil eine Pädagogin ihre Zeit sozusagen doppelt einbringt.</p>
     </div>
 
-    <div class="aufgabe-box">
-      <h3>Aussagen 13–23</h3>
-      <div class="aussagen-container">
-        
-        <div class="aussage" data-aussage="13">
-          <div class="aussage-nummer">13.</div>
-          <div class="aussage-text">Immersion ist eine Methode zur Förderung der zweiten Muttersprache.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-        <div class="aussage" data-aussage="14">
-          <div class="aussage-nummer">14.</div>
-          <div class="aussage-text">Die Kinder singen in dem norddeutschen Kindergarten auch deutsche Lieder.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-        <div class="aussage" data-aussage="15">
-          <div class="aussage-nummer">15.</div>
-          <div class="aussage-text">Die Immersionsmethode funktioniert anders als der Sprachunterricht in der Schule.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-        <div class="aussage" data-aussage="16">
-          <div class="aussage-nummer">16.</div>
-          <div class="aussage-text">In deutschen Kitas wird immer mehr Englisch unterrichtet.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-        <div class="aussage" data-aussage="17">
-          <div class="aussage-nummer">17.</div>
-          <div class="aussage-text">Einsprachig aufgewachsenen Kindern fällt es auch nach vielen Wochen schwer, Englisch zu verstehen.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-        <div class="aussage" data-aussage="18">
-          <div class="aussage-nummer">18.</div>
-          <div class="aussage-text">Die Immersionsmethode wird von der EU auch für Erwachsene empfohlen.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-        <div class="aussage" data-aussage="19">
-          <div class="aussage-nummer">19.</div>
-          <div class="aussage-text">Die Kinder der Kita Altenholz müssen alle Englisch lernen.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-        <div class="aussage" data-aussage="20">
-          <div class="aussage-nummer">20.</div>
-          <div class="aussage-text">Die Immersionsmethode vermittelt auch interkulturelle Kompetenz.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-        <div class="aussage" data-aussage="21">
-          <div class="aussage-nummer">21.</div>
-          <div class="aussage-text">Jeden Morgen singen die Kinder ein englischsprachiges Lied.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-        <div class="aussage" data-aussage="22">
-          <div class="aussage-nummer">22.</div>
-          <div class="aussage-text">Studien zeigen, dass das Erlernen einer Fremdsprache auch später noch auf muttersprachlichem Niveau möglich ist.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-        <div class="aussage" data-aussage="23">
-          <div class="aussage-nummer">23.</div>
-          <div class="aussage-text">Wenn man als Kleinkind eine Fremdsprache lernt, macht man in der Muttersprache weniger Fortschritte.</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="+">+ richtig</button>
-            <button class="antwort-btn" data-answer="−">− falsch</button>
-            <button class="antwort-btn" data-answer="×">× nicht im Text</button>
-          </div>
-        </div>
-
-      </div>
+    <div data-content="aussagen" hidden>
+      <div data-aussage="13">Immersion ist eine Methode zur Förderung der zweiten Muttersprache.</div>
+      <div data-aussage="14">Die Kinder singen in dem norddeutschen Kindergarten auch deutsche Lieder.</div>
+      <div data-aussage="15">Die Immersionsmethode funktioniert anders als der Sprachunterricht in der Schule.</div>
+      <div data-aussage="16">In deutschen Kitas wird immer mehr Englisch unterrichtet.</div>
+      <div data-aussage="17">Einsprachig aufgewachsenen Kindern fällt es auch nach vielen Wochen schwer, Englisch zu verstehen.</div>
+      <div data-aussage="18">Die Immersionsmethode wird von der EU auch für Erwachsene empfohlen.</div>
+      <div data-aussage="19">Die Kinder der Kita Altenholz müssen alle Englisch lernen.</div>
+      <div data-aussage="20">Die Immersionsmethode vermittelt auch interkulturelle Kompetenz.</div>
+      <div data-aussage="21">Jeden Morgen singen die Kinder ein englischsprachiges Lied.</div>
+      <div data-aussage="22">Studien zeigen, dass das Erlernen einer Fremdsprache auch später noch auf muttersprachlichem Niveau möglich ist.</div>
+      <div data-aussage="23">Wenn man als Kleinkind eine Fremdsprache lernt, macht man in der Muttersprache weniger Fortschritte.</div>
     </div>
 
-    <div class="aufgabe-box">
-      <h3>Globalverstehen – Aufgabe 24</h3>
-      <p><strong>Welche der Überschriften a, b oder c trifft die Aussage des Textes am besten?</strong></p>
-      <div class="aussage" data-aussage="24">
-        <div class="antwort-select">
-          <button class="antwort-btn" data-answer="a">a) Fremdsprachenunterricht in deutschen Kindergärten</button>
-          <button class="antwort-btn" data-answer="b">b) „Sprachbad" im Kindergarten</button>
-          <button class="antwort-btn" data-answer="c">c) Der Begriff der Immersion</button>
-        </div>
-      </div>
+    <div data-content="global" hidden>
+      <div data-option="a">Fremdsprachenunterricht in deutschen Kindergärten</div>
+      <div data-option="b">„Sprachbad" im Kindergarten</div>
+      <div data-option="c">Der Begriff der Immersion</div>
     </div>
 
-    <div class="ergebnisse" id="ergebnisse">
-      <h3>Ihre Ergebnisse</h3>
-      <div id="ergebnis-liste"></div>
-      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
-    </div>
-
-    <div class="submit-section">
-      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
-    </div>
   </main>
-
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
-    Pruefung.initLV3({
-      13:'falsch', 14:'nicht', 15:'richtig', 16:'nicht', 17:'falsch', 18:'nicht',
-      19:'falsch', 20:'richtig', 21:'falsch', 22:'nicht', 23:'falsch', 24:'b'
-    });
+    SectionBuilder.lv3(document.getElementById('section-root'), document.getElementById('section-root'));
+    Pruefung.initLV3({ 13:'falsch', 14:'nicht', 15:'richtig', 16:'nicht', 17:'falsch', 18:'nicht', 19:'falsch', 20:'richtig', 21:'falsch', 22:'nicht', 23:'falsch', 24:'b' });
   </script>
-
 </body>
 </html>
