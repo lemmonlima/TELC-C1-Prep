@@ -6,23 +6,13 @@
   <title>Modelltest 1 - Leseverstehen Teil 2 | TELC C1 Hochschule</title>
   <link rel="stylesheet" href="../../styles.css" />
   <link rel="stylesheet" href="../shared/pruefung.css" />
-  <!-- TELC Navigation System -->
   <script src="../../topbar.js"></script>
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 1 – Leseverstehen Teil 2</h1>
-    <p class="lead">Selektives Verstehen: 6 Zuordnungsaufgaben</p>
+  <main class="pruefung-container" id="section-root" data-section="lv2" data-modell="1">
 
-    <div class="aufgabe-box">
-      <h2>Aufgabe</h2>
-      <p>Lesen Sie den folgenden Text. In welchem Textabsatz <strong>a–e</strong> finden Sie die Antworten auf die Fragen <strong>7–12</strong>?</p>
-      <p>Es gibt jeweils nur eine richtige Lösung. Jeder Absatz kann Antworten auf mehrere Fragen enthalten.</p>
-      <p><em>Beispiel: Frage 0 → Antwort b</em></p>
-    </div>
-
-    <div class="text-box">
+    <div data-content="text" hidden>
       <h3>Seniorenstudium: Fürs Lernen ist es nie zu spät</h3>
 
       <div class="absatz">
@@ -51,100 +41,21 @@
       </div>
     </div>
 
-    <div class="aufgabe-box">
-      <h3>Fragen</h3>
-      <div class="fragen-container">
-        
-        <div class="frage" data-frage="7">
-          <div class="frage-nummer">7. In welchem Abschnitt …</div>
-          <div class="frage-text">… drückt sich der Autor polemisch aus?</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="a">a</button>
-            <button class="antwort-btn" data-answer="b">b</button>
-            <button class="antwort-btn" data-answer="c">c</button>
-            <button class="antwort-btn" data-answer="d">d</button>
-            <button class="antwort-btn" data-answer="e">e</button>
-          </div>
-        </div>
-
-        <div class="frage" data-frage="8">
-          <div class="frage-nummer">8. In welchem Abschnitt …</div>
-          <div class="frage-text">… gibt der Autor eine Empfehlung?</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="a">a</button>
-            <button class="antwort-btn" data-answer="b">b</button>
-            <button class="antwort-btn" data-answer="c">c</button>
-            <button class="antwort-btn" data-answer="d">d</button>
-            <button class="antwort-btn" data-answer="e">e</button>
-          </div>
-        </div>
-
-        <div class="frage" data-frage="9">
-          <div class="frage-nummer">9. In welchem Abschnitt …</div>
-          <div class="frage-text">… gibt der Autor eine fremde Einschätzung wieder?</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="a">a</button>
-            <button class="antwort-btn" data-answer="b">b</button>
-            <button class="antwort-btn" data-answer="c">c</button>
-            <button class="antwort-btn" data-answer="d">d</button>
-            <button class="antwort-btn" data-answer="e">e</button>
-          </div>
-        </div>
-
-        <div class="frage" data-frage="10">
-          <div class="frage-nummer">10. In welchem Abschnitt …</div>
-          <div class="frage-text">… möchte der Autor zur Belustigung beitragen?</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="a">a</button>
-            <button class="antwort-btn" data-answer="b">b</button>
-            <button class="antwort-btn" data-answer="c">c</button>
-            <button class="antwort-btn" data-answer="d">d</button>
-            <button class="antwort-btn" data-answer="e">e</button>
-          </div>
-        </div>
-
-        <div class="frage" data-frage="11">
-          <div class="frage-nummer">11. In welchem Abschnitt …</div>
-          <div class="frage-text">… spricht der Autor eine Warnung aus?</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="a">a</button>
-            <button class="antwort-btn" data-answer="b">b</button>
-            <button class="antwort-btn" data-answer="c">c</button>
-            <button class="antwort-btn" data-answer="d">d</button>
-            <button class="antwort-btn" data-answer="e">e</button>
-          </div>
-        </div>
-
-        <div class="frage" data-frage="12">
-          <div class="frage-nummer">12. In welchem Abschnitt …</div>
-          <div class="frage-text">… stellt der Autor eine Prognose?</div>
-          <div class="antwort-select">
-            <button class="antwort-btn" data-answer="a">a</button>
-            <button class="antwort-btn" data-answer="b">b</button>
-            <button class="antwort-btn" data-answer="c">c</button>
-            <button class="antwort-btn" data-answer="d">d</button>
-            <button class="antwort-btn" data-answer="e">e</button>
-          </div>
-        </div>
-
-      </div>
+    <div data-content="fragen" hidden>
+      <div data-frage="7">… drückt sich der Autor polemisch aus?</div>
+      <div data-frage="8">… gibt der Autor eine Empfehlung?</div>
+      <div data-frage="9">… gibt der Autor eine fremde Einschätzung wieder?</div>
+      <div data-frage="10">… möchte der Autor zur Belustigung beitragen?</div>
+      <div data-frage="11">… spricht der Autor eine Warnung aus?</div>
+      <div data-frage="12">… stellt der Autor eine Prognose?</div>
     </div>
 
-    <div class="ergebnisse" id="ergebnisse">
-      <h3>Ihre Ergebnisse</h3>
-      <div id="ergebnis-liste"></div>
-      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
-    </div>
-
-    <div class="submit-section">
-      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
-    </div>
   </main>
-
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
+    SectionBuilder.lv2(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initLV2({ 7:'a', 8:'d', 9:'c', 10:'a', 11:'d', 12:'e' });
   </script>
-
 </body>
 </html>
