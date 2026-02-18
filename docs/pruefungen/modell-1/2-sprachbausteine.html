@@ -10,19 +10,11 @@
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 1 – Sprachbausteine</h1>
-    <p class="lead">Grammatik und Lexik: 22 Aufgaben</p>
+  <main class="pruefung-container" id="section-root" data-section="sb" data-modell="1">
 
-    <div class="aufgabe-box">
-      <h2>Aufgabe</h2>
-      <p>Lesen Sie den folgenden Text. Welche Lösung (a, b, c oder d) ist jeweils richtig?</p>
-      <p><strong>Klicken Sie auf die unterstrichenen Lücken im Text und wählen Sie die passende Option.</strong></p>
-    </div>
-
-    <div class="text-box">
+    <div data-content="text" hidden>
       <h3>Neue Ergebnisse aus der Altersforschung</h3>
-      
+
       <p>Die Lebenserwartung in Industrieländern steigt rasant. Hält dieser Trend <span class="lucke" data-lucke="25">____</span>, wird jedes <span class="lucke" data-lucke="26">____</span> Baby über hundert Jahre alt werden, prognostizieren <span class="lucke" data-lucke="27">____</span>. Auch die Gesundheit <span class="lucke" data-lucke="28">____</span> wird sich demnach stark verbessern.</p>
 
       <p>Im 20. Jahrhundert stieg die Lebenserwartung in den meisten Industrieländern <span class="lucke" data-lucke="29">____</span> 30 Jahre. Selbst wenn diese Entwicklung stagnieren <span class="lucke" data-lucke="30">____</span>, werden drei von vier heute geborenen Babys mindestens 75 Jahre alt. <span class="lucke" data-lucke="31">____</span> zum längeren Leben jedoch unvermindert an, werden die meisten seit <span class="lucke" data-lucke="32">____</span> sogar ihren 100. Geburtstag erleben, berichten deutsche und dänische Forscher im Fachblatt „The Lancet".</p>
@@ -38,260 +30,157 @@
       <p>Aber allen Prognosen <span class="lucke" data-lucke="46">____</span>: Der Rekord für das längste Leben ist seit zwölf Jahren ungebrochen. <span class="lucke" data-lucke="47">____</span> starb die Französin Jeanne Calment im Alter von 122 Jahren.</p>
     </div>
 
-    <div class="optionen-box">
-      <h3>Auswahloptionen</h3>
-      
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">25</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="25" data-wert="a">an</button>
-          <button class="option-btn" data-lucke="25" data-wert="b">bei</button>
-          <button class="option-btn" data-lucke="25" data-wert="c">durch</button>
-          <button class="option-btn" data-lucke="25" data-wert="d">fest</button>
-        </div>
+    <div data-content="optionen" hidden>
+      <div data-lucke="25">
+        <span data-wert="a">an</span>
+        <span data-wert="b">bei</span>
+        <span data-wert="c">durch</span>
+        <span data-wert="d">fest</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">26</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="26" data-wert="a">derzeit geborene zweite</button>
-          <button class="option-btn" data-lucke="26" data-wert="b">derzeit zweite geborene</button>
-          <button class="option-btn" data-lucke="26" data-wert="c">geborene derzeit zweite</button>
-          <button class="option-btn" data-lucke="26" data-wert="d">zweite derzeit geborene</button>
-        </div>
+      <div data-lucke="26">
+        <span data-wert="a">derzeit geborene zweite</span>
+        <span data-wert="b">derzeit zweite geborene</span>
+        <span data-wert="c">geborene derzeit zweite</span>
+        <span data-wert="d">zweite derzeit geborene</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">27</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="27" data-wert="a">Forscher</button>
-          <button class="option-btn" data-lucke="27" data-wert="b">im hohen Alter</button>
-          <button class="option-btn" data-lucke="27" data-wert="c">in Alter</button>
-          <button class="option-btn" data-lucke="27" data-wert="d">in hohen Alter</button>
-        </div>
+      <div data-lucke="27">
+        <span data-wert="a">Forscher</span>
+        <span data-wert="b">im hohen Alter</span>
+        <span data-wert="c">in Alter</span>
+        <span data-wert="d">in hohen Alter</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">28</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="28" data-wert="a">im Altern</button>
-          <button class="option-btn" data-lucke="28" data-wert="b">im hohen Alter</button>
-          <button class="option-btn" data-lucke="28" data-wert="c">in Alter</button>
-          <button class="option-btn" data-lucke="28" data-wert="d">in hohen Alter</button>
-        </div>
+      <div data-lucke="28">
+        <span data-wert="a">im Altern</span>
+        <span data-wert="b">im hohen Alter</span>
+        <span data-wert="c">in Alter</span>
+        <span data-wert="d">in hohen Alter</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">29</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="29" data-wert="a">als mehr um</button>
-          <button class="option-btn" data-lucke="29" data-wert="b">mehr als um</button>
-          <button class="option-btn" data-lucke="29" data-wert="c">mehr um als</button>
-          <button class="option-btn" data-lucke="29" data-wert="d">um mehr als</button>
-        </div>
+      <div data-lucke="29">
+        <span data-wert="a">als mehr um</span>
+        <span data-wert="b">mehr als um</span>
+        <span data-wert="c">mehr um als</span>
+        <span data-wert="d">um mehr als</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">30</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="30" data-wert="a">könne</button>
-          <button class="option-btn" data-lucke="30" data-wert="b">könnte</button>
-          <button class="option-btn" data-lucke="30" data-wert="c">solle</button>
-          <button class="option-btn" data-lucke="30" data-wert="d">sollte</button>
-        </div>
+      <div data-lucke="30">
+        <span data-wert="a">könne</span>
+        <span data-wert="b">könnte</span>
+        <span data-wert="c">solle</span>
+        <span data-wert="d">sollte</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">31</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="31" data-wert="a">Dauert der Trend</button>
-          <button class="option-btn" data-lucke="31" data-wert="b">Dauert ein Trend</button>
-          <button class="option-btn" data-lucke="31" data-wert="c">Der Trend dauert</button>
-          <button class="option-btn" data-lucke="31" data-wert="d">Ein Trend dauert</button>
-        </div>
+      <div data-lucke="31">
+        <span data-wert="a">Dauert der Trend</span>
+        <span data-wert="b">Dauert ein Trend</span>
+        <span data-wert="c">Der Trend dauert</span>
+        <span data-wert="d">Ein Trend dauert</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">32</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="32" data-wert="a">dem Jahr 2000 geborenen Kinder</button>
-          <button class="option-btn" data-lucke="32" data-wert="b">im Jahr 2000 geborenen Kinder</button>
-          <button class="option-btn" data-lucke="32" data-wert="c">in Jahr 2000 geborenen Kinder</button>
-          <button class="option-btn" data-lucke="32" data-wert="d">2000 Jahren geborenen Kinder</button>
-        </div>
+      <div data-lucke="32">
+        <span data-wert="a">dem Jahr 2000 geborenen Kinder</span>
+        <span data-wert="b">im Jahr 2000 geborenen Kinder</span>
+        <span data-wert="c">in Jahr 2000 geborenen Kinder</span>
+        <span data-wert="d">2000 Jahren geborenen Kinder</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">33</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="33" data-wert="a">in der fernen Zukunft</button>
-          <button class="option-btn" data-lucke="33" data-wert="b">in Zukunft</button>
-          <button class="option-btn" data-lucke="33" data-wert="c">in die ferne Zukunft</button>
-          <button class="option-btn" data-lucke="33" data-wert="d">in die Zukunft</button>
-        </div>
+      <div data-lucke="33">
+        <span data-wert="a">in der fernen Zukunft</span>
+        <span data-wert="b">in Zukunft</span>
+        <span data-wert="c">in die ferne Zukunft</span>
+        <span data-wert="d">in die Zukunft</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">34</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="34" data-wert="a">sei</button>
-          <button class="option-btn" data-lucke="34" data-wert="b">wurde</button>
-          <button class="option-btn" data-lucke="34" data-wert="c">wäre</button>
-          <button class="option-btn" data-lucke="34" data-wert="d">würde</button>
-        </div>
+      <div data-lucke="34">
+        <span data-wert="a">sei</span>
+        <span data-wert="b">wurde</span>
+        <span data-wert="c">wäre</span>
+        <span data-wert="d">würde</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">35</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="35" data-wert="a">der im Jahr 2007</button>
-          <button class="option-btn" data-lucke="35" data-wert="b">der ins Jahr 2007</button>
-          <button class="option-btn" data-lucke="35" data-wert="c">des im Jahr 2007</button>
-          <button class="option-btn" data-lucke="35" data-wert="d">des Jahres 2007</button>
-        </div>
+      <div data-lucke="35">
+        <span data-wert="a">der im Jahr 2007</span>
+        <span data-wert="b">der ins Jahr 2007</span>
+        <span data-wert="c">des im Jahr 2007</span>
+        <span data-wert="d">des Jahres 2007</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">36</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="36" data-wert="a">Angaben zufolge</button>
-          <button class="option-btn" data-lucke="36" data-wert="b">folgenden Angaben</button>
-          <button class="option-btn" data-lucke="36" data-wert="c">nach Angaben</button>
-          <button class="option-btn" data-lucke="36" data-wert="d">nach folgenden Angaben</button>
-        </div>
+      <div data-lucke="36">
+        <span data-wert="a">Angaben zufolge</span>
+        <span data-wert="b">folgenden Angaben</span>
+        <span data-wert="c">nach Angaben</span>
+        <span data-wert="d">nach folgenden Angaben</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">37</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="37" data-wert="a">—</button>
-          <button class="option-btn" data-lucke="37" data-wert="b">für</button>
-          <button class="option-btn" data-lucke="37" data-wert="c">von</button>
-          <button class="option-btn" data-lucke="37" data-wert="d">zu</button>
-        </div>
+      <div data-lucke="37">
+        <span data-wert="a">—</span>
+        <span data-wert="b">für</span>
+        <span data-wert="c">von</span>
+        <span data-wert="d">zu</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">38</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="38" data-wert="a">—</button>
-          <button class="option-btn" data-lucke="38" data-wert="b">an</button>
-          <button class="option-btn" data-lucke="38" data-wert="c">auf</button>
-          <button class="option-btn" data-lucke="38" data-wert="d">für</button>
-        </div>
+      <div data-lucke="38">
+        <span data-wert="a">—</span>
+        <span data-wert="b">an</span>
+        <span data-wert="c">auf</span>
+        <span data-wert="d">für</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">39</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="39" data-wert="a">vermeidbar</button>
-          <button class="option-btn" data-lucke="39" data-wert="b">vermeidlich</button>
-          <button class="option-btn" data-lucke="39" data-wert="c">vermeintlich</button>
-          <button class="option-btn" data-lucke="39" data-wert="d">vermutlich</button>
-        </div>
+      <div data-lucke="39">
+        <span data-wert="a">vermeidbar</span>
+        <span data-wert="b">vermeidlich</span>
+        <span data-wert="c">vermeintlich</span>
+        <span data-wert="d">vermutlich</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">40</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="40" data-wert="a">mit</button>
-          <button class="option-btn" data-lucke="40" data-wert="b">obgleich</button>
-          <button class="option-btn" data-lucke="40" data-wert="c">trotz</button>
-          <button class="option-btn" data-lucke="40" data-wert="d">wegen</button>
-        </div>
+      <div data-lucke="40">
+        <span data-wert="a">mit</span>
+        <span data-wert="b">obgleich</span>
+        <span data-wert="c">trotz</span>
+        <span data-wert="d">wegen</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">41</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="41" data-wert="a">heut Zutage</button>
-          <button class="option-btn" data-lucke="41" data-wert="b">Heutzutage</button>
-          <button class="option-btn" data-lucke="41" data-wert="c">heutzutage</button>
-          <button class="option-btn" data-lucke="41" data-wert="d">heut zu Tage</button>
-        </div>
+      <div data-lucke="41">
+        <span data-wert="a">heut Zutage</span>
+        <span data-wert="b">Heutzutage</span>
+        <span data-wert="c">heutzutage</span>
+        <span data-wert="d">heut zu Tage</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">42</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="42" data-wert="a">verantwortbar</button>
-          <button class="option-btn" data-lucke="42" data-wert="b">verantwortet</button>
-          <button class="option-btn" data-lucke="42" data-wert="c">verantwortlich</button>
-          <button class="option-btn" data-lucke="42" data-wert="d">verantwortungsvoll</button>
-        </div>
+      <div data-lucke="42">
+        <span data-wert="a">verantwortbar</span>
+        <span data-wert="b">verantwortet</span>
+        <span data-wert="c">verantwortlich</span>
+        <span data-wert="d">verantwortungsvoll</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">43</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="43" data-wert="a">bis</button>
-          <button class="option-btn" data-lucke="43" data-wert="b">gegen</button>
-          <button class="option-btn" data-lucke="43" data-wert="c">oder</button>
-          <button class="option-btn" data-lucke="43" data-wert="d">und</button>
-        </div>
+      <div data-lucke="43">
+        <span data-wert="a">bis</span>
+        <span data-wert="b">gegen</span>
+        <span data-wert="c">oder</span>
+        <span data-wert="d">und</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">44</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="44" data-wert="a">Indem</button>
-          <button class="option-btn" data-lucke="44" data-wert="b">Nachdem</button>
-          <button class="option-btn" data-lucke="44" data-wert="c">Obwohl</button>
-          <button class="option-btn" data-lucke="44" data-wert="d">Während</button>
-        </div>
+      <div data-lucke="44">
+        <span data-wert="a">Indem</span>
+        <span data-wert="b">Nachdem</span>
+        <span data-wert="c">Obwohl</span>
+        <span data-wert="d">Während</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">45</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="45" data-wert="a">inzwischen</button>
-          <button class="option-btn" data-lucke="45" data-wert="b">nachdem</button>
-          <button class="option-btn" data-lucke="45" data-wert="c">seitdem</button>
-          <button class="option-btn" data-lucke="45" data-wert="d">vorher</button>
-        </div>
+      <div data-lucke="45">
+        <span data-wert="a">inzwischen</span>
+        <span data-wert="b">nachdem</span>
+        <span data-wert="c">seitdem</span>
+        <span data-wert="d">vorher</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">46</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="46" data-wert="a">zu trotz</button>
-          <button class="option-btn" data-lucke="46" data-wert="b">zu Trotz</button>
-          <button class="option-btn" data-lucke="46" data-wert="c">zum Trotz</button>
-          <button class="option-btn" data-lucke="46" data-wert="d">zumtrotz</button>
-        </div>
+      <div data-lucke="46">
+        <span data-wert="a">zu trotz</span>
+        <span data-wert="b">zu Trotz</span>
+        <span data-wert="c">zum Trotz</span>
+        <span data-wert="d">zumtrotz</span>
       </div>
-
-      <div class="option-gruppe">
-        <div class="option-gruppe-titel">47</div>
-        <div class="optionen-grid">
-          <button class="option-btn" data-lucke="47" data-wert="a">Damals</button>
-          <button class="option-btn" data-lucke="47" data-wert="b">Danach</button>
-          <button class="option-btn" data-lucke="47" data-wert="c">Dennoch</button>
-          <button class="option-btn" data-lucke="47" data-wert="d">Deshalb</button>
-        </div>
+      <div data-lucke="47">
+        <span data-wert="a">Damals</span>
+        <span data-wert="b">Danach</span>
+        <span data-wert="c">Dennoch</span>
+        <span data-wert="d">Deshalb</span>
       </div>
-
     </div>
 
-    <div class="ergebnisse" id="ergebnisse">
-      <h3>Ihre Ergebnisse</h3>
-      <div id="ergebnis-liste"></div>
-      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
-    </div>
-
-    <div class="submit-section">
-      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
-    </div>
   </main>
-
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
+    SectionBuilder.sb(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initSB({
       25:'a',26:'d',27:'a',28:'b',29:'d',30:'d',31:'a',32:'b',33:'a',34:'a',
       35:'c',36:'c',37:'b',38:'c',39:'d',40:'c',41:'c',42:'c',43:'d',44:'d',
       45:'a',46:'c',47:'a'
     });
   </script>
-
 </body>
 </html>
