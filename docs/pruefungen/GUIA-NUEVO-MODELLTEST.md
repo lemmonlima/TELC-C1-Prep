@@ -380,27 +380,26 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 | Cada Aussage (a–j) | **~10–20** |
 | Total: 10 aussagen | ~130 |
 
-**Cómo rellenar:**
-
-1. El tema:
+**Estructura del archivo** (`data-section="hv1"`):
 
 ```html
-<p><strong>Thema:</strong> Studentische Lebensformen</p>
-```
+<main class="pruefung-container" id="section-root" data-section="hv1" data-modell="N">
 
-2. Las 10 afirmaciones (a–j):
+  <div data-content="thema" hidden>Studentische Lebensformen</div>
 
-```html
-<div class="aussage-item">
-  <div class="aussage-label">a</div>
-  <div>Viele Studierende wohnen lieber allein, obwohl es relativ teuer ist.</div>
-</div>
-```
+  <div data-content="aussagen" hidden>
+    <div data-key="a">Viele Studierende wohnen lieber allein, obwohl es relativ teuer ist.</div>
+    <div data-key="b">Für mich gehört es dazu, mit anderen zusammenzuwohnen.</div>
+    <!-- c, d, e, f, g, h, i, j -->
+  </div>
 
-3. Los 8 hablantes ya tienen su estructura de botones. Solo actualiza las respuestas:
-
-```javascript
-Pruefung.initHV1({ 47:'g', 48:'f', 49:'c', 50:'i', 51:'b', 52:'d', 53:'h', 54:'j' });
+</main>
+<script src="../shared/section-builders.js"></script>
+<script src="../shared/pruefung.js"></script>
+<script>
+  SectionBuilder.hv1(document.getElementById('section-root'), document.getElementById('section-root'));
+  Pruefung.initHV1({ 47:'g', 48:'f', 49:'c', 50:'i', 51:'b', 52:'d', 53:'h', 54:'j' });
+</script>
 ```
 
 > **Nota:** Los números de pregunta son 47–54 (Sprecher 1 = Aufgabe 47, etc.)
