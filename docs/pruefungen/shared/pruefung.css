@@ -407,22 +407,36 @@ textarea:focus { outline: none; border-color: var(--accent-ink, #457b9d); }
   h1 { font-size: 1.5rem; }
   .lead { font-size: 1rem; }
   .aufgabe-box, .text-box, .absatz { padding: 1rem; }
+  .text-box { line-height: 1.7; font-size: 0.95rem; }
   .antwort-select { gap: 0.75rem; }
-  .antwort-btn { padding: 0.75rem 1rem; font-size: 1rem; min-width: 3rem; }
-  .legende { gap: 1rem; }
+  .antwort-btn {
+    padding: 0.75rem 1rem; font-size: 1rem; min-width: 3rem;
+    -webkit-tap-highlight-color: rgba(230, 57, 70, 0.2);
+  }
+  .legende { gap: 1rem; font-size: 0.85rem; }
   .submit-section { padding: 1rem; margin: 1rem -1rem -1rem; flex-direction: column; }
   .submit-section .btn { width: 100%; padding: 1rem; }
   .lucke { min-width: 80px; font-size: 0.9rem; }
-  .optionen-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
-  .auswahl-buttons { grid-template-columns: repeat(auto-fill, minmax(45px, 1fr)); }
+  .optionen-grid { grid-template-columns: repeat(2, 1fr); }
+  .option-btn { padding: 0.65rem; font-size: 0.85rem; min-height: 44px; }
+  .auswahl-buttons { grid-template-columns: repeat(5, 1fr); }
+  .auswahl-btn { min-height: 44px; font-size: 0.95rem; }
   .slide-box { padding: 1rem; }
+  .slide-input { max-width: 100%; font-size: 1rem; padding: 0.6rem; }
   .antwort-feld { min-width: 150px; font-size: 0.9rem; }
   .antwort-input { max-width: 100%; }
   .teilnehmer-box { padding: 1.25rem; }
   .thema-box { padding: 1rem; }
-  .thema-box h3 { font-size: 1.2rem; }
+  .thema-box h3 { font-size: 1.1rem; }
   .thema-auswahl-grid { grid-template-columns: 1fr; }
-  textarea { min-height: 300px; }
+  .thema-btn { min-height: 48px; font-size: 0.9rem; }
+  textarea { min-height: 250px; font-size: 1rem; }
   .zitat-box { padding: 1.25rem; }
-  .zitat-text { font-size: 1.2rem; padding: 1rem; }
+  .zitat-text { font-size: 1.1rem; padding: 0.75rem; }
+  .frage-box { padding: 1rem; }
+  .frage-box .frage-nummer { font-size: 1rem; }
+  .sprecher-box { padding: 1rem; }
+  .sprecher-titel { font-size: 1rem; }
+  .info-box, .audio-note { padding: 0.75rem 1rem; font-size: 0.9rem; }
+  .btn { min-height: 44px; }
 }
