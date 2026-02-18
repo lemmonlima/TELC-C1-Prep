@@ -1566,7 +1566,14 @@ Para cada nuevo Modelltest, verifica:
 - [ ] Script de copiar HV completo agregado al final de `exam.html`
 - [ ] Scripts de copiar funcionan correctamente (extraen la sección correcta del .md)
 
-### Verificación
+### Estructura (no modificar — solo verificar)
+
+- [ ] Cada HTML tiene `<main ... data-section="XXX" data-modell="N">` correcto
+- [ ] Cada HTML llama `SectionBuilder.XXX(...)` seguido de `Pruefung.initXXX(...)` en el `<script>`
+- [ ] Los scripts cargan en orden: `section-builders.js` → `pruefung.js` → `<script>` inline
+- [ ] `zusammenfassung.html` carga `praesentation-texte.js` antes de `section-builders.js`
+
+### Verificación de datos
 
 - [ ] Las respuestas en el `<script>` de cada HTML coinciden con `exam-data.js`
 - [ ] Los números de pregunta son consecutivos y correctos (1–6, 7–12, 13–24, 25–47, 47–54, 55–64, 65–74)
