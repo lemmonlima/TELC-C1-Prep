@@ -496,6 +496,7 @@ const SectionBuilder = (() => {
       </div>
     </div>
     <div class="submit-section"></div>`;
+    if (!opts.exam) html += sectionNav();
 
     target.innerHTML = html;
   }
@@ -553,6 +554,7 @@ const SectionBuilder = (() => {
     <div class="submit-section">
       <button class="btn primary" id="kopieren-btn" style="display:none;">📋 Für Evaluation kopieren</button>
     </div>`;
+    if (!opts.exam) html += sectionNav();
 
     target.innerHTML = html;
   }
