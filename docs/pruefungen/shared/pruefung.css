@@ -411,7 +411,7 @@ textarea:focus { outline: none; border-color: var(--accent-ink, #457b9d); }
   .antwort-btn { padding: 0.75rem 1rem; font-size: 1rem; min-width: 3rem; }
   .legende { gap: 1rem; }
   .submit-section { padding: 1rem; margin: 1rem -1rem -1rem; flex-direction: column; }
-  .btn { width: 100%; padding: 1rem; }
+  .submit-section .btn { width: 100%; padding: 1rem; }
   .lucke { min-width: 80px; font-size: 0.9rem; }
   .optionen-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
   .auswahl-buttons { grid-template-columns: repeat(auto-fill, minmax(45px, 1fr)); }
