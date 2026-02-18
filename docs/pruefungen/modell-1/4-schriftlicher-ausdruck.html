@@ -10,58 +10,26 @@
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 1 – Schriftlicher Ausdruck</h1>
-    <p class="lead">70 Minuten • Mindestens 350 Wörter</p>
+  <main class="pruefung-container" id="section-root" data-section="sa" data-modell="1">
 
-    <div class="aufgabe-box">
-      <h2>Aufgabenstellung</h2>
-      <p>In einer Seminararbeit sollen Sie ein Thema aus unterschiedlichen Perspektiven beleuchten.</p>
-      <p><strong>Anforderungen:</strong></p>
-      <ul>
-        <li>Sie können die unten stehenden Zitate zur Orientierung verwenden, aber auch andere Aspekte des Themas darlegen.</li>
-        <li>Argumentieren Sie überzeugend und führen Sie Beispiele an.</li>
-        <li>Gliedern Sie Ihren Text in <strong>Einleitung, Hauptteil und Schluss</strong>.</li>
-        <li>Mindestens <strong>350 Wörter</strong>.</li>
-      </ul>
-    </div>
-
-    <div class="aufgabe-box">
-      <h2>Wählen Sie ein Thema</h2>
-      <div class="themen-container">
-        <div class="thema-box" data-thema="literatur">
-          <h3>Thema 1: Literatur</h3>
-          <div class="zitat">„Literatur hat nie etwas Negatives verhindern können."</div>
-          <div class="zitat">„Literatur bietet mehr Orientierung als alles andere."</div>
-        </div>
-
-        <div class="thema-box" data-thema="gruppenarbeit">
-          <h3>Thema 2: Gruppenarbeit</h3>
-          <div class="zitat">„Gruppenarbeit kostet doch nur Zeit, weil man alles ausdiskutieren muss."</div>
-          <div class="zitat">„Teamarbeit bietet dem Einzelnen viel mehr Möglichkeiten."</div>
-        </div>
+    <div data-content="themen" hidden>
+      <div data-thema="literatur">
+        <h3>Thema 1: Literatur</h3>
+        <div class="zitat">„Literatur hat nie etwas Negatives verhindern können."</div>
+        <div class="zitat">„Literatur bietet mehr Orientierung als alles andere."</div>
+      </div>
+      <div data-thema="gruppenarbeit">
+        <h3>Thema 2: Gruppenarbeit</h3>
+        <div class="zitat">„Gruppenarbeit kostet doch nur Zeit, weil man alles ausdiskutieren muss."</div>
+        <div class="zitat">„Teamarbeit bietet dem Einzelnen viel mehr Möglichkeiten."</div>
       </div>
     </div>
 
-    <div class="editor-container" id="editor-container">
-      <div class="aufgabe-box">
-        <h2 id="selected-thema-title">Ihr Text</h2>
-        <textarea id="text-input" placeholder="Schreiben Sie hier Ihren Text..."></textarea>
-        <div class="word-count" id="word-count">0 Wörter</div>
-      </div>
-    </div>
-
-    <div class="success-msg" id="success-msg">
-      ✓ Text wurde in die Zwischenablage kopiert! Sie können ihn jetzt in eine KI einfügen zur Evaluation.
-    </div>
-
-    <div class="submit-section">
-      <button class="btn primary" id="kopieren-btn" disabled>📋 Für Evaluation kopieren</button>
-    </div>
   </main>
-
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
+    SectionBuilder.sa(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initSA({
       literatur: {
         title: 'Thema 1: Literatur',
@@ -73,6 +41,5 @@
       }
     });
   </script>
-
 </body>
 </html>
