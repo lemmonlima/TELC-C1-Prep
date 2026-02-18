@@ -316,38 +316,45 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 | **Texto total** (7 párrafos, sin contar huecos) | **~250** |
 | Opciones por hueco | 1–4 palabras c/u |
 
-**Cómo rellenar:**
-
-1. Título y texto con huecos usando `<span class="lucke">`:
+**Estructura del archivo** (`data-section="sb"`):
 
 ```html
-<h3>Título del texto</h3>
-<p>Texto <span class="lucke" data-lucke="25">____</span> más texto
-<span class="lucke" data-lucke="26">____</span> continúa...</p>
-```
+<main class="pruefung-container" id="section-root" data-section="sb" data-modell="N">
 
-2. Opciones — cada grupo de 4 botones:
-
-```html
-<div class="option-gruppe">
-  <div class="option-gruppe-titel">25</div>
-  <div class="optionen-grid">
-    <button class="option-btn" data-lucke="25" data-wert="a">an</button>
-    <button class="option-btn" data-lucke="25" data-wert="b">bei</button>
-    <button class="option-btn" data-lucke="25" data-wert="c">durch</button>
-    <button class="option-btn" data-lucke="25" data-wert="d">fest</button>
+  <div data-content="text" hidden>
+    <h3>Título del texto</h3>
+    <p>Texto <span class="lucke" data-lucke="25">____</span> más texto
+    <span class="lucke" data-lucke="26">____</span> continúa...</p>
+    <!-- más párrafos con Lücken hasta 47 -->
   </div>
-</div>
-```
 
-3. Respuestas:
+  <div data-content="optionen" hidden>
+    <div data-lucke="25">
+      <span data-wert="a">an</span>
+      <span data-wert="b">bei</span>
+      <span data-wert="c">durch</span>
+      <span data-wert="d">fest</span>
+    </div>
+    <div data-lucke="26">
+      <span data-wert="a">opción a</span>
+      <span data-wert="b">opción b</span>
+      <span data-wert="c">opción c</span>
+      <span data-wert="d">opción d</span>
+    </div>
+    <!-- div por cada Lücke 27–47 -->
+  </div>
 
-```javascript
-Pruefung.initSB({
-  25:'a',26:'d',27:'a',28:'b',29:'d',30:'d',31:'a',32:'b',33:'a',34:'a',
-  35:'c',36:'c',37:'b',38:'c',39:'d',40:'c',41:'c',42:'c',43:'d',44:'d',
-  45:'a',46:'c',47:'a'
-});
+</main>
+<script src="../shared/section-builders.js"></script>
+<script src="../shared/pruefung.js"></script>
+<script>
+  SectionBuilder.sb(document.getElementById('section-root'), document.getElementById('section-root'));
+  Pruefung.initSB({
+    25:'a',26:'d',27:'a',28:'b',29:'d',30:'d',31:'a',32:'b',33:'a',34:'a',
+    35:'c',36:'c',37:'b',38:'c',39:'d',40:'c',41:'c',42:'c',43:'d',44:'d',
+    45:'a',46:'c',47:'a'
+  });
+</script>
 ```
 
 **Tipos de gramática que se evalúan:**
