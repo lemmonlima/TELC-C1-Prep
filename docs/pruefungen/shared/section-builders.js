@@ -617,6 +617,7 @@ const SectionBuilder = (() => {
       </div>
     </div>
     <div class="submit-section"></div>`;
+    if (!opts.exam) html += sectionNav();
 
     target.innerHTML = html;
   }
