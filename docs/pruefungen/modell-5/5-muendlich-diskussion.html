@@ -4,162 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Modelltest 5 - Mündliche Prüfung: Diskussion | TELC C1 Hochschule</title>
-  <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="../shared/pruefung.css">
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../shared/pruefung.css" />
   <script src="../../topbar.js"></script>
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 2 – Mündliche Prüfung</h1>
-    <p class="lead">Teil 2: Diskussion (6 Minuten)</p>
+  <main class="pruefung-container" id="section-root" data-section="diskussion" data-modell="5">
 
-    <div class="info-box">
-      <p><strong>⏱️ Dauer:</strong> ca. 6 Minuten</p>
-      <p><strong>👥 Format:</strong> Diskussion mit Ihrem/Ihrer Prüfungspartner/in</p>
-      <p><strong>📝 Hinweis:</strong> Keine Vorbereitungszeit - Sie erhalten das Thema direkt im Prüfungsraum</p>
+    <div data-content="zitate" hidden>
+      <!-- TODO: 4 zitat-box divs -->
     </div>
 
-    <div class="aufgabe-box">
-      <h2>Aufgabe</h2>
-      <p>Diskutieren Sie mit Ihrer Partnerin oder Ihrem Partner über eine der folgenden Aussagen:</p>
-      <ul style="line-height: 1.8; margin: 1rem 0;">
-        <li>Wie verstehen Sie diese Aussage?</li>
-        <li>Inwiefern teilen Sie diese Ansicht?</li>
-        <li>Geben Sie dazu Gründe und Beispiele an.</li>
-        <li>Gehen Sie auch auf die Argumente Ihrer Partnerin/Ihres Partners ein.</li>
-      </ul>
-      <p><strong>Es soll ein Austausch von Argumenten stattfinden.</strong></p>
+    <div data-content="simulation" hidden>
+      <!-- TODO: 4 simulation thema-box divs -->
     </div>
 
-    <div class="zitat-container">
-      <!-- TODO: Diskussionsthemen/Zitate einfügen -->
-      <div class="zitat-box">
-        <div class="zitat-nummer">Diskussionsthema 1</div>
-        <div class="zitat-text"><!-- TODO: Zitat 1 --></div>
-        <div class="zitat-autor"><!-- TODO: Autor 1 --></div>
-        <div class="diskussionsfragen">
-          <h4>Mögliche Diskussionsaspekte:</h4>
-          <ul>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="zitat-box">
-        <div class="zitat-nummer">Diskussionsthema 2</div>
-        <div class="zitat-text"><!-- TODO: Zitat 2 --></div>
-        <div class="zitat-autor"><!-- TODO: Autor 2 --></div>
-        <div class="diskussionsfragen">
-          <h4>Mögliche Diskussionsaspekte:</h4>
-          <ul>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="zitat-box">
-        <div class="zitat-nummer">Diskussionsthema 3</div>
-        <div class="zitat-text"><!-- TODO: Zitat 3 --></div>
-        <div class="zitat-autor"><!-- TODO: Autor 3 --></div>
-        <div class="diskussionsfragen">
-          <h4>Mögliche Diskussionsaspekte:</h4>
-          <ul>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="zitat-box">
-        <div class="zitat-nummer">Diskussionsthema 4</div>
-        <div class="zitat-text"><!-- TODO: Zitat 4 --></div>
-        <div class="zitat-autor"><!-- TODO: Autor 4 --></div>
-        <div class="diskussionsfragen">
-          <h4>Mögliche Diskussionsaspekte:</h4>
-          <ul>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-            <li><!-- TODO --></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="aufgabe-box">
-      <h3>Tipps für die Diskussion</h3>
-      <ul style="line-height: 1.8;">
-        <li><strong>Aktiv zuhören:</strong> Auf die Argumente des Partners eingehen</li>
-        <li><strong>Klar argumentieren:</strong> Beispiele und Begründungen nennen</li>
-        <li><strong>Respektvoll bleiben:</strong> Auch bei unterschiedlichen Meinungen</li>
-        <li><strong>Nachfragen:</strong> „Wie meinst du das?" / „Könntest du ein Beispiel nennen?"</li>
-        <li><strong>Position einnehmen:</strong> Eigene Meinung klar vertreten, aber auch Kompromisse zeigen</li>
-        <li><strong>Sprache:</strong> Redemittel nutzen wie „Meiner Meinung nach...", „Ich sehe das anders, weil..."</li>
-      </ul>
-    </div>
-
-    <div class="aufgabe-box" style="margin-top: 3rem;">
-      <h2>Diskussionssimulation mit KI</h2>
-      <p>Wählen Sie ein Diskussionsthema und kopieren Sie die Aufgabe. Eine KI wird dann als Ihr Diskussionspartner agieren und Sie nach TELC C1 Standards bewerten.</p>
-
-      <div class="themen-container">
-        <!-- TODO: Themen einfügen -->
-        <div class="thema-box" data-zitat="1">
-          <h3>Diskussionsthema 1</h3>
-          <div class="zitat"><!-- TODO: Zitat 1 --></div>
-        </div>
-
-        <div class="thema-box" data-zitat="2">
-          <h3>Diskussionsthema 2</h3>
-          <div class="zitat"><!-- TODO: Zitat 2 --></div>
-        </div>
-
-        <div class="thema-box" data-zitat="3">
-          <h3>Diskussionsthema 3</h3>
-          <div class="zitat"><!-- TODO: Zitat 3 --></div>
-        </div>
-
-        <div class="thema-box" data-zitat="4">
-          <h3>Diskussionsthema 4</h3>
-          <div class="zitat"><!-- TODO: Zitat 4 --></div>
-        </div>
-      </div>
-
-      <div id="zitat-vorschau" class="hidden" style="margin: 1.5rem 0; padding: 1rem; background: var(--panel-bg, #1a1916); border-left: 3px solid var(--accent-ink, #457b9d); border-radius: 4px;">
-        <strong>Mögliche Diskussionsaspekte:</strong>
-        <ul id="diskussionsaspekte-vorschau" style="margin-top: 0.5rem; line-height: 1.6;"></ul>
-      </div>
-
-      <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-        <button id="kopieren-diskussion-btn" class="btn primary">📋 Diskussionsaufgabe kopieren (für KI)</button>
-      </div>
-
-      <div id="kopiert-info-diskussion" class="success-msg">
-        ✓ Aufgabe wurde in die Zwischenablage kopiert! Fügen Sie sie jetzt in eine KI ein.
-      </div>
-    </div>
-
-    <div class="submit-section"></div>
   </main>
-
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
-    Pruefung.initDiskussion({
-      1: { text:'/* TODO */', autor:'/* TODO */', aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
-      2: { text:'/* TODO */', autor:'/* TODO */', aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
-      3: { text:'/* TODO */', autor:'/* TODO */', aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
-      4: { text:'/* TODO */', autor:'/* TODO */', aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] }
-    });
+    SectionBuilder.diskussion(document.getElementById('section-root'), document.getElementById('section-root'));
+    Pruefung.initDiskussion({ /* TODO: quotes object */ });
   </script>
-
 </body>
 </html>
