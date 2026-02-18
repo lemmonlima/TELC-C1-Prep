@@ -152,34 +152,33 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 | Párrafo 4 + subtítulo (con Lücke 6) | ~70 |
 | Cada opción (a–h) | ~10–25 |
 
-**Cómo rellenar la plantilla:**
-
-1. Reemplaza `<!-- TODO: Titel -->` con el título del texto:
+**Estructura del archivo** (`data-section="lv1"`):
 
 ```html
-<h3>Tu Título Aquí</h3>
-```
+<main class="pruefung-container" id="section-root" data-section="lv1" data-modell="N">
 
-2. Reemplaza `<!-- TODO: Text con ... -->` con los párrafos. Usa `<span class="luecke">N</span>` para cada hueco:
+  <div data-content="text" hidden>
+    <h3>Título del Texto</h3>
+    <p>Primer párrafo con <span class="luecke">0</span> y <span class="luecke">1</span></p>
+    <h4>Subtítulo</h4>
+    <p>Segundo párrafo con <span class="luecke">2</span> y <span class="luecke">3</span></p>
+    <!-- más párrafos con Lücken 4, 5, 6 -->
+  </div>
 
-```html
-<p>Texto antes del hueco. <span class="luecke">0</span> Texto después del hueco.
-<span class="luecke">1</span> Más texto aquí.</p>
+  <div data-content="options" hidden>
+    <div data-key="a">Oración que podría ir en algún hueco.</div>
+    <div data-key="b">Otra oración posible.</div>
+    <!-- c, d, e, f, g, h -->
+    <div data-key="z">Oración de ejemplo para Lücke 0. <strong>(Beispiel für Lücke 0)</strong></div>
+  </div>
 
-<h4>Subtítulo opcional</h4>
-<p>Otro párrafo con <span class="luecke">2</span> y <span class="luecke">3</span></p>
-```
-
-3. Reemplaza cada `<!-- TODO: Satz X -->` con la oración correspondiente:
-
-```html
-<span>Esta es la oración que podría ir en algún hueco.</span>
-```
-
-4. Actualiza las respuestas en el `<script>`:
-
-```javascript
-Pruefung.initLV1({ 1:'g', 2:'e', 3:'a', 4:'b', 5:'h', 6:'d' });
+</main>
+<script src="../shared/section-builders.js"></script>
+<script src="../shared/pruefung.js"></script>
+<script>
+  SectionBuilder.lv1(document.getElementById('section-root'), document.getElementById('section-root'));
+  Pruefung.initLV1({ 1:'g', 2:'e', 3:'a', 4:'b', 5:'h', 6:'d' });
+</script>
 ```
 
 **Reglas del contenido:**
