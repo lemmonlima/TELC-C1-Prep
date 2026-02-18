@@ -43,6 +43,8 @@ const EXAM_DATA = {
     }
   },
 
+  hvTranskript: '/* TODO: Hörverstehen-Transkript hier einfügen */',
+
   diskussionZitate: {
     1: { text:'/* TODO */', autor:'/* TODO */',
          aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
