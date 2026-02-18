@@ -599,40 +599,58 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 
 **Tipo:** Elegir 1 de 2 temas, preparar 20 min, presentar ~3 min. 3 participantes (A, B, C) × 2 temas = 6 temas total.
 
-**Cómo rellenar:**
-
-1. Cada participante con 2 temas:
+**Estructura del archivo** (`data-section="praesentation"`):
 
 ```html
-<div class="teilnehmer-box">
-  <div class="teilnehmer-titel">Teilnehmer/in A</div>
-  <div class="thema-box">
-    <div class="thema-label">Thema 1</div>
-    <div class="thema-text">
-      <p>Pregunta/tema completo aquí.</p>
+<main class="pruefung-container" id="section-root" data-section="praesentation" data-modell="N">
+
+  <div data-content="teilnehmer" hidden>
+    <div class="teilnehmer-box">
+      <div class="teilnehmer-titel">Teilnehmer/in A</div>
+      <div class="thema-box">
+        <div class="thema-label">Thema 1</div>
+        <div class="thema-text"><p>Pregunta/tema completo aquí.</p></div>
+      </div>
+      <div class="thema-box">
+        <div class="thema-label">Thema 2</div>
+        <div class="thema-text"><p>Segundo tema aquí.</p></div>
+      </div>
     </div>
+    <!-- teilnehmer-box para B y C con misma estructura -->
   </div>
-  <div class="thema-box">
-    <div class="thema-label">Thema 2</div>
-    <div class="thema-text">
-      <p>Segundo tema aquí.</p>
-    </div>
+
+  <div data-content="select" hidden>
+    <optgroup label="Teilnehmer/in A">
+      <option value="a1">Thema 1: Resumen corto del tema</option>
+      <option value="a2">Thema 2: Resumen corto del tema</option>
+    </optgroup>
+    <optgroup label="Teilnehmer/in B">
+      <option value="b1">Thema 1: ...</option>
+      <option value="b2">Thema 2: ...</option>
+    </optgroup>
+    <optgroup label="Teilnehmer/in C">
+      <option value="c1">Thema 1: ...</option>
+      <option value="c2">Thema 2: ...</option>
+    </optgroup>
   </div>
-</div>
+
+</main>
+<script src="../shared/section-builders.js"></script>
+<script src="../shared/pruefung.js"></script>
+<script>
+  SectionBuilder.praesentation(document.getElementById('section-root'), document.getElementById('section-root'));
+  Pruefung.initPraesentation({
+    'a1': 'Texto completo del tema A1.',
+    'a2': 'Texto completo del tema A2.',
+    'b1': 'Texto completo del tema B1.',
+    'b2': 'Texto completo del tema B2.',
+    'c1': 'Texto completo del tema C1.',
+    'c2': 'Texto completo del tema C2.'
+  });
+</script>
 ```
 
-2. El select y la configuración JS:
-
-```javascript
-Pruefung.initPraesentation({
-  'a1': 'Texto completo del tema A1.',
-  'a2': 'Texto completo del tema A2.',
-  'b1': 'Texto completo del tema B1.',
-  'b2': 'Texto completo del tema B2.',
-  'c1': 'Texto completo del tema C1.',
-  'c2': 'Texto completo del tema C2.'
-});
-```
+> **Nota:** Las claves del select (`a1`, `a2`, `b1`...) deben coincidir con las claves en `initPraesentation` y en `praesentation-texte.js`.
 
 **Temas típicos de presentación (Modell 1 como referencia):**
 
