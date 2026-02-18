@@ -98,21 +98,25 @@
 
 Para cada `modell-N/` (N = 2, 3, 4, 5), debes editar:
 
-### Archivos HTML (reemplazar `<!-- TODO -->` con contenido)
+### Arquitectura: contenido separado del boilerplate
+
+Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera automáticamente toda la estructura repetitiva (instrucciones, botones de respuesta, sección de resultados, etc.). Los archivos HTML solo contienen los **datos únicos** dentro de `<div data-content="..." hidden>`.
+
+### Archivos HTML (rellenar los `<div data-content>` y respuestas en `<script>`)
 
 | Archivo | Qué rellenar |
 |---------|-------------|
-| `1-leseverstehen-teil-1.html` | Título, texto con lücken, 8+1 opciones (a–h, z) |
-| `1-leseverstehen-teil-2.html` | Título, 5 absätze (a–e), 6 preguntas |
-| `1-leseverstehen-teil-3.html` | Título, texto largo, 11 aussagen + 1 pregunta global |
-| `2-sprachbausteine.html` | Título, texto con 23 lücken, 4 opciones c/u |
-| `3-hoerverstehen-teil-1.html` | Tema, 10 aussagen (a–j) |
-| `3-hoerverstehen-teil-2.html` | Tema, 10 preguntas con 3 opciones c/u |
-| `3-hoerverstehen-teil-3.html` | Tema, folien/slides con lücken |
-| `4-schriftlicher-ausdruck.html` | 2 temas con 2 citas c/u |
-| `5-muendlich-praesentation.html` | 6 temas (2 por participante A/B/C) |
-| `5-muendlich-zusammenfassung.html` | Actualizar botones con nombres de temas de Teil 1A |
-| `5-muendlich-diskussion.html` | 4 citas con autor + aspectos de discusión |
+| `1-leseverstehen-teil-1.html` | `data-content="text"`: título + texto con lücken; `data-content="options"`: 9 oraciones (a–h, z) |
+| `1-leseverstehen-teil-2.html` | `data-content="text"`: título + 5 absätze; `data-content="fragen"`: 6 preguntas |
+| `1-leseverstehen-teil-3.html` | `data-content="text"`: título + texto largo; `data-content="aussagen"`: 11 enunciados; `data-content="global"`: 3 opciones |
+| `2-sprachbausteine.html` | `data-content="text"`: título + texto con 23 lücken; `data-content="optionen"`: 23 grupos × 4 opciones |
+| `3-hoerverstehen-teil-1.html` | `data-content="thema"`: tema; `data-content="aussagen"`: 10 aussagen (a–j) |
+| `3-hoerverstehen-teil-2.html` | `data-content="thema"`: tema; `data-content="fragen"`: 10 preguntas con stem + 3 opciones |
+| `3-hoerverstehen-teil-3.html` | `data-content="thema"`: tema; `data-content="slides"`: 5–7 slide-box divs con inputs |
+| `4-schriftlicher-ausdruck.html` | `data-content="themen"`: 2 temas con 2 citas c/u |
+| `5-muendlich-praesentation.html` | `data-content="teilnehmer"`: 3 bloques de temas; `data-content="select"`: opciones dropdown |
+| `5-muendlich-zusammenfassung.html` | `data-content="themen"`: botones con nombres de temas de Teil 1A |
+| `5-muendlich-diskussion.html` | `data-content="zitate"`: 4 citas completas; `data-content="simulation"`: 4 cajas de simulación |
 
 ### Archivos JavaScript y Markdown (actualizar datos)
 
@@ -120,16 +124,14 @@ Para cada `modell-N/` (N = 2, 3, 4, 5), debes editar:
 |---------|-------------|
 | `exam-data.js` | Respuestas correctas + temas SA + citas diskussion |
 | `praesentation-texte.js` | 6 textos de presentación (~350–400 palabras c/u) |
-| `hoerverstehen-transkript.md` | **NUEVO:** Transcripciones completas de HV1, HV2, HV3 + botones de copiar |
 
 ### Lo que NO debes tocar
 
 - `index.html` — ya genera el menú automáticamente
 - `exam.html` — ya carga todo automáticamente
-- Nada en `shared/` — `pruefung.js`, `pruefung.css`, `exam-engine.js`, `exam.css`
-- Los botones de respuesta (a–h, a–e, +/−/×) — ya están en las plantillas
-- La sección `<div class="ergebnisse">` — ya existe
-- Los `<script>` al final — solo actualizar los valores de respuestas
+- Nada en `shared/` — `pruefung.js`, `pruefung.css`, `section-builders.js`, `exam-engine.js`, `exam.css`
+- La estructura HTML fuera de los `<div data-content>` — el builder genera todo lo demás
+- Los `<script>` al final — solo actualizar los valores de respuestas dentro de `Pruefung.initXXX()`
 
 ---
 
