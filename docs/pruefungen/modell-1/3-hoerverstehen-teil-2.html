@@ -10,130 +10,79 @@
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 1 – Hörverstehen Teil 2</h1>
-    <p class="lead">Detailverstehen: 10 Fragen zum Interview</p>
+  <main class="pruefung-container" id="section-root" data-section="hv2" data-modell="1">
 
-    <div class="audio-note">
-      <strong>⚠️ Hinweis:</strong> Die Audiodateien sind in diesem Test nicht verfügbar. Sie benötigen die offiziellen TELC Audio-CDs oder das Original-Testmaterial, um diesen Teil zu üben.
+    <div data-content="thema" hidden>Interview zum Jahr der Mathematik mit Prof. Albrecht Beutelspacher</div>
+
+    <div data-content="fragen" hidden>
+      <div data-frage="55">
+        <div class="stem">Herr Beutelspacher ist</div>
+        <div data-wert="a">begeistert, wenn er die Lösung eines Problems begreift.</div>
+        <div data-wert="b">fasziniert von Menschen, die die Grundlagen der Welt verstehen.</div>
+        <div data-wert="c">glücklich, wenn er Menschen Mathematik erklären kann.</div>
+      </div>
+      <div data-frage="56">
+        <div class="stem">Ein Fünfeck</div>
+        <div data-wert="a">gelingt Herrn Beutelspacher nur selten spontan.</div>
+        <div data-wert="b">ist auch ohne Hilfsmittel einfach zu konstruieren.</div>
+        <div data-wert="c">kann jeder Mensch freihändig ganz gut zeichnen.</div>
+      </div>
+      <div data-frage="57">
+        <div class="stem">Die Zahl Acht</div>
+        <div data-wert="a">kommt Herrn Beutelspacher fast schon prahlerisch vor.</div>
+        <div data-wert="b">kommt in einer Mozart-Oper vor.</div>
+        <div data-wert="c">macht Herrn Beutelspacher große Angst.</div>
+      </div>
+      <div data-frage="58">
+        <div class="stem">Im Unterrichtsfach Mathematik</div>
+        <div data-wert="a">entscheiden die Lehrer, welche Lösung richtig ist.</div>
+        <div data-wert="b">haben Lehrer mehr Macht als im Fach Deutsch.</div>
+        <div data-wert="c">können Schüler die Ergebnisse und Fehler selbst nachvollziehen.</div>
+      </div>
+      <div data-frage="59">
+        <div class="stem">Mit Mathematik</div>
+        <div data-wert="a">begreift man auch seine Gefühle besser.</div>
+        <div data-wert="b">gelangt man an die Grenzen des eigenen Denkvermögens.</div>
+        <div data-wert="c">kann man auch Dinge jenseits der Vernunft beschreiben.</div>
+      </div>
+      <div data-frage="60">
+        <div class="stem">Mathematik mit Bezug zum Alltag</div>
+        <div data-wert="a">spielt im Schulunterricht nur selten eine Rolle.</div>
+        <div data-wert="b">wird in traditionellen Lehrmethoden stark berücksichtigt.</div>
+        <div data-wert="c">wird zukünftigen Mathematiklehrern gezielt vermittelt.</div>
+      </div>
+      <div data-frage="61">
+        <div class="stem">Mathematiklehrer</div>
+        <div data-wert="a">beschränken sich bei der Darstellung der Mathematik meist auf das Wesentliche.</div>
+        <div data-wert="b">müssten sich mehr als Künstler fühlen.</div>
+        <div data-wert="c">sind nicht so engagiert wie andere Lehrer.</div>
+      </div>
+      <div data-frage="62">
+        <div class="stem">Um Mathematik zu lernen,</div>
+        <div data-wert="a">sollte jeder seinen eigenen Zugang zur Mathematik finden.</div>
+        <div data-wert="b">sollten die Schüler Lehrer haben, die sich besser mit der Mathematik identifizieren.</div>
+        <div data-wert="c">sollten die Schüler Lernangebote außerhalb der Schule nutzen.</div>
+      </div>
+      <div data-frage="63">
+        <div class="stem">Das Interessante an der Mathematik sind vor allem</div>
+        <div data-wert="a">die aktuellen technischen Anwendungen.</div>
+        <div data-wert="b">die Themen, unabhängig von einer Anwendung.</div>
+        <div data-wert="c">geometrische Formen.</div>
+      </div>
+      <div data-frage="64">
+        <div class="stem">Der Nutzen der Mathematik</div>
+        <div data-wert="a">ist im alltäglichen Leben nicht immer präsent.</div>
+        <div data-wert="b">liegt in ihrer Bedeutung für den Schulunterricht.</div>
+        <div data-wert="c">rechtfertigt Bildungsinvestitionen.</div>
+      </div>
     </div>
 
-    <div class="aufgabe-box">
-      <h2>Aufgabe</h2>
-      <p><strong>Thema:</strong> Interview zum Jahr der Mathematik mit Prof. Albrecht Beutelspacher</p>
-      <p>Sie hören eine Radiosendung. Sie hören die Sendung <strong>nur einmal</strong>.</p>
-      <p>Entscheiden Sie beim Hören, welche Aussage (a, b oder c) am besten passt.</p>
-    </div>
-
-    <div class="frage-container">
-      
-      <div class="frage-box">
-        <div class="frage-nummer">55. Herr Beutelspacher ist</div>
-        <div class="antwort-buttons">
-          <button class="antwort-btn" data-frage="55" data-wert="a">a) begeistert, wenn er die Lösung eines Problems begreift.</button>
-          <button class="antwort-btn" data-frage="55" data-wert="b">b) fasziniert von Menschen, die die Grundlagen der Welt verstehen.</button>
-          <button class="antwort-btn" data-frage="55" data-wert="c">c) glücklich, wenn er Menschen Mathematik erklären kann.</button>
-        </div>
-      </div>
-
-      <div class="frage-box">
-        <div class="frage-nummer">56. Ein Fünfeck</div>
-        <div class="antwort-buttons">
-          <button class="antwort-btn" data-frage="56" data-wert="a">a) gelingt Herrn Beutelspacher nur selten spontan.</button>
-          <button class="antwort-btn" data-frage="56" data-wert="b">b) ist auch ohne Hilfsmittel einfach zu konstruieren.</button>
-          <button class="antwort-btn" data-frage="56" data-wert="c">c) kann jeder Mensch freihändig ganz gut zeichnen.</button>
-        </div>
-      </div>
-
-      <div class="frage-box">
-        <div class="frage-nummer">57. Die Zahl Acht</div>
-        <div class="antwort-buttons">
-          <button class="antwort-btn" data-frage="57" data-wert="a">a) kommt Herrn Beutelspacher fast schon prahlerisch vor.</button>
-          <button class="antwort-btn" data-frage="57" data-wert="b">b) kommt in einer Mozart-Oper vor.</button>
-          <button class="antwort-btn" data-frage="57" data-wert="c">c) macht Herrn Beutelspacher große Angst.</button>
-        </div>
-      </div>
-
-      <div class="frage-box">
-        <div class="frage-nummer">58. Im Unterrichtsfach Mathematik</div>
-        <div class="antwort-buttons">
-          <button class="antwort-btn" data-frage="58" data-wert="a">a) entscheiden die Lehrer, welche Lösung richtig ist.</button>
-          <button class="antwort-btn" data-frage="58" data-wert="b">b) haben Lehrer mehr Macht als im Fach Deutsch.</button>
-          <button class="antwort-btn" data-frage="58" data-wert="c">c) können Schüler die Ergebnisse und Fehler selbst nachvollziehen.</button>
-        </div>
-      </div>
-
-      <div class="frage-box">
-        <div class="frage-nummer">59. Mit Mathematik</div>
-        <div class="antwort-buttons">
-          <button class="antwort-btn" data-frage="59" data-wert="a">a) begreift man auch seine Gefühle besser.</button>
-          <button class="antwort-btn" data-frage="59" data-wert="b">b) gelangt man an die Grenzen des eigenen Denkvermögens.</button>
-          <button class="antwort-btn" data-frage="59" data-wert="c">c) kann man auch Dinge jenseits der Vernunft beschreiben.</button>
-        </div>
-      </div>
-
-      <div class="frage-box">
-        <div class="frage-nummer">60. Mathematik mit Bezug zum Alltag</div>
-        <div class="antwort-buttons">
-          <button class="antwort-btn" data-frage="60" data-wert="a">a) spielt im Schulunterricht nur selten eine Rolle.</button>
-          <button class="antwort-btn" data-frage="60" data-wert="b">b) wird in traditionellen Lehrmethoden stark berücksichtigt.</button>
-          <button class="antwort-btn" data-frage="60" data-wert="c">c) wird zukünftigen Mathematiklehrern gezielt vermittelt.</button>
-        </div>
-      </div>
-
-      <div class="frage-box">
-        <div class="frage-nummer">61. Mathematiklehrer</div>
-        <div class="antwort-buttons">
-          <button class="antwort-btn" data-frage="61" data-wert="a">a) beschränken sich bei der Darstellung der Mathematik meist auf das Wesentliche.</button>
-          <button class="antwort-btn" data-frage="61" data-wert="b">b) müssten sich mehr als Künstler fühlen.</button>
-          <button class="antwort-btn" data-frage="61" data-wert="c">c) sind nicht so engagiert wie andere Lehrer.</button>
-        </div>
-      </div>
-
-      <div class="frage-box">
-        <div class="frage-nummer">62. Um Mathematik zu lernen,</div>
-        <div class="antwort-buttons">
-          <button class="antwort-btn" data-frage="62" data-wert="a">a) sollte jeder seinen eigenen Zugang zur Mathematik finden.</button>
-          <button class="antwort-btn" data-frage="62" data-wert="b">b) sollten die Schüler Lehrer haben, die sich besser mit der Mathematik identifizieren.</button>
-          <button class="antwort-btn" data-frage="62" data-wert="c">c) sollten die Schüler Lernangebote außerhalb der Schule nutzen.</button>
-        </div>
-      </div>
-
-      <div class="frage-box">
-        <div class="frage-nummer">63. Das Interessante an der Mathematik sind vor allem</div>
-        <div class="antwort-buttons">
-          <button class="antwort-btn" data-frage="63" data-wert="a">a) die aktuellen technischen Anwendungen.</button>
-          <button class="antwort-btn" data-frage="63" data-wert="b">b) die Themen, unabhängig von einer Anwendung.</button>
-          <button class="antwort-btn" data-frage="63" data-wert="c">c) geometrische Formen.</button>
-        </div>
-      </div>
-
-      <div class="frage-box">
-        <div class="frage-nummer">64. Der Nutzen der Mathematik</div>
-        <div class="antwort-buttons">
-          <button class="antwort-btn" data-frage="64" data-wert="a">a) ist im alltäglichen Leben nicht immer präsent.</button>
-          <button class="antwort-btn" data-frage="64" data-wert="b">b) liegt in ihrer Bedeutung für den Schulunterricht.</button>
-          <button class="antwort-btn" data-frage="64" data-wert="c">c) rechtfertigt Bildungsinvestitionen.</button>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="ergebnisse" id="ergebnisse">
-      <h3>Ihre Ergebnisse</h3>
-      <div id="ergebnis-liste"></div>
-      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
-    </div>
-
-    <div class="submit-section">
-      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
-    </div>
   </main>
-
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
+    SectionBuilder.hv2(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initHV2({ 55:'a', 56:'a', 57:'a', 58:'c', 59:'b', 60:'a', 61:'a', 62:'a', 63:'b', 64:'c' });
   </script>
-
 </body>
 </html>
