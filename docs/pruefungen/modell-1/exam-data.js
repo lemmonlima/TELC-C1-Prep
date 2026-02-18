@@ -55,6 +55,8 @@ const EXAM_DATA = {
     }
   },
 
+  hvTranskript: '/* TODO: Hörverstehen-Transkript hier einfügen */',
+
   diskussionZitate: {
     1: { text:'Die beste Bildung findet ein kluger Mensch auf Reisen.', autor:'Goethe',
          aspekte:['Was bedeutet „Bildung durch Reisen"?','Welche Erfahrungen haben Sie?','Kann man ohne Reisen gebildet werden?','Rolle von Büchern, Internet?'] },
