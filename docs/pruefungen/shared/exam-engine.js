@@ -590,6 +590,11 @@ const Exam = (() => {
       container.innerHTML += html;
     });
 
+    container.innerHTML += `
+    <div style="text-align:center;margin:3rem 0 1rem;">
+      <a href="../index.html" class="btn secondary" style="display:inline-block;">&larr; Alle Prüfungen</a>
+    </div>`;
+
     // Calculate button
     setTimeout(() => {
       $('btn-calculate').addEventListener('click', () => {
