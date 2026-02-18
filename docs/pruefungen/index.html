@@ -6,9 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Modellprüfungen | TELC C1 Hochschule</title>
   <link rel="stylesheet" href="../styles.css" />
-    <!-- TELC Navigation System -->
   <script src="../topbar.js"></script>
   <script src="../navigation.js"></script>
+  <style>
+    .module-link {
+      -webkit-tap-highlight-color: rgba(255, 84, 84, 0.15);
+      min-height: 48px;
+    }
+    @media (max-width: 640px) {
+      .modules { grid-template-columns: 1fr !important; gap: 0.75rem; }
+      .module-link { padding: 1.25rem; }
+      .module-link h3 { font-size: 1.1rem; }
+      .doc-hero-text h1 { font-size: 1.4rem; }
+      .doc-hero-text .lead { font-size: 0.95rem; }
+    }
+  </style>
 </head>
 <body class="no-js doc-page">
   <header class="topbar">
