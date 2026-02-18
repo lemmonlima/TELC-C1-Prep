@@ -1495,6 +1495,7 @@ Para cada nuevo Modelltest, verifica:
 ### JavaScript (datos)
 
 - [ ] `exam-data.js` — Todas las respuestas correctas (lv1, lv2, lv3, sb, hv1, hv2, hv3)
+- [ ] `exam-data.js` — hvTranskript (transkript completo del audio HV)
 - [ ] `exam-data.js` — themaTexte (6 textos de presentación resumidos)
 - [ ] `exam-data.js` — saThemen (2 temas SA con citas)
 - [ ] `exam-data.js` — diskussionZitate (4 citas con aspectos)
