@@ -417,31 +417,36 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 | Cada pregunta (stem) | ~5–10 |
 | Cada opción (a/b/c) | ~8–15 |
 
-**Cómo rellenar:**
-
-1. El tema:
+**Estructura del archivo** (`data-section="hv2"`):
 
 ```html
-<p><strong>Thema:</strong> Interview zum Jahr der Mathematik mit Prof. Albrecht Beutelspacher</p>
-```
+<main class="pruefung-container" id="section-root" data-section="hv2" data-modell="N">
 
-2. Cada pregunta con 3 opciones:
+  <div data-content="thema" hidden>Interview zum Jahr der Mathematik mit Prof. Beutelspacher</div>
 
-```html
-<div class="frage-box">
-  <div class="frage-nummer">55. Herr Beutelspacher ist</div>
-  <div class="antwort-buttons">
-    <button class="antwort-btn" data-frage="55" data-wert="a">a) begeistert, wenn er die Lösung begreift.</button>
-    <button class="antwort-btn" data-frage="55" data-wert="b">b) fasziniert von Menschen, die verstehen.</button>
-    <button class="antwort-btn" data-frage="55" data-wert="c">c) glücklich, wenn er Mathematik erklären kann.</button>
+  <div data-content="fragen" hidden>
+    <div data-frage="55">
+      <div class="stem">Herr Beutelspacher ist</div>
+      <div data-wert="a">begeistert, wenn er die Lösung begreift.</div>
+      <div data-wert="b">fasziniert von Menschen, die verstehen.</div>
+      <div data-wert="c">glücklich, wenn er Mathematik erklären kann.</div>
+    </div>
+    <div data-frage="56">
+      <div class="stem">Ein Fünfeck</div>
+      <div data-wert="a">gelingt ihm nur selten spontan.</div>
+      <div data-wert="b">ist ohne Hilfsmittel einfach zu konstruieren.</div>
+      <div data-wert="c">kann jeder freihändig zeichnen.</div>
+    </div>
+    <!-- preguntas 57–64 con misma estructura -->
   </div>
-</div>
-```
 
-3. Respuestas:
-
-```javascript
-Pruefung.initHV2({ 55:'a', 56:'a', 57:'a', 58:'c', 59:'b', 60:'a', 61:'a', 62:'a', 63:'b', 64:'c' });
+</main>
+<script src="../shared/section-builders.js"></script>
+<script src="../shared/pruefung.js"></script>
+<script>
+  SectionBuilder.hv2(document.getElementById('section-root'), document.getElementById('section-root'));
+  Pruefung.initHV2({ 55:'a', 56:'a', 57:'a', 58:'c', 59:'b', 60:'a', 61:'a', 62:'a', 63:'b', 64:'c' });
+</script>
 ```
 
 ---
