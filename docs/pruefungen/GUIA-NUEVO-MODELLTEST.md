@@ -471,50 +471,61 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 | 67a, 67b, 68a, 68b, 70a, 70b, 71a, 71b | 1 pt c/u |
 | **Total** | **20 pts** |
 
-**Cómo rellenar:**
-
-1. Cada slide con sus inputs:
+**Estructura del archivo** (`data-section="hv3"`):
 
 ```html
-<div class="slide-box">
-  <div class="slide-titel">Título del Slide</div>
-  <div class="slide-content">
-    <p><strong>Subtítulo</strong></p>
-    <span class="input-label">65.</span>
-    <input type="text" class="slide-input" data-nummer="65" placeholder="Pista/hint…">
+<main class="pruefung-container" id="section-root" data-section="hv3" data-modell="N">
+
+  <div data-content="thema" hidden>Gastvortrag „Literatur im Unterricht DaF"</div>
+
+  <div data-content="slides" hidden>
+    <div class="slide-box">
+      <div class="slide-titel">Título del Slide</div>
+      <div class="slide-content">
+        <p><strong>Subtítulo</strong></p>
+        <span class="input-label">65.</span>
+        <input type="text" class="slide-input" data-nummer="65" placeholder="Pista/hint…">
+      </div>
+    </div>
+
+    <div class="slide-box">
+      <div class="slide-titel">Otro Slide</div>
+      <div class="slide-content">
+        <p>Contenido con preguntas divididas:</p>
+        <ul>
+          <li>
+            <span class="input-label">67a.</span>
+            <input type="text" class="slide-input" data-nummer="67a" placeholder="Primera forma">
+          </li>
+          <li>
+            <span class="input-label">67b.</span>
+            <input type="text" class="slide-input" data-nummer="67b" placeholder="Segunda forma">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- más slides hasta cubrir Lücken 65–74 -->
   </div>
-</div>
+
+</main>
+<script src="../shared/section-builders.js"></script>
+<script src="../shared/pruefung.js"></script>
+<script>
+  SectionBuilder.hv3(document.getElementById('section-root'), document.getElementById('section-root'));
+  Pruefung.initHV3({
+    65: ['jeder vierte', '4.', 'vierte', 'keine bücher', 'liest keine'],
+    66: ['bücher werden', 'weiter', 'weiterhin', 'noch', 'immer noch', 'gelesen'],
+    '67a': ['verfassen', 'schreiben', 'eigener', 'texte'],
+    '67b': ['kreative verarbeitung', 'verarbeitung', 'kreative', 'methoden'],
+    // ... keywords para 68a–74
+  }, {
+    65:'65', 66:'66', '67a':'67 (Teil 1)', '67b':'67 (Teil 2)',
+    // ... labels para mostrar en resultados
+  });
+</script>
 ```
 
-2. Para preguntas divididas (a/b):
-
-```html
-<li>
-  <span class="input-label">67a.</span>
-  <input type="text" class="slide-input" data-nummer="67a" placeholder="Primera forma">
-</li>
-<li>
-  <span class="input-label">67b.</span>
-  <input type="text" class="slide-input" data-nummer="67b" placeholder="Segunda forma">
-</li>
-```
-
-3. Las respuestas son **arrays de keywords** (se acepta cualquier match parcial):
-
-```javascript
-Pruefung.initHV3({
-  65: ['jeder vierte', '4.', 'vierte', 'keine bücher', 'liest keine'],
-  66: ['bücher werden', 'weiter', 'weiterhin', 'noch', 'immer noch', 'gelesen'],
-  '67a': ['verfassen', 'schreiben', 'eigener', 'texte'],
-  '67b': ['kreative verarbeitung', 'verarbeitung', 'kreative', 'methoden'],
-  // ... etc
-}, {
-  65:'65', 66:'66', '67a':'67 (Teil 1)', '67b':'67 (Teil 2)',
-  // ... labels para mostrar en resultados
-});
-```
-
-> **Importante:** El segundo objeto es un mapa de labels para mostrar en los resultados. Es obligatorio.
+> **Importante:** El segundo objeto de `initHV3` es un mapa de labels para los resultados. Es obligatorio.
 
 **Regla de scoring keywords:**
 - Match completo (2 pts si es pregunta de 2 pts) = full
