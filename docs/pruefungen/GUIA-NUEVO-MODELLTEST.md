@@ -260,39 +260,41 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 | Cada Aussage (13–23) | ~10–20 |
 | Pregunta global (24) | 3 opciones de título |
 
-**Cómo rellenar:**
-
-1. Título y texto con párrafos:
+**Estructura del archivo** (`data-section="lv3"`):
 
 ```html
-<h3>„Sprachbad" im Kindergarten</h3>
-<p><em>Introducción en cursiva (opcional).</em></p>
-<p>Primer párrafo...</p>
-<p>Segundo párrafo...</p>
-<!-- ... más párrafos ... -->
-```
+<main class="pruefung-container" id="section-root" data-section="lv3" data-modell="N">
 
-2. Las 11 Aussagen (13–23) — la estructura de botones ya existe en la plantilla. Solo rellena el texto:
+  <div data-content="text" hidden>
+    <h3>„Sprachbad" im Kindergarten</h3>
+    <p><em>Introducción en cursiva (opcional).</em></p>
+    <p>Primer párrafo...</p>
+    <p>Segundo párrafo...</p>
+    <!-- más párrafos -->
+  </div>
 
-```html
-<div class="aussage-text">Immersion ist eine Methode zur Förderung der zweiten Muttersprache.</div>
-```
+  <div data-content="aussagen" hidden>
+    <div data-aussage="13">Immersion ist eine Methode zur Förderung der zweiten Muttersprache.</div>
+    <div data-aussage="14">Die Kinder singen auch deutsche Lieder.</div>
+    <!-- aussagen 15–23 -->
+  </div>
 
-3. La pregunta global (24) — 3 opciones de título:
+  <div data-content="global" hidden>
+    <div data-option="a">Fremdsprachenunterricht in deutschen Kindergärten</div>
+    <div data-option="b">„Sprachbad" im Kindergarten</div>
+    <div data-option="c">Der Begriff der Immersion</div>
+  </div>
 
-```html
-<button class="antwort-btn" data-answer="a">a) Título opción A</button>
-<button class="antwort-btn" data-answer="b">b) Título opción B</button>
-<button class="antwort-btn" data-answer="c">c) Título opción C</button>
-```
-
-4. Respuestas — usa `richtig`/`falsch`/`nicht` para 13–23 y letra para 24:
-
-```javascript
-Pruefung.initLV3({
-  13:'falsch', 14:'nicht', 15:'richtig', 16:'nicht', 17:'falsch', 18:'nicht',
-  19:'falsch', 20:'richtig', 21:'falsch', 22:'nicht', 23:'falsch', 24:'b'
-});
+</main>
+<script src="../shared/section-builders.js"></script>
+<script src="../shared/pruefung.js"></script>
+<script>
+  SectionBuilder.lv3(document.getElementById('section-root'), document.getElementById('section-root'));
+  Pruefung.initLV3({
+    13:'falsch', 14:'nicht', 15:'richtig', 16:'nicht', 17:'falsch', 18:'nicht',
+    19:'falsch', 20:'richtig', 21:'falsch', 22:'nicht', 23:'falsch', 24:'b'
+  });
+</script>
 ```
 
 **Reglas del contenido:**
