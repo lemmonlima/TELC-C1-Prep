@@ -6,22 +6,13 @@
   <title>Modelltest 1 - Leseverstehen Teil 1 | TELC C1 Hochschule</title>
   <link rel="stylesheet" href="../../styles.css" />
   <link rel="stylesheet" href="../shared/pruefung.css" />
-  <!-- TELC Navigation System -->
   <script src="../../topbar.js"></script>
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 1 – Leseverstehen Teil 1</h1>
-    <p class="lead">Textrekonstruktion: 6 Zuordnungsaufgaben</p>
+  <main class="pruefung-container" id="section-root" data-section="lv1" data-modell="1">
 
-    <div class="aufgabe-box">
-      <h2>Aufgabe</h2>
-      <p>Lesen Sie den folgenden Text. Welche der Sätze <strong>a–h</strong> gehören in die Lücken <strong>1–6</strong>? Es gibt jeweils nur eine richtige Lösung. Zwei Sätze können nicht zugeordnet werden.</p>
-      <p><em>Lücke (0) ist ein Beispiel.</em></p>
-    </div>
-
-    <div class="text-box">
+    <div data-content="text" hidden>
       <h3>Vom Abakus bis zur Z3</h3>
       <p>Im Jahre 1623 entwickelte Wilhelm Schickard, deutscher Astronom und Mathematiker, die erste Rechenmaschine. <span class="luecke">0</span> Nicht viel später, im Jahre 1644, stellte der französische Mathematiker und Philosoph Blaise Pascal ebenfalls eine Rechenmaschine fertig. <span class="luecke">1</span> Sein Modell war Ende des 17. Jahrhunderts funktionsfähig.</p>
 
@@ -34,151 +25,24 @@
       <p>Es dauerte nochmals fast 100 Jahre, bis Babbages Vorstellungen umgesetzt und das Zeitalter der mechanischen Rechenmaschinen überwunden werden konnte. <span class="luecke">6</span> Es war Konrad Zuse, der mit der Z3 den ersten funktionsfähigen digitalen Rechner konstruierte und baute – der erste Computer überhaupt. Die Z3 wurde im Jahre 1941 fertiggestellt. Jedoch wurde die Maschine nur zwei Jahre später zerstört. Dennoch kann man die Z3 auch heute noch besichtigen: Das Deutsche Museum in München stellt einen kompletten Nachbau der Z3 aus.</p>
     </div>
 
-    <div class="aufgabe-box">
-      <h3>Wählen Sie die passenden Sätze</h3>
-      
-      <div class="optionen" id="optionen">
-        <div class="option-item" data-option="a">
-          <span class="option-label">a</span>
-          <span>Diese Konstruktion aus dem 19. Jahrhundert kann als der direkte Vorläufer unserer heutigen Computer angesehen werden.</span>
-        </div>
-        <div class="option-item" data-option="b">
-          <span class="option-label">b</span>
-          <span>Diese sollten die Anzahl der Wiederholungen steuern, die jede einzelne Lochkarte durchläuft.</span>
-        </div>
-        <div class="option-item" data-option="c">
-          <span class="option-label">c</span>
-          <span>Wenn eine Nadel durch die Karte ging, wurde ein Stromkreis geschlossen und ein elektrischer Zähler bedient.</span>
-        </div>
-        <div class="option-item" data-option="d">
-          <span class="option-label">d</span>
-          <span>Dann war der erste Rechner, der programmgesteuert funktionierte, reif.</span>
-        </div>
-        <div class="option-item" data-option="e">
-          <span class="option-label">e</span>
-          <span>Nachträgliche Änderungen waren also nicht möglich, denn die hochkomplexe Mechanik ließ diese nicht zu.</span>
-        </div>
-        <div class="option-item" data-option="f">
-          <span class="option-label">f</span>
-          <span>Noch größere Zahlen konnten im Speicher aufbewahrt werden, um sie anschließend z. B. zu dividieren und als vierzigstellige Zahl auszugeben.</span>
-        </div>
-        <div class="option-item" data-option="g">
-          <span class="option-label">g</span>
-          <span>Schließlich arbeitete im selben Jahrhundert auch der deutsche Universalgelehrte Gottfried Wilhelm Leibniz an einer Rechenmaschine.</span>
-        </div>
-        <div class="option-item" data-option="h">
-          <span class="option-label">h</span>
-          <span>Seine Rechenmaschine blieb also ein theoretisches Konstrukt, dessen Funktionsfähigkeit sich nicht empirisch überprüfen ließ.</span>
-        </div>
-        <div class="option-item" data-option="z">
-          <span class="option-label">z</span>
-          <span>Mit ihr ließen sich Operationen in den vier Grundrechenarten durchführen. <strong>(Beispiel für Lücke 0)</strong></span>
-        </div>
-      </div>
+    <div data-content="options" hidden>
+      <div data-key="a">Diese Konstruktion aus dem 19. Jahrhundert kann als der direkte Vorläufer unserer heutigen Computer angesehen werden.</div>
+      <div data-key="b">Diese sollten die Anzahl der Wiederholungen steuern, die jede einzelne Lochkarte durchläuft.</div>
+      <div data-key="c">Wenn eine Nadel durch die Karte ging, wurde ein Stromkreis geschlossen und ein elektrischer Zähler bedient.</div>
+      <div data-key="d">Dann war der erste Rechner, der programmgesteuert funktionierte, reif.</div>
+      <div data-key="e">Nachträgliche Änderungen waren also nicht möglich, denn die hochkomplexe Mechanik ließ diese nicht zu.</div>
+      <div data-key="f">Noch größere Zahlen konnten im Speicher aufbewahrt werden, um sie anschließend z. B. zu dividieren und als vierzigstellige Zahl auszugeben.</div>
+      <div data-key="g">Schließlich arbeitete im selben Jahrhundert auch der deutsche Universalgelehrte Gottfried Wilhelm Leibniz an einer Rechenmaschine.</div>
+      <div data-key="h">Seine Rechenmaschine blieb also ein theoretisches Konstrukt, dessen Funktionsfähigkeit sich nicht empirisch überprüfen ließ.</div>
+      <div data-key="z">Mit ihr ließen sich Operationen in den vier Grundrechenarten durchführen. <strong>(Beispiel für Lücke 0)</strong></div>
     </div>
 
-    <div class="aufgabe-box">
-      <h3>Ihre Antworten</h3>
-      <div class="frage" data-luecke="1">
-        <div class="frage-nummer">Lücke 1</div>
-        <div class="antwort-select">
-          <button class="antwort-btn" data-answer="a">a</button>
-          <button class="antwort-btn" data-answer="b">b</button>
-          <button class="antwort-btn" data-answer="c">c</button>
-          <button class="antwort-btn" data-answer="d">d</button>
-          <button class="antwort-btn" data-answer="e">e</button>
-          <button class="antwort-btn" data-answer="f">f</button>
-          <button class="antwort-btn" data-answer="g">g</button>
-          <button class="antwort-btn" data-answer="h">h</button>
-        </div>
-      </div>
-
-      <div class="frage" data-luecke="2">
-        <div class="frage-nummer">Lücke 2</div>
-        <div class="antwort-select">
-          <button class="antwort-btn" data-answer="a">a</button>
-          <button class="antwort-btn" data-answer="b">b</button>
-          <button class="antwort-btn" data-answer="c">c</button>
-          <button class="antwort-btn" data-answer="d">d</button>
-          <button class="antwort-btn" data-answer="e">e</button>
-          <button class="antwort-btn" data-answer="f">f</button>
-          <button class="antwort-btn" data-answer="g">g</button>
-          <button class="antwort-btn" data-answer="h">h</button>
-        </div>
-      </div>
-
-      <div class="frage" data-luecke="3">
-        <div class="frage-nummer">Lücke 3</div>
-        <div class="antwort-select">
-          <button class="antwort-btn" data-answer="a">a</button>
-          <button class="antwort-btn" data-answer="b">b</button>
-          <button class="antwort-btn" data-answer="c">c</button>
-          <button class="antwort-btn" data-answer="d">d</button>
-          <button class="antwort-btn" data-answer="e">e</button>
-          <button class="antwort-btn" data-answer="f">f</button>
-          <button class="antwort-btn" data-answer="g">g</button>
-          <button class="antwort-btn" data-answer="h">h</button>
-        </div>
-      </div>
-
-      <div class="frage" data-luecke="4">
-        <div class="frage-nummer">Lücke 4</div>
-        <div class="antwort-select">
-          <button class="antwort-btn" data-answer="a">a</button>
-          <button class="antwort-btn" data-answer="b">b</button>
-          <button class="antwort-btn" data-answer="c">c</button>
-          <button class="antwort-btn" data-answer="d">d</button>
-          <button class="antwort-btn" data-answer="e">e</button>
-          <button class="antwort-btn" data-answer="f">f</button>
-          <button class="antwort-btn" data-answer="g">g</button>
-          <button class="antwort-btn" data-answer="h">h</button>
-        </div>
-      </div>
-
-      <div class="frage" data-luecke="5">
-        <div class="frage-nummer">Lücke 5</div>
-        <div class="antwort-select">
-          <button class="antwort-btn" data-answer="a">a</button>
-          <button class="antwort-btn" data-answer="b">b</button>
-          <button class="antwort-btn" data-answer="c">c</button>
-          <button class="antwort-btn" data-answer="d">d</button>
-          <button class="antwort-btn" data-answer="e">e</button>
-          <button class="antwort-btn" data-answer="f">f</button>
-          <button class="antwort-btn" data-answer="g">g</button>
-          <button class="antwort-btn" data-answer="h">h</button>
-        </div>
-      </div>
-
-      <div class="frage" data-luecke="6">
-        <div class="frage-nummer">Lücke 6</div>
-        <div class="antwort-select">
-          <button class="antwort-btn" data-answer="a">a</button>
-          <button class="antwort-btn" data-answer="b">b</button>
-          <button class="antwort-btn" data-answer="c">c</button>
-          <button class="antwort-btn" data-answer="d">d</button>
-          <button class="antwort-btn" data-answer="e">e</button>
-          <button class="antwort-btn" data-answer="f">f</button>
-          <button class="antwort-btn" data-answer="g">g</button>
-          <button class="antwort-btn" data-answer="h">h</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="ergebnisse" id="ergebnisse">
-      <h3>Ihre Ergebnisse</h3>
-      <div id="ergebnis-liste"></div>
-      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
-    </div>
-
-    <div class="submit-section">
-      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
-    </div>
   </main>
-
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
+    SectionBuilder.lv1(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initLV1({ 1:'g', 2:'e', 3:'a', 4:'b', 5:'h', 6:'d' });
   </script>
-
 </body>
 </html>
