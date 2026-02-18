@@ -54,7 +54,10 @@ const SectionBuilder = (() => {
     </div>`;
   }
 
-  function sectionNav(sectionId) {
+  function sectionNav() {
+    const el = document.querySelector('[data-section]');
+    if (!el) return '';
+    const sectionId = el.dataset.section;
     const idx = NAV.findIndex(n => n.id === sectionId);
     const prev = idx > 0 ? NAV[idx - 1] : null;
     const next = idx < NAV.length - 1 ? NAV[idx + 1] : null;
@@ -69,15 +72,13 @@ const SectionBuilder = (() => {
 
   function header(modell, teil, lead, opts) {
     if (opts?.exam) return '';
-    const sectionId = opts?._sectionId || '';
-    return sectionNav(sectionId)
+    return sectionNav()
       + `<h1>Modellprüfung ${modell} – ${teil}</h1>\n<p class="lead">${lead}</p>`;
   }
 
   function footer(opts) {
     if (opts?.exam) return '';
-    const sectionId = opts?._sectionId || '';
-    return ergebnisse() + submit() + sectionNav(sectionId);
+    return ergebnisse() + submit() + sectionNav();
   }
 
   function buttons(letters, attrName, attrValue, valueAttr) {
