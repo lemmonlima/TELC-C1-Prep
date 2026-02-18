@@ -6,62 +6,15 @@
   <title>Modelltest 1 - Hörverstehen Teil 3 | TELC C1 Hochschule</title>
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="../shared/pruefung.css">
-  <style>
-    .slide-input {
-      display: block;
-      width: 100%;
-      max-width: 400px;
-      padding: 0.5rem 0.75rem;
-      margin: 0.4rem 0;
-      background: var(--bg-primary, #0f0e0d);
-      border: 2px solid var(--accent-ink, #457b9d);
-      border-radius: 4px;
-      color: inherit;
-      font-family: inherit;
-      font-size: 0.95rem;
-      font-weight: 600;
-      transition: border-color 0.2s ease, background 0.2s ease;
-    }
-    .slide-input:focus {
-      outline: none;
-      border-color: var(--accent-red, #e63946);
-      background: var(--panel-bg, #1a1916);
-    }
-    .slide-input::placeholder {
-      font-weight: 400;
-      opacity: 0.5;
-    }
-    .slide-input.filled {
-      border-color: rgba(34, 197, 94, 0.5);
-    }
-    .input-label {
-      font-weight: bold;
-      color: var(--accent-ink, #457b9d);
-      font-size: 0.85rem;
-      margin-top: 0.5rem;
-      display: block;
-    }
-  </style>
   <script src="../../topbar.js"></script>
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 1 – Hörverstehen Teil 3</h1>
-    <p class="lead">Informationstransfer: 10 Lücken in Folien</p>
+  <main class="pruefung-container" id="section-root" data-section="hv3" data-modell="1">
 
-    <div class="audio-note">
-      <strong>⚠️ Hinweis:</strong> Die Audiodateien sind in diesem Test nicht verfügbar. Sie benötigen die offiziellen TELC Audio-CDs oder das Original-Testmaterial, um diesen Teil zu üben.
-    </div>
+    <div data-content="thema" hidden>Gastvortrag „Literatur im Unterricht Deutsch als Fremdsprache"</div>
 
-    <div class="aufgabe-box">
-      <h2>Aufgabe</h2>
-      <p><strong>Thema:</strong> Gastvortrag „Literatur im Unterricht Deutsch als Fremdsprache"</p>
-      <p>Sie hören einen Vortrag. Sie hören den Vortrag <strong>nur einmal</strong>.</p>
-      <p>Sie haben Handzettel mit den Folien der Präsentation erhalten. Schreiben Sie die fehlenden Informationen <strong>stichwortartig</strong> in die freien Zeilen 65–74.</p>
-    </div>
-
-    <div class="slides-container">
+    <div data-content="slides" hidden>
 
       <div class="slide-box">
         <div class="slide-titel">Präsentation</div>
@@ -182,22 +135,11 @@
 
     </div>
 
-    <div class="ergebnisse" id="ergebnisse">
-      <h3>Ihre Ergebnisse</h3>
-      <p style="margin-bottom: 1rem; font-size: 0.9rem; color: var(--ink-600);">
-        <strong>Hinweis:</strong> Diese automatische Bewertung ist nur eine Orientierung. Die tatsächliche Bewertung berücksichtigt auch synonyme und sinngemäße Antworten.
-      </p>
-      <div id="ergebnis-liste"></div>
-      <p style="margin-top: 1.5rem; font-size: 1.1rem; font-weight: bold;" id="punkte"></p>
-    </div>
-
-    <div class="submit-section">
-      <button class="btn primary" id="auswerten-btn">Antworten überprüfen</button>
-    </div>
   </main>
-
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
+    SectionBuilder.hv3(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initHV3({
       65:['jeder vierte','4.','vierte','keine bücher','nicht bücher','liest keine','liest nicht'],
       66:['bücher werden','weiter','weiterhin','noch','immer noch','in zukunft','gelesen'],
@@ -220,6 +162,5 @@
       72:'72', 73:'73', 74:'74'
     });
   </script>
-
 </body>
 </html>
