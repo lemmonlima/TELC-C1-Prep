@@ -662,6 +662,32 @@ const Exam = (() => {
     }, 0);
   }
 
+  /* ── HV Transcript copy ─────────────────────────────── */
+  function initHVTranskript() {
+    const transkript = EXAM_DATA.hvTranskript;
+    if (!transkript || transkript.startsWith('/*')) return;
+
+    const screen = $('screen-hv-ready');
+    const btnGroup = screen.querySelector('.btn-group');
+    const copyBtn = document.createElement('button');
+    copyBtn.className = 'btn secondary';
+    copyBtn.id = 'btn-copy-hv-transkript';
+    copyBtn.textContent = 'Transkript kopieren';
+    btnGroup.appendChild(copyBtn);
+
+    const feedback = document.createElement('p');
+    feedback.className = 'copy-feedback';
+    feedback.textContent = '✓ Transkript kopiert!';
+    btnGroup.after(feedback);
+
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(transkript).then(() => {
+        feedback.classList.add('show');
+        setTimeout(() => feedback.classList.remove('show'), 2500);
+      });
+    });
+  }
+
   /* ── Init ─────────────────────────────────────────── */
   function init() {
     $('btn-start').addEventListener('click', () => enterPhase(1));
@@ -682,6 +708,7 @@ const Exam = (() => {
 
     initSA();
     initMuendlich();
+    initHVTranskript();
     enterPhase(0);
   }
 
