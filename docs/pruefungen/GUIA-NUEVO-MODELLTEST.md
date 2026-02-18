@@ -731,41 +731,57 @@ Un texto de presentación completo (350–450 palabras) por cada tema de Teil 1A
 
 **Tipo:** 4 citas de autores famosos con aspectos de discusión. ~6 min de discusión con compañero.
 
-**Cómo rellenar:**
-
-1. Las 4 citas con autor y aspectos:
+**Estructura del archivo** (`data-section="diskussion"`):
 
 ```html
-<div class="zitat-box">
-  <div class="zitat-nummer">Diskussionsthema 1</div>
-  <div class="zitat-text">„La cita aquí."</div>
-  <div class="zitat-autor">— Nombre del Autor (1800–1870), Profesión</div>
-  <div class="diskussionsfragen">
-    <h4>Mögliche Diskussionsaspekte:</h4>
-    <ul>
-      <li>Aspecto 1?</li>
-      <li>Aspecto 2?</li>
-      <li>Aspecto 3?</li>
-      <li>Aspecto 4?</li>
-    </ul>
+<main class="pruefung-container" id="section-root" data-section="diskussion" data-modell="N">
+
+  <div data-content="zitate" hidden>
+    <div class="zitat-box">
+      <div class="zitat-nummer">Diskussionsthema 1</div>
+      <div class="zitat-text">„Die beste Bildung findet ein kluger Mensch auf Reisen."</div>
+      <div class="zitat-autor">— Johann Wolfgang von Goethe (1749–1832), Dichter</div>
+      <div class="diskussionsfragen">
+        <h4>Mögliche Diskussionsaspekte:</h4>
+        <ul>
+          <li>Was bedeutet „Bildung durch Reisen"?</li>
+          <li>Welche Erfahrungen haben Sie selbst gemacht?</li>
+          <li>Kann man auch ohne Reisen gebildet werden?</li>
+          <li>Welche Rolle spielen Bücher, Internet, persönliche Begegnungen?</li>
+        </ul>
+      </div>
+    </div>
+    <!-- zitat-box 2, 3, 4 con misma estructura -->
   </div>
-</div>
+
+  <div data-content="simulation" hidden>
+    <div class="thema-box" data-zitat="1">
+      <h3>Diskussionsthema 1</h3>
+      <div class="zitat">„Die beste Bildung findet ein kluger Mensch auf Reisen."</div>
+      <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Goethe</p>
+    </div>
+    <!-- thema-box 2, 3, 4 -->
+  </div>
+
+</main>
+<script src="../shared/section-builders.js"></script>
+<script src="../shared/pruefung.js"></script>
+<script>
+  SectionBuilder.diskussion(document.getElementById('section-root'), document.getElementById('section-root'));
+  Pruefung.initDiskussion({
+    1: { text:'Die beste Bildung findet ein kluger Mensch auf Reisen.', autor:'Johann Wolfgang von Goethe (1749–1832), Dichter',
+         aspekte:['Was bedeutet „Bildung durch Reisen"?','Welche Erfahrungen haben Sie selbst gemacht?','Kann man auch ohne Reisen gebildet werden?','Welche Rolle spielen Bücher, Internet, persönliche Begegnungen?'] },
+    2: { text:'Cita 2.', autor:'Autor 2 (años), profesión',
+         aspekte:['Aspecto 1?','Aspecto 2?','Aspecto 3?','Aspecto 4?'] },
+    3: { text:'Cita 3.', autor:'Autor 3',
+         aspekte:['...','...','...','...'] },
+    4: { text:'Cita 4.', autor:'Autor 4',
+         aspekte:['...','...','...','...'] }
+  });
+</script>
 ```
 
-2. La configuración JS:
-
-```javascript
-Pruefung.initDiskussion({
-  1: { text:'Cita 1.', autor:'Autor 1 (años), profesión',
-       aspekte:['Aspecto 1?','Aspecto 2?','Aspecto 3?','Aspecto 4?'] },
-  2: { text:'Cita 2.', autor:'Autor 2',
-       aspekte:['...','...','...','...'] },
-  3: { text:'Cita 3.', autor:'Autor 3',
-       aspekte:['...','...','...','...'] },
-  4: { text:'Cita 4.', autor:'Autor 4',
-       aspekte:['...','...','...','...'] }
-});
-```
+> **Nota:** `data-content="zitate"` contiene la versión completa (con aspectos de discusión). `data-content="simulation"` contiene una versión resumida que se usa en el modo simulación de discusión. Ambos deben tener las mismas citas.
 
 **Citas típicas:**
 - Autores alemanes clásicos: Goethe, Schiller, Fontane, Kant, Hegel, Nietzsche, Hesse
