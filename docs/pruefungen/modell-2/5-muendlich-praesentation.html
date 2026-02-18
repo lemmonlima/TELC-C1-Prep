@@ -10,149 +10,22 @@
   <script src="../../navigation.js"></script>
 </head>
 <body>
-  <main class="pruefung-container">
-    <h1>Modellprüfung 2 – Mündliche Prüfung</h1>
-    <p class="lead">Teil 1A: Präsentation (ca. 3 Minuten)</p>
+  <main class="pruefung-container" id="section-root" data-section="praesentation" data-modell="2">
 
-    <div class="info-box">
-      <p><strong>Vorbereitung:</strong> 20 Minuten</p>
-      <p><strong>Präsentation:</strong> ca. 3 Minuten pro Teilnehmer/in</p>
-      <p><strong>Hinweis:</strong> Sie können sich Notizen machen (Stichworte, keinen zusammenhängenden Text).</p>
+    <div data-content="teilnehmer" hidden>
+      <!-- TODO: 3 teilnehmer-box divs, each with 2 thema-box children -->
     </div>
 
-    <div class="aufgabe-box">
-      <h2>Aufgabe</h2>
-      <p>In einer Lehrveranstaltung Ihrer Universität sollen Sie eine Präsentation halten.</p>
-      <p><strong>Wählen Sie eines der Themen aus.</strong></p>
-      <p>Sie können sich Notizen machen (Stichworte, keinen zusammenhängenden Text). Denken Sie auch an eine Einleitung und einen Schluss bzw. ein Fazit.</p>
-      <p>Ihre Präsentation soll gut gegliedert sein und das Thema verständlich und ausführlich darstellen.</p>
-      <p>Im Anschluss werden Ihnen Fragen gestellt.</p>
+    <div data-content="select" hidden>
+      <!-- TODO: 3 optgroup elements for dropdown -->
     </div>
 
-    <div class="themen-container">
-      
-      <div class="teilnehmer-box">
-        <div class="teilnehmer-titel">Teilnehmer/in A</div>
-        
-        <div class="thema-box">
-          <div class="thema-label">Thema 1</div>
-          <div class="thema-text">
-            <p><!-- TODO: Thema A1 --></p>
-          </div>
-        </div>
-
-        <div class="thema-box">
-          <div class="thema-label">Thema 2</div>
-          <div class="thema-text">
-            <p><!-- TODO: Thema A2 --></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="teilnehmer-box">
-        <div class="teilnehmer-titel">Teilnehmer/in B</div>
-        
-        <div class="thema-box">
-          <div class="thema-label">Thema 1</div>
-          <div class="thema-text">
-            <p><!-- TODO: Thema B1 --></p>
-          </div>
-        </div>
-
-        <div class="thema-box">
-          <div class="thema-label">Thema 2</div>
-          <div class="thema-text">
-            <p><!-- TODO: Thema B2 --></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="teilnehmer-box">
-        <div class="teilnehmer-titel">Teilnehmer/in C</div>
-        
-        <div class="thema-box">
-          <div class="thema-label">Thema 1</div>
-          <div class="thema-text">
-            <p><!-- TODO: Thema C1 --></p>
-          </div>
-        </div>
-
-        <div class="thema-box">
-          <div class="thema-label">Thema 2</div>
-          <div class="thema-text">
-            <p><!-- TODO: Thema C2 --></p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="aufgabe-box">
-      <h3>Tipps für die Präsentation</h3>
-      <ul style="line-height: 1.8;">
-        <li><strong>Einleitung:</strong> Thema vorstellen, eventuell persönlichen Bezug herstellen</li>
-        <li><strong>Hauptteil:</strong> Strukturiert argumentieren, Beispiele nennen, verschiedene Aspekte beleuchten</li>
-        <li><strong>Schluss:</strong> Zusammenfassung, Fazit oder eigene Position klar formulieren</li>
-        <li><strong>Sprache:</strong> Klar und verständlich sprechen, Fachbegriffe erklären</li>
-        <li><strong>Zeit:</strong> Ca. 3 Minuten - nicht zu kurz, nicht zu lang</li>
-      </ul>
-    </div>
-
-    <div class="aufgabe-box" style="margin-top: 3rem;">
-      <h2>Ihre Präsentation vorbereiten</h2>
-      <p>Wählen Sie ein Thema aus und schreiben Sie Ihre Präsentation. Sie können dann alles kopieren und an eine KI zur Bewertung senden.</p>
-      
-      <div style="margin: 1.5rem 0;">
-        <label for="thema-auswahl" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Gewähltes Thema:</label>
-        <select id="thema-auswahl" style="width: 100%; padding: 0.75rem; background: var(--bg-secondary, #12110f); border: 1px solid var(--border-subtle, #2a2825); border-radius: 4px; color: inherit; font-family: inherit; font-size: 1rem;">
-          <option value="">-- Bitte wählen Sie ein Thema --</option>
-          <!-- TODO: Themen-Optionen einfügen -->
-          <optgroup label="Teilnehmer/in A">
-            <option value="a1">Thema 1: TODO</option>
-            <option value="a2">Thema 2: TODO</option>
-          </optgroup>
-          <optgroup label="Teilnehmer/in B">
-            <option value="b1">Thema 1: TODO</option>
-            <option value="b2">Thema 2: TODO</option>
-          </optgroup>
-          <optgroup label="Teilnehmer/in C">
-            <option value="c1">Thema 1: TODO</option>
-            <option value="c2">Thema 2: TODO</option>
-          </optgroup>
-        </select>
-      </div>
-
-      <div id="thema-beschreibung" class="hidden" style="margin: 1.5rem 0; padding: 1rem; background: var(--panel-bg, #1a1916); border-left: 3px solid var(--accent-ink, #457b9d); border-radius: 4px;">
-        <strong>Vollständige Aufgabe:</strong>
-        <p id="thema-text" style="margin-top: 0.5rem; line-height: 1.6;"></p>
-      </div>
-
-      <div style="margin: 1.5rem 0;">
-        <label for="praesentation-text" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Ihre Präsentation (Stichworte oder Volltext):</label>
-        <textarea id="praesentation-text" rows="15" placeholder="Schreiben Sie hier Ihre Präsentation als Stichworte oder als vollständigen Text..."></textarea>
-      </div>
-
-      <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-        <button id="kopieren-btn" class="btn primary">Alles kopieren (für KI-Bewertung)</button>
-        <button id="reset-btn" class="btn secondary">Zurücksetzen</button>
-      </div>
-
-      <div id="kopiert-info" class="success-msg">
-        Text wurde in die Zwischenablage kopiert! Fügen Sie ihn jetzt in eine KI ein (z.B. ChatGPT, Claude).
-      </div>
-    </div>
-
-    <div class="submit-section"></div>
   </main>
-
+  <script src="../shared/section-builders.js"></script>
   <script src="../shared/pruefung.js"></script>
   <script>
-    Pruefung.initPraesentation({
-      'a1': '/* TODO */', 'a2': '/* TODO */',
-      'b1': '/* TODO */', 'b2': '/* TODO */',
-      'c1': '/* TODO */', 'c2': '/* TODO */'
-    });
+    SectionBuilder.praesentation(document.getElementById('section-root'), document.getElementById('section-root'));
+    Pruefung.initPraesentation({ /* TODO: theme texts */ });
   </script>
-
 </body>
 </html>
