@@ -3,7 +3,7 @@
    State machine, timers, section loading, evaluation.
 
    Expects EXAM_DATA global (from exam-data.js):
-     { title, correct, themaTexte, saThemen, diskussionZitate }
+     { title, correct, themaTexte, saThemen, diskussionZitate, hvTranskript }
    ═══════════════════════════════════════════════════════ */
 'use strict';
 
