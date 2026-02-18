@@ -171,6 +171,14 @@
   margin: 1.5rem 0;
 }
 
+/* ── Copy feedback ────────────────────────────────── */
+.copy-feedback {
+  margin-top: 0.75rem; font-size: 0.9rem;
+  color: #22c55e; opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.copy-feedback.show { opacity: 1; }
+
 /* ── Responsive ────────────────────────────────────── */
 @media (max-width: 768px) {
   #exam-bar {
