@@ -664,8 +664,8 @@ const Exam = (() => {
 
   /* ── HV Transcript copy ─────────────────────────────── */
   function initHVTranskript() {
-    const transkript = EXAM_DATA.hvTranskript;
-    if (!transkript || transkript.startsWith('/*')) return;
+    const transkript = EXAM_DATA.hvTranskript || '';
+    const available = transkript && !transkript.startsWith('/*');
 
     const screen = $('screen-hv-ready');
     const btnGroup = screen.querySelector('.btn-group');
@@ -673,14 +673,20 @@ const Exam = (() => {
     copyBtn.className = 'btn secondary';
     copyBtn.id = 'btn-copy-hv-transkript';
     copyBtn.textContent = 'Transkript kopieren';
+    if (!available) copyBtn.disabled = true;
     btnGroup.appendChild(copyBtn);
 
     const feedback = document.createElement('p');
     feedback.className = 'copy-feedback';
-    feedback.textContent = '✓ Transkript kopiert!';
+    feedback.textContent = available ? '✓ Transkript kopiert!' : 'Transkript noch nicht verfügbar';
     btnGroup.after(feedback);
 
     copyBtn.addEventListener('click', () => {
+      if (!available) {
+        feedback.classList.add('show');
+        setTimeout(() => feedback.classList.remove('show'), 2500);
+        return;
+      }
       navigator.clipboard.writeText(transkript).then(() => {
         feedback.classList.add('show');
         setTimeout(() => feedback.classList.remove('show'), 2500);
