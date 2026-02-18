@@ -186,8 +186,14 @@ const Exam = (() => {
       const main = doc.querySelector('main');
       if (!main) return;
 
-      main.querySelectorAll('.ergebnisse, .submit-section, h1, .lead').forEach(el => el.remove());
-      panel.innerHTML = main.innerHTML;
+      const sectionType = main.dataset.section;
+      if (sectionType && typeof SectionBuilder !== 'undefined' && SectionBuilder[sectionType]) {
+        SectionBuilder[sectionType](panel, main, { exam: true });
+      } else {
+        main.querySelectorAll('.ergebnisse, .submit-section, h1, .lead').forEach(el => el.remove());
+        panel.innerHTML = main.innerHTML;
+      }
+
       panel.dataset.loaded = 'true';
       initSectionHandlers(tabId, panel);
     } catch (e) {
