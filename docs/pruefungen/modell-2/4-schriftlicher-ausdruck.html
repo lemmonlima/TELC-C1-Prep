@@ -13,18 +13,16 @@
   <main class="pruefung-container" id="section-root" data-section="sa" data-modell="2">
 
     <div data-content="themen" hidden>
-      <!-- TODO: 2 themes:
-      <div data-thema="KEY1">
-        <h3>Thema 1: Title</h3>
-        <div class="zitat">„Quote 1"</div>
-        <div class="zitat">„Quote 2"</div>
+      <div data-thema="digitalisierung">
+        <h3>Thema 1: Digitalisierung der Bildung</h3>
+        <div class="zitat">„Der Computer wird den Lehrer niemals ersetzen können — aber ein Lehrer, der den Computer nicht nutzt, wird ersetzt werden."</div>
+        <div class="zitat">„Bildschirme in Kinderhänden sind das Ende des eigenständigen Denkens."</div>
       </div>
-      <div data-thema="KEY2">
-        <h3>Thema 2: Title</h3>
-        <div class="zitat">„Quote 1"</div>
-        <div class="zitat">„Quote 2"</div>
+      <div data-thema="ehrenamt">
+        <h3>Thema 2: Ehrenamtliches Engagement</h3>
+        <div class="zitat">„Wer sich ehrenamtlich engagiert, hält die Gesellschaft zusammen."</div>
+        <div class="zitat">„Ehrenamt darf nicht dazu dienen, staatliche Versäumnisse zu kaschieren."</div>
       </div>
-      -->
     </div>
 
   </main>
@@ -32,7 +30,16 @@
   <script src="../shared/pruefung.js"></script>
   <script>
     SectionBuilder.sa(document.getElementById('section-root'), document.getElementById('section-root'));
-    Pruefung.initSA({ /* TODO: themes object */ });
+    Pruefung.initSA({
+      digitalisierung: {
+        title: 'Thema 1: Digitalisierung der Bildung',
+        zitate: ['Der Computer wird den Lehrer niemals ersetzen können — aber ein Lehrer, der den Computer nicht nutzt, wird ersetzt werden.', 'Bildschirme in Kinderhänden sind das Ende des eigenständigen Denkens.']
+      },
+      ehrenamt: {
+        title: 'Thema 2: Ehrenamtliches Engagement',
+        zitate: ['Wer sich ehrenamtlich engagiert, hält die Gesellschaft zusammen.', 'Ehrenamt darf nicht dazu dienen, staatliche Versäumnisse zu kaschieren.']
+      }
+    });
   </script>
 </body>
 </html>
