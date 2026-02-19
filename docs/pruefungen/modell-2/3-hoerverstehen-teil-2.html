@@ -12,17 +12,69 @@
 <body>
   <main class="pruefung-container" id="section-root" data-section="hv2" data-modell="2">
 
-    <div data-content="thema" hidden><!-- TODO: Thema --></div>
+    <div data-content="thema" hidden>Interview mit Prof. Dr. Martina Schäfer über Künstliche Intelligenz in der Medizin</div>
 
     <div data-content="fragen" hidden>
-      <!-- TODO: 10 questions (55-64), each with stem + 3 options:
       <div data-frage="55">
-        <div class="stem">Frage stem</div>
-        <div data-wert="a">Option a</div>
-        <div data-wert="b">Option b</div>
-        <div data-wert="c">Option c</div>
+        <div class="stem">Frau Prof. Schäfer beschäftigt sich mit KI in der Medizin, weil</div>
+        <div data-wert="a">sie als Ärztin die Grenzen herkömmlicher Diagnostik erlebt hat.</div>
+        <div data-wert="b">sie die Verbindung von Informatik und Medizin faszinierend findet.</div>
+        <div data-wert="c">ihr Vater Informatiker war und sie zur Medizin gebracht hat.</div>
       </div>
-      -->
+      <div data-frage="56">
+        <div class="stem">KI kann bei der Diagnose von Hautkrebs</div>
+        <div data-wert="a">die Arbeit der Dermatologen vollständig ersetzen.</div>
+        <div data-wert="b">Veränderungen erkennen, die das menschliche Auge übersieht.</div>
+        <div data-wert="c">nur in Kombination mit einer Gewebeprobe zuverlässige Ergebnisse liefern.</div>
+      </div>
+      <div data-frage="57">
+        <div class="stem">Ein Problem bei KI-gestützter Diagnostik ist,</div>
+        <div data-wert="a">dass die Algorithmen nur für europäische Patienten trainiert wurden.</div>
+        <div data-wert="b">dass die Systeme nicht erklären können, wie sie zu ihren Ergebnissen kommen.</div>
+        <div data-wert="c">dass die Fehlerquote höher ist als bei erfahrenen Ärzten.</div>
+      </div>
+      <div data-frage="58">
+        <div class="stem">Für die Patienten bedeutet der Einsatz von KI,</div>
+        <div data-wert="a">dass Diagnosen schneller gestellt werden können.</div>
+        <div data-wert="b">dass sie weniger häufig zum Arzt gehen müssen.</div>
+        <div data-wert="c">dass sie ihre Gesundheitsdaten an Technikfirmen weitergeben müssen.</div>
+      </div>
+      <div data-frage="59">
+        <div class="stem">Beim Datenschutz sieht Frau Prof. Schäfer</div>
+        <div data-wert="a">die EU-Datenschutzgrundverordnung als ausreichenden Schutz an.</div>
+        <div data-wert="b">einen Interessenkonflikt zwischen medizinischem Fortschritt und Privatsphäre.</div>
+        <div data-wert="c">kein grundsätzliches Problem, solange die Daten anonymisiert werden.</div>
+      </div>
+      <div data-frage="60">
+        <div class="stem">In der Ausbildung von Medizinstudenten</div>
+        <div data-wert="a">sollte der Umgang mit KI-Systemen ein fester Bestandteil werden.</div>
+        <div data-wert="b">wird KI bereits in allen deutschen Universitäten gelehrt.</div>
+        <div data-wert="c">spielt KI erst in der Facharztausbildung eine Rolle.</div>
+      </div>
+      <div data-frage="61">
+        <div class="stem">In Entwicklungsländern könnte KI</div>
+        <div data-wert="a">den Ärztemangel vollständig kompensieren.</div>
+        <div data-wert="b">die medizinische Grundversorgung verbessern.</div>
+        <div data-wert="c">vor allem in der Chirurgie eingesetzt werden.</div>
+      </div>
+      <div data-frage="62">
+        <div class="stem">Die größte Herausforderung bei der Einführung von KI in Krankenhäusern ist</div>
+        <div data-wert="a">der Widerstand des medizinischen Personals gegen neue Technologien.</div>
+        <div data-wert="b">die Integration in bestehende IT-Systeme und Arbeitsabläufe.</div>
+        <div data-wert="c">die fehlende Finanzierung durch die Krankenkassen.</div>
+      </div>
+      <div data-frage="63">
+        <div class="stem">Frau Prof. Schäfer betont, dass KI in der Medizin</div>
+        <div data-wert="a">den Arzt langfristig überflüssig machen wird.</div>
+        <div data-wert="b">ein Werkzeug ist, das den Arzt unterstützt, aber nicht ersetzt.</div>
+        <div data-wert="c">nur bei Routineuntersuchungen sinnvoll eingesetzt werden kann.</div>
+      </div>
+      <div data-frage="64">
+        <div class="stem">Für die Zukunft wünscht sich Frau Prof. Schäfer,</div>
+        <div data-wert="a">dass Deutschland mehr in die KI-Forschung investiert.</div>
+        <div data-wert="b">dass internationale Standards für medizinische KI entwickelt werden.</div>
+        <div data-wert="c">dass KI-Systeme von einer unabhängigen Behörde zugelassen werden.</div>
+      </div>
     </div>
 
   </main>
@@ -30,7 +82,7 @@
   <script src="../shared/pruefung.js"></script>
   <script>
     SectionBuilder.hv2(document.getElementById('section-root'), document.getElementById('section-root'));
-    Pruefung.initHV2({ 55:'', 56:'', 57:'', 58:'', 59:'', 60:'', 61:'', 62:'', 63:'', 64:'' });
+    Pruefung.initHV2({ 55:'b', 56:'b', 57:'b', 58:'a', 59:'b', 60:'a', 61:'b', 62:'b', 63:'b', 64:'c' });
   </script>
 </body>
 </html>
