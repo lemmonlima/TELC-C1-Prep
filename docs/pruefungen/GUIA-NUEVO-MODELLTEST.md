@@ -384,6 +384,8 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 | **Texto total** (7 párrafos, con huecos como ____) | **318** |
 | Opciones por hueco | 1–4 palabras c/u |
 
+> **Nota sobre conteos de LV y SB:** Todos los conteos de palabras de Leseverstehen y Sprachbausteine fueron medidos con un script Python externo (`HTMLParser`) sobre `modell-1`, extrayendo solo el contenido de `<div data-content="text">`. Resumen: LV1 **275** + LV2 **729** + LV3 **1002** + SB **318** = **2324** palabras de lectura total.
+
 **Estructura del archivo** (`data-section="sb"`):
 
 ```html
