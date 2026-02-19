@@ -1509,7 +1509,7 @@ Para cada nuevo Modelltest, verifica:
 | Actualizar respuestas en `Pruefung.initXXX()` | 5% |
 | Actualizar `exam-data.js` (respuestas + hvTranskript) | 5% |
 | Escribir/copiar `praesentation-texte.js` | 5% |
-| Escribir `hvTranskript` (~2200 palabras) | 5% |
+| Escribir `hvTranskript` (~2250 palabras: HV1 ~858 + HV2 ~678 + HV3 ~712) | 5% |
 
 **No necesitas:** cambiar lógica, crear componentes, modificar CSS, tocar archivos en `shared/`, agregar botones de navegación ni botones de copiar transkript.
 
