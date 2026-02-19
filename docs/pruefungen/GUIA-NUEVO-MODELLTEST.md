@@ -443,6 +443,13 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 
 > **Nota:** Los números de pregunta son 47–54 (Sprecher 1 = Aufgabe 47, etc.)
 
+**Claves para crear buen contenido HV1:**
+- Los 8 hablantes dan **opiniones personales** sobre un tema amplio (ej: formas de vivienda estudiantil, uso de tecnología, experiencias universitarias)
+- Cada hablante dura ~30-60 seg. y expresa **una posición clara** que se puede resumir en una afirmación
+- Las 10 afirmaciones (a–j) deben ser reformulaciones con sinónimos, NO copias literales de lo que dicen
+- Los 2 distractores sobrantes deben ser temáticamente plausibles (sobre el mismo tema) pero no coincidir con ningún hablante
+- Estrategia del estudiante: leer todas las afirmaciones primero, luego escuchar. Las afirmaciones deben recompensar esa pre-lectura
+
 ---
 
 ### 4.6 Hörverstehen Teil 2 — Detailverstehen
