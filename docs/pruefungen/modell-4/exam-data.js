@@ -43,7 +43,41 @@ const EXAM_DATA = {
     }
   },
 
-  hvTranskript: '/* TODO: Hörverstehen-Transkript hier einfügen */',
+  hvTranskript: `Hörverstehen Teil 1
+
+Sie hören die Meinungen von acht Personen. Sie hören die Meinungen nur einmal. Entscheiden Sie beim Hören, welche Aussage A bis J zu welcher Person passt. Zwei Aussagen passen nicht. Markieren Sie Ihre Lösungen für die Aufgaben 47 bis 54 auf dem Antwortbogen. Lesen Sie jetzt die Aussagen A bis J. Sie haben dazu eine Minute Zeit.
+
+Sprecher 1: /* TODO */
+
+Sprecher 2: /* TODO */
+
+Sprecher 3: /* TODO */
+
+Sprecher 4: /* TODO */
+
+Sprecher 5: /* TODO */
+
+Sprecher 6: /* TODO */
+
+Sprecher 7: /* TODO */
+
+Sprecher 8: /* TODO */
+
+
+Hörverstehen Teil 2
+
+Sie hören eine Radiosendung. Sie hören die Sendung nur einmal. Entscheiden Sie beim Hören, welche Aussage A, B oder C am besten passt. Markieren Sie Ihre Lösungen für die Aufgaben 55 bis 64 auf dem Antwortbogen. Lesen Sie jetzt die Aufgaben 55 bis 64. Sie haben dazu drei Minuten Zeit.
+
+/* TODO: Entrevista/reportaje completo con formato Moderator: ... / Entrevistado: ... */
+
+
+Hörverstehen Teil 3
+
+Sie hören einen Vortrag. Sie hören den Vortrag nur einmal. Sie haben Handzettel mit den Folien der Präsentation erhalten. Schreiben Sie die fehlenden Informationen stichwortartig in die freien Zeilen 65 bis 74 in der rechten Spalte. Die Lösung 0 ist ein Beispiel. Lesen Sie jetzt die Stichworte. Sie haben dazu eine Minute Zeit.
+
+/* TODO: Vortrag completo con formato Dozent: ... / Referent/in: ... */
+
+Ende des Subtests Hörverstehen.`,
 
   diskussionZitate: {
     1: { text:'/* TODO */', autor:'/* TODO */',
