@@ -682,6 +682,29 @@ Cada criterio se califica A/B/C/D. Esto es lo que la IA usa para evaluar:
 | B | Erfahrungen zur Studienwahl (experiencias de carrera) | Künstlerische Fächer (materias artísticas) |
 | C | Kulturelle Unterschiede Sprachenlernen | Natur- vs. Geisteswissenschaften |
 
+**Bewertungskriterien MP — 48 puntos total (todas las partes juntas):**
+
+Los criterios se dividen en *inhaltliche* (contenido) y *sprachliche* (lingüística). Es útil para crear temas y para la evaluación con IA:
+
+**Inhaltliche Angemessenheit (16 pts):**
+
+| Parte | A (máx) | B | C | D = 0 |
+|-------|---------|---|---|-------|
+| **1A Präsentation** | 6 — Clara, detallada, bien estructurada. Preguntas contestadas adecuadamente. | 4 | 2 | 0 |
+| **1B Zusammenfassung** | 4 — Aspectos principales mencionados de forma estructurada. Preguntas de comprensión o seguimiento. | 2 | 1 | 0 |
+| **2 Diskussion** | 6 — Participación activa, aportar argumentos, preguntar, defender posiciones, involucrar al compañero. | 4 | 2 | 0 |
+
+**Sprachliche Angemessenheit (32 pts — 4 criterios × 8 pts):**
+
+| Criterio | A = 8 | B = 5 | C = 2 | D = 0 |
+|----------|-------|-------|-------|-------|
+| **Flüssigkeit** | Muy fluido, ritmo constante, sin búsqueda de palabras. | Mayormente fluido, alguna pausa posible. | Algunas pausas buscando palabras. | Pausas numerosas, comprensión afectada. |
+| **Repertoire** | Variado, parafraseo sin problemas. | A veces vocabulario simple o repeticiones. | Frecuentemente simple y/o repetitivo. | Predominantemente simple. |
+| **Grammatische Richtigkeit** | Alto grado de corrección. | Algunos errores en estructuras complejas. | Errores numerosos. | Errores que afectan la comprensión. |
+| **Aussprache & Intonation** | Clara, natural, matices de significado mediante entonación. | Errores ocasionales en pronunciación/acentuación. | Errores que exigen concentración extra del oyente. | Errores numerosos, comprensión afectada. |
+
+> **Para el creador de contenido:** Los temas de presentación deben ser lo suficientemente ricos para hablar ~3 min con argumentos, ejemplos y experiencias. Las citas de discusión deben ser lo bastante ambiguas para permitir posiciones contrarias.
+
 ---
 
 ### 4.10 Mündliche Prüfung Teil 1B — Zusammenfassung
