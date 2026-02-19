@@ -1143,14 +1143,14 @@ Referent/in: [vortrag completo]
 
 Un hablante nativo de alemán habla en promedio **150–180 palabras por minuto**.
 
-| Sección | Palabras (Modell 1) | Duración aprox. (a 150–180 wpm) |
-|---------|--------------------:|---------------------------------:|
-| HV Teil 1 (8 Sprecher) | **858** | ~5–6 min |
-| HV Teil 2 (Interview) | **678** | ~4–4.5 min |
-| HV Teil 3 (Vortrag) | **712** | ~4–5 min |
-| **Total** | **~2248** | **~13–16 min** |
+| Sección | Palabras (Modell 1, solo diálogos) | Duración aprox. (a 150–180 wpm) |
+|---------|-----------------------------------:|---------------------------------:|
+| HV Teil 1 (8 Sprecher) | **993** | ~6–7 min |
+| HV Teil 2 (Interview) | **1155** | ~6–8 min |
+| HV Teil 3 (Vortrag) | **1101** | ~6–7 min |
+| **Total** | **~3249** | **~18–22 min** |
 
-> La prueba entera de Hörverstehen dura ~40–45 min, pero eso incluye tiempo para leer las preguntas, pensar y responder. Las cifras de arriba son solo el audio hablado.
+> Conteo hecho con script Python sobre `modell-1/exam-data.js`, excluyendo las instrucciones del audio ("Sie hören...") y contando solo desde el primer Sprecher/Moderator/Dozent. La prueba entera de Hörverstehen dura ~40–45 min, pero eso incluye tiempo para leer las preguntas, pensar y responder.
 
 ### Consejos para escribir transcripciones realistas
 
@@ -1535,7 +1535,7 @@ Para cada nuevo Modelltest, verifica:
 
 ### Hörverstehen (transcripción)
 
-- [ ] `exam-data.js` — `hvTranskript` rellenado con el texto completo del audio (~2250 palabras: HV1 ~858 + HV2 ~678 + HV3 ~712)
+- [ ] `exam-data.js` — `hvTranskript` rellenado con el texto completo del audio (~3250 palabras: HV1 ~993 + HV2 ~1155 + HV3 ~1101)
 - [ ] El botón "Transkript kopieren" aparece habilitado en `screen-hv-ready` (se inyecta automáticamente por `exam-engine.js`)
 
 ### Estructura (no modificar — solo verificar que se copió bien de _vorlage/)
