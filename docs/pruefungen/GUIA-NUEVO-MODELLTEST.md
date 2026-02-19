@@ -1027,7 +1027,7 @@ Ende des Subtests Hörverstehen.`,
 };
 ```
 
-> **`hvTranskript`**: Texto plano con el transkript completo del audio del Hörverstehen. Si el campo no existe o empieza con `/*`, el botón "Transkript kopieren" no aparece en la pantalla de preparación del HV. Se muestra en `screen-hv-ready` para que el usuario lo copie y use con un TTS o para seguir el audio.
+> **`hvTranskript`**: Template literal (backticks) con el transkript completo del audio del Hörverstehen. Las instrucciones oficiales en alemán ya están pre-escritas en todos los modells — solo hay que rellenar el contenido hablado. Si el campo contiene `/* TODO */`, el botón "Transkript kopieren" aparece deshabilitado con "Transkript noch nicht verfügbar". Ver [sección 6.1](#61-hörverstehen-transkripte) para el formato completo.
 
 ### Notas sobre los valores de respuesta
 
