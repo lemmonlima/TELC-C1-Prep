@@ -991,7 +991,28 @@ const EXAM_DATA = {
     }
   },
 
-  hvTranskript: 'Transkript completo del Hörverstehen (HV1 + HV2 + HV3).\n\nSprecher 1: ...\nSprecher 2: ...',
+  hvTranskript: `Hörverstehen Teil 1
+
+Sie hören die Meinungen von acht Personen...
+
+Sprecher 1: ...
+...
+Sprecher 8: ...
+
+Hörverstehen Teil 2
+
+Sie hören eine Radiosendung...
+
+Moderator: ...
+Entrevistado: ...
+
+Hörverstehen Teil 3
+
+Sie hören einen Vortrag...
+
+Dozent/Referent: ...
+
+Ende des Subtests Hörverstehen.`,
 
   diskussionZitate: {
     1: { text:'Cita 1.', autor:'Autor',
