@@ -321,6 +321,13 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 - Las afirmaciones "nicht im Text" deben ser plausibles pero no mencionadas
 - La opción de título correcta debe reflejar la idea central (no parcial)
 
+**Claves para crear buen contenido LV3:**
+- **richtig**: La afirmación reformula algo del texto con sinónimos — nunca copia exacta
+- **falsch**: La afirmación contradice algo del texto (dato cambiado, relación invertida, cuantificación alterada). El estudiante debe detectar la diferencia sutil
+- **nicht im Text**: El tema es plausible y relacionado, pero simplemente **no se menciona** en el texto. No es falso — es ausente. Esta distinción es la trampa principal
+- Las afirmaciones deben seguir aproximadamente el **orden del texto** (Aussage 13 → primeros párrafos, Aussage 23 → últimos párrafos)
+- La pregunta global (24) ofrece 3 títulos: uno demasiado específico, uno demasiado general/tangencial, y el correcto que captura la idea central
+
 ---
 
 ### 4.4 Sprachbausteine — Grammatik und Lexik
