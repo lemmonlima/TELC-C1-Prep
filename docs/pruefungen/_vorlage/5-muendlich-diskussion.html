@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest N - Mündliche Prüfung: Diskussion | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../shared/pruefung.css" />
+  <script src="../../topbar.js"></script>
+  <script src="../../navigation.js"></script>
+</head>
+<body>
+  <main class="pruefung-container" id="section-root" data-section="diskussion" data-modell="N">
+
+    <div data-content="zitate" hidden>
+      <!--
+        TODO: 4 citas de autores famosos. Cada una con aspectos de discusión.
+        ⚠ CONSISTENCIA: Estas citas DEBEN ser idénticas en:
+        - exam.html (screen-diskussion-ready + data-content="simulation" abajo)
+        - exam-data.js (diskussionZitate)
+      -->
+      <div class="zitat-box">
+        <div class="zitat-nummer">Diskussionsthema 1</div>
+        <div class="zitat-text">„Cita 1 aquí."</div>
+        <div class="zitat-autor">— Nombre Apellido (1800–1870), Profesión</div>
+        <div class="diskussionsfragen">
+          <h4>Mögliche Diskussionsaspekte:</h4>
+          <ul>
+            <li>Aspecto 1?</li>
+            <li>Aspecto 2?</li>
+            <li>Aspecto 3?</li>
+            <li>Aspecto 4?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="zitat-box">
+        <div class="zitat-nummer">Diskussionsthema 2</div>
+        <div class="zitat-text">„Cita 2 aquí."</div>
+        <div class="zitat-autor">— Nombre Apellido (1800–1870), Profesión</div>
+        <div class="diskussionsfragen">
+          <h4>Mögliche Diskussionsaspekte:</h4>
+          <ul>
+            <li>Aspecto 1?</li>
+            <li>Aspecto 2?</li>
+            <li>Aspecto 3?</li>
+            <li>Aspecto 4?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="zitat-box">
+        <div class="zitat-nummer">Diskussionsthema 3</div>
+        <div class="zitat-text">„Cita 3 aquí."</div>
+        <div class="zitat-autor">— Nombre Apellido (1800–1870), Profesión</div>
+        <div class="diskussionsfragen">
+          <h4>Mögliche Diskussionsaspekte:</h4>
+          <ul>
+            <li>Aspecto 1?</li>
+            <li>Aspecto 2?</li>
+            <li>Aspecto 3?</li>
+            <li>Aspecto 4?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="zitat-box">
+        <div class="zitat-nummer">Diskussionsthema 4</div>
+        <div class="zitat-text">„Cita 4 aquí."</div>
+        <div class="zitat-autor">— Nombre Apellido (1800–1870), Profesión</div>
+        <div class="diskussionsfragen">
+          <h4>Mögliche Diskussionsaspekte:</h4>
+          <ul>
+            <li>Aspecto 1?</li>
+            <li>Aspecto 2?</li>
+            <li>Aspecto 3?</li>
+            <li>Aspecto 4?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-content="simulation" hidden>
+      <!-- TODO: Versión corta de las 4 citas (sin aspectos). Para modo simulación standalone. -->
+      <div class="thema-box" data-zitat="1">
+        <h3>Diskussionsthema 1</h3>
+        <div class="zitat">„Cita 1 aquí."</div>
+        <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Apellido</p>
+      </div>
+
+      <div class="thema-box" data-zitat="2">
+        <h3>Diskussionsthema 2</h3>
+        <div class="zitat">„Cita 2 aquí."</div>
+        <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Apellido</p>
+      </div>
+
+      <div class="thema-box" data-zitat="3">
+        <h3>Diskussionsthema 3</h3>
+        <div class="zitat">„Cita 3 aquí."</div>
+        <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Apellido</p>
+      </div>
+
+      <div class="thema-box" data-zitat="4">
+        <h3>Diskussionsthema 4</h3>
+        <div class="zitat">„Cita 4 aquí."</div>
+        <p style="text-align: right; font-style: italic; opacity: 0.7; margin-top: 0.5rem;">— Apellido</p>
+      </div>
+    </div>
+
+  </main>
+  <script src="../shared/section-builders.js"></script>
+  <script src="../shared/pruefung.js"></script>
+  <script>
+    SectionBuilder.diskussion(document.getElementById('section-root'), document.getElementById('section-root'));
+    // TODO: Las citas y aspectos DEBEN coincidir con el HTML de arriba y con exam-data.js
+    Pruefung.initDiskussion({
+      1: { text:'Cita 1 aquí.', autor:'Nombre Apellido (1800–1870), Profesión',
+           aspekte:['Aspecto 1?','Aspecto 2?','Aspecto 3?','Aspecto 4?'] },
+      2: { text:'Cita 2 aquí.', autor:'Nombre Apellido (1800–1870), Profesión',
+           aspekte:['Aspecto 1?','Aspecto 2?','Aspecto 3?','Aspecto 4?'] },
+      3: { text:'Cita 3 aquí.', autor:'Nombre Apellido (1800–1870), Profesión',
+           aspekte:['Aspecto 1?','Aspecto 2?','Aspecto 3?','Aspecto 4?'] },
+      4: { text:'Cita 4 aquí.', autor:'Nombre Apellido (1800–1870), Profesión',
+           aspekte:['Aspecto 1?','Aspecto 2?','Aspecto 3?','Aspecto 4?'] }
+    });
+  </script>
+</body>
+</html>

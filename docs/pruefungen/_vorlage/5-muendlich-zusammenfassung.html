@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest N - Mündliche Prüfung: Zusammenfassung | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../shared/pruefung.css" />
+  <script src="../../topbar.js"></script>
+  <script src="../../navigation.js"></script>
+</head>
+<body>
+  <main class="pruefung-container" id="section-root" data-section="zusammenfassung" data-modell="N">
+
+    <div data-content="themen" hidden>
+      <!--
+        TODO: Botones para los 6 temas de präsentation.
+        Las claves data-thema DEBEN coincidir con praesentation-texte.js.
+        Los labels son resúmenes cortos de los temas.
+        ⚠ IMPORTANTE: Este archivo carga praesentation-texte.js ANTES de los shared scripts.
+      -->
+      <h3 style="margin-top: 0; color: var(--accent-ink, #457b9d);">Teilnehmer/in A - Themen:</h3>
+      <div class="thema-auswahl-grid">
+        <button class="thema-btn" data-thema="a1">Thema 1: Resumen A1</button>
+        <button class="thema-btn" data-thema="a2">Thema 2: Resumen A2</button>
+      </div>
+
+      <h3 style="margin-top: 1.5rem; color: var(--accent-ink, #457b9d);">Teilnehmer/in B - Themen:</h3>
+      <div class="thema-auswahl-grid">
+        <button class="thema-btn" data-thema="b1">Thema 1: Resumen B1</button>
+        <button class="thema-btn" data-thema="b2">Thema 2: Resumen B2</button>
+      </div>
+
+      <h3 style="margin-top: 1.5rem; color: var(--accent-ink, #457b9d);">Teilnehmer/in C - Themen:</h3>
+      <div class="thema-auswahl-grid">
+        <button class="thema-btn" data-thema="c1">Thema 1: Resumen C1</button>
+        <button class="thema-btn" data-thema="c2">Thema 2: Resumen C2</button>
+      </div>
+    </div>
+
+  </main>
+  <!-- ⚠ ORDEN CRÍTICO: praesentation-texte.js ANTES de section-builders.js -->
+  <script src="praesentation-texte.js"></script>
+  <script src="../shared/section-builders.js"></script>
+  <script src="../shared/pruefung.js"></script>
+  <script>
+    SectionBuilder.zusammenfassung(document.getElementById('section-root'), document.getElementById('section-root'));
+    Pruefung.initZusammenfassung();
+  </script>
+</body>
+</html>

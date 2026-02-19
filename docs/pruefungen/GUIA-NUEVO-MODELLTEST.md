@@ -1,6 +1,6 @@
 # Guía completa para crear un nuevo Modelltest TELC C1 Hochschule
 
-> Esta guía documenta **todo** lo necesario para rellenar un Modelltest (2–5) a partir de las plantillas existentes. Los HTML usan **SectionBuilder** para generar todo el boilerplate — solo necesitas rellenar los `<div data-content>` con contenido y las respuestas correctas.
+> Esta guía documenta **todo** lo necesario para crear un Modelltest a partir de la carpeta `_vorlage/` (plantilla). Los HTML usan **SectionBuilder** para generar todo el boilerplate — solo necesitas rellenar los `<!-- TODO -->` con contenido y las respuestas correctas. **NUNCA crear archivos desde cero** — siempre copiar `_vorlage/`.
 
 ---
 

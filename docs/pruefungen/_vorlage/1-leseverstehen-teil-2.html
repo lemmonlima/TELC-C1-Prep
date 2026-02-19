@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modelltest N - Leseverstehen Teil 2 | TELC C1 Hochschule</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../shared/pruefung.css" />
+  <script src="../../topbar.js"></script>
+  <script src="../../navigation.js"></script>
+</head>
+<body>
+  <main class="pruefung-container" id="section-root" data-section="lv2" data-modell="N">
+
+    <div data-content="text" hidden>
+      <!-- TODO: Título + 5 Absätze (a–e), cada uno con tono/función comunicativa diferente -->
+      <h3>Título del Texto</h3>
+
+      <div class="absatz">
+        <span class="absatz-label">Absatz a</span>
+        <p>Texto del párrafo a...</p>
+      </div>
+
+      <div class="absatz">
+        <span class="absatz-label">Absatz b</span>
+        <p>Texto del párrafo b...</p>
+      </div>
+
+      <div class="absatz">
+        <span class="absatz-label">Absatz c</span>
+        <p>Texto del párrafo c...</p>
+      </div>
+
+      <div class="absatz">
+        <span class="absatz-label">Absatz d</span>
+        <p>Texto del párrafo d...</p>
+      </div>
+
+      <div class="absatz">
+        <span class="absatz-label">Absatz e</span>
+        <p>Texto del párrafo e...</p>
+      </div>
+    </div>
+
+    <div data-content="fragen" hidden>
+      <!-- TODO: 6 preguntas "In welchem Abschnitt..." sobre funciones comunicativas -->
+      <div data-frage="7">… drückt sich der Autor polemisch aus?</div>
+      <div data-frage="8">… gibt der Autor eine Empfehlung?</div>
+      <div data-frage="9">… gibt der Autor eine fremde Einschätzung wieder?</div>
+      <div data-frage="10">… möchte der Autor zur Belustigung beitragen?</div>
+      <div data-frage="11">… spricht der Autor eine Warnung aus?</div>
+      <div data-frage="12">… stellt der Autor eine Prognose?</div>
+    </div>
+
+  </main>
+  <script src="../shared/section-builders.js"></script>
+  <script src="../shared/pruefung.js"></script>
+  <script>
+    SectionBuilder.lv2(document.getElementById('section-root'), document.getElementById('section-root'));
+    // TODO: Respuestas — qué párrafo (a–e) responde cada pregunta
+    Pruefung.initLV2({ 7:'_', 8:'_', 9:'_', 10:'_', 11:'_', 12:'_' });
+  </script>
+</body>
+</html>
