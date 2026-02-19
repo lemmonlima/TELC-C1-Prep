@@ -1580,7 +1580,7 @@ cp -r _vorlage/ modell-N/
 | Actualizar respuestas en `Pruefung.initXXX()` de cada standalone | 5% |
 | Actualizar `exam-data.js` (respuestas + hvTranskript) | 5% |
 | Escribir/copiar `praesentation-texte.js` (6 textos × ~400 pal) | 5% |
-| Escribir `hvTranskript` (~2250 palabras: HV1 ~858 + HV2 ~678 + HV3 ~712) | 5% |
+| Escribir `hvTranskript` (~3250 palabras: HV1 ~993 + HV2 ~1155 + HV3 ~1101) | 5% |
 | Verificar consistencia entre archivos (sección 3.2) | 5% |
 
 **No necesitas:** cambiar lógica, crear componentes, modificar CSS, tocar archivos en `shared/`, agregar botones de navegación ni botones de copiar transkript.
