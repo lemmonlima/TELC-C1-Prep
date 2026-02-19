@@ -12,125 +12,19 @@
 <body>
   <main class="pruefung-container" id="section-root" data-section="hv3" data-modell="2">
 
-    <div data-content="thema" hidden>Gastvortrag „Nachhaltige Stadtplanung und urbane Mobilität"</div>
+    <div data-content="thema" hidden><!-- TODO: Thema --></div>
 
     <div data-content="slides" hidden>
-
+      <!-- TODO: 5-7 slide-box divs. Each has unique content. Example:
       <div class="slide-box">
-        <div class="slide-titel">Präsentation</div>
+        <div class="slide-titel">Slide title</div>
         <div class="slide-content">
-          <p><strong>Seminar Stadtsoziologie</strong><br>
-          Nachhaltige Städte „…"</p>
-          <p><strong>Thema heute:</strong><br>
-          Nachhaltige Stadtplanung und urbane Mobilität</p>
-          <p><strong>Gastdozent:</strong><br>
-          Dr. Thomas Berger, Institut für Verkehrsforschung</p>
-        </div>
-      </div>
-
-      <div class="slide-box">
-        <div class="slide-titel">Ausgangslage</div>
-        <div class="slide-content">
-          <p><strong>Verkehr in deutschen Städten</strong></p>
+          <p>Content</p>
           <span class="input-label">65.</span>
-          <input type="text" class="slide-input" data-nummer="65" placeholder="Hauptproblem …">
-
-          <p style="margin-top: 1.25rem;"><strong>Anteil des Verkehrs an CO₂-Emissionen</strong></p>
-          <span class="input-label">66.</span>
-          <input type="text" class="slide-input" data-nummer="66" placeholder="Prozentzahl / Aussage …">
+          <input type="text" class="slide-input" data-nummer="65" placeholder="...">
         </div>
       </div>
-
-      <div class="slide-box">
-        <div class="slide-titel">Konzept: Die 15-Minuten-Stadt</div>
-        <div class="slide-content">
-          <p><strong>Grundidee</strong></p>
-          <p>Alle wichtigen Einrichtungen erreichbar in:</p>
-          <ul>
-            <li>
-              <span class="input-label">67a.</span>
-              <input type="text" class="slide-input" data-nummer="67a" placeholder="Fortbewegungsart 1">
-            </li>
-            <li>
-              <span class="input-label">67b.</span>
-              <input type="text" class="slide-input" data-nummer="67b" placeholder="Fortbewegungsart 2">
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="slide-box">
-        <div class="slide-titel">Beispiel: Kopenhagen</div>
-        <div class="slide-content">
-          <p>Maßnahmen der Stadt:</p>
-          <ul>
-            <li>Ergebnis:
-              <ul>
-                <li>
-                  <span class="input-label">68a.</span>
-                  <input type="text" class="slide-input" data-nummer="68a" placeholder="Ergebnis 1">
-                </li>
-                <li>
-                  <span class="input-label">68b.</span>
-                  <input type="text" class="slide-input" data-nummer="68b" placeholder="Ergebnis 2">
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="slide-box">
-        <div class="slide-titel">ÖPNV der Zukunft</div>
-        <div class="slide-content">
-          <p><strong>Kernforderung</strong></p>
-          <span class="input-label">69.</span>
-          <input type="text" class="slide-input" data-nummer="69" placeholder="Forderung …">
-
-          <p style="margin-top: 1.25rem;"><strong>Problem bisher:</strong></p>
-          <span class="input-label">70a.</span>
-          <input type="text" class="slide-input" data-nummer="70a" placeholder="Problem">
-
-          <p style="margin-top: 0.75rem;"><strong>Lösung:</strong></p>
-          <span class="input-label">70b.</span>
-          <input type="text" class="slide-input" data-nummer="70b" placeholder="Lösung">
-        </div>
-      </div>
-
-      <div class="slide-box">
-        <div class="slide-titel">Rolle des Fahrrads</div>
-        <div class="slide-content">
-          <ul>
-            <li>Radverkehrsanteil in Deutschland:
-              <span class="input-label">71a.</span>
-              <input type="text" class="slide-input" data-nummer="71a" placeholder="Aktuelle Zahl">
-              <span class="input-label">71b.</span>
-              <input type="text" class="slide-input" data-nummer="71b" placeholder="Ziel">
-            </li>
-            <li>Wichtigste Maßnahme:
-              <span class="input-label">72.</span>
-              <input type="text" class="slide-input" data-nummer="72" placeholder="Maßnahme">
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="slide-box">
-        <div class="slide-titel">Fazit und Ausblick</div>
-        <div class="slide-content">
-          <ul>
-            <li>Nachhaltige Mobilität erfordert
-              <span class="input-label">73.</span>
-              <input type="text" class="slide-input" data-nummer="73" placeholder="Was erfordert sie?">
-            </li>
-            <li>Zitat: „Die Stadt der Zukunft wird …"
-              <span class="input-label">74.</span>
-              <input type="text" class="slide-input" data-nummer="74" placeholder="Wie wird sie sein?">
-            </li>
-          </ul>
-        </div>
-      </div>
-
+      -->
     </div>
 
   </main>
@@ -139,24 +33,13 @@
   <script>
     SectionBuilder.hv3(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initHV3({
-      65:['stau','staus','verkehrsstau','überlastung','überlastet','zu viele autos'],
-      66:['ein fünftel','20 prozent','zwanzig prozent','20%','fünftel'],
-      '67a':['zu fuß','fußweg','gehen','fußgänger'],
-      '67b':['fahrrad','rad','radfahren','mit dem rad'],
-      '68a':['mehr radfahrer','radverkehr gestiegen','62 prozent','radanteil'],
-      '68b':['weniger autos','autoverkehr gesunken','co2 reduziert','emissionen'],
-      69:['takterhöhung','häufigere verbindungen','dichterer takt','besserer takt','takt'],
-      '70a':['ländliche gebiete','auf dem land','schlechte anbindung','land','randgebiete'],
-      '70b':['on-demand','rufbus','bedarfsverkehr','flexible angebote','shuttles'],
-      '71a':['elf prozent','11 prozent','11%','elf'],
-      '71b':['25 prozent','verdoppeln','fünfundzwanzig','25%','verdoppelung'],
-      72:['sichere radwege','geschützte radwege','radinfrastruktur','radwege'],
-      73:['politischen willen','mut','politische entscheidungen','mut und geld','investitionen'],
-      74:['nicht für autos','für menschen','lebenswert','autoarm','autofrei']
+      65:[], 66:[], '67a':[], '67b':[], '68a':[], '68b':[],
+      69:[], '70a':[], '70b':[], '71a':[], '71b':[],
+      72:[], 73:[], 74:[]
     }, {
       65:'65', 66:'66', '67a':'67 (Teil 1)', '67b':'67 (Teil 2)',
       '68a':'68 (Teil 1)', '68b':'68 (Teil 2)', 69:'69',
-      '70a':'70 (Problem)', '70b':'70 (Lösung)', '71a':'71 (Aktuell)', '71b':'71 (Ziel)',
+      '70a':'70 (Alte)', '70b':'70 (Neue)', '71a':'71 (Teil 1)', '71b':'71 (Teil 2)',
       72:'72', 73:'73', 74:'74'
     });
   </script>

@@ -13,56 +13,11 @@
   <main class="pruefung-container" id="section-root" data-section="praesentation" data-modell="2">
 
     <div data-content="teilnehmer" hidden>
-      <div class="teilnehmer-box">
-        <div class="teilnehmer-titel">Teilnehmer/in A</div>
-        <div class="thema-box">
-          <div class="thema-label">Thema 1</div>
-          <div class="thema-text"><p>Welche Rolle spielen Medien in einer Demokratie? Diskutieren Sie sowohl Chancen als auch Risiken. Begründen Sie Ihre Meinung mit Beispielen.</p></div>
-        </div>
-        <div class="thema-box">
-          <div class="thema-label">Thema 2</div>
-          <div class="thema-text"><p>Welche Vor- und Nachteile hat das Arbeiten im Homeoffice? Vergleichen Sie mit der Arbeit im Büro und nehmen Sie Stellung.</p></div>
-        </div>
-      </div>
-
-      <div class="teilnehmer-box">
-        <div class="teilnehmer-titel">Teilnehmer/in B</div>
-        <div class="thema-box">
-          <div class="thema-label">Thema 1</div>
-          <div class="thema-text"><p>Welche Bedeutung hat regelmäßige Bewegung für die körperliche und geistige Gesundheit? Begründen Sie Ihre Meinung.</p></div>
-        </div>
-        <div class="thema-box">
-          <div class="thema-label">Thema 2</div>
-          <div class="thema-text"><p>Sollte ein Auslandssemester für alle Studierenden Pflicht sein? Diskutieren Sie Pro- und Contra-Argumente.</p></div>
-        </div>
-      </div>
-
-      <div class="teilnehmer-box">
-        <div class="teilnehmer-titel">Teilnehmer/in C</div>
-        <div class="thema-box">
-          <div class="thema-label">Thema 1</div>
-          <div class="thema-text"><p>Wie beeinflussen soziale Medien das Zusammenleben in der Gesellschaft? Diskutieren Sie positive und negative Aspekte.</p></div>
-        </div>
-        <div class="thema-box">
-          <div class="thema-label">Thema 2</div>
-          <div class="thema-text"><p>Welche Rolle spielt Kunst in der modernen Gesellschaft? Ist sie ein Luxus oder eine Notwendigkeit? Begründen Sie Ihre Meinung.</p></div>
-        </div>
-      </div>
+      <!-- TODO: 3 teilnehmer-box divs, each with 2 thema-box children -->
     </div>
 
     <div data-content="select" hidden>
-      <optgroup label="Teilnehmer/in A">
-        <option value="a1">Thema 1: Rolle der Medien in einer Demokratie</option>
-        <option value="a2">Thema 2: Homeoffice — Vor- und Nachteile</option>
-      </optgroup>
-      <optgroup label="Teilnehmer/in B">
-        <option value="b1">Thema 1: Bedeutung von Bewegung für die Gesundheit</option>
-        <option value="b2">Thema 2: Auslandssemester als Pflicht?</option>
-      </optgroup>
-      <optgroup label="Teilnehmer/in C">
-        <option value="c1">Thema 1: Einfluss sozialer Medien auf die Gesellschaft</option>
-        <option value="c2">Thema 2: Rolle der Kunst in der Gesellschaft</option>
-      </optgroup>
+      <!-- TODO: 3 optgroup elements for dropdown -->
     </div>
 
   </main>
@@ -70,14 +25,7 @@
   <script src="../shared/pruefung.js"></script>
   <script>
     SectionBuilder.praesentation(document.getElementById('section-root'), document.getElementById('section-root'));
-    Pruefung.initPraesentation({
-      'a1': 'Welche Rolle spielen Medien in einer Demokratie? Diskutieren Sie sowohl Chancen als auch Risiken. Begründen Sie Ihre Meinung mit Beispielen.',
-      'a2': 'Welche Vor- und Nachteile hat das Arbeiten im Homeoffice? Vergleichen Sie mit der Arbeit im Büro und nehmen Sie Stellung.',
-      'b1': 'Welche Bedeutung hat regelmäßige Bewegung für die körperliche und geistige Gesundheit? Begründen Sie Ihre Meinung.',
-      'b2': 'Sollte ein Auslandssemester für alle Studierenden Pflicht sein? Diskutieren Sie Pro- und Contra-Argumente.',
-      'c1': 'Wie beeinflussen soziale Medien das Zusammenleben in der Gesellschaft? Diskutieren Sie positive und negative Aspekte.',
-      'c2': 'Welche Rolle spielt Kunst in der modernen Gesellschaft? Ist sie ein Luxus oder eine Notwendigkeit? Begründen Sie Ihre Meinung.'
-    });
+    Pruefung.initPraesentation({ /* TODO: theme texts */ });
   </script>
 </body>
 </html>
