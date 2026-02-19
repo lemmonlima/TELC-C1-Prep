@@ -1083,27 +1083,39 @@ Para facilitar la práctica, cada Modelltest puede incluir la transcripción com
 
 En el archivo `exam-data.js` de cada modell, dentro del campo `hvTranskript`. El ejemplo completo real está en `modell-1/exam-data.js`.
 
+> **Estado actual:** Los modell-2 a modell-5 ya tienen la estructura del transkript con todas las instrucciones oficiales pre-escritas. Solo falta rellenar el contenido hablado (marcado con `/* TODO */`).
+
 ### Formato del transkript
 
-El transkript es un template literal (backticks) con el texto plano completo. Estructura:
+El transkript es un template literal (backticks) con el texto plano completo. Las instrucciones oficiales del audio son **siempre las mismas** en todos los Modelltests (son estándar TELC). La estructura exacta que ya está en cada `exam-data.js`:
 
 ```
 Hörverstehen Teil 1
 
-[Instrucciones del audio]
+Sie hören die Meinungen von acht Personen. Sie hören die Meinungen nur einmal. Entscheiden Sie beim Hören, welche Aussage A bis J zu welcher Person passt. Zwei Aussagen passen nicht. Markieren Sie Ihre Lösungen für die Aufgaben 47 bis 54 auf dem Antwortbogen. Lesen Sie jetzt die Aussagen A bis J. Sie haben dazu eine Minute Zeit.
 
 Sprecher 1: [texto completo de lo que dice]
 
 Sprecher 2: [texto completo]
-...
+
+Sprecher 3: [texto completo]
+
+Sprecher 4: [texto completo]
+
+Sprecher 5: [texto completo]
+
+Sprecher 6: [texto completo]
+
+Sprecher 7: [texto completo]
+
 Sprecher 8: [texto completo]
 
 
 Hörverstehen Teil 2
 
-[Instrucciones del audio]
+Sie hören eine Radiosendung. Sie hören die Sendung nur einmal. Entscheiden Sie beim Hören, welche Aussage A, B oder C am besten passt. Markieren Sie Ihre Lösungen für die Aufgaben 55 bis 64 auf dem Antwortbogen. Lesen Sie jetzt die Aufgaben 55 bis 64. Sie haben dazu drei Minuten Zeit.
 
-Moderator: [pregunta]
+Moderator: [pregunta/introducción]
 
 Entrevistado: [respuesta completa]
 
@@ -1113,24 +1125,25 @@ Moderator: [siguiente pregunta]
 
 Hörverstehen Teil 3
 
-[Instrucciones del audio]
+Sie hören einen Vortrag. Sie hören den Vortrag nur einmal. Sie haben Handzettel mit den Folien der Präsentation erhalten. Schreiben Sie die fehlenden Informationen stichwortartig in die freien Zeilen 65 bis 74 in der rechten Spalte. Die Lösung 0 ist ein Beispiel. Lesen Sie jetzt die Stichworte. Sie haben dazu eine Minute Zeit.
 
 Dozent: [introducción]
 
 Referent/in: [vortrag completo]
 
-[cierre]
+Ende des Subtests Hörverstehen.
 ```
+
+> **⚠ IMPORTANTE:** Las instrucciones en alemán (los párrafos que empiezan con "Sie hören...") **NO se tocan**. Son idénticas en todos los Modelltests. Solo se rellena el contenido hablado después de cada bloque de instrucciones.
 
 **Puntos clave del formato:**
 - Separar los 3 Teile con líneas en blanco (doble salto)
 - Cada Sprecher/intervención como `Nombre: texto completo`
-- Incluir las instrucciones del audio ("Sie hören die Meinungen von acht Personen...")
-- Incluir pausas indicadas ("Sie haben dazu eine Minute Zeit.")
+- Las instrucciones del audio ya están escritas — **no modificarlas**
 - NO incluir timestamps ni marcadores de tiempo
 - El texto debe ser la **transcripción fiel** del audio, no un resumen
 
-**Ejemplo real:** Ver `modell-1/exam-data.js` — contiene el transkript completo (~2248 palabras) del Übungstest 1 de telc.
+**Ejemplo real:** Ver `modell-1/exam-data.js` — contiene el transkript completo (~3249 palabras) del Übungstest 1 de telc.
 
 ### Cómo funciona el botón
 
