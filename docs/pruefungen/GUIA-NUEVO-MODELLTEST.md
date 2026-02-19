@@ -194,7 +194,7 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 
 | Elemento | Palabras aprox. |
 |----------|----------------:|
-| Texto completo (sin opciones) | **~250** |
+| Texto completo (sin opciones) | **275** |
 | Párrafo 1 (con Lücke 0, 1) | ~40 |
 | Párrafo 2 + subtítulo (con Lücke 2, 3) | ~55 |
 | Párrafo 3 (con Lücke 4, 5) | ~85 |
@@ -253,7 +253,7 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 
 | Elemento | Palabras aprox. |
 |----------|----------------:|
-| **Texto total** (5 absätze) | **~700** |
+| **Texto total** (5 absätze) | **729** |
 | Absatz a | ~200 |
 | Absatz b | ~120 |
 | Absatz c | ~175 |
