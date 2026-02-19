@@ -1545,9 +1545,9 @@ Para cada nuevo Modelltest, verifica:
 
 ### HTML (contenido en `<div data-content>` + respuestas en `<script>`)
 
-- [ ] `1-leseverstehen-teil-1.html` — `data-content="text"` (~250 pal.) + `data-content="options"` (a–h, z) + `Pruefung.initLV1()`
-- [ ] `1-leseverstehen-teil-2.html` — `data-content="text"` (5 absätze ~700 pal.) + `data-content="fragen"` (6) + `Pruefung.initLV2()`
-- [ ] `1-leseverstehen-teil-3.html` — `data-content="text"` (~1100 pal.) + `data-content="aussagen"` (11) + `data-content="global"` (3) + `Pruefung.initLV3()`
+- [ ] `1-leseverstehen-teil-1.html` — `data-content="text"` (~275 pal.) + `data-content="options"` (a–h, z) + `Pruefung.initLV1()`
+- [ ] `1-leseverstehen-teil-2.html` — `data-content="text"` (5 absätze ~729 pal.) + `data-content="fragen"` (6) + `Pruefung.initLV2()`
+- [ ] `1-leseverstehen-teil-3.html` — `data-content="text"` (~1002 pal.) + `data-content="aussagen"` (11) + `data-content="global"` (3) + `Pruefung.initLV3()`
 - [ ] `2-sprachbausteine.html` — `data-content="text"` (23 lücken) + `data-content="optionen"` (23 × 4) + `Pruefung.initSB()`
 - [ ] `3-hoerverstehen-teil-1.html` — `data-content="thema"` + `data-content="aussagen"` (a–j) + `Pruefung.initHV1()`
 - [ ] `3-hoerverstehen-teil-2.html` — `data-content="thema"` + `data-content="fragen"` (10 × 3) + `Pruefung.initHV2()`
