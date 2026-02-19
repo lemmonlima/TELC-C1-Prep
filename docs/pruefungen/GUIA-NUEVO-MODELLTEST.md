@@ -391,6 +391,20 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 - Artikelgebrauch y Kasusendungen
 - Präpositionalphrasen idiomáticas (zum Trotz, zufolge, Angaben nach...)
 
+**Categorías adicionales de SB (de los tips):**
+- **Feste Verb-Präposition-Verbindungen:** sich beschäftigen mit, verfügen über, beitragen zu, hinweisen auf
+- **Funktionsverbgefüge:** in Betracht ziehen, zur Verfügung stellen, in Anspruch nehmen
+- **Kollokationen:** eine Rolle spielen, Einfluss ausüben, Rücksicht nehmen
+- **Relativpronomen/Relativsätze:** derer, deren, wessen, wobei, worauf
+- **Partizipialkonstruktionen:** die oben erwähnte Studie, die sich daraus ergebenden Folgen
+- **Modalpartikeln/Abtönungspartikeln en contexto académico**
+
+**Claves para crear buen contenido SB:**
+- El texto debe ser coherente y legible también SIN los huecos (como texto real)
+- Cada hueco debe tener **exactamente 1 opción correcta** — las otras 3 suenan plausibles pero fallan gramaticalmente o semánticamente
+- Variar categorías gramaticales: no poner 10 preposiciones seguidas. Mezclar preposiciones, conectores, verbos, Konjunktiv, etc.
+- Las opciones incorrectas deben ser del mismo tipo (si la correcta es una preposición, las 3 incorrectas también deben ser preposiciones)
+
 ---
 
 ### 4.5 Hörverstehen Teil 1 — Globalverstehen
