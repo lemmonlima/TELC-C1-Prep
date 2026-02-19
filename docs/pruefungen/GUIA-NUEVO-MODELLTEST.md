@@ -1527,36 +1527,51 @@ Para cada nuevo Modelltest, verifica:
 - [ ] `exam-data.js` — `hvTranskript` rellenado con el texto completo del audio (~2250 palabras: HV1 ~858 + HV2 ~678 + HV3 ~712)
 - [ ] El botón "Transkript kopieren" aparece habilitado en `screen-hv-ready` (se inyecta automáticamente por `exam-engine.js`)
 
-### Estructura (no modificar — solo verificar)
+### Estructura (no modificar — solo verificar que se copió bien de _vorlage/)
 
 - [ ] Cada HTML tiene `<main ... data-section="XXX" data-modell="N">` correcto
 - [ ] Cada HTML llama `SectionBuilder.XXX(...)` seguido de `Pruefung.initXXX(...)` en el `<script>`
 - [ ] Los scripts cargan en orden: `section-builders.js` → `pruefung.js` → `<script>` inline
-- [ ] `zusammenfassung.html` carga `praesentation-texte.js` antes de `section-builders.js`
+- [ ] `zusammenfassung.html` carga `praesentation-texte.js` **antes** de `section-builders.js`
+- [ ] `exam.html` no tiene IDs modificados ni estructura alterada
 
-### Verificación de datos
+### Verificación de consistencia (la más importante)
 
 - [ ] Las respuestas en el `<script>` de cada HTML coinciden con `exam-data.js`
 - [ ] Los números de pregunta son consecutivos y correctos (1–6, 7–12, 13–24, 25–47, 47–54, 55–64, 65–74)
-- [ ] Los temas de SA en el HTML coinciden con los de `exam-data.js`
-- [ ] Los temas de presentación en el HTML coinciden con `exam-data.js` y `praesentation-texte.js`
-- [ ] Las citas de diskussion en el HTML coinciden con `exam-data.js`
-- [ ] Los botones de `5-muendlich-zusammenfassung.html` coinciden con los temas de `5-muendlich-praesentation.html`
-- [ ] Las claves en `praesentation-texte.js` (a1, a2, b1, b2, c1, c2) coinciden con los `data-thema` de ambos archivos mündlich
+- [ ] **SA themes**: `4-schriftlicher-ausdruck.html` = `exam.html` (tab-sa) = `exam-data.js` (saThemen)
+- [ ] **Presentation themes**: `5-muendlich-praesentation.html` = `exam.html` (tab-vorbereitung) = `exam-data.js` (themaTexte) = `praesentation-texte.js` claves = `5-muendlich-zusammenfassung.html` botones
+- [ ] **Diskussion quotes**: `5-muendlich-diskussion.html` (zitate + simulation) = `exam.html` (screen-diskussion-ready) = `exam-data.js` (diskussionZitate)
+- [ ] Las claves en `praesentation-texte.js` (a1, a2, b1, b2, c1, c2) coinciden con los `data-thema` y `value` de ambos archivos mündlich
+- [ ] LV3 exam-data.js usa `+`/`−`/`×` (Unicode), standalone usa `richtig`/`falsch`/`nicht`
 - [ ] Los caracteres especiales están correctos: `−` (Unicode minus), `×` (Unicode times), `„"` (comillas alemanas)
 
 ---
 
 ## Resumen rápido
 
+```bash
+# Paso 1: Copiar plantilla
+cp -r _vorlage/ modell-N/
+
+# Paso 2: Buscar y reemplazar N por el número real
+# (en títulos, h1, data-modell, subtitles)
+
+# Paso 3: Rellenar contenido (ver tabla abajo)
+
+# Paso 4: Verificar consistencia (checklist arriba)
+```
+
 | Esfuerzo | Porcentaje |
 |----------|-----------|
-| Rellenar `<div data-content>` con contenido de PDFs | 80% |
-| Actualizar respuestas en `Pruefung.initXXX()` | 5% |
+| Rellenar `<div data-content>` con contenido (11 secciones) | 70% |
+| Rellenar `exam.html` (SA themes + presentation themes + diskussion quotes) | 5% |
+| Actualizar respuestas en `Pruefung.initXXX()` de cada standalone | 5% |
 | Actualizar `exam-data.js` (respuestas + hvTranskript) | 5% |
-| Escribir/copiar `praesentation-texte.js` | 5% |
+| Escribir/copiar `praesentation-texte.js` (6 textos × ~400 pal) | 5% |
 | Escribir `hvTranskript` (~2250 palabras: HV1 ~858 + HV2 ~678 + HV3 ~712) | 5% |
+| Verificar consistencia entre archivos (sección 3.2) | 5% |
 
 **No necesitas:** cambiar lógica, crear componentes, modificar CSS, tocar archivos en `shared/`, agregar botones de navegación ni botones de copiar transkript.
 
-**Arquitectura:** Cada HTML solo contiene datos únicos en `<div data-content hidden>`. Todo el boilerplate (instrucciones, botones, resultados, estructura visual, navegación entre secciones) lo genera `SectionBuilder` desde `shared/section-builders.js`. El botón de transkript y el link de vuelta a Prüfungen lo genera `exam-engine.js` automáticamente.
+**Workflow seguro:** Copiar `_vorlage/` → rellenar TODOs → verificar consistencia. Cada archivo de la plantilla tiene marcadores `<!-- TODO -->` y `⚠ CONSISTENCIA` para guiar exactamente qué cambiar y qué dejar intacto.
