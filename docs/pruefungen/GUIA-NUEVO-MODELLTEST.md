@@ -599,6 +599,22 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 - Umwelt / Nachhaltigkeit
 - Wissenschaft / Ethik
 
+**Bewertungskriterien SA — 48 puntos (4 × 12):**
+
+Cada criterio se califica A/B/C/D. Esto es lo que la IA usa para evaluar:
+
+| Criterio | A = 12 | B = 8 | C = 4 | D = 0 |
+|----------|--------|-------|-------|-------|
+| **1. Aufgabengerechtheit** | Tema tratado de forma completa. Argumentación diferenciada con introducción, desarrollo y conclusión claros. | Tema tratado en gran parte. Argumentación con estructura reconocible pero alguna deficiencia. | Tema tratado solo parcialmente o argumentación simple/incompleta. | Tema incorrecto, desviación total, o texto demasiado corto. |
+| **2. Korrektheit** | Alto grado de corrección gramatical. Errores solo esporádicos en estructuras complejas. | Algunos errores en estructuras complejas; las simples son correctas. | Errores frecuentes también en estructuras simples. | Errores graves que dificultan la comprensión. |
+| **3. Repertoire** | Vocabulario variado y preciso. Sinónimos, nominalizaciones, expresiones académicas. | Vocabulario adecuado con alguna repetición o simplificación. | Vocabulario simple y/o repetitivo en varios puntos. | Vocabulario muy limitado; comprensión afectada. |
+| **4. Kommunikative Gestaltung** | Conectores y referencias adecuados. Coherencia a nivel de párrafo y texto. | Conectores más simples o pequeñas imprecisiones puntuales. | Conectores poco claros o solo conexiones simples en varios puntos. | Rupturas y/o conexiones poco claras. Estructura textual confusa. |
+
+**Estructura esperada del ensayo:**
+1. **Einleitung** (~50 pal.) — Interés, contexto, pregunta central. Sin argumentos ni opinión propia.
+2. **Hauptteil** (~250 pal.) — Retomar citas de la tarea. Pro/contra con esquema: tesis → argumento → ejemplo. Objetividad (Konjunktiv I para citas ajenas).
+3. **Schluss/Fazit** (~50 pal.) — Resumen breve, opinión propia fundamentada, posible perspectiva futura. Sin argumentos nuevos.
+
 ---
 
 ### 4.9 Mündliche Prüfung Teil 1A — Präsentation
