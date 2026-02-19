@@ -1081,45 +1081,56 @@ Para facilitar la práctica, cada Modelltest puede incluir la transcripción com
 
 ### Dónde se guarda
 
-En el archivo `exam-data.js` de cada modell, dentro del campo `hvTranskript`:
+En el archivo `exam-data.js` de cada modell, dentro del campo `hvTranskript`. El ejemplo completo real está en `modell-1/exam-data.js`.
 
-```javascript
-const EXAM_DATA = {
-  // ... correct, themaTexte, saThemen ...
+### Formato del transkript
 
-  hvTranskript: `Hörverstehen Teil 1 — Globalverstehen
-Thema: Studentische Lebensformen
+El transkript es un template literal (backticks) con el texto plano completo. Estructura:
 
-Sprecher 1:
-Also, ich wohne seit dem ersten Semester in einer WG...
-
-Sprecher 2:
-Ich habe mich bewusst für eine Einzimmerwohnung entschieden...
-
-[... 8 sprecher ...]
-
----
-
-Hörverstehen Teil 2 — Detailverstehen
-Thema: Interview mit Prof. Beutelspacher
-
-Moderator: Herr Professor, was fasziniert Sie an der Mathematik?
-Prof. Beutelspacher: Also, für mich ist das ganz einfach...
-
-[... interview completo ...]
-
----
-
-Hörverstehen Teil 3 — Informationstransfer
-Thema: Gastvortrag „Literatur im Unterricht DaF"
-
-Guten Tag, meine Damen und Herren. Heute möchte ich Ihnen...
-
-[... vortrag completo ...]`,
-
-  diskussionZitate: { /* ... */ }
-};
 ```
+Hörverstehen Teil 1
+
+[Instrucciones del audio]
+
+Sprecher 1: [texto completo de lo que dice]
+
+Sprecher 2: [texto completo]
+...
+Sprecher 8: [texto completo]
+
+
+Hörverstehen Teil 2
+
+[Instrucciones del audio]
+
+Moderator: [pregunta]
+
+Entrevistado: [respuesta completa]
+
+Moderator: [siguiente pregunta]
+...
+
+
+Hörverstehen Teil 3
+
+[Instrucciones del audio]
+
+Dozent: [introducción]
+
+Referent/in: [vortrag completo]
+
+[cierre]
+```
+
+**Puntos clave del formato:**
+- Separar los 3 Teile con líneas en blanco (doble salto)
+- Cada Sprecher/intervención como `Nombre: texto completo`
+- Incluir las instrucciones del audio ("Sie hören die Meinungen von acht Personen...")
+- Incluir pausas indicadas ("Sie haben dazu eine Minute Zeit.")
+- NO incluir timestamps ni marcadores de tiempo
+- El texto debe ser la **transcripción fiel** del audio, no un resumen
+
+**Ejemplo real:** Ver `modell-1/exam-data.js` — contiene el transkript completo (~2248 palabras) del Übungstest 1 de telc.
 
 ### Cómo funciona el botón
 
