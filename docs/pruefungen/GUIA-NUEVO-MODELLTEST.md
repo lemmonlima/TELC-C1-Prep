@@ -194,6 +194,12 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 - 2 oraciones son distractores (no encajan en ningún hueco)
 - La opción `z` es siempre el ejemplo para la Lücke 0
 
+**Claves para crear buen contenido LV1:**
+- El texto debe tener estructura **lineal/cronológica** clara (ej: historia de un invento, evolución de un concepto)
+- Cada oración-hueco debe ser un **puente lógico** entre ideas — al quitarla, el texto pierde conexión
+- Los 2 distractores deben ser temáticamente plausibles pero gramaticalmente o semánticamente incompatibles con los huecos restantes
+- Estrategia del estudiante: lee todo primero, busca señales (pronombres, conectores, campos semánticos). Las oraciones deben recompensar esa lectura atenta
+
 ---
 
 ### 4.2 Leseverstehen Teil 2 — Selektives Verstehen
