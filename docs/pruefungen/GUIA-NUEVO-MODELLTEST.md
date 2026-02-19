@@ -133,6 +133,14 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 - La estructura HTML fuera de los `<div data-content>` — el builder genera todo lo demás
 - Los `<script>` al final — solo actualizar los valores de respuestas dentro de `Pruefung.initXXX()`
 
+### Funcionalidades automáticas (generadas por shared/)
+
+Estas features se generan automáticamente sin necesidad de cambiar nada por Modelltest:
+
+- **Navegación entre secciones** — En cada página standalone (ej: `1-leseverstehen-teil-1.html`), `section-builders.js` genera automáticamente links de navegación arriba y abajo: "← Modellprüfung" (volver al índice) y prev/next hacia la sección anterior/siguiente. Usa el atributo `data-section` del `<main>` para determinar la posición en el orden (LV1 → LV2 → LV3 → SB → HV1 → HV2 → HV3 → SA → Präsentation → Zusammenfassung → Diskussion).
+- **Botón "Transkript kopieren"** — En el modo examen, `exam-engine.js` inyecta automáticamente un botón en la pantalla `screen-hv-ready` que copia el `hvTranskript` de `exam-data.js`. Si el transkript aún no se ha rellenado (placeholder `/* TODO */`), el botón aparece deshabilitado.
+- **Botón "Alle Prüfungen"** — Al final de la pantalla de resultados del examen simulado, `exam-engine.js` genera un link de vuelta a `pruefungen/index.html`.
+
 ---
 
 ## 4. Instrucciones por sección
