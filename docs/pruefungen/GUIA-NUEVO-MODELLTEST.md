@@ -1560,7 +1560,7 @@ Para cada nuevo Modelltest, verifica:
 ### JavaScript (datos)
 
 - [ ] `exam-data.js` — Todas las respuestas correctas (lv1, lv2, lv3, sb, hv1, hv2, hv3)
-- [ ] `exam-data.js` — hvTranskript (transkript completo del audio HV)
+- [ ] `exam-data.js` — hvTranskript (rellenar contenido hablado; las instrucciones oficiales ya están pre-escritas)
 - [ ] `exam-data.js` — themaTexte (6 textos de presentación resumidos)
 - [ ] `exam-data.js` — saThemen (2 temas SA con citas)
 - [ ] `exam-data.js` — diskussionZitate (4 citas con aspectos)
@@ -1569,7 +1569,7 @@ Para cada nuevo Modelltest, verifica:
 
 ### Hörverstehen (transcripción)
 
-- [ ] `exam-data.js` — `hvTranskript` rellenado con el texto completo del audio (~3250 palabras: HV1 ~993 + HV2 ~1155 + HV3 ~1101)
+- [ ] `exam-data.js` — Reemplazar los `/* TODO */` en `hvTranskript` con el contenido hablado real (~3250 palabras: HV1 ~993 + HV2 ~1155 + HV3 ~1101). Las instrucciones oficiales ("Sie hören...") ya están escritas — **no tocarlas**
 - [ ] El botón "Transkript kopieren" aparece habilitado en `screen-hv-ready` (se inyecta automáticamente por `exam-engine.js`)
 
 ### Estructura (no modificar — solo verificar que se copió bien de _vorlage/)
