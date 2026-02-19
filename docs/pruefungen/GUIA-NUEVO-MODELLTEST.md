@@ -585,6 +585,13 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 - Match parcial (1 pt si es pregunta de 2 pts) = partial
 - Sin match = 0
 
+**Claves para crear buen contenido HV3:**
+- Formato: **conferencia académica/Gastvortrag** con soporte visual (slides/Folien)
+- Los slides dan contexto y estructura — los huecos son **palabras clave** (1-3 palabras) que solo se obtienen del audio
+- Las respuestas deben ser **extraíbles directamente** del audio (no interpretación ni inferencia)
+- Las preguntas divididas (67a/67b) piden dos datos relacionados del mismo contexto (ej: dos métodos, dos causas)
+- Lista de keywords alternativas generosa: incluir sinónimos, formas abreviadas y variantes ortográficas que el matching acepte
+
 ---
 
 ### 4.8 Schriftlicher Ausdruck
