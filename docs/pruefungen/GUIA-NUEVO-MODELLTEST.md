@@ -1082,16 +1082,18 @@ Guten Tag, meine Damen und Herren. Heute möchte ich Ihnen...
 - Si `hvTranskript` tiene contenido real → el botón funciona y copia al portapapeles.
 - Si `hvTranskript` es un placeholder (`/* TODO */`) → el botón aparece **deshabilitado** con el mensaje "Transkript noch nicht verfügbar".
 
-### Longitudes de referencia (basadas en 150–180 wpm)
+### Longitudes de referencia
 
-| Sección | Palabras objetivo | Duración aprox. (audio puro) |
-|---------|------------------:|-----------------------------:|
-| HV Teil 1 (8 sprecher) | ~850–900 | ~5–6 minutos |
-| HV Teil 2 (interview) | ~650–700 | ~4–5 minutos |
-| HV Teil 3 (vortrag) | ~700–750 | ~4–5 minutos |
-| **Total** | **~2200–2350** | **~13–16 minutos** |
+Un hablante nativo de alemán habla en promedio **150–180 palabras por minuto**.
 
-> La prueba entera de Hörverstehen dura ~40–45 min, pero eso incluye tiempo para leer, pensar y responder.
+| Sección | Palabras (Modell 1) | Duración aprox. (a 150–180 wpm) |
+|---------|--------------------:|---------------------------------:|
+| HV Teil 1 (8 Sprecher) | **858** | ~5–6 min |
+| HV Teil 2 (Interview) | **678** | ~4–4.5 min |
+| HV Teil 3 (Vortrag) | **712** | ~4–5 min |
+| **Total** | **~2248** | **~13–16 min** |
+
+> La prueba entera de Hörverstehen dura ~40–45 min, pero eso incluye tiempo para leer las preguntas, pensar y responder. Las cifras de arriba son solo el audio hablado.
 
 ### Consejos para escribir transcripciones realistas
 
@@ -1476,7 +1478,7 @@ Para cada nuevo Modelltest, verifica:
 
 ### Hörverstehen (transcripción)
 
-- [ ] `exam-data.js` — `hvTranskript` rellenado con el texto completo del audio (~2200–2350 palabras, HV1 + HV2 + HV3)
+- [ ] `exam-data.js` — `hvTranskript` rellenado con el texto completo del audio (~2250 palabras: HV1 ~858 + HV2 ~678 + HV3 ~712)
 - [ ] El botón "Transkript kopieren" aparece habilitado en `screen-hv-ready` (se inyecta automáticamente por `exam-engine.js`)
 
 ### Estructura (no modificar — solo verificar)
