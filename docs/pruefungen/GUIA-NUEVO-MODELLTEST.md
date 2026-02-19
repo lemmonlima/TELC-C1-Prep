@@ -1383,18 +1383,10 @@ Para cada nuevo Modelltest, verifica:
 - [ ] `praesentation-texte.js` — 6 textos completos (350–450 palabras c/u) con versión `text` y `html`
 - [ ] `praesentation-texte.js` — Función `getRandomPartnerPraesentation` (copiar idéntica)
 
-### Hörverstehen (transcripciones)
+### Hörverstehen (transcripción)
 
-- [ ] `hoerverstehen-transkript.md` — Archivo creado en la carpeta modell-N/
-- [ ] HV Teil 1 transcripción completa (~850-900 palabras, 8 sprecher)
-- [ ] HV Teil 2 transcripción completa (~650-700 palabras, interview)
-- [ ] HV Teil 3 transcripción completa (~700-750 palabras, vortrag)
-- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-1.html` (para sección individual)
-- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-2.html` (para sección individual)
-- [ ] Botón "Transkript kopieren" agregado en `3-hoerverstehen-teil-3.html` (para sección individual)
-- [ ] Botón completo de HV-Transkript agregado en `exam.html` dentro de `screen-hv-ready` (SOLO para modell-2/3/4/5, NO modell-1)
-- [ ] Script de copiar HV completo agregado al final de `exam.html`
-- [ ] Scripts de copiar funcionan correctamente (extraen la sección correcta del .md)
+- [ ] `exam-data.js` — `hvTranskript` rellenado con el texto completo del audio (~2200–2350 palabras, HV1 + HV2 + HV3)
+- [ ] El botón "Transkript kopieren" aparece habilitado en `screen-hv-ready` (se inyecta automáticamente por `exam-engine.js`)
 
 ### Estructura (no modificar — solo verificar)
 
