@@ -1412,11 +1412,12 @@ Para cada nuevo Modelltest, verifica:
 
 | Esfuerzo | Porcentaje |
 |----------|-----------|
-| Rellenar `<div data-content>` con contenido de PDFs | 85% |
+| Rellenar `<div data-content>` con contenido de PDFs | 80% |
 | Actualizar respuestas en `Pruefung.initXXX()` | 5% |
-| Actualizar `exam-data.js` con las mismas respuestas | 5% |
+| Actualizar `exam-data.js` (respuestas + hvTranskript) | 5% |
 | Escribir/copiar `praesentation-texte.js` | 5% |
+| Escribir `hvTranskript` (~2200 palabras) | 5% |
 
-**No necesitas:** cambiar lógica, crear componentes, modificar CSS, tocar archivos en `shared/`.
+**No necesitas:** cambiar lógica, crear componentes, modificar CSS, tocar archivos en `shared/`, agregar botones de navegación ni botones de copiar transkript.
 
-**Arquitectura:** Cada HTML solo contiene datos únicos en `<div data-content hidden>`. Todo el boilerplate (instrucciones, botones, resultados, estructura visual) lo genera `SectionBuilder` desde `shared/section-builders.js`.
+**Arquitectura:** Cada HTML solo contiene datos únicos en `<div data-content hidden>`. Todo el boilerplate (instrucciones, botones, resultados, estructura visual, navegación entre secciones) lo genera `SectionBuilder` desde `shared/section-builders.js`. El botón de transkript y el link de vuelta a Prüfungen lo genera `exam-engine.js` automáticamente.
