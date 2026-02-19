@@ -315,7 +315,7 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 
 | Elemento | Palabras aprox. |
 |----------|----------------:|
-| **Texto total** (12 párrafos) | **~1100** |
+| **Texto total** (12 párrafos) | **1002** |
 | Einleitung (cursiva) | ~30 |
 | Párrafos del cuerpo | ~80–130 cada uno |
 | Cada Aussage (13–23) | ~10–20 |
@@ -381,7 +381,7 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 
 | Elemento | Palabras aprox. |
 |----------|----------------:|
-| **Texto total** (7 párrafos, sin contar huecos) | **~250** |
+| **Texto total** (7 párrafos, con huecos como ____) | **318** |
 | Opciones por hueco | 1–4 palabras c/u |
 
 **Estructura del archivo** (`data-section="sb"`):
