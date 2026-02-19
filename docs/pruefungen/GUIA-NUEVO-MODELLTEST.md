@@ -122,7 +122,7 @@ Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera auto
 
 | Archivo | Qué rellenar |
 |---------|-------------|
-| `exam-data.js` | Respuestas correctas + temas SA + citas diskussion |
+| `exam-data.js` | Respuestas correctas + hvTranskript + temas SA + citas diskussion |
 | `praesentation-texte.js` | 6 textos de presentación (~350–400 palabras c/u) |
 
 ### Lo que NO debes tocar
