@@ -938,122 +938,69 @@ function getRandomPartnerPraesentation(meinThema) {
 
 ---
 
-## 6.1. Hörverstehen Transkripte y botón de copiar
+## 6.1. Hörverstehen Transkripte
 
-**NUEVO:** Para facilitar la práctica, cada Modelltest debe incluir transcripciones completas de los tres Hörverstehenteile.
+Para facilitar la práctica, cada Modelltest puede incluir la transcripción completa del audio del Hörverstehen. El transkript se guarda directamente en `exam-data.js` como un campo de texto.
 
-### Archivo: `hoerverstehen-transkript.md`
+### Dónde se guarda
 
-Crea este archivo en la carpeta del Modelltest (`modell-N/hoerverstehen-transkript.md`) con las transcripciones completas de los tres audios.
-
-**Estructura del archivo:**
-
-```markdown
-# Modellprüfung N — Hörverstehen Transkripte
-
-Esta transkripte sind für Übungszwecke gedacht. In der echten Prüfung erhalten Sie keine schriftliche Version der Hörtexte.
-
----
-
-## Teil 1: Globalverstehen — [Tema]
-
-**Thema:** [Tema del HV1]
-
-**Hinweis:** Sie hören acht verschiedene Personen...
-
----
-
-### Sprecher 1
-
-[Transcripción completa del Sprecher 1...]
-
-### Sprecher 2
-
-[Transcripción completa del Sprecher 2...]
-
-[... hasta Sprecher 8]
-
----
-
-## Teil 2: Detailverstehen — [Tema]
-
-**Thema:** [Tema del HV2]
-
-**Hinweis:** Sie hören ein Radiointerview...
-
----
-
-**Moderator:** [Texto del moderador...]
-
-**Expert/in:** [Texto del experto...]
-
-[Diálogo completo del interview]
-
----
-
-## Teil 3: Informationstransfer — [Tema]
-
-**Thema:** [Tema del HV3]
-
-**Hinweis:** Sie hören einen Vortrag...
-
----
-
-[Transcripción completa del Vortrag]
-```
-
-### Longitudes de referencia (basadas en 150-180 wpm)
-
-| Sección | Palabras objetivo | Duración aproximada (puro audio) |
-|---------|------------------:|--------------------------------:|
-| HV Teil 1 (8 sprecher) | ~850-900 palabras | ~5-6 minutos |
-| HV Teil 2 (interview) | ~650-700 palabras | ~4-5 minutos |
-| HV Teil 3 (vortrag) | ~700-750 palabras | ~4-5 minutos |
-| **Total** | **~2200-2350 palabras** | **~13-16 minutos** |
-
-> **Nota:** La prueba entera de Hörverstehen dura ~40-45 minutos, pero eso incluye tiempo para leer las preguntas, pensar y responder. El audio puro es mucho más corto.
-
-### Botón "Transkript kopieren" en los HTMLs
-
-> **Nota:** Con el nuevo formato SectionBuilder, el botón de copiar transcripción se puede agregar en el `<script>` inline, después de que el builder genere el HTML. El builder no incluye esta funcionalidad por defecto — es un feature adicional por sección.
-
-**Hay DOS lugares donde agregar botones de copiar:**
-
-#### A) En cada sección individual de HV (para práctica por sección)
-
-Agregar en el `<script>` inline, **después** de la llamada a `SectionBuilder.hvX(...)`, el código que inyecta un botón y su handler. Ejemplo para HV Teil 1:
+En el archivo `exam-data.js` de cada modell, dentro del campo `hvTranskript`:
 
 ```javascript
-SectionBuilder.hv1(document.getElementById('section-root'), document.getElementById('section-root'));
-Pruefung.initHV1({ /* respuestas */ });
+const EXAM_DATA = {
+  // ... correct, themaTexte, saThemen ...
 
-// Transkript kopieren
-(function() {
-  const root = document.getElementById('section-root');
-  const box = document.createElement('div');
-  box.className = 'aufgabe-box';
-  box.style.cssText = 'background-color: #fff3cd; border-left: 4px solid #ffc107; margin-top: 1.5rem;';
-  box.innerHTML = '<h3>Transkript für Übungszwecke</h3>'
-    + '<p>In der echten Prüfung erhalten Sie keine Transkription.</p>'
-    + '<button id="copy-transkript-btn" class="check-btn" style="background-color:#ffc107;color:#000;">Transkript kopieren</button>'
-    + '<p id="copy-status" style="margin-top:0.5rem;color:#28a745;display:none;">✓ Kopiert!</p>';
-  root.appendChild(box);
+  hvTranskript: `Hörverstehen Teil 1 — Globalverstehen
+Thema: Studentische Lebensformen
 
-  document.getElementById('copy-transkript-btn').addEventListener('click', async function() {
-    try {
-      const text = await (await fetch('hoerverstehen-transkript.md')).text();
-      const start = text.indexOf('## Teil 1: Globalverstehen');
-      const end   = text.indexOf('## Teil 2: Detailverstehen');
-      await navigator.clipboard.writeText(text.substring(start, end).trim());
-      const s = document.getElementById('copy-status');
-      s.style.display = 'block';
-      setTimeout(() => s.style.display = 'none', 3000);
-    } catch (e) { alert('Fehler beim Kopieren.'); }
-  });
-})();
+Sprecher 1:
+Also, ich wohne seit dem ersten Semester in einer WG...
+
+Sprecher 2:
+Ich habe mich bewusst für eine Einzimmerwohnung entschieden...
+
+[... 8 sprecher ...]
+
+---
+
+Hörverstehen Teil 2 — Detailverstehen
+Thema: Interview mit Prof. Beutelspacher
+
+Moderator: Herr Professor, was fasziniert Sie an der Mathematik?
+Prof. Beutelspacher: Also, für mich ist das ganz einfach...
+
+[... interview completo ...]
+
+---
+
+Hörverstehen Teil 3 — Informationstransfer
+Thema: Gastvortrag „Literatur im Unterricht DaF"
+
+Guten Tag, meine Damen und Herren. Heute möchte ich Ihnen...
+
+[... vortrag completo ...]`,
+
+  diskussionZitate: { /* ... */ }
+};
 ```
 
-Para HV Teil 2 y 3, ajustar los `indexOf` para extraer la sección correcta del `.md`.
+### Cómo funciona el botón
+
+**No necesitas hacer nada.** `exam-engine.js` inyecta automáticamente un botón "Transkript kopieren" en la pantalla `screen-hv-ready` (la que aparece después de la pausa de 20 min, antes del Hörverstehen).
+
+- Si `hvTranskript` tiene contenido real → el botón funciona y copia al portapapeles.
+- Si `hvTranskript` es un placeholder (`/* TODO */`) → el botón aparece **deshabilitado** con el mensaje "Transkript noch nicht verfügbar".
+
+### Longitudes de referencia (basadas en 150–180 wpm)
+
+| Sección | Palabras objetivo | Duración aprox. (audio puro) |
+|---------|------------------:|-----------------------------:|
+| HV Teil 1 (8 sprecher) | ~850–900 | ~5–6 minutos |
+| HV Teil 2 (interview) | ~650–700 | ~4–5 minutos |
+| HV Teil 3 (vortrag) | ~700–750 | ~4–5 minutos |
+| **Total** | **~2200–2350** | **~13–16 minutos** |
+
+> La prueba entera de Hörverstehen dura ~40–45 min, pero eso incluye tiempo para leer, pensar y responder.
 
 ### Consejos para escribir transcripciones realistas
 
@@ -1061,7 +1008,7 @@ Para HV Teil 2 y 3, ajustar los `indexOf` para extraer la sección correcta del 
 - Cada Sprecher debe sonar como una persona real hablando espontáneamente
 - Usa marcadores del lenguaje oral: "also", "ja", "ich muss ehrlich sagen", "klar"
 - Cada persona debe tener un estilo ligeramente diferente
-- Longitud: ~100-120 palabras por Sprecher
+- Longitud: ~100–120 palabras por Sprecher
 
 **HV Teil 2 (interview):**
 - Diálogo natural entre Moderator y Expert/in
@@ -1074,80 +1021,6 @@ Para HV Teil 2 y 3, ajustar los `indexOf` para extraer la sección correcta del 
 - Estructura clara: introducción → puntos principales → conclusión
 - Usa conectores: "Zunächst", "Kommen wir zu", "Zusammenfassend"
 - Las palabras clave de las respuestas deben aparecer claramente en el texto
-
----
-
-#### B) En el modo examen (exam.html) — Botón completo antes de "Ich bin bereit"
-
-**IMPORTANTE:** Este botón debe agregarse SOLO en modell-2, modell-3, modell-4, modell-5. **NO en modell-1.**
-
-**Ubicación:** En el archivo `exam.html`, dentro del div `screen-hv-ready`, agregar un nuevo mensaje box ANTES del `<div class="btn-group">`.
-
-**Paso 1:** Agregar el HTML del mensaje y botón:
-
-```html
-<!-- Dentro de screen-hv-ready, DESPUÉS del primer .message y ANTES de .btn-group -->
-<div class="message" style="background-color: #fff3cd; border-left: 4px solid #ffc107; margin-top: 1.5rem;">
-  <h3>📄 Transkripte für Übungszwecke</h3>
-  <p>In der echten Prüfung gibt es keine Transkripte. Für die Übung können Sie hier das komplette Hörverstehen-Transkript kopieren:</p>
-  <button class="btn secondary" id="btn-copy-hv-transkript" style="background-color: #ffc107; color: #000; margin-bottom: 0.5rem;">Komplettes HV-Transkript kopieren</button>
-  <p id="copy-hv-status" style="color: #28a745; font-weight: bold; display: none; margin-top: 0.5rem;">✓ Transkript in Zwischenablage kopiert!</p>
-</div>
-```
-
-El HTML del `screen-hv-ready` quedaría así:
-
-```html
-<!-- HV READY -->
-<div id="screen-hv-ready" class="exam-screen">
-  <h2>Hörverstehen</h2>
-  <div class="message">
-    <p><strong>Vorbereitung:</strong> Starten Sie jetzt die Audiodatei auf Ihrem Gerät...</p>
-    <p>Sie haben <strong>45 Minuten</strong>...</p>
-    <p>Drücken Sie auf <strong>„Ich bin bereit"</strong> wenn das Audio läuft.</p>
-  </div>
-  
-  <!-- NUEVO: Botón de copiar transkript -->
-  <div class="message" style="background-color: #fff3cd; border-left: 4px solid #ffc107; margin-top: 1.5rem;">
-    <h3>📄 Transkripte für Übungszwecke</h3>
-    <p>In der echten Prüfung gibt es keine Transkripte. Für die Übung können Sie hier das komplette Hörverstehen-Transkript kopieren:</p>
-    <button class="btn secondary" id="btn-copy-hv-transkript" style="background-color: #ffc107; color: #000; margin-bottom: 0.5rem;">Komplettes HV-Transkript kopieren</button>
-    <p id="copy-hv-status" style="color: #28a745; font-weight: bold; display: none; margin-top: 0.5rem;">✓ Transkript in Zwischenablage kopiert!</p>
-  </div>
-  
-  <div class="btn-group">
-    <button class="btn primary" id="btn-start-hv">Ich bin bereit</button>
-  </div>
-</div>
-```
-
-**Paso 2:** Agregar el script al final de `exam.html` (antes de `</body>`):
-
-```javascript
-// Hörverstehen Transkript kopieren (für Übung)
-const btnCopyHV = document.getElementById('btn-copy-hv-transkript');
-if (btnCopyHV) {
-  btnCopyHV.addEventListener('click', async function() {
-    const transkriptUrl = 'hoerverstehen-transkript.md';
-    try {
-      const response = await fetch(transkriptUrl);
-      const text = await response.text();
-      
-      await navigator.clipboard.writeText(text);
-      
-      const status = document.getElementById('copy-hv-status');
-      status.style.display = 'block';
-      setTimeout(() => { status.style.display = 'none'; }, 3000);
-    } catch (err) {
-      alert('Fehler beim Kopieren. Bitte öffnen Sie hoerverstehen-transkript.md manuell.');
-    }
-  });
-}
-```
-
-Este código debe agregarse dentro del bloque `<script>` existente al final del archivo, justo antes de `</script>`.
-
-**Resultado:** Cuando el usuario llegue a la pantalla "Hörverstehen" en el modo examen, verá primero las instrucciones, luego el botón amarillo para copiar todo el transcripto, y finalmente el botón rojo "Ich bin bereit".
 
 ---
 
