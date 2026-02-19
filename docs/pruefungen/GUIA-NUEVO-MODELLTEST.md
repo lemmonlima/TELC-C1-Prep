@@ -9,6 +9,8 @@
 1. [Resumen del examen TELC C1 Hochschule](#1-resumen-del-examen-telc-c1-hochschule)
 2. [Estructura de puntos y calificación](#2-estructura-de-puntos-y-calificación)
 3. [Archivos que debes editar por Modelltest](#3-archivos-que-debes-editar-por-modelltest)
+   - 3.1: exam.html — El archivo más importante y peligroso
+   - 3.2: Consistencia de datos — CRÍTICO
 4. [Instrucciones por sección (con longitudes exactas)](#4-instrucciones-por-sección)
    - 4.1–4.9: Cada sección del examen
    - 4.10: **Teil 1B — Zusammenfassung** (relación con Teil 1A y praesentation-texte.js)
@@ -94,50 +96,91 @@
 
 ## 3. Archivos que debes editar por Modelltest
 
-Para cada `modell-N/` (N = 2, 3, 4, 5), debes editar:
+### Paso 1: Copiar la plantilla
 
-### Arquitectura: contenido separado del boilerplate
+```bash
+cp -r _vorlage/ modell-N/
+```
 
-Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera automáticamente toda la estructura repetitiva (instrucciones, botones de respuesta, sección de resultados, etc.). Los archivos HTML solo contienen los **datos únicos** dentro de `<div data-content="..." hidden>`.
+Luego reemplazar `N` por el número del modell en todos los archivos (títulos, h1, data-modell).
 
-### Archivos HTML (rellenar los `<div data-content>` y respuestas en `<script>`)
+### Paso 2: Entender la arquitectura
+
+Cada HTML usa **SectionBuilder** (`shared/section-builders.js`), que genera automáticamente toda la estructura repetitiva. Los archivos HTML solo contienen los **datos únicos** dentro de `<div data-content="..." hidden>`.
+
+La plantilla `_vorlage/` ya tiene la estructura correcta con marcadores `<!-- TODO -->`. Solo hay que rellenar el contenido.
+
+### Los 15 archivos por Modelltest
 
 | Archivo | Qué rellenar |
 |---------|-------------|
+| `index.html` | Solo cambiar `N` por el número del modell (3 lugares: title, h1, link exam.html) |
+| `exam.html` | Cambiar `N` + rellenar SA themes + presentation themes + diskussion quotes (ver sección 3.1) |
 | `1-leseverstehen-teil-1.html` | `data-content="text"`: título + texto con lücken; `data-content="options"`: 9 oraciones (a–h, z) |
 | `1-leseverstehen-teil-2.html` | `data-content="text"`: título + 5 absätze; `data-content="fragen"`: 6 preguntas |
 | `1-leseverstehen-teil-3.html` | `data-content="text"`: título + texto largo; `data-content="aussagen"`: 11 enunciados; `data-content="global"`: 3 opciones |
 | `2-sprachbausteine.html` | `data-content="text"`: título + texto con 23 lücken; `data-content="optionen"`: 23 grupos × 4 opciones |
 | `3-hoerverstehen-teil-1.html` | `data-content="thema"`: tema; `data-content="aussagen"`: 10 aussagen (a–j) |
 | `3-hoerverstehen-teil-2.html` | `data-content="thema"`: tema; `data-content="fragen"`: 10 preguntas con stem + 3 opciones |
-| `3-hoerverstehen-teil-3.html` | `data-content="thema"`: tema; `data-content="slides"`: 5–7 slide-box divs con inputs |
+| `3-hoerverstehen-teil-3.html` | `data-content="thema"`: tema; `data-content="slides"`: 6–7 slide-box divs con inputs |
 | `4-schriftlicher-ausdruck.html` | `data-content="themen"`: 2 temas con 2 citas c/u |
 | `5-muendlich-praesentation.html` | `data-content="teilnehmer"`: 3 bloques de temas; `data-content="select"`: opciones dropdown |
 | `5-muendlich-zusammenfassung.html` | `data-content="themen"`: botones con nombres de temas de Teil 1A |
-| `5-muendlich-diskussion.html` | `data-content="zitate"`: 4 citas completas; `data-content="simulation"`: 4 cajas de simulación |
-
-### Archivos JavaScript y Markdown (actualizar datos)
-
-| Archivo | Qué rellenar |
-|---------|-------------|
+| `5-muendlich-diskussion.html` | `data-content="zitate"`: 4 citas completas; `data-content="simulation"`: 4 cajas cortas |
 | `exam-data.js` | Respuestas correctas + hvTranskript + temas SA + citas diskussion |
-| `praesentation-texte.js` | 6 textos de presentación (~350–400 palabras c/u) |
+| `praesentation-texte.js` | 6 textos de presentación (~350–400 palabras c/u, con `text` y `html`) |
+
+### 3.1 exam.html — El archivo más importante y peligroso
+
+`exam.html` es el examen simulado completo (~340 líneas). La plantilla ya está lista. Lo que SÍ hay que cambiar:
+
+| Zona del archivo | Qué cambiar | Marcado con |
+|------------------|-------------|-------------|
+| `<title>`, `<h1>`, `<p class="subtitle">` | Número del modell `N` | `<!-- TODO: Cambiar N -->` |
+| `screen-diskussion-ready` | 4 citas de diskussion | `<!-- TODO: 4 citas -->` |
+| `tab-sa` (`.themen-container`) | 2 temas SA con citas | `<!-- TODO: 2 temas -->` |
+| `tab-vorbereitung` (`.themen-container`) | 6 temas de präsentation (A1,A2,B1,B2,C1,C2) | `<!-- TODO: 3 Teilnehmer -->` |
+
+Lo que **NO** hay que cambiar en exam.html:
+- Exam bar, tabs, timer, buttons
+- Screens: start, break, hv-ready, muendlich-ready, zusammenfassung-ready
+- Tab panels: praesentation, zusammenfassung, diskussion (son genéricos)
+- Tab panels: lv1–hv3 (se llenan automáticamente via fetch)
+- Scripts al final
+- Cualquier `id=""` attribute
+
+### 3.2 Consistencia de datos — CRÍTICO
+
+Algunos datos aparecen en **múltiples archivos** y DEBEN ser idénticos. Si no coinciden, el examen se rompe:
+
+| Dato | Archivos donde aparece | Consecuencia de inconsistencia |
+|------|------------------------|-------------------------------|
+| **SA themes + citas** | `4-schriftlicher-ausdruck.html` + `exam.html` (tab-sa) + `exam-data.js` (saThemen) | Temas diferentes en standalone vs examen; copy-to-AI copia cita incorrecta |
+| **6 presentation themes** | `5-muendlich-praesentation.html` + `exam.html` (tab-vorbereitung) + `exam-data.js` (themaTexte) + `praesentation-texte.js` (claves a1–c2) + `5-muendlich-zusammenfassung.html` (botones) | Botones no coinciden con textos; zusammenfassung muestra tema equivocado |
+| **4 diskussion citas** | `5-muendlich-diskussion.html` (zitate + simulation) + `exam.html` (screen-diskussion-ready) + `exam-data.js` (diskussionZitate) | Citas diferentes en standalone vs examen |
+| **Respuestas correctas** | `Pruefung.initXXX()` en cada HTML standalone + `exam-data.js` (correct) | Standalone da respuesta diferente al examen simulado |
+
+**Workflow recomendado para evitar inconsistencias:**
+1. Primero crear todo el contenido (textos, temas, citas, respuestas) en un documento separado
+2. Rellenar `exam-data.js` primero (fuente de verdad)
+3. Copiar los mismos datos a los HTML standalone y a exam.html
+4. Verificar con la checklist de la sección 8
 
 ### Lo que NO debes tocar
 
-- `index.html` — ya genera el menú automáticamente
-- `exam.html` — ya carga todo automáticamente
-- Nada en `shared/` — `pruefung.js`, `pruefung.css`, `section-builders.js`, `exam-engine.js`, `exam.css`
-- La estructura HTML fuera de los `<div data-content>` — el builder genera todo lo demás
-- Los `<script>` al final — solo actualizar los valores de respuestas dentro de `Pruefung.initXXX()`
+- **Nada en `shared/`** — `pruefung.js`, `pruefung.css`, `section-builders.js`, `exam-engine.js`, `exam.css`
+- **Estructura HTML fuera de `<div data-content>`** — el builder genera todo lo demás
+- **IDs de elementos** — `section-root`, `exam-bar`, `screen-start`, etc. son usados por JS
+- **Orden de `<script>` tags** — el orden importa (especialmente `praesentation-texte.js` ANTES de los shared scripts en zusammenfassung.html)
+- **Clases CSS** — `luecke` (LV1), `lucke` (SB), `absatz`, `slide-box`, `zitat-box`, etc.
 
 ### Funcionalidades automáticas (generadas por shared/)
 
 Estas features se generan automáticamente sin necesidad de cambiar nada por Modelltest:
 
-- **Navegación entre secciones** — En cada página standalone (ej: `1-leseverstehen-teil-1.html`), `section-builders.js` genera automáticamente links de navegación arriba y abajo: "← Modellprüfung" (volver al índice) y prev/next hacia la sección anterior/siguiente. Usa el atributo `data-section` del `<main>` para determinar la posición en el orden (LV1 → LV2 → LV3 → SB → HV1 → HV2 → HV3 → SA → Präsentation → Zusammenfassung → Diskussion).
-- **Botón "Transkript kopieren"** — En el modo examen, `exam-engine.js` inyecta automáticamente un botón en la pantalla `screen-hv-ready` que copia el `hvTranskript` de `exam-data.js`. Si el transkript aún no se ha rellenado (placeholder `/* TODO */`), el botón aparece deshabilitado.
-- **Botón "Alle Prüfungen"** — Al final de la pantalla de resultados del examen simulado, `exam-engine.js` genera un link de vuelta a `pruefungen/index.html`.
+- **Navegación entre secciones** — `section-builders.js` genera links prev/next y "← Modellprüfung" usando `data-section` del `<main>`.
+- **Botón "Transkript kopieren"** — `exam-engine.js` inyecta automáticamente un botón en `screen-hv-ready` que copia el `hvTranskript`. Si es placeholder (`/* TODO */`), el botón aparece deshabilitado.
+- **Botón "Alle Prüfungen"** — `exam-engine.js` genera un link de vuelta a `pruefungen/index.html` en la pantalla de resultados.
 
 ---
 
