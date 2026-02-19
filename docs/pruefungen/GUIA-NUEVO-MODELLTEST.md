@@ -1021,7 +1021,10 @@ const EXAM_DATA = {
 | HV2 | Letras `'a'`–`'c'` |
 | HV3 | Arrays de strings (keywords en minúsculas) |
 
-> **Atención LV3:** Usa los símbolos Unicode `−` (minus sign) y `×` (multiplication sign), NO el guión `-` ni la letra `x`.
+> **Atención LV3 — dos formatos diferentes:**
+> - En `exam-data.js`: usar símbolos `'+'` (richtig), `'−'` (falsch), `'×'` (nicht im Text). Unicode real, NO guión `-` ni letra `x`.
+> - En `Pruefung.initLV3()` del standalone HTML: usar strings `'richtig'`, `'falsch'`, `'nicht'`.
+> - El engine traduce automáticamente entre ambos formatos. **No mezclarlos.**
 
 ---
 
