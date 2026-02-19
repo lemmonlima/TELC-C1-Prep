@@ -256,6 +256,12 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 - Cada párrafo debe tener un tono/función diferente
 - El texto debe ser opinativo/argumentativo (no puramente informativo)
 
+**Claves para crear buen contenido LV2:**
+- Cada párrafo debe tener una **función comunicativa diferenciada**: polémica, ironía, recomendación explícita, pronóstico, advertencia, cita de experto, humor, queja, defensa, etc.
+- Las preguntas siguen el formato "In welchem Abschnitt..." — deben referirse a funciones, NO a datos concretos
+- Un párrafo puede responder varias preguntas (ej: un párrafo irónico que también contiene una advertencia)
+- Ejemplos de funciones comunicativas para preguntas: *drückt sich polemisch aus, gibt eine Empfehlung, macht einen Vorschlag, weist auf eine Gefahr hin, zitiert eine Studie, stellt eine Prognose auf, verwendet Ironie*
+
 ---
 
 ### 4.3 Leseverstehen Teil 3 — Detailverstehen
