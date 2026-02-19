@@ -495,6 +495,13 @@ Estas features se generan automáticamente sin necesidad de cambiar nada por Mod
 </script>
 ```
 
+**Claves para crear buen contenido HV2:**
+- Formato: **entrevista o reportaje radiofónico** con un experto sobre un tema específico
+- Las preguntas siguen el **orden cronológico** del audio — pregunta 55 sobre el inicio, pregunta 64 sobre el final
+- Cada pregunta tiene 3 opciones: una correcta, una que **contradice** lo dicho, y una que **distorsiona** o **no se menciona**
+- Las opciones incorrectas deben usar vocabulario del audio para crear confusión (sinónimos engañosos)
+- Las preguntas deben requerir **comprensión de detalle** — no bastan impresiones generales
+
 ---
 
 ### 4.7 Hörverstehen Teil 3 — Informationstransfer
