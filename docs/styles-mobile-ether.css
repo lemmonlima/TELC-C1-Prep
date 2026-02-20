@@ -57,7 +57,7 @@
   min-width: 42px;
   height: 36px;
   background: transparent;
-  border: 1px solid var(--line-soft);
+  border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--ink-700);
   font-size: 0.75rem;
@@ -71,8 +71,8 @@
 }
 
 .node-size-btn:hover {
-  border-color: var(--accent-soft);
-  color: var(--accent);
+  border-color: rgba(255, 84, 84, 0.5);
+  color: var(--red-600);
 }
 
 .node-size-btn.is-active {
