@@ -172,5 +172,32 @@
     })();
   </script>
 
+  <!-- Mobile gestures para mejor UX táctil -->
+  <script defer src="mobile-gestures.js"></script>
+  <script>
+    // Activar mejoras móviles cuando el grafo esté listo
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const stage = document.querySelector('.woerter-ether-stage');
+        const panel = document.querySelector('.woerter-panel');
+        
+        if (stage && window.etherState && typeof enhanceMobileGestures === 'function') {
+          console.log('🍋 Activando gestos móviles para el grafo ether');
+          
+          // Activar pinch-to-zoom, doble tap, etc.
+          enhanceMobileGestures(window.etherState, window.applyView);
+          
+          // Mejorar panel móvil con gesto de arrastre
+          if (panel && typeof enhanceMobilePanel === 'function') {
+            enhanceMobilePanel(panel);
+          }
+          
+          // Opcional: Agregar botones de zoom visual
+          // addMobileZoomControls(window.etherState, window.applyView, stage);
+        }
+      }, 600);
+    });
+  </script>
+
 </body>
 </html>
