@@ -3282,6 +3282,12 @@ body.no-js .reveal {
   color: var(--accent);
 }
 
+.text-flashcards-btn.is-active {
+  background: rgba(255, 84, 84, 0.18);
+  border-color: rgba(255, 84, 84, 0.6);
+  color: #ffd6d6;
+}
+
 .text-flashcards-bar .text-flashcards-btn {
   text-decoration: none;
 }
