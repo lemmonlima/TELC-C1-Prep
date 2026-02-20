@@ -1139,6 +1139,9 @@ document.addEventListener("DOMContentLoaded", () => {
         grafoBtn.textContent = showListNext ? "Grafo" : "Lista";
         grafoBtn.classList.toggle("is-active", !showListNext);
         localStorage.setItem(WOERTER_VIEW_KEY, showListNext ? "list" : "grafo");
+        if (!showListNext) {
+          requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
+        }
       });
 
       document.body.classList.remove("no-js");
