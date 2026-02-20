@@ -290,6 +290,57 @@ function renderPanel(entry, panel) {
   panel.innerHTML = html;
 }
 
+/** Returns panel content HTML (no header/back) for use inside .notizen-explanation */
+function renderPanelContentHtml(entry) {
+  if (!entry) return "";
+  const typeLabel = entry.type ? TYPE_LABELS[String(entry.type).toLowerCase()] || entry.type : "";
+  let html = `
+    <div class="explanation-section">
+      <p class="explanation-label">Traducción:</p>
+      <p class="woerter-panel-translation">${escapeHtml(entry.translation || "Sin traducción todavía.")}</p>
+    </div>
+  `;
+  if (entry.erklärung) {
+    html += `<div class="explanation-section"><p class="explanation-label">Erklärung (DE):</p><p>${escapeHtml(entry.erklärung)}</p></div>`;
+  }
+  if (entry.explanation) {
+    html += `<div class="explanation-section"><p class="explanation-label">Explicación:</p><p>${escapeHtml(entry.explanation)}</p></div>`;
+  }
+  html += renderExamplesTable(entry.examples, entry);
+  if (entry.tags && entry.tags.length) {
+    const tags = entry.tags.map((tag) => `<span class="woerter-tag">${escapeHtml(tag)}</span>`).join("");
+    html += `<div class="explanation-section"><p class="explanation-label">Claves:</p><div class="woerter-tags">${tags}</div></div>`;
+  }
+  return html;
+}
+
+function buildNotizenList(entries, listWrapper) {
+  const list = document.createElement("ul");
+  list.className = "notizen-list";
+  entries.forEach((entry) => {
+    const li = document.createElement("li");
+    li.className = "notizen-item notizen-item-clickable";
+    const textEl = document.createElement("span");
+    textEl.className = "notizen-text";
+    textEl.textContent = entry.word || "";
+    li.appendChild(textEl);
+    const explanationEl = document.createElement("div");
+    explanationEl.className = "notizen-explanation";
+    explanationEl.innerHTML = renderPanelContentHtml(entry);
+    li.appendChild(explanationEl);
+    list.appendChild(li);
+  });
+  listWrapper.innerHTML = "";
+  listWrapper.appendChild(list);
+  list.querySelectorAll(".notizen-item-clickable").forEach((li) => {
+    li.addEventListener("click", (e) => {
+      e.preventDefault();
+      const explanationEl = li.querySelector(".notizen-explanation");
+      if (explanationEl) explanationEl.classList.toggle("is-open");
+    });
+  });
+}
+
 function buildTypeFilters(entries, container, onChange) {
   const types = Array.from(
     new Set(entries.map((entry) => String(entry.type || "").toLowerCase()).filter(Boolean))
