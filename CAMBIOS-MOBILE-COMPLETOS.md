@@ -1,11 +1,12 @@
 # ✅ Mejoras Móviles Aplicadas - Grafo Ether
 
 **Fecha:** 2026-02-20  
+**Última actualización:** 2026-02-20 22:45  
 **Estado:** ✅ **COMPLETO Y ACTIVO**
 
-## 🎯 Problema Resuelto
+## 🎯 Problemas Resueltos
 
-> "En móvil me cuesta darle click a las cosas"
+### 1. "En móvil me cuesta darle click a las cosas"
 
 **Solución implementada:**
 - ✅ Nodos MUCHO más grandes (56-64px en móvil vs ~32px antes)
@@ -15,6 +16,16 @@
 - ✅ Panel slide-up optimizado
 - ✅ Gesto de arrastre para cerrar panel
 - ✅ Espaciado extra entre nodos
+
+### 2. "Präfixverben funciona bien pero Wörter no"
+
+**Motivo:** Wörter tiene MUCHOS más nodos → están más apretados
+
+**Solución implementada:**
+- ✅ **Control de tamaño en vivo** - Ajusta nodos con botones (XS/S/M/L/XL/XXL)
+- ✅ Preferencia guardada en localStorage
+- ✅ Funciona en móvil y escritorio
+- ✅ Cambio inmediato (sin reload)
 
 ---
 
@@ -30,6 +41,10 @@
 ### JavaScript (gestos táctiles):
 - ✅ `docs/woerter/mobile-gestures.js` - **CREADO** (12 KB)
 - ✅ `docs/grammatik/verben-mit-praepositionen/mobile-gestures.js` - **CREADO** (12 KB)
+
+### JavaScript (control de tamaño):
+- ✅ `docs/woerter/node-size-control.js` - **CREADO** (3.4 KB)
+- ✅ `docs/grammatik/verben-mit-praepositionen/node-size-control.js` - **CREADO** (3.4 KB)
 
 ### HTML (activación):
 - ✅ `docs/woerter/index.html` - **MODIFICADO**
@@ -58,19 +73,34 @@
 - **Arrastrar panel**: Desliza hacia abajo para cerrar
 - **Pan suave**: Sin conflictos con scroll de página
 
+### ✅ NEW! Control de tamaño en vivo:
+- **6 tamaños** disponibles: XS / S / M / L / XL / XXL
+- **Botones en los controles** - fácil de tocar
+- **Guarda preferencia** - recuerda tu elección
+- **Inmediato** - sin recargar página
+- **Solución para Wörter** - usa XL o XXL si están muy apretados
+
 ---
 
 ## 📱 Cómo Probarlo
 
 ### En tu teléfono:
 1. Abre: `http://[tu-servidor]/woerter/` o `/grammatik/verben-mit-praepositionen/`
-2. **Verifica nodos grandes**: Deberían ser fáciles de tocar
-3. **Prueba gestos**:
+2. **Limpia caché**: Recarga forzada (importante!)
+3. **Busca el control "Tamaño nodos"** en la barra de arriba
+4. **Prueba diferentes tamaños**:
+   - Haz clic en **XL** o **XXL** → nodos gigantes
+   - Haz clic en **M** → tamaño normal
+   - Haz clic en **S** o **XS** → nodos pequeños
+5. **Verifica que se guarda**: Recarga la página → debería mantener el tamaño que elegiste
+6. **Prueba gestos**:
    - Toca un nodo → Panel aparece desde abajo
    - Pellizca con 2 dedos → Zoom in/out
    - Toca 2 veces rápido → Zoom automático
    - Arrastra panel hacia abajo → Se cierra
-4. **Revisa consola** (opcional): Debería decir "🍋 Activando gestos móviles..."
+7. **Revisa consola** (opcional): 
+   - "🍋 Activando gestos móviles..."
+   - "🍋 Creando control de tamaño de nodos"
 
 ### En Chrome DevTools:
 1. F12 → Device toolbar (icono de móvil)
@@ -84,9 +114,11 @@
 
 ```bash
 # Todos los archivos en su lugar:
-✅ docs/styles-mobile-ether.css (9.5 KB)
+✅ docs/styles-mobile-ether.css (9.8 KB)
 ✅ docs/woerter/mobile-gestures.js (12 KB)
 ✅ docs/grammatik/verben-mit-praepositionen/mobile-gestures.js (12 KB)
+✅ docs/woerter/node-size-control.js (3.4 KB)
+✅ docs/grammatik/verben-mit-praepositionen/node-size-control.js (3.4 KB)
 
 # HTML incluye CSS móvil:
 ✅ woerter/index.html: <link href="/styles-mobile-ether.css">
@@ -94,8 +126,11 @@
 ✅ verben-mit-praepositionen/index.html: <link href="/styles-mobile-ether.css">
 ✅ verben-mit-praepositionen/karte.html: <link href="/styles-mobile-ether.css">
 
-# HTML incluye scripts de gestos:
-✅ Todos los 4 archivos HTML tienen mobile-gestures.js + activación
+# HTML incluye scripts de gestos Y control de tamaño:
+✅ Todos los 4 archivos HTML tienen:
+   - mobile-gestures.js
+   - node-size-control.js
+   - Scripts de activación
 
 # JS expone el state:
 ✅ woerter.js: window.etherState = state;
@@ -211,7 +246,9 @@ Esto agregará botones +/− flotantes en la esquina del grafo.
 
 ---
 
-**Documentación completa:** `MOBILE-ETHER-IMPROVEMENTS.md`  
-**Quick start:** `QUICK-START-MOBILE.md`
+**Documentación completa:**
+- `MOBILE-ETHER-IMPROVEMENTS.md` - Guía técnica completa
+- `QUICK-START-MOBILE.md` - Inicio rápido
+- `NODE-SIZE-CONTROL.md` - Documentación del control de tamaño
 
-🍋 ¡Listo para tocar con los dedos!
+🍋 ¡Listo para tocar con los dedos! Y ahora con tamaño ajustable! 🎛️
