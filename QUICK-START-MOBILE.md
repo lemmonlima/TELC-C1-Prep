@@ -4,10 +4,8 @@
 
 Las mejoras móviles para el grafo ether ya están **100% instaladas y activas**:
 
-✅ **NEW!** Vista de lista 📋 (por defecto en móvil) - **¡MUCHO más fácil!**  
-✅ Toggle grafo/lista 🕸️📋  
 ✅ Nodos 75% más grandes (56-64px en móvil)  
-✅ Control de tamaño ajustable (XS/S/M/L/XL/XXL) 🎛️  
+✅ **NEW!** Control de tamaño ajustable (XS/S/M/L/XL/XXL) 🎛️  
 ✅ Pinch-to-zoom con 2 dedos  
 ✅ Doble tap para zoom rápido  
 ✅ Panel slide-up desde abajo  
@@ -21,14 +19,12 @@ Las mejoras móviles para el grafo ether ya están **100% instaladas y activas**
 ### En tu móvil:
 1. Abre: `http://[servidor]/woerter/` o `/grammatik/verben-mit-praepositionen/`
 2. **Limpia caché**: Recarga con gesto o menú (importante!)
-3. **📋 NUEVO - Vista de Lista** (por defecto en móvil):
-   - Verás las palabras/verbos en **lista ordenada por tipo**
-   - **Toca cualquier item** → panel con info completa
-   - Items grandes (56px) - **super fácil de tocar**
-4. **🕸️ Cambiar a grafo** (si prefieres):
-   - Toca el botón **🕸️ Grafo** arriba
-   - Ajusta tamaño con XL/XXL si está apretado
-5. **Prueba gestos** (en vista grafo):
+3. **🎛️ NUEVO - Ajusta el tamaño**:
+   - Busca "Tamaño nodos" en los controles (arriba)
+   - Haz clic en **XL** o **XXL** si los nodos están muy apretados
+   - El cambio es inmediato y se guarda
+4. **Prueba gestos:**
+   - Toca un nodo → debería ser fácil
    - Pellizca con 2 dedos → zoom in/out
    - Toca 2 veces → zoom automático
    - Arrastra panel hacia abajo → se cierra
@@ -57,25 +53,19 @@ Las mejoras móviles para el grafo ether ya están **100% instaladas y activas**
 
 ---
 
-## 💡 Solución Definitiva: Vista de Lista
+## 💡 Tip: Solución para Wörter
 
-**En móvil, usa la vista de lista 📋** (viene activada por defecto):
+Si en **Wörter** (muchos nodos) te cuesta tocar:
+1. Abre el control "Tamaño nodos"
+2. Selecciona **XL** o **XXL**
+3. Los nodos serán mucho más grandes → más fácil de tocar
 
-✅ **Items grandes** (56px) - imposible fallar  
-✅ **Scroll vertical** natural  
-✅ **Agrupado por tipo** (Verben, Nomen, etc.)  
-✅ **Ordenado alfabéticamente**  
-✅ **Mismo panel** con toda la info  
-
-Si prefieres el grafo 🕸️:
-- Toca el botón **🕸️ Grafo**
-- Usa control de tamaño (XL/XXL en Wörter)
+En **Präfixverben** (pocos nodos), usa **M** o **L**.
 
 ---
 
 ## 📖 Detalles Completos
 
-- **Vista de lista:** `LIST-VIEW.md` 📋 ← **Lee esto primero!**
 - **Qué se cambió:** `CAMBIOS-MOBILE-COMPLETOS.md`
 - **Control de tamaño:** `NODE-SIZE-CONTROL.md`
 - **Documentación técnica:** `MOBILE-ETHER-IMPROVEMENTS.md`
