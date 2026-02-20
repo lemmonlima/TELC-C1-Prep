@@ -137,16 +137,17 @@
     justify-content: center;
     min-height: 48px;
     font-size: 0.95rem;
+    padding: 12px 20px; /* Padding estándar para botones en móvil */
   }
 }
 
 /* Lista */
 .ether-list-view {
   background: var(--surface-100);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-lg); /* Radio estándar TELC (22px) */
   border: 1px solid var(--line);
-  padding: clamp(16px, 2vw, 24px);
-  box-shadow: var(--shadow);
+  padding: clamp(18px, 2vw, 24px);
+  box-shadow: var(--shadow); /* Sombra estándar TELC */
   margin-top: 20px;
 }
 
@@ -161,9 +162,9 @@
 }
 
 .ether-list-group-title {
-  font-size: 0.75rem;
+  font-size: 0.72rem; /* Tamaño estándar TELC para labels */
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em; /* Espaciado estándar TELC */
   text-transform: uppercase;
   color: var(--ink-700);
   display: flex;
