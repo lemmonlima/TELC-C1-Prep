@@ -1944,7 +1944,63 @@ document.addEventListener("DOMContentLoaded", () => {
             (verbParam || "") +
             "“.</p>";
         } else {
-          buildEther(container, entries, verbParam || null, { mode: activeMode });
+          const savedDetailView = localStorage.getItem(PRAEFIX_DETAIL_VIEW_KEY) === "list" ? "list" : "grafo";
+          const initialDetailView = hasRequestedDetailView ? requestedDetailView : savedDetailView;
+          const showListInitially = initialDetailView === "list";
+
+          const syncDetailViewInUrl = (view) => {
+            const next = new URLSearchParams(location.search);
+            next.set("verb", verbParam || "");
+            if (activeMode === "nomen") next.set("modus", "nomen");
+            else next.delete("modus");
+            next.set("view", view === "list" ? "list" : "grafo");
+            const query = next.toString();
+            history.replaceState({}, "", location.pathname + (query ? "?" + query : ""));
+          };
+
+          const bar = document.createElement("div");
+          bar.className = "text-flashcards-bar";
+          bar.innerHTML = '<a href="prefixe.html" class="text-flashcards-btn">Präfixe</a>';
+
+          const viewToggleBtn = document.createElement("button");
+          viewToggleBtn.type = "button";
+          viewToggleBtn.className = "text-flashcards-btn";
+          viewToggleBtn.textContent = showListInitially ? "Grafo" : "Lista";
+          viewToggleBtn.classList.toggle("is-active", !showListInitially);
+          bar.appendChild(viewToggleBtn);
+
+          const listWrap = document.createElement("div");
+          listWrap.className = "woerter-list-wrap";
+          listWrap.hidden = !showListInitially;
+
+          const etherWrap = document.createElement("div");
+          etherWrap.className = "woerter-ether-wrap";
+          etherWrap.hidden = showListInitially;
+
+          container.appendChild(bar);
+          container.appendChild(listWrap);
+          container.appendChild(etherWrap);
+
+          buildDetailNotizenList(entries, listWrap);
+          buildEther(etherWrap, entries, verbParam || null, { mode: activeMode });
+
+          const applyDetailView = (nextView) => {
+            const showList = nextView === "list";
+            listWrap.hidden = !showList;
+            etherWrap.hidden = showList;
+            viewToggleBtn.textContent = showList ? "Grafo" : "Lista";
+            viewToggleBtn.classList.toggle("is-active", !showList);
+            localStorage.setItem(PRAEFIX_DETAIL_VIEW_KEY, showList ? "list" : "grafo");
+            syncDetailViewInUrl(showList ? "list" : "grafo");
+          };
+
+          viewToggleBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+            const showingList = listWrap.hidden === false;
+            applyDetailView(showingList ? "grafo" : "list");
+          });
+
+          applyDetailView(showListInitially ? "list" : "grafo");
         }
       }
 
