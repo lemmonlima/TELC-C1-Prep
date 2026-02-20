@@ -4404,7 +4404,7 @@ body.no-js .reveal {
   padding: 14px 18px;
   background: var(--surface-200);
   border-radius: var(--radius-md);
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--red-600);
   line-height: 1.6;
 }
 
