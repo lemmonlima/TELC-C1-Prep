@@ -1130,13 +1130,15 @@ document.addEventListener("DOMContentLoaded", () => {
       buildNotizenList(entries, listWrap);
       buildEther(etherWrap, entries);
 
-      grafoBtn.addEventListener("click", () => {
-        const nowList = !etherWrap.hidden;
-        listWrap.hidden = nowList;
-        etherWrap.hidden = !nowList;
-        grafoBtn.textContent = nowList ? "Grafo" : "Lista";
-        grafoBtn.classList.toggle("is-active", !nowList);
-        localStorage.setItem(WOERTER_VIEW_KEY, nowList ? "grafo" : "list");
+      grafoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const showingList = listWrap.hidden === false;
+        const showListNext = !showingList;
+        listWrap.hidden = !showListNext;
+        etherWrap.hidden = showListNext;
+        grafoBtn.textContent = showListNext ? "Grafo" : "Lista";
+        grafoBtn.classList.toggle("is-active", !showListNext);
+        localStorage.setItem(WOERTER_VIEW_KEY, showListNext ? "list" : "grafo");
       });
 
       document.body.classList.remove("no-js");
