@@ -68,6 +68,7 @@ En **Präfixverben** (pocos nodos), usa **M** o **L**.
 
 - **Qué se cambió:** `CAMBIOS-MOBILE-COMPLETOS.md`
 - **Control de tamaño:** `NODE-SIZE-CONTROL.md`
+- **Vista de lista:** `LISTA-ESTANDAR-TELC.md` (alineada con diseño estándar TELC)
 - **Documentación técnica:** `MOBILE-ETHER-IMPROVEMENTS.md`
 
 ---
