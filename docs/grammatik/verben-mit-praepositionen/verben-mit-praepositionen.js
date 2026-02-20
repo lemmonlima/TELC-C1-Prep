@@ -1706,9 +1706,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const filterList = () => {
           const q = ((searchInput && searchInput.value) || "").trim().toLowerCase();
-          listEl.querySelectorAll(".verben-liste-chip").forEach((el) => {
-            const term = (el.dataset.term || "").toLowerCase();
-            el.classList.toggle("is-hidden", q && !term.includes(q));
+          listEl.querySelectorAll(".notizen-item").forEach((li) => {
+            const term = (li.dataset.term || "").toLowerCase();
+            li.classList.toggle("is-hidden", q && !term.includes(q));
           });
         };
 
@@ -1718,21 +1718,50 @@ document.addEventListener("DOMContentLoaded", () => {
           const baseVerbs = getBaseVerbs(data);
           listEl.innerHTML = "";
 
+          if (!baseVerbs.length) {
+            listEl.innerHTML = '<p class="doc" style="color:var(--ink-700); margin:0;">Keine Einträge gefunden.</p>';
+            return;
+          }
+
+          const ul = document.createElement("ul");
+          ul.className = "notizen-list";
           baseVerbs.forEach((baseVerb) => {
-            const a = document.createElement("a");
+            const entries = normalizeEntries(data, baseVerb);
+            const words = (entries || []).map((e) => e.word).filter(Boolean);
             const query = new URLSearchParams();
             query.set("verb", baseVerb);
             if (mode === "nomen") query.set("modus", "nomen");
-            a.className = "verben-liste-chip";
-            a.href = "index.html?" + query.toString();
-            a.textContent = baseVerb;
-            a.dataset.term = baseVerb;
-            listEl.appendChild(a);
-          });
+            const grafoHref = "index.html?" + query.toString();
 
-          if (!baseVerbs.length) {
-            listEl.innerHTML = '<p class="doc" style="color:var(--ink-700); margin:0;">Keine Einträge gefunden.</p>';
-          }
+            const li = document.createElement("li");
+            li.className = "notizen-item notizen-item-clickable";
+            li.dataset.term = baseVerb;
+            const textEl = document.createElement("span");
+            textEl.className = "notizen-text";
+            textEl.textContent = baseVerb;
+            li.appendChild(textEl);
+            const explanationEl = document.createElement("div");
+            explanationEl.className = "notizen-explanation";
+            let inner = "";
+            if (words.length) {
+              const label = mode === "nomen" ? "Präfixnomen:" : "Ableitungen:";
+              inner += `<div class="explanation-section"><p class="explanation-label">${label}</p><p>${words.map((w) => escapeHtml(w)).join(", ")}</p></div>`;
+            }
+            inner += `<div class="explanation-section"><a href="${escapeHtml(grafoHref)}" class="text-flashcards-btn">Grafo</a></div>`;
+            explanationEl.innerHTML = inner;
+            li.appendChild(explanationEl);
+            ul.appendChild(li);
+          });
+          listEl.appendChild(ul);
+
+          listEl.querySelectorAll(".notizen-item-clickable").forEach((li) => {
+            li.addEventListener("click", (e) => {
+              if (e.target.closest("a")) return;
+              e.preventDefault();
+              const explanationEl = li.querySelector(".notizen-explanation");
+              if (explanationEl) explanationEl.classList.toggle("is-open");
+            });
+          });
 
           filterList();
         };
