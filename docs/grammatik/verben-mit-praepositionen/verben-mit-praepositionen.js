@@ -438,6 +438,21 @@ function renderPanel(entry, panel) {
         <button class=\"woerter-panel-back\" type=\"button\" data-action=\"back\">Zurück zum Knoten</button>
       </div>
     </div>
+  `;
+  html += renderPanelContentHtml(entry);
+  panel.innerHTML = html;
+}
+
+function renderSynAntTable(items) {
+  const rows = items
+    .map((it) => `<tr><td>${escapeHtml(it.word || "")}</td><td>${escapeHtml(it.translation || "")}</td></tr>`)
+    .join("");
+  return `<table class=\"examples-table\"><thead><tr><th scope=\"col\">Wort</th><th scope=\"col\">Übersetzung</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function renderPanelContentHtml(entry) {
+  if (!entry) return "";
+  let html = `
     <div class=\"explanation-section\">
       <p class=\"explanation-label\">Übersetzung:</p>
       <p class=\"woerter-panel-translation\">${escapeHtml(entry.translation || "Noch keine Übersetzung.")}</p>
@@ -460,15 +475,6 @@ function renderPanel(entry, panel) {
     `;
   }
   html += renderExamplesTable(entry.examples, entry);
-  const renderSynAntTable = (items) => {
-    const rows = items
-      .map(
-        (it) =>
-          `<tr><td>${escapeHtml(it.word || "")}</td><td>${escapeHtml(it.translation || "")}</td></tr>`
-      )
-      .join("");
-    return `<table class=\"examples-table\"><thead><tr><th scope=\"col\">Wort</th><th scope=\"col\">Übersetzung</th></tr></thead><tbody>${rows}</tbody></table>`;
-  };
   if (entry.synonyms && entry.synonyms.length) {
     html += `
       <div class=\"explanation-section\">
@@ -512,7 +518,40 @@ function renderPanel(entry, panel) {
       </div>
     `;
   }
-  panel.innerHTML = html;
+  return html;
+}
+
+function buildDetailNotizenList(entries, listWrapper) {
+  const list = document.createElement("ul");
+  list.className = "notizen-list";
+
+  entries.forEach((entry) => {
+    const li = document.createElement("li");
+    li.className = "notizen-item notizen-item-clickable";
+
+    const textEl = document.createElement("span");
+    textEl.className = "notizen-text";
+    textEl.textContent = entry.word || "";
+    li.appendChild(textEl);
+
+    const explanationEl = document.createElement("div");
+    explanationEl.className = "notizen-explanation";
+    explanationEl.innerHTML = renderPanelContentHtml(entry);
+    li.appendChild(explanationEl);
+
+    list.appendChild(li);
+  });
+
+  listWrapper.innerHTML = "";
+  listWrapper.appendChild(list);
+
+  list.querySelectorAll(".notizen-item-clickable").forEach((li) => {
+    li.addEventListener("click", (event) => {
+      event.preventDefault();
+      const explanationEl = li.querySelector(".notizen-explanation");
+      if (explanationEl) explanationEl.classList.toggle("is-open");
+    });
+  });
 }
 
 function buildTypeFilters(entries, container, onChange) {
