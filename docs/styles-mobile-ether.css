@@ -98,9 +98,28 @@
    Touch Targets - Nodos más grandes en móvil
    ======================================== */
 
-/* Variable CSS para tamaño ajustable */
+/* Variable CSS para tamaño ajustable en todos los dispositivos */
 :root {
   --node-scale: 1;
+}
+
+/* Aplicar escala también en escritorio */
+.woerter-node {
+  transform: translate3d(calc(var(--x) * 1px), calc(var(--y) * 1px), 0)
+    translate(-50%, -50%)
+    scale(var(--node-scale, 1));
+}
+
+.woerter-node.is-dragging {
+  transform: translate3d(calc(var(--x) * 1px), calc(var(--y) * 1px), 0)
+    translate(-50%, -50%)
+    scale(calc(var(--node-scale, 1) * 1.02));
+}
+
+.woerter-node.is-active {
+  transform: translate3d(calc(var(--x) * 1px), calc(var(--y) * 1px), 0)
+    translate(-50%, -50%)
+    scale(calc(var(--node-scale, 1) * 1.05));
 }
 
 @media (max-width: 768px) {
