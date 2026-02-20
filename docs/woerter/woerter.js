@@ -1087,6 +1087,8 @@ function buildEther(container, entries) {
   window.applyView = applyView;
 }
 
+const WOERTER_VIEW_KEY = "telc-woerter-view";
+
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("woerter-content");
   if (!container) return;
@@ -1098,7 +1100,45 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       const words = Array.isArray(data.words) ? data.words : [];
       const entries = words.map(normalizeEntry).filter((entry) => entry.word);
-      buildEther(container, entries);
+
+      const bar = document.createElement("div");
+      bar.className = "text-flashcards-bar";
+      bar.innerHTML = '<a href="woerter-flashcards.html" class="text-flashcards-btn">Flashcards</a>';
+      const grafoBtn = document.createElement("button");
+      grafoBtn.type = "button";
+      grafoBtn.className = "text-flashcards-btn woerter-view-toggle";
+      grafoBtn.textContent = "Grafo";
+      bar.appendChild(grafoBtn);
+
+      const listWrap = document.createElement("div");
+      listWrap.className = "woerter-list-wrap";
+
+      const etherWrap = document.createElement("div");
+      etherWrap.className = "woerter-ether-wrap";
+
+      const savedView = localStorage.getItem(WOERTER_VIEW_KEY) || "list";
+      const showList = savedView === "list";
+      listWrap.hidden = !showList;
+      etherWrap.hidden = showList;
+      grafoBtn.textContent = showList ? "Grafo" : "Lista";
+      grafoBtn.classList.toggle("is-active", !showList);
+
+      container.appendChild(bar);
+      container.appendChild(listWrap);
+      container.appendChild(etherWrap);
+
+      buildNotizenList(entries, listWrap);
+      buildEther(etherWrap, entries);
+
+      grafoBtn.addEventListener("click", () => {
+        const nowList = !etherWrap.hidden;
+        listWrap.hidden = nowList;
+        etherWrap.hidden = !nowList;
+        grafoBtn.textContent = nowList ? "Grafo" : "Lista";
+        grafoBtn.classList.toggle("is-active", !nowList);
+        localStorage.setItem(WOERTER_VIEW_KEY, nowList ? "grafo" : "list");
+      });
+
       document.body.classList.remove("no-js");
       requestAnimationFrame(() => document.body.classList.add("is-ready"));
     })
