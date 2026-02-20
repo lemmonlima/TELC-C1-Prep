@@ -1,7 +1,6 @@
 # ✅ Mejoras Móviles Aplicadas - Grafo Ether
 
 **Fecha:** 2026-02-20  
-**Última actualización:** 2026-02-20 22:45  
 **Estado:** ✅ **COMPLETO Y ACTIVO**
 
 ## 🎯 Problemas Resueltos
@@ -17,7 +16,7 @@
 - ✅ Gesto de arrastre para cerrar panel
 - ✅ Espaciado extra entre nodos
 
-### 2. "Präfixverben funciona bien pero Wörter no"
+### 2. "Präfixverben funciona bien pero Wörter no (muchos nodos)"
 
 **Motivo:** Wörter tiene MUCHOS más nodos → están más apretados
 
@@ -46,10 +45,6 @@
 - ✅ `docs/woerter/node-size-control.js` - **CREADO** (3.4 KB)
 - ✅ `docs/grammatik/verben-mit-praepositionen/node-size-control.js` - **CREADO** (3.4 KB)
 
-### JavaScript (vista de lista):
-- ✅ `docs/woerter/list-view.js` - **CREADO** (6.4 KB)
-- ✅ `docs/grammatik/verben-mit-praepositionen/list-view.js` - **CREADO** (6.4 KB)
-
 ### HTML (activación):
 - ✅ `docs/woerter/index.html` - **MODIFICADO**
 - ✅ `docs/woerter/solo.html` - **MODIFICADO**
@@ -57,8 +52,8 @@
 - ✅ `docs/grammatik/verben-mit-praepositionen/karte.html` - **MODIFICADO**
 
 ### JS Core (exportar state):
-- ✅ `docs/woerter/woerter.js` - **MODIFICADO** (expone `window.etherState`, `window.etherEntries`, `window.etherOnSelect`)
-- ✅ `docs/grammatik/verben-mit-praepositionen/verben-mit-praepositionen.js` - **MODIFICADO** (expone `window.etherState`, `window.etherEntries`, `window.etherOnSelect`)
+- ✅ `docs/woerter/woerter.js` - **MODIFICADO** (expone `window.etherState`)
+- ✅ `docs/grammatik/verben-mit-praepositionen/verben-mit-praepositionen.js` - **MODIFICADO** (expone `window.etherState`)
 
 ---
 
@@ -84,15 +79,6 @@
 - **Inmediato** - sin recargar página
 - **Solución para Wörter** - usa XL o XXL si están muy apretados
 
-### ✅ **NEWEST!** Vista de lista 📋:
-- **Toggle grafo ⇄ lista** - cambia con un clic
-- **Por defecto en móvil** - abre en lista automáticamente
-- **Items grandes (56px)** - super fácil de tocar
-- **Agrupado por tipo** - Verben, Nomen, Adjektive, etc.
-- **Ordenado alfabéticamente** - encuentra palabras rápido
-- **Mismo panel** - traducción, ejemplos, todo igual
-- **Guarda preferencia** - recuerda qué vista prefieres
-
 ---
 
 ## 📱 Cómo Probarlo
@@ -100,24 +86,20 @@
 ### En tu teléfono:
 1. Abre: `http://[tu-servidor]/woerter/` o `/grammatik/verben-mit-praepositionen/`
 2. **Limpia caché**: Recarga forzada (importante!)
-3. **📋 Debería abrirse en VISTA DE LISTA** (por defecto en móvil):
-   - Verás palabras/verbos en lista ordenada
-   - **Toca cualquier item** → panel con info
-   - Items super grandes (56px) - fácil de tocar
-4. **🕸️ Cambiar a grafo** (si prefieres):
-   - Toca botón **🕸️ Grafo** arriba
-   - Ahora puedes usar control de tamaño (XL/XXL)
-5. **Prueba gestos** (en vista grafo):
+3. **Busca el control "Tamaño nodos"** en la barra de arriba
+4. **Prueba diferentes tamaños**:
+   - Haz clic en **XL** o **XXL** → nodos gigantes
+   - Haz clic en **M** → tamaño normal
+   - Haz clic en **S** o **XS** → nodos pequeños
+5. **Verifica que se guarda**: Recarga la página → debería mantener el tamaño que elegiste
+6. **Prueba gestos**:
+   - Toca un nodo → Panel aparece desde abajo
    - Pellizca con 2 dedos → Zoom in/out
    - Toca 2 veces rápido → Zoom automático
    - Arrastra panel hacia abajo → Se cierra
-6. **Toggle entre vistas**:
-   - 📋 Lista ⇄ 🕸️ Grafo con un clic
-   - Tu preferencia se guarda
 7. **Revisa consola** (opcional): 
    - "🍋 Activando gestos móviles..."
    - "🍋 Creando control de tamaño de nodos"
-   - "🍋 Creando vista de lista"
 
 ### En Chrome DevTools:
 1. F12 → Device toolbar (icono de móvil)
@@ -131,13 +113,11 @@
 
 ```bash
 # Todos los archivos en su lugar:
-✅ docs/styles-mobile-ether.css (12 KB)
+✅ docs/styles-mobile-ether.css (9.8 KB)
 ✅ docs/woerter/mobile-gestures.js (12 KB)
 ✅ docs/grammatik/verben-mit-praepositionen/mobile-gestures.js (12 KB)
 ✅ docs/woerter/node-size-control.js (3.4 KB)
 ✅ docs/grammatik/verben-mit-praepositionen/node-size-control.js (3.4 KB)
-✅ docs/woerter/list-view.js (6.4 KB)
-✅ docs/grammatik/verben-mit-praepositionen/list-view.js (6.4 KB)
 
 # HTML incluye CSS móvil:
 ✅ woerter/index.html: <link href="/styles-mobile-ether.css">
@@ -145,11 +125,10 @@
 ✅ verben-mit-praepositionen/index.html: <link href="/styles-mobile-ether.css">
 ✅ verben-mit-praepositionen/karte.html: <link href="/styles-mobile-ether.css">
 
-# HTML incluye scripts de gestos, tamaño Y lista:
+# HTML incluye scripts de gestos Y control de tamaño:
 ✅ Todos los 4 archivos HTML tienen:
    - mobile-gestures.js
    - node-size-control.js
-   - list-view.js
    - Scripts de activación
 
 # JS expone el state:
@@ -267,9 +246,8 @@ Esto agregará botones +/− flotantes en la esquina del grafo.
 ---
 
 **Documentación completa:**
-- `LIST-VIEW.md` - **Vista de lista** 📋 ← **¡Lee esto primero!**
+- `MOBILE-ETHER-IMPROVEMENTS.md` - Guía técnica completa
 - `QUICK-START-MOBILE.md` - Inicio rápido
 - `NODE-SIZE-CONTROL.md` - Documentación del control de tamaño
-- `MOBILE-ETHER-IMPROVEMENTS.md` - Guía técnica completa
 
-🍋 ¡Listo para tocar con los dedos! Con lista, tamaño ajustable, y gestos táctiles! 📋🎛️🕸️
+🍋 ¡Listo para tocar con los dedos! Y ahora con tamaño ajustable! 🎛️
