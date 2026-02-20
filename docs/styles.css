@@ -3766,16 +3766,23 @@ body.no-js .reveal {
   gap: 8px;
 }
 
+/* Mismo formato que .text-flashcards-btn y barra Notizen */
 .woerter-filter {
-  background: var(--surface-200);
-  border: 1px solid var(--line);
+  background: transparent;
+  border: 1px solid var(--line-soft);
   color: var(--ink-700);
   border-radius: 999px;
-  padding: 4px 8px;
-  font-size: 0.68rem;
-  letter-spacing: 0.02em;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+
+.woerter-filter:hover {
+  border-color: var(--accent-soft);
+  color: var(--accent);
 }
 
 .woerter-filter.is-active {
