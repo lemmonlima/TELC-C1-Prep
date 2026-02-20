@@ -1627,6 +1627,8 @@ function buildEther(container, entries, baseVerb, options = {}) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  const PRAEFIX_DETAIL_VIEW_KEY = "telc-praefixverben-view";
+
   const listHeroView = document.getElementById("list-hero-view");
   const listSectionView = document.getElementById("list-section-view");
   const detailHeroView = document.getElementById("detail-hero-view");
@@ -1650,6 +1652,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(location.search);
   const verbParam = params.get("verb");
   const requestedMode = params.get("modus") === "nomen" ? "nomen" : "verben";
+  const requestedDetailView = params.get("view") === "list" ? "list" : "grafo";
   const isDetailView = Boolean(verbParam);
 
   const modeLabels = {
