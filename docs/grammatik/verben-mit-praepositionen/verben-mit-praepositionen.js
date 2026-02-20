@@ -1804,15 +1804,6 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             li.appendChild(actionsEl);
 
-            const explanationEl = document.createElement("div");
-            explanationEl.className = "notizen-explanation";
-            let inner = "";
-            if (words.length) {
-              const label = mode === "nomen" ? "Präfixnomen:" : "Ableitungen:";
-              inner += `<div class="explanation-section"><p class="explanation-label">${label}</p><p>${words.map((w) => escapeHtml(w)).join(", ")}</p></div>`;
-            }
-            explanationEl.innerHTML = inner;
-            li.appendChild(explanationEl);
             ul.appendChild(li);
           });
           listEl.appendChild(ul);
