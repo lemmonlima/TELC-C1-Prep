@@ -1998,6 +1998,11 @@ body.tips-page .tips-inline-list .chip {
   color: var(--ink-700);
   margin-bottom: 4px;
 }
+.notizen-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 .notizen-note {
   font-size: 0.85rem;
   color: var(--ink-700);
