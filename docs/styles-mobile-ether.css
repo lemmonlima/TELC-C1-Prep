@@ -10,6 +10,11 @@
    Touch Targets - Nodos más grandes en móvil
    ======================================== */
 
+/* Variable CSS para tamaño ajustable */
+:root {
+  --node-scale: 1;
+}
+
 @media (max-width: 768px) {
   .woerter-node {
     /* MUCHO más grande para dedos */
@@ -20,6 +25,11 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     /* Espaciado entre nodos */
     margin: 4px;
+    
+    /* Aplicar escala ajustable */
+    transform: translate3d(calc(var(--x) * 1px), calc(var(--y) * 1px), 0)
+      translate(-50%, -50%)
+      scale(calc(var(--node-scale, 1) * 1)) !important;
   }
 
   .woerter-node:hover,
@@ -27,14 +37,14 @@
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
     transform: translate3d(calc(var(--x) * 1px), calc(var(--y) * 1px), 0)
       translate(-50%, -50%)
-      scale(1.08) !important;
+      scale(calc(var(--node-scale, 1) * 1.08)) !important;
   }
 
   .woerter-node.is-active {
     box-shadow: 0 0 0 4px rgba(255, 84, 84, 0.6), 0 12px 28px rgba(0, 0, 0, 0.55) !important;
     transform: translate3d(calc(var(--x) * 1px), calc(var(--y) * 1px), 0)
       translate(-50%, -50%)
-      scale(1.1) !important;
+      scale(calc(var(--node-scale, 1) * 1.1)) !important;
   }
 }
 
@@ -46,6 +56,11 @@
     min-width: 64px !important;
     min-height: 64px !important;
     margin: 6px;
+    
+    /* Aplicar escala ajustable */
+    transform: translate3d(calc(var(--x) * 1px), calc(var(--y) * 1px), 0)
+      translate(-50%, -50%)
+      scale(calc(var(--node-scale, 1) * 1)) !important;
   }
 }
 
