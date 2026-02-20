@@ -1770,10 +1770,15 @@ document.addEventListener("DOMContentLoaded", () => {
           baseVerbs.forEach((baseVerb) => {
             const entries = normalizeEntries(data, baseVerb);
             const words = (entries || []).map((e) => e.word).filter(Boolean);
-            const query = new URLSearchParams();
-            query.set("verb", baseVerb);
-            if (mode === "nomen") query.set("modus", "nomen");
-            const grafoHref = "index.html?" + query.toString();
+            const detailParams = new URLSearchParams();
+            detailParams.set("verb", baseVerb);
+            if (mode === "nomen") detailParams.set("modus", "nomen");
+            const listParams = new URLSearchParams(detailParams);
+            const graphParams = new URLSearchParams(detailParams);
+            listParams.set("view", "list");
+            graphParams.set("view", "grafo");
+            const listHref = "index.html?" + listParams.toString();
+            const grafoHref = "index.html?" + graphParams.toString();
 
             const li = document.createElement("li");
             li.className = "notizen-item notizen-item-clickable";
@@ -1789,7 +1794,15 @@ document.addEventListener("DOMContentLoaded", () => {
               const label = mode === "nomen" ? "Präfixnomen:" : "Ableitungen:";
               inner += `<div class="explanation-section"><p class="explanation-label">${label}</p><p>${words.map((w) => escapeHtml(w)).join(", ")}</p></div>`;
             }
-            inner += `<div class="explanation-section"><a href="${escapeHtml(grafoHref)}" class="text-flashcards-btn">Grafo</a></div>`;
+            inner += `
+              <div class="explanation-section">
+                <p class="explanation-label">Ansicht:</p>
+                <div class="notizen-actions">
+                  <a href="${escapeHtml(listHref)}" class="text-flashcards-btn">Liste</a>
+                  <a href="${escapeHtml(grafoHref)}" class="text-flashcards-btn">Grafo</a>
+                </div>
+              </div>
+            `;
             explanationEl.innerHTML = inner;
             li.appendChild(explanationEl);
             ul.appendChild(li);
