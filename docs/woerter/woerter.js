@@ -1021,6 +1021,10 @@ function buildEther(container, entries) {
     state.view.panY = 0;
     applyView(state);
   });
+
+  // Exponer state globalmente para mobile-gestures.js
+  window.etherState = state;
+  window.applyView = applyView;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
