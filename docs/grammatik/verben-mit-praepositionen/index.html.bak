@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>TELC Grammatik – Präfixverben</title>
   <link rel="stylesheet" href="../../styles.css" />
-  <link rel="stylesheet" href="/styles-mobile-ether.css">
   <style>
     .nav-link-hidden {
       display: none !important;

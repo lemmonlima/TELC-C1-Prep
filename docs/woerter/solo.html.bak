@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>TELC Wörter – Solo</title>
   <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="/styles-mobile-ether.css">
   <!-- TELC Navigation System -->
   <script src="../topbar.js"></script>
   <script src="../navigation.js"></script>

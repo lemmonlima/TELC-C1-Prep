@@ -1,0 +1,410 @@
+/**
+ * Mejoras móviles para el grafo interactivo "ether"
+ * Usado en Wörter y Präfixverben
+ * 
+ * Incluir este archivo después de styles.css:
+ * <link rel="stylesheet" href="/styles-mobile-ether.css">
+ */
+
+/* ========================================
+   Touch Targets - Nodos más grandes en móvil
+   ======================================== */
+
+@media (max-width: 768px) {
+  .woerter-node {
+    padding: 0.7rem 1.1rem;
+    font-size: 1.05rem;
+    min-width: 44px; /* Mínimo recomendado por WCAG para touch targets */
+    min-height: 44px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .woerter-node:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+  }
+
+  .woerter-node.is-active {
+    box-shadow: 0 0 0 3px rgba(255, 84, 84, 0.5), 0 12px 28px rgba(0, 0, 0, 0.55);
+  }
+}
+
+/* Pantallas muy pequeñas: nodos aún más grandes */
+@media (max-width: 480px) {
+  .woerter-node {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.1rem;
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
+
+/* ========================================
+   Panel de Detalle - Mejor UX en móvil
+   ======================================== */
+
+@media (max-width: 768px) {
+  .woerter-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border-bottom: none;
+    z-index: 10;
+    padding: 16px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Cuando hay contenido en el panel, mostrarlo */
+  .woerter-panel:not(:empty) {
+    transform: translateY(0);
+  }
+
+  /* Handle visual para arrastrar (opcional) */
+  .woerter-panel::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: var(--line);
+    border-radius: 2px;
+    margin: -8px auto 12px;
+  }
+
+  /* Botón "Volver al nodo" más visible */
+  .woerter-panel-back {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    background: var(--surface-200);
+  }
+
+  /* Header del panel más compacto */
+  .woerter-panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .woerter-panel-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Pantallas muy pequeñas: panel más alto */
+@media (max-width: 480px) {
+  .woerter-panel {
+    max-height: 70vh;
+  }
+}
+
+/* ========================================
+   Stage/Escenario - Ajustes para móvil
+   ======================================== */
+
+@media (max-width: 768px) {
+  .woerter-ether-stage {
+    height: clamp(380px, 65vh, 600px);
+  }
+
+  .woerter-ether-hint {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  /* Ocultar hint en pantallas muy pequeñas para ahorrar espacio */
+  @media (max-width: 480px) {
+    .woerter-ether-hint {
+      display: none;
+    }
+  }
+}
+
+/* ========================================
+   Controles - Mejor layout en móvil
+   ======================================== */
+
+@media (max-width: 768px) {
+  .woerter-ether-controls {
+    padding: 10px 12px;
+    gap: 10px 8px;
+  }
+
+  .woerter-search {
+    min-width: 100%;
+  }
+
+  .woerter-search-input {
+    font-size: 1rem; /* Evita auto-zoom en iOS */
+    padding: 8px 12px;
+  }
+
+  .woerter-filters {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .woerter-filter {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    /* Mejor touch target */
+    min-height: 32px;
+  }
+
+  /* Actions container (botón Flashcards, etc.) */
+  .woerter-ether-actions {
+    width: 100%;
+  }
+
+  .woerter-flash-toggle {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ========================================
+   Pinch to Zoom Support
+   ======================================== */
+
+/* El código JS ya maneja esto, pero agregamos soporte CSS */
+@media (max-width: 768px) {
+  .woerter-ether-space {
+    /* Optimizar para transformaciones táctiles */
+    will-change: transform;
+  }
+}
+
+/* ========================================
+   Tipografía - Mejor legibilidad móvil
+   ======================================== */
+
+@media (max-width: 768px) {
+  /* Panel de explicación */
+  .explanation-section {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .explanation-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+  }
+
+  /* Tabla de ejemplos */
+  .examples-table {
+    font-size: 0.9rem;
+  }
+
+  .examples-table th {
+    font-size: 0.75rem;
+    padding: 8px 6px;
+  }
+
+  .examples-table td {
+    padding: 10px 8px;
+  }
+
+  /* Word en panel */
+  .woerter-panel-word {
+    font-size: 1.15rem;
+    padding: 8px 16px;
+  }
+
+  .woerter-panel-type {
+    font-size: 0.75rem;
+  }
+
+  .woerter-panel-translation {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .explanation-section {
+    font-size: 0.9rem;
+  }
+
+  .examples-table {
+    font-size: 0.85rem;
+  }
+
+  .examples-table th,
+  .examples-table td {
+    padding: 6px 4px;
+  }
+}
+
+/* ========================================
+   Contraste - Mejoras visuales
+   ======================================== */
+
+@media (max-width: 768px) {
+  /* Nodos con mejor contraste en pantallas pequeñas */
+  .woerter-node {
+    backdrop-filter: blur(8px);
+    border-width: 1.5px;
+  }
+
+  /* Panel más opaco en móvil */
+  .woerter-panel {
+    background: var(--surface-100);
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* ========================================
+   Modo Solo (fullscreen) - Ajustes móviles
+   ======================================== */
+
+@media (max-width: 768px) {
+  .woerter-solo .woerter-ether-controls {
+    top: max(8px, env(safe-area-inset-top));
+    left: max(8px, env(safe-area-inset-left));
+    right: max(8px, env(safe-area-inset-right));
+    width: auto;
+  }
+
+  .woerter-solo .woerter-panel {
+    left: max(8px, env(safe-area-inset-left));
+    right: max(8px, env(safe-area-inset-right));
+    bottom: max(8px, env(safe-area-inset-bottom));
+    max-height: 50vh;
+  }
+}
+
+/* ========================================
+   Accesibilidad - Reducción de movimiento
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .woerter-panel {
+    transition: none;
+  }
+
+  .woerter-node {
+    transition: box-shadow 0.1s ease, opacity 0.2s ease;
+  }
+}
+
+/* ========================================
+   Landscape móvil - Ajustes especiales
+   ======================================== */
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .woerter-ether-stage {
+    height: clamp(300px, 80vh, 500px);
+  }
+
+  .woerter-panel {
+    max-height: 55vh;
+  }
+
+  .woerter-solo .woerter-panel {
+    max-height: 45vh;
+  }
+}
+
+/* ========================================
+   Safe Areas - iPhone notch, etc.
+   ======================================== */
+
+@media (max-width: 768px) {
+  .woerter-ether-controls {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
+
+  .woerter-panel {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
+}
+
+/* ========================================
+   Zoom Controls Hint (opcional)
+   ======================================== */
+
+@media (max-width: 768px) {
+  /* Agregar hint visual para pinch-to-zoom */
+  .woerter-ether-stage::after {
+    content: "";
+    /* El hint ya está manejado por .woerter-ether-hint */
+  }
+}
+
+/* ========================================
+   Flashcards - Mejoras móviles
+   ======================================== */
+
+@media (max-width: 768px) {
+  .basis-flashcards {
+    padding: 12px;
+  }
+
+  .flashcard-inner {
+    min-height: 200px;
+  }
+
+  .flashcard-face {
+    padding: 14px;
+  }
+
+  .flashcard-term {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+  }
+
+  .flashcard-answer {
+    font-size: clamp(1.1rem, 3.5vw, 1.6rem);
+  }
+
+  .flashcards-controls {
+    gap: 8px;
+  }
+
+  .flashcards-controls .btn {
+    flex: 1;
+    min-width: 80px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ========================================
+   Optimizaciones de rendimiento
+   ======================================== */
+
+@media (max-width: 768px) {
+  /* Reducir sombras complejas en móvil si hay lag */
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .woerter-node {
+      /* backdrop-filter ya aplicado arriba */
+    }
+  }
+
+  /* Optimizar animaciones */
+  .woerter-ether-link {
+    transition: opacity 0.2s ease; /* Reducido de 0.3s */
+  }
+}
+
+/* ========================================
+   Dark Mode - Ajustes adicionales si aplica
+   ======================================== */
+
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+  .woerter-panel {
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.7);
+  }
+
+  .woerter-node {
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.5);
+  }
+}
