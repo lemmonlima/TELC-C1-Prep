@@ -332,5 +332,26 @@
     })();
   </script>
 
+  <!-- Mobile gestures para mejor UX táctil -->
+  <script defer src="mobile-gestures.js"></script>
+  <script>
+    // Activar mejoras móviles cuando el grafo esté listo
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const stage = document.querySelector('.woerter-ether-stage');
+        const panel = document.querySelector('.woerter-panel');
+        
+        if (stage && window.etherState && typeof enhanceMobileGestures === 'function') {
+          console.log('🍋 Activando gestos móviles para Präfixverben');
+          enhanceMobileGestures(window.etherState, window.applyView);
+          
+          if (panel && typeof enhanceMobilePanel === 'function') {
+            enhanceMobilePanel(panel);
+          }
+        }
+      }, 600);
+    });
+  </script>
+
 </body>
 </html>
