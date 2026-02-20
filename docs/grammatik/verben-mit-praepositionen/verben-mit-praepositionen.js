@@ -1782,12 +1782,28 @@ document.addEventListener("DOMContentLoaded", () => {
             const grafoHref = "index.html?" + graphParams.toString();
 
             const li = document.createElement("li");
-            li.className = "notizen-item notizen-item-clickable";
+            li.className = "notizen-item";
             li.dataset.term = baseVerb;
+
             const textEl = document.createElement("span");
             textEl.className = "notizen-text";
-            textEl.textContent = baseVerb;
+            textEl.innerHTML = `<a href="${escapeHtml(grafoHref)}" class="notizen-entry-link">${escapeHtml(baseVerb)}</a>`;
             li.appendChild(textEl);
+
+            const metaEl = document.createElement("span");
+            metaEl.className = "notizen-note";
+            const countLabel = mode === "nomen" ? "Nomen" : "Ableitungen";
+            metaEl.textContent = `${countLabel}: ${words.length}`;
+            li.appendChild(metaEl);
+
+            const actionsEl = document.createElement("div");
+            actionsEl.className = "notizen-actions";
+            actionsEl.innerHTML = `
+              <a href="${escapeHtml(listHref)}" class="text-flashcards-btn">Lista</a>
+              <a href="${escapeHtml(grafoHref)}" class="text-flashcards-btn">Grafo</a>
+            `;
+            li.appendChild(actionsEl);
+
             const explanationEl = document.createElement("div");
             explanationEl.className = "notizen-explanation";
             let inner = "";
@@ -1795,29 +1811,11 @@ document.addEventListener("DOMContentLoaded", () => {
               const label = mode === "nomen" ? "Präfixnomen:" : "Ableitungen:";
               inner += `<div class="explanation-section"><p class="explanation-label">${label}</p><p>${words.map((w) => escapeHtml(w)).join(", ")}</p></div>`;
             }
-            inner += `
-              <div class="explanation-section">
-                <p class="explanation-label">Ansicht:</p>
-                <div class="notizen-actions">
-                  <a href="${escapeHtml(listHref)}" class="text-flashcards-btn">Liste</a>
-                  <a href="${escapeHtml(grafoHref)}" class="text-flashcards-btn">Grafo</a>
-                </div>
-              </div>
-            `;
             explanationEl.innerHTML = inner;
             li.appendChild(explanationEl);
             ul.appendChild(li);
           });
           listEl.appendChild(ul);
-
-          listEl.querySelectorAll(".notizen-item-clickable").forEach((li) => {
-            li.addEventListener("click", (e) => {
-              if (e.target.closest("a")) return;
-              e.preventDefault();
-              const explanationEl = li.querySelector(".notizen-explanation");
-              if (explanationEl) explanationEl.classList.toggle("is-open");
-            });
-          });
 
           filterList();
         };
