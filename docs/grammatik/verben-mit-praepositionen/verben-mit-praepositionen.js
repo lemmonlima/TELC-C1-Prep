@@ -1255,8 +1255,7 @@ function buildEther(container, entries, baseVerb, options = {}) {
     };
   };
 
-  // Callback para seleccionar un nodo (usado también por list-view)
-  const handleNodeSelect = (nodeData) => {
+  const nodes = buildNodes(entries, nodesLayer, (nodeData) => {
     const isSameNode = state.lastNode && state.lastNode.id === nodeData.id;
     state.nodes.forEach((node) => node.el.classList.remove("is-active"));
     if (isSameNode) {
@@ -1264,21 +1263,13 @@ function buildEther(container, entries, baseVerb, options = {}) {
       createPanelEmpty(panel);
       return;
     }
-    if (nodeData.el && nodeData.el.classList) {
-      nodeData.el.classList.add("is-active");
-    }
+    nodeData.el.classList.add("is-active");
     state.lastNode = nodeData;
     state.lastScrollY = window.scrollY || 0;
     renderPanel(nodeData.entry, panel);
     panel.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
-  const nodes = buildNodes(entries, nodesLayer, handleNodeSelect);
+  });
   state.nodes = nodes;
-  
-  // Exponer para list-view.js
-  window.etherEntries = entries;
-  window.etherOnSelect = handleNodeSelect;
 
   if (flashcards && flashToggleBtn) {
     flashToggleBtn.addEventListener("click", () => {
