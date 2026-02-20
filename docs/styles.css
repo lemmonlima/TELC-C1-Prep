@@ -3202,7 +3202,7 @@ body.no-js .reveal {
 
 .explanation-back {
   background: transparent;
-  border: 1px solid var(--line-soft);
+  border: 1px solid var(--line);
   color: var(--ink-700);
   font-size: 0.75rem;
   padding: 4px 8px;
@@ -3213,8 +3213,8 @@ body.no-js .reveal {
 }
 
 .explanation-back:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--red-600);
+  color: var(--red-600);
 }
 
 .explanation-back-to-parent {
@@ -3222,13 +3222,13 @@ body.no-js .reveal {
 }
 
 .explanation-back-to-parent:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--red-600);
+  color: var(--red-600);
 }
 
 .explanation-flashcards {
   background: transparent;
-  border: 1px solid var(--line-soft);
+  border: 1px solid var(--line);
   color: var(--ink-700);
   font-size: 0.75rem;
   padding: 4px 10px;
@@ -3239,8 +3239,8 @@ body.no-js .reveal {
 }
 
 .explanation-flashcards:hover {
-  border-color: var(--accent-soft);
-  color: var(--accent);
+  border-color: rgba(255, 84, 84, 0.5);
+  color: var(--red-600);
 }
 
 .flash-example-block {
