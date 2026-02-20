@@ -7,6 +7,94 @@
  */
 
 /* ========================================
+   Control de Tamaño de Nodos
+   ======================================== */
+
+.node-size-control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--surface-200);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  min-width: 200px;
+}
+
+.node-size-control-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.node-size-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-700);
+}
+
+.node-size-current {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--red-600);
+  background: rgba(255, 84, 84, 0.1);
+  border: 1px solid rgba(255, 84, 84, 0.3);
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.node-size-buttons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.node-size-btn {
+  flex: 1;
+  min-width: 42px;
+  height: 36px;
+  background: var(--surface-100);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink-700);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.node-size-btn:hover {
+  background: var(--surface-200);
+  border-color: rgba(255, 84, 84, 0.4);
+  color: var(--ink-900);
+}
+
+.node-size-btn.is-active {
+  background: rgba(255, 84, 84, 0.2);
+  border-color: rgba(255, 84, 84, 0.6);
+  color: var(--red-600);
+  box-shadow: 0 0 0 2px rgba(255, 84, 84, 0.15);
+}
+
+@media (max-width: 768px) {
+  .node-size-control {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .node-size-btn {
+    min-width: 48px;
+    height: 44px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ========================================
    Touch Targets - Nodos más grandes en móvil
    ======================================== */
 
