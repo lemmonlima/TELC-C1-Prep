@@ -3287,14 +3287,14 @@ body.no-js .reveal {
 }
 
 .text-flashcards-btn:hover {
-  border-color: rgba(255, 84, 84, 0.5);
+  border-color: var(--red-600);
   color: var(--red-600);
 }
 
 .text-flashcards-btn.is-active {
-  background: rgba(255, 84, 84, 0.18);
-  border-color: rgba(255, 84, 84, 0.6);
-  color: #ffd6d6;
+  background: var(--surface-200);
+  border-color: var(--red-600);
+  color: var(--red-600);
 }
 
 .text-flashcards-bar .text-flashcards-btn {
@@ -3790,14 +3790,14 @@ body.no-js .reveal {
 }
 
 .woerter-filter:hover {
-  border-color: rgba(255, 84, 84, 0.5);
+  border-color: var(--red-600);
   color: var(--red-600);
 }
 
 .woerter-filter.is-active {
-  background: rgba(255, 84, 84, 0.18);
-  border-color: rgba(255, 84, 84, 0.6);
-  color: #ffd6d6;
+  background: var(--surface-200);
+  border-color: var(--red-600);
+  color: var(--red-600);
 }
 
 .woerter-count {
