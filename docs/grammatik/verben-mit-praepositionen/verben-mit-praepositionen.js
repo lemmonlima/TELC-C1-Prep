@@ -1652,6 +1652,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(location.search);
   const verbParam = params.get("verb");
   const requestedMode = params.get("modus") === "nomen" ? "nomen" : "verben";
+  const hasRequestedDetailView = params.has("view");
   const requestedDetailView = params.get("view") === "list" ? "list" : "grafo";
   const isDetailView = Boolean(verbParam);
 
