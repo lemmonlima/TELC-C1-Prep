@@ -3262,7 +3262,11 @@ body.no-js .reveal {
 .text-flashcards-bar {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
 }
 
 .text-flashcards-btn {
