@@ -1992,6 +1992,9 @@ document.addEventListener("DOMContentLoaded", () => {
             viewToggleBtn.classList.toggle("is-active", !showList);
             localStorage.setItem(PRAEFIX_DETAIL_VIEW_KEY, showList ? "list" : "grafo");
             syncDetailViewInUrl(showList ? "list" : "grafo");
+            if (!showList) {
+              requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
+            }
           };
 
           viewToggleBtn.addEventListener("click", (event) => {
