@@ -429,7 +429,7 @@
 
 @media (max-width: 768px) {
   .woerter-ether-stage {
-    height: clamp(320px, calc(var(--ether-stage-vh, 65) * 1vh), 680px);
+    height: clamp(380px, 65vh, 600px);
   }
 
   .woerter-ether-hint {
