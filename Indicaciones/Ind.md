@@ -14,3 +14,7 @@ Anade partes como sinonimos y antonimos (si la palabra los tiene) y annade más 
 - Ahora siguiento @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el schriftliche ausdruck de @Projects/TELC/docs/pruefungen/modell-2
 
 - Ahora siguiento @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el mündliche ausdruck de @Projects/TELC/docs/pruefungen/modell-2
+
+- el siguiente paso es que te haga también una pasada final de estilo para dejar el tono exactamente igual al resto de modell-1.
+
+
