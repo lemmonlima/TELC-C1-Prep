@@ -9,6 +9,8 @@ Anade partes como sinonimos y antonimos (si la palabra los tiene) y annade más 
 
 - Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el Leseverstehen de @Projects/TELC/docs/pruefungen/modell-3 
 
+-Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el Leseverstehen de @Projects/TELC/docs/pruefungen/modell-3 
+
 - Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz los Hörverstehen de @Projects/TELC/docs/pruefungen/modell-3. Primero haz el transcrito de todos en un solo texto y luego las preguntas y todo
 
 - Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el schriftliche Ausdruck de @Projects/TELC/docs/pruefungen/modell-3
