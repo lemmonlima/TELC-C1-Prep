@@ -757,6 +757,10 @@ function buildEther(container, entries) {
   wrapper.appendChild(panel);
   container.appendChild(wrapper);
 
+  if (typeof window.initCanvasSizeControls === "function") {
+    window.initCanvasSizeControls(wrapper);
+  }
+
   const state = {
     nodes: [],
     edges: [],
