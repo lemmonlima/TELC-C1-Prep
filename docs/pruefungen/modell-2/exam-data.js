@@ -31,12 +31,12 @@ const EXAM_DATA = {
   },
 
   themaTexte: {
-    a1: '/* TODO */',
-    a2: '/* TODO */',
-    b1: '/* TODO */',
-    b2: '/* TODO */',
-    c1: '/* TODO */',
-    c2: '/* TODO */'
+    a1: 'Sollte der Umgang mit Künstlicher Intelligenz zu den Pflichtkompetenzen im Studium gehören? Begründen Sie Ihre Meinung und gehen Sie auch auf mögliche Risiken ein.',
+    a2: 'Wie kann man Prokrastination im Studium wirksam reduzieren? Stellen Sie konkrete Strategien vor und bewerten Sie ihre Grenzen.',
+    b1: 'Sollte ein Auslandssemester für Studierende stärker gefördert oder sogar verpflichtend werden? Begründen Sie Ihre Position mit Beispielen.',
+    b2: 'Welche Rolle sollten künstlerische und kreative Fächer in technischen oder naturwissenschaftlichen Studiengängen spielen?',
+    c1: 'Ist Mehrsprachigkeit eine Schlüsselkompetenz des 21. Jahrhunderts? Erklären Sie Chancen, Herausforderungen und Grenzen.',
+    c2: 'Was ist für Studium und Beruf langfristig wichtiger: Spezialisierung oder breites Wissen? Nehmen Sie Stellung und argumentieren Sie differenziert.'
   },
 
   saThemen: {
@@ -157,13 +157,13 @@ Dozent: Vielen Dank, Frau Dr. Keller, für den praxisnahen Vortrag. Wir öffnen 
 Ende des Subtests Hörverstehen.`,
 
   diskussionZitate: {
-    1: { text:'/* TODO */', autor:'/* TODO */',
-         aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
-    2: { text:'/* TODO */', autor:'/* TODO */',
-         aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
-    3: { text:'/* TODO */', autor:'/* TODO */',
-         aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
-    4: { text:'/* TODO */', autor:'/* TODO */',
-         aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
+    1: { text:'Es ist nicht genug zu wissen, man muss auch anwenden.', autor:'Johann Wolfgang von Goethe (1749–1832), Dichter',
+         aspekte:['Warum reicht Wissen ohne Anwendung nicht aus?','Wie kann man Theorie besser in Praxis umsetzen?','Welche Rolle spielen Fehler und Erfahrung beim Lernen?','Gibt es Bereiche, in denen Wissen ohne Anwendung trotzdem wertvoll ist?'] },
+    2: { text:'Lernen ohne zu denken ist nutzlos. Denken ohne zu lernen ist gefährlich.', autor:'Konfuzius (551–479 v. Chr.), Philosoph',
+         aspekte:['Wie kann man Lernen und kritisches Denken sinnvoll verbinden?','Wo sehen Sie heute „auswendig gelerntes" Wissen ohne Verständnis?','Kann Denken ohne Fachwissen zu Fehleinschätzungen führen?','Welche Lehrmethoden fördern beides zugleich?'] },
+    3: { text:'Niemand hat das Recht zu gehorchen.', autor:'Hannah Arendt (1906–1975), Politologin',
+         aspekte:['Was bedeutet dieses Zitat im Kontext von Verantwortung?','Wo liegt die Grenze zwischen Loyalität und blinder Gehorsamkeit?','Welche Beispiele aus Gesellschaft oder Geschichte fallen Ihnen ein?','Wie sollte man handeln, wenn Regeln und Gewissen im Konflikt stehen?'] },
+    4: { text:'Probleme kann man niemals mit derselben Denkweise lösen, durch die sie entstanden sind.', autor:'Albert Einstein (1879–1955), Physiker',
+         aspekte:['Warum brauchen komplexe Probleme neue Perspektiven?','Welche Rolle spielen interdisziplinäre Ansätze?','Gibt es Beispiele, bei denen ein Perspektivwechsel Lösungen ermöglicht hat?','Wie kann man festgefahrene Denkmuster im Alltag und Studium durchbrechen?'] },
   }
 };
