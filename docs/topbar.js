@@ -117,42 +117,66 @@
       body.classList.add('topbar-hidden');
     }
 
-    // Get or create CTA element
-    const cta = topbar.querySelector('.cta');
+    // Check if controls already exist in HTML (static version)
+    let hideBtn = topbar.querySelector('.topbar-hide');
+    let resetBtn = topbar.querySelector('.topbar-reset');
+    let showTrigger = document.querySelector('.topbar-show-trigger');
 
-    // Create actions container
-    const actions = document.createElement('div');
-    actions.className = 'topbar-actions';
+    // If controls don't exist, create them (dynamic version)
+    if (!hideBtn || !resetBtn) {
+      console.log('[TELC Topbar] Creating dynamic controls');
+      
+      // Get or create CTA element
+      const cta = topbar.querySelector('.cta');
 
-    // Create hide button
-    const hideBtn = document.createElement('button');
-    hideBtn.type = 'button';
-    hideBtn.className = 'topbar-btn topbar-hide';
-    hideBtn.title = 'Barra minimizar';
-    hideBtn.setAttribute('aria-label', 'Barra minimizar');
-    hideBtn.textContent = '−';
+      // Create or get actions container
+      let actions = topbar.querySelector('.topbar-actions');
+      if (!actions) {
+        actions = document.createElement('div');
+        actions.className = 'topbar-actions';
+        topbar.appendChild(actions);
+      }
 
-    // Create reset button
-    const resetBtn = document.createElement('button');
-    resetBtn.type = 'button';
-    resetBtn.className = 'topbar-btn topbar-reset';
-    resetBtn.title = 'Reiniciar (olvidar posiciones)';
-    resetBtn.setAttribute('aria-label', 'Reiniciar');
-    resetBtn.textContent = '↺';
+      // Create hide button if it doesn't exist
+      if (!hideBtn) {
+        hideBtn = document.createElement('button');
+        hideBtn.type = 'button';
+        hideBtn.className = 'topbar-btn topbar-hide';
+        hideBtn.title = 'Barra minimizar';
+        hideBtn.setAttribute('aria-label', 'Barra minimizar');
+        hideBtn.textContent = '−';
+        actions.appendChild(hideBtn);
+      }
 
-    actions.appendChild(hideBtn);
-    actions.appendChild(resetBtn);
-    if (cta) actions.appendChild(cta);
-    topbar.appendChild(actions);
+      // Create reset button if it doesn't exist
+      if (!resetBtn) {
+        resetBtn = document.createElement('button');
+        resetBtn.type = 'button';
+        resetBtn.className = 'topbar-btn topbar-reset';
+        resetBtn.title = 'Reiniciar (olvidar posiciones)';
+        resetBtn.setAttribute('aria-label', 'Reiniciar');
+        resetBtn.textContent = '↺';
+        actions.appendChild(resetBtn);
+      }
 
-    // Create show trigger
-    const showTrigger = document.createElement('div');
-    showTrigger.className = 'topbar-show-trigger';
-    showTrigger.title = 'Mostrar barra';
-    showTrigger.textContent = '▼';
-    topbar.parentNode.insertBefore(showTrigger, topbar);
+      // Move CTA into actions if it exists and isn't already there
+      if (cta && !actions.contains(cta)) {
+        actions.appendChild(cta);
+      }
+    } else {
+      console.log('[TELC Topbar] Using existing static controls from HTML');
+    }
 
-    // Event handlers
+    // Create show trigger if it doesn't exist
+    if (!showTrigger) {
+      showTrigger = document.createElement('div');
+      showTrigger.className = 'topbar-show-trigger';
+      showTrigger.title = 'Mostrar barra';
+      showTrigger.textContent = '▼';
+      topbar.parentNode.insertBefore(showTrigger, topbar);
+    }
+
+    // Event handlers (always attach, whether controls are static or dynamic)
     hideBtn.onclick = () => {
       body.classList.add('topbar-hidden');
       body.classList.remove('topbar-auto-hidden');
