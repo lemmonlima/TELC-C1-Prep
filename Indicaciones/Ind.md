@@ -7,7 +7,7 @@ Mejora los ejemplos, son muy meh y deben ser C1 Telc Hoschschule. Igual no te pa
 
 Anade partes como sinonimos y antonimos (si la palabra los tiene) y annade más ejemplos a las palabras que tienen más de un significado para ver y tener una imagen de todas sus funciones
 
-- Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el Leseverstehen de @Projects/TELC/docs/pruefungen/modell-3 
+- Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el Leseverstehen de @Projects/TELC/docs/pruefungen/modell-3. Muchas Gracias!
 
 - Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el Sprachbausteine de @Projects/TELC/docs/pruefungen/modell-3 
 
