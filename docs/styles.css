@@ -1970,13 +1970,6 @@ body.tips-page .tips-inline-list .chip {
 .notizen-text {
   flex: 1 1 auto;
 }
-.notizen-entry-link {
-  color: var(--ink-900);
-  text-decoration: none;
-}
-.notizen-entry-link:hover {
-  color: var(--red-600);
-}
 .notizen-explanation {
   display: none;
   width: 100%;
@@ -2004,12 +1997,6 @@ body.tips-page .tips-inline-list .chip {
   letter-spacing: 0.05em;
   color: var(--ink-700);
   margin-bottom: 4px;
-}
-.notizen-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-left: auto;
 }
 .notizen-note {
   font-size: 0.85rem;
