@@ -1,7 +1,6 @@
 /* Modellprüfung 2 — Exam data (answers, themes, quotes) */
 'use strict';
 
-// TODO: Fill in correct answers and content for Modellprüfung 2
 const EXAM_DATA = {
   title: 'Modellprüfung 2',
 
