@@ -3,104 +3,98 @@
  * Control para ajustar el tamaño de los nodos del grafo ether en vivo
  */
 
-function createNodeSizeControl(container) {
-  const STORAGE_KEY = 'telc-ether-node-size';
-  
-  // Tamaños preestablecidos (escala multiplicadora)
-  const sizes = {
-    xs: { label: 'XS', scale: 0.7, description: 'Extra pequeño' },
-    s: { label: 'S', scale: 0.85, description: 'Pequeño' },
-    m: { label: 'M', scale: 1.0, description: 'Normal' },
-    l: { label: 'L', scale: 1.25, description: 'Grande' },
-    xl: { label: 'XL', scale: 1.5, description: 'Extra grande' },
-    xxl: { label: 'XXL', scale: 1.8, description: 'Gigante' }
+function createNodeSizeControl(etherContainer, controlsContainer) {
+  const STORAGE_KEY = "telc-ether-node-scale";
+  const LEGACY_STORAGE_KEY = "telc-ether-node-size";
+  const MIN_SCALE = 0.7;
+  const MAX_SCALE = 1.8;
+  const STEP = 0.05;
+
+  const legacyMap = {
+    xs: 0.7,
+    s: 0.85,
+    m: 1.0,
+    l: 1.25,
+    xl: 1.5,
+    xxl: 1.8
   };
 
-  // Obtener tamaño guardado o usar M por defecto
-  let currentSize = localStorage.getItem(STORAGE_KEY) || 'm';
-  
-  // Crear UI
-  const controlWrapper = document.createElement('div');
-  controlWrapper.className = 'node-size-control';
+  const clampScale = (value) => Math.min(MAX_SCALE, Math.max(MIN_SCALE, value));
+
+  const parseSavedScale = () => {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw != null) {
+      const parsed = Number(raw);
+      if (!Number.isNaN(parsed)) return clampScale(parsed);
+    }
+    const legacy = localStorage.getItem(LEGACY_STORAGE_KEY);
+    if (legacy && legacyMap[legacy]) return legacyMap[legacy];
+    return 1;
+  };
+
+  const formatPercent = (scale) => `${Math.round(scale * 100)}%`;
+
+  const controlWrapper = document.createElement("div");
+  controlWrapper.className = "node-size-control";
   controlWrapper.innerHTML = `
     <div class="node-size-control-header">
       <span class="node-size-label">Tamaño nodos</span>
-      <span class="node-size-current" data-role="current">${sizes[currentSize].label}</span>
+      <span class="node-size-current" data-role="current">100%</span>
     </div>
-    <div class="node-size-buttons" data-role="buttons"></div>
+    <input
+      type="range"
+      class="node-size-slider"
+      data-role="slider"
+      min="${MIN_SCALE}"
+      max="${MAX_SCALE}"
+      step="${STEP}"
+      value="1"
+      aria-label="Ajustar tamaño de nodos"
+    />
   `;
 
-  const buttonsContainer = controlWrapper.querySelector('[data-role="buttons"]');
+  const slider = controlWrapper.querySelector('[data-role="slider"]');
   const currentLabel = controlWrapper.querySelector('[data-role="current"]');
+  let currentScale = 1;
 
-  // Aplicar tamaño (via CSS custom property)
-  const applySize = (sizeKey) => {
-    const size = sizes[sizeKey];
-    if (!size) return;
-
-    // Aplicar variable CSS a todos los nodos
-    document.documentElement.style.setProperty('--node-scale', size.scale);
-    
-    // Actualizar UI
-    currentLabel.textContent = size.label;
-    currentLabel.title = size.description;
-    
-    // Actualizar botones activos
-    buttonsContainer.querySelectorAll('button').forEach(btn => {
-      btn.classList.toggle('is-active', btn.dataset.size === sizeKey);
-    });
-
-    // Guardar preferencia
-    localStorage.setItem(STORAGE_KEY, sizeKey);
-    currentSize = sizeKey;
-
-    // Trigger resize en nodos si es necesario
-    // (El CSS ya maneja el cambio via --node-scale)
+  const applyScale = (scale, persist = true) => {
+    currentScale = clampScale(Number(scale) || 1);
+    document.documentElement.style.setProperty("--node-scale", currentScale.toFixed(2));
+    slider.value = String(currentScale);
+    currentLabel.textContent = formatPercent(currentScale);
+    if (persist) {
+      localStorage.setItem(STORAGE_KEY, currentScale.toFixed(2));
+    }
   };
 
-  // Crear botones
-  Object.entries(sizes).forEach(([key, config]) => {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'node-size-btn';
-    btn.dataset.size = key;
-    btn.textContent = config.label;
-    btn.title = config.description;
-    
-    if (key === currentSize) {
-      btn.classList.add('is-active');
-    }
-
-    btn.addEventListener('click', () => {
-      applySize(key);
-    });
-
-    buttonsContainer.appendChild(btn);
+  slider.addEventListener("input", () => {
+    applyScale(slider.value);
   });
 
-  // Aplicar tamaño inicial
-  applySize(currentSize);
+  const initialScale = parseSavedScale();
+  applyScale(initialScale, true);
 
-  // Insertar en el container (dentro de los controles del ether)
-  if (container) {
-    container.appendChild(controlWrapper);
+  if (controlsContainer) {
+    controlsContainer.insertAdjacentElement("afterend", controlWrapper);
+  } else if (etherContainer) {
+    etherContainer.appendChild(controlWrapper);
   }
 
   return {
     element: controlWrapper,
-    setSize: applySize,
-    getSize: () => currentSize,
-    getSizes: () => sizes
+    setScale: (scale) => applyScale(scale, true),
+    getScale: () => currentScale
   };
 }
 
 // Auto-init si encuentra el contenedor
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
-    const controlsBody = document.querySelector('.woerter-ether-controls-body');
-    if (controlsBody) {
-      console.log('🍋 Creando control de tamaño de nodos');
-      window.nodeSizeControl = createNodeSizeControl(controlsBody);
+    const etherContainer = document.querySelector('.woerter-ether');
+    if (!etherContainer) return;
+    const controls = etherContainer.querySelector('.woerter-ether-controls');
+    if (controls) {
+      window.nodeSizeControl = createNodeSizeControl(etherContainer, controls);
     }
   }, 100);
 });
