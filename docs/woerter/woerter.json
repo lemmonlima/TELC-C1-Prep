@@ -527,6 +527,38 @@
       ],
       "type": "präposition",
       "tags": ["formal", "argumentación", "contexto"]
+    },
+    {
+      "id": "gestalten",
+      "word": "gestalten",
+      "translation": "dar forma, configurar, diseñar, organizar",
+      "explanation": "Verbo que expresa la acción activa de crear, organizar o dar forma a algo de manera consciente y planificada. Muy usado en contextos de planificación, diseño y desarrollo.",
+      "erklärung": "Etwas bewusst formen, organisieren oder entwickeln; einer Sache eine bestimmte Form oder Struktur geben.",
+      "examples": [
+        { "example": "Die Digitalisierung ermöglicht es, Lernprozesse flexibler zu gestalten.", "translation": "La digitalización permite configurar procesos de aprendizaje de manera más flexible." },
+        { "example": "Studierende sollten ihr Studium aktiv mitgestalten können.", "translation": "Los estudiantes deberían poder coparticipar activamente en dar forma a sus estudios." },
+        { "example": "Wie können wir die Zukunft der Universität nachhaltiger gestalten?", "translation": "¿Cómo podemos diseñar el futuro de la universidad de manera más sostenible?" },
+        { "example": "Die Reform soll den Übergang zwischen Schule und Hochschule besser gestalten.", "translation": "La reforma debe organizar mejor la transición entre escuela y universidad." },
+        { "example": "Interkulturelle Projekte gestalten den Campus vielfältiger.", "translation": "Los proyectos interculturales dan forma al campus de manera más diversa." }
+      ],
+      "type": "verb",
+      "tags": ["acción", "planificación", "desarrollo", "diseño"]
+    },
+    {
+      "id": "benehmen",
+      "word": "sich benehmen",
+      "translation": "comportarse, conducirse",
+      "explanation": "Verbo reflexivo que describe la manera en que alguien actúa o se comporta en una situación social. Puede ser neutro o con matiz valorativo (bien/mal comportamiento).",
+      "erklärung": "Reflexives Verb: sich in einer bestimmten Weise verhalten, besonders in sozialen Situationen.",
+      "examples": [
+        { "example": "In akademischen Diskussionen sollte man sich respektvoll benehmen.", "translation": "En discusiones académicas uno debería comportarse con respeto." },
+        { "example": "Studierende benehmen sich im Auslandssemester oft als Botschafter ihrer Kultur.", "translation": "Los estudiantes en el semestre en el extranjero a menudo se comportan como embajadores de su cultura." },
+        { "example": "Wie man sich in Prüfungssituationen benimmt, kann das Ergebnis beeinflussen.", "translation": "Cómo uno se comporta en situaciones de examen puede influir en el resultado." },
+        { "example": "Bei internationalen Konferenzen muss man sich professionell benehmen.", "translation": "En conferencias internacionales uno debe conducirse profesionalmente." },
+        { "example": "Das Benehmen der Teilnehmenden war beispielhaft.", "translation": "El comportamiento de los participantes fue ejemplar." }
+      ],
+      "type": "verb",
+      "tags": ["comportamiento", "social", "conducta"]
     }
   ]
 }
