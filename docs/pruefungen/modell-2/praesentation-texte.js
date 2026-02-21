@@ -79,7 +79,7 @@ Trotzdem wäre eine generelle Verpflichtung problematisch. Erstens sind die fina
 
 Auch organisatorische Hürden bleiben ein Thema: Anerkennung von Leistungen, Wohnungssuche und Bürokratie. Wenn Hochschulen ein Auslandssemester ernsthaft fördern wollen, müssen sie genau diese Hindernisse abbauen. Dazu gehören transparente Anerkennungsregeln, bessere Beratung und gezielte Stipendien für Studierende mit geringeren finanziellen Ressourcen.
 
-Darüber hinaus sollte man die Qualität der Auslandserfahrung stärker sichern. Ein Aufenthalt bringt nur dann echten Mehrwert, wenn er akademisch gut eingebettet ist, zum Beispiel durch klare Lernziele, Vorbereitungsseminare und eine Nachbereitung nach der Rückkehr. Sonst bleibt er manchmal eher biografisch interessant als fachlich wirksam.
+Darüber hinaus sollte man die Qualität der Auslandserfahrung stärker sichern. Ein Aufenthalt bringt nur dann echten Mehrwert, wenn er akademisch gut eingebettet ist, zum Beispiel durch klare Lernziele, Vorbereitungsseminare und eine Nachbereitung nach der Rückkehr. Sonst bleibt er manchmal eher biografisch interessant als fachlich wirksam. Auch ein strukturiertes Mentoring während des Aufenthalts kann helfen, Lernziele wirklich zu erreichen.
 
 Aus meiner Sicht ist deshalb ein Mittelweg sinnvoll: kein Zwang, aber starke strukturelle Förderung. Universitäten sollten internationale Erfahrung als wichtigen Bildungsbaustein behandeln und mehr flexible Formate anbieten, zum Beispiel kurze Mobilitätsprogramme, virtuelle Kooperationen oder kombinierte Praktikumsmodelle.
 
@@ -95,7 +95,7 @@ So können mehr Studierende internationale Kompetenz erwerben, ohne dass soziale
 
 <p>Auch organisatorische Hürden bleiben ein Thema: Anerkennung von Leistungen, Wohnungssuche und Bürokratie. Wenn Hochschulen ein Auslandssemester ernsthaft fördern wollen, müssen sie genau diese Hindernisse abbauen. Dazu gehören transparente Anerkennungsregeln, bessere Beratung und gezielte Stipendien für Studierende mit geringeren finanziellen Ressourcen.</p>
 
-<p>Darüber hinaus sollte man die Qualität der Auslandserfahrung stärker sichern. Ein Aufenthalt bringt nur dann echten Mehrwert, wenn er akademisch gut eingebettet ist, zum Beispiel durch klare Lernziele, Vorbereitungsseminare und eine Nachbereitung nach der Rückkehr. Sonst bleibt er manchmal eher biografisch interessant als fachlich wirksam.</p>
+<p>Darüber hinaus sollte man die Qualität der Auslandserfahrung stärker sichern. Ein Aufenthalt bringt nur dann echten Mehrwert, wenn er akademisch gut eingebettet ist, zum Beispiel durch klare Lernziele, Vorbereitungsseminare und eine Nachbereitung nach der Rückkehr. Sonst bleibt er manchmal eher biografisch interessant als fachlich wirksam. Auch ein strukturiertes Mentoring während des Aufenthalts kann helfen, Lernziele wirklich zu erreichen.</p>
 
 <p>Aus meiner Sicht ist deshalb ein <strong>Mittelweg</strong> sinnvoll: kein Zwang, aber starke strukturelle Förderung. Universitäten sollten internationale Erfahrung als wichtigen Bildungsbaustein behandeln und mehr flexible Formate anbieten, zum Beispiel kurze Mobilitätsprogramme, virtuelle Kooperationen oder kombinierte Praktikumsmodelle.</p>
 
@@ -153,7 +153,7 @@ Auch gesellschaftlich ist Mehrsprachigkeit relevant. In pluralen Gesellschaften 
 
 Trotz dieser Chancen darf man die Herausforderungen nicht übersehen. Sprachenlernen erfordert Zeit, kontinuierliche Übung und Motivation. Nicht alle haben gleiche Lernbedingungen, etwa wegen sozialer Herkunft, Schulqualität oder finanzieller Ressourcen. Außerdem kann ein rein ökonomischer Blick problematisch sein, wenn nur nützliche Sprachen gefördert werden und kleinere Sprachen an Wert verlieren.
 
-Mehrsprachigkeit hat außerdem eine identitätsbezogene Dimension. Viele Menschen bewegen sich zwischen mehreren sprachlichen Räumen und entwickeln dadurch ein differenzierteres Verständnis von Zugehörigkeit. Das kann gesellschaftlichen Zusammenhalt stärken, wenn Bildungssysteme diese Vielfalt nicht als Defizit, sondern als Ressource behandeln.
+Mehrsprachigkeit hat außerdem eine identitätsbezogene Dimension. Viele Menschen bewegen sich zwischen mehreren sprachlichen Räumen und entwickeln dadurch ein differenzierteres Verständnis von Zugehörigkeit. Das kann gesellschaftlichen Zusammenhalt stärken, wenn Bildungssysteme diese Vielfalt nicht als Defizit, sondern als Ressource behandeln. Gleichzeitig fördert es Perspektivenwechsel, weil man Gedanken in unterschiedlichen kulturellen Rahmen einordnen lernt.
 
 Deshalb sollte Mehrsprachigkeit aus meiner Sicht nicht als individueller Druck verstanden werden, nach dem Motto: Wer nur eine Sprache spricht, ist automatisch im Nachteil. Vielmehr braucht es faire Bildungsstrukturen, die Sprachenlernen früh, praxisnah und langfristig unterstützen.
 
@@ -169,7 +169,7 @@ Mein Fazit: Ja, Mehrsprachigkeit ist eine Schlüsselkompetenz des 21. Jahrhunder
 
 <p>Trotz dieser Chancen darf man die Herausforderungen nicht übersehen. Sprachenlernen erfordert Zeit, kontinuierliche Übung und Motivation. Nicht alle haben gleiche Lernbedingungen, etwa wegen sozialer Herkunft, Schulqualität oder finanzieller Ressourcen. Außerdem kann ein rein ökonomischer Blick problematisch sein, wenn nur nützliche Sprachen gefördert werden und kleinere Sprachen an Wert verlieren.</p>
 
-<p>Mehrsprachigkeit hat außerdem eine identitätsbezogene Dimension. Viele Menschen bewegen sich zwischen mehreren sprachlichen Räumen und entwickeln dadurch ein differenzierteres Verständnis von Zugehörigkeit. Das kann gesellschaftlichen Zusammenhalt stärken, wenn Bildungssysteme diese Vielfalt nicht als Defizit, sondern als Ressource behandeln.</p>
+<p>Mehrsprachigkeit hat außerdem eine identitätsbezogene Dimension. Viele Menschen bewegen sich zwischen mehreren sprachlichen Räumen und entwickeln dadurch ein differenzierteres Verständnis von Zugehörigkeit. Das kann gesellschaftlichen Zusammenhalt stärken, wenn Bildungssysteme diese Vielfalt nicht als Defizit, sondern als Ressource behandeln. Gleichzeitig fördert es Perspektivenwechsel, weil man Gedanken in unterschiedlichen kulturellen Rahmen einordnen lernt.</p>
 
 <p>Deshalb sollte Mehrsprachigkeit aus meiner Sicht nicht als individueller Druck verstanden werden, nach dem Motto: Wer nur eine Sprache spricht, ist automatisch im Nachteil. Vielmehr braucht es faire Bildungsstrukturen, die Sprachenlernen früh, praxisnah und langfristig unterstützen.</p>
 
