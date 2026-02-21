@@ -13,18 +13,16 @@
   <main class="pruefung-container" id="section-root" data-section="sa" data-modell="2">
 
     <div data-content="themen" hidden>
-      <!-- TODO: 2 themes:
-      <div data-thema="KEY1">
-        <h3>Thema 1: Title</h3>
-        <div class="zitat">„Quote 1"</div>
-        <div class="zitat">„Quote 2"</div>
+      <div data-thema="digitalisierung">
+        <h3>Thema 1: Digitalisierung in der Hochschulbildung</h3>
+        <div class="zitat">„Digitale Medien eröffnen völlig neue Bildungschancen."</div>
+        <div class="zitat">„Digitale Medien machen oberflächlich und abhängig."</div>
       </div>
-      <div data-thema="KEY2">
-        <h3>Thema 2: Title</h3>
-        <div class="zitat">„Quote 1"</div>
-        <div class="zitat">„Quote 2"</div>
+      <div data-thema="ethikpflicht">
+        <h3>Thema 2: Ethik als Pflichtfach</h3>
+        <div class="zitat">„Alle Studierenden sollten Pflichtkurse in Ethik belegen."</div>
+        <div class="zitat">„Jeder sollte selbst entscheiden, was er lernt."</div>
       </div>
-      -->
     </div>
 
   </main>
@@ -32,7 +30,22 @@
   <script src="../shared/pruefung.js"></script>
   <script>
     SectionBuilder.sa(document.getElementById('section-root'), document.getElementById('section-root'));
-    Pruefung.initSA({ /* TODO: themes object */ });
+    Pruefung.initSA({
+      digitalisierung: {
+        title: 'Thema 1: Digitalisierung in der Hochschulbildung',
+        zitate: [
+          'Digitale Medien eröffnen völlig neue Bildungschancen.',
+          'Digitale Medien machen oberflächlich und abhängig.'
+        ]
+      },
+      ethikpflicht: {
+        title: 'Thema 2: Ethik als Pflichtfach',
+        zitate: [
+          'Alle Studierenden sollten Pflichtkurse in Ethik belegen.',
+          'Jeder sollte selbst entscheiden, was er lernt.'
+        ]
+      }
+    });
   </script>
 </body>
 </html>
