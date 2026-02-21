@@ -100,10 +100,15 @@ Ejemplos a revisar:
 
 ## 📁 Archivos Importantes
 
+### Modificados:
+- `docs/topbar.js` - Fix para topbar duplicado (detección de elementos existentes)
+- `docs/texte/styles-mobile-texte.css` - CSS con optimizaciones móviles + CSS defensivo
+
 ### Nuevos archivos:
 - `docs/texte/styles-mobile-texte.css` - CSS con optimizaciones móviles
 - `add-mobile-texte-css.sh` - Script de integración (ya ejecutado)
 - `MOBILE-TEXTE-FIX.md` - Esta documentación
+- `TOPBAR-DUPLICATION-FIX.md` - Documentación detallada del fix de topbar
 
 ### Backups:
 Todos los archivos HTML tienen backup con extensión `.bak`
