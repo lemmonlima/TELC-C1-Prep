@@ -1,24 +1,30 @@
 /**
  * node-size-control.js
- * Control para ajustar el tamaño del canvas del grafo ether
+ * Control para ajustar el tamaño INTERNO del canvas del grafo ether
  */
 
 function createCanvasSizeControl(etherContainer) {
-  const STORAGE_KEY = "telc-ether-canvas-vh";
-  const MIN_VH = 50;
-  const MAX_VH = 92;
-  const STEP = 1;
+  const STORAGE_KEY = "telc-ether-world-size";
+  const LEGACY_STORAGE_KEY = "telc-ether-canvas-vh";
+  const MIN_SIZE = 700;
+  const MAX_SIZE = 2200;
+  const STEP = 50;
+  const DEFAULT_SIZE = 1000;
 
-  const clampVh = (value) => Math.min(MAX_VH, Math.max(MIN_VH, value));
-
-  const defaultVh = window.matchMedia("(max-width: 768px)").matches ? 65 : 80;
+  const clampSize = (value) => Math.min(MAX_SIZE, Math.max(MIN_SIZE, value));
 
   const parseSavedVh = () => {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw == null) return defaultVh;
-    const parsed = Number(raw);
-    if (Number.isNaN(parsed)) return defaultVh;
-    return clampVh(parsed);
+    if (raw != null) {
+      const parsed = Number(raw);
+      if (!Number.isNaN(parsed)) return clampSize(parsed);
+    }
+    const legacyRaw = localStorage.getItem(LEGACY_STORAGE_KEY);
+    if (legacyRaw != null) {
+      const parsedLegacy = Number(legacyRaw);
+      if (!Number.isNaN(parsedLegacy)) return DEFAULT_SIZE;
+    }
+    return DEFAULT_SIZE;
   };
 
   const controlWrapper = document.createElement("div");
@@ -28,42 +34,43 @@ function createCanvasSizeControl(etherContainer) {
       type="range"
       class="canvas-size-slider"
       data-role="slider"
-      min="${MIN_VH}"
-      max="${MAX_VH}"
+      min="${MIN_SIZE}"
+      max="${MAX_SIZE}"
       step="${STEP}"
-      value="${defaultVh}"
-      aria-label="Ajustar tamaño del canvas"
+      value="${DEFAULT_SIZE}"
+      aria-label="Ajustar tamaño interno del canvas"
     />
   `;
 
   const slider = controlWrapper.querySelector('[data-role="slider"]');
-  let currentVh = defaultVh;
+  let currentSize = DEFAULT_SIZE;
 
-  const applyVh = (value, persist = true) => {
-    currentVh = clampVh(Number(value) || defaultVh);
-    etherContainer.style.setProperty("--ether-stage-vh", String(currentVh));
-    slider.value = String(currentVh);
+  const applyWorldSize = (value, persist = true) => {
+    currentSize = clampSize(Number(value) || DEFAULT_SIZE);
+    slider.value = String(currentSize);
+    window.__telcEtherWorldSize = currentSize;
     if (persist) {
-      localStorage.setItem(STORAGE_KEY, String(currentVh));
+      localStorage.setItem(STORAGE_KEY, String(currentSize));
     }
+    window.dispatchEvent(new CustomEvent("telc:ether-world-size-change", { detail: { size: currentSize } }));
     requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
   };
 
   slider.addEventListener("input", () => {
-    applyVh(slider.value);
+    applyWorldSize(slider.value);
   });
 
   const stage = etherContainer.querySelector(".woerter-ether-stage");
   if (stage) stage.insertAdjacentElement("afterend", controlWrapper);
   else etherContainer.appendChild(controlWrapper);
 
-  const initialVh = parseSavedVh();
-  applyVh(initialVh, true);
+  const initialSize = parseSavedVh();
+  applyWorldSize(initialSize, true);
 
   return {
     element: controlWrapper,
-    setVh: (vh) => applyVh(vh, true),
-    getVh: () => currentVh
+    setWorldSize: (size) => applyWorldSize(size, true),
+    getWorldSize: () => currentSize
   };
 }
 
