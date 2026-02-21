@@ -31,12 +31,12 @@ const EXAM_DATA = {
   },
 
   themaTexte: {
-    a1: '/* TODO */',
-    a2: '/* TODO */',
-    b1: '/* TODO */',
-    b2: '/* TODO */',
-    c1: '/* TODO */',
-    c2: '/* TODO */'
+    a1: 'Sollten Studierende im Bachelor verpflichtend ein Service-Learning-Projekt absolvieren? Begründen Sie Ihre Position und berücksichtigen Sie auch mögliche Nachteile.',
+    a2: 'Ist eine verbindliche Anwesenheit in Lehrveranstaltungen heute noch zeitgemäß? Nehmen Sie differenziert Stellung.',
+    b1: 'Wie können Mentoringprogramme im ersten Studienjahr Studienabbrüche reduzieren? Erläutern Sie wirksame Elemente und Grenzen.',
+    b2: 'Sollte KI-gestütztes Feedback bei wissenschaftlichen Texten offiziell in die Lehre integriert werden? Begründen Sie Ihre Meinung.',
+    c1: 'Welche Verantwortung haben Hochschulen für die soziale und akademische Integration internationaler Studierender?',
+    c2: 'Was ist für die Zukunft der Universitäten wichtiger: mehr Interdisziplinarität oder stärkere Spezialisierung?'
   },
 
   saThemen: {
@@ -157,13 +157,13 @@ Dozent: Vielen Dank, Frau Professor Aydin, für diesen klar strukturierten und p
 Ende des Subtests Hörverstehen.`,
 
   diskussionZitate: {
-    1: { text:'/* TODO */', autor:'/* TODO */',
-         aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
-    2: { text:'/* TODO */', autor:'/* TODO */',
-         aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
-    3: { text:'/* TODO */', autor:'/* TODO */',
-         aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
-    4: { text:'/* TODO */', autor:'/* TODO */',
-         aspekte:['/* TODO */','/* TODO */','/* TODO */','/* TODO */'] },
+    1: { text:'Es hört doch jeder nur, was er versteht.', autor:'Johann Wolfgang von Goethe (1749–1832), Dichter',
+         aspekte:['Warum verstehen Menschen dieselbe Information oft unterschiedlich?','Welche Rolle spielen Vorwissen und Perspektive in Diskussionen?','Wie kann man Missverständnisse im Studium vermeiden?','Welche Verantwortung tragen Sender und Empfänger in der Kommunikation?'] },
+    2: { text:'Alles Leben ist Problemlösen.', autor:'Karl Popper (1902–1994), Philosoph',
+         aspekte:['Ist Problemlösekompetenz wichtiger als reines Fachwissen?','Welche Probleme lassen sich im Studium besonders gut trainieren?','Wie geht man mit Unsicherheit und Fehlern produktiv um?','Wo stößt eine rein lösungsorientierte Haltung an Grenzen?'] },
+    3: { text:'Wer aufhört, besser zu werden, hat aufgehört, gut zu sein.', autor:'Marie von Ebner-Eschenbach (1830–1916), Schriftstellerin',
+         aspekte:['Ist kontinuierliche Verbesserung in allen Berufen notwendig?','Wie realistisch ist ständiger Leistungsanspruch im Studienalltag?','Welche Rolle spielen Pausen, Grenzen und Selbstfürsorge?','Wie unterscheidet man Weiterentwicklung von Perfektionismus?'] },
+    4: { text:'Habe Mut, dich deines eigenen Verstandes zu bedienen.', autor:'Immanuel Kant (1724–1804), Philosoph',
+         aspekte:['Was bedeutet eigenständiges Denken im Zeitalter von KI und Social Media?','Wie kann Bildung kritisches Urteilen konkret fördern?','Wo liegt die Grenze zwischen Orientierung an Experten und blindem Folgen?','Welche Verantwortung haben Hochschulen für intellektuelle Selbstständigkeit?'] },
   }
 };
