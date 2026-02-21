@@ -10,8 +10,27 @@ En dispositivos móviles, las páginas de textos en `docs/texte/produktion-ds/` 
 
 ## ✅ Solución Implementada
 
-### 1. Archivo CSS Móvil Creado
-**Archivo:** `docs/texte/styles-mobile-texte.css` (6.0 KB)
+### 1. Fix Topbar Duplicado
+**Archivos modificados:**
+- `docs/topbar.js` - Detección de topbar/controles existentes
+- `docs/texte/styles-mobile-texte.css` - CSS defensivo anti-duplicación
+
+**Cambios en topbar.js:**
+- `initTopbar()` ahora verifica si el topbar ya existe en el HTML antes de crearlo
+- `initTopbarControls()` detecta si los botones ya existen antes de crearlos
+- Solo adjunta event handlers (no duplica elementos DOM)
+- Compatible con topbars estáticos (HTML) y dinámicos (JS)
+
+**CSS defensivo agregado:**
+```css
+.topbar ~ .topbar { display: none !important; }
+.topbar-show-trigger ~ .topbar-show-trigger { display: none !important; }
+```
+
+Ver detalles completos en: **`TOPBAR-DUPLICATION-FIX.md`**
+
+### 2. Archivo CSS Móvil Creado
+**Archivo:** `docs/texte/styles-mobile-texte.css` (6.2 KB)
 
 Optimizaciones específicas:
 - **Topbar**: Mejor padding con safe-area-inset para dispositivos con notch
