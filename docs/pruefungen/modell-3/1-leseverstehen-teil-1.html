@@ -13,20 +13,29 @@
   <main class="pruefung-container" id="section-root" data-section="lv1" data-modell="3">
 
     <div data-content="text" hidden>
-      <h3><!-- TODO: Titel --></h3>
-      <!-- TODO: Paragraphs with <span class="luecke">0</span> through <span class="luecke">6</span> -->
+      <h3>Von geschlossenen Archiven zu Open Data</h3>
+      <p>Als in den 1980er Jahren erste Umweltmessdaten digital gespeichert wurden, blieben sie meist in einzelnen Instituten verschlossen. <span class="luecke">0</span> Erst deutlich später änderte sich diese Praxis: Mit schnelleren Netzen und günstigen Speichersystemen entstanden frei zugängliche Repositorien, in die Forschungsteams ihre Datensätze hochladen konnten. <span class="luecke">1</span></p>
+
+      <h4>Von der Sammlung zur Zusammenarbeit</h4>
+      <p>Die neue Infrastruktur war jedoch mehr als nur ein technisches Upgrade. <span class="luecke">2</span> Nun ließen sich Messreihen gemeinsam bereinigen, versionieren und kommentieren. Wenn ein Team einen Fehler entdeckte, wurde die Korrektur für alle sichtbar. <span class="luecke">3</span></p>
+
+      <h4>Transparenz braucht Standards</h4>
+      <p>Offene Daten allein garantieren noch keine verlässliche Wissenschaft. Viele Dateien enthielten anfangs kryptische Spaltennamen oder unklare Angaben zur Erhebungsmethode. <span class="luecke">4</span> Erst dadurch konnten externe Gruppen nachvollziehen, wie aus Rohdaten belastbare Ergebnisse wurden. Zusätzlich führten Zeitschriften Checklisten ein, die vor der Veröffentlichung abgearbeitet werden mussten. <span class="luecke">5</span></p>
+
+      <h4>Open Data als neuer Normalfall</h4>
+      <p>Inzwischen gehört Open Data in vielen Disziplinen zum Standard, auch wenn nicht alle Fragen gelöst sind. Datenschutz, Urheberrecht und der Schutz sensibler Forschungsbereiche erfordern weiterhin differenzierte Entscheidungen. <span class="luecke">6</span> Gleichzeitig zeigt die Entwicklung der letzten Jahre, dass offene Daten Kooperation beschleunigen und Forschung robuster machen können.</p>
     </div>
 
     <div data-content="options" hidden>
-      <div data-key="a"><!-- TODO: Satz a --></div>
-      <div data-key="b"><!-- TODO: Satz b --></div>
-      <div data-key="c"><!-- TODO: Satz c --></div>
-      <div data-key="d"><!-- TODO: Satz d --></div>
-      <div data-key="e"><!-- TODO: Satz e --></div>
-      <div data-key="f"><!-- TODO: Satz f --></div>
-      <div data-key="g"><!-- TODO: Satz g --></div>
-      <div data-key="h"><!-- TODO: Satz h --></div>
-      <div data-key="z"><!-- TODO: Beispiel --> <strong>(Beispiel für Lücke 0)</strong></div>
+      <div data-key="a">Damit entstand ein neues Verständnis davon, wem wissenschaftliches Wissen eigentlich gehört.</div>
+      <div data-key="b">Diese Vorgaben erhöhten zwar den Aufwand, verbesserten aber die Vergleichbarkeit der Studien deutlich.</div>
+      <div data-key="c">Manche Institute verboten dennoch jede Weitergabe an externe Partner grundsätzlich.</div>
+      <div data-key="d">Heute fördern auch Forschungsförderer diese Entwicklung, indem sie offene Publikationsstandards verlangen.</div>
+      <div data-key="e">Gleichzeitig sank in vielen Regionen Europas die Zahl der Messstationen.</div>
+      <div data-key="f">Aus isolierten Datensammlungen wurden schrittweise kollaborative Arbeitsräume.</div>
+      <div data-key="g">So konnten Forschende in verschiedenen Ländern mit denselben Datensätzen arbeiten.</div>
+      <div data-key="h">In Datenmanagementplänen wurde deshalb festgelegt, wie Metadaten systematisch erfasst werden.</div>
+      <div data-key="z">Wer auf diese Dateien zugreifen wollte, musste oft per E-Mail oder Post darum bitten. <strong>(Beispiel für Lücke 0)</strong></div>
     </div>
 
   </main>
@@ -34,7 +43,7 @@
   <script src="../shared/pruefung.js"></script>
   <script>
     SectionBuilder.lv1(document.getElementById('section-root'), document.getElementById('section-root'));
-    Pruefung.initLV1({ 1:'', 2:'', 3:'', 4:'', 5:'', 6:'' });
+    Pruefung.initLV1({ 1:'g', 2:'f', 3:'a', 4:'h', 5:'b', 6:'d' });
   </script>
 </body>
 </html>
