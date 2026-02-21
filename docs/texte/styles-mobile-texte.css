@@ -3,6 +3,16 @@
  * Target: screens ≤ 640px (typical mobile devices)
  */
 
+/* Fix topbar duplication - hide all but first topbar */
+.topbar ~ .topbar {
+  display: none !important;
+}
+
+/* Ensure show-trigger doesn't duplicate */
+.topbar-show-trigger ~ .topbar-show-trigger {
+  display: none !important;
+}
+
 @media (max-width: 640px) {
   /* Reduce top padding on main to prevent overlap */
   .doc-main {
