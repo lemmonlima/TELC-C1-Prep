@@ -40,13 +40,19 @@ const EXAM_DATA = {
   },
 
   saThemen: {
-    /* TODO: thema1key */ thema1: {
-      title: '/* TODO: Thema 1 title */',
-      zitate: ['/* TODO */', '/* TODO */']
+    thema1: {
+      title: 'Thema 1: Service Learning im Studium',
+      zitate: [
+        'Studierende sollten verpflichtend gesellschaftliche Praxisprojekte absolvieren.',
+        'Universitäten sind für wissenschaftliche Vertiefung da, nicht für Sozialarbeit.'
+      ]
     },
-    /* TODO: thema2key */ thema2: {
-      title: '/* TODO: Thema 2 title */',
-      zitate: ['/* TODO */', '/* TODO */']
+    thema2: {
+      title: 'Thema 2: Hybride Lehre an Hochschulen',
+      zitate: [
+        'Hybride Lehrformate erhöhen Chancengleichheit und Flexibilität.',
+        'Ohne Präsenzkultur verliert das Studium an Qualität und Verbindlichkeit.'
+      ]
     }
   },
 

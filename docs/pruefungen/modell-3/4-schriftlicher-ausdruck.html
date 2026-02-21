@@ -13,18 +13,16 @@
   <main class="pruefung-container" id="section-root" data-section="sa" data-modell="3">
 
     <div data-content="themen" hidden>
-      <!-- TODO: 2 themes:
-      <div data-thema="KEY1">
-        <h3>Thema 1: Title</h3>
-        <div class="zitat">„Quote 1"</div>
-        <div class="zitat">„Quote 2"</div>
+      <div data-thema="thema1">
+        <h3>Thema 1: Service Learning im Studium</h3>
+        <div class="zitat">„Studierende sollten verpflichtend gesellschaftliche Praxisprojekte absolvieren."</div>
+        <div class="zitat">„Universitäten sind für wissenschaftliche Vertiefung da, nicht für Sozialarbeit."</div>
       </div>
-      <div data-thema="KEY2">
-        <h3>Thema 2: Title</h3>
-        <div class="zitat">„Quote 1"</div>
-        <div class="zitat">„Quote 2"</div>
+      <div data-thema="thema2">
+        <h3>Thema 2: Hybride Lehre an Hochschulen</h3>
+        <div class="zitat">„Hybride Lehrformate erhöhen Chancengleichheit und Flexibilität."</div>
+        <div class="zitat">„Ohne Präsenzkultur verliert das Studium an Qualität und Verbindlichkeit."</div>
       </div>
-      -->
     </div>
 
   </main>
@@ -32,7 +30,22 @@
   <script src="../shared/pruefung.js"></script>
   <script>
     SectionBuilder.sa(document.getElementById('section-root'), document.getElementById('section-root'));
-    Pruefung.initSA({ /* TODO: themes object */ });
+    Pruefung.initSA({
+      thema1: {
+        title: 'Thema 1: Service Learning im Studium',
+        zitate: [
+          'Studierende sollten verpflichtend gesellschaftliche Praxisprojekte absolvieren.',
+          'Universitäten sind für wissenschaftliche Vertiefung da, nicht für Sozialarbeit.'
+        ]
+      },
+      thema2: {
+        title: 'Thema 2: Hybride Lehre an Hochschulen',
+        zitate: [
+          'Hybride Lehrformate erhöhen Chancengleichheit und Flexibilität.',
+          'Ohne Präsenzkultur verliert das Studium an Qualität und Verbindlichkeit.'
+        ]
+      }
+    });
   </script>
 </body>
 </html>
