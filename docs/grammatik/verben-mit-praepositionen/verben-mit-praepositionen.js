@@ -1271,6 +1271,10 @@ function buildEther(container, entries, baseVerb, options = {}) {
   if (flashcards) wrapper.appendChild(flashcards.root);
   container.appendChild(wrapper);
 
+  if (typeof window.initCanvasSizeControls === "function") {
+    window.initCanvasSizeControls(wrapper);
+  }
+
   const state = {
     nodes: [],
     edges: [],
