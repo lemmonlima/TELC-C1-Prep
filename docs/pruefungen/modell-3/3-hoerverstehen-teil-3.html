@@ -12,19 +12,119 @@
 <body>
   <main class="pruefung-container" id="section-root" data-section="hv3" data-modell="3">
 
-    <div data-content="thema" hidden><!-- TODO: Thema --></div>
+    <div data-content="thema" hidden>Gastvortrag „Service Learning als Hochschulformat"</div>
 
     <div data-content="slides" hidden>
-      <!-- TODO: 5-7 slide-box divs. Each has unique content. Example:
+
       <div class="slide-box">
-        <div class="slide-titel">Slide title</div>
+        <div class="slide-titel">Präsentation</div>
         <div class="slide-content">
-          <p>Content</p>
-          <span class="input-label">65.</span>
-          <input type="text" class="slide-input" data-nummer="65" placeholder="...">
+          <p><strong>Hochschuldidaktisches Kolloquium</strong><br>
+          Lernen mit gesellschaftlicher Verantwortung</p>
+          <p><strong>Thema heute:</strong><br>
+          Service Learning als Verbindung von Studium und Praxis</p>
+          <p><strong>Referentin:</strong><br>
+          Prof. Dr. Miriam Aydin</p>
         </div>
       </div>
-      -->
+
+      <div class="slide-box">
+        <div class="slide-titel">Aktuelle Lage</div>
+        <div class="slide-content">
+          <p><strong>Interne Studierendenbefragung (2025)</strong></p>
+          <span class="input-label">65.</span>
+          <input type="text" class="slide-input" data-nummer="65" placeholder="Wie viele wünschen mehr Praxisbezug?">
+
+          <p style="margin-top: 1.25rem;"><strong>Häufigstes Motiv</strong></p>
+          <span class="input-label">66.</span>
+          <input type="text" class="slide-input" data-nummer="66" placeholder="Zentrale Motivation der Teilnehmenden">
+        </div>
+      </div>
+
+      <div class="slide-box">
+        <div class="slide-titel">Typische Einstiegshürden</div>
+        <div class="slide-content">
+          <p><strong>Probleme in klassischen Seminaren</strong></p>
+          <ul>
+            <li>
+              <span class="input-label">67a.</span>
+              <input type="text" class="slide-input" data-nummer="67a" placeholder="Erste Hürde">
+            </li>
+            <li>
+              <span class="input-label">67b.</span>
+              <input type="text" class="slide-input" data-nummer="67b" placeholder="Zweite Hürde">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slide-box">
+        <div class="slide-titel">Pilotprojekt „Campus hilft Stadtteil"</div>
+        <div class="slide-content">
+          <p><strong>Beispiele für Projektmodule</strong></p>
+          <ul>
+            <li>
+              <span class="input-label">68a.</span>
+              <input type="text" class="slide-input" data-nummer="68a" placeholder="Projektbeispiel 1">
+            </li>
+            <li>
+              <span class="input-label">68b.</span>
+              <input type="text" class="slide-input" data-nummer="68b" placeholder="Projektbeispiel 2">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slide-box">
+        <div class="slide-titel">Didaktischer Mehrwert</div>
+        <div class="slide-content">
+          <p><strong>Kernkompetenz</strong></p>
+          <span class="input-label">69.</span>
+          <input type="text" class="slide-input" data-nummer="69" placeholder="Welche Kompetenz wird besonders gestärkt?">
+
+          <p style="margin-top: 1.25rem;"><strong>Bewertungslogik früher:</strong></p>
+          <span class="input-label">70a.</span>
+          <input type="text" class="slide-input" data-nummer="70a" placeholder="Früherer Fokus">
+
+          <p style="margin-top: 0.75rem;"><strong>Bewertungslogik heute:</strong></p>
+          <span class="input-label">70b.</span>
+          <input type="text" class="slide-input" data-nummer="70b" placeholder="Heutiger Fokus">
+        </div>
+      </div>
+
+      <div class="slide-box">
+        <div class="slide-titel">Qualitätssicherung</div>
+        <div class="slide-content">
+          <p><strong>Verbindliche Mindeststandards</strong></p>
+          <ul>
+            <li>
+              <span class="input-label">71a.</span>
+              <input type="text" class="slide-input" data-nummer="71a" placeholder="Standard 1">
+            </li>
+            <li>
+              <span class="input-label">71b.</span>
+              <input type="text" class="slide-input" data-nummer="71b" placeholder="Standard 2">
+            </li>
+          </ul>
+          <p style="margin-top: 1rem;"><strong>Feedback an Projektgruppen:</strong></p>
+          <span class="input-label">72.</span>
+          <input type="text" class="slide-input" data-nummer="72" placeholder="Zeitrahmen für Feedback">
+        </div>
+      </div>
+
+      <div class="slide-box">
+        <div class="slide-titel">Ausblick bis 2028</div>
+        <div class="slide-content">
+          <p><strong>Größte Herausforderung:</strong></p>
+          <span class="input-label">73.</span>
+          <input type="text" class="slide-input" data-nummer="73" placeholder="Strukturelles Problem">
+
+          <p style="margin-top: 1.25rem;"><strong>Zielstruktur der Hochschule:</strong></p>
+          <span class="input-label">74.</span>
+          <input type="text" class="slide-input" data-nummer="74" placeholder="Geplante Einrichtung">
+        </div>
+      </div>
+
     </div>
 
   </main>
@@ -33,9 +133,20 @@
   <script>
     SectionBuilder.hv3(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initHV3({
-      65:[], 66:[], '67a':[], '67b':[], '68a':[], '68b':[],
-      69:[], '70a':[], '70b':[], '71a':[], '71b':[],
-      72:[], 73:[], 74:[]
+      65:['zwei drittel','2/3','zwei von drei','rund zwei drittel'],
+      66:['gesellschaftliche relevanz','gesellschaftlicher nutzen','relevanz'],
+      '67a':['zeitliche starrheit','starrheit','starre zeitraster'],
+      '67b':['fehlende externe partner','fehlende partner','externe partner'],
+      '68a':['sprachpatenschaften','sprachpatenschaft'],
+      '68b':['energiesprechstunden','energiesprechstunde','energie-sprechstunden'],
+      69:['reflexionskompetenz','reflexionsfähigkeit','reflexion'],
+      '70a':['endprodukt','produktorientierung'],
+      '70b':['lernprozess','prozessbewertung','prozessorientierung'],
+      '71a':['klare rollen','rollenklärung','rollen'],
+      '71b':['verlässliche betreuung','zuverlässige betreuung','betreuung'],
+      72:['72 stunden','innerhalb von 72 stunden','drei tagen','3 tagen'],
+      73:['dauerhafte koordination','langfristige koordination','koordination'],
+      74:['zentrales transferbüro','transferbüro','transferbuero','zentrale transferstelle']
     }, {
       65:'65', 66:'66', '67a':'67 (Teil 1)', '67b':'67 (Teil 2)',
       '68a':'68 (Teil 1)', '68b':'68 (Teil 2)', 69:'69',
