@@ -83,7 +83,7 @@ Darüber hinaus sollte man die Qualität der Auslandserfahrung stärker sichern.
 
 Aus meiner Sicht ist deshalb ein Mittelweg sinnvoll: kein Zwang, aber starke strukturelle Förderung. Universitäten sollten internationale Erfahrung als wichtigen Bildungsbaustein behandeln und mehr flexible Formate anbieten, zum Beispiel kurze Mobilitätsprogramme, virtuelle Kooperationen oder kombinierte Praktikumsmodelle.
 
-So können mehr Studierende internationale Kompetenz erwerben, ohne dass soziale Ungleichheiten verstärkt werden. Mein Fazit lautet: Ein Auslandssemester sollte nicht verpflichtend, aber deutlich leichter zugänglich sein. Dann profitieren Individuum, Hochschule und Gesellschaft gleichermaßen. Vielen Dank!`,
+So können mehr Studierende internationale Kompetenz erwerben, ohne dass soziale Ungleichheiten verstärkt werden. Mein Fazit lautet: Ein Auslandssemester sollte nicht verpflichtend, aber deutlich leichter zugänglich sein. Dann profitieren Individuum, Hochschule und Gesellschaft gleichermaßen deutlich. Vielen Dank!`,
     html: `<div class="praesentation-titel">Teilnehmer B - Auslandssemester stärker fördern?</div>
 <p>Guten Tag! Heute möchte ich die Frage diskutieren, ob ein Auslandssemester für Studierende stärker gefördert oder sogar verpflichtend werden sollte. Ich stelle zunächst die wichtigsten Vorteile dar, gehe danach auf Gegenargumente ein und formuliere dann eine ausgewogene Position.</p>
 
@@ -99,7 +99,7 @@ So können mehr Studierende internationale Kompetenz erwerben, ohne dass soziale
 
 <p>Aus meiner Sicht ist deshalb ein <strong>Mittelweg</strong> sinnvoll: kein Zwang, aber starke strukturelle Förderung. Universitäten sollten internationale Erfahrung als wichtigen Bildungsbaustein behandeln und mehr flexible Formate anbieten, zum Beispiel kurze Mobilitätsprogramme, virtuelle Kooperationen oder kombinierte Praktikumsmodelle.</p>
 
-<p>So können mehr Studierende internationale Kompetenz erwerben, ohne dass soziale Ungleichheiten verstärkt werden. Mein Fazit lautet: Ein Auslandssemester sollte nicht verpflichtend, aber deutlich leichter zugänglich sein. Dann profitieren Individuum, Hochschule und Gesellschaft gleichermaßen. Vielen Dank!</p>`
+<p>So können mehr Studierende internationale Kompetenz erwerben, ohne dass soziale Ungleichheiten verstärkt werden. Mein Fazit lautet: Ein Auslandssemester sollte nicht verpflichtend, aber deutlich leichter zugänglich sein. Dann profitieren Individuum, Hochschule und Gesellschaft gleichermaßen deutlich. Vielen Dank!</p>`
   },
 
   b2: {
