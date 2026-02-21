@@ -345,7 +345,7 @@ function onWordClick(event) {
 
 async function loadExplanations() {
   try {
-    const response = await fetch('text-04-explanations.json', { cache: 'no-store' });
+    const response = await fetch('soziale-isolation-in-der-modernen-gesellschaft-explanations.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('Failed to load explanations');
     const data = await response.json();
     explanationsData = data || {};
@@ -413,7 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const flashcardsBtn = document.getElementById('text-flashcards');
   if (flashcardsBtn) {
     flashcardsBtn.addEventListener('click', () => {
-      window.location.href = 'text-04-flashcards.html';
+      window.location.href = 'soziale-isolation-in-der-modernen-gesellschaft-flashcards.html';
     });
   }
 });
