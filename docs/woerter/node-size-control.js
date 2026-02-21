@@ -1,89 +1,69 @@
 /**
  * node-size-control.js
- * Control para ajustar el tamaño de los nodos del grafo ether en vivo
+ * Control para ajustar el tamaño del canvas del grafo ether
  */
 
-function createNodeSizeControl(etherContainer, controlsContainer) {
-  const STORAGE_KEY = "telc-ether-node-scale";
-  const LEGACY_STORAGE_KEY = "telc-ether-node-size";
-  const MIN_SCALE = 0.7;
-  const MAX_SCALE = 1.8;
-  const STEP = 0.05;
+function createCanvasSizeControl(etherContainer) {
+  const STORAGE_KEY = "telc-ether-canvas-vh";
+  const MIN_VH = 50;
+  const MAX_VH = 92;
+  const STEP = 1;
 
-  const legacyMap = {
-    xs: 0.7,
-    s: 0.85,
-    m: 1.0,
-    l: 1.25,
-    xl: 1.5,
-    xxl: 1.8
-  };
+  const clampVh = (value) => Math.min(MAX_VH, Math.max(MIN_VH, value));
 
-  const clampScale = (value) => Math.min(MAX_SCALE, Math.max(MIN_SCALE, value));
+  const defaultVh = window.matchMedia("(max-width: 768px)").matches ? 65 : 80;
 
-  const parseSavedScale = () => {
+  const parseSavedVh = () => {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw != null) {
-      const parsed = Number(raw);
-      if (!Number.isNaN(parsed)) return clampScale(parsed);
-    }
-    const legacy = localStorage.getItem(LEGACY_STORAGE_KEY);
-    if (legacy && legacyMap[legacy]) return legacyMap[legacy];
-    return 1;
+    if (raw == null) return defaultVh;
+    const parsed = Number(raw);
+    if (Number.isNaN(parsed)) return defaultVh;
+    return clampVh(parsed);
   };
-
-  const formatPercent = (scale) => `${Math.round(scale * 100)}%`;
 
   const controlWrapper = document.createElement("div");
-  controlWrapper.className = "node-size-control";
+  controlWrapper.className = "canvas-size-control";
   controlWrapper.innerHTML = `
-    <div class="node-size-control-header">
-      <span class="node-size-label">Tamaño nodos</span>
-      <span class="node-size-current" data-role="current">100%</span>
-    </div>
     <input
       type="range"
-      class="node-size-slider"
+      class="canvas-size-slider"
       data-role="slider"
-      min="${MIN_SCALE}"
-      max="${MAX_SCALE}"
+      min="${MIN_VH}"
+      max="${MAX_VH}"
       step="${STEP}"
-      value="1"
-      aria-label="Ajustar tamaño de nodos"
+      value="${defaultVh}"
+      aria-label="Ajustar tamaño del canvas"
     />
   `;
 
   const slider = controlWrapper.querySelector('[data-role="slider"]');
-  const currentLabel = controlWrapper.querySelector('[data-role="current"]');
-  let currentScale = 1;
+  let currentVh = defaultVh;
 
-  const applyScale = (scale, persist = true) => {
-    currentScale = clampScale(Number(scale) || 1);
-    document.documentElement.style.setProperty("--node-scale", currentScale.toFixed(2));
-    slider.value = String(currentScale);
-    currentLabel.textContent = formatPercent(currentScale);
+  const applyVh = (value, persist = true) => {
+    currentVh = clampVh(Number(value) || defaultVh);
+    etherContainer.style.setProperty("--ether-stage-vh", String(currentVh));
+    slider.value = String(currentVh);
     if (persist) {
-      localStorage.setItem(STORAGE_KEY, currentScale.toFixed(2));
+      localStorage.setItem(STORAGE_KEY, String(currentVh));
     }
+    requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
   };
 
   slider.addEventListener("input", () => {
-    applyScale(slider.value);
+    applyVh(slider.value);
   });
 
-  const initialScale = parseSavedScale();
-  applyScale(initialScale, true);
+  const stage = etherContainer.querySelector(".woerter-ether-stage");
+  if (stage) stage.insertAdjacentElement("afterend", controlWrapper);
+  else etherContainer.appendChild(controlWrapper);
 
-  if (controlsContainer) {
-    controlsContainer.insertAdjacentElement("afterend", controlWrapper);
-  } else if (etherContainer) {
-    etherContainer.appendChild(controlWrapper);
-  }
+  const initialVh = parseSavedVh();
+  applyVh(initialVh, true);
 
   return {
     element: controlWrapper,
-    setScale: (scale) => applyScale(scale, true),
-    getScale: () => currentScale
+    setVh: (vh) => applyVh(vh, true),
+    getVh: () => currentVh
   };
 }
 
@@ -92,14 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     const etherContainer = document.querySelector('.woerter-ether');
     if (!etherContainer) return;
-    const controls = etherContainer.querySelector('.woerter-ether-controls');
-    if (controls) {
-      window.nodeSizeControl = createNodeSizeControl(etherContainer, controls);
-    }
+    window.canvasSizeControl = createCanvasSizeControl(etherContainer);
   }, 100);
 });
 
 // Export para uso manual
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { createNodeSizeControl };
+  module.exports = { createCanvasSizeControl };
 }
