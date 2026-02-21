@@ -258,5 +258,37 @@
     ],
     "synonyms": ["hauptsächlich", "vorwiegend", "größtenteils", "mehrheitlich"],
     "antonyms": ["vereinzelt", "selten", "kaum"]
+  },
+  "gleichzeitig": {
+    "word": "gleichzeitig",
+    "type": "adverb",
+    "translation": "al mismo tiempo, simultáneamente, a la vez",
+    "explanation": "Adverbio temporal y modal que indica que dos o más acciones, eventos o estados ocurren al mismo tiempo. También puede usarse como conjunción adversativa (bedeutet 'aber', 'jedoch') para contrastar o presentar un aspecto diferente de una situación.",
+    "sentence": "Gleichzeitig wird soziale Isolation längst nicht mehr nur als individuelles Problem verstanden, sondern als gesellschaftliche Herausforderung mit Folgen für Gesundheit, Arbeitswelt und demokratische Teilhabe.",
+    "sentenceTranslation": "Al mismo tiempo, el aislamiento social ya no se entiende solo como un problema individual, sino como un desafío social con consecuencias para la salud, el mundo laboral y la participación democrática.",
+    "examples": [
+      {
+        "de": "Er kann nicht gleichzeitig arbeiten und studieren.",
+        "es": "Él no puede trabajar y estudiar al mismo tiempo."
+      },
+      {
+        "de": "Die Veranstaltungen finden gleichzeitig in verschiedenen Städten statt.",
+        "es": "Los eventos tienen lugar simultáneamente en diferentes ciudades."
+      },
+      {
+        "de": "Sie ist eine erfolgreiche Geschäftsfrau und gleichzeitig eine fürsorgliche Mutter.",
+        "es": "Ella es una empresaria exitosa y al mismo tiempo una madre cariñosa."
+      },
+      {
+        "de": "Das Projekt ist ehrgeizig, gleichzeitig muss man realistisch bleiben.",
+        "es": "El proyecto es ambicioso, sin embargo hay que permanecer realista."
+      },
+      {
+        "de": "Die Digitalisierung schafft neue Chancen und stellt gleichzeitig neue Herausforderungen dar.",
+        "es": "La digitalización crea nuevas oportunidades y al mismo tiempo plantea nuevos desafíos."
+      }
+    ],
+    "synonyms": ["zugleich", "zur selben Zeit", "parallel", "simultan", "jedoch (como conjunción adversativa)"],
+    "antonyms": ["nacheinander", "hintereinander", "separat", "getrennt"]
   }
 }
