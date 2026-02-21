@@ -752,13 +752,21 @@ function focusNode(state, node, stage) {
   applyView(state);
 }
 
-const WORLD_SIZE = 1000;
+const DEFAULT_WORLD_SIZE = 1000;
+const MIN_WORLD_SIZE = 700;
+const MAX_WORLD_SIZE = 2200;
+
+function getWorldSize() {
+  const raw = Number(window.__telcEtherWorldSize);
+  if (Number.isNaN(raw)) return DEFAULT_WORLD_SIZE;
+  return Math.min(MAX_WORLD_SIZE, Math.max(MIN_WORLD_SIZE, raw));
+}
 
 function updateBounds(state, stage) {
   const rect = stage.getBoundingClientRect();
   if (!rect.width || !rect.height) return;
-  const worldW = WORLD_SIZE;
-  const worldH = WORLD_SIZE;
+  const worldW = getWorldSize();
+  const worldH = worldW;
   if (state.bounds.width && state.bounds.height) {
     const scaleX = worldW / state.bounds.width;
     const scaleY = worldH / state.bounds.height;
