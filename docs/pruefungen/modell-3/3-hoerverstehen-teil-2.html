@@ -12,17 +12,69 @@
 <body>
   <main class="pruefung-container" id="section-root" data-section="hv2" data-modell="3">
 
-    <div data-content="thema" hidden><!-- TODO: Thema --></div>
+    <div data-content="thema" hidden>Interview mit Lernforscherin Dr. Lena Vogt zu Konzentration und Prüfungslernen</div>
 
     <div data-content="fragen" hidden>
-      <!-- TODO: 10 questions (55-64), each with stem + 3 options:
       <div data-frage="55">
-        <div class="stem">Frage stem</div>
-        <div data-wert="a">Option a</div>
-        <div data-wert="b">Option b</div>
-        <div data-wert="c">Option c</div>
+        <div class="stem">Laut Dr. Vogt entsteht Aufschieben häufig durch</div>
+        <div data-wert="a">zu geringe intellektuelle Fähigkeiten.</div>
+        <div data-wert="b">unklare Einstiegsschritte und emotionale Überforderung.</div>
+        <div data-wert="c">fehlende digitale Lernplattformen.</div>
       </div>
-      -->
+      <div data-frage="56">
+        <div class="stem">Bei digitalen Unterbrechungen problematisch ist vor allem</div>
+        <div data-wert="a">die Anzahl der geöffneten Apps.</div>
+        <div data-wert="b">dass Pausen grundsätzlich zu lang werden.</div>
+        <div data-wert="c">die Zeit bis zur erneuten Konzentration.</div>
+      </div>
+      <div data-frage="57">
+        <div class="stem">Für komplexe Lernaufgaben empfiehlt Dr. Vogt</div>
+        <div data-wert="a">50 Minuten Arbeit und 10 Minuten Pause.</div>
+        <div data-wert="b">25 Minuten Arbeit ohne feste Pausen.</div>
+        <div data-wert="c">90 Minuten Arbeit mit anschließend freiem Rhythmus.</div>
+      </div>
+      <div data-frage="58">
+        <div class="stem">To-do-Listen helfen besonders dann, wenn sie</div>
+        <div data-wert="a">möglichst kurz und allgemein bleiben.</div>
+        <div data-wert="b">konkrete Handlungen mit Zeitpunkt benennen.</div>
+        <div data-wert="c">nach Schwierigkeit sortiert, aber unterminiert sind.</div>
+      </div>
+      <div data-frage="59">
+        <div class="stem">Lerngruppen sind laut Dr. Vogt wirksam, wenn</div>
+        <div data-wert="a">sie ohne feste Struktur spontan arbeiten.</div>
+        <div data-wert="b">die Mitglieder ähnliche Noten anstreben.</div>
+        <div data-wert="c">Ziele, Rollen und Zeitrahmen verbindlich vereinbart sind.</div>
+      </div>
+      <div data-frage="60">
+        <div class="stem">Eine Lernnacht vor der Prüfung</div>
+        <div data-wert="a">kann Fakten kurzfristig festigen, schwächt aber komplexes Denken.</div>
+        <div data-wert="b">verbessert vor allem Transfer- und Argumentationsleistungen.</div>
+        <div data-wert="c">ist bei allen Prüfungsformaten die effektivste Methode.</div>
+      </div>
+      <div data-frage="61">
+        <div class="stem">Von Hochschulen wünscht sich Dr. Vogt</div>
+        <div data-wert="a">freiwillige Beratungsangebote erst ab dem dritten Semester.</div>
+        <div data-wert="b">kurze verpflichtende Trainings im ersten Studienjahr.</div>
+        <div data-wert="c">mehr Prüfungen, um den Leistungsdruck zu erhöhen.</div>
+      </div>
+      <div data-frage="62">
+        <div class="stem">Professionelle Unterstützung sollten Studierende suchen, wenn</div>
+        <div data-wert="a">Belastungssymptome über Wochen anhalten.</div>
+        <div data-wert="b">sie einmalig eine schlechte Note bekommen.</div>
+        <div data-wert="c">die nächste Klausur in weniger als drei Tagen stattfindet.</div>
+      </div>
+      <div data-frage="63">
+        <div class="stem">KI-Lerntools bewertet Dr. Vogt vor allem als</div>
+        <div data-wert="a">vollwertigen Ersatz für eigenes fachliches Denken.</div>
+        <div data-wert="b">zuverlässigste Quelle für fertige Prüfungsantworten.</div>
+        <div data-wert="c">nützliches Feedbackinstrument bei kritischer Eigenkontrolle.</div>
+      </div>
+      <div data-frage="64">
+        <div class="stem">Langfristig fordert Dr. Vogt</div>
+        <div data-wert="a">eine vollständige Rückkehr zu rein frontaler Lehre.</div>
+        <div data-wert="b">Lernkompetenz als verbindliches Querschnittsziel im Curriculum.</div>
+        <div data-wert="c">die Abschaffung von Zwischenabgaben im Studium.</div>
+      </div>
     </div>
 
   </main>
@@ -30,7 +82,7 @@
   <script src="../shared/pruefung.js"></script>
   <script>
     SectionBuilder.hv2(document.getElementById('section-root'), document.getElementById('section-root'));
-    Pruefung.initHV2({ 55:'', 56:'', 57:'', 58:'', 59:'', 60:'', 61:'', 62:'', 63:'', 64:'' });
+    Pruefung.initHV2({ 55:'b', 56:'c', 57:'a', 58:'b', 59:'c', 60:'a', 61:'b', 62:'a', 63:'c', 64:'b' });
   </script>
 </body>
 </html>
