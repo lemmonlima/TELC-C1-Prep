@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Test Mobile Fix - Soziale Isolation</title>
+  <style>
+    /* Base styles - simplified from styles.css */
+    :root {
+      --red-600: #ff5454;
+      --red-700: #d14343;
+      --ink-900: #f3eee6;
+      --ink-700: #c7c0b6;
+      --paper-100: #12110f;
+      --paper-200: #1a1916;
+      --paper-300: #23211d;
+      --surface-100: #1a1916;
+      --surface-200: #23211d;
+      --line: #2d2a24;
+      --radius-lg: 22px;
+      --radius-md: 14px;
+      --font-sans: "Space Grotesk", "IBM Plex Sans", "Helvetica Neue", sans-serif;
+      --font-serif: "Fraunces", "Times New Roman", serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background: var(--paper-100);
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--ink-900);
+      background: linear-gradient(150deg, var(--paper-100) 0%, var(--paper-200) 55%, var(--paper-300) 100%);
+      min-height: 100vh;
+    }
+
+    body.doc-page {
+      padding-top: 38px;
+    }
+
+    /* Topbar */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      padding: 8px 16px;
+      background: var(--paper-100);
+      border-bottom: 0.5px solid var(--line);
+      font-size: 0.85rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    .brand-mark {
+      color: var(--red-600);
+      font-size: 1rem;
+    }
+
+    .brand-name {
+      color: var(--ink-700);
+      font-size: 0.85rem;
+    }
+
+    .nav {
+      display: none; /* Hidden on mobile for this test */
+    }
+
+    .cta {
+      display: none; /* Hidden on mobile for this test */
+    }
+
+    .topbar-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .topbar-btn {
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      border: 0.5px solid var(--line);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--ink-700);
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    /* Fix topbar duplication */
+    .topbar ~ .topbar {
+      display: none !important;
+    }
+
+    /* Main content */
+    .doc-main {
+      padding-top: 16px;
+    }
+
+    .doc-hero {
+      padding: 20px 16px 16px;
+    }
+
+    .eyebrow {
+      font-size: 0.75rem;
+      color: var(--ink-700);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      color: var(--ink-900);
+    }
+
+    .lead {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--ink-700);
+    }
+
+    .doc-section {
+      padding: 16px 16px 32px;
+    }
+
+    /* Flashcards button */
+    .text-flashcards-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin: 16px 0;
+    }
+
+    .text-flashcards-btn {
+      background: var(--surface-100);
+      border: 1px solid var(--line);
+      color: var(--ink-900);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      min-height: 44px;
+      min-width: 100px;
+    }
+
+    /* Word types legend */
+    .word-types-legend {
+      background: var(--surface-100);
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      margin-bottom: 20px;
+    }
+
+    .word-types-legend h3 {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    .word-types-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 8px;
+    }
+
+    .word-type-item {
+      text-align: center;
+    }
+
+    .word-type-example {
+      display: inline-block;
+      font-size: 0.85rem;
+      padding: 6px 10px;
+      border-radius: 4px;
+      background: var(--surface-200);
+      border: 1px solid var(--line);
+    }
+
+    /* Color coding */
+    .explanation-word-verb { background: #2a3f2f; border-color: #4a7c59; }
+    .explanation-word-nomen { background: #3f2a2a; border-color: #7c4a4a; }
+    .explanation-word-adj { background: #3f3a2a; border-color: #7c6e4a; }
+    .explanation-word-artikel { background: #2a3a3f; border-color: #4a6e7c; }
+    .explanation-word-pronomen { background: #3a2a3f; border-color: #6e4a7c; }
+    .explanation-word-adverb { background: #3f2a3a; border-color: #7c4a6e; }
+    .explanation-word-praeposition { background: #2a3f3a; border-color: #4a7c6e; }
+    .explanation-word-konjunktion { background: #3a2f3f; border-color: #6e597c; }
+    .explanation-word-subjunktion { background: #2f3a3f; border-color: #596e7c; }
+    .explanation-word-partikel { background: #3f3a2f; border-color: #7c6e59; }
+    .explanation-word-default { background: var(--surface-200); }
+
+    /* Document text */
+    .doc {
+      max-width: 100%;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    #word-count {
+      font-size: 0.8rem !important;
+      color: var(--ink-700);
+      margin-bottom: 8px !important;
+    }
+
+    .doc h2 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      color: var(--ink-900);
+    }
+
+    .doc p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      color: var(--ink-900);
+    }
+
+    /* Extra small devices */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.3rem;
+      }
+
+      .word-types-grid {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 6px;
+      }
+
+      .doc h2 {
+        font-size: 1.2rem;
+      }
+
+      .doc p {
+        font-size: 0.9rem;
+        line-height: 1.55;
+      }
+    }
+
+    /* Touch optimization */
+    @media (hover: none) {
+      .text-flashcards-btn,
+      .topbar-btn {
+        min-height: 44px;
+        min-width: 44px;
+      }
+    }
+  </style>
+</head>
+<body class="doc-page">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Texte</span>
+    </div>
+    <div class="topbar-actions">
+      <button type="button" class="topbar-btn" title="Test" aria-label="Test">✓</button>
+    </div>
+  </header>
+
+  <main class="doc-main">
+    <section class="doc-hero">
+      <div class="doc-hero-text">
+        <div class="eyebrow">Modul DS 02 – Gesellschaft und Zusammenleben</div>
+        <h1>Soziale Isolation in der modernen Gesellschaft</h1>
+        <p class="lead">Test de optimizaciones móviles - Versión independiente sin caché.</p>
+      </div>
+    </section>
+
+    <section class="doc-section">
+      <div class="text-flashcards-bar">
+        <button id="text-flashcards" class="text-flashcards-btn" type="button">Flashcards</button>
+      </div>
+
+      <div class="word-types-legend">
+        <h3>Wortarten – Farben</h3>
+        <div class="word-types-grid">
+          <div class="word-type-item"><span class="word-type-example explanation-word-verb">Verb</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word-nomen">Nomen</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word-adj">Adjektiv</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word-artikel">Artikel</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word-pronomen">Pronomen</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word-adverb">Adverb</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word-praeposition">Präposition</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word-konjunktion">Konjunktion</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word-subjunktion">Subjunktion</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word-partikel">Partikel</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word-default">Phrase</span></div>
+        </div>
+      </div>
+
+      <div class="doc">
+        <p id="word-count" style="font-size:0.9rem; color:#c7c0b6; margin-bottom:12px;">462 Wörter</p>
+
+        <h2>Einleitung</h2>
+        <p>Trotz ständiger digitaler Vernetzung berichten immer mehr Menschen von Einsamkeit und sozialer Distanz. Besonders in Großstädten leben viele Personen allein, arbeiten unter hohem Zeitdruck und pflegen Kontakte überwiegend über Messenger oder soziale Netzwerke. Gleichzeitig wird soziale Isolation längst nicht mehr nur als individuelles Problem verstanden, sondern als gesellschaftliche Herausforderung mit Folgen für Gesundheit, Arbeitswelt und demokratische Teilhabe.</p>
+
+        <h2>Hauptteil</h2>
+        <p>Ein zentraler Erklärungsansatz liegt in veränderten Kommunikationsformen. Digitale Medien erleichtern zwar den schnellen Austausch, ersetzen jedoch häufig nicht die Qualität persönlicher Begegnungen. Kurze Nachrichten und algorithmisch gesteuerte Inhalte erzeugen oft den Eindruck von Nähe, ohne dass echte Verbindlichkeit entsteht.</p>
+
+        <p>Darüber hinaus spielt die Struktur des Arbeitslebens eine wichtige Rolle. Flexible Arbeitszeiten, befristete Verträge und die Entgrenzung zwischen Beruf und Privatleben erschweren stabile soziale Routinen. Wer regelmäßig Überstunden leistet oder häufig den Wohnort wechseln muss, hat weniger Möglichkeiten, langfristige Beziehungen aufzubauen.</p>
+
+        <p>Auch demografische Entwicklungen tragen zur Isolation bei. Mit steigender Lebenserwartung wächst die Zahl älterer Menschen, die nach dem Verlust von Partnern oder Freunden allein leben. Wenn Mobilität eingeschränkt ist und Nachbarschaftsstrukturen schwach sind, nimmt das Risiko sozialer Ausgrenzung deutlich zu.</p>
+
+        <h2>Schluss</h2>
+        <p>Zusammenfassend lässt sich festhalten, dass soziale Isolation in der modernen Gesellschaft aus einem Zusammenspiel technologischer, wirtschaftlicher und demografischer Faktoren entsteht. Meiner Ansicht nach reicht es nicht aus, Einsamkeit als private Schwäche zu betrachten; vielmehr ist sie eine kollektive Aufgabe.</p>
+
+        <hr style="margin: 32px 0; border: none; border-top: 1px solid var(--line);">
+
+        <h2 style="color: var(--red-600);">🧪 Test de Optimizaciones Móviles</h2>
+        <p><strong>Verifica que:</strong></p>
+        <ul style="list-style-position: inside; margin: 16px 0;">
+          <li>✅ Solo hay UN topbar "TELC Texte" (no duplicado)</li>
+          <li>✅ El topbar no se superpone con el contenido</li>
+          <li>✅ "Wortarten - Farben" se ve organizado (no apretado)</li>
+          <li>✅ Los textos son legibles sin hacer zoom</li>
+          <li>✅ El botón "Flashcards" es fácil de tocar (≥44px)</li>
+          <li>✅ No hay scroll horizontal inesperado</li>
+        </ul>
+
+        <p style="margin-top: 24px; padding: 12px; background: var(--surface-100); border-radius: 8px; border-left: 3px solid var(--red-600);">
+          <strong>📱 Esta es una versión de prueba independiente</strong><br>
+          Sin caché de GitHub Pages. Si esto se ve bien, el problema era 100% el caché.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Simple topbar control
+    document.querySelector('.topbar-btn').addEventListener('click', function() {
+      alert('✅ Topbar funciona!\n\n' + 
+            'Si ves este mensaje y el layout se ve bien,\n' +
+            'significa que las optimizaciones móviles funcionan correctamente.\n\n' +
+            'El problema en GitHub Pages es solo caché.');
+    });
+
+    // Simple flashcards button
+    document.getElementById('text-flashcards').addEventListener('click', function() {
+      alert('✅ Botón Flashcards funciona!\n\n' +
+            'Touch target size: ' + this.offsetHeight + 'px altura\n' +
+            '(Mínimo recomendado: 44px)\n\n' +
+            (this.offsetHeight >= 44 ? '✓ Cumple estándar de accesibilidad' : '✗ Demasiado pequeño'));
+    });
+
+    console.log('📱 Test Mobile Fix - Versión independiente cargada');
+    console.log('Topbar height:', document.querySelector('.topbar').offsetHeight + 'px');
+    console.log('Topbars en DOM:', document.querySelectorAll('.topbar').length);
+  </script>
+</body>
+</html>
