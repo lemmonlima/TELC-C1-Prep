@@ -2,8 +2,8 @@
 
 ## 🐛 Problema
 En dispositivos móviles, las páginas de textos en `docs/texte/produktion-ds/` presentaban problemas de layout:
+- **Topbar duplicado** - Dos headers "TELC Texte" apilados (conflicto HTML estático vs JS dinámico)
 - Contenido superpuesto y comprimido
-- Topbar duplicado o sobrepuesto
 - Word types legend (Wortarten) muy apretado
 - Textos difíciles de leer
 - Botones pequeños (menor a 44px mínimo táctil)
