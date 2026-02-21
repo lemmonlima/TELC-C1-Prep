@@ -67,13 +67,29 @@ function createCanvasSizeControl(etherContainer) {
   };
 }
 
-// Auto-init si encuentra el contenedor
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    const etherContainer = document.querySelector('.woerter-ether');
-    if (!etherContainer) return;
-    window.canvasSizeControl = createCanvasSizeControl(etherContainer);
-  }, 100);
+function initCanvasSizeControls() {
+  const containers = document.querySelectorAll(".woerter-ether");
+  containers.forEach((etherContainer) => {
+    if (!(etherContainer instanceof HTMLElement)) return;
+    if (etherContainer.dataset.canvasControlInit === "1") return;
+    const stage = etherContainer.querySelector(".woerter-ether-stage");
+    if (!stage) return;
+    etherContainer.dataset.canvasControlInit = "1";
+    const control = createCanvasSizeControl(etherContainer);
+    window.canvasSizeControl = control;
+  });
+}
+
+// Auto-init robusto: el grafo se crea de forma asíncrona.
+document.addEventListener("DOMContentLoaded", () => {
+  initCanvasSizeControls();
+  const observer = new MutationObserver(() => {
+    initCanvasSizeControls();
+  });
+  if (document.body) {
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+  window.addEventListener("load", initCanvasSizeControls, { once: true });
 });
 
 // Export para uso manual
