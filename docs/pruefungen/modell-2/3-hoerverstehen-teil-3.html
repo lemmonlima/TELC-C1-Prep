@@ -12,19 +12,119 @@
 <body>
   <main class="pruefung-container" id="section-root" data-section="hv3" data-modell="2">
 
-    <div data-content="thema" hidden><!-- TODO: Thema --></div>
+    <div data-content="thema" hidden>Gastvortrag „Citizen Science als Lernformat an Hochschulen"</div>
 
     <div data-content="slides" hidden>
-      <!-- TODO: 5-7 slide-box divs. Each has unique content. Example:
       <div class="slide-box">
-        <div class="slide-titel">Slide title</div>
+        <div class="slide-titel">Präsentation</div>
         <div class="slide-content">
-          <p>Content</p>
-          <span class="input-label">65.</span>
-          <input type="text" class="slide-input" data-nummer="65" placeholder="...">
+          <p><strong>Tagung „Hochschullehre im Wandel"</strong><br>
+          Session: Forschendes Lernen in der Praxis</p>
+          <p><strong>Thema heute:</strong><br>
+          Citizen Science als Lernformat an Hochschulen</p>
+          <p><strong>Referentin:</strong><br>
+          Dr. Miriam Keller (Universität Freiburg)</p>
         </div>
       </div>
-      -->
+
+      <div class="slide-box">
+        <div class="slide-titel">Ausgangslage</div>
+        <div class="slide-content">
+          <p><strong>Entwicklung seit 2018</strong></p>
+          <span class="input-label">65.</span>
+          <input type="text" class="slide-input" data-nummer="65" placeholder="Anstieg der Beteiligung ...">
+
+          <p style="margin-top: 1.25rem;"><strong>Häufigstes Motiv der Teilnehmenden</strong></p>
+          <span class="input-label">66.</span>
+          <input type="text" class="slide-input" data-nummer="66" placeholder="Wichtigster Beweggrund ...">
+        </div>
+      </div>
+
+      <div class="slide-box">
+        <div class="slide-titel">Einstiegshürden</div>
+        <div class="slide-content">
+          <p><strong>Warum Interessierte abspringen:</strong></p>
+          <ul>
+            <li>
+              <span class="input-label">67a.</span>
+              <input type="text" class="slide-input" data-nummer="67a" placeholder="Hürde 1">
+            </li>
+            <li>
+              <span class="input-label">67b.</span>
+              <input type="text" class="slide-input" data-nummer="67b" placeholder="Hürde 2">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slide-box">
+        <div class="slide-titel">Praxisbeispiel „Stadtluft-Projekt"</div>
+        <div class="slide-content">
+          <p>Beiträge der Studierenden:</p>
+          <ul>
+            <li>
+              <span class="input-label">68a.</span>
+              <input type="text" class="slide-input" data-nummer="68a" placeholder="Aufgabe 1">
+            </li>
+            <li>
+              <span class="input-label">68b.</span>
+              <input type="text" class="slide-input" data-nummer="68b" placeholder="Aufgabe 2">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slide-box">
+        <div class="slide-titel">Didaktischer Nutzen</div>
+        <div class="slide-content">
+          <p><strong>Kerngewinn für die Lehre</strong></p>
+          <span class="input-label">69.</span>
+          <input type="text" class="slide-input" data-nummer="69" placeholder="Zentraler didaktischer Effekt ...">
+
+          <p style="margin-top: 1.25rem;"><strong>Alte Rolle:</strong></p>
+          <span class="input-label">70a.</span>
+          <input type="text" class="slide-input" data-nummer="70a" placeholder="Frühere Rolle der Studierenden">
+
+          <p style="margin-top: 0.75rem;"><strong>Neue Rolle:</strong></p>
+          <span class="input-label">70b.</span>
+          <input type="text" class="slide-input" data-nummer="70b" placeholder="Heutige Rolle der Studierenden">
+        </div>
+      </div>
+
+      <div class="slide-box">
+        <div class="slide-titel">Qualitätssicherung</div>
+        <div class="slide-content">
+          <ul>
+            <li>Verlässliche Daten durch
+              <span class="input-label">71a.</span>
+              <input type="text" class="slide-input" data-nummer="71a" placeholder="Maßnahme 1">
+              und
+              <span class="input-label">71b.</span>
+              <input type="text" class="slide-input" data-nummer="71b" placeholder="Maßnahme 2">
+            </li>
+            <li>Rückmeldung an Teilnehmende:
+              <span class="input-label">72.</span>
+              <input type="text" class="slide-input" data-nummer="72" placeholder="Zeitfenster der Rückmeldung">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slide-box">
+        <div class="slide-titel">Ausblick</div>
+        <div class="slide-content">
+          <ul>
+            <li>Größte strukturelle Herausforderung:
+              <span class="input-label">73.</span>
+              <input type="text" class="slide-input" data-nummer="73" placeholder="Hauptproblem">
+            </li>
+            <li>Ziel bis 2028:
+              <span class="input-label">74.</span>
+              <input type="text" class="slide-input" data-nummer="74" placeholder="Zentrales Zukunftsziel">
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
   </main>
@@ -33,9 +133,20 @@
   <script>
     SectionBuilder.hv3(document.getElementById('section-root'), document.getElementById('section-root'));
     Pruefung.initHV3({
-      65:[], 66:[], '67a':[], '67b':[], '68a':[], '68b':[],
-      69:[], '70a':[], '70b':[], '71a':[], '71b':[],
-      72:[], 73:[], 74:[]
+      65:['40 prozent','um 40 prozent','vierzig prozent','anstieg um 40'],
+      66:['konkreter beitrag zum umweltschutz','beitrag zum umweltschutz','umweltschutz'],
+      '67a':['komplizierte registrierung','aufwendige registrierung','registrierung'],
+      '67b':['unverständliche fachsprache','fachsprache','wissenschaftssprache'],
+      '68a':['feinstaub messen','feinstaubmessungen','feinstaub'],
+      '68b':['lärmprotokolle','laermprotokolle','lärm dokumentieren','laerm dokumentieren','lärm'],
+      69:['forschendes lernen mit realen datensätzen','forschendes lernen','reale datensätze','reale datensaetze'],
+      '70a':['datenkonsumenten','nur datenkonsumenten','konsumenten'],
+      '70b':['co-forschende','mitforschende','coforschende'],
+      '71a':['doppelmessungen','doppelte messungen','doppelmessung'],
+      '71b':['kurze online-schulungen','online-schulungen','schulungen'],
+      72:['48 stunden','innerhalb von 48 stunden','zwei tagen','2 tagen'],
+      73:['langfristige finanzierung','finanzierung','dauerhafte finanzierung'],
+      74:['offene datenplattform der hochschule','offene datenplattform','datenplattform']
     }, {
       65:'65', 66:'66', '67a':'67 (Teil 1)', '67b':'67 (Teil 2)',
       '68a':'68 (Teil 1)', '68b':'68 (Teil 2)', 69:'69',
