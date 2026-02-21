@@ -40,13 +40,19 @@ const EXAM_DATA = {
   },
 
   saThemen: {
-    /* TODO: thema1key */ thema1: {
-      title: '/* TODO: Thema 1 title */',
-      zitate: ['/* TODO */', '/* TODO */']
+    digitalisierung: {
+      title: 'Thema 1: Digitalisierung in der Hochschulbildung',
+      zitate: [
+        'Digitale Medien eröffnen völlig neue Bildungschancen.',
+        'Digitale Medien machen oberflächlich und abhängig.'
+      ]
     },
-    /* TODO: thema2key */ thema2: {
-      title: '/* TODO: Thema 2 title */',
-      zitate: ['/* TODO */', '/* TODO */']
+    ethikpflicht: {
+      title: 'Thema 2: Ethik als Pflichtfach',
+      zitate: [
+        'Alle Studierenden sollten Pflichtkurse in Ethik belegen.',
+        'Jeder sollte selbst entscheiden, was er lernt.'
+      ]
     }
   },
 
