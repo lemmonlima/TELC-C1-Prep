@@ -67,8 +67,13 @@ function createCanvasSizeControl(etherContainer) {
   };
 }
 
-function initCanvasSizeControls() {
-  const containers = document.querySelectorAll(".woerter-ether");
+function initCanvasSizeControls(root = document) {
+  const direct =
+    root instanceof HTMLElement && root.classList.contains("woerter-ether") ? [root] : [];
+  const fromRoot =
+    root && typeof root.querySelectorAll === "function" ? Array.from(root.querySelectorAll(".woerter-ether")) : [];
+  const containers = [...direct, ...fromRoot];
+
   containers.forEach((etherContainer) => {
     if (!(etherContainer instanceof HTMLElement)) return;
     if (etherContainer.dataset.canvasControlInit === "1") return;
@@ -82,6 +87,8 @@ function initCanvasSizeControls() {
 
 // Auto-init robusto: el grafo se crea de forma asíncrona.
 document.addEventListener("DOMContentLoaded", () => {
+  window.createCanvasSizeControl = createCanvasSizeControl;
+  window.initCanvasSizeControls = initCanvasSizeControls;
   initCanvasSizeControls();
   const observer = new MutationObserver(() => {
     initCanvasSizeControls();
