@@ -7,16 +7,14 @@ Mejora los ejemplos, son muy meh y deben ser C1 Telc Hoschschule. Igual no te pa
 
 Anade partes como sinonimos y antonimos (si la palabra los tiene) y annade más ejemplos a las palabras que tienen más de un significado para ver y tener una imagen de todas sus funciones
 
-- Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el Leseverstehen de @Projects/TELC/docs/pruefungen/modell-3. Muchas Gracias!
+- Ahora siguiento @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el Leseverstehen de @Projects/TELC/docs/pruefungen/modell-2 
 
-- Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el Sprachbausteine de @Projects/TELC/docs/pruefungen/modell-3. Muchas Gracias!
+- Ahora siguiento @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz Los hörverstehen de @Projects/TELC/docs/pruefungen/modell-2. Primero haz el transcrito de todos en un solo texto y luego las preguntas y todo
 
-- Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz los Hörverstehen de @Projects/TELC/docs/pruefungen/modell-3. Primero haz el transcrito de todos en un solo texto y luego las preguntas y todo. Muchas Gracias!
+- Ahora siguiento @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el schriftliche ausdruck de @Projects/TELC/docs/pruefungen/modell-2
 
-- Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el schriftliche Ausdruck de @Projects/TELC/docs/pruefungen/modell-3. Muchas Gracias!
+- Ahora siguiento @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el mündliche ausdruck de @Projects/TELC/docs/pruefungen/modell-2
 
-- Ahora siguiendo @Projects/TELC/docs/pruefungen/GUIA-NUEVO-MODELLTEST.md y @Projects/TELC/docs/pruefungen/_vorlage @Projects/TELC/docs/pruefungen/modell-1 haz el mündliche Ausdruck de @Projects/TELC/docs/pruefungen/modell-3
-
-- El siguiente paso es que hagas también una pasada final de estilo para dejar el tono exactamente igual al resto de modell-1.
+- el siguiente paso es que hagas también una pasada final de estilo para dejar el tono exactamente igual al resto de modell-1.
 
 
