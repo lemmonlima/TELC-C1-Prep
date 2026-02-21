@@ -3825,6 +3825,18 @@ body.no-js .reveal {
   cursor: grabbing;
 }
 
+.canvas-size-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.canvas-size-slider {
+  width: min(280px, calc(100% - 24px));
+  accent-color: var(--red-600);
+}
+
 .woerter-ether-stage--touch,
 .woerter-ether-stage--touch * {
   touch-action: none;
