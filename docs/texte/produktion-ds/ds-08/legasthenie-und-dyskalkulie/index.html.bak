@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <style>html,body{background:#12110f}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>DS 08 – Legasthenie und Dyskalkulie</title>
+  <link rel="stylesheet" href="../../../../styles.css" />
+    <!-- TELC Navigation System -->
+  <script src="../../../../topbar.js"></script>
+  <script src="../../../../navigation.js"></script>
+</head>
+<body class="no-js doc-page">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TELC</span>
+      <span class="brand-name">Texte</span>
+    </div>
+    <nav class="nav">
+      <a href="../../../../index.html#start">Start</a>
+      <a href="../../../../grammatik/index.html">Grammatik</a>
+      <a href="../../../../texte/index.html">Texte</a>
+      <a href="../../../../notizen/index.html">Notizen</a>
+      <a href="../../../../woerter/index.html">Wörter</a>
+      <a href="../../../../pruefungen/index.html">Prüfungen</a>
+    </nav>
+    <a class="cta" href="../../../../tips/einfuehrung/index.html">Einstufung</a>
+    <div class="topbar-actions">
+      <button type="button" class="topbar-btn topbar-hide" title="Barra minimizar" aria-label="Barra minimizar">−</button>
+      <button type="button" class="topbar-btn topbar-reset" title="Reiniciar (olvidar posiciones)" aria-label="Reiniciar">↺</button>
+    </div>
+  </header>
+  <main class="doc-main">
+    <section class="doc-hero">
+      <div class="doc-hero-text reveal">
+        <div class="eyebrow">Modul DS 08 – Gesundheit und Psychologie</div>
+        <h1>Legasthenie und Dyskalkulie</h1>
+        <p class="lead">Argumentativer Text im telc-Format (Einleitung – Argumentation – Abwägung – Schluss).</p>
+      </div>
+    </section>
+
+    <section class="doc-section">
+      <div class="text-flashcards-bar">
+        <button id="text-flashcards" class="text-flashcards-btn" type="button">Flashcards</button>
+      </div>
+      <div class="word-types-legend">
+        <h3>Wortarten – Farben</h3>
+        <div class="word-types-grid">
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-verb">Verb</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-nomen">Nomen</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-adj">Adjektiv</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-artikel">Artikel</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-pronomen">Pronomen</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-adverb">Adverb</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-praeposition">Präposition</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-konjunktion">Konjunktion</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-subjunktion">Subjunktion</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-partikel">Partikel</span></div>
+          <div class="word-type-item"><span class="word-type-example explanation-word explanation-word-default">Phrase</span></div>
+        </div>
+      </div>
+      <div class="doc doc-relaxed" id="text-content">
+        <p id="word-count" style="font-size:0.9rem; color:#c7c0b6; margin-bottom:12px;"></p>
+
+        <h2>Einleitung</h2>
+        <p>Lese-Rechtschreib-Störung und Rechenstörung zählen zu den häufigsten spezifischen Lernschwierigkeiten im Bildungsbereich. Betroffene verfügen oft über altersgemäße Intelligenz, erleben jedoch in zentralen schulischen Kompetenzfeldern wiederkehrende Hürden. Ohne angemessene Unterstützung können daraus Leistungsdefizite, Frustration und langfristige Bildungsnachteile entstehen. Gleichzeitig ist die öffentliche Wahrnehmung häufig von Missverständnissen geprägt, etwa der Annahme mangelnder Anstrengung. Vor diesem Hintergrund stellt sich die Frage, wie Schulen und Bildungssysteme Legasthenie und Dyskalkulie wirksam und gerecht berücksichtigen können.</p>
+
+        <h2>Hauptteil</h2>
+        <p>Befürworter früher Diagnostik argumentieren, dass rechtzeitige Förderung entscheidend für den Lernerfolg ist. Je früher Schwierigkeiten erkannt werden, desto gezielter können individuelle Trainingsprogramme, Nachteilsausgleiche und differenzierte Unterrichtsstrategien eingesetzt werden. Fachliche Unterstützung reduziert nicht nur Leistungsdefizite, sondern stärkt auch Motivation und Selbstvertrauen. Aus dieser Perspektive ist Diagnostik ein Instrument der Chancengerechtigkeit.</p>
+
+        <p>Darüber hinaus wird betont, dass Lernstörungen nicht isoliert betrachtet werden sollten. Viele Betroffene entwickeln kompensatorische Fähigkeiten in anderen Bereichen, etwa in Kreativität, Problemlösekompetenz oder mündlicher Ausdrucksfähigkeit. Ein ressourcenorientierter Unterricht kann diese Stärken sichtbar machen und verhindern, dass Schüler ausschließlich über Defizite definiert werden. Inklusionspädagogische Konzepte verfolgen daher einen breiteren Leistungsbegriff.</p>
+
+        <p>Kritiker weisen jedoch auf Umsetzungsprobleme hin. Nicht alle Schulen verfügen über ausreichend diagnostische Expertise, spezialisierte Förderkräfte oder Zeitressourcen für individualisierte Unterstützung. Dadurch hängt die Qualität der Förderung stark von regionalen und institutionellen Bedingungen ab. Ungleichheiten im Bildungssystem können sich so trotz formaler Förderansprüche verstärken.</p>
+
+        <p>Ein weiterer Einwand betrifft die Balance zwischen Unterstützung und Leistungsanforderungen. Nachteilsausgleiche sollen faire Bedingungen schaffen, dürfen aber nicht als Absenkung von Bildungsstandards missverstanden werden. Entscheidend ist eine differenzierte Leistungsbewertung, die Lernziele transparent macht und individuelle Lernwege berücksichtigt. Dafür sind klare Leitlinien und regelmäßige Evaluation notwendig.</p>
+
+        <p>Bei der Abwägung zeigt sich, dass wirksame Förderung nur durch ein Zusammenspiel aus Diagnostik, qualifiziertem Personal, Elternarbeit und strukturierter Unterrichtsentwicklung gelingt. Einzelmaßnahmen ohne systemische Einbettung bleiben begrenzt wirksam. Langfristig ist daher institutionelle Verlässlichkeit wichtiger als punktuelle Projekte.</p>
+
+        <h2>Schluss</h2>
+        <p>Zusammenfassend lässt sich festhalten, dass Legasthenie und Dyskalkulie keine Randthemen, sondern zentrale Fragen der Bildungsgerechtigkeit sind. Meiner Ansicht nach sollten Schulen verbindliche Förderstandards etablieren, die frühe Erkennung, individuelle Unterstützung und faire Bewertung kombinieren. So können betroffene Lernende ihr Potenzial besser entfalten, ohne dauerhaft durch strukturelle Barrieren benachteiligt zu werden.</p>
+      </div>
+
+      <div id="explanation-panel" class="explanation-panel" style="display: none;">
+        <div class="explanation-panel-header">
+          <h3 id="explanation-word"></h3>
+          <div class="explanation-panel-actions">
+            <button id="explanation-back-to-parent" class="explanation-back explanation-back-to-parent" type="button" style="display: none;" aria-label="Volver a la cajita de la frase original">← Volver a la Frase</button>
+            <button id="explanation-back" class="explanation-back" type="button">↑ Volver al texto</button>
+            <button id="explanation-close" class="explanation-close" aria-label="Cerrar">&times;</button>
+          </div>
+        </div>
+        <div class="explanation-panel-content">
+          <div class="explanation-sentence">
+            <p class="explanation-label">Oración completa:</p>
+            <p id="explanation-sentence-de" class="explanation-text-de"></p>
+            <p id="explanation-sentence-es" class="explanation-text-es"></p>
+          </div>
+          <div class="explanation-translation">
+            <p class="explanation-label">Traducción:</p>
+            <p id="explanation-translation"></p>
+          </div>
+          <div id="explanation-details"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="../index.html">← Modul DS 08</a>
+  </footer>
+
+  <script defer src="legasthenie-und-dyskalkulie.js"></script>
+  <script>
+    (function () {
+      const container = document.getElementById("text-content");
+      const counterEl = document.getElementById("word-count");
+      if (!container || !counterEl) return;
+      const text = (container.textContent || "").replace(/\{[a-z-]+:([^}]+)\}/gi, "$1");
+      const words = text.trim().split(/\s+/).filter(Boolean);
+      counterEl.textContent = words.length + " Wörter";
+    })();
+  </script>
+  <script>
+    (() => {
+      document.documentElement.classList.add("no-flash");
+      const storageKey = "telc-scroll:" + location.pathname + location.search;
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      const save = () => { sessionStorage.setItem(storageKey, String(window.scrollY || window.pageYOffset || 0)); };
+      const restore = () => { const saved = sessionStorage.getItem(storageKey); if (saved == null) return; const y = Number(saved); if (!Number.isNaN(y)) window.scrollTo(0, y); };
+      const scheduleRestore = () => { restore(); requestAnimationFrame(restore); setTimeout(restore, 60); setTimeout(restore, 220); };
+      window.addEventListener("pagehide", save);
+      window.addEventListener("beforeunload", save);
+      document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") save(); });
+      document.addEventListener("click", (e) => { const link = e.target.closest("a"); if (!link || !link.href) return; try { const u = new URL(link.href, location.href); if (u.origin === location.origin) save(); } catch (_) {} });
+      window.addEventListener("pageshow", scheduleRestore);
+      window.addEventListener("load", scheduleRestore);
+    })();
+  </script>
+
+  <script>
+    // Topbar controls
+    (function() {
+      const topbar = document.querySelector('.topbar');
+      if (!topbar) return;
+      
+      const body = document.body;
+      
+      // Restore hidden state
+      if (sessionStorage.getItem('telc_topbar_hidden') === '1') {
+        body.classList.add('topbar-hidden');
+      }
+      
+      // Create show trigger
+      const showTrigger = document.createElement('div');
+      showTrigger.className = 'topbar-show-trigger';
+      showTrigger.title = 'Mostrar barra';
+      showTrigger.textContent = '▼';
+      topbar.parentNode.insertBefore(showTrigger, topbar);
+      
+      // Get buttons
+      const hideBtn = topbar.querySelector('.topbar-hide');
+      const resetBtn = topbar.querySelector('.topbar-reset');
+      
+      if (hideBtn) {
+        hideBtn.onclick = () => {
+          body.classList.add('topbar-hidden');
+          body.classList.remove('topbar-auto-hidden');
+          sessionStorage.setItem('telc_topbar_hidden', '1');
+        };
+      }
+      
+      if (showTrigger) {
+        showTrigger.onclick = () => {
+          body.classList.remove('topbar-hidden');
+          body.classList.remove('topbar-auto-hidden');
+          sessionStorage.removeItem('telc_topbar_hidden');
+        };
+      }
+      
+      if (resetBtn) {
+        resetBtn.onclick = () => {
+          const keys = [];
+          for (let i = 0; i < sessionStorage.length; i++) {
+            const key = sessionStorage.key(i);
+            if (key && key.indexOf('telc_') === 0) keys.push(key);
+          }
+          keys.forEach(k => sessionStorage.removeItem(k));
+          location.reload();
+        };
+      }
+    })();
+  </script>
+
+</body>
+</html>
