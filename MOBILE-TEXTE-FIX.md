@@ -90,6 +90,7 @@ Ejemplos a revisar:
 - Cualquier otro texto en produktion-ds/
 
 ### 3. Verificar que funcione:
+✅ **Solo UN topbar visible** - No duplicación de "TELC Texte" header
 ✅ **Topbar no se superpone** con el contenido
 ✅ **Wortarten legend se ve organizado** y no apretado
 ✅ **Textos son legibles** sin hacer zoom
@@ -97,6 +98,14 @@ Ejemplos a revisar:
 ✅ **No hay scroll horizontal** inesperado
 ✅ **Explanation panel** se abre y cierra correctamente
 ✅ **Flashcards** funcionan bien en móvil
+
+### 4. Verificar en DevTools Console (opcional)
+Si abres la consola del navegador deberías ver:
+```
+[TELC Topbar] Using existing static topbar from HTML
+[TELC Topbar] Using existing static controls from HTML
+```
+Esto confirma que NO está duplicando elementos.
 
 ## 📁 Archivos Importantes
 
@@ -161,6 +170,9 @@ done
 ---
 
 **Creado**: 2026-02-15  
-**Afecta**: `docs/texte/produktion-ds/**/*.html`  
-**Tipo**: Layout fix / Mobile optimization  
-**Status**: ✅ Implementado - Pendiente prueba móvil
+**Actualizado**: 2026-02-15 (Fix topbar duplicado)  
+**Afecta**: 
+- `docs/texte/produktion-ds/**/*.html` (104 archivos)
+- `docs/topbar.js` (global)
+**Tipo**: Layout fix / Mobile optimization / Bug fix  
+**Status**: ✅ Implementado - Listo para prueba final en móvil
