@@ -1749,9 +1749,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const filterList = () => {
           const q = ((searchInput && searchInput.value) || "").trim().toLowerCase();
-          listEl.querySelectorAll(".notizen-item").forEach((li) => {
-            const term = (li.dataset.term || "").toLowerCase();
-            li.classList.toggle("is-hidden", q && !term.includes(q));
+          listEl.querySelectorAll(".verben-liste-chip, .notizen-item").forEach((item) => {
+            const term = String(item.dataset.term || item.textContent || "").toLowerCase();
+            item.classList.toggle("is-hidden", q && !term.includes(q));
           });
         };
 
@@ -1766,47 +1766,22 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
           }
 
-          const ul = document.createElement("ul");
-          ul.className = "notizen-list";
+          const chips = document.createElement("div");
+          chips.className = "verben-liste";
           baseVerbs.forEach((baseVerb) => {
-            const entries = normalizeEntries(data, baseVerb);
-            const words = (entries || []).map((e) => e.word).filter(Boolean);
             const detailParams = new URLSearchParams();
             detailParams.set("verb", baseVerb);
             if (mode === "nomen") detailParams.set("modus", "nomen");
-            const listParams = new URLSearchParams(detailParams);
-            const graphParams = new URLSearchParams(detailParams);
-            listParams.set("view", "list");
-            graphParams.set("view", "grafo");
-            const listHref = "index.html?" + listParams.toString();
-            const grafoHref = "index.html?" + graphParams.toString();
+            const detailHref = "index.html?" + detailParams.toString();
 
-            const li = document.createElement("li");
-            li.className = "notizen-item";
-            li.dataset.term = baseVerb;
-
-            const textEl = document.createElement("span");
-            textEl.className = "notizen-text";
-            textEl.innerHTML = `<a href="${escapeHtml(grafoHref)}" class="notizen-entry-link">${escapeHtml(baseVerb)}</a>`;
-            li.appendChild(textEl);
-
-            const metaEl = document.createElement("span");
-            metaEl.className = "notizen-note";
-            const countLabel = mode === "nomen" ? "Nomen" : "Ableitungen";
-            metaEl.textContent = `${countLabel}: ${words.length}`;
-            li.appendChild(metaEl);
-
-            const actionsEl = document.createElement("div");
-            actionsEl.className = "notizen-actions";
-            actionsEl.innerHTML = `
-              <a href="${escapeHtml(listHref)}" class="text-flashcards-btn">Lista</a>
-              <a href="${escapeHtml(grafoHref)}" class="text-flashcards-btn">Grafo</a>
-            `;
-            li.appendChild(actionsEl);
-
-            ul.appendChild(li);
+            const chip = document.createElement("a");
+            chip.className = "verben-liste-chip";
+            chip.href = detailHref;
+            chip.textContent = baseVerb;
+            chip.dataset.term = baseVerb;
+            chips.appendChild(chip);
           });
-          listEl.appendChild(ul);
+          listEl.appendChild(chips);
 
           filterList();
         };
@@ -1818,6 +1793,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (mode === "nomen") nextParams.set("modus", "nomen");
           else nextParams.delete("modus");
           nextParams.delete("verb");
+          nextParams.delete("view");
           const nextQuery = nextParams.toString();
           history.replaceState({}, "", location.pathname + (nextQuery ? "?" + nextQuery : ""));
           applyListModeUI();
@@ -1933,8 +1909,7 @@ document.addEventListener("DOMContentLoaded", () => {
             (verbParam || "") +
             "“.</p>";
         } else {
-          const savedDetailView = localStorage.getItem(PRAEFIX_DETAIL_VIEW_KEY) === "list" ? "list" : "grafo";
-          const initialDetailView = hasRequestedDetailView ? requestedDetailView : savedDetailView;
+          const initialDetailView = hasRequestedDetailView ? requestedDetailView : "grafo";
           const showListInitially = initialDetailView === "list";
 
           const syncDetailViewInUrl = (view) => {
