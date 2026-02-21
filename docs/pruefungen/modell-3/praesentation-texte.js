@@ -15,6 +15,8 @@ Trotzdem gibt es berechtigte Gegenargumente. Eine Pflicht kann als Überforderun
 
 Deshalb halte ich ein differenziertes Modell für sinnvoll: ja zu einem verpflichtenden Element, aber mit klaren Qualitätsstandards. Dazu gehören eine curriculare Einbettung, verbindliche Reflexionsphasen, faire Leistungsbewertung und ausreichende Ressourcen für die Projektkoordination.
 
+Ergänzend braucht es aus meiner Sicht auch eine realistische Planung innerhalb des Studienverlaufs. Service Learning sollte nicht zusätzlich "oben drauf" kommen, sondern in Module integriert werden, in denen ohnehin projektbezogen gearbeitet wird. Wichtig sind außerdem verlässliche Partnerschaften mit externen Einrichtungen, damit Projekte nicht jedes Semester bei null starten. Wenn Hochschulen diese Kooperationen professionell aufbauen, profitieren beide Seiten: die Studierenden durch echte Lerngelegenheiten und die Praxispartner durch fachlich fundierte Beiträge.
+
 Mein Fazit lautet: Service Learning sollte im Bachelor nicht als bloße Option, sondern als strukturierter Pflichtbestandteil verankert werden. Voraussetzung ist, dass Hochschulen es didaktisch ernst nehmen und nicht als günstige Symbolmaßnahme behandeln. Dann kann es fachliches Lernen und gesellschaftliche Verantwortung überzeugend miteinander verbinden. Vielen Dank für Ihre Aufmerksamkeit!`,
     html: `<div class="praesentation-titel">Teilnehmer A - Service Learning als Pflichtbestandteil im Bachelor</div>
 <p>Guten Tag! Ich spreche heute über die Frage, ob Studierende im Bachelor verpflichtend ein <strong>Service-Learning-Projekt</strong> absolvieren sollten. Ich werde zuerst erklären, was Service Learning überhaupt bedeutet, dann zentrale Vorteile darstellen, anschließend auf Risiken eingehen und zum Schluss eine begründete Position formulieren.</p>
@@ -28,6 +30,8 @@ Mein Fazit lautet: Service Learning sollte im Bachelor nicht als bloße Option, 
 <p>Trotzdem gibt es berechtigte Gegenargumente. Eine Pflicht kann als Überforderung erlebt werden, besonders in Studiengängen mit ohnehin hoher Arbeitsbelastung. Außerdem sind nicht alle Projekte automatisch hochwertig. Ohne gute Betreuung droht Service Learning zu reiner Zusatzarbeit zu werden, bei der weder Studierende noch Partnerorganisationen profitieren.</p>
 
 <p>Deshalb halte ich ein differenziertes Modell für sinnvoll: ja zu einem verpflichtenden Element, aber mit klaren Qualitätsstandards. Dazu gehören eine curriculare Einbettung, verbindliche Reflexionsphasen, faire Leistungsbewertung und ausreichende Ressourcen für die Projektkoordination.</p>
+
+<p>Ergänzend braucht es aus meiner Sicht auch eine realistische Planung innerhalb des Studienverlaufs. Service Learning sollte nicht zusätzlich "oben drauf" kommen, sondern in Module integriert werden, in denen ohnehin projektbezogen gearbeitet wird. Wichtig sind außerdem verlässliche Partnerschaften mit externen Einrichtungen, damit Projekte nicht jedes Semester bei null starten. Wenn Hochschulen diese Kooperationen professionell aufbauen, profitieren beide Seiten: die Studierenden durch echte Lerngelegenheiten und die Praxispartner durch fachlich fundierte Beiträge.</p>
 
 <p>Mein Fazit lautet: Service Learning sollte im Bachelor nicht als bloße Option, sondern als strukturierter Pflichtbestandteil verankert werden. Voraussetzung ist, dass Hochschulen es didaktisch ernst nehmen und nicht als günstige Symbolmaßnahme behandeln. Dann kann es fachliches Lernen und gesellschaftliche Verantwortung überzeugend miteinander verbinden. Vielen Dank für Ihre Aufmerksamkeit!</p>`
   },
@@ -46,6 +50,8 @@ Man sollte auch zwischen Veranstaltungsformen unterscheiden. Bei klassischen Vor
 
 Aus meiner Sicht ist deshalb kein Entweder-oder sinnvoll. Hochschulen brauchen differenzierte Regeln: weniger starre Pflichtmodelle, dafür klare Lernziele, transparente Teilnahmekriterien und gleichwertige Nachholmöglichkeiten bei berechtigten Fehlzeiten. Entscheidend ist, dass Verbindlichkeit didaktisch begründet wird und nicht nur administrativ.
 
+Zusätzlich sollte jede Lehrveranstaltung früh kommunizieren, was genau unter aktiver Teilnahme verstanden wird. Wenn Studierende wissen, welche Beiträge erwartet werden und wie Fehlzeiten kompensiert werden können, entsteht mehr Fairness und weniger Konflikt. Digitale Elemente können diesen Prozess unterstützen, etwa durch kurze Lernnachweise, Protokolle oder reflektierende Aufgaben. So wird Anwesenheit nicht als bloße Kontrolle wahrgenommen, sondern als Teil eines transparenten Lernvertrags.
+
 Mein Fazit: Eine pauschale Anwesenheitspflicht ist nicht mehr zeitgemäß. Sinnvoll ist eine kontextabhängige Regelung, die sowohl Lernqualität als auch soziale Realität berücksichtigt. Dann entsteht Verbindlichkeit ohne unnötige Härte. Vielen Dank!`,
     html: `<div class="praesentation-titel">Teilnehmer A - Anwesenheitspflicht in Lehrveranstaltungen</div>
 <p>Guten Tag! Ich möchte heute die Frage diskutieren, ob eine verbindliche Anwesenheit in Lehrveranstaltungen noch zeitgemäß ist. Zuerst nenne ich Argumente für eine Pflicht, danach Gegenargumente und schließlich einen praktikablen Mittelweg.</p>
@@ -59,6 +65,8 @@ Mein Fazit: Eine pauschale Anwesenheitspflicht ist nicht mehr zeitgemäß. Sinnv
 <p>Man sollte auch zwischen Veranstaltungsformen unterscheiden. Bei klassischen Vorlesungen, in denen Inhalte überwiegend frontal vermittelt werden, ist eine pauschale Präsenzpflicht schwer zu begründen. In stark interaktiven Formaten, etwa Laborübungen, Sprachkursen oder projektbasierten Seminaren, kann eine verbindliche Teilnahme dagegen fachlich notwendig sein.</p>
 
 <p>Aus meiner Sicht ist deshalb kein Entweder-oder sinnvoll. Hochschulen brauchen differenzierte Regeln: weniger starre Pflichtmodelle, dafür klare Lernziele, transparente Teilnahmekriterien und gleichwertige Nachholmöglichkeiten bei berechtigten Fehlzeiten. Entscheidend ist, dass Verbindlichkeit didaktisch begründet wird und nicht nur administrativ.</p>
+
+<p>Zusätzlich sollte jede Lehrveranstaltung früh kommunizieren, was genau unter aktiver Teilnahme verstanden wird. Wenn Studierende wissen, welche Beiträge erwartet werden und wie Fehlzeiten kompensiert werden können, entsteht mehr Fairness und weniger Konflikt. Digitale Elemente können diesen Prozess unterstützen, etwa durch kurze Lernnachweise, Protokolle oder reflektierende Aufgaben. So wird Anwesenheit nicht als bloße Kontrolle wahrgenommen, sondern als Teil eines transparenten Lernvertrags.</p>
 
 <p>Mein Fazit: Eine pauschale Anwesenheitspflicht ist nicht mehr zeitgemäß. Sinnvoll ist eine kontextabhängige Regelung, die sowohl Lernqualität als auch soziale Realität berücksichtigt. Dann entsteht Verbindlichkeit ohne unnötige Härte. Vielen Dank!</p>`
   },
@@ -79,6 +87,8 @@ Trotzdem hat Mentoring Grenzen. Schlechte Programme können sogar frustrieren, e
 
 Deshalb braucht es Qualitätsstandards: Auswahl und Training der Mentorinnen, verbindliche Zeitressourcen, klare Zuständigkeiten und regelmäßige Evaluation anhand belastbarer Daten. Nur so wird Mentoring zu einem professionellen Instrument und nicht zu einer symbolischen Maßnahme.
 
+Besonders wirksam scheint aus Erfahrungsberichten ein mehrstufiges Modell zu sein: Peer-Mentoring für niedrigschwellige Alltagsfragen, ergänzt durch fachliches Mentoring durch Lehrende bei inhaltlichen Schwierigkeiten. Diese Kombination verbindet Nähe und Expertise. Gleichzeitig sollten Mentorinnen für sensible Situationen geschult werden, etwa bei psychischer Belastung oder finanziellen Notlagen, damit sie Grenzen ihrer Rolle erkennen und gezielt an professionelle Stellen weiterverweisen können.
+
 Mein Fazit lautet: Mentoring kann Studienabbrüche deutlich reduzieren, wenn es früh ansetzt, verlässlich organisiert ist und mit anderen Unterstützungsstrukturen verknüpft wird. Es ersetzt keine Reformen der Studienbedingungen, ist aber ein zentraler Baustein für gelingende Studieneingänge. Vielen Dank für Ihre Aufmerksamkeit!`,
     html: `<div class="praesentation-titel">Teilnehmer B - Mentoringprogramme gegen Studienabbrüche</div>
 <p>Guten Tag! Heute spreche ich über die Frage, wie Mentoringprogramme im ersten Studienjahr Studienabbrüche reduzieren können. Ich werde zuerst auf die Ursachen von Studienabbrüchen eingehen, dann wirksame Elemente des Mentorings vorstellen und abschließend Grenzen benennen.</p>
@@ -94,6 +104,8 @@ Mein Fazit lautet: Mentoring kann Studienabbrüche deutlich reduzieren, wenn es 
 <p>Trotzdem hat Mentoring Grenzen. Schlechte Programme können sogar frustrieren, etwa wenn Rollen unklar sind oder Mentorinnen nicht ausreichend geschult werden. Auch strukturelle Probleme wie überfüllte Studiengänge oder unflexible Prüfungsordnungen lassen sich durch Mentoring allein nicht lösen.</p>
 
 <p>Deshalb braucht es Qualitätsstandards: Auswahl und Training der Mentorinnen, verbindliche Zeitressourcen, klare Zuständigkeiten und regelmäßige Evaluation anhand belastbarer Daten. Nur so wird Mentoring zu einem professionellen Instrument und nicht zu einer symbolischen Maßnahme.</p>
+
+<p>Besonders wirksam scheint aus Erfahrungsberichten ein mehrstufiges Modell zu sein: Peer-Mentoring für niedrigschwellige Alltagsfragen, ergänzt durch fachliches Mentoring durch Lehrende bei inhaltlichen Schwierigkeiten. Diese Kombination verbindet Nähe und Expertise. Gleichzeitig sollten Mentorinnen für sensible Situationen geschult werden, etwa bei psychischer Belastung oder finanziellen Notlagen, damit sie Grenzen ihrer Rolle erkennen und gezielt an professionelle Stellen weiterverweisen können.</p>
 
 <p>Mein Fazit lautet: Mentoring kann Studienabbrüche deutlich reduzieren, wenn es früh ansetzt, verlässlich organisiert ist und mit anderen Unterstützungsstrukturen verknüpft wird. Es ersetzt keine Reformen der Studienbedingungen, ist aber ein zentraler Baustein für gelingende Studieneingänge. Vielen Dank für Ihre Aufmerksamkeit!</p>`
   },
@@ -112,6 +124,8 @@ Deshalb sollte KI-Feedback nur unter klaren Rahmenbedingungen integriert werden.
 
 Didaktisch entscheidend ist die Einbettung. Studierende müssen lernen, Rückmeldungen zu prüfen, zu verwerfen oder begründet zu übernehmen. Genau diese Meta-Kompetenz, nämlich die kritische Bewertung von Vorschlägen, ist ein zentraler Lerngewinn.
 
+Darüber hinaus brauchen auch Lehrende Unterstützung. Viele Dozierende sind unsicher, wie KI-gestützte Werkzeuge fair bewertet und in Prüfungsformate eingebunden werden können. Fortbildungen, gemeinsame Bewertungsraster und fachspezifische Leitlinien sind deshalb notwendig. Nur wenn Lehrende und Studierende dieselben Spielregeln kennen, entsteht Vertrauen in den Einsatz dieser Technologien. Dann kann KI die Schreibdidaktik ergänzen, ohne wissenschaftliche Eigenleistung zu verdrängen.
+
 Mein Fazit lautet: Ja, KI-gestütztes Feedback sollte offiziell in die Lehre integriert werden, aber kontrolliert und reflektiert. Richtig eingesetzt stärkt es Schreibkompetenz und Selbstständigkeit. Falsch eingesetzt fördert es Abhängigkeit und Oberflächlichkeit. Die Verantwortung liegt deshalb bei den Hochschulen, klare Regeln und didaktische Konzepte zu schaffen. Vielen Dank!`,
     html: `<div class="praesentation-titel">Teilnehmer B - KI-gestütztes Feedback in der Lehre</div>
 <p>Guten Tag! Ich möchte heute die Frage diskutieren, ob KI-gestütztes Feedback bei wissenschaftlichen Texten offiziell in die Lehre integriert werden sollte. Ich werde dafür und dagegen argumentieren und dann einen Umsetzungsansatz vorstellen.</p>
@@ -125,6 +139,8 @@ Mein Fazit lautet: Ja, KI-gestütztes Feedback sollte offiziell in die Lehre int
 <p>Deshalb sollte KI-Feedback nur unter klaren Rahmenbedingungen integriert werden. Erstens müssen Hochschulen datenschutzkonforme Plattformen bereitstellen. Zweitens braucht es Transparenzregeln: Was wurde mit KI überarbeitet, was stammt aus eigener Analyse? Drittens sollte KI ausdrücklich als Feedbackinstrument definiert werden, nicht als Ersatz für Argumentation und Quellenarbeit.</p>
 
 <p>Didaktisch entscheidend ist die Einbettung. Studierende müssen lernen, Rückmeldungen zu prüfen, zu verwerfen oder begründet zu übernehmen. Genau diese Meta-Kompetenz, nämlich die kritische Bewertung von Vorschlägen, ist ein zentraler Lerngewinn.</p>
+
+<p>Darüber hinaus brauchen auch Lehrende Unterstützung. Viele Dozierende sind unsicher, wie KI-gestützte Werkzeuge fair bewertet und in Prüfungsformate eingebunden werden können. Fortbildungen, gemeinsame Bewertungsraster und fachspezifische Leitlinien sind deshalb notwendig. Nur wenn Lehrende und Studierende dieselben Spielregeln kennen, entsteht Vertrauen in den Einsatz dieser Technologien. Dann kann KI die Schreibdidaktik ergänzen, ohne wissenschaftliche Eigenleistung zu verdrängen.</p>
 
 <p>Mein Fazit lautet: Ja, KI-gestütztes Feedback sollte offiziell in die Lehre integriert werden, aber kontrolliert und reflektiert. Richtig eingesetzt stärkt es Schreibkompetenz und Selbstständigkeit. Falsch eingesetzt fördert es Abhängigkeit und Oberflächlichkeit. Die Verantwortung liegt deshalb bei den Hochschulen, klare Regeln und didaktische Konzepte zu schaffen. Vielen Dank!</p>`
   },
@@ -145,6 +161,8 @@ Natürlich gibt es Grenzen. Hochschulen können nicht alle gesellschaftlichen Pr
 
 Entscheidend ist aus meiner Sicht die institutionelle Verankerung. Integration darf nicht von Einzelengagement abhängen, sondern muss als strategisches Ziel in Studienstrukturen, Qualitätsmanagement und Personalentwicklung sichtbar sein.
 
+Ein praktischer Ansatz ist, internationale Perspektiven nicht nur in Beratungsangeboten, sondern auch in der Lehre sichtbar zu machen. Wenn in Seminaren unterschiedliche Bildungserfahrungen aktiv einbezogen werden, entsteht wechselseitiges Lernen statt einseitiger Anpassung. Das entlastet auch internationale Studierende, weil sie nicht nur als Gruppe mit Defiziten betrachtet werden, sondern als aktive Mitgestalter akademischer Diskurse. Integration bedeutet dann Teilhabe in beide Richtungen.
+
 Mein Fazit: Hochschulen tragen eine klare Verantwortung für die soziale und akademische Integration internationaler Studierender. Wenn sie diese Aufgabe systematisch angehen, profitieren nicht nur internationale Studierende, sondern die gesamte Universität durch mehr Perspektivenvielfalt, bessere Lernkultur und stärkere internationale Anschlussfähigkeit. Vielen Dank für Ihre Aufmerksamkeit!`,
     html: `<div class="praesentation-titel">Teilnehmer C - Integration internationaler Studierender</div>
 <p>Guten Tag! Heute möchte ich die Frage behandeln, welche Verantwortung Hochschulen für die soziale und akademische Integration internationaler Studierender haben. Ich werde zunächst den Handlungsbedarf skizzieren, dann zentrale Aufgaben der Hochschulen nennen und schließlich mögliche Grenzen diskutieren.</p>
@@ -160,6 +178,8 @@ Mein Fazit: Hochschulen tragen eine klare Verantwortung für die soziale und aka
 <p>Natürlich gibt es Grenzen. Hochschulen können nicht alle gesellschaftlichen Probleme lösen, zum Beispiel Wohnungsmarkt oder aufenthaltsrechtliche Unsicherheiten. Außerdem sind Ressourcen begrenzt. Genau deshalb braucht es Priorisierung und Kooperation mit externen Akteuren wie Studierendenwerken, Kommunen und Beratungsstellen.</p>
 
 <p>Entscheidend ist aus meiner Sicht die institutionelle Verankerung. Integration darf nicht von Einzelengagement abhängen, sondern muss als strategisches Ziel in Studienstrukturen, Qualitätsmanagement und Personalentwicklung sichtbar sein.</p>
+
+<p>Ein praktischer Ansatz ist, internationale Perspektiven nicht nur in Beratungsangeboten, sondern auch in der Lehre sichtbar zu machen. Wenn in Seminaren unterschiedliche Bildungserfahrungen aktiv einbezogen werden, entsteht wechselseitiges Lernen statt einseitiger Anpassung. Das entlastet auch internationale Studierende, weil sie nicht nur als Gruppe mit Defiziten betrachtet werden, sondern als aktive Mitgestalter akademischer Diskurse. Integration bedeutet dann Teilhabe in beide Richtungen.</p>
 
 <p>Mein Fazit: Hochschulen tragen eine klare Verantwortung für die soziale und akademische Integration internationaler Studierender. Wenn sie diese Aufgabe systematisch angehen, profitieren nicht nur internationale Studierende, sondern die gesamte Universität durch mehr Perspektivenvielfalt, bessere Lernkultur und stärkere internationale Anschlussfähigkeit. Vielen Dank für Ihre Aufmerksamkeit!</p>`
   },
@@ -178,6 +198,8 @@ Deshalb halte ich den Gegensatz zwischen Spezialisierung und Interdisziplinarit�
 
 Für Hochschulen bedeutet das konkret: Curricula sollten Grundlagen der Interdisziplinarität vermitteln, etwa in projektorientierten Formaten, ohne die fachliche Kernausbildung zu schwächen. Wichtig sind auch institutionelle Rahmenbedingungen wie gemeinsame Lehrmodule, interdisziplinäre Forschungszentren und Anreizsysteme, die Kooperation belohnen.
 
+Auch bei Berufsperspektiven zeigt sich die Relevanz dieser Balance. Arbeitgeber suchen zunehmend Absolventinnen und Absolventen, die fachlich fundiert arbeiten und gleichzeitig komplexe Probleme im Team lösen können. Wer nur breit, aber nicht tief ausgebildet ist, stößt schnell an Grenzen. Wer nur spezialisiert ist, kann oft schwer über Fachgrenzen hinweg kommunizieren. Universitäten sollten deshalb Lernwege schaffen, in denen beides systematisch trainiert wird.
+
 Mein Fazit lautet: Nicht das eine gegen das andere, sondern die kluge Verbindung von Spezialisierung und Interdisziplinarität ist entscheidend. Universitäten, die beides systematisch fördern, sind wissenschaftlich innovativer und gesellschaftlich relevanter. Vielen Dank für Ihre Aufmerksamkeit!`,
     html: `<div class="praesentation-titel">Teilnehmer C - Interdisziplinarität oder Spezialisierung?</div>
 <p>Guten Tag! Ich möchte heute die Frage diskutieren, was für die Zukunft der Universitäten wichtiger ist: mehr Interdisziplinarität oder stärkere Spezialisierung. Ich werde beide Perspektiven darstellen und am Ende eine abgewogene Position vertreten.</p>
@@ -191,6 +213,8 @@ Mein Fazit lautet: Nicht das eine gegen das andere, sondern die kluge Verbindung
 <p>Deshalb halte ich den Gegensatz zwischen Spezialisierung und Interdisziplinarität für irreführend. Zukunftsfähig ist ein Modell, das beides kombiniert: solide fachliche Tiefe plus strukturierte Schnittstellen zwischen Disziplinen. Man könnte von einem <strong>T-Profil</strong> sprechen: vertikale Expertise im Kernfach und horizontale Anschlussfähigkeit in angrenzenden Bereichen.</p>
 
 <p>Für Hochschulen bedeutet das konkret: Curricula sollten Grundlagen der Interdisziplinarität vermitteln, etwa in projektorientierten Formaten, ohne die fachliche Kernausbildung zu schwächen. Wichtig sind auch institutionelle Rahmenbedingungen wie gemeinsame Lehrmodule, interdisziplinäre Forschungszentren und Anreizsysteme, die Kooperation belohnen.</p>
+
+<p>Auch bei Berufsperspektiven zeigt sich die Relevanz dieser Balance. Arbeitgeber suchen zunehmend Absolventinnen und Absolventen, die fachlich fundiert arbeiten und gleichzeitig komplexe Probleme im Team lösen können. Wer nur breit, aber nicht tief ausgebildet ist, stößt schnell an Grenzen. Wer nur spezialisiert ist, kann oft schwer über Fachgrenzen hinweg kommunizieren. Universitäten sollten deshalb Lernwege schaffen, in denen beides systematisch trainiert wird.</p>
 
 <p>Mein Fazit lautet: Nicht das eine gegen das andere, sondern die kluge Verbindung von Spezialisierung und Interdisziplinarität ist entscheidend. Universitäten, die beides systematisch fördern, sind wissenschaftlich innovativer und gesellschaftlich relevanter. Vielen Dank für Ihre Aufmerksamkeit!</p>`
   }
