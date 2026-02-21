@@ -526,39 +526,7 @@
         { "example": "Angesichts der Herausforderungen brauchen wir neue Lösungen.", "translation": "Frente a los desafíos necesitamos nuevas soluciones." }
       ],
       "type": "präposition",
-
-
-    },
-    {
-      "id": "gestalten",
-      "word": "gestalten",
-      "translation": "configurar, diseñar, estructurar, dar forma",
-      "explanation": "Verbo que significa dar forma activa a algo, planear o estructurarlo según ciertos criterios. Muy común en contexto de proyectos, estructuras y procesos.",
-      "erklärung": "Etwas bewusst formen, organisieren oder entwickeln, sodass es bestimmte Eigenschaften erhält.",
-      "examples": [
-        { "example": "Wir wollen die Lehrveranstaltung interaktiver gestalten.", "translation": "Queremos estructurar la clase de forma más interactiva." },
-        { "example": "Das neue Konzept wurde gemeinsam gestaltet.", "translation": "El nuevo concepto fue diseñado conjuntamente." },
-        { "example": "Sie gestaltet ihren Alltag sehr abwechslungsreich.", "translation": "Ella configura su rutina diaria de manera muy variada." },
-        { "example": "Die Stadt möchte den Park neu gestalten.", "translation": "La ciudad quiere rediseñar el parque." }
-      ],
-      "type": "verb",
-      "tags": ["acción", "proceso", "proyecto", "estructura"]
-    },
-    {
-      "id": "benehmen",
-      "word": "Benehmen",
-      "translation": "comportamiento, conducta, modales",
-      "explanation": "Sustantivo neutro. Describe la manera en la que una persona se comporta en situaciones sociales, especialmente en cuanto a normas, educación y respeto.",
-      "erklärung": "Die Art und Weise, wie sich jemand in einer sozialen Situation verhält.",
-      "examples": [
-        { "example": "Das Benehmen der Gäste war vorbildlich.", "translation": "El comportamiento de los invitados fue ejemplar." },
-        { "example": "Er hat durch sein unhöfliches Benehmen alle überrascht.", "translation": "Sorprendió a todos con su comportamiento descortés." },
-        { "example": "Gutes Benehmen ist in vielen Berufen wichtig.", "translation": "Los buenos modales son importantes en muchas profesiones." },
-
-        { "example": "Sie achtet stets auf ihr Benehmen.", "translation": "Ella siempre cuida su conducta." }
-      ],
-      "type": "nomen",
-      "tags": ["soziales", "Normen", "Verhalten", "Umgang"]
+      "tags": ["formal", "argumentación", "contexto"]
     }
   ]
 }
