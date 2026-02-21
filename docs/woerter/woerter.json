@@ -527,7 +527,7 @@
       ],
       "type": "präposition",
 
-      "tags": ["formal", "argumentación", "contexto"]
+
     },
     {
       "id": "gestalten",
@@ -554,7 +554,7 @@
         { "example": "Das Benehmen der Gäste war vorbildlich.", "translation": "El comportamiento de los invitados fue ejemplar." },
         { "example": "Er hat durch sein unhöfliches Benehmen alle überrascht.", "translation": "Sorprendió a todos con su comportamiento descortés." },
         { "example": "Gutes Benehmen ist in vielen Berufen wichtig.", "translation": "Los buenos modales son importantes en muchas profesiones." },
-        
+
         { "example": "Sie achtet stets auf ihr Benehmen.", "translation": "Ella siempre cuida su conducta." }
       ],
       "type": "nomen",
