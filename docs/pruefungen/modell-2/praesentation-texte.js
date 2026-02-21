@@ -13,6 +13,8 @@ Ein zweites Argument betrifft wissenschaftliche Integrität. Viele fürchten, KI
 
 Natürlich gibt es auch Risiken. KI-Systeme können halluzinieren, also falsche Informationen überzeugend darstellen. Außerdem reproduzieren sie oft bestehende Biases. Wer KI unkritisch nutzt, übernimmt diese Fehler. Deshalb darf Pflichtkompetenz nicht bedeuten, KI blind zu vertrauen. Sie muss immer mit Quellenkritik, Fachwissen und ethischer Reflexion verbunden sein.
 
+Praktisch könnte ein Pflichtformat so aussehen: ein Basismodul für alle Erstsemester, ergänzt durch fachspezifische Workshops in späteren Semestern. Dort sollte nicht nur Technik, sondern auch Reflexion trainiert werden. Denn die zentrale Kompetenz ist letztlich nicht das Tool selbst, sondern die Fähigkeit, Ergebnisse einzuordnen und verantwortungsvoll zu entscheiden.
+
 Meine Schlussfolgerung ist: Ja, KI-Kompetenz sollte Pflichtbestandteil des Studiums sein, aber nicht als Techniktraining allein. Wir brauchen eine Kombination aus praktischer Anwendung, kritischem Denken und ethischen Leitlinien. So lernen Studierende, KI als Werkzeug zu nutzen, ohne ihre eigene Urteilskraft zu verlieren. Vielen Dank für Ihre Aufmerksamkeit!`,
     html: `<div class="praesentation-titel">Teilnehmer A - KI als Pflichtkompetenz im Studium</div>
 <p>Guten Tag! Heute möchte ich über die Frage sprechen, ob der Umgang mit <strong>Künstlicher Intelligenz</strong> zu den Pflichtkompetenzen im Studium gehören sollte. Ich werde zunächst erklären, warum dieses Thema aktuell so wichtig ist, dann zentrale Chancen und Risiken darstellen und am Ende eine eigene Position formulieren.</p>
@@ -24,6 +26,8 @@ Meine Schlussfolgerung ist: Ja, KI-Kompetenz sollte Pflichtbestandteil des Studi
 <p>Ein zweites Argument betrifft <strong>wissenschaftliche Integrität</strong>. Viele fürchten, KI fördere Plagiate. Diese Sorge ist berechtigt, aber ein Verbot löst das Problem nicht. Sinnvoller ist es, klare Standards zu etablieren: Was ist erlaubt, was nicht? Wie kennzeichnet man KI-Beiträge? Wie zeigt man eigene Denkleistung? Pflichtmodule könnten genau diese Fragen behandeln und so Missbrauch reduzieren.</p>
 
 <p>Natürlich gibt es auch Risiken. KI-Systeme können halluzinieren, also falsche Informationen überzeugend darstellen. Außerdem reproduzieren sie oft bestehende Biases. Wer KI unkritisch nutzt, übernimmt diese Fehler. Deshalb darf Pflichtkompetenz nicht bedeuten, KI blind zu vertrauen. Sie muss immer mit Quellenkritik, Fachwissen und ethischer Reflexion verbunden sein.</p>
+
+<p>Praktisch könnte ein Pflichtformat so aussehen: ein Basismodul für alle Erstsemester, ergänzt durch fachspezifische Workshops in späteren Semestern. Dort sollte nicht nur Technik, sondern auch Reflexion trainiert werden. Denn die zentrale Kompetenz ist letztlich nicht das Tool selbst, sondern die Fähigkeit, Ergebnisse einzuordnen und verantwortungsvoll zu entscheiden.</p>
 
 <p>Meine Schlussfolgerung ist: Ja, KI-Kompetenz sollte Pflichtbestandteil des Studiums sein, aber nicht als Techniktraining allein. Wir brauchen eine Kombination aus praktischer Anwendung, kritischem Denken und ethischen Leitlinien. So lernen Studierende, KI als Werkzeug zu nutzen, ohne ihre eigene Urteilskraft zu verlieren. Vielen Dank für Ihre Aufmerksamkeit!</p>`
   },
@@ -42,6 +46,8 @@ Auch Schlaf und Arbeitsrhythmus spielen eine große Rolle. Viele versuchen, Lern
 
 Trotzdem haben diese Strategien Grenzen. In akuten Krisen, bei starker Erschöpfung oder anhaltender Angst reicht Selbstorganisation oft nicht. Dann braucht es professionelle Beratung. Hochschulen sollten deshalb nicht nur informieren, sondern präventive Angebote schaffen, etwa kurze Trainings im ersten Semester und vor Prüfungsphasen.
 
+Wichtig ist außerdem eine realistische Haltung. Viele scheitern, weil sie ihren Plan zu ambitioniert anlegen und bei kleinen Rückschlägen alles abbrechen. Besser funktioniert ein flexibles System mit Anpassungen von Woche zu Woche. Nicht Perfektion, sondern Kontinuität entscheidet darüber, ob sich neue Lerngewohnheiten langfristig stabilisieren.
+
 Mein Fazit: Prokrastination lässt sich reduzieren, wenn man strukturiert vorgeht, realistische Routinen aufbaut und früh Unterstützung nutzt. Es geht weniger um perfekte Selbstkontrolle als um kluges Arbeitsdesign. Vielen Dank!`,
     html: `<div class="praesentation-titel">Teilnehmer A - Prokrastination im Studium reduzieren</div>
 <p>Guten Tag! Ich spreche heute über die Frage, wie man Prokrastination im Studium wirksam reduzieren kann. Ich werde zuerst kurz erklären, warum Aufschieben so verbreitet ist, danach konkrete Strategien vorstellen und abschließend deren Grenzen benennen.</p>
@@ -55,6 +61,8 @@ Mein Fazit: Prokrastination lässt sich reduzieren, wenn man strukturiert vorgeh
 <p>Auch Schlaf und Arbeitsrhythmus spielen eine große Rolle. Viele versuchen, Lernrückstände mit Nachtschichten auszugleichen. Kurzfristig kann das bei einfachem Auswendiglernen helfen, aber bei komplexen Denkaufgaben sinken Genauigkeit und Urteilsfähigkeit. Wer regelmäßig schläft und früh startet, arbeitet meist effizienter.</p>
 
 <p>Trotzdem haben diese Strategien Grenzen. In akuten Krisen, bei starker Erschöpfung oder anhaltender Angst reicht Selbstorganisation oft nicht. Dann braucht es professionelle Beratung. Hochschulen sollten deshalb nicht nur informieren, sondern präventive Angebote schaffen, etwa kurze Trainings im ersten Semester und vor Prüfungsphasen.</p>
+
+<p>Wichtig ist außerdem eine realistische Haltung. Viele scheitern, weil sie ihren Plan zu ambitioniert anlegen und bei kleinen Rückschlägen alles abbrechen. Besser funktioniert ein flexibles System mit Anpassungen von Woche zu Woche. Nicht Perfektion, sondern Kontinuität entscheidet darüber, ob sich neue Lerngewohnheiten langfristig stabilisieren.</p>
 
 <p>Mein Fazit: Prokrastination lässt sich reduzieren, wenn man strukturiert vorgeht, realistische Routinen aufbaut und früh Unterstützung nutzt. Es geht weniger um perfekte Selbstkontrolle als um kluges Arbeitsdesign. Vielen Dank!</p>`
   },
@@ -71,6 +79,8 @@ Trotzdem wäre eine generelle Verpflichtung problematisch. Erstens sind die fina
 
 Auch organisatorische Hürden bleiben ein Thema: Anerkennung von Leistungen, Wohnungssuche und Bürokratie. Wenn Hochschulen ein Auslandssemester ernsthaft fördern wollen, müssen sie genau diese Hindernisse abbauen. Dazu gehören transparente Anerkennungsregeln, bessere Beratung und gezielte Stipendien für Studierende mit geringeren finanziellen Ressourcen.
 
+Darüber hinaus sollte man die Qualität der Auslandserfahrung stärker sichern. Ein Aufenthalt bringt nur dann echten Mehrwert, wenn er akademisch gut eingebettet ist, zum Beispiel durch klare Lernziele, Vorbereitungsseminare und eine Nachbereitung nach der Rückkehr. Sonst bleibt er manchmal eher biografisch interessant als fachlich wirksam.
+
 Aus meiner Sicht ist deshalb ein Mittelweg sinnvoll: kein Zwang, aber starke strukturelle Förderung. Universitäten sollten internationale Erfahrung als wichtigen Bildungsbaustein behandeln und mehr flexible Formate anbieten, zum Beispiel kurze Mobilitätsprogramme, virtuelle Kooperationen oder kombinierte Praktikumsmodelle.
 
 So können mehr Studierende internationale Kompetenz erwerben, ohne dass soziale Ungleichheiten verstärkt werden. Mein Fazit lautet: Ein Auslandssemester sollte nicht verpflichtend, aber deutlich leichter zugänglich sein. Dann profitieren Individuum, Hochschule und Gesellschaft gleichermaßen. Vielen Dank!`,
@@ -84,6 +94,8 @@ So können mehr Studierende internationale Kompetenz erwerben, ohne dass soziale
 <p>Trotzdem wäre eine generelle Verpflichtung problematisch. Erstens sind die finanziellen und sozialen Voraussetzungen sehr unterschiedlich. Nicht alle können mehrere Monate im Ausland finanzieren oder familiäre Verpflichtungen unterbrechen. Zweitens passt ein Auslandsaufenthalt nicht in jedes Studium gleichermaßen gut, etwa bei sehr strikten Modulplänen oder praxisnahen Programmen mit festen Zeitfenstern.</p>
 
 <p>Auch organisatorische Hürden bleiben ein Thema: Anerkennung von Leistungen, Wohnungssuche und Bürokratie. Wenn Hochschulen ein Auslandssemester ernsthaft fördern wollen, müssen sie genau diese Hindernisse abbauen. Dazu gehören transparente Anerkennungsregeln, bessere Beratung und gezielte Stipendien für Studierende mit geringeren finanziellen Ressourcen.</p>
+
+<p>Darüber hinaus sollte man die Qualität der Auslandserfahrung stärker sichern. Ein Aufenthalt bringt nur dann echten Mehrwert, wenn er akademisch gut eingebettet ist, zum Beispiel durch klare Lernziele, Vorbereitungsseminare und eine Nachbereitung nach der Rückkehr. Sonst bleibt er manchmal eher biografisch interessant als fachlich wirksam.</p>
 
 <p>Aus meiner Sicht ist deshalb ein <strong>Mittelweg</strong> sinnvoll: kein Zwang, aber starke strukturelle Förderung. Universitäten sollten internationale Erfahrung als wichtigen Bildungsbaustein behandeln und mehr flexible Formate anbieten, zum Beispiel kurze Mobilitätsprogramme, virtuelle Kooperationen oder kombinierte Praktikumsmodelle.</p>
 
@@ -104,6 +116,8 @@ Drittens kann künstlerische Praxis Motivation und Resilienz stärken. Viele Stu
 
 Natürlich gibt es Gegenargumente. Manche befürchten, dass zusätzliche kreative Module die ohnehin dichten Curricula überladen. Andere sehen die Gefahr, fachliche Tiefe zu verlieren. Diese Einwände sind ernst zu nehmen. Deshalb geht es nicht darum, MINT-Inhalte zu ersetzen, sondern sinnvoll zu ergänzen.
 
+Gerade mit Blick auf den Arbeitsmarkt wird dieser Punkt immer wichtiger. Viele Arbeitgeber erwarten heute nicht nur Fachkompetenz, sondern auch kommunikative Stärke, Teamfähigkeit und die Fähigkeit, technische Lösungen nutzerorientiert zu denken. Kreative Lernformate können genau diese Brücke zwischen technischer Exzellenz und gesellschaftlicher Anwendung schlagen.
+
 Aus meiner Sicht wäre ein pragmatisches Modell ideal: kleine, gut verzahnte Wahl- oder Projektmodule, in denen technische und kreative Kompetenzen gemeinsam trainiert werden. So bleibt die fachliche Qualität erhalten, während Studierende zugleich Fähigkeiten erwerben, die in Forschung und Industrie zunehmend gefragt sind.
 
 Mein Fazit: Kreative Fächer sind in MINT-Studiengängen kein Luxus, sondern ein strategischer Mehrwert. Sie fördern Innovation, Kommunikation und nachhaltiges Problemlösen. Vielen Dank!`,
@@ -120,6 +134,8 @@ Mein Fazit: Kreative Fächer sind in MINT-Studiengängen kein Luxus, sondern ein
 
 <p>Natürlich gibt es Gegenargumente. Manche befürchten, dass zusätzliche kreative Module die ohnehin dichten Curricula überladen. Andere sehen die Gefahr, fachliche Tiefe zu verlieren. Diese Einwände sind ernst zu nehmen. Deshalb geht es nicht darum, MINT-Inhalte zu ersetzen, sondern sinnvoll zu ergänzen.</p>
 
+<p>Gerade mit Blick auf den Arbeitsmarkt wird dieser Punkt immer wichtiger. Viele Arbeitgeber erwarten heute nicht nur Fachkompetenz, sondern auch kommunikative Stärke, Teamfähigkeit und die Fähigkeit, technische Lösungen nutzerorientiert zu denken. Kreative Lernformate können genau diese Brücke zwischen technischer Exzellenz und gesellschaftlicher Anwendung schlagen.</p>
+
 <p>Aus meiner Sicht wäre ein pragmatisches Modell ideal: kleine, gut verzahnte Wahl- oder Projektmodule, in denen technische und kreative Kompetenzen gemeinsam trainiert werden. So bleibt die fachliche Qualität erhalten, während Studierende zugleich Fähigkeiten erwerben, die in Forschung und Industrie zunehmend gefragt sind.</p>
 
 <p>Mein Fazit: Kreative Fächer sind in MINT-Studiengängen kein Luxus, sondern ein strategischer Mehrwert. Sie fördern Innovation, Kommunikation und nachhaltiges Problemlösen. Vielen Dank!</p>`
@@ -135,7 +151,9 @@ Ein zentraler Vorteil liegt in der Kommunikation. Wer mehrere Sprachen beherrsch
 
 Auch gesellschaftlich ist Mehrsprachigkeit relevant. In pluralen Gesellschaften kann sie Integration unterstützen, weil sie Brücken zwischen unterschiedlichen Gruppen schafft. Im Bildungsbereich eröffnet sie Zugang zu internationalen Quellen und Forschungstraditionen. Gerade für Studierende ist das ein großer Vorteil, wenn sie wissenschaftliche Debatten in mehreren Sprachräumen verfolgen können.
 
-Trotz dieser Chancen darf man die Herausforderungen nicht übersehen. Sprachenlernen erfordert Zeit, kontinuierliche Übung und Motivation. Nicht alle haben gleiche Lernbedingungen, etwa wegen sozialer Herkunft, Schulqualität oder finanzieller Ressourcen. Außerdem kann ein rein ökonomischer Blick problematisch sein, wenn nur „nützliche" Sprachen gefördert werden und kleinere Sprachen an Wert verlieren.
+Trotz dieser Chancen darf man die Herausforderungen nicht übersehen. Sprachenlernen erfordert Zeit, kontinuierliche Übung und Motivation. Nicht alle haben gleiche Lernbedingungen, etwa wegen sozialer Herkunft, Schulqualität oder finanzieller Ressourcen. Außerdem kann ein rein ökonomischer Blick problematisch sein, wenn nur nützliche Sprachen gefördert werden und kleinere Sprachen an Wert verlieren.
+
+Mehrsprachigkeit hat außerdem eine identitätsbezogene Dimension. Viele Menschen bewegen sich zwischen mehreren sprachlichen Räumen und entwickeln dadurch ein differenzierteres Verständnis von Zugehörigkeit. Das kann gesellschaftlichen Zusammenhalt stärken, wenn Bildungssysteme diese Vielfalt nicht als Defizit, sondern als Ressource behandeln.
 
 Deshalb sollte Mehrsprachigkeit aus meiner Sicht nicht als individueller Druck verstanden werden, nach dem Motto: Wer nur eine Sprache spricht, ist automatisch im Nachteil. Vielmehr braucht es faire Bildungsstrukturen, die Sprachenlernen früh, praxisnah und langfristig unterstützen.
 
@@ -149,7 +167,9 @@ Mein Fazit: Ja, Mehrsprachigkeit ist eine Schlüsselkompetenz des 21. Jahrhunder
 
 <p>Auch gesellschaftlich ist Mehrsprachigkeit relevant. In pluralen Gesellschaften kann sie Integration unterstützen, weil sie Brücken zwischen unterschiedlichen Gruppen schafft. Im Bildungsbereich eröffnet sie Zugang zu internationalen Quellen und Forschungstraditionen. Gerade für Studierende ist das ein großer Vorteil, wenn sie wissenschaftliche Debatten in mehreren Sprachräumen verfolgen können.</p>
 
-<p>Trotz dieser Chancen darf man die Herausforderungen nicht übersehen. Sprachenlernen erfordert Zeit, kontinuierliche Übung und Motivation. Nicht alle haben gleiche Lernbedingungen, etwa wegen sozialer Herkunft, Schulqualität oder finanzieller Ressourcen. Außerdem kann ein rein ökonomischer Blick problematisch sein, wenn nur „nützliche" Sprachen gefördert werden und kleinere Sprachen an Wert verlieren.</p>
+<p>Trotz dieser Chancen darf man die Herausforderungen nicht übersehen. Sprachenlernen erfordert Zeit, kontinuierliche Übung und Motivation. Nicht alle haben gleiche Lernbedingungen, etwa wegen sozialer Herkunft, Schulqualität oder finanzieller Ressourcen. Außerdem kann ein rein ökonomischer Blick problematisch sein, wenn nur nützliche Sprachen gefördert werden und kleinere Sprachen an Wert verlieren.</p>
+
+<p>Mehrsprachigkeit hat außerdem eine identitätsbezogene Dimension. Viele Menschen bewegen sich zwischen mehreren sprachlichen Räumen und entwickeln dadurch ein differenzierteres Verständnis von Zugehörigkeit. Das kann gesellschaftlichen Zusammenhalt stärken, wenn Bildungssysteme diese Vielfalt nicht als Defizit, sondern als Ressource behandeln.</p>
 
 <p>Deshalb sollte Mehrsprachigkeit aus meiner Sicht nicht als individueller Druck verstanden werden, nach dem Motto: Wer nur eine Sprache spricht, ist automatisch im Nachteil. Vielmehr braucht es faire Bildungsstrukturen, die Sprachenlernen früh, praxisnah und langfristig unterstützen.</p>
 
@@ -170,6 +190,8 @@ Ein weiterer Punkt ist die Anpassungsfähigkeit. Menschen mit breitem Fundament 
 
 Die Gegenüberstellung zeigt: Ein Entweder-oder greift zu kurz. Reine Spezialisierung kann zu Tunnelblick führen; reine Breite kann oberflächlich bleiben. Sinnvoll erscheint daher ein T-Modell: ein solides breites Fundament in mehreren Bereichen und zusätzlich tiefe Expertise in einem Kerngebiet.
 
+Außerdem sollte man die zeitliche Perspektive beachten. In frühen Studienphasen ist Breite besonders wichtig, um Orientierung und Methodenvielfalt zu entwickeln. Später wird Spezialisierung relevanter, weil man gezielt Expertise aufbaut. Lebenslanges Lernen bedeutet dann, je nach Karrierephase zwischen Vertiefung und Erweiterung flexibel zu wechseln.
+
 Für Hochschulen bedeutet das: Studiengänge sollten sowohl fachliche Tiefe als auch interdisziplinäre Lerngelegenheiten bieten. Projektarbeit, Wahlmodule und praxisnahe Formate können helfen, beides zu verbinden. Studierende profitieren dann nicht nur durch Fachwissen, sondern auch durch Transferfähigkeit.
 
 Mein Fazit lautet: Langfristig ist nicht Spezialisierung gegen Breite entscheidend, sondern ihre kluge Kombination. Wer tief genug und zugleich anschlussfähig denkt, ist für wissenschaftliche und berufliche Herausforderungen am besten vorbereitet. Vielen Dank für Ihre Aufmerksamkeit!`,
@@ -185,6 +207,8 @@ Mein Fazit lautet: Langfristig ist nicht Spezialisierung gegen Breite entscheide
 <p>Ein weiterer Punkt ist die Anpassungsfähigkeit. Menschen mit breitem Fundament können sich leichter umorientieren, wenn sich Arbeitsmärkte verändern. Das ist besonders relevant in Zeiten von Automatisierung und KI, in denen bestimmte Tätigkeiten wegfallen, während neue entstehen.</p>
 
 <p>Die Gegenüberstellung zeigt: Ein Entweder-oder greift zu kurz. Reine Spezialisierung kann zu Tunnelblick führen; reine Breite kann oberflächlich bleiben. Sinnvoll erscheint daher ein <strong>T-Modell</strong>: ein solides breites Fundament in mehreren Bereichen und zusätzlich tiefe Expertise in einem Kerngebiet.</p>
+
+<p>Außerdem sollte man die zeitliche Perspektive beachten. In frühen Studienphasen ist Breite besonders wichtig, um Orientierung und Methodenvielfalt zu entwickeln. Später wird Spezialisierung relevanter, weil man gezielt Expertise aufbaut. Lebenslanges Lernen bedeutet dann, je nach Karrierephase zwischen Vertiefung und Erweiterung flexibel zu wechseln.</p>
 
 <p>Für Hochschulen bedeutet das: Studiengänge sollten sowohl fachliche Tiefe als auch interdisziplinäre Lerngelegenheiten bieten. Projektarbeit, Wahlmodule und praxisnahe Formate können helfen, beides zu verbinden. Studierende profitieren dann nicht nur durch Fachwissen, sondern auch durch Transferfähigkeit.</p>
 
