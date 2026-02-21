@@ -154,7 +154,7 @@ function processTextContent() {
 
 async function loadExplanations() {
   try {
-    const response = await fetch('soziale-isolation-in-der-modernen-gesellschaft-explanations.json', { cache: 'no-store' });
+    const response = await fetch('gig-economy-und-prekarisierung-explanations.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('Failed to load explanations');
     const data = await response.json();
     explanationsData = data || {};
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const flashcardsBtn = document.getElementById("text-flashcards");
   if (flashcardsBtn) {
     flashcardsBtn.addEventListener("click", () => {
-      window.location.href = "soziale-isolation-in-der-modernen-gesellschaft-flashcards.html";
+      window.location.href = "gig-economy-und-prekarisierung-flashcards.html";
     });
   }
   requestAnimationFrame(() => document.body.classList.add("is-ready"));
