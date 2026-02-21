@@ -90,9 +90,16 @@
 
   // Initialize topbar on page load
   function initTopbar() {
-    // Insert topbar at the beginning of body
-    const topbarHTML = createTopbar();
-    document.body.insertAdjacentHTML('afterbegin', topbarHTML);
+    // Check if topbar already exists in HTML (static version)
+    const existingTopbar = document.querySelector('.topbar');
+    
+    if (!existingTopbar) {
+      // Insert topbar at the beginning of body (dynamic version)
+      const topbarHTML = createTopbar();
+      document.body.insertAdjacentHTML('afterbegin', topbarHTML);
+    } else {
+      console.log('[TELC Topbar] Using existing static topbar from HTML');
+    }
 
     // Initialize topbar controls (minimize, reset)
     initTopbarControls();
