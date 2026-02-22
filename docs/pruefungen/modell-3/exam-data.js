@@ -30,12 +30,12 @@ const EXAM_DATA = {
   },
 
   themaTexte: {
-    a1: 'Sollten Studierende im Bachelor verpflichtend ein Service-Learning-Projekt absolvieren? Begründen Sie Ihre Position und berücksichtigen Sie auch mögliche Nachteile.',
-    a2: 'Ist eine verbindliche Anwesenheit in Lehrveranstaltungen heute noch zeitgemäß? Nehmen Sie differenziert Stellung.',
-    b1: 'Wie können Mentoringprogramme im ersten Studienjahr Studienabbrüche reduzieren? Erläutern Sie wirksame Elemente und Grenzen.',
-    b2: 'Sollte KI-gestütztes Feedback bei wissenschaftlichen Texten offiziell in die Lehre integriert werden? Begründen Sie Ihre Meinung.',
-    c1: 'Welche Verantwortung haben Hochschulen für die soziale und akademische Integration internationaler Studierender?',
-    c2: 'Was ist für die Zukunft der Universitäten wichtiger: mehr Interdisziplinarität oder stärkere Spezialisierung?'
+    a1: 'Sollten Studierende im Bachelor verpflichtend ein Service-Learning-Projekt absolvieren? Bitte begründen Sie Ihre Meinung. Gibt es Gegenargumente?',
+    a2: 'Ist eine verbindliche Anwesenheit in Lehrveranstaltungen heute noch zeitgemäß? Bitte begründen Sie Ihre Meinung. Gibt es Gegenargumente?',
+    b1: 'Wie können Mentoringprogramme im ersten Studienjahr Studienabbrüche reduzieren? Bitte erläutern Sie wirksame Elemente und mögliche Grenzen.',
+    b2: 'Sollte KI-gestütztes Feedback bei wissenschaftlichen Texten offiziell in die Lehre integriert werden? Bitte begründen Sie Ihre Meinung. Gibt es Gegenargumente?',
+    c1: 'Welche Verantwortung haben Hochschulen für die soziale und akademische Integration internationaler Studierender? Bitte begründen Sie Ihre Meinung.',
+    c2: 'Was ist für die Zukunft der Universitäten wichtiger: mehr Interdisziplinarität oder stärkere Spezialisierung? Bitte begründen Sie Ihre Meinung. Gibt es Gegenargumente?'
   },
 
   saThemen: {
