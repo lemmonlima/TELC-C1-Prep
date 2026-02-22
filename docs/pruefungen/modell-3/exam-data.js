@@ -164,6 +164,10 @@ Moderator: Kritiker sagen, das sei eigentlich Aufgabe der Schulen.
 
 Prof. Reuter: Idealerweise ja, praktisch kommt diese Kompetenzvermittlung dort aber sehr unterschiedlich an. Hochschulen dürfen deshalb nicht davon ausgehen, dass alle denselben Startpunkt haben. Wenn wir Chancengleichheit ernst nehmen, müssen wir auch ökonomische Handlungskompetenz gezielt fördern.
 
+Moderator: Gibt es Unterschiede zwischen Studierendengruppen, etwa zwischen Erstakademikerinnen und Erstakademikern und Studierenden mit familiärer Hochschulerfahrung?
+
+Prof. Reuter: Ja, diese Unterschiede sind deutlich. Wer im direkten Umfeld keine akademische Erfahrung hat, kennt formale Abläufe und Förderlogiken oft weniger gut und stellt Unterstützungsanträge später. Deshalb brauchen wir an Hochschulen transparente Informationswege in einfacher Sprache, wiederholte Hinweise über das Semester hinweg und klare Ansprechpersonen. Nur dann wird aus theoretischer Fördermöglichkeit auch tatsächlich genutzte Unterstützung.
+
 Moderator: Ein letztes kurzes Fazit: Was ist Ihr wichtigster Rat an Studierende?
 
 Prof. Reuter: Nicht isoliert kämpfen. Finanzielle Belastung ist kein individuelles Versagen, sondern oft eine strukturelle Herausforderung. Wer früh plant, transparent rechnet und Unterstützung nutzt, verbessert die eigene Stabilität enorm.
@@ -200,6 +204,10 @@ Prof. Feldmann: Damit Mentoring nicht vom Zufall einzelner engagierter Personen 
 Prof. Feldmann: Ein dritter Qualitätsfaktor ist die Geschwindigkeit von Rückmeldungen. Wenn Studierende Anliegen einreichen, etwa zu Prüfungsplanung oder Arbeitsproblemen, erhalten sie bei uns innerhalb von 48 Stunden eine erste qualifizierte Antwort. Das verhindert, dass kleine Unsicherheiten zu größeren Krisen anwachsen. Natürlich kann nicht jedes Problem sofort vollständig gelöst werden. Aber der frühe Kontakt signalisiert Verlässlichkeit und erleichtert die Weitervermittlung an passende Stellen.
 
 Prof. Feldmann: Parallel dazu evaluieren wir die Zusammenarbeit mit Lehrenden. Mentoring wirkt am besten, wenn Lehrveranstaltungen und Unterstützungsstrukturen nicht nebeneinanderlaufen, sondern Informationen austauschen. Wir haben deshalb kurze Abstimmungsformate eingeführt, damit typische Hürden schneller erkannt und curricular aufgegriffen werden können. So entsteht Schritt für Schritt eine lernförderliche Gesamtarchitektur statt vieler isolierter Einzelangebote.
+
+Prof. Feldmann: Ein weiterer Punkt ist die digitale Begleitung. Wir arbeiten mit einem datensparsamen Dashboard, in dem Mentorinnen und Mentoren anonymisiert dokumentieren, welche Themen besonders häufig auftreten. Dadurch sehen wir früh, ob sich Probleme häufen, etwa bei Prüfungsanmeldungen oder Zeitplanung. Wichtig ist dabei, dass dieses Monitoring nicht zur Kontrolle einzelner Studierender dient, sondern zur Verbesserung von Strukturen. Die Daten helfen uns, Angebote nachzuschärfen, ohne zusätzliche bürokratische Hürden aufzubauen.
+
+Prof. Feldmann: Wir haben außerdem gelernt, dass Diversität im Mentoringteam einen großen Unterschied macht. Wenn Mentorinnen und Mentoren unterschiedliche Bildungsbiografien, Spracherfahrungen und Fachperspektiven einbringen, fühlen sich mehr Erstsemester repräsentiert und trauen sich früher, Fragen zu stellen. Deshalb achten wir inzwischen gezielt auf heterogene Teams und reflektieren in Supervisionen auch mögliche implizite Erwartungen. Diese professionelle Haltung erhöht die Qualität der Beziehungen und stabilisiert die Wirksamkeit des Programms langfristig.
 
 Prof. Feldmann: Trotz der positiven Effekte bleibt eine zentrale Herausforderung: die kontinuierliche Finanzierung. Viele Programme laufen über befristete Projektmittel. Dadurch entstehen Lücken, gerade wenn Personal wechselt oder Förderzeiträume enden. Für Studierende wirkt das widersprüchlich: Einerseits empfehlen wir stabile Routinen, andererseits sind die Unterstützungsangebote selbst instabil. Wenn wir Mentoring ernst nehmen, muss die Finanzierung von Beginn an als Daueraufgabe eingeplant werden, nicht als zeitlich begrenztes Innovationsprojekt.
 
